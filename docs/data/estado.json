@@ -1,8 +1,8 @@
 {
  "version": "1.16.0",
- "ultimo_chequeo": "2026-10-29T20:53:58+00:00",
+ "ultimo_chequeo": "2026-10-29T21:51:46+00:00",
  "nuevos": 1,
- "total": 29,
+ "total": 30,
  "palabras_clave": [
   "tecnólogo médico resonancia",
   "resonancia magnética",
@@ -20,9 +20,9 @@
    "resultados": 74,
    "errores": [],
    "descartados": {
-    "perfil": 31,
+    "perfil": 33,
     "exclusion": 3,
-    "zona": 11
+    "zona": 10
    },
    "muestra": [
     {
@@ -180,9 +180,19 @@
      "motivo": "perfil"
     },
     {
+     "titulo": "Vendedor Técnico con Experiencia en Sistemas…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
      "titulo": "Inspector(a) de Correas Transportadoras – Nueva…",
      "ubicacion": "Calama",
      "motivo": "zona"
+    },
+    {
+     "titulo": "INGENIERO/A AGRÓNOMO/A - ENCARGADO/A DE OPERACIONES…",
+     "ubicacion": "Rancagua",
+     "motivo": "perfil"
     },
     {
      "titulo": "Ingeniero de Desarrollo de Software",
@@ -205,18 +215,8 @@
      "motivo": "perfil"
     },
     {
-     "titulo": "Cuidador/a de Adulto Mayor con licencia…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Asistente de Gestión Contractual con conocimientos…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Asistente Contable - Antofagasta",
-     "ubicacion": "Antofagasta",
+     "titulo": "MAESTRO SUSHERO / SUSHI",
+     "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
@@ -305,16 +305,16 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 2,
+   "resultados": 6,
    "errores": [],
    "descartados": {
-    "perfil": 1
+    "exclusion": 1
    },
    "muestra": [
     {
-     "titulo": "Asistente de Información Territorial y SIG - NPSA5",
-     "ubicacion": "Santiago de Chile, RM, Chile",
-     "motivo": "perfil"
+     "titulo": "Técnico en Enfermería SEL - Centro Castro Achs Salud",
+     "ubicacion": "Castro, LL, Chile",
+     "motivo": "exclusion"
     }
    ]
   },
