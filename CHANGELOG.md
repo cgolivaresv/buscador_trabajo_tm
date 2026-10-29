@@ -2,6 +2,11 @@
 
 La versión aparece al pie de la página: **Página** es la versión de `docs/index.html` y **Buscador** la del script que hizo el último chequeo (`buscador/__init__.py`). Cada cambio sube el número en ambos lados.
 
+## 1.10.0 · 2026-10-29
+- Nuevo sitio: Laborum (laborum.cl), mediante la misma API que usa su buscador.
+- Empleos Públicos: su robots.txt no permite revisión automática del servicio de avisos, así que no se incluye; la página tiene un acceso directo al portal.
+- Diagnóstico de fuentes generalizado (Actions → Diagnóstico de fuentes).
+
 ## 1.9.0 · 2026-10-29
 - Detalle del aviso cuando el sitio lo muestra: renta, jornada (part time, turnos 7x7…), tipo de contrato (reemplazo, indefinido…) y fecha de cierre.
 - Duplicados entre sitios: el mismo aviso (mismo cargo y empresa) publicado en varios portales aparece una sola vez, con enlaces "También en…". Sin empresa conocida no se agrupa, para no juntar avisos distintos.

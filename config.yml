@@ -182,6 +182,7 @@ sitios:
   chiletrabajos: true
   trabajando: true
   indeed: true
+  laborum: true
 
 # Abre un issue en GitHub con los avisos nuevos (GitHub te avisa por correo).
 notificar_issue: true
