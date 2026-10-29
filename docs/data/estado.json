@@ -1,7 +1,7 @@
 {
  "version": "1.16.0",
- "ultimo_chequeo": "2026-10-29T21:51:46+00:00",
- "nuevos": 1,
+ "ultimo_chequeo": "2026-10-29T22:51:01+00:00",
+ "nuevos": 0,
  "total": 30,
  "palabras_clave": [
   "tecnólogo médico resonancia",
@@ -297,23 +297,23 @@
      "motivo": "perfil"
     },
     {
-     "titulo": "Ejecutivo de Venta Automotriz - Concepción",
-     "ubicacion": "Concepción, Biobío",
+     "titulo": "Ejecutivo de Venta Automotriz - Chillán",
+     "ubicacion": "Chillán, Ñuble",
      "motivo": "perfil"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 6,
+   "resultados": 5,
    "errores": [],
    "descartados": {
     "exclusion": 1
    },
    "muestra": [
     {
-     "titulo": "Técnico en Enfermería SEL - Centro Castro Achs Salud",
-     "ubicacion": "Castro, LL, Chile",
+     "titulo": "Técnico en Enfermería SEL - Centro Viña del Mar Achs Salud",
+     "ubicacion": "Viña del Mar, VS, Chile",
      "motivo": "exclusion"
     }
    ]
