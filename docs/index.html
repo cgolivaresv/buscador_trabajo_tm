@@ -74,6 +74,7 @@ button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{ou
 .pill.nuevo{background:var(--new-soft);color:var(--new)}
 .pill.visto{background:var(--accent-soft);color:var(--accent)}
 .pill.postule{background:var(--ok-soft);color:var(--ok)}
+.prio{color:var(--new);font-size:14px;margin-right:4px}
 .pill.descartado{color:var(--off);border:1px solid var(--line)}
 .job.descartado a{color:var(--off)}
 .actions{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px}
@@ -103,6 +104,7 @@ button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{ou
     <summary><h2>Qué se está buscando</h2><span class="resumen" id="resumen"></span></summary>
     <div class="panel-body">
     <div class="chips" id="palabras"></div>
+    <p class="hint" id="zona"></p>
     <div class="sites" id="sitios"></div>
     <p class="hint">Se revisa cada hora, de 7:00 a 22:00. Para cambiar palabras clave, zonas o sitios, edita <a id="cfgLink" href="#">config.yml</a>. Los estados (visto, postulé, descartado) se guardan en este navegador.</p>
     </div>
@@ -127,9 +129,9 @@ button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{ou
 </div>
 
 <script>
-const VERSION="1.6.0";
+const VERSION="1.7.0";
 const NOM={linkedin:"linkedin.com",computrabajo:"computrabajo.cl",chiletrabajos:"chiletrabajos.cl",trabajando:"trabajando.cl",indeed:"indeed.com"};
-const TABS=[["activos","Activos"],["nuevo","Nuevos"],["visto","Vistos"],["postule","Postulé"],["descartado","Descartados"]];
+const TABS=[["activos","Activos"],["prioritarios","⭐ Prioritarios"],["nuevo","Nuevos"],["visto","Vistos"],["postule","Postulé"],["descartado","Descartados"]];
 const LAB={nuevo:"Nuevo",visto:"Visto",postule:"Postulé",descartado:"Descartado"};
 const KEY="buscador-tm-estados";
 let avisos=[],tab="activos",sitioF="",q="";
@@ -156,10 +158,11 @@ function filtrados(){return avisos.filter(a=>(!sitioF||a.sitio===sitioF)&&(!q||n
 function render(){
   const pool=filtrados();
   const t=$("tabs");t.replaceChildren();
-  TABS.forEach(([id,l])=>{const n=id==="activos"?pool.filter(a=>estado(a)!=="descartado").length:pool.filter(a=>estado(a)===id).length;
+  const enTab=(a,id)=>id==="activos"?estado(a)!=="descartado":id==="prioritarios"?(a.afinidad===3&&estado(a)!=="descartado"):estado(a)===id;
+  TABS.forEach(([id,l])=>{const n=pool.filter(a=>enTab(a,id)).length;
     const b=document.createElement("button");b.className="tab";b.type="button";b.setAttribute("aria-pressed",String(tab===id));b.textContent=`${l} ${n}`;
     b.onclick=()=>{tab=id;render()};t.append(b)});
-  const lista=pool.filter(a=>tab==="activos"?estado(a)!=="descartado":estado(a)===tab);
+  const lista=pool.filter(a=>enTab(a,tab)).sort((x,y)=>((y.afinidad||1)-(x.afinidad||1))||String(y.encontrado||"").localeCompare(String(x.encontrado||"")));
   const box=$("lista");box.replaceChildren();
   if(!lista.length){const e=document.createElement("div");e.className="empty";
     const s=document.createElement("strong"),p=document.createElement("span");
@@ -168,13 +171,15 @@ function render(){
     e.append(s,p);box.append(e);return}
   lista.forEach(a=>{const st=estado(a);const row=document.createElement("article");row.className="job "+st;
     const m=document.createElement("div");m.className="main";
+    const titulo=document.createElement("div");
+    if(a.afinidad===3){const st_=document.createElement("span");st_.className="prio";st_.textContent="★";st_.title="Prioritario: calza con tu foco en resonancia";titulo.append(st_)}
     const link=document.createElement("a");link.href=a.url;link.target="_blank";link.rel="noopener";link.textContent=a.titulo;
     link.onclick=()=>{if(st==="nuevo"){est[a.id]="visto";guardar();setTimeout(render,50)}};
     const meta=document.createElement("div");meta.className="meta";
     [a.empresa,a.ubicacion].filter(Boolean).forEach(x=>{const s=document.createElement("span");s.textContent=x;meta.append(s)});
     const src=document.createElement("span");src.className="src";src.textContent=NOM[a.sitio]||a.sitio;meta.append(src);
     const f=document.createElement("span");f.textContent="Encontrado "+fmt(a.encontrado);meta.append(f);
-    m.append(link,meta);
+    titulo.append(link);m.append(titulo,meta);
     const pill=document.createElement("span");pill.className="pill "+st;pill.textContent=LAB[st];
     const acts=document.createElement("div");acts.className="actions";
     [["visto","Marcar visto"],["postule","Postulé"],["descartado","Descartar"],["nuevo","Volver a nuevo"]].filter(([s])=>s!==st).forEach(([s,l])=>{
@@ -186,9 +191,10 @@ function render(){
 function renderEstado(e){
   $("vBuscador").textContent=e.version?"v"+e.version:"anterior a 1.2.0";
   $("ultimo").textContent=fmt(e.ultimo_chequeo);$("nuevosN").textContent=e.nuevos??"—";
+  $("zona").textContent=e.zona?"Zona: "+e.zona:"Zona: todo Chile";
   const p=$("palabras");p.replaceChildren();(e.palabras_clave||[]).forEach(k=>{const c=document.createElement("span");c.className="chip";c.textContent=k;p.append(c)});
   const ok=Object.values(e.sitios||{}).filter(v=>v.resultados>0).length,tot=Object.keys(e.sitios||{}).length;
-  $("resumen").textContent=`${(e.palabras_clave||[]).length} palabras · ${ok}/${tot} sitios con resultados`;
+  $("resumen").textContent=`${(e.palabras_clave||[]).length} palabras · ${e.zona||"todo Chile"} · ${ok}/${tot} sitios con resultados`;
   const s=$("sitios");s.replaceChildren();
   Object.entries(e.sitios||{}).forEach(([k,v])=>{const d=document.createElement("div");const mal=v.errores&&v.errores.length;
     d.className="site"+(mal&&!v.resultados?" err":"");

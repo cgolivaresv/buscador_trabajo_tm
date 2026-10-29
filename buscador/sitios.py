@@ -107,11 +107,19 @@ def computrabajo(s, palabra: str) -> list[Aviso]:
         emp_a = art.select_one("p a[offer-grid-article-company-url], p.dIB a, p a.fc_base")
         if emp_a:
             empresa = limpio(emp_a.get_text(" "))
-        span = art.select_one("p span.mr10")
-        if span:
-            ubic = limpio(span.get_text(" "))
-        elif len(ps) > 1:
-            ubic = limpio(ps[1].get_text(" "))
+        # La ubicación es el primer texto que no sea la nota de la empresa (4,2),
+        # la fecha ("Hace 2 horas") ni el nombre de la empresa.
+        for el in art.select("p span") + ps[1:]:
+            txt = limpio(el.get_text(" "))
+            if (
+                not txt
+                or re.fullmatch(r"[\d.,\s]+", txt)
+                or txt.lower().startswith(("hace", "ayer", "hoy"))
+                or (empresa and empresa in txt)
+            ):
+                continue
+            ubic = re.sub(r"^[\d.,\s]+", "", txt)
+            break
         fecha = art.select_one("p.fs13, p.fc_aux")
         out.append(
             Aviso(

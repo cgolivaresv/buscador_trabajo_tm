@@ -2,6 +2,16 @@
 
 La versión aparece al pie de la página: **Página** es la versión de `docs/index.html` y **Buscador** la del script que hizo el último chequeo (`buscador/__init__.py`). Cada cambio sube el número en ambos lados.
 
+## 1.7.0 · 2026-10-29
+- Palabras clave basadas en el CV: resonancia, imagenología, scanner, radiología, especialista de aplicaciones, coordinación y jefatura de imagenología.
+- Perfil objetivo: cada aviso se clasifica como ⭐ prioritario (resonancia) o afín (imagenología, TC, radiología, fabricantes de equipos). Con `solo_afines: true` se descarta el resto. La página los ordena primero y tiene la pestaña "Prioritarios"; el issue también los marca.
+- Zona de interés de Santiago a Valdivia (RM, O'Higgins, Maule, Ñuble, Biobío, Araucanía y Los Ríos). Los avisos que solo indican comuna o "Chile" se mantienen.
+- La configuración se vuelve a aplicar al historial en cada chequeo, y los datos de cada aviso se refrescan con lo último que muestra el sitio.
+- Computrabajo: la ubicación ya no se confunde con la nota de la empresa ("4,2").
+- Las ciudades fuera de zona también se detectan en el título ("…para Calama").
+- Los fabricantes de equipos (Siemens, GE, Philips…) cuentan como afines solo para cargos técnico-clínicos.
+- Nuevas exclusiones: técnico en imagen*, técnico radiólogo, administrativ*, ginecolog*.
+
 ## 1.6.0 · 2026-10-29
 - Palabras clave definitivas (8 términos en 4 grupos: resonancia, imagenología y TC, especialista de aplicaciones, jefatura).
 - Exclusiones: TENS, técnico en enfermería, auxiliar, laboratorio, banco de sangre, oftalmología, otorrino. Se comparan por palabra completa ("TENS" ya no descarta "intensivo"), aceptan * como prefijo y también limpian el historial.

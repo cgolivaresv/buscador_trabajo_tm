@@ -18,8 +18,10 @@ Todo se ajusta en [`config.yml`](config.yml), editándolo directo en GitHub:
 | Campo | Para qué sirve |
 |---|---|
 | `palabras_clave` | Términos que se buscan en cada sitio |
-| `excluir` | Palabras que, si aparecen en el título, descartan el aviso |
-| `ubicaciones` | Zonas aceptadas (vacío = todo Chile) |
+| `perfil` | Términos que marcan un aviso como ⭐ prioritario o afín |
+| `solo_afines` | Descartar los avisos que no calzan con el perfil |
+| `excluir` | Términos que, si aparecen en el título, descartan el aviso |
+| `ubicaciones` / `ubicaciones_excluir` | Zonas aceptadas y zonas descartadas (vacío = todo Chile) |
 | `sitios` | Activar o desactivar cada portal |
 | `notificar_issue` | Abrir un issue cuando haya avisos nuevos |
 | `dias_retencion` | Días sin ver un aviso antes de borrarlo del historial |

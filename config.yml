@@ -1,26 +1,90 @@
 # Configuración del buscador. Edita este archivo directamente en GitHub
 # y el próximo chequeo (cada hora, de 7:00 a 22:00) usará los valores nuevos.
 
-# Términos que se buscan en cada sitio (uno por línea). Cada término se
-# busca en 5 sitios cada hora: conviene no pasar de unos 8.
+# ---------------------------------------------------------------------------
+# PALABRAS CLAVE (según CV: TM en Imagenología y Física Médica, 14 años en RM,
+# experiencia en TC y radiografía, gestión de sucursal)
+# Cada término se busca en 5 sitios cada hora: conviene no pasar de unos 8.
+# ---------------------------------------------------------------------------
 palabras_clave:
-  # Núcleo: resonancia magnética
+  # Foco principal: resonancia magnética
   - tecnólogo médico resonancia
   - resonancia magnética
-  - resonador
-  # Imagenología general y TC
+  # Imagenología general, TC y radiografía
   - tecnólogo médico imagenología
   - tecnólogo médico scanner
-  # Empresas de equipos (Siemens Healthineers, GE, etc.)
+  - tecnólogo médico radiología
+  # Empresas de equipos (Siemens Healthineers, GE HealthCare, Philips…)
   - especialista de aplicaciones
   # Jefatura y coordinación
   - coordinador imagenología
-  - jefe resonancia
+  - jefe imagenología
+
+# ---------------------------------------------------------------------------
+# PERFIL OBJETIVO: clasifica cada aviso según su título (y la empresa, para
+# "afin"). Se compara sin tildes ni mayúsculas, por palabra completa; con *
+# al final acepta cualquier palabra que empiece así.
+#   prioritario → se marca con ⭐ y aparece primero
+#   afin        → aviso relacionado con tu formación
+# ---------------------------------------------------------------------------
+perfil:
+  prioritario:
+    - resonancia*
+    - resonador*
+    - cardioresonancia
+    - RM
+    - RMN
+    - MRI
+    - MR
+    - Siemens Healthineers
+    - GE HealthCare
+  afin:
+    - imagenolog*
+    - imagen
+    - imagenes
+    - scanner
+    - escáner
+    - tomograf*
+    - TC
+    - TAC
+    - radiolog*
+    - rayos
+    - radiograf*
+    - mamograf*
+    - ecograf*
+    - densitometr*
+    - física médica
+    - especialista clínico
+    - tecnólogo médico
+    - tecnologo medico
+    - TM
+  # Fabricantes de equipos: un aviso de estas empresas cuenta como afín solo si
+  # el título calza con "cargos_en_esas_empresas" (evita cargos de finanzas, TI…).
+  empresas_del_rubro:
+    - Siemens*
+    - GE HealthCare
+    - Philips
+    - Canon Medical
+    - United Imaging
+    - Fujifilm
+    - Agfa
+  cargos_en_esas_empresas:
+    - aplicacion*
+    - application*
+    - clinic*
+    - especialista
+    - specialist
+    - tecnolog*
+    - technolog*
+    - educacion*
+    - education*
+
+# true = descarta los avisos que no calzan ni con "prioritario" ni con "afin"
+# (filtra ruido como cargos de ventas o avisos de otras áreas).
+solo_afines: true
 
 # Se descartan los avisos cuyo título contenga alguno de estos términos
-# (sin importar tildes ni mayúsculas). Se compara por palabra completa;
-# con * al final, acepta cualquier palabra que empiece así (otorrino* →
-# otorrinolaringología). También se limpian del historial ya guardado.
+# (mismas reglas de comparación que el perfil). También limpia el historial.
 excluir:
   - TENS
   - técnico en enfermería
@@ -29,12 +93,87 @@ excluir:
   - banco de sangre
   - oftalmolog*
   - otorrino*
+  - técnico en imagen*
+  - administrativ*
+  - técnico radiólogo
+  - ginecolog*
 
-# Deja la lista vacía para aceptar avisos de todo Chile.
-# Si agregas zonas, solo se guardan avisos cuya ubicación contenga alguna
-# de ellas (los avisos sin ubicación declarada se guardan igual).
-# Ejemplo: [Talca, Maule, Santiago]
-ubicaciones: []
+# ---------------------------------------------------------------------------
+# ZONA DE INTERÉS: de Santiago a Valdivia.
+# Se acepta un aviso si su ubicación nombra alguna zona de "ubicaciones";
+# se descarta si nombra alguna de "ubicaciones_excluir"; si no nombra ninguna
+# conocida (por ejemplo, solo la comuna o solo "Chile"), se acepta igual.
+# Deja "ubicaciones" vacío para aceptar todo Chile.
+# ---------------------------------------------------------------------------
+zona_nombre: Santiago a Valdivia
+ubicaciones:
+  # Región Metropolitana
+  - metropolitan*
+  - santiago
+  - RM
+  # O'Higgins
+  - higgins
+  - libertador*
+  - rancagua
+  - san fernando
+  # Maule
+  - maule
+  - talca
+  - curico
+  - linares
+  - cauquenes
+  - constitucion
+  # Ñuble
+  - nuble
+  - chillan
+  # Biobío
+  - biobio
+  - bio bio
+  - concepcion
+  - talcahuano
+  - los angeles
+  - coronel
+  # Araucanía
+  - araucania
+  - temuco
+  - angol
+  - villarrica
+  # Los Ríos
+  - los rios
+  - valdivia
+ubicaciones_excluir:
+  - arica
+  - parinacota
+  - tarapaca
+  - iquique
+  - antofagasta
+  - calama
+  - atacama
+  - copiapo
+  - coquimbo
+  - la serena
+  - ovalle
+  - valparaiso
+  - vina del mar
+  - quilpue
+  - quillota
+  - los andes
+  - san antonio
+  - los lagos
+  - puerto montt
+  - osorno
+  - chiloe
+  - castro
+  - aysen
+  - aisen
+  - coyhaique
+  - magallanes
+  - punta arenas
+  - taltal
+  - mejillones
+  - tocopilla
+  - vallenar
+  - illapel
 
 # Sitios a revisar (true = activo).
 sitios:

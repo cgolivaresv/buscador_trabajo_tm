@@ -39,15 +39,24 @@ def cargar_config() -> dict:
     cfg.setdefault("palabras_clave", [])
     cfg.setdefault("excluir", [])
     cfg.setdefault("ubicaciones", [])
+    cfg.setdefault("ubicaciones_excluir", [])
+    cfg.setdefault("perfil", {})
+    cfg.setdefault("solo_afines", False)
     cfg.setdefault("sitios", {k: True for k in LECTORES})
     cfg.setdefault("dias_retencion", 60)
-    cfg["_excluir"] = [p for p in map(_patron_exclusion, cfg["excluir"] or []) if p]
+    cfg["_excluir"] = _patrones(cfg["excluir"])
+    cfg["_zona_si"] = _patrones(cfg["ubicaciones"])
+    cfg["_zona_no"] = _patrones(cfg["ubicaciones_excluir"])
+    cfg["_prioritario"] = _patrones((cfg["perfil"] or {}).get("prioritario"))
+    cfg["_afin"] = _patrones((cfg["perfil"] or {}).get("afin"))
+    cfg["_empresas"] = _patrones((cfg["perfil"] or {}).get("empresas_del_rubro"))
+    cfg["_cargos_empresa"] = _patrones((cfg["perfil"] or {}).get("cargos_en_esas_empresas"))
     return cfg
 
 
-def _patron_exclusion(termino: str) -> re.Pattern | None:
-    """Palabra completa; con * al final, cualquier palabra que empiece así."""
-    t = normalizar(termino)
+def _patron(termino: str) -> re.Pattern | None:
+    """Palabra o frase completa; con * al final, cualquier palabra que empiece así."""
+    t = normalizar(str(termino))
     if not t:
         return None
     prefijo = t.endswith("*")
@@ -55,16 +64,34 @@ def _patron_exclusion(termino: str) -> re.Pattern | None:
     return re.compile(rf"\b{t}" + ("" if prefijo else r"\b"))
 
 
-def pasa_filtros(titulo: str, ubicacion: str, cfg) -> bool:
+def _patrones(lista) -> list[re.Pattern]:
+    return [p for p in map(_patron, lista or []) if p]
+
+
+def evaluar(titulo: str, ubicacion: str, empresa: str, cfg) -> int:
+    """0 = se descarta; 1 = sin relación con el perfil; 2 = afín; 3 = prioritario."""
     tit = normalizar(titulo)
     if any(p.search(tit) for p in cfg["_excluir"]):
-        return False
-    zonas = [normalizar(z) for z in cfg["ubicaciones"] or [] if normalizar(z)]
-    if zonas and ubicacion:
-        ub = normalizar(ubicacion)
-        if not any(z in ub for z in zonas):
-            return False
-    return True
+        return 0
+    ub = normalizar(ubicacion)
+    if re.fullmatch(r"[\d.,\s]*", ub):  # sin ubicación o con un dato que no lo es
+        ub = ""
+    # Zona: se acepta si la ubicación nombra una zona de interés; se descarta si la
+    # ubicación o el título ("…para Calama") nombran una zona fuera de interés; si no
+    # nombran ninguna conocida (p. ej. solo la comuna), se acepta.
+    if cfg["_zona_si"] and not (ub and any(p.search(ub) for p in cfg["_zona_si"])):
+        if any(p.search(ub) or p.search(tit) for p in cfg["_zona_no"]):
+            return 0
+    if any(p.search(tit) for p in cfg["_prioritario"]):
+        return 3
+    if any(p.search(tit) for p in cfg["_afin"]):
+        return 2
+    # Fabricantes de equipos: cuenta como afín solo si el cargo es técnico-clínico.
+    if any(p.search(normalizar(empresa)) for p in cfg["_empresas"]) and any(
+        p.search(tit) for p in cfg["_cargos_empresa"]
+    ):
+        return 2
+    return 0 if cfg["solo_afines"] else 1
 
 
 def main() -> int:
@@ -97,7 +124,10 @@ def main() -> int:
                 continue
             st["resultados"] += len(avisos)
             for av in avisos:
-                if not av.titulo or not av.url or not pasa_filtros(av.titulo, av.ubicacion, cfg):
+                if not av.titulo or not av.url:
+                    continue
+                afinidad = evaluar(av.titulo, av.ubicacion, av.empresa, cfg)
+                if not afinidad:
                     continue
                 d = encontrados.get(av.id)
                 if d:
@@ -113,6 +143,7 @@ def main() -> int:
                     "ubicacion": av.ubicacion,
                     "publicado": av.publicado,
                     "palabras": [palabra],
+                    "afinidad": afinidad,
                 }
         estado_sitios[sitio] = st
         print(f"{NOMBRES[sitio]}: {st['resultados']} resultados, {len(st['errores'])} errores")
@@ -127,8 +158,8 @@ def main() -> int:
             for p in d["palabras"]:
                 if p not in h.setdefault("palabras", []):
                     h["palabras"].append(p)
-            for k in ("empresa", "ubicacion", "publicado"):
-                if d[k] and not h.get(k):
+            for k in ("titulo", "empresa", "ubicacion", "publicado"):
+                if d[k]:  # se refresca con lo último que muestra el sitio
                     h[k] = d[k]
         else:
             d["encontrado"] = t
@@ -137,11 +168,13 @@ def main() -> int:
             nuevos.append(d)
 
     limite = datetime.now(timezone.utc) - timedelta(days=int(cfg["dias_retencion"]))
+    # El historial se vuelve a evaluar en cada chequeo, por si cambió la configuración.
+    for v in historial.values():
+        v["afinidad"] = evaluar(v.get("titulo", ""), v.get("ubicacion", ""), v.get("empresa", ""), cfg)
     historial = {
         k: v
         for k, v in historial.items()
-        if datetime.fromisoformat(v.get("visto_ultima_vez", t)) >= limite
-        and pasa_filtros(v.get("titulo", ""), v.get("ubicacion", ""), cfg)
+        if datetime.fromisoformat(v.get("visto_ultima_vez", t)) >= limite and v["afinidad"]
     }
 
     lista = sorted(historial.values(), key=lambda a: a.get("encontrado", ""), reverse=True)
@@ -157,6 +190,7 @@ def main() -> int:
                 "nuevos": len(nuevos),
                 "total": len(lista),
                 "palabras_clave": cfg["palabras_clave"],
+                "zona": cfg.get("zona_nombre") or "",
                 "sitios": estado_sitios,
             },
             ensure_ascii=False,
@@ -170,10 +204,11 @@ def main() -> int:
     # En la primera ejecución todo es "nuevo": se guarda como base sin avisar.
     if args.nuevos and nuevos and not primera_vez:
         lineas = [f"Se encontraron **{len(nuevos)}** avisos nuevos.\n"]
-        for d in nuevos:
+        for d in sorted(nuevos, key=lambda x: -x.get("afinidad", 1)):
             extra = " · ".join(x for x in (d["empresa"], d["ubicacion"]) if x)
+            marca = "⭐ " if d.get("afinidad") == 3 else ""
             lineas.append(
-                f"- [{d['titulo']}]({d['url']}) — {NOMBRES.get(d['sitio'], d['sitio'])}"
+                f"- {marca}[{d['titulo']}]({d['url']}) — {NOMBRES.get(d['sitio'], d['sitio'])}"
                 + (f" · {extra}" if extra else "")
             )
         Path(args.nuevos).write_text("\n".join(lineas) + "\n", encoding="utf-8")
