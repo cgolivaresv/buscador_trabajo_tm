@@ -2,6 +2,12 @@
 
 La versión aparece al pie de la página: **Página** es la versión de `docs/index.html` y **Buscador** la del script que hizo el último chequeo (`buscador/__init__.py`). Cada cambio sube el número en ambos lados.
 
+## 1.9.0 · 2026-10-29
+- Detalle del aviso cuando el sitio lo muestra: renta, jornada (part time, turnos 7x7…), tipo de contrato (reemplazo, indefinido…) y fecha de cierre.
+- Duplicados entre sitios: el mismo aviso (mismo cargo y empresa) publicado en varios portales aparece una sola vez, con enlaces "También en…". Sin empresa conocida no se agrupa, para no juntar avisos distintos.
+- Avisos cerrados: si pasó la fecha de cierre, se mueven a la pestaña "Cerrados". Si un aviso no aparece en las búsquedas hace 4 días o más, se indica y se muestra al final (puede seguir abierto: algunos sitios solo muestran avisos recientes).
+- El issue de avisos nuevos omite duplicados e incluye renta, jornada y los otros sitios donde aparece.
+
 ## 1.8.0 · 2026-10-29
 - Se registra, por palabra clave y por sitio, cada aviso encontrado y si resultó útil (afín o prioritario) o se descartó, en `docs/data/estadisticas.json`. Sirve para medir qué palabras aportan avisos útiles.
 

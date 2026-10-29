@@ -95,6 +95,71 @@ def evaluar(titulo: str, ubicacion: str, empresa: str, cfg) -> int:
     return 0 if cfg["solo_afines"] else 1
 
 
+_GENERO = re.compile(r"\((?:a|as|o|os)\)|/(?:a|as|o|os)\b|\bo/a\b")
+_SIN_EMPRESA = {"", "confidencial", "empresa confidencial", "importante empresa", "reservado"}
+
+
+def firma(d: dict) -> str | None:
+    """Clave para reconocer el mismo aviso en distintos sitios: título + empresa.
+    Sin empresa conocida no se agrupa, para no juntar avisos distintos."""
+    emp = normalizar(d.get("empresa"))
+    emp = re.sub(r"\b(s\.?a\.?|spa|ltda|limitada|chile)\b|[^a-z0-9 ]", " ", emp)
+    emp = re.sub(r"\s+", " ", emp).strip()
+    if emp in _SIN_EMPRESA:
+        return None
+    tit = _GENERO.sub("", normalizar(d.get("titulo")))
+    tit = re.sub(r"[^a-z0-9 ]", " ", tit)
+    tit = re.sub(r"\s+", " ", tit).strip()
+    return f"{tit}|{emp}" if tit else None
+
+
+def agrupar_duplicados(historial: dict[str, dict]) -> None:
+    """Marca como duplicado el mismo aviso publicado en otro sitio. Queda como principal
+    el que se encontró primero; los demás se listan en su campo "tambien_en"."""
+    grupos: dict[str, list[dict]] = {}
+    for d in historial.values():
+        d.pop("duplicado_de", None)
+        d.pop("tambien_en", None)
+        f = firma(d)
+        if f:
+            grupos.setdefault(f, []).append(d)
+    for miembros in grupos.values():
+        if len({m["sitio"] for m in miembros}) < 2:
+            continue  # dentro de un mismo sitio pueden ser vacantes distintas
+        miembros.sort(key=lambda m: m.get("encontrado", ""))
+        principal = miembros[0]
+        vistos = {principal["sitio"]}
+        for m in miembros[1:]:
+            m["duplicado_de"] = principal["id"]
+            if m["sitio"] not in vistos:
+                principal.setdefault("tambien_en", []).append({"sitio": m["sitio"], "url": m["url"]})
+                vistos.add(m["sitio"])
+            for k in ("renta", "jornada", "contrato", "cierre"):
+                if m.get(k) and not principal.get(k):
+                    principal[k] = m[k]
+
+
+DIAS_SIN_VER = 4
+
+
+def marcar_vigencia(historial: dict[str, dict], estado_sitios: dict, t: str) -> None:
+    """vigente / sin_ver (no aparece hace DIAS_SIN_VER días o más) / cerrado (pasó la
+    fecha de cierre). "sin_ver" no prueba que esté cerrado: las búsquedas de algunos
+    sitios solo muestran avisos recientes. Si el sitio falló en este chequeo, no se marca."""
+    ahora_dt = datetime.fromisoformat(t)
+    hoy = ahora_dt.astimezone(timezone(timedelta(hours=-3))).date().isoformat()
+    for d in historial.values():
+        d["vigencia"], d["dias_sin_ver"] = "vigente", 0
+        cierre = (d.get("cierre") or "")[:10]
+        if re.fullmatch(r"\d{4}-\d{2}-\d{2}", cierre) and cierre < hoy:
+            d["vigencia"] = "cerrado"
+            continue
+        sitio_ok = estado_sitios.get(d["sitio"], {}).get("resultados", 0) > 0
+        dias = (ahora_dt - datetime.fromisoformat(d.get("visto_ultima_vez", t))).days
+        if sitio_ok and dias >= DIAS_SIN_VER:
+            d["vigencia"], d["dias_sin_ver"] = "sin_ver", dias
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--nuevos", help="escribe aquí un resumen Markdown de los avisos nuevos")
@@ -157,6 +222,10 @@ def main() -> int:
                     "publicado": av.publicado,
                     "palabras": [palabra],
                     "afinidad": afinidad,
+                    "renta": av.renta,
+                    "jornada": av.jornada,
+                    "contrato": av.contrato,
+                    "cierre": av.cierre,
                 }
         estado_sitios[sitio] = st
         print(f"{NOMBRES[sitio]}: {st['resultados']} resultados, {len(st['errores'])} errores")
@@ -171,8 +240,8 @@ def main() -> int:
             for p in d["palabras"]:
                 if p not in h.setdefault("palabras", []):
                     h["palabras"].append(p)
-            for k in ("titulo", "empresa", "ubicacion", "publicado"):
-                if d[k]:  # se refresca con lo último que muestra el sitio
+            for k in ("titulo", "empresa", "ubicacion", "publicado", "renta", "jornada", "contrato", "cierre"):
+                if d.get(k):  # se refresca con lo último que muestra el sitio
                     h[k] = d[k]
         else:
             d["encontrado"] = t
@@ -189,6 +258,13 @@ def main() -> int:
         for k, v in historial.items()
         if datetime.fromisoformat(v.get("visto_ultima_vez", t)) >= limite and v["afinidad"]
     }
+
+    marcar_vigencia(historial, estado_sitios, t)
+    agrupar_duplicados(historial)
+    nuevos = [
+        d for d in nuevos
+        if d["id"] in historial and not d.get("duplicado_de") and d.get("vigencia") != "cerrado"
+    ]
 
     lista = sorted(historial.values(), key=lambda a: a.get("encontrado", ""), reverse=True)
     AVISOS.write_text(
@@ -222,7 +298,11 @@ def main() -> int:
     if args.nuevos and nuevos and not primera_vez:
         lineas = [f"Se encontraron **{len(nuevos)}** avisos nuevos.\n"]
         for d in sorted(nuevos, key=lambda x: -x.get("afinidad", 1)):
-            extra = " · ".join(x for x in (d["empresa"], d["ubicacion"]) if x)
+            extra = " · ".join(x for x in (d["empresa"], d["ubicacion"], d.get("renta"), d.get("jornada")) if x)
+            if d.get("tambien_en"):
+                extra += " · también en " + ", ".join(
+                    f"[{NOMBRES.get(o['sitio'], o['sitio'])}]({o['url']})" for o in d["tambien_en"]
+                )
             marca = "⭐ " if d.get("afinidad") == 3 else ""
             lineas.append(
                 f"- {marca}[{d['titulo']}]({d['url']}) — {NOMBRES.get(d['sitio'], d['sitio'])}"

@@ -46,16 +46,28 @@ def _desde_json_ld(sitio: str, html: str, base: str) -> list[Aviso]:
         ubic = ", ".join(
             x for x in (addr.get("addressLocality"), addr.get("addressRegion")) if isinstance(x, str) and x
         )
-        out.append(
-            Aviso(
-                sitio=sitio,
-                titulo=limpio(o["title"]),
-                url=urljoin(base, url),
-                empresa=limpio(org.get("name") if isinstance(org, dict) else ""),
-                ubicacion=ubic,
-                publicado=str(o.get("datePosted") or ""),
-            )
+        av = Aviso(
+            sitio=sitio,
+            titulo=limpio(o["title"]),
+            url=urljoin(base, url),
+            empresa=limpio(org.get("name") if isinstance(org, dict) else ""),
+            ubicacion=ubic,
+            publicado=str(o.get("datePosted") or ""),
+            cierre=str(o.get("validThrough") or "")[:10],
         )
+        sal = o.get("baseSalary")
+        if isinstance(sal, dict):
+            val = sal.get("value")
+            if isinstance(val, dict):
+                lo, hi = val.get("minValue"), val.get("maxValue") or val.get("value")
+                if lo or hi:
+                    av.renta = " a ".join(f"${int(float(x)):,}".replace(",", ".") for x in (lo, hi) if x)
+        tipo = o.get("employmentType")
+        if isinstance(tipo, list):
+            tipo = ", ".join(map(str, tipo))
+        if isinstance(tipo, str):
+            av.completar_desde_texto(tipo.replace("_", " "))
+        out.append(av.completar_desde_texto(""))
     return out
 
 
@@ -85,7 +97,7 @@ def linkedin(s, palabra: str) -> list[Aviso]:
                 empresa=limpio(emp.get_text(" ") if emp else ""),
                 ubicacion=limpio(loc.get_text(" ") if loc else ""),
                 publicado=(fecha.get("datetime") or "") if fecha else "",
-            )
+            ).completar_desde_texto("")
         )
     return out
 
@@ -116,6 +128,7 @@ def computrabajo(s, palabra: str) -> list[Aviso]:
                 or re.fullmatch(r"[\d.,\s]+", txt)
                 or txt.lower().startswith(("hace", "ayer", "hoy"))
                 or (empresa and empresa in txt)
+                or "$" in txt
             ):
                 continue
             ubic = re.sub(r"^[\d.,\s]+", "", txt)
@@ -129,7 +142,7 @@ def computrabajo(s, palabra: str) -> list[Aviso]:
                 empresa=empresa,
                 ubicacion=ubic,
                 publicado=limpio(fecha.get_text(" ")) if fecha else "",
-            )
+            ).completar_desde_texto(art.get_text(" "))
         )
     if not out:
         out = _desde_json_ld("computrabajo", html, base) or _enlaces_genericos(
@@ -166,7 +179,7 @@ def chiletrabajos(s, palabra: str) -> list[Aviso]:
                 empresa=empresa,
                 ubicacion=ubic,
                 publicado=limpio(fecha.get_text(" ")) if fecha else "",
-            )
+            ).completar_desde_texto(item.get_text(" "))
         )
     if not out:
         out = _desde_json_ld("chiletrabajos", html, base) or _enlaces_genericos(
@@ -224,16 +237,29 @@ def _trabajando_json(data, base: str) -> list[Aviso]:
         emp = o.get("nombreEmpresa") or o.get("empresa") or ""
         if isinstance(emp, dict):
             emp = emp.get("nombre") or ""
-        out.append(
-            Aviso(
-                sitio="trabajando",
-                titulo=limpio(tit),
-                url=f"{base}/trabajo/{oid}-{_slug(tit)}",
-                empresa=limpio(str(emp)),
-                ubicacion=_ubicacion_trabajando(o),
-                publicado=str(o.get("fechaPublicacion") or o.get("fecha") or ""),
-            )
+        av = Aviso(
+            sitio="trabajando",
+            titulo=limpio(tit),
+            url=f"{base}/trabajo/{oid}-{_slug(tit)}",
+            empresa=limpio(str(emp)),
+            ubicacion=_ubicacion_trabajando(o),
+            publicado=str(o.get("fechaPublicacion") or o.get("fecha") or ""),
         )
+        # Detalle: se buscan campos por nombre aproximado, ya que el formato no es público.
+        extra = []
+        for k, v in o.items():
+            kl = k.lower()
+            if isinstance(v, dict):
+                v = v.get("nombre") or v.get("descripcion") or ""
+            if not isinstance(v, (str, int, float)) or v in ("", 0):
+                continue
+            if any(x in kl for x in ("sueldo", "renta", "salario")) and not av.renta:
+                av.renta = f"${int(v):,}".replace(",", ".") if isinstance(v, (int, float)) else limpio(str(v))
+            elif any(x in kl for x in ("cierre", "expira", "vencimiento", "fechafin")) and not av.cierre:
+                av.cierre = str(v)[:10]
+            elif any(x in kl for x in ("jornada", "contrato", "horario")):
+                extra.append(str(v))
+        out.append(av.completar_desde_texto(" ".join(extra)))
     return out
 
 
@@ -353,15 +379,22 @@ def indeed(s, palabra: str) -> list[Aviso]:
         if not url or not fila.get("title"):
             continue
         fecha = fila.get("date_posted")
+        lo, hi = fila.get("min_amount"), fila.get("max_amount")
+        renta = " a ".join(
+            f"${int(x):,}".replace(",", ".") for x in (lo, hi) if isinstance(x, (int, float)) and x == x and x > 0
+        )
+        tipo = fila.get("job_type")
+        tipo = str(tipo) if tipo and tipo == tipo else ""
         out.append(
             Aviso(
+                renta=renta,
                 sitio="indeed",
                 titulo=limpio(str(fila["title"])),
                 url=str(url),
                 empresa=limpio(str(fila.get("company") or "")) if fila.get("company") == fila.get("company") else "",
                 ubicacion=limpio(str(fila.get("location") or "")) if fila.get("location") == fila.get("location") else "",
                 publicado=str(fecha) if fecha and fecha == fecha else "",
-            )
+            ).completar_desde_texto(tipo.replace("fulltime", "full time").replace("parttime", "part time"))
         )
     return out
 

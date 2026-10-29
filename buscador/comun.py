@@ -76,10 +76,58 @@ class Aviso:
     ubicacion: str = ""
     publicado: str = ""
     palabras: list[str] = field(default_factory=list)
+    # Detalle opcional, cuando el sitio lo muestra en el listado
+    renta: str = ""
+    jornada: str = ""
+    contrato: str = ""
+    cierre: str = ""  # fecha límite de postulación (AAAA-MM-DD)
+
+    def completar_desde_texto(self, texto: str) -> "Aviso":
+        """Rellena renta, jornada y contrato a partir de texto libre (título, tarjeta)."""
+        d = detalle_desde_texto(f"{self.titulo} {texto}")
+        for k, v in d.items():
+            if v and not getattr(self, k):
+                setattr(self, k, v)
+        return self
 
     @property
     def id(self) -> str:
         return hashlib.sha1(url_canonica(self.url).encode()).hexdigest()[:14]
+
+
+_JORNADAS = [
+    (r"\bpart[\s-]?time\b|media jornada|jornada parcial", "Part time"),
+    (r"\bfull[\s-]?time\b|jornada completa", "Jornada completa"),
+    (r"\b\d{1,2}\s?x\s?\d{1,2}\b", None),  # turnos 7x7, 4x3: se usa el texto tal cual
+    (r"\bturnos?\b", "Turnos"),
+    (r"\bfin(es)? de semana\b", "Fin de semana"),
+]
+_CONTRATOS = [
+    (r"\breemplazos?\b", "Reemplazo"),
+    (r"\bindefinido\b", "Indefinido"),
+    (r"\bplazo fijo\b", "Plazo fijo"),
+    (r"\bhonorarios\b", "Honorarios"),
+    (r"\bcontrata\b", "Contrata"),
+    (r"\bplanta\b", "Planta"),
+]
+
+
+def detalle_desde_texto(texto: str) -> dict:
+    t = normalizar(texto)
+    out = {"renta": "", "jornada": "", "contrato": ""}
+    m = re.search(r"\$\s?\d{1,3}(?:[.\s]\d{3})+(?:\s?(?:a|-)\s?\$?\s?\d{1,3}(?:[.\s]\d{3})+)?", texto or "")
+    if m:
+        out["renta"] = limpio(m.group(0))
+    for rx, nombre in _JORNADAS:
+        mm = re.search(rx, t)
+        if mm:
+            out["jornada"] = nombre or "Turno " + mm.group(0).replace(" ", "")
+            break
+    for rx, nombre in _CONTRATOS:
+        if re.search(rx, t):
+            out["contrato"] = nombre
+            break
+    return out
 
 
 def json_ld_ofertas(html: str) -> list[dict]:
