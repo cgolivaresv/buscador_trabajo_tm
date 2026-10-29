@@ -2,6 +2,10 @@
 
 La versión aparece al pie de la página: **Página** es la versión de `docs/index.html` y **Buscador** la del script que hizo el último chequeo (`buscador/__init__.py`). Cada cambio sube el número en ambos lados.
 
+## 1.6.0 · 2026-10-29
+- Palabras clave definitivas (8 términos en 4 grupos: resonancia, imagenología y TC, especialista de aplicaciones, jefatura).
+- Exclusiones: TENS, técnico en enfermería, auxiliar, laboratorio, banco de sangre, oftalmología, otorrino. Se comparan por palabra completa ("TENS" ya no descarta "intensivo"), aceptan * como prefijo y también limpian el historial.
+
 ## 1.5.0 · 2026-10-29
 - Chequeo cada hora entre 7:00 y 22:00 hora de Chile (antes cada 2 horas, día y noche). Se ajusta solo al horario de verano e invierno.
 

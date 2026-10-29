@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -40,16 +41,27 @@ def cargar_config() -> dict:
     cfg.setdefault("ubicaciones", [])
     cfg.setdefault("sitios", {k: True for k in LECTORES})
     cfg.setdefault("dias_retencion", 60)
+    cfg["_excluir"] = [p for p in map(_patron_exclusion, cfg["excluir"] or []) if p]
     return cfg
 
 
-def pasa_filtros(av, cfg) -> bool:
-    titulo = normalizar(av.titulo)
-    if any(normalizar(x) and normalizar(x) in titulo for x in cfg["excluir"] or []):
+def _patron_exclusion(termino: str) -> re.Pattern | None:
+    """Palabra completa; con * al final, cualquier palabra que empiece así."""
+    t = normalizar(termino)
+    if not t:
+        return None
+    prefijo = t.endswith("*")
+    t = re.escape(t.rstrip("*").strip())
+    return re.compile(rf"\b{t}" + ("" if prefijo else r"\b"))
+
+
+def pasa_filtros(titulo: str, ubicacion: str, cfg) -> bool:
+    tit = normalizar(titulo)
+    if any(p.search(tit) for p in cfg["_excluir"]):
         return False
     zonas = [normalizar(z) for z in cfg["ubicaciones"] or [] if normalizar(z)]
-    if zonas and av.ubicacion:
-        ub = normalizar(av.ubicacion)
+    if zonas and ubicacion:
+        ub = normalizar(ubicacion)
         if not any(z in ub for z in zonas):
             return False
     return True
@@ -85,7 +97,7 @@ def main() -> int:
                 continue
             st["resultados"] += len(avisos)
             for av in avisos:
-                if not av.titulo or not av.url or not pasa_filtros(av, cfg):
+                if not av.titulo or not av.url or not pasa_filtros(av.titulo, av.ubicacion, cfg):
                     continue
                 d = encontrados.get(av.id)
                 if d:
@@ -129,6 +141,7 @@ def main() -> int:
         k: v
         for k, v in historial.items()
         if datetime.fromisoformat(v.get("visto_ultima_vez", t)) >= limite
+        and pasa_filtros(v.get("titulo", ""), v.get("ubicacion", ""), cfg)
     }
 
     lista = sorted(historial.values(), key=lambda a: a.get("encontrado", ""), reverse=True)

@@ -1,15 +1,34 @@
 # Configuración del buscador. Edita este archivo directamente en GitHub
 # y el próximo chequeo (cada hora, de 7:00 a 22:00) usará los valores nuevos.
 
-# Términos que se buscan en cada sitio (uno por línea).
-# PROVISORIO: reemplazar por las palabras clave definitivas.
+# Términos que se buscan en cada sitio (uno por línea). Cada término se
+# busca en 5 sitios cada hora: conviene no pasar de unos 8.
 palabras_clave:
+  # Núcleo: resonancia magnética
   - tecnólogo médico resonancia
   - resonancia magnética
+  - resonador
+  # Imagenología general y TC
   - tecnólogo médico imagenología
+  - tecnólogo médico scanner
+  # Empresas de equipos (Siemens Healthineers, GE, etc.)
+  - especialista de aplicaciones
+  # Jefatura y coordinación
+  - coordinador imagenología
+  - jefe resonancia
 
-# Se descartan los avisos cuyo título contenga alguna de estas palabras.
-excluir: []
+# Se descartan los avisos cuyo título contenga alguno de estos términos
+# (sin importar tildes ni mayúsculas). Se compara por palabra completa;
+# con * al final, acepta cualquier palabra que empiece así (otorrino* →
+# otorrinolaringología). También se limpian del historial ya guardado.
+excluir:
+  - TENS
+  - técnico en enfermería
+  - auxiliar
+  - laboratorio
+  - banco de sangre
+  - oftalmolog*
+  - otorrino*
 
 # Deja la lista vacía para aceptar avisos de todo Chile.
 # Si agregas zonas, solo se guardan avisos cuya ubicación contenga alguna
