@@ -77,57 +77,71 @@ def main() -> None:
     OUT.mkdir(exist_ok=True)
     informe: dict = {"palabra": palabra, "pruebas": []}
 
-    # ------------------------------------------------------------ Empleos Públicos
+    # ---------------- Empleos Públicos: parámetros del servicio /pub/.../apiConvocatorias.ashx
     s = sesion()
-    probar(s, "EP robots", "GET", f"{EP}/robots.txt", informe)
-    _, html = probar(s, "EP portada", "GET", f"{EP}/", informe)
-    _, html2 = probar(s, "EP listado", "GET", f"{EP}/pub/convocatorias/convocatorias.aspx", informe)
-    rutas_en_scripts(s, EP, html + html2, informe, "ep_rutas")
-    cab = {
-        "Accept": "application/json, text/javascript, */*; q=0.01",
-        "Referer": f"{EP}/pub/convocatorias/convocatorias.aspx",
-        "X-Requested-With": "XMLHttpRequest",
-    }
-    for f in ("convocatorias2_nueva.txt", "convocatorias2.txt"):
-        probar(s, f"EP feed {f}", "GET", f"{EP}/data/{f}", informe, headers=cab)
-    for r in [x for x in informe["ep_rutas"] if ".ashx" in x][:5]:
-        probar(s, f"EP ruta {r}", "GET", urljoin(f"{EP}/pub/convocatorias/", r), informe, headers=cab)
+    _, html = probar(s, "EP listado", "GET", f"{EP}/pub/convocatorias/convocatorias.aspx", informe)
+    textos = [html]
+    for src in re.findall(r'<script[^>]+src="([^"]+)"', html)[:30]:
+        try:
+            textos.append(s.get(urljoin(f"{EP}/pub/convocatorias/", src), timeout=25).text)
+        except Exception:
+            pass
+    informe["ep_contexto"] = []
+    for tx in textos:
+        for m in re.finditer(r"apiConvocatorias", tx):
+            informe["ep_contexto"].append(tx[max(0, m.start() - 700): m.end() + 900])
+    api = f"{EP}/pub/convocatorias/apiConvocatorias.ashx"
+    cab = {"Accept": "application/json, text/javascript, */*; q=0.01",
+           "Referer": f"{EP}/pub/convocatorias/convocatorias.aspx", "X-Requested-With": "XMLHttpRequest"}
+    q = quote(palabra)
+    for params in ["page=2", "pagina=2", "p=2", "pageSize=100", "size=100", "limit=100", "start=12&length=100",
+                   f"q={q}", f"search={q}", f"keyword={q}", f"texto={q}", "region=Regi%C3%B3n%20del%20Maule"]:
+        r, texto = probar(s, f"EP api ?{params}", "GET", f"{api}?{params}", informe, headers=cab)
+        try:
+            d = json.loads(texto)
+            informe["pruebas"][-1]["resumen"] = {"total": d.get("total"), "n": len(d.get("data", [])),
+                                                 "primero": (d.get("data") or [{}])[0].get("Cargo")}
+            informe["pruebas"][-1].pop("json", None)
+        except Exception:
+            pass
 
-    # ---------------------------------------------------------------------- Laborum
+    # ---------------------------------------------------------------- Laborum: enlaces
     s = sesion()
-    probar(s, "LB robots", "GET", f"{LB}/robots.txt", informe)
     slug = re.sub(r"\s+", "-", palabra.strip().lower())
     listado = f"{LB}/empleos-busqueda-{quote(slug)}.html"
-    _, html = probar(s, "LB listado", "GET", listado, informe)
-    rutas_en_scripts(s, LB, html, informe, "lb_rutas")
-    informe["lb_listado_enlaces"] = sorted(set(re.findall(r'href="(/empleos/[^"]+\.html)"', html)))[:20]
-    m = re.search(r"window\.__PRELOADED_STATE__\s*=\s*(\{.*?\});", html, flags=re.S)
-    if m:
-        try:
-            informe["lb_estado_inicial"] = estructura(json.loads(m.group(1)))
-        except ValueError:
-            informe["lb_estado_inicial"] = m.group(1)[:1500]
-    cuerpo = {"filtros": [], "busquedaExtendida": False, "tipoDetalle": "full", "withHome": False, "query": palabra}
-    for site_id in ("BMCL", "LBCL", "BMLC"):
-        probar(
-            s,
-            f"LB api searchV2 {site_id}",
-            "POST",
-            f"{LB}/api/avisos/searchV2?pageSize=20&page=0&sort=RELEVANTES",
-            informe,
-            json=cuerpo,
-            headers={
-                "Accept": "application/json",
-                "Content-Type": "application/json",
-                "Referer": listado,
-                "Origin": LB,
-                "x-site-id": site_id,
-            },
-        )
+    probar(s, "LB listado", "GET", listado, informe)
+    r, texto = probar(s, "LB api", "POST", f"{LB}/api/avisos/searchV2?pageSize=5&page=0&sort=RECIENTES", informe,
+                      json={"filtros": [], "busquedaExtendida": False, "tipoDetalle": "full", "withHome": False, "query": palabra},
+                      headers={"Accept": "application/json", "Content-Type": "application/json", "Referer": listado,
+                               "Origin": LB, "x-site-id": "BMCL"})
+    try:
+        av = json.loads(texto)["content"][0]
+    except Exception:
+        av = None
+    if av:
+        def sl(x):
+            import unicodedata
+            x = unicodedata.normalize("NFKD", x or "").encode("ascii", "ignore").decode().lower()
+            return re.sub(r"[^a-z0-9]+", "-", x).strip("-")
+        cands = [f"{LB}/empleos/{sl(av['titulo'])}-{sl(av.get('empresa'))}-{av['id']}.html",
+                 f"{LB}/empleos/{sl(av['titulo'])}-{av['id']}.html",
+                 f"{LB}/empleos/{av['id']}.html",
+                 f"{LB}/empleos/x-{av['id']}.html"]
+        informe["lb_aviso"] = {k: av.get(k) for k in ("id", "titulo", "empresa", "localizacion", "tipoTrabajo")}
+        for u in cands:
+            time.sleep(1.5)
+            try:
+                r = s.get(u, timeout=25, allow_redirects=True)
+                canon = re.search(r'<link[^>]+rel="canonical"[^>]+href="([^"]+)"', r.text)
+                informe["pruebas"].append({"nombre": "LB ficha", "url": u, "status": r.status_code, "final": r.url,
+                                           "canonical": canon.group(1) if canon else None,
+                                           "tiene_titulo": (av["titulo"][:20] in r.text)})
+            except Exception as e:
+                informe["pruebas"].append({"nombre": "LB ficha", "url": u, "error": repr(e)[:200]})
 
     (OUT / "diagnostico.json").write_text(json.dumps(informe, ensure_ascii=False, indent=1), encoding="utf-8")
     for p in informe["pruebas"]:
-        print(p.get("status", p.get("error")), p["nombre"], p.get("tipo", ""), p.get("largo", ""))
+        print(p.get("status", p.get("error")), p["nombre"], p.get("url", "")[-90:], p.get("resumen", ""))
 
 
 if __name__ == "__main__":
