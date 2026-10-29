@@ -12,6 +12,7 @@ from pathlib import Path
 
 import yaml
 
+from . import __version__
 from .comun import normalizar, sesion
 from .sitios import LECTORES
 
@@ -137,6 +138,7 @@ def main() -> int:
     ESTADO.write_text(
         json.dumps(
             {
+                "version": __version__,
                 "ultimo_chequeo": t,
                 "nuevos": len(nuevos),
                 "total": len(lista),
