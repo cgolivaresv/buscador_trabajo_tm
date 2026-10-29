@@ -1,0 +1,54 @@
+{
+ "palabra": "tecnologo medico",
+ "paginas": [
+  {
+   "url": "https://www.trabajando.cl/trabajo-empleo/tecnologo%20medico",
+   "status": 200,
+   "largo": 401114,
+   "enlaces_trabajo": 0
+  },
+  {
+   "url": "https://www.trabajando.cl/trabajo-empleo/tecnologo-medico",
+   "status": 200,
+   "largo": 401124,
+   "enlaces_trabajo": 0
+  }
+ ],
+ "scripts": [
+  {
+   "url": "https://www.trabajando.cl/_nuxt/CA8sOETy.js",
+   "largo": 506664
+  }
+ ],
+ "rutas_api": [
+  "/api/comunicate/responder",
+  "/api/login/logout-api",
+  "https://ayuda.trabajando.com/portal/es/home"
+ ],
+ "pruebas": [
+  {
+   "url": "https://www.trabajando.cl/api/searchjob?palabraClave=tecnologo%20medico",
+   "status": 200,
+   "tipo": "application/json",
+   "inicio": "{\"estado\":\"CARGANDO\",\"ofertas\":[{\"idOferta\":6142591,\"nombreCargo\":\"Tecnólogo Médico con mención en Oftalmología - Colina\",\"urlLogo\":\"https://staticcdn.trabajando.cl/company/1076/logo.png\",\"nombreEmpresa\":\"Rotter y Krauss\",\"descripcionOferta\":\"¿Te gustaría ser parte de una compañía...\",\"publicadoHace"
+  },
+  {
+   "url": "https://www.trabajando.cl/api/searchjob?q=tecnologo%20medico",
+   "status": 200,
+   "tipo": "application/json",
+   "inicio": "{\"estado\":\"CARGANDO\",\"ofertas\":[{\"idOferta\":6142987,\"nombreCargo\":\"Líder de Finanzas Corporativas - Importante Empresa Financiera Multinacional\",\"urlLogo\":\"https://staticcdn.trabajando.cl/company/14363/logo.png\",\"nombreEmpresa\":\"HRGROWIN\",\"descripcionOferta\":\"En HRGROWIN , consultora especializada.."
+  },
+  {
+   "url": "https://www.trabajando.cl/api/ofertas/buscar?palabraClave=tecnologo%20medico",
+   "status": 500,
+   "tipo": "application/json",
+   "inicio": "{\"url\":\"/api/ofertas/buscar?palabraClave=tecnologo%20medico\",\"statusCode\":500,\"statusMessage\":\"\",\"message\":\"internal server error\",\"stack\":\"\",\"data\":{\"timestamp\":\"2026-10-29T15:03:12.686077229\",\"status\":500,\"error\":\"Internal Server Error\",\"message\":\"An unexpected error occurred. Please try again lat"
+  },
+  {
+   "url": "https://www.trabajando.cl/api/v1/ofertas?q=tecnologo%20medico",
+   "status": 404,
+   "tipo": "text/html;charset=utf-8",
+   "inicio": "<!DOCTYPE html><html  lang=\"es\" data-capo=\"\"><head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<meta charset=\"utf-8\">\n<title>Trabajos y empleos en Chile, bolsa de trabajo, portal de empleo | Trabajando.com</title>\n<meta name=\"description\" content=\"Encuentra nuevos empleos to"
+  }
+ ]
+}
