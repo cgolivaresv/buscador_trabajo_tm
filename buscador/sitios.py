@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import re
+import time
 from datetime import datetime, timedelta, timezone
 from urllib.parse import quote, quote_plus, urljoin
 
@@ -399,10 +400,62 @@ def indeed(s, palabra: str) -> list[Aviso]:
     return out
 
 
+# ---------------------------------------------------------------------------- Laborum
+_LB = "https://www.laborum.cl"
+
+
+def _laborum_url(av: dict) -> str:
+    return f"{_LB}/empleos/{_slug(av.get('titulo', ''))}-{_slug(av.get('empresa') or '')}-{av['id']}.html".replace(
+        "--", "-"
+    )
+
+
+def laborum(s, palabra: str) -> list[Aviso]:
+    """API interna del sitio (la misma que usa su buscador). Pide visitar el listado
+    antes, para tener las cookies, y el encabezado x-site-id de Laborum Chile."""
+    slug = quote(re.sub(r"\s+", "-", palabra.strip().lower()))
+    listado = f"{_LB}/empleos-busqueda-{slug}.html"
+    if not s.cookies.get_dict(domain=".laborum.cl") and not s.cookies.get_dict(domain="www.laborum.cl"):
+        obtener(s, listado)
+    time.sleep(1.0)
+    r = s.post(
+        f"{_LB}/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+        json={"filtros": [], "busquedaExtendida": False, "tipoDetalle": "full", "withHome": False, "query": palabra},
+        headers={
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Referer": listado,
+            "Origin": _LB,
+            "x-site-id": "BMCL",
+        },
+        timeout=25,
+    )
+    r.raise_for_status()
+    out = []
+    for av in r.json().get("content") or []:
+        if not av.get("id") or not av.get("titulo"):
+            continue
+        empresa = "" if av.get("confidencial") else limpio(av.get("empresa") or "")
+        fecha = av.get("fechaPublicacion") or ""
+        m = re.fullmatch(r"(\d{2})-(\d{2})-(\d{4})", fecha)
+        out.append(
+            Aviso(
+                sitio="laborum",
+                titulo=limpio(av["titulo"]),
+                url=_laborum_url(av),
+                empresa=empresa,
+                ubicacion=limpio(av.get("localizacion") or ""),
+                publicado=f"{m.group(3)}-{m.group(2)}-{m.group(1)}" if m else fecha,
+            ).completar_desde_texto(" ".join(str(av.get(k) or "") for k in ("tipoTrabajo", "detalle")))
+        )
+    return out
+
+
 LECTORES = {
     "linkedin": linkedin,
     "computrabajo": computrabajo,
     "chiletrabajos": chiletrabajos,
     "trabajando": trabajando,
     "indeed": indeed,
+    "laborum": laborum,
 }
