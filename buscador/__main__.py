@@ -306,11 +306,6 @@ def main() -> int:
             v["afinidad"] = 0
     # Los avisos en proceso de postulación se conservan siempre, aunque ya no aparezcan.
     en_proceso = {k for k, m in mk["avisos"].items() if m.get("estado") in marcas.EN_PROCESO}
-    # Avisos admitidos antes de existir el límite de antigüedad: se aplica el mismo
-    # criterio (edad al momento de encontrarlos), salvo los que la persona ya marcó.
-    for k in [k for k, v in historial.items()
-              if k not in mk["avisos"] and demasiado_antiguo(v.get("publicado", ""), v.get("encontrado", t), v.get("visto_ultima_vez"))]:
-        del historial[k]
     historial = {
         k: v
         for k, v in historial.items()

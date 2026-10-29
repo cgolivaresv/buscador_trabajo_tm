@@ -215,8 +215,8 @@ notificar_issue: true
 # Antigüedad máxima de un aviso al encontrarlo, en horas (0 = sin límite). Los
 # sitios que filtran por fecha la usan al buscar; en el resto se lee la fecha de
 # publicación del aviso ("Hace 3 días", "2026-10-28"…). Los avisos sin fecha
-# reconocible se admiten. Un aviso admitido no desaparece al cumplir el plazo:
-# sigue visible mientras esté abierto.
+# reconocible se admiten. El límite solo decide qué avisos NUEVOS entran: los ya
+# guardados no se borran por antigüedad, y siguen visibles mientras estén abiertos.
 antiguedad_maxima_horas: 48
 
 # Días sin volver a ver un aviso antes de borrarlo del historial.
