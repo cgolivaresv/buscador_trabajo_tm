@@ -2,6 +2,9 @@
 
 La versión aparece al pie de la página: **Página** es la versión de `docs/index.html` y **Buscador** la del script que hizo el último chequeo (`buscador/__init__.py`). Cada cambio sube el número en ambos lados.
 
+## 1.5.0 · 2026-10-29
+- Chequeo cada hora entre 7:00 y 22:00 hora de Chile (antes cada 2 horas, día y noche). Se ajusta solo al horario de verano e invierno.
+
 ## 1.4.0 · 2026-10-29
 - Nuevo sitio: Indeed Chile (cl.indeed.com), mediante la librería JobSpy.
 - Trabajando.cl: si el servicio JSON no trae ofertas, se buscan en el sitemap de ofertas vigentes (últimos 30 días); si tampoco hay, en la página de búsqueda. Cuando todo falla, la página muestra qué se intentó.

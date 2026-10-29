@@ -1,10 +1,10 @@
 # Buscador de Trabajo TM
 
-Revisa cada 2 horas los avisos de **LinkedIn, Computrabajo, Chiletrabajos, Trabajando.cl e Indeed** según tus palabras clave, guarda los nuevos y te los muestra en una página.
+Revisa cada hora, de 7:00 a 22:00 (hora de Chile), los avisos de **LinkedIn, Computrabajo, Chiletrabajos, Trabajando.cl e Indeed** según tus palabras clave, guarda los nuevos y te los muestra en una página.
 
 ## Cómo funciona
 
-1. **GitHub Actions** ejecuta `python -m buscador` cada 2 horas (`.github/workflows/buscar.yml`).
+1. **GitHub Actions** ejecuta `python -m buscador` cada hora entre 7:00 y 22:00 (`.github/workflows/buscar.yml`).
 2. El script busca cada palabra clave en cada sitio, descarta duplicados y guarda el historial en `docs/data/avisos.json`.
 3. Si hay avisos nuevos, abre un **issue** con la lista (GitHub te avisa por correo).
 4. La página en **GitHub Pages** (`docs/index.html`) muestra los avisos con filtros y estados: nuevo, visto, postulé, descartado.
