@@ -8,6 +8,7 @@ import re
 import time
 import unicodedata
 from dataclasses import dataclass, field
+from datetime import datetime, timedelta, timezone
 from urllib.parse import urlsplit, urlunsplit
 
 import requests
@@ -128,6 +129,57 @@ def detalle_desde_texto(texto: str) -> dict:
             out["contrato"] = nombre
             break
     return out
+
+
+_MESES = {m: i for i, m in enumerate(
+    "enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre".split(), 1)}
+_MESES["setiembre"] = 9
+_CHILE = timezone(timedelta(hours=-3))
+
+
+def fecha_publicacion(texto: str, ahora: datetime) -> datetime | None:
+    """Interpreta la fecha de publicación tal como la muestran los sitios: ISO
+    ("2026-10-28", "2026-10-13 11:37"), "dd-mm-aaaa", "13 de octubre [de 2026]",
+    o relativa ("Hace 11 horas", "Hace 3 días", "Ayer", "Hoy", "3 days ago",
+    "Más de 30 días"). Una fecha sin hora cuenta como el final de ese día, para no
+    descartar de más. Devuelve None si no se reconoce."""
+    t = normalizar(texto)
+    if not t:
+        return None
+    fin_de_dia = lambda d: datetime(d.year, d.month, d.day, 23, 59, tzinfo=_CHILE)
+    m = re.search(r"(\d{4})-(\d{2})-(\d{2})(?:[ t](\d{2}):(\d{2}))?", t)
+    if m:
+        y, mo, d = int(m[1]), int(m[2]), int(m[3])
+        return datetime(y, mo, d, int(m[4]), int(m[5]), tzinfo=_CHILE) if m[4] else fin_de_dia(datetime(y, mo, d))
+    m = re.search(r"\b(\d{2})-(\d{2})-(\d{4})\b", t)
+    if m:
+        return fin_de_dia(datetime(int(m[3]), int(m[2]), int(m[1])))
+    if re.search(r"\bmas de\b", t):
+        m = re.search(r"(\d+)\s*(dia|semana|mes)", t)
+        if m:
+            n = int(m[1]) * {"dia": 1, "semana": 7, "mes": 30}[m[2]]
+            return ahora - timedelta(days=n + 1)
+    m = re.search(r"(\d+)\s*\+?\s*(minuto|min|hora|hr|h|dia|day|semana|week|mes|month)s?\b", t)
+    if m and re.search(r"\bhace\b|\bago\b|publicad", t):
+        n, u = int(m[1]), m[2]
+        delta = {"minuto": timedelta(minutes=n), "min": timedelta(minutes=n), "hora": timedelta(hours=n),
+                 "hr": timedelta(hours=n), "h": timedelta(hours=n), "dia": timedelta(days=n), "day": timedelta(days=n),
+                 "semana": timedelta(weeks=n), "week": timedelta(weeks=n), "mes": timedelta(days=30 * n),
+                 "month": timedelta(days=30 * n)}[u]
+        return ahora - delta
+    if re.search(r"\b(hoy|today|recien|just now)\b", t):
+        return ahora
+    if re.search(r"\b(ayer|yesterday)\b", t):
+        return fin_de_dia((ahora - timedelta(days=1)).astimezone(_CHILE))
+    m = re.search(r"\b(\d{1,2}) de (" + "|".join(_MESES) + r")(?: de (\d{4}))?\b", t)
+    if m:
+        hoy = ahora.astimezone(_CHILE)
+        y = int(m[3]) if m[3] else hoy.year
+        f = fin_de_dia(datetime(y, _MESES[m[2]], int(m[1])))
+        if not m[3] and f > hoy + timedelta(days=1):  # "28 de diciembre" visto en enero
+            f = fin_de_dia(datetime(y - 1, _MESES[m[2]], int(m[1])))
+        return f
+    return None
 
 
 def json_ld_ofertas(html: str) -> list[dict]:

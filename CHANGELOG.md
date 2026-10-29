@@ -2,6 +2,11 @@
 
 La versión aparece al pie de la página: **Página** es la versión de `docs/index.html` y **Buscador** la del script que hizo el último chequeo (`buscador/__init__.py`). Cada cambio sube el número en ambos lados.
 
+## 1.15.0 · 2026-10-29
+- Antigüedad máxima de 48 horas al encontrar un aviso (`antiguedad_maxima_horas`). LinkedIn y Trabajando filtran a 48 h al buscar; Indeed y Google, a su opción más cercana; en todas las fuentes se revisa además la fecha de publicación ("Hace 3 días", "13 de octubre", "2026-10-28"…). Los avisos sin fecha reconocible se admiten.
+- Un aviso admitido no desaparece al cumplir 48 horas: sigue visible mientras esté abierto.
+- Se aplicó el mismo criterio a los avisos ya guardados, salvo los que tienen alguna marca.
+
 ## 1.14.1 · 2026-10-29
 - Google Empleos: la consulta usa el formato que espera JobSpy ("… jobs near Chile in the last week"). Si falla, el error indica si Google bloqueó la consulta o pidió aceptar cookies.
 - Trabajando.cl: una búsqueda sin avisos ya no se muestra como error.

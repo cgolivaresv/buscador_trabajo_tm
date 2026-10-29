@@ -14,7 +14,8 @@ from pathlib import Path
 import yaml
 
 from . import __version__
-from .comun import normalizar, sesion
+from .comun import fecha_publicacion, normalizar, sesion
+from . import sitios as _sitios
 from .sitios import LECTORES
 from . import marcas, salud, vigilancia
 
@@ -53,6 +54,7 @@ def cargar_config() -> dict:
     cfg.setdefault("sitios", {k: True for k in LECTORES})
     cfg.setdefault("dias_retencion", 60)
     cfg.setdefault("sin_tildes_en", [])
+    cfg.setdefault("antiguedad_maxima_horas", 0)
     cfg["_excluir"] = _patrones(cfg["excluir"])
     cfg["_zona_si"] = _patrones(cfg["ubicaciones"])
     cfg["_zona_no"] = _patrones(cfg["ubicaciones_excluir"])
@@ -214,6 +216,18 @@ def main() -> int:
         ps = p["por_sitio"].setdefault(sitio, {})
         ps[aid] = max(afinidad, ps.get(aid, 0))
 
+    horas_max = int(cfg["antiguedad_maxima_horas"] or 0)
+    _sitios.HORAS_MAXIMAS = horas_max
+
+    def demasiado_antiguo(publicado: str, encontrado: str, observado: str | None = None) -> bool:
+        """True si el aviso tenía más de horas_max horas al encontrarlo. "observado" es
+        cuándo se leyó el texto de la fecha (importa en las relativas, "Hace 3 días").
+        Sin fecha reconocible, se admite (para no perder avisos)."""
+        if not horas_max:
+            return False
+        pub = fecha_publicacion(publicado, datetime.fromisoformat(observado or encontrado))
+        return pub is not None and (datetime.fromisoformat(encontrado) - pub).total_seconds() > horas_max * 3600
+
     s = sesion()
     t = ahora()
     estado_sitios: dict[str, dict] = {}
@@ -238,6 +252,9 @@ def main() -> int:
                     afinidad = 0  # empresa que la persona descartó
                 _anotar(palabra, sitio, av.id, afinidad)
                 if not afinidad:
+                    continue
+                if av.id not in historial and demasiado_antiguo(av.publicado, t):
+                    st["antiguos"] = st.get("antiguos", 0) + 1
                     continue
                 d = encontrados.get(av.id)
                 if d:
@@ -289,6 +306,11 @@ def main() -> int:
             v["afinidad"] = 0
     # Los avisos en proceso de postulación se conservan siempre, aunque ya no aparezcan.
     en_proceso = {k for k, m in mk["avisos"].items() if m.get("estado") in marcas.EN_PROCESO}
+    # Avisos admitidos antes de existir el límite de antigüedad: se aplica el mismo
+    # criterio (edad al momento de encontrarlos), salvo los que la persona ya marcó.
+    for k in [k for k, v in historial.items()
+              if k not in mk["avisos"] and demasiado_antiguo(v.get("publicado", ""), v.get("encontrado", t), v.get("visto_ultima_vez"))]:
+        del historial[k]
     historial = {
         k: v
         for k, v in historial.items()

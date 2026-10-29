@@ -42,6 +42,35 @@ def test_detalle(texto, clave, esperado):
     assert detalle_desde_texto(texto)[clave] == esperado
 
 
+# ------------------------------------------------------- fecha publicación
+@pytest.mark.parametrize(
+    "texto,horas",
+    [
+        ("Hace 11 horas", 11), ("Hace 3 días", 72), ("Publicado hace 2 días", 48), ("3 days ago", 72),
+        ("Hoy", 0), ("Más de 30 días", 31 * 24),
+    ],
+)
+def test_fecha_relativa(texto, horas):
+    from datetime import datetime, timezone
+    from buscador.comun import fecha_publicacion
+
+    ahora = datetime(2026, 10, 29, 18, 0, tzinfo=timezone.utc)
+    assert round((ahora - fecha_publicacion(texto, ahora)).total_seconds() / 3600) == horas
+
+
+def test_fecha_absoluta():
+    from datetime import datetime, timezone
+    from buscador.comun import fecha_publicacion as f
+
+    ahora = datetime(2026, 10, 29, 18, 0, tzinfo=timezone.utc)
+    assert f("2026-10-28", ahora).date().isoformat() == "2026-10-28"
+    assert f("2026-10-13 11:37", ahora).hour == 11
+    assert f("20-10-2026", ahora).day == 20
+    assert f("13 de octubre", ahora).date().isoformat() == "2026-10-13"
+    assert f("28 de diciembre", ahora).year == 2025  # sin año y en el futuro: año anterior
+    assert f("", ahora) is None and f("Destacado", ahora) is None
+
+
 # ------------------------------------------------------------ sin tildes
 def test_variantes_sin_tildes(cfg):
     assert m.sin_tildes("tecnólogo médico imagenología") == "tecnologo medico imagenologia"

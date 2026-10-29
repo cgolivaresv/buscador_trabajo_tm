@@ -72,12 +72,22 @@ def _desde_json_ld(sitio: str, html: str, base: str) -> list[Aviso]:
     return out
 
 
+# Antigüedad máxima de los avisos, en horas; la fija el chequeo desde config.yml.
+# Los sitios que permiten filtrar por fecha la usan al buscar; el resto se filtra
+# después, con la fecha de publicación de cada aviso.
+HORAS_MAXIMAS = 0
+
+
+def _horas_busqueda() -> int:
+    return HORAS_MAXIMAS or 24 * 14
+
+
 # --------------------------------------------------------------------------- LinkedIn
 def linkedin(s, palabra: str) -> list[Aviso]:
     """Búsqueda pública de empleos (sin iniciar sesión), últimos 7 días, en Chile."""
     url = (
         "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search"
-        f"?keywords={quote_plus(palabra)}&location=Chile&f_TPR=r604800&start=0"
+        f"?keywords={quote_plus(palabra)}&location=Chile&f_TPR=r{_horas_busqueda() * 3600}&start=0"
     )
     html = obtener(s, url).text
     soup = BeautifulSoup(html, "html.parser")
@@ -295,7 +305,8 @@ def _calza_slug(palabra: str, slug: str) -> bool:
     )
 
 
-def _trabajando_sitemap(s, palabra: str, base: str, dias: int = 30, max_detalle: int = 10) -> list[Aviso]:
+def _trabajando_sitemap(s, palabra: str, base: str, dias: int | None = None, max_detalle: int = 10) -> list[Aviso]:
+    dias = dias or max(1, -(-_horas_busqueda() // 24))
     limite = (datetime.now(timezone.utc) - timedelta(days=dias)).date().isoformat()
     hallados = []
     for url, mod in _sitemap_trabajando(s, base):
@@ -402,7 +413,7 @@ def indeed(s, palabra: str) -> list[Aviso]:
         location="Chile",
         country_indeed="Chile",
         results_wanted=30,
-        hours_old=24 * 14,
+        hours_old=_horas_busqueda(),
     )
 
 
@@ -411,7 +422,7 @@ def google(s, palabra: str) -> list[Aviso]:
     Google bloquea a veces las consultas desde servidores; en ese caso se informa el error."""
     try:
         # Formato de consulta que espera JobSpy: "<cargo> jobs near Chile in the last week".
-        return _jobspy("google", search_term=palabra, location="Chile", hours_old=24 * 7, results_wanted=20)
+        return _jobspy("google", search_term=palabra, location="Chile", hours_old=_horas_busqueda(), results_wanted=20)
     except RuntimeError as e:
         raise RuntimeError(f"{e} · {_diagnostico_google(s, palabra)}") from None
 
