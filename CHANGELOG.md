@@ -2,6 +2,9 @@
 
 La versión aparece al pie de la página: **Página** es la versión de `docs/index.html` y **Buscador** la del script que hizo el último chequeo (`buscador/__init__.py`). Cada cambio sube el número en ambos lados.
 
+## 1.8.0 · 2026-10-29
+- Se registra, por palabra clave y por sitio, cada aviso encontrado y si resultó útil (afín o prioritario) o se descartó, en `docs/data/estadisticas.json`. Sirve para medir qué palabras aportan avisos útiles.
+
 ## 1.7.0 · 2026-10-29
 - Palabras clave basadas en el CV: resonancia, imagenología, scanner, radiología, especialista de aplicaciones, coordinación y jefatura de imagenología.
 - Perfil objetivo: cada aviso se clasifica como ⭐ prioritario (resonancia) o afín (imagenología, TC, radiología, fabricantes de equipos). Con `solo_afines: true` se descarta el resto. La página los ordena primero y tiene la pestaña "Prioritarios"; el issue también los marca.

@@ -21,6 +21,7 @@ RAIZ = Path(__file__).resolve().parent.parent
 DATOS = RAIZ / "docs" / "data"
 AVISOS = DATOS / "avisos.json"
 ESTADO = DATOS / "estado.json"
+ESTADISTICAS = DATOS / "estadisticas.json"
 NOMBRES = {
     "linkedin": "LinkedIn",
     "computrabajo": "Computrabajo",
@@ -107,6 +108,17 @@ def main() -> int:
             historial[a["id"]] = a
     primera_vez = not historial
 
+    # Estadística por palabra clave: avisos únicos encontrados y cuántos resultaron
+    # útiles (afín o prioritario), acumulados entre chequeos.
+    stats: dict = {"desde": None, "chequeos": 0, "palabras": {}}
+    if ESTADISTICAS.exists():
+        stats = json.loads(ESTADISTICAS.read_text(encoding="utf-8"))
+    def _anotar(palabra: str, sitio: str, aid: str, afinidad: int) -> None:
+        p = stats["palabras"].setdefault(palabra, {"vistos": {}, "por_sitio": {}})
+        p["vistos"][aid] = max(afinidad, p["vistos"].get(aid, 0))
+        ps = p["por_sitio"].setdefault(sitio, {})
+        ps[aid] = max(afinidad, ps.get(aid, 0))
+
     s = sesion()
     t = ahora()
     estado_sitios: dict[str, dict] = {}
@@ -127,6 +139,7 @@ def main() -> int:
                 if not av.titulo or not av.url:
                     continue
                 afinidad = evaluar(av.titulo, av.ubicacion, av.empresa, cfg)
+                _anotar(palabra, sitio, av.id, afinidad)
                 if not afinidad:
                     continue
                 d = encontrados.get(av.id)
@@ -182,6 +195,10 @@ def main() -> int:
         json.dumps({"actualizado": t, "avisos": lista}, ensure_ascii=False, indent=1) + "\n",
         encoding="utf-8",
     )
+    stats["desde"] = stats["desde"] or t
+    stats["hasta"] = t
+    stats["chequeos"] = stats.get("chequeos", 0) + 1
+    ESTADISTICAS.write_text(json.dumps(stats, ensure_ascii=False) + "\n", encoding="utf-8")
     ESTADO.write_text(
         json.dumps(
             {
