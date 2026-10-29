@@ -50,6 +50,7 @@ def cargar_config() -> dict:
     cfg.setdefault("solo_afines", False)
     cfg.setdefault("sitios", {k: True for k in LECTORES})
     cfg.setdefault("dias_retencion", 60)
+    cfg.setdefault("sin_tildes_en", [])
     cfg["_excluir"] = _patrones(cfg["excluir"])
     cfg["_zona_si"] = _patrones(cfg["ubicaciones"])
     cfg["_zona_no"] = _patrones(cfg["ubicaciones_excluir"])
@@ -165,6 +166,26 @@ def marcar_vigencia(historial: dict[str, dict], estado_sitios: dict, t: str) -> 
             d["vigencia"], d["dias_sin_ver"] = "sin_ver", dias
 
 
+def sin_tildes(texto: str) -> str:
+    """'tecnólogo médico' → 'tecnologo medico' (conserva la ñ)."""
+    import unicodedata
+
+    t = texto.replace("ñ", "\0").replace("Ñ", "\1")
+    t = "".join(c for c in unicodedata.normalize("NFKD", t) if not unicodedata.combining(c))
+    return t.replace("\0", "ñ").replace("\1", "Ñ")
+
+
+def palabras_para(sitio: str, cfg: dict) -> list[str]:
+    """Palabras clave a buscar en un sitio. En los sitios de "sin_tildes_en" se agrega
+    la variante sin tildes de cada palabra, porque su buscador puede distinguirlas."""
+    out: list[str] = []
+    for p in cfg["palabras_clave"]:
+        for v in ([p, sin_tildes(p)] if sitio in (cfg["sin_tildes_en"] or []) else [p]):
+            if v not in out:
+                out.append(v)
+    return out
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--nuevos", help="escribe aquí un resumen Markdown de los avisos nuevos")
@@ -199,7 +220,7 @@ def main() -> int:
         if not cfg["sitios"].get(sitio, False):
             continue
         st = {"nombre": NOMBRES[sitio], "resultados": 0, "errores": []}
-        for palabra in cfg["palabras_clave"]:
+        for palabra in palabras_para(sitio, cfg):
             try:
                 avisos = lector(s, palabra)
             except Exception as e:  # un sitio caído no detiene a los demás

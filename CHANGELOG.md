@@ -2,6 +2,9 @@
 
 La versión aparece al pie de la página: **Página** es la versión de `docs/index.html` y **Buscador** la del script que hizo el último chequeo (`buscador/__init__.py`). Cada cambio sube el número en ambos lados.
 
+## 1.13.0 · 2026-10-29
+- Cada palabra clave con tildes se busca también sin tildes ("tecnologo medico") en Computrabajo, Chiletrabajos, Trabajando.cl y Laborum, por si su buscador las distingue. Configurable en `sin_tildes_en`. En LinkedIn, Indeed y Google no se duplica, porque ya ignoran las tildes.
+
 ## 1.12.0 · 2026-10-29
 - Nueva interfaz estilo consola de resonancia: tonos negros, grises y naranjo. Barra superior de estado (último chequeo, nuevos, zona, fuentes activas y hora), panel "Programa" con vistas, fuentes, palabras clave y páginas vigiladas, "Cola de avisos" al centro y "Tarjeta del aviso" con sus parámetros a la derecha, más barra de estado con las versiones.
 - Se navega la cola con las flechas del teclado; Enter o doble clic abren el aviso. Clic en una fuente filtra por ella.

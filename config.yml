@@ -20,6 +20,15 @@ palabras_clave:
   - coordinador imagenología
   - jefe imagenología
 
+# Sitios donde cada palabra con tildes se busca también sin tildes
+# ("tecnologo medico"), por si su buscador las distingue. En LinkedIn, Indeed y
+# Google no hace falta: ya las ignoran. Cada sitio agregado suma ~6 búsquedas.
+sin_tildes_en:
+  - computrabajo
+  - chiletrabajos
+  - trabajando
+  - laborum
+
 # ---------------------------------------------------------------------------
 # PERFIL OBJETIVO: clasifica cada aviso según su título (y la empresa, para
 # "afin"). Se compara sin tildes ni mayúsculas, por palabra completa; con *

@@ -42,6 +42,16 @@ def test_detalle(texto, clave, esperado):
     assert detalle_desde_texto(texto)[clave] == esperado
 
 
+# ------------------------------------------------------------ sin tildes
+def test_variantes_sin_tildes(cfg):
+    assert m.sin_tildes("tecnólogo médico imagenología") == "tecnologo medico imagenologia"
+    assert m.sin_tildes("Ñuble año") == "Ñuble año"
+    pc = m.palabras_para("computrabajo", cfg)
+    assert "tecnologo medico resonancia" in pc and "tecnólogo médico resonancia" in pc
+    assert pc.count("especialista de aplicaciones") == 1  # sin tildes no se duplica
+    assert m.palabras_para("linkedin", cfg) == cfg["palabras_clave"]
+
+
 # ------------------------------------------------------------ perfil y zona
 @pytest.mark.parametrize(
     "titulo,ubic,empresa,esperado",
