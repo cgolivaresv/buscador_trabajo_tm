@@ -1,0 +1,31 @@
+# Configuración del buscador. Edita este archivo directamente en GitHub
+# y el próximo chequeo (cada 2 horas) usará los valores nuevos.
+
+# Términos que se buscan en cada sitio (uno por línea).
+# PROVISORIO: reemplazar por las palabras clave definitivas.
+palabras_clave:
+  - tecnólogo médico resonancia
+  - resonancia magnética
+  - tecnólogo médico imagenología
+
+# Se descartan los avisos cuyo título contenga alguna de estas palabras.
+excluir: []
+
+# Deja la lista vacía para aceptar avisos de todo Chile.
+# Si agregas zonas, solo se guardan avisos cuya ubicación contenga alguna
+# de ellas (los avisos sin ubicación declarada se guardan igual).
+# Ejemplo: [Talca, Maule, Santiago]
+ubicaciones: []
+
+# Sitios a revisar (true = activo).
+sitios:
+  linkedin: true
+  computrabajo: true
+  chiletrabajos: true
+  trabajando: true
+
+# Abre un issue en GitHub con los avisos nuevos (GitHub te avisa por correo).
+notificar_issue: true
+
+# Días sin volver a ver un aviso antes de borrarlo del historial.
+dias_retencion: 60
