@@ -1,6 +1,6 @@
 {
  "version": "1.16.0",
- "ultimo_chequeo": "2026-10-29T22:51:01+00:00",
+ "ultimo_chequeo": "2026-10-29T23:45:50+00:00",
  "nuevos": 0,
  "total": 30,
  "palabras_clave": [
@@ -17,12 +17,12 @@
  "sitios": {
   "linkedin": {
    "nombre": "LinkedIn",
-   "resultados": 74,
+   "resultados": 80,
    "errores": [],
    "descartados": {
-    "perfil": 33,
-    "exclusion": 3,
-    "zona": 10
+    "perfil": 32,
+    "exclusion": 6,
+    "zona": 7
    },
    "muestra": [
     {
@@ -38,6 +38,11 @@
     {
      "titulo": "Analista de Atracción de Talentos / Providencia",
      "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Paramédico con licencia de conducir - Melipilla",
+     "ubicacion": "Melipilla, Región Metropolitana de Santiago, Chile",
      "motivo": "perfil"
     },
     {
@@ -61,6 +66,11 @@
      "motivo": "perfil"
     },
     {
+     "titulo": "Tecnico en Neurofisiologia",
+     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
      "titulo": "CURSO DE GESTION DEL RIEGO DE DESASTRES Y RESPUESTAS SANITARIAS EN APS",
      "ubicacion": "Chile",
      "motivo": "perfil"
@@ -73,16 +83,6 @@
     {
      "titulo": "Representante de Ventas - Zona Norte",
      "ubicacion": "Región de Antofagasta, Chile",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Inspector/a HS&QE",
-     "ubicacion": "Región de Antofagasta, Chile",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Jefe de Prevención de Riesgos y Medio Ambiente",
-     "ubicacion": "Antofagasta, Región de Antofagasta, Chile",
      "motivo": "zona"
     }
    ]
@@ -305,18 +305,10 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 5,
+   "resultados": 0,
    "errores": [],
-   "descartados": {
-    "exclusion": 1
-   },
-   "muestra": [
-    {
-     "titulo": "Técnico en Enfermería SEL - Centro Viña del Mar Achs Salud",
-     "ubicacion": "Viña del Mar, VS, Chile",
-     "motivo": "exclusion"
-    }
-   ]
+   "descartados": {},
+   "muestra": []
   },
   "google": {
    "nombre": "Google Empleos",
