@@ -23,6 +23,7 @@ sitios:
   computrabajo: true
   chiletrabajos: true
   trabajando: true
+  indeed: true
 
 # Abre un issue en GitHub con los avisos nuevos (GitHub te avisa por correo).
 notificar_issue: true

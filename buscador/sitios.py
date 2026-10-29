@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import json
 import re
+from datetime import datetime, timedelta, timezone
 from urllib.parse import quote, quote_plus, urljoin
 
 from bs4 import BeautifulSoup
@@ -228,9 +229,66 @@ def _trabajando_json(data, base: str) -> list[Aviso]:
     return out
 
 
+_STOP = {"de", "del", "la", "el", "en", "con", "y", "para", "por", "los", "las"}
+_SITEMAP: dict[str, list[tuple[str, str]]] = {}
+
+
+def _sitemap_trabajando(s, base: str) -> list[tuple[str, str]]:
+    """Lista (url, lastmod) de todas las ofertas vigentes; se descarga una vez por chequeo."""
+    if "ofertas" in _SITEMAP:
+        return _SITEMAP["ofertas"]
+    xml = obtener(s, f"{base}/sitemap-ofertas.xml").text
+    hijos = re.findall(r"<sitemap>.*?<loc>\s*([^<\s]+)\s*</loc>", xml, flags=re.S)
+    textos = [xml] if not hijos else [obtener(s, h).text for h in hijos[:10]]
+    entradas = []
+    for x in textos:
+        for bloque in re.findall(r"<url>(.*?)</url>", x, flags=re.S):
+            loc = re.search(r"<loc>\s*([^<\s]+)\s*</loc>", bloque)
+            mod = re.search(r"<lastmod>\s*([^<\s]+)\s*</lastmod>", bloque)
+            if loc and "/trabajo/" in loc.group(1):
+                entradas.append((loc.group(1), mod.group(1) if mod else ""))
+    _SITEMAP["ofertas"] = entradas
+    return entradas
+
+
+def _calza_slug(palabra: str, slug: str) -> bool:
+    """Todas las palabras importantes de la búsqueda aparecen en la URL del aviso."""
+    tokens = slug.split("-")
+    claves = [w for w in normalizar(palabra).split() if len(w) >= 3 and w not in _STOP]
+    return bool(claves) and all(
+        any(tk.startswith(w[: min(len(w), 6)]) for tk in tokens) for w in claves
+    )
+
+
+def _trabajando_sitemap(s, palabra: str, base: str, dias: int = 30, max_detalle: int = 10) -> list[Aviso]:
+    limite = (datetime.now(timezone.utc) - timedelta(days=dias)).date().isoformat()
+    hallados = []
+    for url, mod in _sitemap_trabajando(s, base):
+        if mod and mod[:10] < limite:
+            continue
+        m = re.search(r"/trabajo/(\d+)-([a-z0-9-]+)", url)
+        if m and _calza_slug(palabra, m.group(2)):
+            hallados.append((mod, url, m.group(2)))
+    hallados.sort(reverse=True)
+    out = []
+    for n, (mod, url, slug) in enumerate(hallados[:40]):
+        av = Aviso(sitio="trabajando", titulo=slug.replace("-", " ").capitalize(), url=url, publicado=mod)
+        if n < max_detalle:  # completa empresa y ubicación desde la ficha del aviso
+            try:
+                ld = _desde_json_ld("trabajando", obtener(s, url).text, base)
+                if ld:
+                    av.titulo = ld[0].titulo or av.titulo
+                    av.empresa, av.ubicacion = ld[0].empresa, ld[0].ubicacion
+            except Exception:
+                pass
+        out.append(av)
+    return out
+
+
 def trabajando(s, palabra: str) -> list[Aviso]:
-    """Usa el servicio JSON interno del sitio; si falla, lee la página de búsqueda."""
+    """Prueba en orden: servicio JSON del sitio, sitemap de ofertas y página de búsqueda."""
     base = "https://www.trabajando.cl"
+    fallas = []
     try:
         r = obtener(
             s,
@@ -240,45 +298,62 @@ def trabajando(s, palabra: str) -> list[Aviso]:
         avisos = _trabajando_json(r.json(), base)
         if avisos:
             return avisos
-    except Exception:
-        pass
-    url = f"{base}/trabajo-empleo/{quote(palabra)}"
-    html = obtener(s, url).text
-    out: list[Aviso] = []
-    m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html, flags=re.S)
-    if m:
-        try:
-            data = json.loads(m.group(1))
-        except ValueError:
-            data = None
-        crudos: list[dict] = []
-        _buscar_ofertas_json(data, crudos)
-        vistos = set()
-        for o in crudos:
-            tit = next(o[k] for k in _CLAVES_TITULO if isinstance(o.get(k), str))
-            oid = str(next(o[k] for k in _CLAVES_ID if isinstance(o.get(k), (int, str))))
-            if oid in vistos:
-                continue
-            vistos.add(oid)
-            emp = o.get("nombreEmpresa") or o.get("empresa") or ""
-            if isinstance(emp, dict):
-                emp = emp.get("nombre") or ""
-            ubic = o.get("ubicacion") or o.get("comuna") or o.get("region") or ""
-            if isinstance(ubic, dict):
-                ubic = ubic.get("nombre") or ""
-            out.append(
-                Aviso(
-                    sitio="trabajando",
-                    titulo=limpio(tit),
-                    url=f"{base}/trabajo/{oid}",
-                    empresa=limpio(str(emp)),
-                    ubicacion=limpio(str(ubic)),
-                    publicado=str(o.get("fechaPublicacion") or o.get("fecha") or ""),
-                )
-            )
-    if not out:
-        out = _desde_json_ld("trabajando", html, base) or _enlaces_genericos(
+        fallas.append("servicio JSON sin ofertas")
+    except Exception as e:
+        fallas.append(f"servicio JSON: {type(e).__name__}")
+    try:
+        avisos = _trabajando_sitemap(s, palabra, base)
+        if avisos:
+            return avisos
+        fallas.append("sitemap sin coincidencias")
+    except Exception as e:
+        fallas.append(f"sitemap: {type(e).__name__}")
+    try:
+        html = obtener(s, f"{base}/trabajo-empleo/{quote(palabra)}").text
+        avisos = _desde_json_ld("trabajando", html, base) or _enlaces_genericos(
             "trabajando", html, base, r"trabajando\.cl/trabajo/\d+"
+        )
+        if avisos:
+            return avisos
+        fallas.append("página de búsqueda sin avisos")
+    except Exception as e:
+        fallas.append(f"página de búsqueda: {type(e).__name__}")
+    # Se informa como error para que se vea en la página qué se intentó.
+    raise RuntimeError("; ".join(fallas))
+
+
+# ----------------------------------------------------------------------------- Indeed
+def indeed(s, palabra: str) -> list[Aviso]:
+    """Indeed Chile (cl.indeed.com) a través de la librería JobSpy."""
+    from jobspy import scrape_jobs
+
+    df = scrape_jobs(
+        site_name=["indeed"],
+        search_term=palabra,
+        location="Chile",
+        country_indeed="Chile",
+        results_wanted=30,
+        hours_old=24 * 14,
+        verbose=0,
+    )
+    errores = (getattr(df, "attrs", {}) or {}).get("errors") or {}
+    if df.empty and errores:
+        raise RuntimeError(str(errores)[:200])
+    out = []
+    for fila in df.to_dict("records"):
+        url = fila.get("job_url") or fila.get("job_url_direct")
+        if not url or not fila.get("title"):
+            continue
+        fecha = fila.get("date_posted")
+        out.append(
+            Aviso(
+                sitio="indeed",
+                titulo=limpio(str(fila["title"])),
+                url=str(url),
+                empresa=limpio(str(fila.get("company") or "")) if fila.get("company") == fila.get("company") else "",
+                ubicacion=limpio(str(fila.get("location") or "")) if fila.get("location") == fila.get("location") else "",
+                publicado=str(fecha) if fecha and fecha == fecha else "",
+            )
         )
     return out
 
@@ -288,4 +363,5 @@ LECTORES = {
     "computrabajo": computrabajo,
     "chiletrabajos": chiletrabajos,
     "trabajando": trabajando,
+    "indeed": indeed,
 }

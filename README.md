@@ -1,6 +1,6 @@
 # Buscador de Trabajo TM
 
-Revisa cada 2 horas los avisos de **LinkedIn, Computrabajo, Chiletrabajos y Trabajando.cl** según tus palabras clave, guarda los nuevos y te los muestra en una página.
+Revisa cada 2 horas los avisos de **LinkedIn, Computrabajo, Chiletrabajos, Trabajando.cl e Indeed** según tus palabras clave, guarda los nuevos y te los muestra en una página.
 
 ## Cómo funciona
 

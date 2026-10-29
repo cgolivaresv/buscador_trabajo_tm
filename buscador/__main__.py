@@ -25,6 +25,7 @@ NOMBRES = {
     "computrabajo": "Computrabajo",
     "chiletrabajos": "Chiletrabajos",
     "trabajando": "Trabajando.cl",
+    "indeed": "Indeed",
 }
 
 
