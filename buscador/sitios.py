@@ -12,7 +12,7 @@ from urllib.parse import quote, quote_plus, urljoin
 
 from bs4 import BeautifulSoup
 
-from .comun import Aviso, json_ld_ofertas, limpio, obtener
+from .comun import Aviso, json_ld_ofertas, limpio, normalizar, obtener
 
 
 def _enlaces_genericos(sitio: str, html: str, base: str, patron: str) -> list[Aviso]:
@@ -185,8 +185,63 @@ def _buscar_ofertas_json(x, out: list[dict]) -> None:
                 _buscar_ofertas_json(v, out)
 
 
+def _slug(txt: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", normalizar(txt)).strip("-")[:80]
+
+
+def _ubicacion_trabajando(o: dict) -> str:
+    partes = []
+    for k, v in o.items():
+        kl = k.lower()
+        if not any(x in kl for x in ("comuna", "ciudad", "region", "ubicacion")):
+            continue
+        if isinstance(v, dict):
+            v = v.get("nombre") or v.get("descripcion") or ""
+        if isinstance(v, str) and limpio(v) and limpio(v) not in partes:
+            partes.append(limpio(v))
+    return ", ".join(partes[:2])
+
+
+def _trabajando_json(data, base: str) -> list[Aviso]:
+    crudos: list[dict] = []
+    _buscar_ofertas_json(data, crudos)
+    out, vistos = [], set()
+    for o in crudos:
+        tit = next(o[k] for k in _CLAVES_TITULO if isinstance(o.get(k), str))
+        oid = str(next(o[k] for k in _CLAVES_ID if isinstance(o.get(k), (int, str))))
+        if oid in vistos:
+            continue
+        vistos.add(oid)
+        emp = o.get("nombreEmpresa") or o.get("empresa") or ""
+        if isinstance(emp, dict):
+            emp = emp.get("nombre") or ""
+        out.append(
+            Aviso(
+                sitio="trabajando",
+                titulo=limpio(tit),
+                url=f"{base}/trabajo/{oid}-{_slug(tit)}",
+                empresa=limpio(str(emp)),
+                ubicacion=_ubicacion_trabajando(o),
+                publicado=str(o.get("fechaPublicacion") or o.get("fecha") or ""),
+            )
+        )
+    return out
+
+
 def trabajando(s, palabra: str) -> list[Aviso]:
+    """Usa el servicio JSON interno del sitio; si falla, lee la página de búsqueda."""
     base = "https://www.trabajando.cl"
+    try:
+        r = obtener(
+            s,
+            f"{base}/api/searchjob?palabraClave={quote(palabra)}",
+            headers={"Accept": "application/json"},
+        )
+        avisos = _trabajando_json(r.json(), base)
+        if avisos:
+            return avisos
+    except Exception:
+        pass
     url = f"{base}/trabajo-empleo/{quote(palabra)}"
     html = obtener(s, url).text
     out: list[Aviso] = []
