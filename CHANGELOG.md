@@ -2,6 +2,10 @@
 
 La versión aparece al pie de la página: **Página** es la versión de `docs/index.html` y **Buscador** la del script que hizo el último chequeo (`buscador/__init__.py`). Cada cambio sube el número en ambos lados.
 
+## 1.3.0 · 2026-10-29
+- La página ya no hace scroll: encabezado, filtros y pie quedan fijos y solo se desplaza la lista de avisos.
+- "Qué se está buscando" se puede plegar; parte abierto solo en pantallas grandes.
+
 ## 1.2.0 · 2026-10-29
 - Número de versión al pie de la página.
 
