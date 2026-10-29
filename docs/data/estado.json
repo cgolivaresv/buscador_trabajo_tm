@@ -1,8 +1,8 @@
 {
- "version": "1.14.0",
- "ultimo_chequeo": "2026-10-29T19:56:48+00:00",
- "nuevos": 8,
- "total": 28,
+ "version": "1.16.0",
+ "ultimo_chequeo": "2026-10-29T20:53:58+00:00",
+ "nuevos": 1,
+ "total": 29,
  "palabras_clave": [
   "tecnólogo médico resonancia",
   "resonancia magnética",
@@ -17,52 +17,337 @@
  "sitios": {
   "linkedin": {
    "nombre": "LinkedIn",
-   "resultados": 80,
-   "errores": []
+   "resultados": 74,
+   "errores": [],
+   "descartados": {
+    "perfil": 31,
+    "exclusion": 3,
+    "zona": 11
+   },
+   "muestra": [
+    {
+     "titulo": "Psiquiatra",
+     "ubicacion": "Las Condes, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Medico Psiquiatra",
+     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Analista de Atracción de Talentos / Providencia",
+     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Analista de Control de Gestión",
+     "ubicacion": "Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Psiquiatra",
+     "ubicacion": "Chile",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "TENS PARA REEMPLAZOS SANTIAGO RM",
+     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "ACADÉMICO(A) DISCIPLINAR MEDICINA VETERINARIA CONCEPCIÓN OCTUBRE 2026",
+     "ubicacion": "Concepción, Bio Bio, Chile",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "CURSO DE GESTION DEL RIEGO DE DESASTRES Y RESPUESTAS SANITARIAS EN APS",
+     "ubicacion": "Chile",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Head of Operational Excellence LATAM",
+     "ubicacion": "Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Representante de Ventas - Zona Norte",
+     "ubicacion": "Región de Antofagasta, Chile",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Inspector/a HS&QE",
+     "ubicacion": "Región de Antofagasta, Chile",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Jefe de Prevención de Riesgos y Medio Ambiente",
+     "ubicacion": "Antofagasta, Región de Antofagasta, Chile",
+     "motivo": "zona"
+    }
+   ]
   },
   "computrabajo": {
    "nombre": "Computrabajo",
    "resultados": 170,
-   "errores": []
+   "errores": [],
+   "descartados": {
+    "zona": 22,
+    "exclusion": 10,
+    "perfil": 21
+   },
+   "muestra": [
+    {
+     "titulo": "Tecnólogo Médico Imagenología",
+     "ubicacion": "Osorno, Los Lagos",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Imagenología",
+     "ubicacion": "Osorno, Los Lagos",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "TENS Imagenología",
+     "ubicacion": "La Serena, Coquimbo",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Técnico en Imagenología",
+     "ubicacion": "La Serena, Coquimbo",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico Imagenología",
+     "ubicacion": "Osorno, Los Lagos",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "TENS Imagenología",
+     "ubicacion": "La Serena, Coquimbo",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico Imagenología",
+     "ubicacion": "Osorno, Los Lagos",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "TENS Imagenología",
+     "ubicacion": "La Serena, Coquimbo",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Médico(a) Neurologia",
+     "ubicacion": "Santiago - Providencia, R.Metropolitana",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Administrativo(a) de Apoyo en Imagenología",
+     "ubicacion": "La Serena, Coquimbo",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Ingeniero de Servicio y Laboratorio",
+     "ubicacion": "Santiago - Providencia, R.Metropolitana",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Visitador(a) Médico(a)",
+     "ubicacion": "Antofagasta, Antofagasta",
+     "motivo": "zona"
+    }
+   ]
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
    "resultados": 165,
-   "errores": []
+   "errores": [],
+   "descartados": {
+    "perfil": 15,
+    "zona": 7,
+    "exclusion": 6
+   },
+   "muestra": [
+    {
+     "titulo": "Electromecanico",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "PROFESIONAL DE APOYO TÉCNICO DE OBRAS",
+     "ubicacion": "Temuco",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Inspector(a) de Correas Transportadoras – Nueva…",
+     "ubicacion": "Calama",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Ingeniero de Desarrollo de Software",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Product Manager Senior – Equipos Móviles…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Ingeniero/a en Prevención de Riesgos- Proyectos…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Ingeniero/a de Soporte Funcional de Aplicaciones…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Cuidador/a de Adulto Mayor con licencia…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Asistente de Gestión Contractual con conocimientos…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Asistente Contable - Antofagasta",
+     "ubicacion": "Antofagasta",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "TECNÓLOGO(A) MÉDICO(A) Unidad de Imageneología Hospital…",
+     "ubicacion": "Puerto aysén",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "SECRETARIA RECEPCIONISTA (HONORARIOS)",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    }
+   ]
   },
   "trabajando": {
    "nombre": "Trabajando.cl",
    "resultados": 79,
-   "errores": [
-    "«tecnólogo médico scanner»: RuntimeError: servicio JSON sin ofertas; sitemap sin coincidencias; página de búsqueda sin avisos",
-    "«tecnologo medico scanner»: RuntimeError: servicio JSON sin ofertas; sitemap sin coincidencias; página de búsqueda sin avisos",
-    "«jefe imagenología»: RuntimeError: servicio JSON sin ofertas; sitemap sin coincidencias; página de búsqueda sin avisos",
-    "«jefe imagenologia»: RuntimeError: servicio JSON sin ofertas; sitemap sin coincidencias; página de búsqueda sin avisos"
+   "errores": [],
+   "descartados": {
+    "exclusion": 6,
+    "zona": 12,
+    "perfil": 15
+   },
+   "muestra": [
+    {
+     "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RADIOLOGÍA (REEMPLAZO)",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Medico imagenología",
+     "ubicacion": "Osorno, Los Lagos",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RESONANCIA MAGNETICA (REEMPLAZO)",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico Imagenología",
+     "ubicacion": "Antofagasta, Antofagasta",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Técnico en imagenología",
+     "ubicacion": "La Florida, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Técnico en imagenología",
+     "ubicacion": "La Florida, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Técnico en Imagenología - Pool Volante - RedSalud CChC",
+     "ubicacion": "Santiago, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Técnico en imagenología",
+     "ubicacion": "La Florida, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Ejecutivo de Venta Automotriz - Los Angeles",
+     "ubicacion": "Los Ángeles, Biobío",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Encargado de Turno Junior AutoPlanet - La Serena",
+     "ubicacion": "La Serena, Coquimbo",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Técnico (a) Simulación Clínica/ Pre y Post Natal/ Universidad Mayor/ Temuco",
+     "ubicacion": "Temuco, La Araucanía",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Ejecutivo de Venta Automotriz - Concepción",
+     "ubicacion": "Concepción, Biobío",
+     "motivo": "perfil"
+    }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 17,
-   "errores": []
+   "resultados": 2,
+   "errores": [],
+   "descartados": {
+    "perfil": 1
+   },
+   "muestra": [
+    {
+     "titulo": "Asistente de Información Territorial y SIG - NPSA5",
+     "ubicacion": "Santiago de Chile, RM, Chile",
+     "motivo": "perfil"
+    }
+   ]
   },
   "google": {
    "nombre": "Google Empleos",
    "resultados": 0,
    "errores": [
-    "«tecnólogo médico resonancia»: RuntimeError: {'google': 'no job data returned'}",
-    "«resonancia magnética»: RuntimeError: {'google': 'no job data returned'}",
-    "«tecnólogo médico imagenología»: RuntimeError: {'google': 'no job data returned'}",
-    "«tecnólogo médico scanner»: RuntimeError: {'google': 'no job data returned'}",
-    "«tecnólogo médico radiología»: RuntimeError: {'google': 'no job data returned'}",
-    "«especialista de aplicaciones»: RuntimeError: {'google': 'no job data returned'}",
-    "«coordinador imagenología»: RuntimeError: {'google': 'no job data returned'}",
-    "«jefe imagenología»: RuntimeError: {'google': 'no job data returned'}"
-   ]
+    "«tecnólogo médico resonancia»: RuntimeError: {'google': 'no job data returned'} · Google respondió 200 sin el panel de empleos",
+    "«resonancia magnética»: RuntimeError: {'google': 'no job data returned'} · Google respondió 200 sin el panel de empleos",
+    "«tecnólogo médico imagenología»: RuntimeError: {'google': 'no job data returned'} · Google respondió 200 sin el panel de empleos",
+    "«tecnólogo médico scanner»: RuntimeError: {'google': 'no job data returned'} · Google respondió 200 sin el panel de empleos",
+    "«tecnólogo médico radiología»: RuntimeError: {'google': 'no job data returned'} · Google respondió 200 sin el panel de empleos",
+    "«especialista de aplicaciones»: RuntimeError: {'google': 'no job data returned'} · Google respondió 200 sin el panel de empleos",
+    "«coordinador imagenología»: RuntimeError: {'google': 'no job data returned'} · Google respondió 200 sin el panel de empleos",
+    "«jefe imagenología»: RuntimeError: {'google': 'no job data returned'} · Google respondió 200 sin el panel de empleos"
+   ],
+   "descartados": {},
+   "muestra": []
   },
   "laborum": {
    "nombre": "Laborum",
    "resultados": 10,
-   "errores": []
+   "errores": [],
+   "descartados": {
+    "zona": 1
+   },
+   "muestra": [
+    {
+     "titulo": "Tecnólogo Médico Imagenología - Clínica",
+     "ubicacion": "San Antonio, Región V",
+     "motivo": "zona"
+    }
+   ]
   }
  },
  "paginas_vigiladas": []
