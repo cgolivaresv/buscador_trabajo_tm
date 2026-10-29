@@ -353,7 +353,10 @@ def trabajando(s, palabra: str) -> list[Aviso]:
         fallas.append("página de búsqueda sin avisos")
     except Exception as e:
         fallas.append(f"página de búsqueda: {type(e).__name__}")
-    # Se informa como error para que se vea en la página qué se intentó.
+    # Si todas las vías respondieron pero no hay avisos, simplemente no hay resultados.
+    if all(f.endswith(("sin ofertas", "sin coincidencias", "sin avisos")) for f in fallas):
+        return []
+    # Si alguna vía falló de verdad, se informa como error para que se vea qué se intentó.
     raise RuntimeError("; ".join(fallas))
 
 
@@ -406,13 +409,25 @@ def indeed(s, palabra: str) -> list[Aviso]:
 def google(s, palabra: str) -> list[Aviso]:
     """Google Empleos: reúne avisos de muchos portales y de páginas propias de empresas.
     Google bloquea a veces las consultas desde servidores; en ese caso se informa el error."""
-    return _jobspy(
-        "google",
-        search_term=palabra,
-        google_search_term=f"{palabra} empleos en Chile desde la última semana",
-        location="Chile",
-        results_wanted=20,
-    )
+    try:
+        # Formato de consulta que espera JobSpy: "<cargo> jobs near Chile in the last week".
+        return _jobspy("google", search_term=palabra, location="Chile", hours_old=24 * 7, results_wanted=20)
+    except RuntimeError as e:
+        raise RuntimeError(f"{e} · {_diagnostico_google(s, palabra)}") from None
+
+
+def _diagnostico_google(s, palabra: str) -> str:
+    """Explica por qué Google no entregó empleos (bloqueo, consentimiento o sin resultados)."""
+    try:
+        r = s.get("https://www.google.com/search", params={"q": f"{palabra} jobs near Chile", "udm": "8"}, timeout=20)
+        t = r.text.lower()
+        if r.status_code == 429 or "unusual traffic" in t or "/sorry/" in r.url:
+            return "Google bloqueó la consulta (tráfico inusual desde el servidor)"
+        if "consent.google" in r.url or "before you continue" in t:
+            return "Google pidió aceptar cookies (página de consentimiento)"
+        return f"Google respondió {r.status_code} sin el panel de empleos"
+    except Exception as e:  # el diagnóstico nunca debe romper el chequeo
+        return f"sin diagnóstico ({type(e).__name__})"
 
 
 # ---------------------------------------------------------------------------- Laborum

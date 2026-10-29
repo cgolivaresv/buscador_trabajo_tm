@@ -2,6 +2,10 @@
 
 La versión aparece al pie de la página: **Página** es la versión de `docs/index.html` y **Buscador** la del script que hizo el último chequeo (`buscador/__init__.py`). Cada cambio sube el número en ambos lados.
 
+## 1.14.1 · 2026-10-29
+- Google Empleos: la consulta usa el formato que espera JobSpy ("… jobs near Chile in the last week"). Si falla, el error indica si Google bloqueó la consulta o pidió aceptar cookies.
+- Trabajando.cl: una búsqueda sin avisos ya no se muestra como error.
+
 ## 1.14.0 · 2026-10-29
 - Seguimiento de postulaciones: etapas Postulé, Entrevista y Oferta (vista "En proceso"), nota por aviso e historial de cambios con fecha.
 - Sincronización entre dispositivos: las marcas se guardan en `docs/data/marcas.json` del repositorio, mediante un token de GitHub que se conecta una vez por dispositivo (botón en la barra inferior). Sin token, la página funciona igual y guarda las marcas en el navegador; al conectar, se suben.

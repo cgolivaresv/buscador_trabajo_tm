@@ -180,6 +180,38 @@ def test_jobspy(monkeypatch):
     assert (av.sitio, av.empresa, av.publicado) == ("google", "", "2026-10-28")
 
 
+def test_google_diagnostico(monkeypatch):
+    import jobspy
+    import pandas as pd
+
+    df = pd.DataFrame()
+    df.attrs = {"errors": {"google": "no job data returned"}}
+    monkeypatch.setattr(jobspy, "scrape_jobs", lambda **k: df)
+
+    class S:
+        def get(self, url, **k):
+            r = R("Our systems have detected unusual traffic from your computer network")
+            r.url = "https://www.google.com/sorry/index"
+            return r
+
+    with pytest.raises(RuntimeError, match="bloqueó"):
+        sitios.google(S(), "x")
+
+
+def test_trabajando_sin_avisos_no_es_error(monkeypatch):
+    def fake(s, u, **k):
+        if "api/searchjob" in u:
+            return R(js={"ofertas": []})
+        if "sitemap" in u:
+            return R("<urlset></urlset>")
+        return R("<html></html>")
+
+    monkeypatch.setattr(sitios, "obtener", fake)
+    sitios._SITEMAP.clear()
+    assert sitios.trabajando(None, "jefe imagenología") == []
+
+
+
 # ------------------------------------------------------------------- marcas
 def test_marcas(tmp_path):
     from buscador import marcas
