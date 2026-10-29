@@ -11,6 +11,17 @@ Revisa cada hora, de 7:00 a 22:00 (hora de Chile), los avisos de **LinkedIn, Com
 
 En el primer chequeo todo lo encontrado se guarda como base, sin abrir issue, para no llenarte de avisos antiguos.
 
+## Sincronizar marcas entre dispositivos
+
+Las marcas (visto, postulé, entrevista, oferta, descartado, notas y empresas descartadas) se guardan en `docs/data/marcas.json`. Para que la página pueda escribirlas, conecta un token una vez en cada dispositivo, desde el botón de sincronización de la barra inferior:
+
+1. GitHub → Settings → Developer settings → **Fine-grained tokens** → *Generate new token*.
+2. Repository access: **Only select repositories** → `buscador_trabajo_tm`.
+3. Repository permissions → **Contents: Read and write**. Nada más.
+4. Copia el token y pégalo en la página.
+
+Si el repositorio es público, las marcas y notas también lo son: no escribas datos sensibles en las notas.
+
 ## Configurar
 
 Todo se ajusta en [`config.yml`](config.yml), editándolo directo en GitHub:

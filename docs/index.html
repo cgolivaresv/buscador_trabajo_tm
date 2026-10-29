@@ -108,7 +108,7 @@ select{background:var(--panel-2);border:1px solid var(--line);border-radius:2px;
 .etq span{font:600 10.5px/1 var(--ui);letter-spacing:.12em;text-transform:uppercase;padding:4px 7px;border-radius:2px;border:1px solid var(--line);color:#cfcfcf;background:var(--panel-2)}
 .etq .prio{border-color:var(--orange);color:var(--orange-2);background:var(--orange-soft)}
 .etq .nuevo{border-color:var(--orange);color:#fff;background:var(--orange)}
-.etq .postule{border-color:var(--ok);color:var(--ok)}
+.etq .postule,.etq .entrevista,.etq .oferta{border-color:var(--ok);color:var(--ok)}
 .etq .cerrado{border-color:var(--bad);color:var(--bad)}
 .params{display:grid;grid-template-columns:auto minmax(0,1fr);border:1px solid var(--line);border-radius:2px;overflow:hidden;margin:0}
 .params dt,.params dd{margin:0;padding:7px 10px;border-bottom:1px solid #2c2c2c;font-size:13px}
@@ -169,6 +169,27 @@ select{background:var(--panel-2);border:1px solid var(--line);border-radius:2px;
 }
 .ver-programa{display:none;border:1px solid var(--line);background:var(--panel-2);border-radius:2px;height:30px;padding:0 10px;cursor:pointer;font:600 12px var(--ui);letter-spacing:.1em;text-transform:uppercase;align-items:center;flex:none}
 @media (prefers-reduced-motion:reduce){.derecha{transition:none}}
+.estado .led{padding:0;border:0;display:inline-block;margin-right:8px}
+.sync{border:0;background:none;color:inherit;font:inherit;cursor:pointer;display:flex;align-items:center;padding:0 14px;border-right:1px solid #262626;white-space:nowrap}
+.sync:hover{background:#1a1a1a;color:var(--ink)}
+.nota-campo{width:100%;min-height:70px;resize:vertical;background:var(--panel-2);border:1px solid var(--line);border-radius:2px;padding:8px 10px;font:400 13.5px/1.4 var(--body)}
+.sec{font:600 10.5px/1 var(--ui);text-transform:uppercase;letter-spacing:.16em;color:var(--muted);margin:2px 0 -6px}
+.hist{list-style:none;margin:0;padding:0;display:grid;gap:4px;font:400 12px/1.4 var(--mono);color:#b5b5b5}
+.hist li{display:flex;gap:10px}.hist li span:first-child{color:var(--muted);min-width:96px}
+.btn.chico{height:30px;font-size:12px;letter-spacing:.04em}
+.btn.peligro:hover{border-color:var(--bad);color:var(--bad)}
+.emp{display:flex;align-items:center;gap:6px;padding:4px 12px;font:500 13.5px/1.2 var(--ui);color:#cfcfcf}
+.emp button{margin-left:auto;border:1px solid var(--line);background:var(--panel-2);border-radius:2px;font:600 11px var(--ui);letter-spacing:.08em;text-transform:uppercase;padding:3px 6px;cursor:pointer}
+dialog{background:var(--panel);color:var(--ink);border:1px solid #4a4a4a;border-top:3px solid var(--orange);border-radius:2px;padding:0;width:min(560px,94vw);max-height:90vh}
+dialog::backdrop{background:rgba(0,0,0,.7)}
+.dlg{padding:16px 18px;display:grid;gap:12px;font-size:14px;overflow-y:auto;max-height:calc(90vh - 6px)}
+.dlg h2{margin:0;font:600 19px var(--ui)}
+.dlg ol{margin:0;padding-left:20px;display:grid;gap:4px;color:#cfcfcf}
+.dlg code{font-family:var(--mono);font-size:12.5px;background:var(--panel-2);padding:1px 5px;border-radius:2px}
+.dlg input{width:100%;height:34px;background:var(--panel-2);border:1px solid var(--line);border-radius:2px;padding:0 10px;font-family:var(--mono);font-size:13px}
+.dlg .fila-btn{display:flex;gap:8px;flex-wrap:wrap}.dlg .fila-btn .btn{padding:0 14px}
+.dlg .msg{min-height:1.2em;font-size:13px}.dlg .msg.ok{color:var(--ok)}.dlg .msg.bad{color:var(--bad)}
+.dlg .adv{font-size:12.5px;color:var(--warn);border-left:2px solid var(--warn);padding:4px 10px;background:rgba(232,178,58,.08)}
 </style>
 </head>
 <body>
@@ -190,9 +211,10 @@ select{background:var(--panel-2);border:1px solid var(--line);border-radius:2px;
         <div class="grupo vistas" id="vistas"><h3>Vistas</h3></div>
         <div class="grupo"><h3>Fuentes</h3><div id="sitios"></div></div>
         <div class="grupo"><h3>Palabras clave</h3><div id="palabras"></div></div>
+        <div class="grupo" id="grpEmp" hidden><h3>Empresas descartadas</h3><div id="empresasDesc"></div></div>
         <div class="grupo" id="grpVig" hidden><h3>Páginas vigiladas</h3><div id="vigiladas"></div></div>
         <div class="grupo">
-          <p class="nota">Revisión cada hora, de 7:00 a 22:00. Para cambiar palabras, zona o fuentes, edita <a id="cfgLink" href="#">config.yml</a>. Los estados se guardan en este navegador.</p>
+          <p class="nota">Revisión cada hora, de 7:00 a 22:00. Para cambiar palabras, zona o fuentes, edita <a id="cfgLink" href="#">config.yml</a>. Tus marcas se sincronizan entre dispositivos desde el botón de la barra inferior.</p>
           <p class="nota">Empleos Públicos (hospitales y Servicios de Salud) no permite revisión automática: <a href="https://www.empleospublicos.cl/pub/convocatorias/convocatorias.aspx" target="_blank" rel="noopener">abrir portal</a>.</p>
         </div>
       </div>
@@ -225,41 +247,73 @@ select{background:var(--panel-2);border:1px solid var(--line);border-radius:2px;
   <footer class="estado">
     <span class="cont">Avisos<b id="eTotal">—</b></span>
     <span class="cont">Prioritarios<b id="ePrio">—</b></span>
-    <span class="cont">Postulados<b id="ePost">—</b></span>
+    <span class="cont">En proceso<b id="ePost">—</b></span>
+    <button class="sync" type="button" id="syncBtn" title="Sincronización de marcas entre dispositivos"><span class="led" id="syncLed"></span><span id="syncTxt">Solo este navegador</span></button>
     <span class="ver">Página<b id="vPagina"></b></span>
     <span class="ver">Buscador<b id="vBuscador">—</b></span>
   </footer>
 </div>
 
+<dialog id="dlgSync" aria-labelledby="dlgTit"><div class="dlg">
+  <h2 id="dlgTit">Sincronizar entre dispositivos</h2>
+  <p style="margin:0;color:#cfcfcf">Tus marcas (visto, postulé, entrevista, descartes y notas) se guardan en el repositorio, en <code>docs/data/marcas.json</code>. Así las ves iguales en el celular y en el computador, y el buscador deja de avisarte lo que descartaste. Para escribir ahí, cada dispositivo necesita un token de GitHub, que se conecta una sola vez.</p>
+  <ol>
+    <li>Abre <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com → Settings → Fine-grained tokens → Generate new token</a>.</li>
+    <li>Nombre: <code>Buscador TM</code>. Expiración: la que prefieras (por ejemplo, 1 año).</li>
+    <li>Repository access: <b>Only select repositories</b> → <code id="dlgRepo">buscador_trabajo_tm</code>.</li>
+    <li>Permissions → Repository permissions → <b>Contents: Read and write</b>. Nada más.</li>
+    <li>Genera el token, cópialo y pégalo aquí.</li>
+  </ol>
+  <input type="password" id="tokenIn" placeholder="github_pat_…" autocomplete="off" aria-label="Token de GitHub">
+  <div class="msg" id="dlgMsg" role="status"></div>
+  <div class="adv">Si el repositorio es público, cualquiera que lo encuentre puede ver tus marcas y notas. No escribas datos sensibles en las notas.</div>
+  <div class="fila-btn">
+    <button class="btn go" type="button" id="tokenOk" style="grid-column:auto;height:36px">Conectar</button>
+    <button class="btn" type="button" id="tokenOff">Desconectar este dispositivo</button>
+    <button class="btn" type="button" id="dlgCerrar">Cerrar</button>
+  </div>
+  <p style="margin:0;font-size:12.5px;color:var(--muted)">El token queda guardado solo en este navegador y solo puede modificar archivos de este repositorio.</p>
+</div></dialog>
+
 <script>
-const VERSION="1.13.0";
+const VERSION="1.14.0";
 const NOM={linkedin:"LinkedIn",computrabajo:"Computrabajo",chiletrabajos:"Chiletrabajos",trabajando:"Trabajando.cl",indeed:"Indeed",laborum:"Laborum",google:"Google Empleos"};
-const VISTAS=[["activos","Activos"],["prioritarios","Prioritarios"],["nuevo","Nuevos"],["visto","Vistos"],["postule","Postulé"],["descartado","Descartados"],["cerrados","Cerrados"]];
-const LAB={nuevo:"Nuevo",visto:"Visto",postule:"Postulé",descartado:"Descartado"};
+const VISTAS=[["activos","Activos"],["prioritarios","Prioritarios"],["nuevo","Nuevos"],["visto","Vistos"],["proceso","En proceso"],["descartado","Descartados"],["cerrados","Cerrados"]];
+const LAB={nuevo:"Nuevo",visto:"Visto",postule:"Postulé",entrevista:"Entrevista",oferta:"Oferta",descartado:"Descartado"};
+const PROCESO=["postule","entrevista","oferta"];
 const ICO={
   activos:'<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4h12M2 8h12M2 12h8"/></svg>',
   prioritarios:'<svg viewBox="0 0 16 16" fill="#ec6602"><path d="m8 1.5 1.9 4 4.4.5-3.3 3 .9 4.3L8 11.1l-3.9 2.2.9-4.3-3.3-3 4.4-.5z"/></svg>',
   nuevo:'<svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="4.5" fill="#ec6602"/></svg>',
   visto:'<svg viewBox="0 0 16 16" fill="none" stroke="#8c8c8c" stroke-width="1.5"><circle cx="8" cy="8" r="4.5"/></svg>',
   postule:'<svg viewBox="0 0 16 16" fill="none" stroke="#4fbf6b" stroke-width="2"><path d="m3 8.5 3 3 7-7"/></svg>',
+  proceso:'<svg viewBox="0 0 16 16" fill="none" stroke="#4fbf6b" stroke-width="1.6"><path d="M2 8h3l2-4 2 8 2-4h3"/></svg>',
+  entrevista:'<svg viewBox="0 0 16 16" fill="none" stroke="#4fbf6b" stroke-width="1.6"><path d="M2.5 3.5h11v7h-6l-3 2.5v-2.5h-2z"/></svg>',
+  oferta:'<svg viewBox="0 0 16 16" fill="#4fbf6b"><path d="m8 1.5 1.9 4 4.4.5-3.3 3 .9 4.3L8 11.1l-3.9 2.2.9-4.3-3.3-3 4.4-.5z"/></svg>',
   descartado:'<svg viewBox="0 0 16 16" fill="none" stroke="#8c8c8c" stroke-width="1.8"><path d="m4 4 8 8M12 4l-8 8"/></svg>',
   cerrados:'<svg viewBox="0 0 16 16" fill="none" stroke="#e5533d" stroke-width="1.6"><circle cx="8" cy="8" r="5.5"/><path d="M4.2 11.8 11.8 4.2"/></svg>',
   sinver:'<svg viewBox="0 0 16 16" fill="none" stroke="#e8b23a" stroke-width="1.6"><circle cx="8" cy="8" r="5.5"/><path d="M8 5v3.5l2 1.5"/></svg>'
 };
-const KEY="buscador-tm-estados",KSEL="buscador-tm-sel";
+const KEY_VIEJO="buscador-tm-estados",KSEL="buscador-tm-sel",KMARCAS="buscador-tm-marcas",KTOKEN="buscador-tm-token";
 let avisos=[],vista="activos",sitioF="",q="",sel=null,lista=[],ultimoEstado={};
-let est={};try{est=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
-try{sel=localStorage.getItem(KSEL)}catch(e){}
-const guardar=()=>{try{localStorage.setItem(KEY,JSON.stringify(est))}catch(e){}};
+const ls={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{v==null?localStorage.removeItem(k):localStorage.setItem(k,v)}catch(e){}}};
+sel=ls.get(KSEL);
+// Marcas: copia local (la página funciona sin conexión) + repositorio (fuente común entre dispositivos).
+let marcas=(()=>{try{return JSON.parse(ls.get(KMARCAS))||null}catch(e){return null}})()||{avisos:{},empresas_descartadas:[]};
+marcas.avisos=marcas.avisos||{};marcas.empresas_descartadas=marcas.empresas_descartadas||[];
+let token=ls.get(KTOKEN),pendEmp=[],pendIds=new Set(),timer=null,subiendo=false;
+const guardarLocal=()=>ls.set(KMARCAS,JSON.stringify(marcas));
 const $=id=>document.getElementById(id);
 const el=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e};
 const norm=t=>(t||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
 const fmt=iso=>{if(!iso)return"—";const d=new Date(iso);return isNaN(d)?"—":d.toLocaleString("es-CL",{day:"2-digit",month:"short",hour:"2-digit",minute:"2-digit"})};
 const fmtCorto=iso=>{if(!iso)return"—";const d=new Date(iso);if(isNaN(d))return"—";const z=n=>String(n).padStart(2,"0");return `${z(d.getDate())}/${z(d.getMonth()+1)} ${z(d.getHours())}:${z(d.getMinutes())}`};
 const fecha=s=>new Date(s.slice(0,10)+"T12:00:00").toLocaleDateString("es-CL",{day:"numeric",month:"short",year:"numeric"});
-const estado=a=>est[a.id]||"nuevo";
+const normE=t=>norm(t).replace(/[^a-z0-9 ]/g," ").replace(/\s+/g," ").trim();
+const empDesc=a=>!!a.empresa&&marcas.empresas_descartadas.some(e=>normE(e)===normE(a.empresa));
+const estado=a=>{const m=marcas.avisos[a.id];if(m&&m.estado&&m.estado!=="nuevo")return m.estado;return(a.auto_descartado||empDesc(a))?"descartado":"nuevo"};
 const cerrado=a=>a.vigencia==="cerrado";
-const enVista=(a,id)=>id==="cerrados"?cerrado(a):cerrado(a)?false:id==="activos"?estado(a)!=="descartado":id==="prioritarios"?(a.afinidad===3&&estado(a)!=="descartado"):estado(a)===id;
+const enVista=(a,id)=>id==="cerrados"?cerrado(a):cerrado(a)?false:id==="activos"?estado(a)!=="descartado":id==="prioritarios"?(a.afinidad===3&&estado(a)!=="descartado"):id==="proceso"?PROCESO.includes(estado(a)):estado(a)===id;
 const esAngosta=()=>window.matchMedia("(max-width:1180px)").matches;
 
 // Enlace a config.yml en GitHub, deducido de la URL de Pages (usuario.github.io/repo).
@@ -293,7 +347,7 @@ function render(){
     f.setAttribute("role","option");f.setAttribute("aria-selected",String(a.id===sel));f.dataset.id=a.id;
     const ic=el("div"),sp=el("span","ico");
     sp.title=cerrado(a)?"Cerrado":a.vigencia==="sin_ver"?`No aparece hace ${a.dias_sin_ver} días`:LAB[st];
-    sp.innerHTML=cerrado(a)?ICO.cerrados:(a.vigencia==="sin_ver"&&st==="nuevo")?ICO.sinver:ICO[st];ic.append(sp);
+    sp.innerHTML=cerrado(a)?ICO.cerrados:(a.vigencia==="sin_ver"&&st==="nuevo")?ICO.sinver:(ICO[st]||ICO.visto);ic.append(sp);
     const c=el("div","cargo");if(a.afinidad===3)c.append(el("span","estrella","★"));c.append(a.titulo);
     c.append(el("span","sub solo-movil",[a.empresa,a.ubicacion,NOM[a.sitio]].filter(Boolean).join(" · ")));
     const extra=[a.renta,a.jornada].filter(Boolean).join(" · ");if(extra)c.append(el("span","sub",extra));
@@ -305,7 +359,10 @@ function render(){
   const vis=avisos.filter(a=>!a.duplicado_de);
   $("eTotal").textContent=vis.filter(a=>!cerrado(a)).length;
   $("ePrio").textContent=vis.filter(a=>a.afinidad===3&&!cerrado(a)&&estado(a)!=="descartado").length;
-  $("ePost").textContent=vis.filter(a=>estado(a)==="postule").length;
+  $("ePost").textContent=vis.filter(a=>PROCESO.includes(estado(a))).length;
+  const ge=$("empresasDesc");ge.replaceChildren();$("grpEmp").hidden=!marcas.empresas_descartadas.length;
+  marcas.empresas_descartadas.forEach(e=>{const d=el("div","emp");d.append(el("span",null,e));const b=el("button",null,"Restaurar");b.type="button";
+    b.onclick=()=>{marcas.empresas_descartadas=marcas.empresas_descartadas.filter(x=>x!==e);pendEmp.push(["-",e]);guardarLocal();programarSubida();render()};d.append(b);ge.append(d)});
   $("totalProg").textContent=vis.length;
 }
 
@@ -313,7 +370,16 @@ function seleccionar(id,abrir){sel=id;try{localStorage.setItem(KSEL,id)}catch(e)
   document.querySelectorAll(".fila").forEach(f=>{const s=f.dataset.id===id;f.classList.toggle("sel",s);f.setAttribute("aria-selected",String(s));if(s)f.scrollIntoView({block:"nearest"})});
   tarjeta(avisos.find(a=>a.id===id));if(abrir&&esAngosta())$("derecha").classList.add("abierta")}
 
-function marcar(a,s){if(s==="nuevo")delete est[a.id];else est[a.id]=s;guardar();render()}
+function marcar(a,s){const ahora=new Date().toISOString(),prev=marcas.avisos[a.id]||{};
+  // "nuevo" también se guarda (con fecha), para que deshacer una marca se sincronice.
+  marcas.avisos[a.id]={...prev,estado:s,cambio:ahora,titulo:a.titulo,empresa:a.empresa||"",url:a.url,
+    historial:[...(prev.historial||[]),{estado:s,fecha:ahora}].slice(-20)};
+  pendIds.add(a.id);guardarLocal();programarSubida();render()}
+function guardarNota(a,txt){const prev=marcas.avisos[a.id]||{estado:estado(a)};if((prev.nota||"")===txt)return;
+  marcas.avisos[a.id]={...prev,nota:txt,cambio:new Date().toISOString(),titulo:a.titulo,empresa:a.empresa||"",url:a.url};
+  pendIds.add(a.id);guardarLocal();programarSubida()}
+function descartarEmpresa(a){if(!a.empresa)return;if(!empDesc(a)){marcas.empresas_descartadas.push(a.empresa);pendEmp.push(["+",a.empresa])}
+  marcar(a,"descartado")}
 
 function tarjeta(a){const t=$("tarjeta");t.replaceChildren();
   if(!a){const d=el("div","vacio");d.append(el("b",null,"Sin aviso seleccionado"),"Elige un aviso de la cola para ver su detalle.");t.append(d);return}
@@ -336,9 +402,18 @@ function tarjeta(a){const t=$("tarjeta");t.replaceChildren();
   const ac=el("div","acciones");
   const ir=el("a","btn go","Abrir aviso ›");ir.href=a.url;ir.target="_blank";ir.rel="noopener";ir.onclick=()=>{if(st==="nuevo")marcar(a,"visto")};
   ac.append(ir);
-  [["visto","Visto"],["postule","Postulé"],["descartado","Descartar"],["nuevo","Restaurar"]].forEach(([s,l])=>{
+  [["visto","Visto"],["postule","Postulé"],["entrevista","Entrevista"],["oferta","Oferta"],["descartado","Descartar"],["nuevo","Restaurar"]].forEach(([s,l])=>{
     if(s==="nuevo"&&st==="nuevo")return;const b=el("button","btn",l);b.type="button";b.setAttribute("aria-pressed",String(st===s));b.onclick=()=>marcar(a,st===s?"nuevo":s);ac.append(b)});
+  if(a.empresa&&!/confidencial/i.test(a.empresa)){const b=el("button","btn chico peligro",empDesc(a)?"Empresa descartada":"Descartar empresa");b.type="button";b.disabled=empDesc(a);
+    b.title="No mostrar ni notificar más avisos de "+a.empresa;b.onclick=()=>descartarEmpresa(a);b.style.gridColumn="1/-1";ac.append(b)}
   t.append(ac);
+  const m=marcas.avisos[a.id]||{};
+  t.append(el("div","sec","Nota"));
+  const nt=el("textarea","nota-campo");nt.id="nota-"+a.id;nt.placeholder="Contacto, renta conversada, fecha de entrevista…";nt.value=m.nota||"";
+  nt.onblur=()=>guardarNota(a,nt.value.trim());t.append(nt);
+  const h=(m.historial||[]).filter(x=>x.estado);
+  if(h.length){t.append(el("div","sec","Historial"));const ul=el("ul","hist");
+    h.slice().reverse().forEach(x=>{const li=el("li");li.append(el("span",null,fmtCorto(x.fecha)),el("span",null,LAB[x.estado]||"Sin marca"));ul.append(li)});t.append(ul)}
 }
 
 // Teclado: flechas para moverse por la cola, Enter para abrir el aviso.
@@ -364,12 +439,66 @@ function renderEstado(e){ultimoEstado=e;
     a.title=x.error||(x.cambiado?"Último cambio: "+fmt(x.cambiado):"Sin cambios desde que se vigila");vg.append(a)});
 }
 
+// ---------------- Sincronización: lee y escribe docs/data/marcas.json con la API de GitHub.
+const REPO=(()=>{const h=location.hostname,r=location.pathname.split("/").filter(Boolean)[0];
+  return h.endsWith("github.io")&&r?{o:h.split(".")[0],r}:{o:"cgolivaresv",r:"buscador_trabajo_tm"}})();
+$("dlgRepo").textContent=REPO.r;
+const API=`https://api.github.com/repos/${REPO.o}/${REPO.r}/contents/docs/data/marcas.json`;
+const b64e=s=>{const b=new TextEncoder().encode(s);let x="";for(let i=0;i<b.length;i+=8192)x+=String.fromCharCode(...b.subarray(i,i+8192));return btoa(x)};
+const b64d=s=>new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\n/g,"")),c=>c.charCodeAt(0)));
+function syncUI(estadoSync,txt){$("syncLed").className="led "+({ok:"ok",subiendo:"warn",error:"bad"}[estadoSync]||"");$("syncTxt").textContent=txt}
+async function leerRemoto(tk){
+  const r=await fetch(API+"?ref=main&t="+Date.now(),{headers:{Accept:"application/vnd.github+json",Authorization:"Bearer "+tk},cache:"no-store"});
+  if(r.status===404)return{datos:{avisos:{},empresas_descartadas:[]},sha:null};
+  if(!r.ok)throw new Error(r.status===401?"El token no es válido o expiró.":r.status===403?"El token no tiene permiso sobre este repositorio.":"GitHub respondió "+r.status+".");
+  const j=await r.json();const d=JSON.parse(b64d(j.content)||"{}");d.avisos=d.avisos||{};d.empresas_descartadas=d.empresas_descartadas||[];return{datos:d,sha:j.sha}}
+// Mezcla: por aviso gana el cambio más reciente; las empresas aplican las altas y bajas pendientes.
+function mezclar(remoto){const out={avisos:{...remoto.avisos},empresas_descartadas:[...remoto.empresas_descartadas]};
+  for(const[id,m]of Object.entries(marcas.avisos)){const r=out.avisos[id];if(!r||String(m.cambio||"")>String(r.cambio||""))out.avisos[id]=m}
+  for(const[op,e]of pendEmp){out.empresas_descartadas=out.empresas_descartadas.filter(x=>normE(x)!==normE(e));if(op==="+")out.empresas_descartadas.push(e)}
+  return out}
+function programarSubida(){if(!token){syncUI("","Solo este navegador");return}syncUI("subiendo","Guardando…");clearTimeout(timer);timer=setTimeout(subir,1500)}
+async function subir(intento=0){if(!token)return;if(subiendo){programarSubida();return}subiendo=true;
+  try{const{datos,sha}=await leerRemoto(token);const nuevo=mezclar(datos);const n=pendIds.size+pendEmp.length;
+    const r=await fetch(API,{method:"PUT",headers:{Accept:"application/vnd.github+json",Authorization:"Bearer "+token},
+      body:JSON.stringify({message:`Marcas: ${n||1} cambio${n===1?"":"s"} desde la página`,content:b64e(JSON.stringify(nuevo,null,1)+"\n"),branch:"main",...(sha?{sha}:{})})});
+    if((r.status===409||r.status===422)&&intento<2){subiendo=false;return subir(intento+1)}
+    if(!r.ok)throw new Error("GitHub respondió "+r.status+" al guardar.");
+    marcas=nuevo;pendIds.clear();pendEmp=[];guardarLocal();syncUI("ok","Sincronizado "+new Date().toLocaleTimeString("es-CL",{hour:"2-digit",minute:"2-digit"}));render()}
+  catch(e){syncUI("error","Sin sincronizar: reintenta");console.error(e);$("syncBtn").title=String(e.message||e)}
+  finally{subiendo=false}}
+async function bajar(){ // al abrir: trae las marcas comunes y suma las que estaban solo en este navegador
+  try{let remoto;
+    if(token)remoto=(await leerRemoto(token)).datos;
+    else{const r=await fetch("data/marcas.json?t="+Date.now());remoto=r.ok?await r.json():{avisos:{},empresas_descartadas:[]};remoto.avisos=remoto.avisos||{};remoto.empresas_descartadas=remoto.empresas_descartadas||[]}
+    // Marcas del formato anterior (solo estado, en este navegador): se migran una vez.
+    let viejo={};try{viejo=JSON.parse(ls.get(KEY_VIEJO)||"{}")}catch(e){}
+    for(const[id,s]of Object.entries(viejo)){if(!marcas.avisos[id]&&!remoto.avisos[id]){const a=avisos.find(x=>x.id===id)||{};
+      marcas.avisos[id]={estado:s,cambio:new Date().toISOString(),titulo:a.titulo||"",empresa:a.empresa||"",url:a.url||"",historial:[{estado:s,fecha:new Date().toISOString()}]};pendIds.add(id)}}
+    ls.set(KEY_VIEJO,null);
+    const locales=Object.keys(marcas.avisos).filter(id=>!remoto.avisos[id]||String(marcas.avisos[id].cambio||"")>String(remoto.avisos[id].cambio||""));
+    locales.forEach(id=>pendIds.add(id));
+    marcas=mezclar(remoto);guardarLocal();render();
+    if(token){if(pendIds.size||pendEmp.length)subir();else syncUI("ok","Sincronizado")}else syncUI("","Solo este navegador")}
+  catch(e){syncUI("error","Sin sincronizar");$("syncBtn").title=String(e.message||e)}}
+// Diálogo del token
+const dlg=$("dlgSync");
+$("syncBtn").onclick=()=>{$("dlgMsg").textContent=token?"Este dispositivo está conectado.":"";$("dlgMsg").className="msg"+(token?" ok":"");$("tokenIn").value="";dlg.showModal()};
+$("dlgCerrar").onclick=()=>dlg.close();
+$("tokenOff").onclick=()=>{token=null;ls.set(KTOKEN,null);syncUI("","Solo este navegador");$("dlgMsg").textContent="Desconectado. Tus marcas siguen guardadas en el repositorio.";$("dlgMsg").className="msg"};
+$("tokenOk").onclick=async()=>{const tk=$("tokenIn").value.trim();const msg=$("dlgMsg");
+  if(!tk){msg.textContent="Pega el token antes de conectar.";msg.className="msg bad";return}
+  msg.textContent="Probando conexión…";msg.className="msg";
+  try{await leerRemoto(tk);token=tk;ls.set(KTOKEN,tk);msg.textContent="Conectado. Las marcas de este dispositivo ya se sincronizan.";msg.className="msg ok";await bajar()}
+  catch(e){msg.textContent=e.message||"No se pudo conectar.";msg.className="msg bad"}};
+window.addEventListener("online",()=>{if(token&&(pendIds.size||pendEmp.length))subir()});
+
 const sinCache=u=>u+"?t="+Date.now();
 Promise.all([fetch(sinCache("data/avisos.json")).then(r=>r.ok?r.json():{avisos:[]}).catch(()=>({avisos:[]})),
              fetch(sinCache("data/estado.json")).then(r=>r.ok?r.json():{}).catch(()=>({}))])
   .then(([a,e])=>{avisos=a.avisos||[];renderEstado(e);
     if(!sel||!avisos.some(x=>x.id===sel&&!x.duplicado_de)){const prim=avisos.find(x=>!x.duplicado_de&&x.afinidad===3)||avisos.find(x=>!x.duplicado_de);sel=prim?prim.id:null}
-    render()});
+    render();bajar()});
 </script>
 </body>
 </html>

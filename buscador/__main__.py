@@ -16,7 +16,7 @@ import yaml
 from . import __version__
 from .comun import normalizar, sesion
 from .sitios import LECTORES
-from . import salud, vigilancia
+from . import marcas, salud, vigilancia
 
 RAIZ = Path(__file__).resolve().parent.parent
 DATOS = RAIZ / "docs" / "data"
@@ -25,6 +25,8 @@ ESTADO = DATOS / "estado.json"
 ESTADISTICAS = DATOS / "estadisticas.json"
 SALUD = DATOS / "salud.json"
 VIGILANCIA = DATOS / "vigilancia.json"
+MARCAS = DATOS / "marcas.json"
+RECORDATORIOS = DATOS / "recordatorios.json"
 NOMBRES = {
     "linkedin": "LinkedIn",
     "computrabajo": "Computrabajo",
@@ -199,6 +201,7 @@ def main() -> int:
         for a in json.loads(AVISOS.read_text(encoding="utf-8")).get("avisos", []):
             historial[a["id"]] = a
     primera_vez = not historial
+    mk = marcas.cargar(MARCAS)
 
     # Estadística por palabra clave: avisos únicos encontrados y cuántos resultaron
     # útiles (afín o prioritario), acumulados entre chequeos.
@@ -231,6 +234,8 @@ def main() -> int:
                 if not av.titulo or not av.url:
                     continue
                 afinidad = evaluar(av.titulo, av.ubicacion, av.empresa, cfg)
+                if afinidad and marcas.empresa_descartada(av.empresa, mk):
+                    afinidad = 0  # empresa que la persona descartó
                 _anotar(palabra, sitio, av.id, afinidad)
                 if not afinidad:
                     continue
@@ -280,15 +285,21 @@ def main() -> int:
     # El historial se vuelve a evaluar en cada chequeo, por si cambió la configuración.
     for v in historial.values():
         v["afinidad"] = evaluar(v.get("titulo", ""), v.get("ubicacion", ""), v.get("empresa", ""), cfg)
+        if v["afinidad"] and marcas.empresa_descartada(v.get("empresa", ""), mk):
+            v["afinidad"] = 0
+    # Los avisos en proceso de postulación se conservan siempre, aunque ya no aparezcan.
+    en_proceso = {k for k, m in mk["avisos"].items() if m.get("estado") in marcas.EN_PROCESO}
     historial = {
         k: v
         for k, v in historial.items()
-        if datetime.fromisoformat(v.get("visto_ultima_vez", t)) >= limite and v["afinidad"]
+        if k in en_proceso
+        or (datetime.fromisoformat(v.get("visto_ultima_vez", t)) >= limite and v["afinidad"])
     }
 
     acciones = salud.revisar(SALUD, estado_sitios, t)
     paginas, acc_vig = vigilancia.revisar(s, cfg.get("vigilar") or [], VIGILANCIA, t)
     acciones += acc_vig
+    acciones += marcas.seguimiento(mk, RECORDATORIOS, t)
     if args.acciones:
         Path(args.acciones).write_text(json.dumps(acciones, ensure_ascii=False), encoding="utf-8")
     for a in acciones:
@@ -296,9 +307,18 @@ def main() -> int:
 
     marcar_vigencia(historial, estado_sitios, t)
     agrupar_duplicados(historial)
+    # Republicaciones (mismo cargo y empresa) de avisos que la persona descartó.
+    descartadas = marcas.firmas_descartadas(mk, firma)
+    for d in historial.values():
+        d.pop("auto_descartado", None)
+        if d["id"] not in mk["avisos"] and firma(d) in descartadas:
+            d["auto_descartado"] = True
     nuevos = [
         d for d in nuevos
-        if d["id"] in historial and not d.get("duplicado_de") and d.get("vigencia") != "cerrado"
+        if d["id"] in historial
+        and not d.get("duplicado_de")
+        and not d.get("auto_descartado")
+        and d.get("vigencia") != "cerrado"
     ]
 
     lista = sorted(historial.values(), key=lambda a: a.get("encontrado", ""), reverse=True)

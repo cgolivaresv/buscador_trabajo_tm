@@ -178,3 +178,21 @@ def test_jobspy(monkeypatch):
         [{"job_url": "https://g/1", "title": "TM", "company": float("nan"), "location": None, "date_posted": date(2026, 10, 28)}]))
     av = sitios.google(None, "x")[0]
     assert (av.sitio, av.empresa, av.publicado) == ("google", "", "2026-10-28")
+
+
+# ------------------------------------------------------------------- marcas
+def test_marcas(tmp_path):
+    from buscador import marcas
+
+    mk = {"avisos": {
+        "a1": {"estado": "descartado", "titulo": "Tecnólogo Médico Scanner", "empresa": "Adecco"},
+        "a2": {"estado": "postule", "cambio": "2026-10-20T12:00:00Z", "titulo": "TM RM", "empresa": "Clínica", "url": "u"},
+        "a3": {"estado": "entrevista", "cambio": "2026-10-28T12:00:00Z", "titulo": "TM TC"},
+    }, "empresas_descartadas": ["Manpower Chile"]}
+    assert marcas.empresa_descartada("MANPOWER CHILE", mk)
+    assert not marcas.empresa_descartada("Adecco", mk)
+    assert m.firma({"titulo": "Tecnólogo/a Médico/a Scanner", "empresa": "ADECCO CHILE"}) in marcas.firmas_descartadas(mk, m.firma)
+    ruta = tmp_path / "rec.json"
+    acc = marcas.seguimiento(mk, ruta, "2026-10-29T12:00:00+00:00")
+    assert [a["titulo"] for a in acc] == ["📌 Seguimiento: TM RM (Clínica)"]
+    assert marcas.seguimiento(mk, ruta, "2026-10-30T12:00:00+00:00") == []  # una sola vez por etapa

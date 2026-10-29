@@ -2,6 +2,12 @@
 
 La versión aparece al pie de la página: **Página** es la versión de `docs/index.html` y **Buscador** la del script que hizo el último chequeo (`buscador/__init__.py`). Cada cambio sube el número en ambos lados.
 
+## 1.14.0 · 2026-10-29
+- Seguimiento de postulaciones: etapas Postulé, Entrevista y Oferta (vista "En proceso"), nota por aviso e historial de cambios con fecha.
+- Sincronización entre dispositivos: las marcas se guardan en `docs/data/marcas.json` del repositorio, mediante un token de GitHub que se conecta una vez por dispositivo (botón en la barra inferior). Sin token, la página funciona igual y guarda las marcas en el navegador; al conectar, se suben.
+- "Descartar empresa": deja de mostrar y notificar avisos de esa empresa; se puede restaurar desde el panel Programa.
+- El buscador usa las marcas: no notifica republicaciones (mismo cargo y empresa) de avisos descartados, conserva los avisos en proceso aunque ya no aparezcan en los sitios, y abre un issue "📌 Seguimiento" cuando una postulación lleva 7 días sin cambios.
+
 ## 1.13.0 · 2026-10-29
 - Cada palabra clave con tildes se busca también sin tildes ("tecnologo medico") en Computrabajo, Chiletrabajos, Trabajando.cl y Laborum, por si su buscador las distingue. Configurable en `sin_tildes_en`. En LinkedIn, Indeed y Google no se duplica, porque ya ignoran las tildes.
 
