@@ -358,46 +358,61 @@ def trabajando(s, palabra: str) -> list[Aviso]:
 
 
 # ----------------------------------------------------------------------------- Indeed
-def indeed(s, palabra: str) -> list[Aviso]:
-    """Indeed Chile (cl.indeed.com) a través de la librería JobSpy."""
+def _jobspy(sitio: str, **kw) -> list[Aviso]:
+    """Lee un sitio a través de la librería JobSpy y convierte sus filas en avisos."""
     from jobspy import scrape_jobs
 
-    df = scrape_jobs(
-        site_name=["indeed"],
+    df = scrape_jobs(site_name=[sitio], verbose=0, **kw)
+    errores = (getattr(df, "attrs", {}) or {}).get("errors") or {}
+    if df.empty and errores:
+        raise RuntimeError(str(errores)[:200])
+    ok = lambda v: v is not None and v == v and str(v) != ""  # descarta None y NaN
+    out = []
+    for fila in df.to_dict("records"):
+        url = fila.get("job_url") if ok(fila.get("job_url")) else fila.get("job_url_direct")
+        if not ok(url) or not ok(fila.get("title")):
+            continue
+        lo, hi = fila.get("min_amount"), fila.get("max_amount")
+        renta = " a ".join(
+            f"${int(x):,}".replace(",", ".") for x in (lo, hi) if isinstance(x, (int, float)) and ok(x) and x > 0
+        )
+        tipo = str(fila.get("job_type")) if ok(fila.get("job_type")) else ""
+        out.append(
+            Aviso(
+                sitio=sitio,
+                titulo=limpio(str(fila["title"])),
+                url=str(url),
+                empresa=limpio(str(fila["company"])) if ok(fila.get("company")) else "",
+                ubicacion=limpio(str(fila["location"])) if ok(fila.get("location")) else "",
+                publicado=str(fila["date_posted"]) if ok(fila.get("date_posted")) else "",
+                renta=renta,
+            ).completar_desde_texto(tipo.replace("fulltime", "full time").replace("parttime", "part time"))
+        )
+    return out
+
+
+def indeed(s, palabra: str) -> list[Aviso]:
+    """Indeed Chile (cl.indeed.com), avisos de las últimas 2 semanas."""
+    return _jobspy(
+        "indeed",
         search_term=palabra,
         location="Chile",
         country_indeed="Chile",
         results_wanted=30,
         hours_old=24 * 14,
-        verbose=0,
     )
-    errores = (getattr(df, "attrs", {}) or {}).get("errors") or {}
-    if df.empty and errores:
-        raise RuntimeError(str(errores)[:200])
-    out = []
-    for fila in df.to_dict("records"):
-        url = fila.get("job_url") or fila.get("job_url_direct")
-        if not url or not fila.get("title"):
-            continue
-        fecha = fila.get("date_posted")
-        lo, hi = fila.get("min_amount"), fila.get("max_amount")
-        renta = " a ".join(
-            f"${int(x):,}".replace(",", ".") for x in (lo, hi) if isinstance(x, (int, float)) and x == x and x > 0
-        )
-        tipo = fila.get("job_type")
-        tipo = str(tipo) if tipo and tipo == tipo else ""
-        out.append(
-            Aviso(
-                renta=renta,
-                sitio="indeed",
-                titulo=limpio(str(fila["title"])),
-                url=str(url),
-                empresa=limpio(str(fila.get("company") or "")) if fila.get("company") == fila.get("company") else "",
-                ubicacion=limpio(str(fila.get("location") or "")) if fila.get("location") == fila.get("location") else "",
-                publicado=str(fecha) if fecha and fecha == fecha else "",
-            ).completar_desde_texto(tipo.replace("fulltime", "full time").replace("parttime", "part time"))
-        )
-    return out
+
+
+def google(s, palabra: str) -> list[Aviso]:
+    """Google Empleos: reúne avisos de muchos portales y de páginas propias de empresas.
+    Google bloquea a veces las consultas desde servidores; en ese caso se informa el error."""
+    return _jobspy(
+        "google",
+        search_term=palabra,
+        google_search_term=f"{palabra} empleos en Chile desde la última semana",
+        location="Chile",
+        results_wanted=20,
+    )
 
 
 # ---------------------------------------------------------------------------- Laborum
@@ -457,5 +472,6 @@ LECTORES = {
     "chiletrabajos": chiletrabajos,
     "trabajando": trabajando,
     "indeed": indeed,
+    "google": google,
     "laborum": laborum,
 }

@@ -16,18 +16,22 @@ import yaml
 from . import __version__
 from .comun import normalizar, sesion
 from .sitios import LECTORES
+from . import salud, vigilancia
 
 RAIZ = Path(__file__).resolve().parent.parent
 DATOS = RAIZ / "docs" / "data"
 AVISOS = DATOS / "avisos.json"
 ESTADO = DATOS / "estado.json"
 ESTADISTICAS = DATOS / "estadisticas.json"
+SALUD = DATOS / "salud.json"
+VIGILANCIA = DATOS / "vigilancia.json"
 NOMBRES = {
     "linkedin": "LinkedIn",
     "computrabajo": "Computrabajo",
     "chiletrabajos": "Chiletrabajos",
     "trabajando": "Trabajando.cl",
     "indeed": "Indeed",
+    "google": "Google Empleos",
     "laborum": "Laborum",
 }
 
@@ -164,6 +168,7 @@ def marcar_vigencia(historial: dict[str, dict], estado_sitios: dict, t: str) -> 
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--nuevos", help="escribe aquí un resumen Markdown de los avisos nuevos")
+    ap.add_argument("--acciones", help="escribe aquí las acciones de issue (alertas y páginas vigiladas)")
     args = ap.parse_args()
 
     cfg = cargar_config()
@@ -260,6 +265,14 @@ def main() -> int:
         if datetime.fromisoformat(v.get("visto_ultima_vez", t)) >= limite and v["afinidad"]
     }
 
+    acciones = salud.revisar(SALUD, estado_sitios, t)
+    paginas, acc_vig = vigilancia.revisar(s, cfg.get("vigilar") or [], VIGILANCIA, t)
+    acciones += acc_vig
+    if args.acciones:
+        Path(args.acciones).write_text(json.dumps(acciones, ensure_ascii=False), encoding="utf-8")
+    for a in acciones:
+        print(f"Acción: {a['accion']} · {a['titulo']}")
+
     marcar_vigencia(historial, estado_sitios, t)
     agrupar_duplicados(historial)
     nuevos = [
@@ -286,6 +299,7 @@ def main() -> int:
                 "palabras_clave": cfg["palabras_clave"],
                 "zona": cfg.get("zona_nombre") or "",
                 "sitios": estado_sitios,
+                "paginas_vigiladas": paginas,
             },
             ensure_ascii=False,
             indent=1,

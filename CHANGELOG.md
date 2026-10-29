@@ -2,6 +2,12 @@
 
 La versión aparece al pie de la página: **Página** es la versión de `docs/index.html` y **Buscador** la del script que hizo el último chequeo (`buscador/__init__.py`). Cada cambio sube el número en ambos lados.
 
+## 1.11.0 · 2026-10-29
+- Alerta de salud: si un sitio pasa 24 horas sin entregar avisos, se abre un issue "⚠️ Buscador: …" con los errores; se cierra solo cuando el sitio se recupera.
+- Pruebas automáticas (26, sin conexión) que corren en cada cambio del código (Actions → Pruebas).
+- Nuevo sitio: Google Empleos, vía JobSpy (reúne avisos de portales menores y páginas propias de empresas).
+- Vigilancia de páginas: lista `vigilar` en config.yml con páginas de "trabaja con nosotros"; si cambian, se abre un issue con el texto nuevo. Respeta el robots.txt de cada sitio. Se muestran en "Qué se está buscando".
+
 ## 1.10.0 · 2026-10-29
 - Nuevo sitio: Laborum (laborum.cl), mediante la misma API que usa su buscador.
 - Empleos Públicos: su robots.txt no permite revisión automática del servicio de avisos, así que no se incluye; la página tiene un acceso directo al portal.

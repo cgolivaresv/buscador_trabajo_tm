@@ -1,6 +1,6 @@
 # Buscador de Trabajo TM
 
-Revisa cada hora, de 7:00 a 22:00 (hora de Chile), los avisos de **LinkedIn, Computrabajo, Chiletrabajos, Trabajando.cl, Indeed y Laborum** según tus palabras clave, guarda los nuevos y te los muestra en una página.
+Revisa cada hora, de 7:00 a 22:00 (hora de Chile), los avisos de **LinkedIn, Computrabajo, Chiletrabajos, Trabajando.cl, Indeed, Laborum y Google Empleos** según tus palabras clave, guarda los nuevos y te los muestra en una página.
 
 ## Cómo funciona
 
@@ -23,6 +23,7 @@ Todo se ajusta en [`config.yml`](config.yml), editándolo directo en GitHub:
 | `excluir` | Términos que, si aparecen en el título, descartan el aviso |
 | `ubicaciones` / `ubicaciones_excluir` | Zonas aceptadas y zonas descartadas (vacío = todo Chile) |
 | `sitios` | Activar o desactivar cada portal |
+| `vigilar` | Páginas de "trabaja con nosotros" cuyo cambio te avisa con un issue |
 | `notificar_issue` | Abrir un issue cuando haya avisos nuevos |
 | `dias_retencion` | Días sin ver un aviso antes de borrarlo del historial |
 
@@ -34,6 +35,8 @@ Todo se ajusta en [`config.yml`](config.yml), editándolo directo en GitHub:
 4. **Correos:** asegúrate de estar en *Watch* del repositorio para recibir los issues.
 
 ## Revisar si un sitio falla
+
+Si un sitio pasa 24 horas sin entregar avisos, se abre automáticamente un issue "⚠️ Buscador: …" con los errores, y se cierra solo cuando el sitio vuelve a responder. Además, cada cambio en el código pasa por pruebas automáticas (`tests/`, workflow *Pruebas*).
 
 La página muestra cuántos resultados trajo cada sitio en el último chequeo y los errores, si los hubo. El detalle completo queda en `docs/data/estado.json` y en el registro de cada ejecución en Actions. Los portales cambian su HTML de vez en cuando; cada lector está en `buscador/sitios.py`.
 

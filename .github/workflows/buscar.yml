@@ -48,7 +48,7 @@ jobs:
         id: buscar
         if: steps.horario.outputs.correr == '1'
         run: |
-          python -m buscador --nuevos nuevos.md || echo "fallo=1" >> "$GITHUB_OUTPUT"
+          python -m buscador --nuevos nuevos.md --acciones acciones.json || echo "fallo=1" >> "$GITHUB_OUTPUT"
           if [ -s nuevos.md ]; then echo "hay_nuevos=1" >> "$GITHUB_OUTPUT"; fi
 
       - name: Guardar resultados
@@ -64,6 +64,12 @@ jobs:
             git pull --rebase --autostash
             git push
           fi
+
+      - name: Alertas de salud y páginas vigiladas
+        if: steps.horario.outputs.correr == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python -m buscador.issues acciones.json
 
       - name: Avisar por issue
         if: steps.buscar.outputs.hay_nuevos == '1'

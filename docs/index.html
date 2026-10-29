@@ -116,6 +116,7 @@ button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{ou
     <div class="chips" id="palabras"></div>
     <p class="hint" id="zona"></p>
     <div class="sites" id="sitios"></div>
+    <div class="sites" id="vigiladas"></div>
     <p class="hint">Se revisa cada hora, de 7:00 a 22:00. Para cambiar palabras clave, zonas o sitios, edita <a id="cfgLink" href="#">config.yml</a>. Los estados (visto, postulé, descartado) se guardan en este navegador.</p>
     <p class="hint">Empleos Públicos (hospitales y Servicios de Salud) no permite revisión automática; búscalo directo: <a href="https://www.empleospublicos.cl/pub/convocatorias/convocatorias.aspx" target="_blank" rel="noopener">empleospublicos.cl</a>.</p>
     </div>
@@ -140,8 +141,8 @@ button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{ou
 </div>
 
 <script>
-const VERSION="1.10.0";
-const NOM={linkedin:"linkedin.com",computrabajo:"computrabajo.cl",chiletrabajos:"chiletrabajos.cl",trabajando:"trabajando.cl",indeed:"indeed.com",laborum:"laborum.cl"};
+const VERSION="1.11.0";
+const NOM={linkedin:"linkedin.com",computrabajo:"computrabajo.cl",chiletrabajos:"chiletrabajos.cl",trabajando:"trabajando.cl",indeed:"indeed.com",laborum:"laborum.cl",google:"Google Empleos"};
 const TABS=[["activos","Activos"],["prioritarios","⭐ Prioritarios"],["nuevo","Nuevos"],["visto","Vistos"],["postule","Postulé"],["descartado","Descartados"],["cerrados","Cerrados"]];
 const LAB={nuevo:"Nuevo",visto:"Visto",postule:"Postulé",descartado:"Descartado"};
 const KEY="buscador-tm-estados";
@@ -217,6 +218,11 @@ function renderEstado(e){
   const p=$("palabras");p.replaceChildren();(e.palabras_clave||[]).forEach(k=>{const c=document.createElement("span");c.className="chip";c.textContent=k;p.append(c)});
   const ok=Object.values(e.sitios||{}).filter(v=>v.resultados>0).length,tot=Object.keys(e.sitios||{}).length;
   $("resumen").textContent=`${(e.palabras_clave||[]).length} palabras · ${e.zona||"todo Chile"} · ${ok}/${tot} sitios con resultados`;
+  const vg=$("vigiladas");vg.replaceChildren();
+  (e.paginas_vigiladas||[]).forEach(p=>{const d=document.createElement("div");d.className="site"+(p.error?" err":"");
+    const b=document.createElement("a");b.href=p.url;b.target="_blank";b.rel="noopener";b.textContent="🔎 "+p.nombre;b.style.fontFamily="var(--mono)";b.style.fontSize="12.5px";b.style.color="var(--ink)";
+    const n=document.createElement("span");n.className="n";n.textContent=p.error?p.error:(p.cambiado?"Último cambio: "+fmt(p.cambiado):"Sin cambios desde que se vigila");
+    d.append(b,n);vg.append(d)});
   const s=$("sitios");s.replaceChildren();
   Object.entries(e.sitios||{}).forEach(([k,v])=>{const d=document.createElement("div");const mal=v.errores&&v.errores.length;
     d.className="site"+(mal&&!v.resultados?" err":"");

@@ -175,6 +175,21 @@ ubicaciones_excluir:
   - vallenar
   - illapel
 
+# ---------------------------------------------------------------------------
+# PÁGINAS VIGILADAS: páginas de "trabaja con nosotros" de centros que publican
+# vacantes solo en su propio sitio. Si el texto de la página cambia, se abre un
+# issue con lo nuevo. Se respeta el robots.txt de cada sitio.
+#   nombre:   cómo se verá en el aviso
+#   url:      dirección de la página
+#   selector: (opcional) parte de la página a vigilar, como selector CSS, para
+#             ignorar cambios del resto (menús, banners). Ej: "#ofertas", ".empleos"
+# ---------------------------------------------------------------------------
+vigilar: []
+# Ejemplo:
+#   - nombre: Clínica Ejemplo · Trabaja con nosotros
+#     url: https://www.clinicaejemplo.cl/trabaja-con-nosotros
+#     selector: main
+
 # Sitios a revisar (true = activo).
 sitios:
   linkedin: true
@@ -183,6 +198,7 @@ sitios:
   trabajando: true
   indeed: true
   laborum: true
+  google: true
 
 # Abre un issue en GitHub con los avisos nuevos (GitHub te avisa por correo).
 notificar_issue: true
