@@ -3,3 +3,4 @@ __pycache__/
 .venv/
 nuevos.md
 acciones.json
+.pytest_cache/
