@@ -6,6 +6,11 @@ La versión aparece al pie de la página: **Página** es la versión de `docs/in
 - Antigüedad máxima de 48 horas al encontrar un aviso (`antiguedad_maxima_horas`). LinkedIn y Trabajando filtran a 48 h al buscar; Indeed y Google, a su opción más cercana; en todas las fuentes se revisa además la fecha de publicación ("Hace 3 días", "13 de octubre", "2026-10-28"…). Los avisos sin fecha reconocible se admiten.
 - Un aviso admitido no desaparece al cumplir 48 horas: sigue visible mientras esté abierto.
 
+## 1.16.0 · 2026-10-29
+- Panel de fuentes: el número es ahora cuántos avisos de esa fuente hay en tu lista (antes era lo que trajo el sitio, aunque se descartara todo). Al pasar el cursor se ven los resultados del sitio y por qué se descartaron.
+- El buscador registra por fuente los descartes por motivo (perfil, zona, exclusión, empresa descartada, antigüedad) y una muestra de títulos descartados. Si filtras por una fuente sin avisos, la página explica por qué y muestra ejemplos.
+- El filtro por fuente incluye los avisos que también aparecen en ella ("También en…").
+
 ## 1.15.1 · 2026-10-29
 - El límite de 48 horas solo se aplica a los avisos nuevos: los ya guardados no se borran por antigüedad, tengan o no alguna marca.
 

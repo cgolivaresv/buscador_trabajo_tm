@@ -81,6 +81,31 @@ def _patrones(lista) -> list[re.Pattern]:
 
 def evaluar(titulo: str, ubicacion: str, empresa: str, cfg) -> int:
     """0 = se descarta; 1 = sin relación con el perfil; 2 = afín; 3 = prioritario."""
+    return evaluar_con_motivo(titulo, ubicacion, empresa, cfg)[0]
+
+
+def evaluar_con_motivo(titulo: str, ubicacion: str, empresa: str, cfg) -> tuple[int, str]:
+    """Como evaluar(), y además el motivo cuando se descarta: exclusión, zona o perfil."""
+    a = _evaluar(titulo, ubicacion, empresa, cfg)
+    if a:
+        return a, ""
+    tit = normalizar(titulo)
+    if any(p.search(tit) for p in cfg["_excluir"]):
+        return 0, "exclusion"
+    if _evaluar(titulo, "", empresa, cfg) or _evaluar("", ubicacion, empresa, cfg) == 0 and _fuera_de_zona(tit, ubicacion, cfg):
+        return 0, "zona"
+    return 0, "perfil"
+
+
+def _fuera_de_zona(tit: str, ubicacion: str, cfg) -> bool:
+    ub = normalizar(ubicacion)
+    if re.fullmatch(r"[\d.,\s]*", ub):
+        ub = ""
+    return bool(cfg["_zona_si"]) and not (ub and any(p.search(ub) for p in cfg["_zona_si"])) and any(
+        p.search(ub) or p.search(tit) for p in cfg["_zona_no"])
+
+
+def _evaluar(titulo: str, ubicacion: str, empresa: str, cfg) -> int:
     tit = normalizar(titulo)
     if any(p.search(tit) for p in cfg["_excluir"]):
         return 0
@@ -236,7 +261,8 @@ def main() -> int:
     for sitio, lector in LECTORES.items():
         if not cfg["sitios"].get(sitio, False):
             continue
-        st = {"nombre": NOMBRES[sitio], "resultados": 0, "errores": []}
+        st = {"nombre": NOMBRES[sitio], "resultados": 0, "errores": [], "descartados": {}, "muestra": []}
+        vistos_descarte: set[str] = set()
         for palabra in palabras_para(sitio, cfg):
             try:
                 avisos = lector(s, palabra)
@@ -247,14 +273,18 @@ def main() -> int:
             for av in avisos:
                 if not av.titulo or not av.url:
                     continue
-                afinidad = evaluar(av.titulo, av.ubicacion, av.empresa, cfg)
+                afinidad, motivo = evaluar_con_motivo(av.titulo, av.ubicacion, av.empresa, cfg)
                 if afinidad and marcas.empresa_descartada(av.empresa, mk):
-                    afinidad = 0  # empresa que la persona descartó
+                    afinidad, motivo = 0, "empresa"  # empresa que la persona descartó
                 _anotar(palabra, sitio, av.id, afinidad)
+                if afinidad and av.id not in historial and demasiado_antiguo(av.publicado, t):
+                    afinidad, motivo = 0, "antiguedad"
                 if not afinidad:
-                    continue
-                if av.id not in historial and demasiado_antiguo(av.publicado, t):
-                    st["antiguos"] = st.get("antiguos", 0) + 1
+                    if av.id not in vistos_descarte:
+                        vistos_descarte.add(av.id)
+                        st["descartados"][motivo] = st["descartados"].get(motivo, 0) + 1
+                        if len(st["muestra"]) < 12:
+                            st["muestra"].append({"titulo": av.titulo, "ubicacion": av.ubicacion, "motivo": motivo})
                     continue
                 d = encontrados.get(av.id)
                 if d:

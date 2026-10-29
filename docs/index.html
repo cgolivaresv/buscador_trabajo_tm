@@ -276,7 +276,7 @@ dialog::backdrop{background:rgba(0,0,0,.7)}
 </div></dialog>
 
 <script>
-const VERSION="1.15.1";
+const VERSION="1.16.0";
 const NOM={linkedin:"LinkedIn",computrabajo:"Computrabajo",chiletrabajos:"Chiletrabajos",trabajando:"Trabajando.cl",indeed:"Indeed",laborum:"Laborum",google:"Google Empleos"};
 const VISTAS=[["activos","Activos"],["prioritarios","Prioritarios"],["nuevo","Nuevos"],["visto","Vistos"],["proceso","En proceso"],["descartado","Descartados"],["cerrados","Cerrados"]];
 const LAB={nuevo:"Nuevo",visto:"Visto",postule:"Postulé",entrevista:"Entrevista",oferta:"Oferta",descartado:"Descartado"};
@@ -328,7 +328,9 @@ $("q").oninput=e=>{q=norm(e.target.value.trim());render()};
 $("cerrarHoja").onclick=()=>$("derecha").classList.remove("abierta");
 $("verPrograma").onclick=()=>{const x=$("izq").classList.toggle("expandida");$("verPrograma").setAttribute("aria-expanded",String(x))};
 
-function pool(){return avisos.filter(a=>!a.duplicado_de&&(!sitioF||a.sitio===sitioF)&&(!q||norm([a.titulo,a.empresa,a.ubicacion].join(" ")).includes(q)))}
+const deFuente=(a,k)=>a.sitio===k||(a.tambien_en||[]).some(o=>o.sitio===k);
+const MOTIVO={perfil:"no calzan con tu perfil",zona:"fuera de tu zona",exclusion:"excluidos (TENS, auxiliar…)",empresa:"de empresas descartadas",antiguedad:"con más de 48 horas"};
+function pool(){return avisos.filter(a=>!a.duplicado_de&&(!sitioF||deFuente(a,sitioF))&&(!q||norm([a.titulo,a.empresa,a.ubicacion].join(" ")).includes(q)))}
 
 function render(){
   const p=pool();
@@ -340,8 +342,16 @@ function render(){
   lista=p.filter(a=>enVista(a,vista)).sort((x,y)=>(rango(x)-rango(y))||((y.afinidad||1)-(x.afinidad||1))||String(y.encontrado||"").localeCompare(String(x.encontrado||"")));
   $("contador").textContent=lista.length+" / "+avisos.filter(a=>!a.duplicado_de).length;
   const box=$("lista");box.replaceChildren();
-  if(!lista.length){const d=el("div","vacio");d.append(el("b",null,avisos.length?"Nada en esta vista":"Todavía no hay avisos"),
-      avisos.length?"Prueba otra vista o quita los filtros.":"Aparecerán aquí después del primer chequeo.");box.append(d)}
+  if(!lista.length){const d=el("div","vacio");const st=sitioF&&(ultimoEstado.sitios||{})[sitioF];
+    if(st&&!p.length){d.append(el("b",null,`${NOM[sitioF]} no tiene avisos en tu lista`));
+      const desc=st.descartados||{},partes=Object.entries(desc).map(([k,n])=>`${n} ${MOTIVO[k]||k}`);
+      d.append(`En el último chequeo trajo ${st.resultados} resultados`+(partes.length?`: ${partes.join(", ")}.`:"."));
+      if((st.muestra||[]).length){const ul=el("ul","hist");ul.style.cssText="text-align:left;margin:14px auto 0;max-width:560px";
+        st.muestra.forEach(x=>{const li=el("li");li.append(el("span",null,({perfil:"Perfil",zona:"Zona",exclusion:"Exclusión",empresa:"Empresa",antiguedad:"> 48 h"})[x.motivo]||""),el("span",null,x.titulo+(x.ubicacion?" · "+x.ubicacion:"")));ul.append(li)});
+        d.append(el("div","sec","Ejemplos descartados")),d.lastChild.style.marginTop="16px";d.append(ul)}}
+    else d.append(el("b",null,avisos.length?"Nada en esta vista":"Todavía no hay avisos"),
+      avisos.length?"Prueba otra vista o quita los filtros.":"Aparecerán aquí después del primer chequeo.");
+    box.append(d)}
   lista.forEach(a=>{const st=estado(a);
     const f=el("div","tabla fila "+st+(cerrado(a)?" cerrado":"")+(a.vigencia==="sin_ver"?" sinver":"")+(a.id===sel?" sel":""));
     f.setAttribute("role","option");f.setAttribute("aria-selected",String(a.id===sel));f.dataset.id=a.id;
@@ -430,8 +440,10 @@ function renderEstado(e){ultimoEstado=e;
   const p=$("palabras");p.replaceChildren();(e.palabras_clave||[]).forEach(k=>{p.append(el("span","chip",k),document.createElement("br"))});
   const s=$("sitios");s.replaceChildren();
   sit.forEach(([k,v])=>{const mal=v.errores&&v.errores.length;const b=el("button","paso");b.type="button";b.setAttribute("aria-pressed",String(sitioF===k));
-    b.append(el("span","led "+(v.resultados>0?(mal?"warn":"ok"):"bad")),el("span",null,NOM[k]||v.nombre||k),el("span","n",v.resultados));
-    b.title=(mal?v.errores.join("\n")+"\n":"")+`${v.resultados} resultados en el último chequeo`+(v.antiguos?` · ${v.antiguos} descartados por antigüedad`:"");
+    const enLista=avisos.filter(a=>!a.duplicado_de&&deFuente(a,k)).length;
+    b.append(el("span","led "+(v.resultados>0?(mal?"warn":"ok"):"bad")),el("span",null,NOM[k]||v.nombre||k),el("span","n",enLista));
+    const desc=Object.entries(v.descartados||{}).map(([m,n])=>`${n} ${MOTIVO[m]||m}`);
+    b.title=(mal?v.errores.join("\n")+"\n":"")+`${enLista} en tu lista · ${v.resultados} resultados en el último chequeo`+(desc.length?`\nDescartados: ${desc.join(", ")}`:"");
     b.onclick=()=>{sitioF=sitioF===k?"":k;$("sitioF").value=sitioF;renderEstado(e);render()};s.append(b);
     if(mal&&!v.resultados)s.append(el("div","err-det",v.errores[0]))});
   const vg=$("vigiladas");vg.replaceChildren();const pv=e.paginas_vigiladas||[];$("grpVig").hidden=!pv.length;
