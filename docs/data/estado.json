@@ -1,6 +1,6 @@
 {
  "version": "1.16.0",
- "ultimo_chequeo": "2026-10-30T11:50:55+00:00",
+ "ultimo_chequeo": "2026-10-30T13:04:11+00:00",
  "nuevos": 0,
  "total": 30,
  "palabras_clave": [
@@ -46,16 +46,6 @@
      "motivo": "perfil"
     },
     {
-     "titulo": "Senior Health Care Support Worker – Radiography",
-     "ubicacion": "Hospital, Región Metropolitana de Santiago, Chile",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Senior Health Care Support Worker &#x2013; Radiography",
-     "ubicacion": "Hospital, Región Metropolitana de Santiago, Chile",
-     "motivo": "perfil"
-    },
-    {
      "titulo": "Analista de Atracción de Talentos / Providencia",
      "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
      "motivo": "perfil"
@@ -76,6 +66,16 @@
      "motivo": "perfil"
     },
     {
+     "titulo": "Consultant Radiographer &#x2013; Breast Imaging",
+     "ubicacion": "Hospital, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Consultant Radiographer – Breast Imaging",
+     "ubicacion": "Hospital, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
      "titulo": "Head of Operational Excellence LATAM",
      "ubicacion": "Región Metropolitana de Santiago, Chile",
      "motivo": "perfil"
@@ -89,11 +89,11 @@
   },
   "computrabajo": {
    "nombre": "Computrabajo",
-   "resultados": 170,
+   "resultados": 168,
    "errores": [],
    "descartados": {
     "zona": 23,
-    "exclusion": 10,
+    "exclusion": 9,
     "perfil": 20
    },
    "muestra": [
@@ -143,14 +143,14 @@
      "motivo": "perfil"
     },
     {
-     "titulo": "Administrativo(a) de Apoyo en Imagenología",
-     "ubicacion": "La Serena, Coquimbo",
-     "motivo": "exclusion"
-    },
-    {
      "titulo": "Ingeniero de Servicio y Laboratorio",
      "ubicacion": "Santiago - Providencia, R.Metropolitana",
      "motivo": "exclusion"
+    },
+    {
+     "titulo": "Visitador(a) Médico(a)",
+     "ubicacion": "Antofagasta, Antofagasta",
+     "motivo": "zona"
     },
     {
      "titulo": "Visitador(a) Médico(a)",
@@ -164,8 +164,8 @@
    "resultados": 164,
    "errores": [],
    "descartados": {
-    "zona": 9,
-    "perfil": 12,
+    "zona": 8,
+    "perfil": 13,
     "exclusion": 6
    },
    "muestra": [
@@ -185,37 +185,37 @@
      "motivo": "zona"
     },
     {
+     "titulo": "GARZON PART TIME",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Ayudantes de Cocina con experiencia",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
      "titulo": "CHOFER DESPACHADOR",
      "ubicacion": "Santiago",
      "motivo": "perfil"
     },
     {
-     "titulo": "Ingeniero SSOMA (Seguridad, Salud Ocupacional y…",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Electromecanico",
+     "titulo": "Promotores/as Campaña Navidad Santiago",
      "ubicacion": "Santiago",
      "motivo": "perfil"
     },
     {
-     "titulo": "PROFESIONAL DE APOYO TÉCNICO DE OBRAS",
-     "ubicacion": "Temuco",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Vendedor Técnico con Experiencia en Sistemas…",
+     "titulo": "Jefe Comercial",
      "ubicacion": "Santiago",
      "motivo": "perfil"
     },
     {
-     "titulo": "Inspector(a) de Correas Transportadoras – Nueva…",
-     "ubicacion": "Calama",
+     "titulo": "Salvavidas",
+     "ubicacion": "San antonio",
      "motivo": "zona"
     },
     {
-     "titulo": "Técnico construcción, eléctrico y/o aire acondiconado",
+     "titulo": "MAESTROS PIZZERO FABRICA MASAS CONGELADAS",
      "ubicacion": "Santiago",
      "motivo": "perfil"
     },
@@ -237,8 +237,8 @@
    "errores": [],
    "descartados": {
     "exclusion": 6,
-    "zona": 7,
-    "perfil": 19
+    "zona": 8,
+    "perfil": 18
    },
    "muestra": [
     {
