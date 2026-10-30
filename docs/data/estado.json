@@ -1,6 +1,6 @@
 {
  "version": "1.16.0",
- "ultimo_chequeo": "2026-10-29T23:45:50+00:00",
+ "ultimo_chequeo": "2026-10-30T01:08:51+00:00",
  "nuevos": 0,
  "total": 30,
  "palabras_clave": [
@@ -20,8 +20,8 @@
    "resultados": 80,
    "errores": [],
    "descartados": {
-    "perfil": 32,
-    "exclusion": 6,
+    "perfil": 31,
+    "exclusion": 8,
     "zona": 7
    },
    "muestra": [
@@ -51,29 +51,29 @@
      "motivo": "perfil"
     },
     {
+     "titulo": "Consultant Radiographer &#x2013; Breast Imaging",
+     "ubicacion": "Hospital, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
      "titulo": "Psiquiatra",
      "ubicacion": "Chile",
      "motivo": "perfil"
     },
     {
-     "titulo": "TENS PARA REEMPLAZOS SANTIAGO RM",
+     "titulo": "Medico IAAPS Extensión y Apertura - Honorario - APS - Cerrillos",
      "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "TENS Ambulancia Urgencia y Rescate - Clínica San Carlos",
+     "ubicacion": "Las Condes, Región Metropolitana de Santiago, Chile",
      "motivo": "exclusion"
     },
     {
-     "titulo": "ACADÉMICO(A) DISCIPLINAR MEDICINA VETERINARIA CONCEPCIÓN OCTUBRE 2026",
-     "ubicacion": "Concepción, Bio Bio, Chile",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnico en Neurofisiologia",
+     "titulo": "TENS PARA REEMPLAZOS SANTIAGO RM",
      "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "CURSO DE GESTION DEL RIEGO DE DESASTRES Y RESPUESTAS SANITARIAS EN APS",
-     "ubicacion": "Chile",
-     "motivo": "perfil"
+     "motivo": "exclusion"
     },
     {
      "titulo": "Head of Operational Excellence LATAM",
@@ -164,11 +164,16 @@
    "resultados": 165,
    "errores": [],
    "descartados": {
-    "perfil": 15,
-    "zona": 7,
-    "exclusion": 6
+    "zona": 8,
+    "perfil": 13,
+    "exclusion": 7
    },
    "muestra": [
+    {
+     "titulo": "Ingeniero SSOMA (Seguridad, Salud Ocupacional y…",
+     "ubicacion": "Valparaíso",
+     "motivo": "zona"
+    },
     {
      "titulo": "Electromecanico",
      "ubicacion": "Santiago",
@@ -190,6 +195,11 @@
      "motivo": "zona"
     },
     {
+     "titulo": "Técnico construcción, eléctrico y/o aire acondiconado",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
      "titulo": "INGENIERO/A AGRÓNOMO/A - ENCARGADO/A DE OPERACIONES…",
      "ubicacion": "Rancagua",
      "motivo": "perfil"
@@ -200,24 +210,14 @@
      "motivo": "perfil"
     },
     {
-     "titulo": "Product Manager Senior – Equipos Móviles…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Ingeniero/a en Prevención de Riesgos- Proyectos…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Ingeniero/a de Soporte Funcional de Aplicaciones…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "MAESTRO SUSHERO / SUSHI",
-     "ubicacion": "Valparaíso",
+     "titulo": "Paramédico Conductor - 8x6 Copiapó.",
+     "ubicacion": "Copiapó",
      "motivo": "zona"
+    },
+    {
+     "titulo": "¡ESTAMOS BUSCANDO ADMINISTRATIVO LOGÍSTICO – BODEGA…",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
     },
     {
      "titulo": "TECNÓLOGO(A) MÉDICO(A) Unidad de Imageneología Hospital…",
@@ -282,11 +282,6 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Ejecutivo de Venta Automotriz - Los Angeles",
-     "ubicacion": "Los Ángeles, Biobío",
-     "motivo": "perfil"
-    },
-    {
      "titulo": "Encargado de Turno Junior AutoPlanet - La Serena",
      "ubicacion": "La Serena, Coquimbo",
      "motivo": "zona"
@@ -300,15 +295,28 @@
      "titulo": "Ejecutivo de Venta Automotriz - Chillán",
      "ubicacion": "Chillán, Ñuble",
      "motivo": "perfil"
+    },
+    {
+     "titulo": "Ejecutivo de Venta Automotriz - Valdivia",
+     "ubicacion": "Valdivia, Los Ríos",
+     "motivo": "perfil"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 0,
+   "resultados": 7,
    "errores": [],
-   "descartados": {},
-   "muestra": []
+   "descartados": {
+    "exclusion": 1
+   },
+   "muestra": [
+    {
+     "titulo": "Técnico en Enfermería SEL - Centro Viña del Mar Achs Salud",
+     "ubicacion": "Viña del Mar, VS, Chile",
+     "motivo": "exclusion"
+    }
+   ]
   },
   "google": {
    "nombre": "Google Empleos",
