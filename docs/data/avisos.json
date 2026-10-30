@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-10-30T13:04:11+00:00",
+ "actualizado": "2026-10-30T14:08:03+00:00",
  "avisos": [
   {
    "id": "48e9fd1b6c2fbc",
@@ -19,7 +19,7 @@
    "contrato": "Reemplazo",
    "cierre": "",
    "encontrado": "2026-10-29T21:51:46+00:00",
-   "visto_ultima_vez": "2026-10-30T13:04:11+00:00",
+   "visto_ultima_vez": "2026-10-30T14:08:03+00:00",
    "vigencia": "vigente",
    "dias_sin_ver": 0
   },
@@ -40,7 +40,7 @@
    "contrato": "",
    "cierre": "",
    "encontrado": "2026-10-29T20:53:58+00:00",
-   "visto_ultima_vez": "2026-10-30T13:04:11+00:00",
+   "visto_ultima_vez": "2026-10-30T14:08:03+00:00",
    "vigencia": "vigente",
    "dias_sin_ver": 0
   },
@@ -62,7 +62,7 @@
    "contrato": "",
    "cierre": "",
    "encontrado": "2026-10-29T19:56:48+00:00",
-   "visto_ultima_vez": "2026-10-30T13:04:11+00:00",
+   "visto_ultima_vez": "2026-10-30T14:08:03+00:00",
    "vigencia": "vigente",
    "dias_sin_ver": 0
   },
@@ -84,7 +84,7 @@
    "contrato": "",
    "cierre": "",
    "encontrado": "2026-10-29T19:56:48+00:00",
-   "visto_ultima_vez": "2026-10-30T13:04:11+00:00",
+   "visto_ultima_vez": "2026-10-30T14:08:03+00:00",
    "vigencia": "vigente",
    "dias_sin_ver": 0
   },
@@ -108,7 +108,7 @@
    "contrato": "",
    "cierre": "",
    "encontrado": "2026-10-29T19:56:48+00:00",
-   "visto_ultima_vez": "2026-10-30T13:04:11+00:00",
+   "visto_ultima_vez": "2026-10-30T14:08:03+00:00",
    "vigencia": "vigente",
    "dias_sin_ver": 0
   },
@@ -132,7 +132,7 @@
    "contrato": "",
    "cierre": "",
    "encontrado": "2026-10-29T19:56:48+00:00",
-   "visto_ultima_vez": "2026-10-30T13:04:11+00:00",
+   "visto_ultima_vez": "2026-10-30T14:08:03+00:00",
    "vigencia": "vigente",
    "dias_sin_ver": 0
   },
@@ -154,7 +154,7 @@
    "contrato": "",
    "cierre": "",
    "encontrado": "2026-10-29T19:56:48+00:00",
-   "visto_ultima_vez": "2026-10-30T13:04:11+00:00",
+   "visto_ultima_vez": "2026-10-30T14:08:03+00:00",
    "vigencia": "vigente",
    "dias_sin_ver": 0
   },
@@ -178,7 +178,7 @@
    "contrato": "",
    "cierre": "",
    "encontrado": "2026-10-29T19:56:48+00:00",
-   "visto_ultima_vez": "2026-10-30T13:04:11+00:00",
+   "visto_ultima_vez": "2026-10-30T14:08:03+00:00",
    "vigencia": "vigente",
    "dias_sin_ver": 0
   },
@@ -200,7 +200,7 @@
    "contrato": "",
    "cierre": "",
    "encontrado": "2026-10-29T19:56:48+00:00",
-   "visto_ultima_vez": "2026-10-30T13:04:11+00:00",
+   "visto_ultima_vez": "2026-10-30T14:08:03+00:00",
    "vigencia": "vigente",
    "dias_sin_ver": 0
   },
@@ -222,7 +222,7 @@
    "contrato": "",
    "cierre": "",
    "encontrado": "2026-10-29T19:56:48+00:00",
-   "visto_ultima_vez": "2026-10-30T13:04:11+00:00",
+   "visto_ultima_vez": "2026-10-30T14:08:03+00:00",
    "vigencia": "vigente",
    "dias_sin_ver": 0
   },
@@ -241,7 +241,7 @@
     "resonancia magnetica"
    ],
    "encontrado": "2026-10-29T18:13:44+00:00",
-   "visto_ultima_vez": "2026-10-30T13:04:11+00:00",
+   "visto_ultima_vez": "2026-10-30T14:08:03+00:00",
    "jornada": "Jornada completa",
    "afinidad": 3,
    "vigencia": "vigente",
@@ -262,7 +262,7 @@
     "resonancia magnetica"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T13:04:11+00:00",
+   "visto_ultima_vez": "2026-10-30T14:08:03+00:00",
    "renta": "$ 600.000",
    "afinidad": 3,
    "vigencia": "vigente",
@@ -357,7 +357,7 @@
     "tecnologo medico imagenologia"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T13:04:11+00:00",
+   "visto_ultima_vez": "2026-10-30T14:08:03+00:00",
    "afinidad": 2,
    "vigencia": "vigente",
    "dias_sin_ver": 0
@@ -377,7 +377,7 @@
     "tecnologo medico radiologia"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T13:04:11+00:00",
+   "visto_ultima_vez": "2026-10-30T14:08:03+00:00",
    "afinidad": 2,
    "vigencia": "vigente",
    "dias_sin_ver": 0
@@ -431,7 +431,7 @@
     "tecnologo medico scanner"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T13:04:11+00:00",
+   "visto_ultima_vez": "2026-10-30T14:08:03+00:00",
    "renta": "$ 1.111.111",
    "afinidad": 2,
    "vigencia": "vigente",
@@ -469,7 +469,7 @@
     "tecnologo medico scanner"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T13:04:11+00:00",
+   "visto_ultima_vez": "2026-10-30T14:08:03+00:00",
    "afinidad": 2,
    "vigencia": "vigente",
    "dias_sin_ver": 0
@@ -489,7 +489,7 @@
     "tecnologo medico imagenologia"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T13:04:11+00:00",
+   "visto_ultima_vez": "2026-10-30T14:08:03+00:00",
    "afinidad": 2,
    "vigencia": "vigente",
    "dias_sin_ver": 0
@@ -509,7 +509,7 @@
     "tecnologo medico imagenologia"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T13:04:11+00:00",
+   "visto_ultima_vez": "2026-10-30T14:08:03+00:00",
    "afinidad": 2,
    "vigencia": "vigente",
    "dias_sin_ver": 0
@@ -527,7 +527,7 @@
     "resonancia magnetica"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T13:04:11+00:00",
+   "visto_ultima_vez": "2026-10-30T14:08:03+00:00",
    "afinidad": 2,
    "vigencia": "vigente",
    "dias_sin_ver": 0
@@ -545,7 +545,7 @@
     "tecnologo medico imagenologia"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T13:04:11+00:00",
+   "visto_ultima_vez": "2026-10-30T14:08:03+00:00",
    "afinidad": 2,
    "vigencia": "vigente",
    "dias_sin_ver": 0
@@ -563,7 +563,7 @@
     "tecnologo medico imagenologia"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T13:04:11+00:00",
+   "visto_ultima_vez": "2026-10-30T14:08:03+00:00",
    "afinidad": 2,
    "vigencia": "vigente",
    "dias_sin_ver": 0
@@ -581,7 +581,7 @@
     "tecnologo medico imagenologia"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T13:04:11+00:00",
+   "visto_ultima_vez": "2026-10-30T14:08:03+00:00",
    "afinidad": 2,
    "vigencia": "vigente",
    "dias_sin_ver": 0
@@ -599,7 +599,7 @@
     "tecnologo medico imagenologia"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T13:04:11+00:00",
+   "visto_ultima_vez": "2026-10-30T14:08:03+00:00",
    "afinidad": 2,
    "vigencia": "vigente",
    "dias_sin_ver": 0

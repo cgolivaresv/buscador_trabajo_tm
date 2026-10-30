@@ -1,6 +1,6 @@
 {
  "version": "1.16.0",
- "ultimo_chequeo": "2026-10-30T13:04:11+00:00",
+ "ultimo_chequeo": "2026-10-30T14:08:03+00:00",
  "nuevos": 0,
  "total": 30,
  "palabras_clave": [
@@ -20,8 +20,8 @@
    "resultados": 80,
    "errores": [],
    "descartados": {
-    "perfil": 34,
-    "zona": 6,
+    "perfil": 35,
+    "zona": 5,
     "exclusion": 7
    },
    "muestra": [
@@ -161,10 +161,10 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 164,
+   "resultados": 160,
    "errores": [],
    "descartados": {
-    "zona": 8,
+    "zona": 7,
     "perfil": 13,
     "exclusion": 6
    },
@@ -185,22 +185,7 @@
      "motivo": "zona"
     },
     {
-     "titulo": "GARZON PART TIME",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Ayudantes de Cocina con experiencia",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
      "titulo": "CHOFER DESPACHADOR",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Promotores/as Campaña Navidad Santiago",
      "ubicacion": "Santiago",
      "motivo": "perfil"
     },
@@ -210,12 +195,27 @@
      "motivo": "perfil"
     },
     {
-     "titulo": "Salvavidas",
-     "ubicacion": "San antonio",
-     "motivo": "zona"
+     "titulo": "ENFERMERO/KINESIOLOGO",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
     },
     {
-     "titulo": "MAESTROS PIZZERO FABRICA MASAS CONGELADAS",
+     "titulo": "Ayudantes de Cocina con experiencia",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Operarios - San Bernardo",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Ejecutivo de ventas",
+     "ubicacion": "Chillán",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Asistente de Ventas Junior – Full…",
      "ubicacion": "Santiago",
      "motivo": "perfil"
     },
@@ -237,8 +237,8 @@
    "errores": [],
    "descartados": {
     "exclusion": 6,
-    "zona": 8,
-    "perfil": 18
+    "zona": 9,
+    "perfil": 17
    },
    "muestra": [
     {
@@ -305,7 +305,7 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 8,
+   "resultados": 6,
    "errores": [],
    "descartados": {
     "exclusion": 1
