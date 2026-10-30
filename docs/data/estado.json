@@ -1,6 +1,6 @@
 {
  "version": "1.17.0",
- "ultimo_chequeo": "2026-10-30T17:50:35+00:00",
+ "ultimo_chequeo": "2026-10-30T18:54:44+00:00",
  "nuevos": 0,
  "total": 29,
  "palabras_clave": [
@@ -21,10 +21,15 @@
    "errores": [],
    "descartados": {
     "perfil": 33,
-    "exclusion": 7,
-    "zona": 5
+    "zona": 5,
+    "exclusion": 7
    },
    "muestra": [
+    {
+     "titulo": "Coordinador(a) de Mantenimiento Mecánico Hospitalario",
+     "ubicacion": "Cerro Navia, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Coordinador de Comunicaciones Externas - RedSalud CChC",
      "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
@@ -69,11 +74,6 @@
      "titulo": "Consultant Radiographer – Breast Imaging",
      "ubicacion": "Hospital, Región Metropolitana de Santiago, Chile",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Técnico En Enfermería De Nivel Superior",
-     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
-     "motivo": "exclusion"
     },
     {
      "titulo": "Consultor SAP Junior - Rubro Mineria",
@@ -164,8 +164,8 @@
    "resultados": 160,
    "errores": [],
    "descartados": {
-    "perfil": 13,
-    "zona": 7,
+    "perfil": 15,
+    "zona": 5,
     "exclusion": 6
    },
    "muestra": [
@@ -175,9 +175,39 @@
      "motivo": "perfil"
     },
     {
+     "titulo": "Operarios - San Bernardo",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "GUARDIAS PARA CCTV",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
      "titulo": "Técnico eléctrico - mantenimiento",
      "ubicacion": "Santiago",
      "motivo": "perfil"
+    },
+    {
+     "titulo": "TECNICO EN AIRE ACONDICIONADO",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Desarrollador nivel Medio - Workflow JIRA",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "MANIPULADORA DE ALIMENTOS",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Asesor Comercial Para importante Clínica ubicada…",
+     "ubicacion": "Valparaíso",
+     "motivo": "zona"
     },
     {
      "titulo": "Promotores/as Campaña Navidad Santiago",
@@ -185,39 +215,9 @@
      "motivo": "perfil"
     },
     {
-     "titulo": "MAESTROS PIZZERO FABRICA MASAS CONGELADAS",
-     "ubicacion": "Santiago",
+     "titulo": "Ejecutivo de ventas",
+     "ubicacion": "Chillán",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Salvavidas",
-     "ubicacion": "San antonio",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Ayudantes de Cocina con experiencia",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "GARZON PART TIME",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Administrador de Contrato – Proyecto en…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "ENFERMERO/KINESIOLOGO",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Ayudante de Montaje y Desmontaje Equipos…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
     },
     {
      "titulo": "TECNÓLOGO(A) MÉDICO(A) Unidad de Imageneología Hospital…",
