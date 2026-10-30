@@ -41,7 +41,7 @@ perfil:
     - resonancia*
     - resonador*
     - cardioresonancia
-    - RM
+    # "RM" no se usa sola: en los avisos suele significar Región Metropolitana.
     - RMN
     - MRI
     - MR

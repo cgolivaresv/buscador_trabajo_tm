@@ -86,6 +86,7 @@ def test_variantes_sin_tildes(cfg):
     "titulo,ubic,empresa,esperado",
     [
         ("Tecnólogo Médico Resonancia Magnética", "Talca, Maule", "", 3),
+        ("TM RMN 1.5T", "Talca", "", 3),
         ("Tecnólogo médico TC", "Colina", "", 2),
         ("Application Specialist MR", "Santiago", "Siemens Healthineers", 3),
         ("Especialista de Aplicaciones", "Santiago", "GE HealthCare", 2),
@@ -98,6 +99,8 @@ def test_variantes_sin_tildes(cfg):
         ("Vendedor", "Temuco", "", 0),
         ("TM Radiología", "Valdivia, Los Ríos", "", 2),
         ("Tecnólogo Médico Imagenología", "4,2", "", 2),
+        ("KINESIOLOGOS (LAMPA, COLINA Y CHICUREO) RM SECTOR NORTE", "Santiago", "", 0),
+        ("Tecnólogo Médico RM Sector Oriente", "Santiago", "", 2),
     ],
 )
 def test_evaluar(cfg, titulo, ubic, empresa, esperado):

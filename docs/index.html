@@ -86,7 +86,18 @@ select{background:var(--panel-2);border:1px solid var(--line);border-radius:2px;
 .thead{flex:none;background:var(--panel-3);border-bottom:1px solid var(--line);font:600 11px/1 var(--ui);text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
 .thead>div{padding:8px 8px}
 .fila{border-bottom:1px solid #2a2a2a;cursor:pointer;background:var(--panel);position:relative}
-.fila:nth-child(even){background:#1f1f1f}
+.fila.par{background:#1f1f1f}
+.desl{position:relative;overflow:hidden}
+.desl.si{background:var(--bad)}
+.desl.si::before{content:"✕  DESCARTAR";position:absolute;right:18px;top:50%;transform:translateY(-50%);font:700 13px/1 var(--ui);letter-spacing:.14em;color:#fff;opacity:.5;transition:opacity .1s}
+.desl.listo::before{opacity:1}
+.desl>.fila{touch-action:pan-y;will-change:transform}
+.toast{position:fixed;left:50%;bottom:calc(40px + env(safe-area-inset-bottom,0px));transform:translate(-50%,16px);opacity:0;pointer-events:none;z-index:40;
+  display:flex;align-items:center;gap:16px;max-width:calc(100vw - 32px);background:#2a2a2a;border:1px solid #4a4a4a;border-left:3px solid var(--orange);border-radius:2px;
+  padding:10px 12px 10px 14px;font:500 14px/1.3 var(--ui);box-shadow:0 8px 24px rgba(0,0,0,.6);transition:opacity .15s,transform .15s}
+.toast.visible{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+.toast span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.toast button{flex:none;border:0;background:none;color:var(--orange-2);font:700 13px var(--ui);letter-spacing:.1em;text-transform:uppercase;cursor:pointer;padding:6px 4px}
 .fila:hover{background:var(--panel-3)}
 .fila.sel{background:#3a2716;box-shadow:inset 3px 0 0 var(--orange)}
 .fila>div{padding:9px 8px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13.5px}
@@ -168,7 +179,7 @@ select{background:var(--panel-2);border:1px solid var(--line);border-radius:2px;
   .marca b{font-size:15px}
 }
 .ver-programa{display:none;border:1px solid var(--line);background:var(--panel-2);border-radius:2px;height:30px;padding:0 10px;cursor:pointer;font:600 12px var(--ui);letter-spacing:.1em;text-transform:uppercase;align-items:center;flex:none}
-@media (prefers-reduced-motion:reduce){.derecha{transition:none}}
+@media (prefers-reduced-motion:reduce){.derecha,.toast{transition:none}}
 .estado .led{padding:0;border:0;display:inline-block;margin-right:8px}
 .sync{border:0;background:none;color:inherit;font:inherit;cursor:pointer;display:flex;align-items:center;padding:0 14px;border-right:1px solid #262626;white-space:nowrap}
 .sync:hover{background:#1a1a1a;color:var(--ink)}
@@ -214,7 +225,7 @@ dialog::backdrop{background:rgba(0,0,0,.7)}
         <div class="grupo" id="grpEmp" hidden><h3>Empresas descartadas</h3><div id="empresasDesc"></div></div>
         <div class="grupo" id="grpVig" hidden><h3>Páginas vigiladas</h3><div id="vigiladas"></div></div>
         <div class="grupo">
-          <p class="nota">Revisión cada hora, de 7:00 a 22:00. Para cambiar palabras, zona o fuentes, edita <a id="cfgLink" href="#">config.yml</a>. Tus marcas se sincronizan entre dispositivos desde el botón de la barra inferior.</p>
+          <p class="nota">Revisión cada hora, de 7:00 a 22:00. Para cambiar palabras, zona o fuentes, edita <a id="cfgLink" href="#">config.yml</a>. Tus marcas se sincronizan entre dispositivos desde el botón de la barra inferior. En el celular, desliza un aviso hacia la izquierda para descartarlo.</p>
           <p class="nota">Empleos Públicos (hospitales y Servicios de Salud) no permite revisión automática: <a href="https://www.empleospublicos.cl/pub/convocatorias/convocatorias.aspx" target="_blank" rel="noopener">abrir portal</a>.</p>
         </div>
       </div>
@@ -254,6 +265,8 @@ dialog::backdrop{background:rgba(0,0,0,.7)}
   </footer>
 </div>
 
+<div class="toast" id="toast" role="status" aria-live="polite"><span id="toastTxt"></span><button type="button" id="toastBtn">Deshacer</button></div>
+
 <dialog id="dlgSync" aria-labelledby="dlgTit"><div class="dlg">
   <h2 id="dlgTit">Sincronizar entre dispositivos</h2>
   <p style="margin:0;color:#cfcfcf">Tus marcas (visto, postulé, entrevista, descartes y notas) se guardan en el repositorio, en <code>docs/data/marcas.json</code>. Así las ves iguales en el celular y en el computador, y el buscador deja de avisarte lo que descartaste. Para escribir ahí, cada dispositivo necesita un token de GitHub, que se conecta una sola vez.</p>
@@ -276,7 +289,7 @@ dialog::backdrop{background:rgba(0,0,0,.7)}
 </div></dialog>
 
 <script>
-const VERSION="1.16.0";
+const VERSION="1.17.0";
 const NOM={linkedin:"LinkedIn",computrabajo:"Computrabajo",chiletrabajos:"Chiletrabajos",trabajando:"Trabajando.cl",indeed:"Indeed",laborum:"Laborum",google:"Google Empleos"};
 const VISTAS=[["activos","Activos"],["prioritarios","Prioritarios"],["nuevo","Nuevos"],["visto","Vistos"],["proceso","En proceso"],["descartado","Descartados"],["cerrados","Cerrados"]];
 const LAB={nuevo:"Nuevo",visto:"Visto",postule:"Postulé",entrevista:"Entrevista",oferta:"Oferta",descartado:"Descartado"};
@@ -362,8 +375,10 @@ function render(){
     c.append(el("span","sub solo-movil",[a.empresa,a.ubicacion,NOM[a.sitio]].filter(Boolean).join(" · ")));
     const extra=[a.renta,a.jornada].filter(Boolean).join(" · ");if(extra)c.append(el("span","sub",extra));
     f.append(ic,c,el("div","col-emp",a.empresa||"—"),el("div","col-ub",a.ubicacion||"—"),el("div","fuente",NOM[a.sitio]||a.sitio),el("div","fecha col-fecha",fmtCorto(a.encontrado)));
-    f.onclick=()=>seleccionar(a.id,true);f.ondblclick=()=>window.open(a.url,"_blank","noopener");
-    box.append(f)});
+    if(lista.indexOf(a)%2)f.classList.add("par");
+    f.onclick=()=>{if(f.dataset.deslizado)return;seleccionar(a.id,true)};f.ondblclick=()=>window.open(a.url,"_blank","noopener");
+    const w=el("div","desl");w.append(f);habilitarDeslizar(w,f,a);
+    box.append(w)});
   const actual=avisos.find(a=>a.id===sel);
   tarjeta(actual&&!actual.duplicado_de?actual:null);
   const vis=avisos.filter(a=>!a.duplicado_de);
@@ -388,8 +403,46 @@ function marcar(a,s){const ahora=new Date().toISOString(),prev=marcas.avisos[a.i
 function guardarNota(a,txt){const prev=marcas.avisos[a.id]||{estado:estado(a)};if((prev.nota||"")===txt)return;
   marcas.avisos[a.id]={...prev,nota:txt,cambio:new Date().toISOString(),titulo:a.titulo,empresa:a.empresa||"",url:a.url};
   pendIds.add(a.id);guardarLocal();programarSubida()}
-function descartarEmpresa(a){if(!a.empresa)return;if(!empDesc(a)){marcas.empresas_descartadas.push(a.empresa);pendEmp.push(["+",a.empresa])}
-  marcar(a,"descartado")}
+function descartarEmpresa(a){descartar(a,{empresa:true})}
+
+// Descarta un aviso: cierra su tarjeta (en celular y tablet), pasa al siguiente de la
+// cola si era el seleccionado y muestra un aviso con "Deshacer" por unos segundos.
+function descartar(a,{empresa=false}={}){
+  const previo=marcas.avisos[a.id]?JSON.parse(JSON.stringify(marcas.avisos[a.id])):null;
+  const i=lista.findIndex(x=>x.id===a.id),siguiente=lista[i+1]||lista[i-1];
+  const agregoEmpresa=empresa&&a.empresa&&!empDesc(a);
+  if(agregoEmpresa){marcas.empresas_descartadas.push(a.empresa);pendEmp.push(["+",a.empresa])}
+  $("derecha").classList.remove("abierta");
+  marcar(a,"descartado");
+  if(sel===a.id&&siguiente&&lista.some(x=>x.id===siguiente.id))seleccionar(siguiente.id,false);
+  avisoFlotante(agregoEmpresa?`Empresa descartada: ${a.empresa}`:"Aviso descartado",()=>{
+    const ahora=new Date().toISOString();
+    marcas.avisos[a.id]=previo?{...previo,cambio:ahora}:{estado:"nuevo",cambio:ahora,titulo:a.titulo,empresa:a.empresa||"",url:a.url,historial:[]};
+    if(agregoEmpresa){marcas.empresas_descartadas=marcas.empresas_descartadas.filter(x=>x!==a.empresa);pendEmp.push(["-",a.empresa])}
+    pendIds.add(a.id);guardarLocal();programarSubida();render()})}
+
+let toastTimer=null;
+function avisoFlotante(texto,deshacer){$("toastTxt").textContent=texto;const b=$("toastBtn");b.hidden=!deshacer;
+  b.onclick=()=>{ocultarAviso();deshacer&&deshacer()};$("toast").classList.add("visible");clearTimeout(toastTimer);toastTimer=setTimeout(ocultarAviso,6000)}
+function ocultarAviso(){$("toast").classList.remove("visible")}
+
+// Deslizar hacia la izquierda (pantallas táctiles) para descartar. El desplazamiento
+// vertical de la lista sigue funcionando: solo se activa si el gesto es horizontal.
+const umbralDeslizar=()=>Math.min(120,window.innerWidth*0.3);
+function habilitarDeslizar(w,f,a){
+  if(estado(a)==="descartado"||cerrado(a))return;
+  w.classList.add("si");
+  let x0=0,y0=0,dx=0,modo=null,pid=null;
+  f.addEventListener("pointerdown",e=>{if(e.pointerType==="mouse")return;pid=e.pointerId;x0=e.clientX;y0=e.clientY;dx=0;modo=null;f.style.transition="none"});
+  f.addEventListener("pointermove",e=>{if(e.pointerId!==pid)return;const mx=e.clientX-x0,my=e.clientY-y0;
+    if(!modo){if(Math.abs(mx)<8&&Math.abs(my)<8)return;modo=Math.abs(mx)>Math.abs(my)&&mx<0?"h":"v";if(modo==="h")try{f.setPointerCapture(pid)}catch(_){}}
+    if(modo!=="h")return;dx=Math.min(0,mx);f.style.transform=`translateX(${dx}px)`;w.classList.toggle("listo",-dx>umbralDeslizar())});
+  const fin=e=>{if(e.pointerId!==pid)return;pid=null;if(modo!=="h")return;
+    f.dataset.deslizado="1";setTimeout(()=>delete f.dataset.deslizado,350);
+    f.style.transition="transform .18s ease-out";
+    if(-dx>umbralDeslizar()){f.style.transform="translateX(-110%)";try{navigator.vibrate&&navigator.vibrate(15)}catch(_){};setTimeout(()=>descartar(a),170)}
+    else{f.style.transform="";w.classList.remove("listo")}};
+  f.addEventListener("pointerup",fin);f.addEventListener("pointercancel",fin)}
 
 function tarjeta(a){const t=$("tarjeta");t.replaceChildren();
   if(!a){const d=el("div","vacio");d.append(el("b",null,"Sin aviso seleccionado"),"Elige un aviso de la cola para ver su detalle.");t.append(d);return}
@@ -413,7 +466,7 @@ function tarjeta(a){const t=$("tarjeta");t.replaceChildren();
   const ir=el("a","btn go","Abrir aviso ›");ir.href=a.url;ir.target="_blank";ir.rel="noopener";ir.onclick=()=>{if(st==="nuevo")marcar(a,"visto")};
   ac.append(ir);
   [["visto","Visto"],["postule","Postulé"],["entrevista","Entrevista"],["oferta","Oferta"],["descartado","Descartar"],["nuevo","Restaurar"]].forEach(([s,l])=>{
-    if(s==="nuevo"&&st==="nuevo")return;const b=el("button","btn",l);b.type="button";b.setAttribute("aria-pressed",String(st===s));b.onclick=()=>marcar(a,st===s?"nuevo":s);ac.append(b)});
+    if(s==="nuevo"&&st==="nuevo")return;const b=el("button","btn",l);b.type="button";b.setAttribute("aria-pressed",String(st===s));b.onclick=()=>s==="descartado"&&st!=="descartado"?descartar(a):marcar(a,st===s?"nuevo":s);ac.append(b)});
   if(a.empresa&&!/confidencial/i.test(a.empresa)){const b=el("button","btn chico peligro",empDesc(a)?"Empresa descartada":"Descartar empresa");b.type="button";b.disabled=empDesc(a);
     b.title="No mostrar ni notificar más avisos de "+a.empresa;b.onclick=()=>descartarEmpresa(a);b.style.gridColumn="1/-1";ac.append(b)}
   t.append(ac);

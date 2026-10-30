@@ -6,6 +6,11 @@ La versión aparece al pie de la página: **Página** es la versión de `docs/in
 - Antigüedad máxima de 48 horas al encontrar un aviso (`antiguedad_maxima_horas`). LinkedIn y Trabajando filtran a 48 h al buscar; Indeed y Google, a su opción más cercana; en todas las fuentes se revisa además la fecha de publicación ("Hace 3 días", "13 de octubre", "2026-10-28"…). Los avisos sin fecha reconocible se admiten.
 - Un aviso admitido no desaparece al cumplir 48 horas: sigue visible mientras esté abierto.
 
+## 1.17.0 · 2026-10-30
+- Celular: desliza un aviso hacia la izquierda para descartarlo al instante. Aparece "Aviso descartado · Deshacer" por 6 segundos. El desplazamiento vertical de la lista sigue funcionando normal.
+- Al descartar desde la tarjeta (Descartar o Descartar empresa), la tarjeta se cierra sola; en el computador se pasa al siguiente aviso de la cola.
+- "RM" ya no marca un aviso como prioritario: en los títulos suele significar Región Metropolitana (por ejemplo, un aviso de kinesiólogos). Siguen siendo prioritarios resonancia, resonador, RMN, MRI y MR.
+
 ## 1.16.0 · 2026-10-29
 - Panel de fuentes: el número es ahora cuántos avisos de esa fuente hay en tu lista (antes era lo que trajo el sitio, aunque se descartara todo). Al pasar el cursor se ven los resultados del sitio y por qué se descartaron.
 - El buscador registra por fuente los descartes por motivo (perfil, zona, exclusión, empresa descartada, antigüedad) y una muestra de títulos descartados. Si filtras por una fuente sin avisos, la página explica por qué y muestra ejemplos.
