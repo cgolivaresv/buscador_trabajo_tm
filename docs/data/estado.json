@@ -1,6 +1,6 @@
 {
  "version": "1.16.0",
- "ultimo_chequeo": "2026-10-30T01:08:51+00:00",
+ "ultimo_chequeo": "2026-10-30T10:54:25+00:00",
  "nuevos": 0,
  "total": 30,
  "palabras_clave": [
@@ -20,9 +20,9 @@
    "resultados": 80,
    "errores": [],
    "descartados": {
-    "perfil": 31,
-    "exclusion": 8,
-    "zona": 7
+    "perfil": 34,
+    "zona": 6,
+    "exclusion": 7
    },
    "muestra": [
     {
@@ -31,12 +31,37 @@
      "motivo": "perfil"
     },
     {
+     "titulo": "Endoscopy Sales",
+     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
      "titulo": "Medico Psiquiatra",
      "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
      "motivo": "perfil"
     },
     {
+     "titulo": "MSL Tumores Raros // Rare Tumors Chile",
+     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Senior Health Care Support Worker – Radiography",
+     "ubicacion": "Hospital, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Senior Health Care Support Worker &#x2013; Radiography",
+     "ubicacion": "Hospital, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
      "titulo": "Analista de Atracción de Talentos / Providencia",
+     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "MSL",
      "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
      "motivo": "perfil"
     },
@@ -49,31 +74,6 @@
      "titulo": "Analista de Control de Gestión",
      "ubicacion": "Región Metropolitana de Santiago, Chile",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Consultant Radiographer &#x2013; Breast Imaging",
-     "ubicacion": "Hospital, Región Metropolitana de Santiago, Chile",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Psiquiatra",
-     "ubicacion": "Chile",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Medico IAAPS Extensión y Apertura - Honorario - APS - Cerrillos",
-     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TENS Ambulancia Urgencia y Rescate - Clínica San Carlos",
-     "ubicacion": "Las Condes, Región Metropolitana de Santiago, Chile",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TENS PARA REEMPLAZOS SANTIAGO RM",
-     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
-     "motivo": "exclusion"
     },
     {
      "titulo": "Head of Operational Excellence LATAM",
@@ -161,14 +161,29 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 165,
+   "resultados": 164,
    "errores": [],
    "descartados": {
-    "zona": 8,
-    "perfil": 13,
-    "exclusion": 7
+    "zona": 9,
+    "perfil": 12,
+    "exclusion": 6
    },
    "muestra": [
+    {
+     "titulo": "Administrador de Contrato – Proyecto en…",
+     "ubicacion": "Antofagasta",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Ayudante de Montaje y Desmontaje Equipos…",
+     "ubicacion": "Antofagasta",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Técnico/a Senior en Climatización – Turno…",
+     "ubicacion": "Antofagasta",
+     "motivo": "zona"
+    },
     {
      "titulo": "Ingeniero SSOMA (Seguridad, Salud Ocupacional y…",
      "ubicacion": "Valparaíso",
@@ -205,21 +220,6 @@
      "motivo": "perfil"
     },
     {
-     "titulo": "Ingeniero de Desarrollo de Software",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Paramédico Conductor - 8x6 Copiapó.",
-     "ubicacion": "Copiapó",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "¡ESTAMOS BUSCANDO ADMINISTRATIVO LOGÍSTICO – BODEGA…",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
      "titulo": "TECNÓLOGO(A) MÉDICO(A) Unidad de Imageneología Hospital…",
      "ubicacion": "Puerto aysén",
      "motivo": "zona"
@@ -233,12 +233,12 @@
   },
   "trabajando": {
    "nombre": "Trabajando.cl",
-   "resultados": 79,
+   "resultados": 75,
    "errores": [],
    "descartados": {
     "exclusion": 6,
-    "zona": 12,
-    "perfil": 15
+    "zona": 5,
+    "perfil": 21
    },
    "muestra": [
     {
@@ -255,11 +255,6 @@
      "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RESONANCIA MAGNETICA (REEMPLAZO)",
      "ubicacion": "Providencia, Metropolitana de Santiago",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico Imagenología",
-     "ubicacion": "Antofagasta, Antofagasta",
-     "motivo": "zona"
     },
     {
      "titulo": "Técnico en imagenología",
@@ -282,30 +277,35 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Encargado de Turno Junior AutoPlanet - La Serena",
-     "ubicacion": "La Serena, Coquimbo",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Técnico (a) Simulación Clínica/ Pre y Post Natal/ Universidad Mayor/ Temuco",
-     "ubicacion": "Temuco, La Araucanía",
+     "titulo": "Ejecutivo de Venta Automotriz - Chillán",
+     "ubicacion": "Chillán, Ñuble",
      "motivo": "perfil"
     },
     {
-     "titulo": "Ejecutivo de Venta Automotriz - Chillán",
-     "ubicacion": "Chillán, Ñuble",
+     "titulo": "Ejecutivo de Venta Automotriz - Temuco",
+     "ubicacion": "Temuco, La Araucanía",
      "motivo": "perfil"
     },
     {
      "titulo": "Ejecutivo de Venta Automotriz - Valdivia",
      "ubicacion": "Valdivia, Los Ríos",
      "motivo": "perfil"
+    },
+    {
+     "titulo": "Ejecutivo de Venta Automotriz - Concepción",
+     "ubicacion": "Concepción, Biobío",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Ejecutivo de Venta Automotriz - Los Angeles",
+     "ubicacion": "Los Ángeles, Biobío",
+     "motivo": "perfil"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 7,
+   "resultados": 8,
    "errores": [],
    "descartados": {
     "exclusion": 1
