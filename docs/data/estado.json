@@ -1,8 +1,8 @@
 {
- "version": "1.16.0",
- "ultimo_chequeo": "2026-10-30T15:03:38+00:00",
+ "version": "1.17.0",
+ "ultimo_chequeo": "2026-10-30T15:58:13+00:00",
  "nuevos": 0,
- "total": 30,
+ "total": 29,
  "palabras_clave": [
   "tecnólogo médico resonancia",
   "resonancia magnética",
@@ -26,17 +26,17 @@
    },
    "muestra": [
     {
+     "titulo": "Coordinador de Comunicaciones Externas - RedSalud CChC",
+     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
      "titulo": "Psiquiatra",
      "ubicacion": "Las Condes, Región Metropolitana de Santiago, Chile",
      "motivo": "perfil"
     },
     {
      "titulo": "Endoscopy Sales",
-     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Medico Psiquiatra",
      "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
      "motivo": "perfil"
     },
@@ -92,7 +92,7 @@
    "resultados": 168,
    "errores": [],
    "descartados": {
-    "zona": 22,
+    "zona": 23,
     "exclusion": 8,
     "perfil": 22
    },
@@ -267,24 +267,14 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Técnico en Imagenología - Pool Volante - RedSalud CChC",
-     "ubicacion": "Santiago, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
      "titulo": "Técnico en imagenología",
      "ubicacion": "La Florida, Metropolitana de Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Ejecutivo de Venta Automotriz - Chillán",
-     "ubicacion": "Chillán, Ñuble",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Ejecutivo de Venta Automotriz - Concepción",
-     "ubicacion": "Concepción, Biobío",
-     "motivo": "perfil"
+     "titulo": "Técnico en Imagenología - Pool Volante - RedSalud CChC",
+     "ubicacion": "Santiago, Metropolitana de Santiago",
+     "motivo": "exclusion"
     },
     {
      "titulo": "Técnico (a) Simulación Clínica/ Pre y Post Natal/ Universidad Mayor/ Temuco",
@@ -299,6 +289,16 @@
     {
      "titulo": "Ejecutivo de Venta Automotriz - Los Angeles",
      "ubicacion": "Los Ángeles, Biobío",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Ejecutivo de Venta Automotriz - Temuco",
+     "ubicacion": "Temuco, La Araucanía",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Ejecutivo de Venta Automotriz - Valdivia",
+     "ubicacion": "Valdivia, Los Ríos",
      "motivo": "perfil"
     }
    ]
