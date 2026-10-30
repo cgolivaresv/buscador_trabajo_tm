@@ -1,6 +1,6 @@
 {
  "version": "1.17.0",
- "ultimo_chequeo": "2026-10-30T20:51:14+00:00",
+ "ultimo_chequeo": "2026-10-30T21:46:50+00:00",
  "nuevos": 0,
  "total": 29,
  "palabras_clave": [
@@ -170,12 +170,27 @@
    },
    "muestra": [
     {
+     "titulo": "Profesor/a de Física PAES",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "CARGADOR",
+     "ubicacion": "Antofagasta",
+     "motivo": "zona"
+    },
+    {
      "titulo": "CHOFER DESPACHADOR",
      "ubicacion": "Santiago",
      "motivo": "perfil"
     },
     {
      "titulo": "Operarios - San Bernardo",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Operario Grua",
      "ubicacion": "Santiago",
      "motivo": "perfil"
     },
@@ -202,21 +217,6 @@
     {
      "titulo": "MANIPULADORA DE ALIMENTOS",
      "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Asesor Comercial Para importante Clínica ubicada…",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Promotores/as Campaña Navidad Santiago",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Ejecutivo de ventas",
-     "ubicacion": "Chillán",
      "motivo": "perfil"
     },
     {
@@ -277,11 +277,6 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Encargado de Turno Junior AutoPlanet - La Serena",
-     "ubicacion": "La Serena, Coquimbo",
-     "motivo": "zona"
-    },
-    {
      "titulo": "Ejecutivo de Venta Automotriz - Chillán",
      "ubicacion": "Chillán, Ñuble",
      "motivo": "perfil"
@@ -299,6 +294,11 @@
     {
      "titulo": "Ejecutivo de Venta Automotriz - Concepción",
      "ubicacion": "Concepción, Biobío",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Ejecutivo de Venta Automotriz - Valdivia",
+     "ubicacion": "Valdivia, Los Ríos",
      "motivo": "perfil"
     }
    ]
