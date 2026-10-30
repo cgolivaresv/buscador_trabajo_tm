@@ -1,6 +1,6 @@
 {
  "version": "1.17.0",
- "ultimo_chequeo": "2026-10-30T18:54:44+00:00",
+ "ultimo_chequeo": "2026-10-30T19:53:57+00:00",
  "nuevos": 0,
  "total": 29,
  "palabras_clave": [
@@ -20,7 +20,7 @@
    "resultados": 80,
    "errores": [],
    "descartados": {
-    "perfil": 33,
+    "perfil": 31,
     "zona": 5,
     "exclusion": 7
    },
@@ -41,17 +41,17 @@
      "motivo": "perfil"
     },
     {
+     "titulo": "Specialist Radiographer",
+     "ubicacion": "Hospital, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
      "titulo": "Endoscopy Sales",
      "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
      "motivo": "perfil"
     },
     {
      "titulo": "MSL Tumores Raros // Rare Tumors Chile",
-     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Analista de Atracción de Talentos / Providencia",
      "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
      "motivo": "perfil"
     },
