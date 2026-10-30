@@ -1,6 +1,6 @@
 {
  "version": "1.17.0",
- "ultimo_chequeo": "2026-10-30T15:58:13+00:00",
+ "ultimo_chequeo": "2026-10-30T16:55:33+00:00",
  "nuevos": 0,
  "total": 29,
  "palabras_clave": [
@@ -89,10 +89,10 @@
   },
   "computrabajo": {
    "nombre": "Computrabajo",
-   "resultados": 168,
+   "resultados": 166,
    "errores": [],
    "descartados": {
-    "zona": 23,
+    "zona": 22,
     "exclusion": 8,
     "perfil": 22
    },
@@ -236,9 +236,9 @@
    "resultados": 75,
    "errores": [],
    "descartados": {
-    "zona": 10,
+    "zona": 9,
     "exclusion": 6,
-    "perfil": 16
+    "perfil": 17
    },
    "muestra": [
     {
@@ -277,11 +277,6 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Técnico (a) Simulación Clínica/ Pre y Post Natal/ Universidad Mayor/ Temuco",
-     "ubicacion": "Temuco, La Araucanía",
-     "motivo": "perfil"
-    },
-    {
      "titulo": "Encargado de Turno Junior AutoPlanet - La Serena",
      "ubicacion": "La Serena, Coquimbo",
      "motivo": "zona"
@@ -299,6 +294,11 @@
     {
      "titulo": "Ejecutivo de Venta Automotriz - Valdivia",
      "ubicacion": "Valdivia, Los Ríos",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Ejecutivo de Venta Automotriz - Concepción",
+     "ubicacion": "Concepción, Biobío",
      "motivo": "perfil"
     }
    ]
