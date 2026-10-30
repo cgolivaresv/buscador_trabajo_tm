@@ -1,6 +1,6 @@
 {
  "version": "1.16.0",
- "ultimo_chequeo": "2026-10-30T14:08:03+00:00",
+ "ultimo_chequeo": "2026-10-30T15:03:38+00:00",
  "nuevos": 0,
  "total": 30,
  "palabras_clave": [
@@ -92,9 +92,9 @@
    "resultados": 168,
    "errores": [],
    "descartados": {
-    "zona": 23,
-    "exclusion": 9,
-    "perfil": 20
+    "zona": 22,
+    "exclusion": 8,
+    "perfil": 22
    },
    "muestra": [
     {
@@ -164,40 +164,35 @@
    "resultados": 160,
    "errores": [],
    "descartados": {
-    "zona": 7,
     "perfil": 13,
+    "zona": 7,
     "exclusion": 6
    },
    "muestra": [
-    {
-     "titulo": "Administrador de Contrato – Proyecto en…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Ayudante de Montaje y Desmontaje Equipos…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Técnico/a Senior en Climatización – Turno…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
-    },
     {
      "titulo": "CHOFER DESPACHADOR",
      "ubicacion": "Santiago",
      "motivo": "perfil"
     },
     {
-     "titulo": "Jefe Comercial",
+     "titulo": "Técnico eléctrico - mantenimiento",
      "ubicacion": "Santiago",
      "motivo": "perfil"
     },
     {
-     "titulo": "ENFERMERO/KINESIOLOGO",
+     "titulo": "Promotores/as Campaña Navidad Santiago",
      "ubicacion": "Santiago",
      "motivo": "perfil"
+    },
+    {
+     "titulo": "MAESTROS PIZZERO FABRICA MASAS CONGELADAS",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Salvavidas",
+     "ubicacion": "San antonio",
+     "motivo": "zona"
     },
     {
      "titulo": "Ayudantes de Cocina con experiencia",
@@ -205,19 +200,24 @@
      "motivo": "perfil"
     },
     {
-     "titulo": "Operarios - San Bernardo",
+     "titulo": "GARZON PART TIME",
      "ubicacion": "Santiago",
      "motivo": "perfil"
     },
     {
-     "titulo": "Ejecutivo de ventas",
-     "ubicacion": "Chillán",
+     "titulo": "Administrador de Contrato – Proyecto en…",
+     "ubicacion": "Antofagasta",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "ENFERMERO/KINESIOLOGO",
+     "ubicacion": "Santiago",
      "motivo": "perfil"
     },
     {
-     "titulo": "Asistente de Ventas Junior – Full…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "titulo": "Ayudante de Montaje y Desmontaje Equipos…",
+     "ubicacion": "Antofagasta",
+     "motivo": "zona"
     },
     {
      "titulo": "TECNÓLOGO(A) MÉDICO(A) Unidad de Imageneología Hospital…",
@@ -236,20 +236,20 @@
    "resultados": 75,
    "errores": [],
    "descartados": {
+    "zona": 10,
     "exclusion": 6,
-    "zona": 9,
-    "perfil": 17
+    "perfil": 16
    },
    "muestra": [
-    {
-     "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RADIOLOGÍA (REEMPLAZO)",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
     {
      "titulo": "Tecnólogo Medico imagenología",
      "ubicacion": "Osorno, Los Lagos",
      "motivo": "zona"
+    },
+    {
+     "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RADIOLOGÍA (REEMPLAZO)",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "exclusion"
     },
     {
      "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RESONANCIA MAGNETICA (REEMPLAZO)",
@@ -282,11 +282,6 @@
      "motivo": "perfil"
     },
     {
-     "titulo": "Ejecutivo de Venta Automotriz - Temuco",
-     "ubicacion": "Temuco, La Araucanía",
-     "motivo": "perfil"
-    },
-    {
      "titulo": "Ejecutivo de Venta Automotriz - Concepción",
      "ubicacion": "Concepción, Biobío",
      "motivo": "perfil"
@@ -300,6 +295,11 @@
      "titulo": "Encargado de Turno Junior AutoPlanet - La Serena",
      "ubicacion": "La Serena, Coquimbo",
      "motivo": "zona"
+    },
+    {
+     "titulo": "Ejecutivo de Venta Automotriz - Los Angeles",
+     "ubicacion": "Los Ángeles, Biobío",
+     "motivo": "perfil"
     }
    ]
   },
