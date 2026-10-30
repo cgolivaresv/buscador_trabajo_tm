@@ -1,6 +1,6 @@
 {
  "version": "1.16.0",
- "ultimo_chequeo": "2026-10-30T10:54:25+00:00",
+ "ultimo_chequeo": "2026-10-30T11:50:55+00:00",
  "nuevos": 0,
  "total": 30,
  "palabras_clave": [
@@ -92,9 +92,9 @@
    "resultados": 170,
    "errores": [],
    "descartados": {
-    "zona": 22,
+    "zona": 23,
     "exclusion": 10,
-    "perfil": 21
+    "perfil": 20
    },
    "muestra": [
     {
@@ -185,6 +185,11 @@
      "motivo": "zona"
     },
     {
+     "titulo": "CHOFER DESPACHADOR",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
      "titulo": "Ingeniero SSOMA (Seguridad, Salud Ocupacional y…",
      "ubicacion": "Valparaíso",
      "motivo": "zona"
@@ -215,11 +220,6 @@
      "motivo": "perfil"
     },
     {
-     "titulo": "INGENIERO/A AGRÓNOMO/A - ENCARGADO/A DE OPERACIONES…",
-     "ubicacion": "Rancagua",
-     "motivo": "perfil"
-    },
-    {
      "titulo": "TECNÓLOGO(A) MÉDICO(A) Unidad de Imageneología Hospital…",
      "ubicacion": "Puerto aysén",
      "motivo": "zona"
@@ -237,8 +237,8 @@
    "errores": [],
    "descartados": {
     "exclusion": 6,
-    "zona": 5,
-    "perfil": 21
+    "zona": 7,
+    "perfil": 19
    },
    "muestra": [
     {
@@ -287,19 +287,19 @@
      "motivo": "perfil"
     },
     {
-     "titulo": "Ejecutivo de Venta Automotriz - Valdivia",
-     "ubicacion": "Valdivia, Los Ríos",
-     "motivo": "perfil"
-    },
-    {
      "titulo": "Ejecutivo de Venta Automotriz - Concepción",
      "ubicacion": "Concepción, Biobío",
      "motivo": "perfil"
     },
     {
-     "titulo": "Ejecutivo de Venta Automotriz - Los Angeles",
-     "ubicacion": "Los Ángeles, Biobío",
+     "titulo": "Técnico (a) Simulación Clínica/ Pre y Post Natal/ Universidad Mayor/ Temuco",
+     "ubicacion": "Temuco, La Araucanía",
      "motivo": "perfil"
+    },
+    {
+     "titulo": "Encargado de Turno Junior AutoPlanet - La Serena",
+     "ubicacion": "La Serena, Coquimbo",
+     "motivo": "zona"
     }
    ]
   },
