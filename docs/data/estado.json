@@ -1,6 +1,6 @@
 {
  "version": "1.17.0",
- "ultimo_chequeo": "2026-10-30T16:55:33+00:00",
+ "ultimo_chequeo": "2026-10-30T17:50:35+00:00",
  "nuevos": 0,
  "total": 29,
  "palabras_clave": [
@@ -20,9 +20,9 @@
    "resultados": 80,
    "errores": [],
    "descartados": {
-    "perfil": 35,
-    "zona": 5,
-    "exclusion": 7
+    "perfil": 33,
+    "exclusion": 7,
+    "zona": 5
    },
    "muestra": [
     {
@@ -61,11 +61,6 @@
      "motivo": "perfil"
     },
     {
-     "titulo": "Analista de Control de Gestión",
-     "ubicacion": "Región Metropolitana de Santiago, Chile",
-     "motivo": "perfil"
-    },
-    {
      "titulo": "Consultant Radiographer &#x2013; Breast Imaging",
      "ubicacion": "Hospital, Región Metropolitana de Santiago, Chile",
      "motivo": "perfil"
@@ -76,8 +71,13 @@
      "motivo": "perfil"
     },
     {
-     "titulo": "Head of Operational Excellence LATAM",
-     "ubicacion": "Región Metropolitana de Santiago, Chile",
+     "titulo": "Técnico En Enfermería De Nivel Superior",
+     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Consultor SAP Junior - Rubro Mineria",
+     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
      "motivo": "perfil"
     },
     {
@@ -282,18 +282,18 @@
      "motivo": "zona"
     },
     {
-     "titulo": "Ejecutivo de Venta Automotriz - Los Angeles",
-     "ubicacion": "Los Ángeles, Biobío",
+     "titulo": "Ejecutivo de Venta Automotriz - Chillán",
+     "ubicacion": "Chillán, Ñuble",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Técnico (a) Simulación Clínica/ Pre y Post Natal/ Universidad Mayor/ Temuco",
+     "ubicacion": "Temuco, La Araucanía",
      "motivo": "perfil"
     },
     {
      "titulo": "Ejecutivo de Venta Automotriz - Temuco",
      "ubicacion": "Temuco, La Araucanía",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Ejecutivo de Venta Automotriz - Valdivia",
-     "ubicacion": "Valdivia, Los Ríos",
      "motivo": "perfil"
     },
     {
