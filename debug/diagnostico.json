@@ -1,0 +1,1024 @@
+{
+ "palabra": "tecnologo medico",
+ "computrabajo": {
+  "busqueda": {
+   "url": "https://cl.computrabajo.com/ofertas-de-trabajo/?q=tecnologo+medico",
+   "status": 200,
+   "n": 20,
+   "fechas": [
+    "Hace 3 horas",
+    "Hace 11 horas",
+    "Ayer",
+    "Hace 15 horas",
+    "Hace 17 horas",
+    "Ayer",
+    "Ayer",
+    "Hace 2 días",
+    "Ayer",
+    "Hace 2 días",
+    "Ayer",
+    "Hace 2 días",
+    "Hace 3 días",
+    "Hace 4 días",
+    "Hace 4 días",
+    "Hace 4 días",
+    "Hace 4 días",
+    "Hace 5 días",
+    "Hace 6 días",
+    "Hace 6 días"
+   ],
+   "titulos": [
+    "Técnico en Enfermería Nivel Superior Unidad Toma d",
+    "Tecnolog@ Medico para Director/a Técnico de labora",
+    "Tecnólogo Médico(a) Turno 7x7 Calama",
+    "Tecnologo médico en Imagenología para Taltal",
+    "Tecnologo médico en Laboratorio para Tocopilla"
+   ],
+   "enlaces_orden": [],
+   "total_texto": "359 Ofertas de trabajo de tecnologo medico en Chile"
+  },
+  "busqueda_p2": {
+   "url": "https://cl.computrabajo.com/ofertas-de-trabajo/?q=tecnologo+medico&p=2",
+   "status": 200,
+   "n": 20,
+   "fechas": [
+    "Hace 7 días",
+    "Hace 1 hora",
+    "19 de octubre",
+    "19 de octubre",
+    "17 de octubre",
+    "17 de octubre",
+    "16 de octubre",
+    "Más de 30 días",
+    "Más de 30 días",
+    "Más de 30 días",
+    "Más de 30 días",
+    "Más de 30 días",
+    "Más de 30 días",
+    "Más de 30 días",
+    "Más de 30 días",
+    "Más de 30 días",
+    "Más de 30 días",
+    "13 de octubre",
+    "9 de octubre",
+    "7 de octubre"
+   ],
+   "titulos": [
+    "Tecnólogo Médico Imagenología",
+    "Tecnólogo/a Médico/a en Imagenología – Calama",
+    "Tecnólogo Médico Imagenología",
+    "Tecnologo/a medico/a RX / MX",
+    "Tecnólogo médico"
+   ],
+   "enlaces_orden": [],
+   "total_texto": "359 Ofertas de trabajo de tecnologo medico en Chile"
+  },
+  "listado": {
+   "url": "https://cl.computrabajo.com/trabajo-de-tecnologo-medico",
+   "status": 200,
+   "n": 20,
+   "fechas": [
+    "Hace 3 horas",
+    "Hace 11 horas",
+    "Ayer",
+    "Hace 15 horas",
+    "Hace 17 horas",
+    "Ayer",
+    "Ayer",
+    "Hace 2 días",
+    "Ayer",
+    "Hace 2 días",
+    "Ayer",
+    "Hace 2 días",
+    "Hace 3 días",
+    "Hace 4 días",
+    "Hace 4 días",
+    "Hace 4 días",
+    "Hace 4 días",
+    "Hace 5 días",
+    "Hace 6 días",
+    "Hace 6 días"
+   ],
+   "titulos": [
+    "Técnico en Enfermería Nivel Superior Unidad Toma d",
+    "Tecnolog@ Medico para Director/a Técnico de labora",
+    "Tecnólogo Médico(a) Turno 7x7 Calama",
+    "Tecnologo médico en Imagenología para Taltal",
+    "Tecnologo médico en Laboratorio para Tocopilla"
+   ],
+   "enlaces_orden": [],
+   "total_texto": "359 Ofertas de trabajo de tecnologo medico en Chile"
+  },
+  "listado_p2": {
+   "url": "https://cl.computrabajo.com/trabajo-de-tecnologo-medico?p=2",
+   "status": 200,
+   "n": 20,
+   "fechas": [
+    "Hace 7 días",
+    "Hace 1 hora",
+    "19 de octubre",
+    "19 de octubre",
+    "17 de octubre",
+    "17 de octubre",
+    "16 de octubre",
+    "Más de 30 días",
+    "Más de 30 días",
+    "Más de 30 días",
+    "Más de 30 días",
+    "Más de 30 días",
+    "Más de 30 días",
+    "Más de 30 días",
+    "Más de 30 días",
+    "Más de 30 días",
+    "Más de 30 días",
+    "13 de octubre",
+    "9 de octubre",
+    "7 de octubre"
+   ],
+   "titulos": [
+    "Tecnólogo Médico Imagenología",
+    "Tecnólogo/a Médico/a en Imagenología – Calama",
+    "Tecnólogo Médico Imagenología",
+    "Tecnologo/a medico/a RX / MX",
+    "Tecnólogo médico"
+   ],
+   "enlaces_orden": [],
+   "total_texto": "359 Ofertas de trabajo de tecnologo medico en Chile"
+  },
+  "orden_fecha": {
+   "url": "https://cl.computrabajo.com/ofertas-de-trabajo/?q=tecnologo+medico&by=publicationtime",
+   "status": 200,
+   "n": 20,
+   "fechas": [
+    "Hace 3 horas",
+    "Hace 11 horas",
+    "Hace 2 días",
+    "Hace 2 días",
+    "Ayer",
+    "Hace 4 días",
+    "Ayer",
+    "19 de octubre",
+    "19 de octubre",
+    "Hace 6 días",
+    "Ayer",
+    "Hace 7 días",
+    "Hace 3 días",
+    "17 de octubre",
+    "17 de octubre",
+    "Hace 6 días",
+    "16 de octubre",
+    "13 de octubre",
+    "Ayer",
+    "Hace 4 días"
+   ],
+   "titulos": [
+    "Técnico en Enfermería Nivel Superior Unidad Toma d",
+    "Tecnolog@ Medico para Director/a Técnico de labora",
+    "Técnico en Enfermería Nivel Superior",
+    "Vendedor/a de Tecnología Full Time 5x2",
+    "Tecnólogo Médico(a) Turno 7x7 Calama"
+   ],
+   "enlaces_orden": [],
+   "total_texto": "359 Ofertas de trabajo de tecnologo medico en Chile"
+  }
+ },
+ "chiletrabajos_formulario": {
+  "https://www.chiletrabajos.cl/encuentra-un-empleo": [
+   {
+    "name": "2",
+    "tipo": "input",
+    "valor": "",
+    "opciones": []
+   },
+   {
+    "name": "13",
+    "tipo": "select",
+    "valor": null,
+    "opciones": [
+     [
+      "",
+      "--"
+     ],
+     [
+      "1022",
+      "Santiago"
+     ],
+     [
+      "1035",
+      "Concepción"
+     ],
+     [
+      "1014",
+      "Valparaíso"
+     ],
+     [
+      "1004",
+      "Antofagasta"
+     ],
+     [
+      "1028",
+      "Rancagua"
+     ],
+     [
+      "",
+      "--"
+     ],
+     [
+      "1000",
+      "Arica"
+     ],
+     [
+      "1001",
+      "Putre"
+     ],
+     [
+      "1002",
+      "Iquique"
+     ],
+     [
+      "1003",
+      "Pozo Almonte"
+     ],
+     [
+      "1004",
+      "Antofagasta"
+     ]
+    ]
+   },
+   {
+    "name": "fecha",
+    "tipo": "select",
+    "valor": null,
+    "opciones": [
+     [
+      "",
+      "--"
+     ],
+     [
+      null,
+      "Cualquiera"
+     ],
+     [
+      "1",
+      "Hoy"
+     ],
+     [
+      "2",
+      "Desde Ayer"
+     ],
+     [
+      "3",
+      "Menor a 3 días"
+     ],
+     [
+      "4",
+      "Menor a 6 días"
+     ],
+     [
+      "5",
+      "Hace una semana"
+     ],
+     [
+      "6",
+      "Hace un mes"
+     ]
+    ]
+   },
+   {
+    "name": "categoria",
+    "tipo": "select",
+    "valor": null,
+    "opciones": [
+     [
+      "",
+      "--"
+     ],
+     [
+      "2020",
+      "Administración"
+     ],
+     [
+      "2003",
+      "Arte/Diseño/Medios"
+     ],
+     [
+      "2024",
+      "Asistente administrativo"
+     ],
+     [
+      "2008",
+      "Economía / Contabilidad"
+     ],
+     [
+      "2005",
+      "Educación y Psicopedagogía"
+     ],
+     [
+      "2022",
+      "Estética y Cuidado Personal"
+     ],
+     [
+      "2009",
+      "Hotelería Turismo y Gastronomía"
+     ],
+     [
+      "2007",
+      "Informática / Telecomunicaciones"
+     ],
+     [
+      "2001",
+      "Profesionales y Técnicos"
+     ],
+     [
+      "2021",
+      "Logística / Distribución"
+     ],
+     [
+      "2016",
+      "Marketing y Publicidad"
+     ]
+    ]
+   },
+   {
+    "name": "8",
+    "tipo": "input",
+    "valor": "",
+    "opciones": []
+   },
+   {
+    "name": "14",
+    "tipo": "select",
+    "valor": null,
+    "opciones": [
+     [
+      "",
+      "--"
+     ],
+     [
+      "21",
+      "Part-time"
+     ],
+     [
+      "22",
+      "Full-time"
+     ],
+     [
+      "26",
+      "Part-time & Full-time"
+     ]
+    ]
+   },
+   {
+    "name": "inclusion",
+    "tipo": "select",
+    "valor": null,
+    "opciones": [
+     [
+      "",
+      "--"
+     ],
+     [
+      "1",
+      "Si"
+     ],
+     [
+      "0",
+      "Indiferente"
+     ]
+    ]
+   },
+   {
+    "name": "f",
+    "tipo": "input",
+    "valor": "2",
+    "opciones": []
+   }
+  ],
+  "_enlaces_orden": []
+ },
+ "chiletrabajos": {
+  "actual": {
+   "url": "https://www.chiletrabajos.cl/encuentra-un-empleo?2=tecnologo+medico&action=search",
+   "status": 200,
+   "n": 30,
+   "fechas": [
+    "NC Tecnologo Medico Novamedical chile, S",
+    "KC VENDEDOR TECNOLOGO KARUN TEMUCO Karun",
+    "CM Tecnólogo Médico Laboratorio - Clínic",
+    "P TENS experiencia laboratorio Preomed, ",
+    "Tecnólogo Médico con mención en Oftalmol",
+    "L Tecnólogo/a Médico Livsalud, Santiago ",
+    "Tecnólogo(a) Médico(a) – Pabellón Trauma",
+    "TECNÓLOGO(A) MÉDICO(A) Unidad de Imagene",
+    "I Tecnólogo/a Médico/a – Medicina Transf",
+    "I Tecnólogo/a Médico/a en Imagenología y",
+    "GL TECNOLOGO MEDICO con mención en Labor",
+    "Tecnólogo Médico con mención en Oftalmol",
+    "Analista Microbiología - Pudahuel Sat jo",
+    "KC Tecnólogo/a Médico Óptica KARUN Karun",
+    "LC Técnico de Laboratorio Clínico Labora",
+    "TMO con mención en Oftalmología (Reempla",
+    "E Tecnologo Medico Equisalud, Santiago 2",
+    "I Tecnólogo Médico – Comuna de Peñalolén",
+    "I Tecnólogo/a Médico – Oftalmología – Co",
+    "I Tecnólogo/a Médico – Laboratorio Clíni"
+   ],
+   "titulos": [
+    "Tecnologo Medico",
+    "VENDEDOR TECNOLOGO KARUN TEMUCO",
+    "Tecnólogo Médico Laboratorio - Clínica MEDS…",
+    "TENS experiencia laboratorio",
+    "Tecnólogo Médico con mención en Oftalmología…"
+   ],
+   "html_item": "<div class=\"job-item with-thumb destacado no-hover\">\n<div class=\"col-sm-12 px-0\" onclick=\"window.location.href='https://www.chiletrabajos.cl/trabajo/tecnologo-medico-3921092';\">\n<div class=\"thumb\" style=\"background-color: #C62828\">\n<span>NC</span>\n</div>\n<h2 class=\"title overflow-hidden\">\n<a class=\"font-weight-bold\" href=\"https://www.chiletrabajos.cl/trabajo/tecnologo-medico-3921092\">Tecnologo Medico</a>\n</h2>\n<h3 class=\"meta\">\r\n                            Novamedical chile,\r\n                        <a href=\"https://www.chiletrabajos.cl/ciudad/santiago.html\">Santiago</a>\n</h3>\n<h3 class=\"meta\"><a href=\"https://www.chiletrabajos.cl/trabajo/tecnologo-medico-3921092\"><i class=\"far fa-calendar\"></i> 27 de  Octubre de 2026</a></h3>\n</div>\n<div class=\"col-sm-12 px-0 mt-2\" onclick=\"window.location.href='https://www.chiletrabajos.cl/trabajo/tecnologo-medico-3921092';\">\n<p class=\"description\" style=\"word-break: break-all;\">\r\n            Empresa de ventas de equipos e insumos médicos necesita incorporar a su fuerza…                            <a class=\"ver-mas-btn\" href=\"https://www.chiletrabajos.cl/trabajo/tecnologo-medico-3921092\">Ver más</a>\n</p>\n</div>\n<div class=\"col-sm-12 px-0 mt-1 botones mb-1\">\n<div class=\"btn-group\">\n<a class=\"btn guardar\" data-id=\"3921092\" data-placement=\"top\" data-toggle=\"tooltip\" href=\"https://www.chiletrabajos.cl/trabajo/tecnologo-medico-3921092\" title=\"Guardar\">\n<i class=\"fas fa-bookmark\"></i>\n</a>\n<a class=\"btn\" data-placement=\"top\" data-toggle=\"tooltip\""
+  },
+  "p2": {
+   "url": "https://www.chiletrabajos.cl/encuentra-un-empleo/30?2=tecnologo+medico&action=search",
+   "status": 200,
+   "n": 30,
+   "fechas": [
+    "DOCENTE CURSO OPERADOR DE AUTOCLAVE Otec",
+    "Tecnólogo Médico en Oftalmología – Opera",
+    "N Analista de Laboratorio Part Time Neov",
+    "L Tecnólogo/a Médico ECOCARDIOGRAMA Livs",
+    "CM TECNOLOGO MEDICO CON RESPONSABILIDAD ",
+    "Tecnólogos Médicos - toma TAC -… Fundaci",
+    "JF TENS / TONS de Esterilización, Operad",
+    "TECNÓLOGO MÉDICO IMAGENOLOGÍA Y FÍSICA M",
+    "CS Necesito urgente tecnologo medico en ",
+    "CS Tecnologo medico en imagenes ecografí",
+    "Tens - Santiago Redrrhh.cl, Santiago 29 ",
+    "Tens- Puerto Montt Redrrhh.cl, Puerto mo",
+    "Docente Protección Radiológica Human bus",
+    "T TM- Operador de sistemas Full time Tel",
+    "Fonoaudiólogo/a y/o Tecnólogo Médico Oto",
+    "TM Coordinador Santiago Redrrhh.cl, Sant",
+    "Tens Anestesia - Santiago Redrrhh.cl, Sa",
+    "IE Ejecutivo/a de Imágenes - San Miguel ",
+    "Fonoaudiólogo/a o Tecnólogo Médico Otorr",
+    "HD Enfermera/o - Unidad de Calidad y… Ho"
+   ],
+   "titulos": [
+    "DOCENTE CURSO OPERADOR DE AUTOCLAVE",
+    "Tecnólogo Médico en Oftalmología – Operativos…",
+    "Analista de Laboratorio Part Time",
+    "Tecnólogo/a Médico ECOCARDIOGRAMA",
+    "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION…"
+   ],
+   "html_item": "<div class=\"job-item with-thumb destacado no-hover\">\n<div class=\"col-sm-12 px-0\" onclick=\"window.location.href='https://www.chiletrabajos.cl/trabajo/docente-curso-operador-de-autoclave-3822321';\">\n<div class=\"thumb\" style=\"background:url('https://s3.amazonaws.com/cht2/thumbs/empresas/f93751a286b9e889f4e62ea6d8d7dca8.jpg') no-repeat center center;\"></div>\n<h2 class=\"title overflow-hidden\">\n<a class=\"font-weight-bold\" href=\"https://www.chiletrabajos.cl/trabajo/docente-curso-operador-de-autoclave-3822321\">DOCENTE CURSO OPERADOR DE AUTOCLAVE</a>\n</h2>\n<h3 class=\"meta\">\r\n                            Otec dedicada a la..,\r\n                        <a href=\"https://www.chiletrabajos.cl/ciudad/santiago.html\">Santiago</a>\n</h3>\n<h3 class=\"meta\"><a href=\"https://www.chiletrabajos.cl/trabajo/docente-curso-operador-de-autoclave-3822321\"><i class=\"far fa-calendar\"></i> 07 de  Octubre de 2026</a></h3>\n</div>\n<div class=\"col-sm-12 px-0 mt-2\" onclick=\"window.location.href='https://www.chiletrabajos.cl/trabajo/docente-curso-operador-de-autoclave-3822321';\">\n<p class=\"description\" style=\"word-break: break-all;\">\r\n            Importante institución de capacitación requiere incorporar a su equipo docente para el curso…                            <a class=\"ver-mas-btn\" href=\"https://www.chiletrabajos.cl/trabajo/docente-curso-operador-de-autoclave-3822321\">Ver más</a>\n</p>\n</div>\n<div class=\"col-sm-12 px-0 mt-1 botones mb-1\">\n<div class=\"btn-group\">\n<a class=\"btn guardar\" data-id=\"3822321\" data-plac"
+  }
+ },
+ "trabajando": {
+  "actual": {
+   "params": "palabraClave=tecnologo%20medico",
+   "status": 200,
+   "claves": [
+    "estado",
+    "ofertas",
+    "cantidadRegistros",
+    "cantidadPaginas",
+    "paginaActual",
+    "registrosPorPagina",
+    "facetas"
+   ],
+   "escalares": {
+    "estado": "CARGANDO",
+    "cantidadRegistros": 250,
+    "cantidadPaginas": 17,
+    "paginaActual": 0,
+    "registrosPorPagina": 15
+   },
+   "n": 15,
+   "ids": [
+    6143733,
+    6142591,
+    6133664,
+    6138268,
+    6125255,
+    6133161,
+    6128906,
+    6124134,
+    6120198,
+    6136715,
+    6142694,
+    6142173,
+    6140911,
+    6140879,
+    6140603
+   ],
+   "fechas": [
+    "2026-10-30 17:22",
+    "2026-10-28 16:34",
+    "2026-10-26 18:05",
+    "2026-10-19 15:29",
+    "2026-10-13 11:37",
+    "2026-10-05 15:59",
+    "2026-09-24 12:08",
+    "2026-09-10 17:08",
+    "2026-09-01 17:20",
+    "2026-10-14 17:58",
+    "2026-10-28 18:17",
+    "2026-10-28 09:32",
+    "2026-10-26 09:33",
+    "2026-10-26 09:11",
+    "2026-10-23 14:40"
+   ],
+   "claves_oferta": [
+    "idOferta",
+    "nombreCargo",
+    "urlLogo",
+    "nombreEmpresa",
+    "descripcionOferta",
+    "publicadoHace",
+    "ubicacion",
+    "ofertaDestacada",
+    "geolocalizacion",
+    "nombreJornada",
+    "ofertaInclusiva",
+    "ofertaExclusiva",
+    "fechaPublicacion"
+   ]
+  },
+  "pagina2": {
+   "params": "palabraClave=tecnologo%20medico&pagina=2",
+   "status": 200,
+   "claves": [
+    "estado",
+    "ofertas",
+    "cantidadRegistros",
+    "cantidadPaginas",
+    "paginaActual",
+    "registrosPorPagina",
+    "facetas"
+   ],
+   "escalares": {
+    "estado": "CARGANDO",
+    "cantidadRegistros": 250,
+    "cantidadPaginas": 17,
+    "paginaActual": 2,
+    "registrosPorPagina": 15
+   },
+   "n": 15,
+   "ids": [
+    6140504,
+    6140254,
+    6139875,
+    6139868,
+    6141561,
+    6141143,
+    6135744,
+    6135059,
+    6134922,
+    6134526,
+    6138323,
+    6138047,
+    6137947,
+    6137790,
+    6137715
+   ],
+   "fechas": [
+    "2026-10-23 13:17",
+    "2026-10-23 09:59",
+    "2026-10-22 14:35",
+    "2026-10-22 14:20",
+    "2026-10-27 08:38",
+    "2026-10-26 12:23",
+    "2026-10-13 10:44",
+    "2026-10-09 08:51",
+    "2026-10-08 16:32",
+    "2026-10-08 08:58",
+    "2026-10-19 16:30",
+    "2026-10-19 11:19",
+    "2026-10-19 10:04",
+    "2026-10-16 20:19",
+    "2026-10-16 16:13"
+   ],
+   "claves_oferta": [
+    "idOferta",
+    "nombreCargo",
+    "urlLogo",
+    "nombreEmpresa",
+    "descripcionOferta",
+    "publicadoHace",
+    "ubicacion",
+    "ofertaDestacada",
+    "geolocalizacion",
+    "nombreJornada",
+    "ofertaInclusiva",
+    "ofertaExclusiva",
+    "fechaPublicacion"
+   ]
+  },
+  "page2": {
+   "params": "palabraClave=tecnologo%20medico&page=2",
+   "status": 200,
+   "claves": [
+    "estado",
+    "ofertas",
+    "cantidadRegistros",
+    "cantidadPaginas",
+    "paginaActual",
+    "registrosPorPagina",
+    "facetas"
+   ],
+   "escalares": {
+    "estado": "CARGANDO",
+    "cantidadRegistros": 250,
+    "cantidadPaginas": 17,
+    "paginaActual": 0,
+    "registrosPorPagina": 15
+   },
+   "n": 15,
+   "ids": [
+    6143733,
+    6142591,
+    6133664,
+    6138268,
+    6125255,
+    6133161,
+    6128906,
+    6124134,
+    6120198,
+    6136715,
+    6142694,
+    6142173,
+    6140911,
+    6140879,
+    6140603
+   ],
+   "fechas": [
+    "2026-10-30 17:22",
+    "2026-10-28 16:34",
+    "2026-10-26 18:05",
+    "2026-10-19 15:29",
+    "2026-10-13 11:37",
+    "2026-10-05 15:59",
+    "2026-09-24 12:08",
+    "2026-09-10 17:08",
+    "2026-09-01 17:20",
+    "2026-10-14 17:58",
+    "2026-10-28 18:17",
+    "2026-10-28 09:32",
+    "2026-10-26 09:33",
+    "2026-10-26 09:11",
+    "2026-10-23 14:40"
+   ],
+   "claves_oferta": [
+    "idOferta",
+    "nombreCargo",
+    "urlLogo",
+    "nombreEmpresa",
+    "descripcionOferta",
+    "publicadoHace",
+    "ubicacion",
+    "ofertaDestacada",
+    "geolocalizacion",
+    "nombreJornada",
+    "ofertaInclusiva",
+    "ofertaExclusiva",
+    "fechaPublicacion"
+   ]
+  },
+  "orden_fecha": {
+   "params": "palabraClave=tecnologo%20medico&orden=FECHA_PUBLICACION",
+   "status": 200,
+   "claves": [
+    "estado",
+    "ofertas",
+    "cantidadRegistros",
+    "cantidadPaginas",
+    "paginaActual",
+    "registrosPorPagina",
+    "facetas"
+   ],
+   "escalares": {
+    "estado": "CARGANDO",
+    "cantidadRegistros": 250,
+    "cantidadPaginas": 17,
+    "paginaActual": 0,
+    "registrosPorPagina": 15
+   },
+   "n": 15,
+   "ids": [
+    6143733,
+    6143680,
+    6143660,
+    6143637,
+    6143580,
+    6143525,
+    6143518,
+    6143513,
+    6143406,
+    6143385,
+    6143322,
+    6124410,
+    6131851,
+    6143002,
+    6142998
+   ],
+   "fechas": [
+    "2026-10-30 17:22",
+    "2026-10-30 16:06",
+    "2026-10-30 15:30",
+    "2026-10-30 14:50",
+    "2026-10-30 13:16",
+    "2026-10-30 12:24",
+    "2026-10-30 12:22",
+    "2026-10-30 12:20",
+    "2026-10-30 10:42",
+    "2026-10-30 10:11",
+    "2026-10-29 22:11",
+    "2026-10-29 16:52",
+    "2026-10-29 15:17",
+    "2026-10-29 14:22",
+    "2026-10-29 14:15"
+   ],
+   "claves_oferta": [
+    "idOferta",
+    "nombreCargo",
+    "urlLogo",
+    "nombreEmpresa",
+    "descripcionOferta",
+    "publicadoHace",
+    "ubicacion",
+    "ofertaDestacada",
+    "geolocalizacion",
+    "nombreJornada",
+    "ofertaInclusiva",
+    "ofertaExclusiva",
+    "fechaPublicacion"
+   ]
+  },
+  "ordenamiento": {
+   "params": "palabraClave=tecnologo%20medico&ordenamiento=fecha",
+   "status": 200,
+   "claves": [
+    "estado",
+    "ofertas",
+    "cantidadRegistros",
+    "cantidadPaginas",
+    "paginaActual",
+    "registrosPorPagina",
+    "facetas"
+   ],
+   "escalares": {
+    "estado": "CARGANDO",
+    "cantidadRegistros": 250,
+    "cantidadPaginas": 17,
+    "paginaActual": 0,
+    "registrosPorPagina": 15
+   },
+   "n": 15,
+   "ids": [
+    6143733,
+    6142591,
+    6133664,
+    6138268,
+    6125255,
+    6133161,
+    6128906,
+    6124134,
+    6120198,
+    6136715,
+    6142694,
+    6142173,
+    6140911,
+    6140879,
+    6140603
+   ],
+   "fechas": [
+    "2026-10-30 17:22",
+    "2026-10-28 16:34",
+    "2026-10-26 18:05",
+    "2026-10-19 15:29",
+    "2026-10-13 11:37",
+    "2026-10-05 15:59",
+    "2026-09-24 12:08",
+    "2026-09-10 17:08",
+    "2026-09-01 17:20",
+    "2026-10-14 17:58",
+    "2026-10-28 18:17",
+    "2026-10-28 09:32",
+    "2026-10-26 09:33",
+    "2026-10-26 09:11",
+    "2026-10-23 14:40"
+   ],
+   "claves_oferta": [
+    "idOferta",
+    "nombreCargo",
+    "urlLogo",
+    "nombreEmpresa",
+    "descripcionOferta",
+    "publicadoHace",
+    "ubicacion",
+    "ofertaDestacada",
+    "geolocalizacion",
+    "nombreJornada",
+    "ofertaInclusiva",
+    "ofertaExclusiva",
+    "fechaPublicacion"
+   ]
+  },
+  "sort": {
+   "params": "palabraClave=tecnologo%20medico&sort=fecha",
+   "status": 200,
+   "claves": [
+    "estado",
+    "ofertas",
+    "cantidadRegistros",
+    "cantidadPaginas",
+    "paginaActual",
+    "registrosPorPagina",
+    "facetas"
+   ],
+   "escalares": {
+    "estado": "CARGANDO",
+    "cantidadRegistros": 250,
+    "cantidadPaginas": 17,
+    "paginaActual": 0,
+    "registrosPorPagina": 15
+   },
+   "n": 15,
+   "ids": [
+    6143733,
+    6142591,
+    6133664,
+    6138268,
+    6125255,
+    6133161,
+    6128906,
+    6124134,
+    6120198,
+    6136715,
+    6142694,
+    6142173,
+    6140911,
+    6140879,
+    6140603
+   ],
+   "fechas": [
+    "2026-10-30 17:22",
+    "2026-10-28 16:34",
+    "2026-10-26 18:05",
+    "2026-10-19 15:29",
+    "2026-10-13 11:37",
+    "2026-10-05 15:59",
+    "2026-09-24 12:08",
+    "2026-09-10 17:08",
+    "2026-09-01 17:20",
+    "2026-10-14 17:58",
+    "2026-10-28 18:17",
+    "2026-10-28 09:32",
+    "2026-10-26 09:33",
+    "2026-10-26 09:11",
+    "2026-10-23 14:40"
+   ],
+   "claves_oferta": [
+    "idOferta",
+    "nombreCargo",
+    "urlLogo",
+    "nombreEmpresa",
+    "descripcionOferta",
+    "publicadoHace",
+    "ubicacion",
+    "ofertaDestacada",
+    "geolocalizacion",
+    "nombreJornada",
+    "ofertaInclusiva",
+    "ofertaExclusiva",
+    "fechaPublicacion"
+   ]
+  },
+  "estado_cargado": {
+   "params": "palabraClave=tecnologo%20medico&estado=CARGADO",
+   "status": 200,
+   "claves": [
+    "estado",
+    "ofertas",
+    "cantidadRegistros",
+    "cantidadPaginas",
+    "paginaActual",
+    "registrosPorPagina",
+    "facetas"
+   ],
+   "escalares": {
+    "estado": "CARGANDO",
+    "cantidadRegistros": 250,
+    "cantidadPaginas": 17,
+    "paginaActual": 0,
+    "registrosPorPagina": 15
+   },
+   "n": 15,
+   "ids": [
+    6143733,
+    6142591,
+    6133664,
+    6138268,
+    6125255,
+    6133161,
+    6128906,
+    6124134,
+    6120198,
+    6136715,
+    6142694,
+    6142173,
+    6140911,
+    6140879,
+    6140603
+   ],
+   "fechas": [
+    "2026-10-30 17:22",
+    "2026-10-28 16:34",
+    "2026-10-26 18:05",
+    "2026-10-19 15:29",
+    "2026-10-13 11:37",
+    "2026-10-05 15:59",
+    "2026-09-24 12:08",
+    "2026-09-10 17:08",
+    "2026-09-01 17:20",
+    "2026-10-14 17:58",
+    "2026-10-28 18:17",
+    "2026-10-28 09:32",
+    "2026-10-26 09:33",
+    "2026-10-26 09:11",
+    "2026-10-23 14:40"
+   ],
+   "claves_oferta": [
+    "idOferta",
+    "nombreCargo",
+    "urlLogo",
+    "nombreEmpresa",
+    "descripcionOferta",
+    "publicadoHace",
+    "ubicacion",
+    "ofertaDestacada",
+    "geolocalizacion",
+    "nombreJornada",
+    "ofertaInclusiva",
+    "ofertaExclusiva",
+    "fechaPublicacion"
+   ]
+  },
+  "_contexto_js": []
+ },
+ "laborum": {
+  "RECIENTES": {
+   "status": 200,
+   "total": 26,
+   "fechas": [
+    "30-10-2026",
+    "30-10-2026",
+    "23-10-2026",
+    "20-10-2026",
+    "20-10-2026",
+    "19-10-2026",
+    "13-10-2026",
+    "09-10-2026",
+    "08-10-2026",
+    "30-09-2026",
+    "30-09-2026",
+    "30-09-2026",
+    "30-09-2026",
+    "29-09-2026",
+    "29-09-2026",
+    "10-09-2026",
+    "01-09-2026",
+    "26-08-2026",
+    "22-08-2026",
+    "13-08-2026"
+   ]
+  },
+  "RELEVANTES": {
+   "status": 200,
+   "total": 26,
+   "fechas": [
+    "20-10-2026",
+    "30-10-2026",
+    "19-10-2026",
+    "30-10-2026",
+    "20-10-2026",
+    "13-10-2026",
+    "08-10-2026",
+    "30-09-2026",
+    "09-10-2026",
+    "30-09-2026",
+    "30-09-2026",
+    "30-09-2026",
+    "29-09-2026",
+    "29-09-2026",
+    "23-10-2026",
+    "10-09-2026",
+    "01-09-2026",
+    "26-08-2026",
+    "22-08-2026",
+    "13-08-2026"
+   ]
+  }
+ },
+ "robots": {
+  "https://cl.computrabajo.com": "leído",
+  "https://www.chiletrabajos.cl": "leído",
+  "https://www.trabajando.cl": "leído",
+  "https://www.laborum.cl": "leído"
+ }
+}
