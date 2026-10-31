@@ -1,9 +1,10 @@
 {
- "version": "1.17.0",
- "ultimo_chequeo": "2026-10-30T23:44:49+00:00",
- "nuevos": 0,
- "total": 29,
+ "version": "1.18.0",
+ "ultimo_chequeo": "2026-10-31T01:07:55+00:00",
+ "nuevos": 5,
+ "total": 33,
  "palabras_clave": [
+  "tecnólogo médico",
   "tecnólogo médico resonancia",
   "resonancia magnética",
   "tecnólogo médico imagenología",
@@ -17,14 +18,64 @@
  "sitios": {
   "linkedin": {
    "nombre": "LinkedIn",
-   "resultados": 80,
+   "resultados": 90,
    "errores": [],
    "descartados": {
-    "perfil": 32,
-    "zona": 4,
-    "exclusion": 7
+    "zona": 5,
+    "perfil": 33,
+    "exclusion": 8
    },
    "muestra": [
+    {
+     "titulo": "PERSONAL DE APOYO - PUERTO VARAS",
+     "ubicacion": "Puerto Varas, Los Lagos, Chile",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnico en Neurofisiologia",
+     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Técnico En Enfermería De Nivel Superior",
+     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Endoscopy Sales",
+     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Encargado de Equipos Médicos",
+     "ubicacion": "Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología - Colina",
+     "ubicacion": "Colina, Región Metropolitana de Santiago, Chile",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico mención oftalmología",
+     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Analista BI",
+     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Administrador TENS",
+     "ubicacion": "Copiapó, Región de Atacama, Chile",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Técnico Paramédico - Hospitalizados Maternidad (Honorarios)",
+     "ubicacion": "La Florida, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Coordinador(a) de Mantenimiento Mecánico Hospitalario",
      "ubicacion": "Cerro Navia, Región Metropolitana de Santiago, Chile",
@@ -34,126 +85,76 @@
      "titulo": "Coordinador de Comunicaciones Externas - RedSalud CChC",
      "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Psiquiatra",
-     "ubicacion": "Las Condes, Región Metropolitana de Santiago, Chile",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Specialist Radiographer",
-     "ubicacion": "Hospital, Región Metropolitana de Santiago, Chile",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Endoscopy Sales",
-     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "MSL Tumores Raros // Rare Tumors Chile",
-     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "MSL",
-     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Paramédico con licencia de conducir - Melipilla",
-     "ubicacion": "Melipilla, Región Metropolitana de Santiago, Chile",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Consultant Radiographer &#x2013; Breast Imaging",
-     "ubicacion": "Hospital, Región Metropolitana de Santiago, Chile",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Consultant Radiographer – Breast Imaging",
-     "ubicacion": "Hospital, Región Metropolitana de Santiago, Chile",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Consultor SAP Junior - Rubro Mineria",
-     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Representante de Ventas - Zona Norte",
-     "ubicacion": "Región de Antofagasta, Chile",
-     "motivo": "zona"
     }
    ]
   },
   "computrabajo": {
    "nombre": "Computrabajo",
-   "resultados": 166,
+   "resultados": 206,
    "errores": [],
    "descartados": {
-    "zona": 22,
-    "exclusion": 8,
-    "perfil": 22
+    "zona": 23,
+    "exclusion": 15,
+    "perfil": 24
    },
    "muestra": [
     {
-     "titulo": "Tecnólogo Médico Imagenología",
-     "ubicacion": "Osorno, Los Lagos",
+     "titulo": "Tecnólogo/a Médico/a en Imagenología – Calama",
+     "ubicacion": "Calama, Antofagasta",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo Médico Imagenología",
-     "ubicacion": "Osorno, Los Lagos",
+     "titulo": "Técnico en Enfermería Nivel Superior Unidad Toma de Muestras Viña del Mar",
+     "ubicacion": "Viña del Mar, Valparaíso",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnolog@ Medico para Director/a Técnico de laboratorio clínico",
+     "ubicacion": "Arica, Arica y Parinacota",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico(a) Turno 7x7 Calama",
+     "ubicacion": "Calama, Antofagasta",
      "motivo": "zona"
     },
     {
-     "titulo": "TENS Imagenología",
-     "ubicacion": "La Serena, Coquimbo",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Técnico en Imagenología",
-     "ubicacion": "La Serena, Coquimbo",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico Imagenología",
-     "ubicacion": "Osorno, Los Lagos",
+     "titulo": "Tecnologo médico en Imagenología para Taltal",
+     "ubicacion": "Taltal, Antofagasta",
      "motivo": "zona"
     },
     {
-     "titulo": "TENS Imagenología",
-     "ubicacion": "La Serena, Coquimbo",
+     "titulo": "Tecnologo médico en Laboratorio para Tocopilla",
+     "ubicacion": "Tocopilla, Antofagasta",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico Imagenología",
-     "ubicacion": "Osorno, Los Lagos",
-     "motivo": "zona"
+     "titulo": "Técnico de Nivel Superior en Odontología",
+     "ubicacion": "Santiago - Vitacura, R.Metropolitana",
+     "motivo": "perfil"
     },
     {
-     "titulo": "TENS Imagenología",
-     "ubicacion": "La Serena, Coquimbo",
+     "titulo": "Técnico en Enfermería Nivel Superior",
+     "ubicacion": "Santiago - Las condes, R.Metropolitana",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Médico(a) Neurologia",
+     "titulo": "Vendedor/a de Tecnología Full Time 5x2",
      "ubicacion": "Santiago - Providencia, R.Metropolitana",
      "motivo": "perfil"
     },
     {
-     "titulo": "Ingeniero de Servicio y Laboratorio",
-     "ubicacion": "Santiago - Providencia, R.Metropolitana",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Visitador(a) Médico(a)",
+     "titulo": "Tecnólogo Médico (a), Proyecto Antofagasta 7x7",
      "ubicacion": "Antofagasta, Antofagasta",
      "motivo": "zona"
     },
     {
-     "titulo": "Visitador(a) Médico(a)",
+     "titulo": "Tecnólogos(as) Médicos Volantes",
+     "ubicacion": "Santiago Centro, R.Metropolitana",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tecnólogo Médico Radiología",
      "ubicacion": "Antofagasta, Antofagasta",
      "motivo": "zona"
     }
@@ -161,63 +162,39 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 160,
+   "resultados": 220,
    "errores": [],
    "descartados": {
-    "perfil": 15,
-    "zona": 5,
-    "exclusion": 6
+    "antiguedad": 6,
+    "perfil": 18,
+    "exclusion": 19,
+    "zona": 8
    },
    "muestra": [
     {
-     "titulo": "Profesor/a de Física PAES",
+     "titulo": "Tecnologo Medico",
      "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
+     "ubicacion": "Temuco",
      "motivo": "perfil"
     },
     {
-     "titulo": "CARGADOR",
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS…",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TENS experiencia laboratorio",
      "ubicacion": "Antofagasta",
-     "motivo": "zona"
+     "motivo": "exclusion"
     },
     {
-     "titulo": "CHOFER DESPACHADOR",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Operarios - San Bernardo",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Operario Grua",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "GUARDIAS PARA CCTV",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Técnico eléctrico - mantenimiento",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TECNICO EN AIRE ACONDICIONADO",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Desarrollador nivel Medio - Workflow JIRA",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "MANIPULADORA DE ALIMENTOS",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Colina",
+     "motivo": "exclusion"
     },
     {
      "titulo": "TECNÓLOGO(A) MÉDICO(A) Unidad de Imageneología Hospital…",
@@ -225,127 +202,194 @@
      "motivo": "zona"
     },
     {
-     "titulo": "SECRETARIA RECEPCIONISTA (HONORARIOS)",
+     "titulo": "Tecnólogo/a Médico/a – Medicina Transfusional –…",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico/a en Imagenología y Física…",
+     "ubicacion": "Puerto aysén",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio…",
+     "ubicacion": "Talagante",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Linares",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Analista Microbiología - Pudahuel",
      "ubicacion": "Santiago",
      "motivo": "perfil"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico Óptica KARUN",
+     "ubicacion": "Temuco",
+     "motivo": "antiguedad"
     }
    ]
   },
   "trabajando": {
    "nombre": "Trabajando.cl",
-   "resultados": 75,
+   "resultados": 105,
    "errores": [],
    "descartados": {
-    "zona": 9,
-    "exclusion": 6,
-    "perfil": 17
+    "exclusion": 11,
+    "perfil": 24,
+    "zona": 12
    },
    "muestra": [
     {
-     "titulo": "Tecnólogo Medico imagenología",
-     "ubicacion": "Osorno, Los Lagos",
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
+     "ubicacion": "Lo Barnechea, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Analista de Remuneraciones",
+     "ubicacion": "Las Condes, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Técnico Soporte Microinformática",
+     "ubicacion": "Santiago, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Reemplazo Jefe Turno Planta Potasa - El Salar",
+     "ubicacion": "Antofagasta, Antofagasta",
      "motivo": "zona"
     },
     {
-     "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RADIOLOGÍA (REEMPLAZO)",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RESONANCIA MAGNETICA (REEMPLAZO)",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Técnico en imagenología",
-     "ubicacion": "La Florida, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Técnico en imagenología",
-     "ubicacion": "La Florida, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Técnico en imagenología",
-     "ubicacion": "La Florida, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Técnico en Imagenología - Pool Volante - RedSalud CChC",
+     "titulo": "TONS - Centro Médicos y Dentales RedSalud RM",
      "ubicacion": "Santiago, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Técnico en enfermería - Urgencias",
+     "ubicacion": "La Florida, Metropolitana de Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Ejecutivo de Venta Automotriz - Chillán",
-     "ubicacion": "Chillán, Ñuble",
+     "titulo": "Líder en prevención de riesgo",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
      "motivo": "perfil"
     },
     {
-     "titulo": "Técnico (a) Simulación Clínica/ Pre y Post Natal/ Universidad Mayor/ Temuco",
-     "ubicacion": "Temuco, La Araucanía",
+     "titulo": "Especialista Senior en Sostenibilidad y Economía Circular, Modalidad Híbrida - Las Condes",
+     "ubicacion": "Las Condes, Metropolitana de Santiago",
      "motivo": "perfil"
     },
     {
-     "titulo": "Ejecutivo de Venta Automotriz - Temuco",
-     "ubicacion": "Temuco, La Araucanía",
+     "titulo": "Diseñador/a",
+     "ubicacion": "Huechuraba, Metropolitana de Santiago",
      "motivo": "perfil"
     },
     {
-     "titulo": "Ejecutivo de Venta Automotriz - Concepción",
-     "ubicacion": "Concepción, Biobío",
-     "motivo": "perfil"
+     "titulo": "Químico farmacéutico | Clínica RedSalud Valparaíso",
+     "ubicacion": "Valparaíso, Valparaíso",
+     "motivo": "zona"
     },
     {
-     "titulo": "Ejecutivo de Venta Automotriz - Valdivia",
-     "ubicacion": "Valdivia, Los Ríos",
+     "titulo": "Jefe/a de Personal Reemplazo Pre y Postnatal | Puerto Natales",
+     "ubicacion": "Natales, Magallanes y Antártica Chilena",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Técnico en Informática",
+     "ubicacion": "Huechuraba, Metropolitana de Santiago",
      "motivo": "perfil"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 4,
+   "resultados": 21,
    "errores": [],
    "descartados": {
-    "exclusion": 1
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Técnico en Enfermería SEL - Centro Viña del Mar Achs Salud",
-     "ubicacion": "Viña del Mar, VS, Chile",
-     "motivo": "exclusion"
+     "titulo": "Manager de Prospecting/SDR",
+     "ubicacion": "Santiago de Chile, RM, Chile",
+     "motivo": "perfil"
     }
    ]
   },
-  "google": {
-   "nombre": "Google Empleos",
-   "resultados": 0,
-   "errores": [
-    "«tecnólogo médico resonancia»: RuntimeError: {'google': 'no job data returned'} · Google respondió 200 sin el panel de empleos",
-    "«resonancia magnética»: RuntimeError: {'google': 'no job data returned'} · Google respondió 200 sin el panel de empleos",
-    "«tecnólogo médico imagenología»: RuntimeError: {'google': 'no job data returned'} · Google respondió 200 sin el panel de empleos",
-    "«tecnólogo médico scanner»: RuntimeError: {'google': 'no job data returned'} · Google respondió 200 sin el panel de empleos",
-    "«tecnólogo médico radiología»: RuntimeError: {'google': 'no job data returned'} · Google respondió 200 sin el panel de empleos",
-    "«especialista de aplicaciones»: RuntimeError: {'google': 'no job data returned'} · Google respondió 200 sin el panel de empleos",
-    "«coordinador imagenología»: RuntimeError: {'google': 'no job data returned'} · Google respondió 200 sin el panel de empleos",
-    "«jefe imagenología»: RuntimeError: {'google': 'no job data returned'} · Google respondió 200 sin el panel de empleos"
-   ],
-   "descartados": {},
-   "muestra": []
-  },
   "laborum": {
    "nombre": "Laborum",
-   "resultados": 10,
+   "resultados": 62,
    "errores": [],
    "descartados": {
-    "zona": 1
+    "exclusion": 7,
+    "antiguedad": 9,
+    "zona": 4,
+    "perfil": 1
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogo Médico en Oftalmología Part Time 18 hrs. OPV Mall Alto Las Condes",
+     "ubicacion": "Las Condes, Región Metropolitana",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico de Biología Molecular - Reemplazo",
+     "ubicacion": "Vitacura, Región Metropolitana",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico en Oftalmología",
+     "ubicacion": "Provincia de Antofagasta, Región II",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "REEMPLAZO BIOQUIMICO O TECNOLOGO MEDICO",
+     "ubicacion": "Santiago de Chile, Región Metropolitana",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo Médico Banco de Sangre - Rancagua",
+     "ubicacion": "Rancagua, Región VI",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico- Banco de Sangre",
+     "ubicacion": "Providencia, Región Metropolitana",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico - Anatomía Patológica",
+     "ubicacion": "Santiago de Chile, Región Metropolitana",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo Médico- Medicina Transfusional",
+     "ubicacion": "Vitacura, Región Metropolitana",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Fonoaudiólogo/a y/o Tecnólogo Médico Otorrinolaringología - Concepción",
+     "ubicacion": "Concepción, Región VIII",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Tecnólogo Médico Imagenología - Clínica",
      "ubicacion": "San Antonio, Región V",
      "motivo": "zona"
+    },
+    {
+     "titulo": "TECNÓLOGO MÉDICO SERVICIO BANCO DE SANGRE",
+     "ubicacion": "La Reina, Región Metropolitana",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "tecnologo medico",
+     "ubicacion": "Santiago de Chile, Región Metropolitana",
+     "motivo": "antiguedad"
     }
    ]
   }

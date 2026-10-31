@@ -1,17 +1,128 @@
 {
- "actualizado": "2026-10-30T23:44:49+00:00",
+ "actualizado": "2026-10-31T01:07:55+00:00",
  "avisos": [
+  {
+   "id": "d4fc786e91bd6d",
+   "sitio": "computrabajo",
+   "titulo": "Tecnólogo/a Médico/a",
+   "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-tecnologoa-medicoa-banco-de-sangre-en-santiago-recoleta-605D7C823159186D61373E686DCF3405",
+   "empresa": "Adecco Chile",
+   "ubicacion": "Santiago - Recoleta, R.Metropolitana",
+   "publicado": "Ayer",
+   "palabras": [
+    "tecnólogo médico",
+    "tecnologo medico"
+   ],
+   "afinidad": 2,
+   "renta": "$ 11.111.111",
+   "jornada": "",
+   "contrato": "",
+   "cierre": "",
+   "encontrado": "2026-10-31T01:07:55+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
+   "vigencia": "vigente",
+   "dias_sin_ver": 0
+  },
+  {
+   "id": "d5be50e38983a3",
+   "sitio": "chiletrabajos",
+   "titulo": "Tecnólogo/a Médico",
+   "url": "https://www.chiletrabajos.cl/trabajo/tecnologo-a-medico-3783750",
+   "empresa": "Livsalud",
+   "ubicacion": "Santiago",
+   "publicado": "28 de Octubre de 2026",
+   "palabras": [
+    "tecnólogo médico",
+    "tecnologo medico"
+   ],
+   "afinidad": 2,
+   "renta": "",
+   "jornada": "",
+   "contrato": "",
+   "cierre": "",
+   "encontrado": "2026-10-31T01:07:55+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
+   "vigencia": "vigente",
+   "dias_sin_ver": 0
+  },
+  {
+   "id": "1f305a046841e5",
+   "sitio": "chiletrabajos",
+   "titulo": "Tecnólogo(a) Médico(a) – Pabellón Traumatológico Hospital…",
+   "url": "https://www.chiletrabajos.cl/trabajo/tecnologo-a-medico-a-pabellon-traumatologico-hospital-traumatologico-ccp-3871105",
+   "empresa": "Ergonomía mac ltda.",
+   "ubicacion": "Concepción",
+   "publicado": "28 de Octubre de 2026",
+   "palabras": [
+    "tecnólogo médico",
+    "tecnologo medico"
+   ],
+   "afinidad": 2,
+   "renta": "",
+   "jornada": "",
+   "contrato": "",
+   "cierre": "",
+   "encontrado": "2026-10-31T01:07:55+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
+   "vigencia": "vigente",
+   "dias_sin_ver": 0
+  },
+  {
+   "id": "3630d9cdf46a5b",
+   "sitio": "laborum",
+   "titulo": "Tecnólogo Médico Cineangiografía - Reemplazo Vacaciones",
+   "url": "https://www.laborum.cl/empleos/tecnologo-medico-cineangiografia-reemplazo-vacaciones-confidencial-1118503036.html",
+   "empresa": "",
+   "ubicacion": "Providencia, Región Metropolitana",
+   "publicado": "2026-10-30",
+   "palabras": [
+    "tecnólogo médico",
+    "tecnologo medico"
+   ],
+   "afinidad": 2,
+   "renta": "",
+   "jornada": "Jornada completa",
+   "contrato": "Reemplazo",
+   "cierre": "",
+   "encontrado": "2026-10-31T01:07:55+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
+   "vigencia": "vigente",
+   "dias_sin_ver": 0
+  },
+  {
+   "id": "abd45ed8deb826",
+   "sitio": "laborum",
+   "titulo": "Tecnólogo Médico - Exámenes Respiratorios - Reemplazo Vacaciones .",
+   "url": "https://www.laborum.cl/empleos/tecnologo-medico-examenes-respiratorios-reemplazo-vacaciones-confidencial-1118502947.html",
+   "empresa": "",
+   "ubicacion": "Providencia, Región Metropolitana",
+   "publicado": "2026-10-30",
+   "palabras": [
+    "tecnólogo médico",
+    "tecnologo medico"
+   ],
+   "afinidad": 2,
+   "renta": "",
+   "jornada": "Jornada completa",
+   "contrato": "Reemplazo",
+   "cierre": "",
+   "encontrado": "2026-10-31T01:07:55+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
+   "vigencia": "vigente",
+   "dias_sin_ver": 0
+  },
   {
    "id": "48e9fd1b6c2fbc",
    "sitio": "indeed",
-   "titulo": "Tecnólogo Médico",
+   "titulo": "Tecnólogo Médico Rayo Reemplazo Vacaciones - Hospital del Trabajador Achs Salud",
    "url": "https://cl.indeed.com/viewjob?jk=bef4cd7f5843d185",
-   "empresa": "Naturalssan",
-   "ubicacion": "Santiago de Chile, RM, Chile",
+   "empresa": "American College of Healthcare Sciences",
+   "ubicacion": "Providencia, RM, Chile",
    "publicado": "2026-10-29",
    "palabras": [
     "tecnólogo médico radiología",
-    "tecnólogo médico imagenología"
+    "tecnólogo médico imagenología",
+    "tecnólogo médico"
    ],
    "afinidad": 2,
    "renta": "$1 a $2",
@@ -19,7 +130,7 @@
    "contrato": "Reemplazo",
    "cierre": "",
    "encontrado": "2026-10-29T21:51:46+00:00",
-   "visto_ultima_vez": "2026-10-30T23:44:49+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
    "vigencia": "vigente",
    "dias_sin_ver": 0
   },
@@ -41,29 +152,7 @@
    "contrato": "",
    "cierre": "",
    "encontrado": "2026-10-29T19:56:48+00:00",
-   "visto_ultima_vez": "2026-10-30T23:44:49+00:00",
-   "vigencia": "vigente",
-   "dias_sin_ver": 0
-  },
-  {
-   "id": "936ffb619f20c5",
-   "sitio": "computrabajo",
-   "titulo": "técnico/a radiólogo",
-   "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-tecnicoa-radiologo-diurno-en-santiago-las-condes-F213933420D275B661373E686DCF3405",
-   "empresa": "V3D-BIOTEC SPA",
-   "ubicacion": "Santiago - Las condes, R.Metropolitana",
-   "publicado": "Más de 30 días",
-   "palabras": [
-    "tecnólogo médico radiología",
-    "tecnologo medico radiologia"
-   ],
-   "afinidad": 2,
-   "renta": "$ 650.000",
-   "jornada": "",
-   "contrato": "",
-   "cierre": "",
-   "encontrado": "2026-10-29T19:56:48+00:00",
-   "visto_ultima_vez": "2026-10-30T23:44:49+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
    "vigencia": "vigente",
    "dias_sin_ver": 0
   },
@@ -87,7 +176,7 @@
    "contrato": "",
    "cierre": "",
    "encontrado": "2026-10-29T19:56:48+00:00",
-   "visto_ultima_vez": "2026-10-30T23:44:49+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
    "vigencia": "vigente",
    "dias_sin_ver": 0
   },
@@ -111,7 +200,7 @@
    "contrato": "",
    "cierre": "",
    "encontrado": "2026-10-29T19:56:48+00:00",
-   "visto_ultima_vez": "2026-10-30T23:44:49+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
    "vigencia": "vigente",
    "dias_sin_ver": 0
   },
@@ -133,7 +222,7 @@
    "contrato": "",
    "cierre": "",
    "encontrado": "2026-10-29T19:56:48+00:00",
-   "visto_ultima_vez": "2026-10-30T23:44:49+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
    "vigencia": "vigente",
    "dias_sin_ver": 0
   },
@@ -149,7 +238,9 @@
     "tecnólogo médico resonancia",
     "tecnologo medico resonancia",
     "resonancia magnética",
-    "resonancia magnetica"
+    "resonancia magnetica",
+    "tecnólogo médico",
+    "tecnologo medico"
    ],
    "afinidad": 3,
    "renta": "",
@@ -157,7 +248,7 @@
    "contrato": "",
    "cierre": "",
    "encontrado": "2026-10-29T19:56:48+00:00",
-   "visto_ultima_vez": "2026-10-30T23:44:49+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
    "vigencia": "vigente",
    "dias_sin_ver": 0
   },
@@ -171,7 +262,9 @@
    "publicado": "2026-10-13",
    "palabras": [
     "tecnólogo médico imagenología",
-    "tecnologo medico imagenologia"
+    "tecnologo medico imagenologia",
+    "tecnólogo médico",
+    "tecnologo medico"
    ],
    "afinidad": 2,
    "renta": "",
@@ -179,7 +272,7 @@
    "contrato": "",
    "cierre": "",
    "encontrado": "2026-10-29T19:56:48+00:00",
-   "visto_ultima_vez": "2026-10-30T23:44:49+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
    "vigencia": "vigente",
    "dias_sin_ver": 0
   },
@@ -193,7 +286,9 @@
    "publicado": "2026-09-30",
    "palabras": [
     "tecnólogo médico imagenología",
-    "tecnologo medico imagenologia"
+    "tecnologo medico imagenologia",
+    "tecnólogo médico",
+    "tecnologo medico"
    ],
    "afinidad": 2,
    "renta": "",
@@ -201,7 +296,7 @@
    "contrato": "",
    "cierre": "",
    "encontrado": "2026-10-29T19:56:48+00:00",
-   "visto_ultima_vez": "2026-10-30T23:44:49+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
    "vigencia": "vigente",
    "dias_sin_ver": 0
   },
@@ -220,7 +315,7 @@
     "resonancia magnetica"
    ],
    "encontrado": "2026-10-29T18:13:44+00:00",
-   "visto_ultima_vez": "2026-10-30T23:44:49+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
    "jornada": "Jornada completa",
    "afinidad": 3,
    "vigencia": "vigente",
@@ -238,10 +333,12 @@
     "tecnólogo médico resonancia",
     "resonancia magnética",
     "tecnologo medico resonancia",
-    "resonancia magnetica"
+    "resonancia magnetica",
+    "tecnólogo médico",
+    "tecnologo medico"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T23:44:49+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
    "renta": "$ 600.000",
    "afinidad": 3,
    "vigencia": "vigente",
@@ -333,10 +430,12 @@
    "publicado": "Hace 4 días",
    "palabras": [
     "tecnólogo médico imagenología",
-    "tecnologo medico imagenologia"
+    "tecnologo medico imagenologia",
+    "tecnólogo médico",
+    "tecnologo medico"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T23:44:49+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
    "afinidad": 2,
    "vigencia": "vigente",
    "dias_sin_ver": 0
@@ -356,7 +455,7 @@
     "tecnologo medico radiologia"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T23:44:49+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
    "afinidad": 2,
    "vigencia": "vigente",
    "dias_sin_ver": 0
@@ -407,10 +506,12 @@
     "tecnólogo médico imagenología",
     "tecnologo medico imagenologia",
     "tecnólogo médico scanner",
-    "tecnologo medico scanner"
+    "tecnologo medico scanner",
+    "tecnólogo médico",
+    "tecnologo medico"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T23:44:49+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
    "renta": "$ 1.111.111",
    "afinidad": 2,
    "vigencia": "vigente",
@@ -448,7 +549,7 @@
     "tecnologo medico scanner"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T23:44:49+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
    "afinidad": 2,
    "vigencia": "vigente",
    "dias_sin_ver": 0
@@ -460,7 +561,7 @@
    "url": "https://www.chiletrabajos.cl/trabajo/tecnologos-medicos-toma-tac-complejo-asistencial-dr-victor-rios-ruiz-3907723",
    "empresa": "Fundación aníbal ariztía",
    "ubicacion": "Santiago",
-   "publicado": "",
+   "publicado": "01 de Octubre de 2026",
    "palabras": [
     "resonancia magnética",
     "tecnólogo médico imagenología",
@@ -468,7 +569,7 @@
     "tecnologo medico imagenologia"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T23:44:49+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
    "afinidad": 2,
    "vigencia": "vigente",
    "dias_sin_ver": 0
@@ -480,7 +581,7 @@
    "url": "https://www.chiletrabajos.cl/trabajo/tecnologo-medico-imagenologia-y-fisica-medica-3370593",
    "empresa": "Redrrhh.cl",
    "ubicacion": "Santiago",
-   "publicado": "",
+   "publicado": "29 de Septiembre de 2026",
    "palabras": [
     "resonancia magnética",
     "tecnólogo médico imagenología",
@@ -488,7 +589,7 @@
     "tecnologo medico imagenologia"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T23:44:49+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
    "afinidad": 2,
    "vigencia": "vigente",
    "dias_sin_ver": 0
@@ -500,13 +601,13 @@
    "url": "https://www.chiletrabajos.cl/trabajo/tm-coordinador-santiago-3369938",
    "empresa": "Redrrhh.cl",
    "ubicacion": "Santiago",
-   "publicado": "",
+   "publicado": "28 de Septiembre de 2026",
    "palabras": [
     "resonancia magnética",
     "resonancia magnetica"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T23:44:49+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
    "afinidad": 2,
    "vigencia": "vigente",
    "dias_sin_ver": 0
@@ -518,13 +619,15 @@
    "url": "https://www.chiletrabajos.cl/trabajo/tecnologo-medico-3910372",
    "empresa": "Confidencial",
    "ubicacion": "Santiago",
-   "publicado": "",
+   "publicado": "07 de Octubre de 2026",
    "palabras": [
     "tecnólogo médico imagenología",
-    "tecnologo medico imagenologia"
+    "tecnologo medico imagenologia",
+    "tecnólogo médico",
+    "tecnologo medico"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T23:44:49+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
    "afinidad": 2,
    "vigencia": "vigente",
    "dias_sin_ver": 0
@@ -536,13 +639,13 @@
    "url": "https://www.chiletrabajos.cl/trabajo/tecnologo-de-imagenologia-para-ecografias-3902025",
    "empresa": "Centravida cauquenes",
    "ubicacion": "Cauquenes",
-   "publicado": "",
+   "publicado": "22 de Septiembre de 2026",
    "palabras": [
     "tecnólogo médico imagenología",
     "tecnologo medico imagenologia"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T23:44:49+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
    "afinidad": 2,
    "vigencia": "vigente",
    "dias_sin_ver": 0
@@ -554,13 +657,13 @@
    "url": "https://www.chiletrabajos.cl/trabajo/tecnologo-de-imagenologia-para-ecografias-3902021",
    "empresa": "Centravida buin",
    "ubicacion": "Santiago",
-   "publicado": "",
+   "publicado": "22 de Septiembre de 2026",
    "palabras": [
     "tecnólogo médico imagenología",
     "tecnologo medico imagenologia"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T23:44:49+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
    "afinidad": 2,
    "vigencia": "vigente",
    "dias_sin_ver": 0
@@ -572,13 +675,13 @@
    "url": "https://www.chiletrabajos.cl/trabajo/tecnologo-medico-imagenologia-rancagua-3886896",
    "empresa": "Clínicas del cobre",
    "ubicacion": "Rancagua",
-   "publicado": "",
+   "publicado": "21 de Agosto de 2026",
    "palabras": [
     "tecnólogo médico imagenología",
     "tecnologo medico imagenologia"
    ],
    "encontrado": "2026-10-29T17:59:24+00:00",
-   "visto_ultima_vez": "2026-10-30T23:44:49+00:00",
+   "visto_ultima_vez": "2026-10-31T01:07:55+00:00",
    "afinidad": 2,
    "vigencia": "vigente",
    "dias_sin_ver": 0
