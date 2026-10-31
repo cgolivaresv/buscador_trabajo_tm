@@ -207,7 +207,9 @@ sitios:
   trabajando: true
   indeed: true
   laborum: true
-  google: true
+  # Desactivado: desde los servidores de GitHub, Google responde sin el panel de
+  # empleos (0 resultados en todos los chequeos del 29 y 30 de octubre).
+  google: false
 
 # Abre un issue en GitHub con los avisos nuevos (GitHub te avisa por correo).
 notificar_issue: true
