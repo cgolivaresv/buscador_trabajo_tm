@@ -105,8 +105,15 @@ def _fuera_de_zona(tit: str, ubicacion: str, cfg) -> bool:
         p.search(ub) or p.search(tit) for p in cfg["_zona_no"])
 
 
+def _sin_genero(texto: str) -> str:
+    """'tecnólogo/a médico/a', 'tecnólogo(a) médico(a)' → 'tecnologo medico'."""
+    t = normalizar(texto)
+    t = re.sub(r"\((?:a|as|o|os|es)\)|/(?:a|as|o|os|es)\b", "", t)
+    return re.sub(r"\s+", " ", t).strip()
+
+
 def _evaluar(titulo: str, ubicacion: str, empresa: str, cfg) -> int:
-    tit = normalizar(titulo)
+    tit = _sin_genero(titulo)
     if any(p.search(tit) for p in cfg["_excluir"]):
         return 0
     ub = normalizar(ubicacion)

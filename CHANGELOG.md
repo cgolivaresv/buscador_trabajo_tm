@@ -6,6 +6,12 @@ La versión aparece al pie de la página: **Página** es la versión de `docs/in
 - Antigüedad máxima de 48 horas al encontrar un aviso (`antiguedad_maxima_horas`). LinkedIn y Trabajando filtran a 48 h al buscar; Indeed y Google, a su opción más cercana; en todas las fuentes se revisa además la fecha de publicación ("Hace 3 días", "13 de octubre", "2026-10-28"…). Los avisos sin fecha reconocible se admiten.
 - Un aviso admitido no desaparece al cumplir 48 horas: sigue visible mientras esté abierto.
 
+## 1.18.0 · 2026-10-30
+Revisión de integridad: desde el 29-oct 18:54 no entraba ningún aviso nuevo.
+- Trabajando.cl: los avisos se piden ordenados por fecha de publicación (antes, por relevancia: siempre los mismos, algunos de septiembre).
+- Chiletrabajos: no encuentra frases de 3 palabras y mostraba su listado general (choferes, guardias…). Se agrega la palabra clave amplia "tecnólogo médico", que sí trae avisos frescos aquí y en Computrabajo; el perfil filtra el resto. Además, ahora se lee la fecha de cada aviso.
+- Perfil: "Tecnólogo/a Médico/a" y "Tecnólogo(a) Médico(a)" ahora calzan con "tecnólogo médico" (antes se descartaban por el "/a").
+
 ## 1.17.1 · 2026-10-30
 - Google Empleos desactivado: desde los servidores de GitHub responde sin el panel de empleos (0 resultados en todos los chequeos del 29 y 30 de octubre).
 

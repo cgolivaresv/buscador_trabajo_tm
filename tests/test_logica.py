@@ -100,6 +100,8 @@ def test_variantes_sin_tildes(cfg):
         ("TM Radiología", "Valdivia, Los Ríos", "", 2),
         ("Tecnólogo Médico Imagenología", "4,2", "", 2),
         ("KINESIOLOGOS (LAMPA, COLINA Y CHICUREO) RM SECTOR NORTE", "Santiago", "", 0),
+        ("Tecnólogo/a Médico Livsalud", "Santiago", "", 2),
+        ("Tecnólogo(a) Médico(a) – Pabellón", "Talca", "", 2),
         ("Tecnólogo Médico RM Sector Oriente", "Santiago", "", 2),
     ],
 )
@@ -171,6 +173,15 @@ def test_computrabajo(monkeypatch):
     av = sitios.computrabajo(None, "x")[0]
     assert (av.empresa, av.ubicacion) == ("Manpower Chile", "Talca, Maule")
     assert av.url.endswith("oferta-de-trabajo-de-tm-X")
+
+
+def test_chiletrabajos_fecha(monkeypatch):
+    html = """<div class="job-item"><h2 class="title"><a href="https://www.chiletrabajos.cl/trabajo/tm-3921092">Tecnologo Medico</a></h2>
+    <h3 class="meta"> Novamedical chile, <a href="/ciudad/santiago.html">Santiago</a></h3>
+    <h3 class="meta"><a href="#"><i class="far fa-calendar"></i> 27 de  Octubre de 2026</a></h3></div>"""
+    monkeypatch.setattr(sitios, "obtener", lambda s, u, **k: R(html))
+    av = sitios.chiletrabajos(None, "x")[0]
+    assert (av.empresa, av.ubicacion, av.publicado) == ("Novamedical chile", "Santiago", "27 de Octubre de 2026")
 
 
 def test_linkedin(monkeypatch):

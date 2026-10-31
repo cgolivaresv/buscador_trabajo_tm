@@ -7,6 +7,9 @@
 # Cada término se busca en 5 sitios cada hora: conviene no pasar de unos 8.
 # ---------------------------------------------------------------------------
 palabras_clave:
+  # Amplia: algunos sitios (Chiletrabajos) no encuentran frases de 3 palabras y
+  # muestran su listado general; el perfil de abajo filtra lo que no es tuyo.
+  - tecnólogo médico
   # Foco principal: resonancia magnética
   - tecnólogo médico resonancia
   - resonancia magnética

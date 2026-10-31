@@ -181,7 +181,9 @@ def chiletrabajos(s, palabra: str) -> list[Aviso]:
                 empresa = partes[0].rstrip(",")
             if len(partes) > 1:
                 ubic = partes[-1]
-        fecha = item.select_one(".date, h4")
+        # La fecha va en el segundo "h3.meta", junto al ícono de calendario.
+        fecha = next((h for h in item.select("h3.meta") if h.select_one(".fa-calendar")
+                      or re.search(r"\b\d{4}\b", h.get_text(" "))), None) or item.select_one(".date, h4")
         out.append(
             Aviso(
                 sitio="chiletrabajos",
@@ -338,7 +340,7 @@ def trabajando(s, palabra: str) -> list[Aviso]:
     try:
         r = obtener(
             s,
-            f"{base}/api/searchjob?palabraClave={quote(palabra)}",
+            f"{base}/api/searchjob?palabraClave={quote(palabra)}&orden=FECHA_PUBLICACION",
             headers={"Accept": "application/json"},
         )
         avisos = _trabajando_json(r.json(), base)
