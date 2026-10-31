@@ -1,7 +1,8 @@
-"""Diagnóstico de fuentes: prueba direcciones candidatas y guarda lo que responden.
+"""Diagnóstico de orden y paginación: ¿cómo obtener los avisos MÁS RECIENTES de cada sitio?
 
 Uso:  python -m buscador.diagnostico "tecnologo medico"
-Escribe debug/diagnostico.json, para ajustar los lectores con datos reales.
+Escribe debug/diagnostico.json. Respeta el robots.txt de cada sitio: una dirección no
+permitida se informa y no se consulta.
 """
 from __future__ import annotations
 
@@ -10,138 +11,186 @@ import re
 import sys
 import time
 from pathlib import Path
-from urllib.parse import quote, quote_plus, urljoin
+from urllib.parse import quote, quote_plus, urljoin, urlsplit
+from urllib.robotparser import RobotFileParser
 
-from .comun import sesion
+from bs4 import BeautifulSoup
+
+from .comun import USER_AGENT, limpio, sesion
 
 RAIZ = Path(__file__).resolve().parent.parent
 OUT = RAIZ / "debug"
-
-EP = "https://www.empleospublicos.cl"
-LB = "https://www.laborum.cl"
+_robots: dict[str, RobotFileParser] = {}
 
 
-def estructura(x, nivel=0):
-    """Resumen de un JSON: claves y tipos, con un ejemplo del primer elemento de cada lista."""
-    if nivel > 4:
-        return "…"
-    if isinstance(x, dict):
-        return {k: estructura(v, nivel + 1) for k, v in list(x.items())[:60]}
-    if isinstance(x, list):
-        return [f"lista de {len(x)}", estructura(x[0], nivel + 1)] if x else ["lista vacía"]
-    if isinstance(x, str):
-        return x[:120]
-    return x
-
-
-def probar(s, nombre, metodo, url, informe, **kw):
-    time.sleep(1.5)
-    r_inf = {"nombre": nombre, "metodo": metodo, "url": url}
-    try:
-        r = s.request(metodo, url, timeout=30, **kw)
-        r_inf.update(status=r.status_code, tipo=r.headers.get("content-type", ""), largo=len(r.content))
-        texto = r.content.decode("utf-8-sig", errors="replace")
+def permitido(s, url: str) -> bool:
+    p = urlsplit(url)
+    base = f"{p.scheme}://{p.netloc}"
+    if base not in _robots:
+        rp = RobotFileParser()
         try:
-            data = json.loads(texto)
-            r_inf["json"] = estructura(data)
-        except ValueError:
-            r_inf["inicio"] = texto[:1500]
-        informe["pruebas"].append(r_inf)
-        return r, texto
-    except Exception as e:
-        r_inf["error"] = repr(e)[:300]
-        informe["pruebas"].append(r_inf)
-        return None, ""
-
-
-def rutas_en_scripts(s, base, html, informe, clave):
-    rutas: set[str] = set()
-    textos = [html]
-    for src in re.findall(r'<script[^>]+src="([^"]+)"', html)[:30]:
-        try:
-            textos.append(s.get(urljoin(base, src), timeout=25).text)
+            r = s.get(base + "/robots.txt", timeout=20)
+            rp.parse(r.text.splitlines() if r.ok else [])
         except Exception:
-            continue
-    for t in textos:
-        for m in re.findall(r'["\'`]((?:https?://[^"\'`\s]*)?/(?:api|data)/[^"\'`\s]{2,140})["\'`]', t):
-            rutas.add(m)
-        for m in re.findall(r'["\'`]([^"\'`\s]{0,80}\.ashx[^"\'`\s]{0,80})["\'`]', t):
-            rutas.add(m)
-        for m in re.findall(r'(?i)(x-site-id|siteId|site_id)["\'`]?\s*[:=]\s*["\'`]([A-Z0-9_-]{2,12})', t):
-            rutas.add(f"{m[0]}={m[1]}")
-    informe[clave] = sorted(rutas)[:200]
+            rp.parse([])
+        _robots[base] = rp
+    return _robots[base].can_fetch(USER_AGENT, url)
+
+
+def traer(s, url: str, **kw):
+    if not permitido(s, url):
+        return None, "bloqueado por robots.txt"
+    time.sleep(1.5)
+    try:
+        r = s.get(url, timeout=30, **kw)
+        return r, r.status_code
+    except Exception as e:
+        return None, repr(e)[:200]
+
+
+def computrabajo(s, palabra, inf):
+    base = "https://cl.computrabajo.com"
+    slug = re.sub(r"[^a-z0-9]+", "-", palabra.lower()).strip("-")
+    urls = {
+        "busqueda": f"{base}/ofertas-de-trabajo/?q={quote_plus(palabra)}",
+        "busqueda_p2": f"{base}/ofertas-de-trabajo/?q={quote_plus(palabra)}&p=2",
+        "listado": f"{base}/trabajo-de-{slug}",
+        "listado_p2": f"{base}/trabajo-de-{slug}?p=2",
+        "orden_fecha": f"{base}/ofertas-de-trabajo/?q={quote_plus(palabra)}&by=publicationtime",
+    }
+    out = {}
+    for k, u in urls.items():
+        r, st = traer(s, u)
+        d = {"url": u, "status": st}
+        if r is not None and r.ok:
+            soup = BeautifulSoup(r.text, "html.parser")
+            arts = soup.select("article.box_offer, article[data-id]")
+            d["n"] = len(arts)
+            d["fechas"] = [limpio((a.select_one("p.fs13, p.fc_aux") or a).get_text(" "))[:30] for a in arts][:20]
+            d["titulos"] = [limpio((a.select_one("h2 a") or a).get_text(" "))[:50] for a in arts][:5]
+            d["enlaces_orden"] = sorted({a["href"] for a in soup.select("a[href]") if re.search(r"by=|orden|sort", a["href"])})[:10]
+            d["total_texto"] = limpio((soup.select_one("h1") or soup).get_text(" "))[:120]
+        out[k] = d
+    inf["computrabajo"] = out
+
+
+def chiletrabajos(s, palabra, inf):
+    base = "https://www.chiletrabajos.cl"
+    r, st = traer(s, f"{base}/encuentra-un-empleo")
+    form = {}
+    if r is not None and r.ok:
+        soup = BeautifulSoup(r.text, "html.parser")
+        for f in soup.select("form"):
+            campos = []
+            for c in f.select("input[name], select[name]"):
+                ops = [(o.get("value"), limpio(o.get_text(" "))) for o in c.select("option")][:12]
+                campos.append({"name": c.get("name"), "tipo": c.name, "valor": c.get("value"), "opciones": ops})
+            if campos:
+                form[f.get("action") or f"form{len(form)}"] = campos
+        form["_enlaces_orden"] = sorted({a["href"] for a in soup.select("a[href]")
+                                         if re.search(r"orden|order|sort|fecha", a["href"], re.I)})[:15]
+    inf["chiletrabajos_formulario"] = form
+    pruebas = {
+        "actual": f"{base}/encuentra-un-empleo?2={quote_plus(palabra)}&action=search",
+        "p2": f"{base}/encuentra-un-empleo/30?2={quote_plus(palabra)}&action=search",
+    }
+    for o in form.get("_enlaces_orden", [])[:3]:
+        pruebas["enlace:" + o[:60]] = urljoin(base, o) + ("&" if "?" in o else "?") + f"2={quote_plus(palabra)}"
+    out = {}
+    for k, u in pruebas.items():
+        r, st = traer(s, u)
+        d = {"url": u, "status": st}
+        if r is not None and r.ok:
+            soup = BeautifulSoup(r.text, "html.parser")
+            items = soup.select(".job-item")
+            d["n"] = len(items)
+            d["fechas"] = [limpio((i.select_one(".date, h4") or i).get_text(" "))[:40] for i in items][:20]
+            d["titulos"] = [limpio((i.select_one("h2 a, .title a") or i).get_text(" "))[:50] for i in items][:5]
+            if items:
+                d["html_item"] = str(items[0])[:1500]
+        out[k] = d
+    inf["chiletrabajos"] = out
+
+
+def trabajando(s, palabra, inf):
+    base = "https://www.trabajando.cl"
+    cab = {"Accept": "application/json"}
+    q = quote(palabra)
+    variantes = {
+        "actual": f"palabraClave={q}",
+        "pagina2": f"palabraClave={q}&pagina=2",
+        "page2": f"palabraClave={q}&page=2",
+        "orden_fecha": f"palabraClave={q}&orden=FECHA_PUBLICACION",
+        "ordenamiento": f"palabraClave={q}&ordenamiento=fecha",
+        "sort": f"palabraClave={q}&sort=fecha",
+        "estado_cargado": f"palabraClave={q}&estado=CARGADO",
+    }
+    out = {}
+    for k, v in variantes.items():
+        r, st = traer(s, f"{base}/api/searchjob?{v}", headers=cab)
+        d = {"params": v, "status": st}
+        if r is not None and r.ok:
+            try:
+                j = r.json()
+                d["claves"] = list(j.keys())[:30] if isinstance(j, dict) else type(j).__name__
+                d["escalares"] = {kk: vv for kk, vv in j.items() if not isinstance(vv, (list, dict))} if isinstance(j, dict) else {}
+                of = j.get("ofertas") or []
+                d["n"] = len(of)
+                d["ids"] = [o.get("idOferta") for o in of][:20]
+                d["fechas"] = [o.get("fechaPublicacion") or o.get("fecha") for o in of][:20]
+                if of:
+                    d["claves_oferta"] = list(of[0].keys())
+            except ValueError:
+                d["inicio"] = r.text[:300]
+        out[k] = d
+    r, st = traer(s, f"{base}/trabajo-empleo/{q}")
+    if r is not None and r.ok:
+        scripts = re.findall(r'<script[^>]+src="([^"]+)"', r.text)[:25]
+        hallado = []
+        for src in scripts:
+            try:
+                js = s.get(urljoin(base, src), timeout=25).text
+            except Exception:
+                continue
+            for m in re.finditer(r"searchjob", js):
+                hallado.append(js[max(0, m.start() - 400): m.end() + 600])
+        out["_contexto_js"] = hallado[:4]
+    inf["trabajando"] = out
+
+
+def laborum(s, palabra, inf):
+    base = "https://www.laborum.cl"
+    slug = quote(re.sub(r"\s+", "-", palabra.strip().lower()))
+    traer(s, f"{base}/empleos-busqueda-{slug}.html")
+    out = {}
+    for orden in ("RECIENTES", "RELEVANTES"):
+        try:
+            time.sleep(1.5)
+            r = s.post(f"{base}/api/avisos/searchV2?pageSize=40&page=0&sort={orden}",
+                       json={"filtros": [], "busquedaExtendida": False, "tipoDetalle": "full", "withHome": False, "query": palabra},
+                       headers={"Accept": "application/json", "Content-Type": "application/json", "Origin": base,
+                                "Referer": f"{base}/empleos-busqueda-{slug}.html", "x-site-id": "BMCL"}, timeout=30)
+            j = r.json()
+            out[orden] = {"status": r.status_code, "total": j.get("total"),
+                          "fechas": [a.get("fechaPublicacion") for a in j.get("content") or []][:20]}
+        except Exception as e:
+            out[orden] = {"error": repr(e)[:200]}
+    inf["laborum"] = out
 
 
 def main() -> None:
     palabra = sys.argv[1] if len(sys.argv) > 1 else "tecnologo medico"
     OUT.mkdir(exist_ok=True)
-    informe: dict = {"palabra": palabra, "pruebas": []}
-
-    # ---------------- Empleos Públicos: parámetros del servicio /pub/.../apiConvocatorias.ashx
+    inf: dict = {"palabra": palabra}
     s = sesion()
-    _, html = probar(s, "EP listado", "GET", f"{EP}/pub/convocatorias/convocatorias.aspx", informe)
-    textos = [html]
-    for src in re.findall(r'<script[^>]+src="([^"]+)"', html)[:30]:
+    for f in (computrabajo, chiletrabajos, trabajando, laborum):
         try:
-            textos.append(s.get(urljoin(f"{EP}/pub/convocatorias/", src), timeout=25).text)
-        except Exception:
-            pass
-    informe["ep_contexto"] = []
-    for tx in textos:
-        for m in re.finditer(r"apiConvocatorias", tx):
-            informe["ep_contexto"].append(tx[max(0, m.start() - 700): m.end() + 900])
-    api = f"{EP}/pub/convocatorias/apiConvocatorias.ashx"
-    cab = {"Accept": "application/json, text/javascript, */*; q=0.01",
-           "Referer": f"{EP}/pub/convocatorias/convocatorias.aspx", "X-Requested-With": "XMLHttpRequest"}
-    q = quote(palabra)
-    for params in ["page=2", "pagina=2", "p=2", "pageSize=100", "size=100", "limit=100", "start=12&length=100",
-                   f"q={q}", f"search={q}", f"keyword={q}", f"texto={q}", "region=Regi%C3%B3n%20del%20Maule"]:
-        r, texto = probar(s, f"EP api ?{params}", "GET", f"{api}?{params}", informe, headers=cab)
-        try:
-            d = json.loads(texto)
-            informe["pruebas"][-1]["resumen"] = {"total": d.get("total"), "n": len(d.get("data", [])),
-                                                 "primero": (d.get("data") or [{}])[0].get("Cargo")}
-            informe["pruebas"][-1].pop("json", None)
-        except Exception:
-            pass
-
-    # ---------------------------------------------------------------- Laborum: enlaces
-    s = sesion()
-    slug = re.sub(r"\s+", "-", palabra.strip().lower())
-    listado = f"{LB}/empleos-busqueda-{quote(slug)}.html"
-    probar(s, "LB listado", "GET", listado, informe)
-    r, texto = probar(s, "LB api", "POST", f"{LB}/api/avisos/searchV2?pageSize=5&page=0&sort=RECIENTES", informe,
-                      json={"filtros": [], "busquedaExtendida": False, "tipoDetalle": "full", "withHome": False, "query": palabra},
-                      headers={"Accept": "application/json", "Content-Type": "application/json", "Referer": listado,
-                               "Origin": LB, "x-site-id": "BMCL"})
-    try:
-        av = json.loads(texto)["content"][0]
-    except Exception:
-        av = None
-    if av:
-        def sl(x):
-            import unicodedata
-            x = unicodedata.normalize("NFKD", x or "").encode("ascii", "ignore").decode().lower()
-            return re.sub(r"[^a-z0-9]+", "-", x).strip("-")
-        cands = [f"{LB}/empleos/{sl(av['titulo'])}-{sl(av.get('empresa'))}-{av['id']}.html",
-                 f"{LB}/empleos/{sl(av['titulo'])}-{av['id']}.html",
-                 f"{LB}/empleos/{av['id']}.html",
-                 f"{LB}/empleos/x-{av['id']}.html"]
-        informe["lb_aviso"] = {k: av.get(k) for k in ("id", "titulo", "empresa", "localizacion", "tipoTrabajo")}
-        for u in cands:
-            time.sleep(1.5)
-            try:
-                r = s.get(u, timeout=25, allow_redirects=True)
-                canon = re.search(r'<link[^>]+rel="canonical"[^>]+href="([^"]+)"', r.text)
-                informe["pruebas"].append({"nombre": "LB ficha", "url": u, "status": r.status_code, "final": r.url,
-                                           "canonical": canon.group(1) if canon else None,
-                                           "tiene_titulo": (av["titulo"][:20] in r.text)})
-            except Exception as e:
-                informe["pruebas"].append({"nombre": "LB ficha", "url": u, "error": repr(e)[:200]})
-
-    (OUT / "diagnostico.json").write_text(json.dumps(informe, ensure_ascii=False, indent=1), encoding="utf-8")
-    for p in informe["pruebas"]:
-        print(p.get("status", p.get("error")), p["nombre"], p.get("url", "")[-90:], p.get("resumen", ""))
+            f(s, palabra, inf)
+        except Exception as e:
+            inf[f.__name__] = {"error": repr(e)[:300]}
+    inf["robots"] = {b: "leído" for b in _robots}
+    (OUT / "diagnostico.json").write_text(json.dumps(inf, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(json.dumps(inf, ensure_ascii=False)[:4000])
 
 
 if __name__ == "__main__":

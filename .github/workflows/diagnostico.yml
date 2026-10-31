@@ -1,6 +1,8 @@
 name: Diagnóstico de fuentes
 
 on:
+  push:
+    paths: ["buscador/diagnostico.py"]   # al cambiar el diagnóstico, se ejecuta solo
   workflow_dispatch:
     inputs:
       palabra:
@@ -20,7 +22,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: python -m buscador.diagnostico "${{ inputs.palabra }}"
+      - run: python -m buscador.diagnostico "${{ inputs.palabra || 'tecnologo medico' }}"
       - name: Guardar diagnóstico
         run: |
           git config user.name "buscador-bot"
