@@ -1,7 +1,7 @@
 {
  "version": "1.18.0",
- "ultimo_chequeo": "2026-10-31T01:07:55+00:00",
- "nuevos": 5,
+ "ultimo_chequeo": "2026-10-31T10:44:54+00:00",
+ "nuevos": 0,
  "total": 33,
  "palabras_clave": [
   "tecnólogo médico",
@@ -22,19 +22,14 @@
    "errores": [],
    "descartados": {
     "zona": 5,
-    "perfil": 33,
-    "exclusion": 8
+    "exclusion": 9,
+    "perfil": 33
    },
    "muestra": [
     {
      "titulo": "PERSONAL DE APOYO - PUERTO VARAS",
      "ubicacion": "Puerto Varas, Los Lagos, Chile",
      "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnico en Neurofisiologia",
-     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
-     "motivo": "perfil"
     },
     {
      "titulo": "Técnico En Enfermería De Nivel Superior",
@@ -74,6 +69,11 @@
     {
      "titulo": "Técnico Paramédico - Hospitalizados Maternidad (Honorarios)",
      "ubicacion": "La Florida, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Inspector de Muestreo Industrias",
+     "ubicacion": "Pudahuel, Región Metropolitana de Santiago, Chile",
      "motivo": "perfil"
     },
     {
@@ -129,14 +129,14 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Técnico de Nivel Superior en Odontología",
-     "ubicacion": "Santiago - Vitacura, R.Metropolitana",
-     "motivo": "perfil"
-    },
-    {
      "titulo": "Técnico en Enfermería Nivel Superior",
      "ubicacion": "Santiago - Las condes, R.Metropolitana",
      "motivo": "exclusion"
+    },
+    {
+     "titulo": "Técnico de Nivel Superior en Odontología",
+     "ubicacion": "Santiago - Vitacura, R.Metropolitana",
+     "motivo": "perfil"
     },
     {
      "titulo": "Vendedor/a de Tecnología Full Time 5x2",
@@ -235,11 +235,11 @@
   },
   "trabajando": {
    "nombre": "Trabajando.cl",
-   "resultados": 105,
+   "resultados": 103,
    "errores": [],
    "descartados": {
     "exclusion": 11,
-    "perfil": 24,
+    "perfil": 23,
     "zona": 12
    },
    "muestra": [
@@ -307,15 +307,15 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 21,
+   "resultados": 20,
    "errores": [],
    "descartados": {
     "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Manager de Prospecting/SDR",
-     "ubicacion": "Santiago de Chile, RM, Chile",
+     "titulo": "PERSONAL DE APOYO - PUERTO VARAS",
+     "ubicacion": "Puerto Varas, LL, Chile",
      "motivo": "perfil"
     }
    ]
