@@ -1,6 +1,6 @@
 {
  "version": "1.18.0",
- "ultimo_chequeo": "2026-10-31T19:45:29+00:00",
+ "ultimo_chequeo": "2026-10-31T20:44:28+00:00",
  "nuevos": 0,
  "total": 33,
  "palabras_clave": [
@@ -18,14 +18,19 @@
  "sitios": {
   "linkedin": {
    "nombre": "LinkedIn",
-   "resultados": 88,
+   "resultados": 87,
    "errores": [],
    "descartados": {
-    "zona": 2,
     "exclusion": 10,
-    "perfil": 32
+    "zona": 3,
+    "perfil": 31
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
+     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "PERSONAL DE APOYO - PUERTO VARAS",
      "ubicacion": "Puerto Varas, Los Lagos, Chile",
@@ -42,24 +47,9 @@
      "motivo": "perfil"
     },
     {
-     "titulo": "Encargado de Equipos Médicos",
-     "ubicacion": "Región Metropolitana de Santiago, Chile",
-     "motivo": "perfil"
-    },
-    {
      "titulo": "Tecnólogo Médico con mención en Oftalmología - Colina",
      "ubicacion": "Colina, Región Metropolitana de Santiago, Chile",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico mención oftalmología",
-     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Analista BI",
-     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
-     "motivo": "perfil"
     },
     {
      "titulo": "Administrador TENS",
@@ -75,6 +65,16 @@
      "titulo": "Inspector de Muestreo Industrias",
      "ubicacion": "Pudahuel, Región Metropolitana de Santiago, Chile",
      "motivo": "perfil"
+    },
+    {
+     "titulo": "Ingeniero/a Informático/a – Administrador/a RIS-PACS (Philips VUE)",
+     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Asistente Administrativo - Punta Arenas",
+     "ubicacion": "Punta Arenas, Magallanes Y Antartica Chilena, Chile",
+     "motivo": "exclusion"
     },
     {
      "titulo": "Coordinador(a) de Mantenimiento Mecánico Hospitalario",
@@ -166,9 +166,9 @@
    "errores": [],
    "descartados": {
     "antiguedad": 6,
-    "perfil": 19,
+    "perfil": 20,
     "exclusion": 18,
-    "zona": 7
+    "zona": 6
    },
    "muestra": [
     {
