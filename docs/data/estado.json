@@ -1,6 +1,6 @@
 {
  "version": "1.18.0",
- "ultimo_chequeo": "2026-10-31T21:43:22+00:00",
+ "ultimo_chequeo": "2026-10-31T22:43:23+00:00",
  "nuevos": 0,
  "total": 33,
  "palabras_clave": [
@@ -22,8 +22,8 @@
    "errores": [],
    "descartados": {
     "exclusion": 10,
-    "zona": 3,
-    "perfil": 31
+    "zona": 2,
+    "perfil": 32
    },
    "muestra": [
     {
@@ -134,13 +134,13 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Técnico de Nivel Superior en Odontología",
-     "ubicacion": "Santiago - Vitacura, R.Metropolitana",
+     "titulo": "Vendedor/a de Tecnología Full Time 5x2",
+     "ubicacion": "Santiago - Providencia, R.Metropolitana",
      "motivo": "perfil"
     },
     {
-     "titulo": "Vendedor/a de Tecnología Full Time 5x2",
-     "ubicacion": "Santiago - Providencia, R.Metropolitana",
+     "titulo": "Técnico de Nivel Superior en Odontología",
+     "ubicacion": "Santiago - Vitacura, R.Metropolitana",
      "motivo": "perfil"
     },
     {
