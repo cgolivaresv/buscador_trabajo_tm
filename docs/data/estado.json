@@ -1,6 +1,6 @@
 {
  "version": "1.18.0",
- "ultimo_chequeo": "2026-10-31T15:43:27+00:00",
+ "ultimo_chequeo": "2026-10-31T16:45:05+00:00",
  "nuevos": 0,
  "total": 33,
  "palabras_clave": [
@@ -18,12 +18,12 @@
  "sitios": {
   "linkedin": {
    "nombre": "LinkedIn",
-   "resultados": 90,
+   "resultados": 89,
    "errores": [],
    "descartados": {
-    "zona": 4,
+    "zona": 2,
     "exclusion": 10,
-    "perfil": 33
+    "perfil": 34
    },
    "muestra": [
     {
@@ -93,16 +93,11 @@
    "resultados": 206,
    "errores": [],
    "descartados": {
-    "zona": 23,
     "exclusion": 15,
+    "zona": 23,
     "perfil": 24
    },
    "muestra": [
-    {
-     "titulo": "Tecnólogo/a Médico/a en Imagenología – Calama",
-     "ubicacion": "Calama, Antofagasta",
-     "motivo": "zona"
-    },
     {
      "titulo": "Técnico en Enfermería Nivel Superior Unidad Toma de Muestras Viña del Mar",
      "ubicacion": "Viña del Mar, Valparaíso",
@@ -112,6 +107,11 @@
      "titulo": "Tecnolog@ Medico para Director/a Técnico de laboratorio clínico",
      "ubicacion": "Arica, Arica y Parinacota",
      "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico/a en Imagenología – Calama",
+     "ubicacion": "Calama, Antofagasta",
+     "motivo": "zona"
     },
     {
      "titulo": "Tecnólogo Médico(a) Turno 7x7 Calama",
@@ -307,7 +307,7 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 19,
+   "resultados": 17,
    "errores": [],
    "descartados": {
     "perfil": 1
