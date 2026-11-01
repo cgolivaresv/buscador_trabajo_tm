@@ -50,6 +50,14 @@ perfil:
     - MR
     - Siemens Healthineers
     - GE HealthCare
+  # En la descripción completa del aviso solo cuentan estos (los cortos como "MR"
+  # darían falsos positivos en textos largos).
+  prioritario_en_descripcion:
+    - resonancia*
+    - resonador*
+    - cardioresonancia
+    - RMN
+    - MRI
   afin:
     - imagenolog*
     - imagen
@@ -204,7 +212,10 @@ vigilar: []
 
 # Sitios a revisar (true = activo).
 sitios:
-  linkedin: true
+  # Desactivado: el robots.txt de LinkedIn prohíbe el acceso automatizado sin su
+  # permiso, y en los chequeos del 29 al 31 de octubre no aportó ningún aviso que
+  # pasara el perfil y la zona. Para LinkedIn, usa sus alertas de empleo por correo.
+  linkedin: false
   computrabajo: true
   chiletrabajos: true
   trabajando: true
@@ -213,6 +224,17 @@ sitios:
   # Desactivado: desde los servidores de GitHub, Google responde sin el panel de
   # empleos (0 resultados en todos los chequeos del 29 y 30 de octubre).
   google: false
+
+# Chiletrabajos: cada cuántas horas se hace un barrido completo con su RSS
+# (todos los avisos del sitio, con fecha exacta). El feed pesa ~19 MB, por eso
+# no se descarga en cada chequeo. 0 = nunca.
+rss_chiletrabajos_cada_horas: 4
+
+# Lee la ficha completa de cada aviso (hasta 20 por chequeo, respetando el
+# robots.txt de cada sitio). Si la descripción menciona resonancia, un aviso de
+# título genérico ("Tecnólogo Médico") pasa a ⭐ prioritario. También completa
+# renta, jornada y contrato cuando el listado no los mostraba.
+leer_descripcion: true
 
 # Abre un issue en GitHub con los avisos nuevos (GitHub te avisa por correo).
 notificar_issue: true

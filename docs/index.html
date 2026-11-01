@@ -126,6 +126,10 @@ select{background:var(--panel-2);border:1px solid var(--line);border-radius:2px;
 .params dt{background:var(--panel-3);color:var(--muted);font:500 12px/1.4 var(--ui);text-transform:uppercase;letter-spacing:.08em;white-space:nowrap}
 .params dd{background:var(--panel-2);overflow-wrap:anywhere}
 .params dd.num{font-family:var(--mono);font-size:12.5px}
+.desc{font:400 13.5px/1.55 var(--body);color:#d0d0d0;white-space:pre-line;max-height:240px;overflow:hidden;position:relative;border:1px solid var(--line);border-radius:2px;background:var(--panel-2);padding:10px 12px}
+.desc.abierta{max-height:none}
+.desc:not(.abierta)::after{content:"";position:absolute;inset:auto 0 0;height:48px;background:linear-gradient(transparent,var(--panel-2))}
+.mas{justify-self:start;border:0;background:none;color:var(--orange-2);font:600 12px var(--ui);letter-spacing:.1em;text-transform:uppercase;cursor:pointer;padding:0}
 .aviso{font-size:13px;color:var(--warn);border-left:2px solid var(--warn);padding:4px 10px;background:rgba(232,178,58,.08)}
 .acciones{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .btn{height:36px;border-radius:2px;border:1px solid #4a4a4a;background:linear-gradient(#3a3a3a,#2c2c2c);cursor:pointer;font:600 13.5px/1 var(--ui);letter-spacing:.06em;text-transform:uppercase;color:#e8e8e8;display:flex;align-items:center;justify-content:center;gap:6px;text-decoration:none}
@@ -289,7 +293,7 @@ dialog::backdrop{background:rgba(0,0,0,.7)}
 </div></dialog>
 
 <script>
-const VERSION="1.18.0";
+const VERSION="1.19.0";
 const NOM={linkedin:"LinkedIn",computrabajo:"Computrabajo",chiletrabajos:"Chiletrabajos",trabajando:"Trabajando.cl",indeed:"Indeed",laborum:"Laborum",google:"Google Empleos"};
 const VISTAS=[["activos","Activos"],["prioritarios","Prioritarios"],["nuevo","Nuevos"],["visto","Vistos"],["proceso","En proceso"],["descartado","Descartados"],["cerrados","Cerrados"]];
 const LAB={nuevo:"Nuevo",visto:"Visto",postule:"Postulé",entrevista:"Entrevista",oferta:"Oferta",descartado:"Descartado"};
@@ -448,7 +452,9 @@ function tarjeta(a){const t=$("tarjeta");t.replaceChildren();
   if(!a){const d=el("div","vacio");d.append(el("b",null,"Sin aviso seleccionado"),"Elige un aviso de la cola para ver su detalle.");t.append(d);return}
   const st=estado(a);
   const etq=el("div","etq");
-  etq.append(a.afinidad===3?el("span","prio","★ Prioritario"):el("span",null,"Afín"));
+  const pe=el("span","prio","★ Prioritario"+(a.prioridad_por_descripcion?" · por descripción":""));
+  if(a.prioridad_por_descripcion)pe.title="El título es genérico, pero la descripción del aviso menciona resonancia";
+  etq.append(a.afinidad===3?pe:el("span",null,"Afín"));
   etq.append(cerrado(a)?el("span","cerrado","Cerrado"):el("span",st,LAB[st]));
   t.append(etq,el("h2","tit",a.titulo));
   const dl=el("dl","params");
@@ -461,6 +467,9 @@ function tarjeta(a){const t=$("tarjeta");t.replaceChildren();
   fila("Encontrado",fmt(a.encontrado),true);fila("Visto en sitio",fmt(a.visto_ultima_vez),true);
   fila("Búsquedas",(a.palabras||[]).join(" · "));
   t.append(dl);
+  if(a.descripcion){t.append(el("div","sec","Descripción"));const ds=el("div","desc",a.descripcion);t.append(ds);
+    if(a.descripcion.length>420){const b=el("button","mas","Ver todo");b.type="button";b.onclick=()=>{const x=ds.classList.toggle("abierta");b.textContent=x?"Ver menos":"Ver todo"};t.append(b)}}
+  else if(a.descripcion_error)t.append(el("div","sec",""),el("div","nota",`Sin descripción: ${a.descripcion_error}.`));
   if(a.vigencia==="sin_ver")t.append(el("div","aviso",`No aparece en las búsquedas hace ${a.dias_sin_ver} días: puede estar cerrado.`));
   const ac=el("div","acciones");
   const ir=el("a","btn go","Abrir aviso ›");ir.href=a.url;ir.target="_blank";ir.rel="noopener";ir.onclick=()=>{if(st==="nuevo")marcar(a,"visto")};

@@ -17,7 +17,7 @@ from . import __version__
 from .comun import fecha_publicacion, normalizar, sesion
 from . import sitios as _sitios
 from .sitios import LECTORES
-from . import marcas, salud, vigilancia
+from . import descripcion, marcas, salud, vigilancia
 
 RAIZ = Path(__file__).resolve().parent.parent
 DATOS = RAIZ / "docs" / "data"
@@ -59,6 +59,10 @@ def cargar_config() -> dict:
     cfg["_zona_si"] = _patrones(cfg["ubicaciones"])
     cfg["_zona_no"] = _patrones(cfg["ubicaciones_excluir"])
     cfg["_prioritario"] = _patrones((cfg["perfil"] or {}).get("prioritario"))
+    # En la descripción se usan solo términos largos, para evitar falsos positivos
+    # ("MR" aparece en muchos textos que no son de resonancia).
+    cfg["_prioritario_desc"] = _patrones((cfg["perfil"] or {}).get("prioritario_en_descripcion")
+                                         or ["resonancia*", "resonador*", "cardioresonancia", "RMN", "MRI"])
     cfg["_afin"] = _patrones((cfg["perfil"] or {}).get("afin"))
     cfg["_empresas"] = _patrones((cfg["perfil"] or {}).get("empresas_del_rubro"))
     cfg["_cargos_empresa"] = _patrones((cfg["perfil"] or {}).get("cargos_en_esas_empresas"))
@@ -248,6 +252,13 @@ def main() -> int:
         ps = p["por_sitio"].setdefault(sitio, {})
         ps[aid] = max(afinidad, ps.get(aid, 0))
 
+    # Barrido por RSS de Chiletrabajos cada N horas (el feed pesa ~19 MB).
+    previo = json.loads(ESTADO.read_text(encoding="utf-8")) if ESTADO.exists() else {}
+    cada = float(cfg.get("rss_chiletrabajos_cada_horas", 4) or 0)
+    ultimo_rss = previo.get("rss_chiletrabajos")
+    _sitios.RSS_CHILETRABAJOS = bool(cada) and (
+        not ultimo_rss or (datetime.fromisoformat(ahora()) - datetime.fromisoformat(ultimo_rss)).total_seconds() >= cada * 3600 - 600
+    )
     horas_max = int(cfg["antiguedad_maxima_horas"] or 0)
     _sitios.HORAS_MAXIMAS = horas_max
 
@@ -341,6 +352,12 @@ def main() -> int:
         v["afinidad"] = evaluar(v.get("titulo", ""), v.get("ubicacion", ""), v.get("empresa", ""), cfg)
         if v["afinidad"] and marcas.empresa_descartada(v.get("empresa", ""), mk):
             v["afinidad"] = 0
+        if v["afinidad"] == 2 and v.get("descripcion") and any(
+            p.search(normalizar(v["descripcion"])) for p in cfg["_prioritario_desc"]
+        ):
+            v["afinidad"], v["prioridad_por_descripcion"] = 3, True
+        elif v["afinidad"] != 3 or not v.get("descripcion"):
+            v.pop("prioridad_por_descripcion", None)
     # Los avisos en proceso de postulación se conservan siempre, aunque ya no aparezcan.
     en_proceso = {k for k, m in mk["avisos"].items() if m.get("estado") in marcas.EN_PROCESO}
     historial = {
@@ -374,6 +391,11 @@ def main() -> int:
         and not d.get("auto_descartado")
         and d.get("vigencia") != "cerrado"
     ]
+    # Descripción completa: primero los avisos nuevos, después los guardados sin ella.
+    res_desc = descripcion.enriquecer(s, historial, [d["id"] for d in nuevos], cfg["_prioritario_desc"], t) \
+        if cfg.get("leer_descripcion", True) else {}
+    if res_desc:
+        print("Descripciones:", res_desc)
 
     lista = sorted(historial.values(), key=lambda a: a.get("encontrado", ""), reverse=True)
     AVISOS.write_text(
@@ -395,6 +417,8 @@ def main() -> int:
                 "zona": cfg.get("zona_nombre") or "",
                 "sitios": estado_sitios,
                 "paginas_vigiladas": paginas,
+                "descripciones": res_desc,
+                "rss_chiletrabajos": t if _sitios._RSS_CT.get("avisos") else ultimo_rss,
             },
             ensure_ascii=False,
             indent=1,

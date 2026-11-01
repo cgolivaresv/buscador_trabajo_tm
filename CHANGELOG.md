@@ -6,6 +6,11 @@ La versión aparece al pie de la página: **Página** es la versión de `docs/in
 - Antigüedad máxima de 48 horas al encontrar un aviso (`antiguedad_maxima_horas`). LinkedIn y Trabajando filtran a 48 h al buscar; Indeed y Google, a su opción más cercana; en todas las fuentes se revisa además la fecha de publicación ("Hace 3 días", "13 de octubre", "2026-10-28"…). Los avisos sin fecha reconocible se admiten.
 - Un aviso admitido no desaparece al cumplir 48 horas: sigue visible mientras esté abierto.
 
+## 1.19.0 · 2026-11-01
+- Descripción completa: se lee la ficha de cada aviso nuevo (hasta 20 por chequeo, respetando el robots.txt de cada sitio) con Trafilatura o los datos estructurados del aviso. Si la descripción menciona resonancia, un aviso de título genérico pasa a ⭐ prioritario ("por descripción"). También completa renta, jornada, contrato y fecha de cierre. La tarjeta muestra la descripción.
+- Chiletrabajos: barrido completo cada 4 horas con su RSS público (todos los avisos del sitio, con fecha exacta); en los demás chequeos, la búsqueda normal. El feed pesa ~19 MB, por eso no se descarga cada hora.
+- LinkedIn desactivado: su robots.txt prohíbe el acceso automatizado sin permiso, y no había aportado avisos que pasaran el perfil y la zona.
+
 ## 1.18.0 · 2026-10-30
 Revisión de integridad: desde el 29-oct 18:54 no entraba ningún aviso nuevo.
 - Trabajando.cl: los avisos se piden ordenados por fecha de publicación (antes, por relevancia: siempre los mismos, algunos de septiembre).

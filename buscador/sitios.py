@@ -163,7 +163,57 @@ def computrabajo(s, palabra: str) -> list[Aviso]:
 
 
 # ---------------------------------------------------------------------- Chiletrabajos
+_RSS_CT: dict[str, list[Aviso]] = {}
+# El feed pesa ~19 MB: el chequeo lo habilita solo cada RSS_CADA_HORAS (barrido
+# completo); en los demás chequeos se usa la búsqueda normal del sitio.
+RSS_CHILETRABAJOS = False
+
+
+def _rss_chiletrabajos(s) -> list[Aviso]:
+    """Feed público de Chiletrabajos (rss.xml): todos los avisos vigentes del sitio,
+    con fecha exacta, ciudad y un extracto. Se descarga una vez por chequeo y cada
+    palabra clave se busca después en los títulos."""
+    if "avisos" in _RSS_CT:
+        return _RSS_CT["avisos"]
+    import xml.etree.ElementTree as ET
+
+    root = ET.fromstring(obtener(s, "https://www.chiletrabajos.cl/rss.xml").content)
+    out = []
+    for it in root.iter("item"):
+        titulo, link = limpio(it.findtext("title")), (it.findtext("link") or "").strip()
+        if not titulo or not link:
+            continue
+        ciudad = ""
+        if " | " in titulo:  # "Cargo | Ciudad"
+            titulo, ciudad = (limpio(x) for x in titulo.rsplit(" | ", 1))
+        out.append(
+            Aviso(
+                sitio="chiletrabajos",
+                titulo=titulo,
+                url=link,
+                ubicacion=ciudad,
+                publicado=(it.findtext("pubDate") or "").strip(),
+            ).completar_desde_texto(it.findtext("description") or "")
+        )
+    _RSS_CT["avisos"] = out
+    return out
+
+
+def _calza_titulo(palabra: str, titulo: str) -> bool:
+    """Todas las palabras importantes de la búsqueda aparecen en el título (sin tildes,
+    sin marcas de género y aceptando el inicio de la palabra)."""
+    tit = re.sub(r"\((?:a|as|o|os|es)\)|/(?:a|as|o|os|es)\b", "", normalizar(titulo))
+    return _calza_slug(palabra, re.sub(r"[^a-z0-9]+", "-", tit))
+
+
 def chiletrabajos(s, palabra: str) -> list[Aviso]:
+    """En los chequeos de barrido, el RSS (todo el sitio, con fechas exactas); en el
+    resto, o si el RSS falla, la página de búsqueda."""
+    if RSS_CHILETRABAJOS:
+        try:
+            return [a for a in _rss_chiletrabajos(s) if _calza_titulo(palabra, a.titulo)]
+        except Exception:
+            pass
     base = "https://www.chiletrabajos.cl"
     url = f"{base}/encuentra-un-empleo?2={quote_plus(palabra)}&action=search"
     html = obtener(s, url).text

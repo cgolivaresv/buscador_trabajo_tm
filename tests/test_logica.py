@@ -271,3 +271,51 @@ def test_marcas(tmp_path):
     acc = marcas.seguimiento(mk, ruta, "2026-10-29T12:00:00+00:00")
     assert [a["titulo"] for a in acc] == ["📌 Seguimiento: TM RM (Clínica)"]
     assert marcas.seguimiento(mk, ruta, "2026-10-30T12:00:00+00:00") == []  # una sola vez por etapa
+
+
+# -------------------------------------------------------------- descripción
+def test_descripcion_sube_a_prioritario(monkeypatch, cfg):
+    from buscador import descripcion
+
+    html = """<html><body><main><h1>Tecnólogo Médico</h1>
+    <p>Centro de imágenes busca Tecnólogo Médico para su unidad de Resonancia Magnética 1.5T.
+    Jornada completa, contrato indefinido. Renta $1.800.000 líquidos.</p></main></body></html>"""
+    monkeypatch.setattr(descripcion, "obtener", lambda s, u, **k: R(html))
+    monkeypatch.setattr(descripcion, "_permitido", lambda s, u: True)
+    h = {"a": {"id": "a", "url": "https://x/1", "titulo": "Tecnólogo Médico", "afinidad": 2},
+         "b": {"id": "b", "url": "https://x/2", "titulo": "Otro", "afinidad": 2, "descripcion_intento": "ya"}}
+    res = descripcion.enriquecer(None, h, ["a"], cfg["_prioritario_desc"], "2026-11-01T12:00:00+00:00")
+    assert res["subieron_a_prioritario"] == 1 and h["a"]["afinidad"] == 3
+    assert "Resonancia" in h["a"]["descripcion"]
+    assert (h["a"]["renta"], h["a"]["jornada"], h["a"]["contrato"]) == ("$1.800.000", "Jornada completa", "Indefinido")
+    assert "descripcion" not in h["b"]  # cada aviso se intenta una sola vez
+
+
+def test_descripcion_respeta_robots(monkeypatch, cfg):
+    from buscador import descripcion
+
+    monkeypatch.setattr(descripcion, "_permitido", lambda s, u: False)
+    h = {"a": {"id": "a", "url": "https://x/1", "titulo": "TM", "afinidad": 2}}
+    res = descripcion.enriquecer(None, h, ["a"], cfg["_prioritario_desc"], "2026-11-01T12:00:00+00:00")
+    assert res["sin_permiso"] == 1 and "robots" in h["a"]["descripcion_error"]
+
+
+def test_chiletrabajos_rss(monkeypatch):
+    xml = """<?xml version="1.0"?><rss><channel>
+    <item><title>Tecnólogo/a Médico/a Resonancia | Talca</title><link>https://www.chiletrabajos.cl/trabajo/tm-rm-1</link>
+      <description>Jornada completa, $1.500.000</description><pubDate>2026-10-31T12:00:00Z</pubDate></item>
+    <item><title>Chofer | Santiago</title><link>https://www.chiletrabajos.cl/trabajo/chofer-2</link><pubDate>2026-10-31T12:00:00Z</pubDate></item>
+    </channel></rss>"""
+
+    class X(R):
+        content = xml.encode()
+
+    llamadas = []
+    monkeypatch.setattr(sitios, "obtener", lambda s, u, **k: llamadas.append(u) or X(xml))
+    sitios._RSS_CT.clear()
+    monkeypatch.setattr(sitios, "RSS_CHILETRABAJOS", True)
+    av = sitios.chiletrabajos(None, "tecnólogo médico resonancia")
+    assert [a.titulo for a in av] == ["Tecnólogo/a Médico/a Resonancia"]
+    assert (av[0].ubicacion, av[0].publicado, av[0].jornada) == ("Talca", "2026-10-31T12:00:00Z", "Jornada completa")
+    assert sitios.chiletrabajos(None, "chofer")[0].titulo == "Chofer"
+    assert len(llamadas) == 1  # el feed se descarga una sola vez por chequeo
