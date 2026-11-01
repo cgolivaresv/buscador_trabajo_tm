@@ -1,0 +1,443 @@
+{
+ "chiletrabajos_rss": {
+  "https://www.chiletrabajos.cl/rss.xml": {
+   "url": "https://www.chiletrabajos.cl/rss.xml",
+   "status": 200,
+   "tipo": "application/xml",
+   "n": 32720,
+   "items": [
+    {
+     "category": "Profesionales y Técnicos",
+     "title": "Relator/a, Ingeniero en prevención de riesgos residente en Arica | Arica",
+     "link": "https://www.chiletrabajos.cl/trabajo/relator-a-ingeniero-en-prevenci-n-de-riesgos-residente-en-arica-3907776",
+     "description": "¡BUSCAMOS RELATORES/AS! OTEC Mutual Capacitación se encuentra en búsqueda de profesionales para incorporarse a nuestro equipo de relatores/as.   REQUISITOS:  Mí",
+     "author": "chiletrabajos",
+     "pubDate": "2026-10-01T17:59:07Z",
+     "guid": "3907776"
+    },
+    {
+     "category": "Profesionales y Técnicos",
+     "title": "Especialista Ascensores _ Arica | Arica",
+     "link": "https://www.chiletrabajos.cl/trabajo/especialista-ascensores-arica-3869640",
+     "description": "Nuestro cliente, empresa con sólida trayectoria en el rubro del transporte vertical y la movilidad de personas, se encuentra en proceso de expansión y busca int",
+     "author": "chiletrabajos",
+     "pubDate": "2026-10-06T09:26:42Z",
+     "guid": "3869640"
+    },
+    {
+     "category": "Profesionales y Técnicos",
+     "title": "Trabajador/a Social - Comuna de Putre | Putre",
+     "link": "https://www.chiletrabajos.cl/trabajo/trabajador-a-social-comuna-de-putre-3902640",
+     "description": "Nos encontramos en búsqueda de Trabajadores/as Sociales para incorporarse a modalidad freelance, participando en actividades, intervenciones y acciones grupales",
+     "author": "chiletrabajos",
+     "pubDate": "2026-09-23T11:50:31Z",
+     "guid": "3902640"
+    },
+    {
+     "category": "Profesionales y Técnicos",
+     "title": "Prevencionista de riesgos - Alto Hospicio | Iquique",
+     "link": "https://www.chiletrabajos.cl/trabajo/prevencionista-de-riesgos-alto-hospicio-3760680",
+     "description": "FUNCIONES Y RESPONSABILIDADES  1. Evaluación de Riesgos: Realizar auditorías y evaluaciones de riesgos en las instalaciones, identificando peligros potenciales ",
+     "author": "chiletrabajos",
+     "pubDate": "2026-08-25T17:46:16Z",
+     "guid": "3760680"
+    },
+    {
+     "category": "Profesionales y Técnicos",
+     "title": "Técnico Microinformático Tarapacá | Iquique",
+     "link": "https://www.chiletrabajos.cl/trabajo/t-cnico-microinform-tico-tarapac-3888408",
+     "description": "En GOCAR, nos encontramos en búsqueda de personal técnico microinformático con experiencia en soporte, mantenimiento, reparación de equipos computacionales.   P",
+     "author": "chiletrabajos",
+     "pubDate": "2026-09-16T02:17:44Z",
+     "guid": "3888408"
+    }
+   ],
+   "fechas": [
+    "2026-10-01T17:59:07Z",
+    "2026-10-06T09:26:42Z",
+    "2026-09-23T11:50:31Z",
+    "2026-08-25T17:46:16Z",
+    "2026-09-16T02:17:44Z",
+    "2026-09-21T23:14:33Z",
+    "2026-10-02T12:27:28Z",
+    "2026-10-07T20:49:32Z",
+    "2026-10-16T14:56:40Z",
+    "2026-10-20T13:21:25Z",
+    "2026-10-20T14:58:15Z",
+    "2026-10-22T13:13:43Z",
+    "2026-09-02T09:29:25Z",
+    "2026-10-02T16:12:49Z",
+    "2026-09-09T15:57:07Z",
+    "2026-09-14T09:35:27Z",
+    "2026-08-15T12:24:26Z",
+    "2026-08-19T12:37:13Z",
+    "2026-08-25T15:17:58Z",
+    "2026-08-27T11:52:56Z",
+    "2026-09-07T09:50:52Z",
+    "2026-09-21T10:40:29Z",
+    "2026-09-21T16:37:49Z",
+    "2026-09-23T20:27:19Z",
+    "2026-09-24T10:53:14Z",
+    "2026-10-02T16:31:12Z",
+    "2026-10-04T17:31:30Z",
+    "2026-10-05T13:01:50Z",
+    "2026-10-15T15:30:16Z",
+    "2026-10-19T06:03:24Z"
+   ],
+   "tm": [
+    "Tecnólogo Médico Imagenología - Rancagua | Rancagua",
+    "Tecnólogo Aseguramiento de Calidad, FT 42Hrs, Tottus Zona Norte | Coquimbo",
+    "Tecnólogo/a Médico ECOCARDIOGRAMA | Santiago",
+    "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA | Curicó",
+    "Postulación Tecnólogo(a) Médico(a) ? Copiapó | Copiapó",
+    "Tecnologo Medico | Santiago",
+    "Tecnólogo médico | Santiago",
+    "Tecnólogo Aseguramiento de Calidad, FT 42Hrs, Tottus Región Metropolitana | Santiago",
+    "TECNOLOGO DE IMAGENOLOGIA PARA ECOGRAFIAS | Santiago",
+    "Tecnologo Médico ORL  (Reemplazo) Sucursal La Serena | La Serena",
+    "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa | Santiago",
+    "TECNOLOGO MEDICO KARUN. PUERTO VARAS | Puerto Montt",
+    "TECNOLOGO MEDICO con mención en Laboratorio Clínico | Talagante",
+    "Tecnólogo/a Médico/a en Oftalmología ? Óptica | Santiago",
+    "TECNOLOGO DE IMAGENOLOGIA PARA ECOGRAFIAS | Cauquenes"
+   ]
+  },
+  "https://www.chiletrabajos.cl/rss.xml?2=tecnologo+medico": {
+   "url": "https://www.chiletrabajos.cl/rss.xml?2=tecnologo+medico",
+   "status": 200,
+   "tipo": "application/xml",
+   "n": 32720,
+   "items": [
+    {
+     "category": "Profesionales y Técnicos",
+     "title": "Relator/a, Ingeniero en prevención de riesgos residente en Arica | Arica",
+     "link": "https://www.chiletrabajos.cl/trabajo/relator-a-ingeniero-en-prevenci-n-de-riesgos-residente-en-arica-3907776",
+     "description": "¡BUSCAMOS RELATORES/AS! OTEC Mutual Capacitación se encuentra en búsqueda de profesionales para incorporarse a nuestro equipo de relatores/as.   REQUISITOS:  Mí",
+     "author": "chiletrabajos",
+     "pubDate": "2026-10-01T17:59:07Z",
+     "guid": "3907776"
+    },
+    {
+     "category": "Profesionales y Técnicos",
+     "title": "Especialista Ascensores _ Arica | Arica",
+     "link": "https://www.chiletrabajos.cl/trabajo/especialista-ascensores-arica-3869640",
+     "description": "Nuestro cliente, empresa con sólida trayectoria en el rubro del transporte vertical y la movilidad de personas, se encuentra en proceso de expansión y busca int",
+     "author": "chiletrabajos",
+     "pubDate": "2026-10-06T09:26:42Z",
+     "guid": "3869640"
+    },
+    {
+     "category": "Profesionales y Técnicos",
+     "title": "Trabajador/a Social - Comuna de Putre | Putre",
+     "link": "https://www.chiletrabajos.cl/trabajo/trabajador-a-social-comuna-de-putre-3902640",
+     "description": "Nos encontramos en búsqueda de Trabajadores/as Sociales para incorporarse a modalidad freelance, participando en actividades, intervenciones y acciones grupales",
+     "author": "chiletrabajos",
+     "pubDate": "2026-09-23T11:50:31Z",
+     "guid": "3902640"
+    },
+    {
+     "category": "Profesionales y Técnicos",
+     "title": "Prevencionista de riesgos - Alto Hospicio | Iquique",
+     "link": "https://www.chiletrabajos.cl/trabajo/prevencionista-de-riesgos-alto-hospicio-3760680",
+     "description": "FUNCIONES Y RESPONSABILIDADES  1. Evaluación de Riesgos: Realizar auditorías y evaluaciones de riesgos en las instalaciones, identificando peligros potenciales ",
+     "author": "chiletrabajos",
+     "pubDate": "2026-08-25T17:46:16Z",
+     "guid": "3760680"
+    },
+    {
+     "category": "Profesionales y Técnicos",
+     "title": "Técnico Microinformático Tarapacá | Iquique",
+     "link": "https://www.chiletrabajos.cl/trabajo/t-cnico-microinform-tico-tarapac-3888408",
+     "description": "En GOCAR, nos encontramos en búsqueda de personal técnico microinformático con experiencia en soporte, mantenimiento, reparación de equipos computacionales.   P",
+     "author": "chiletrabajos",
+     "pubDate": "2026-09-16T02:17:44Z",
+     "guid": "3888408"
+    }
+   ],
+   "fechas": [
+    "2026-10-01T17:59:07Z",
+    "2026-10-06T09:26:42Z",
+    "2026-09-23T11:50:31Z",
+    "2026-08-25T17:46:16Z",
+    "2026-09-16T02:17:44Z",
+    "2026-09-21T23:14:33Z",
+    "2026-10-02T12:27:28Z",
+    "2026-10-07T20:49:32Z",
+    "2026-10-16T14:56:40Z",
+    "2026-10-20T13:21:25Z",
+    "2026-10-20T14:58:15Z",
+    "2026-10-22T13:13:43Z",
+    "2026-09-02T09:29:25Z",
+    "2026-10-02T16:12:49Z",
+    "2026-09-09T15:57:07Z",
+    "2026-09-14T09:35:27Z",
+    "2026-08-15T12:24:26Z",
+    "2026-08-19T12:37:13Z",
+    "2026-08-25T15:17:58Z",
+    "2026-08-27T11:52:56Z",
+    "2026-09-07T09:50:52Z",
+    "2026-09-21T10:40:29Z",
+    "2026-09-21T16:37:49Z",
+    "2026-09-23T20:27:19Z",
+    "2026-09-24T10:53:14Z",
+    "2026-10-02T16:31:12Z",
+    "2026-10-04T17:31:30Z",
+    "2026-10-05T13:01:50Z",
+    "2026-10-15T15:30:16Z",
+    "2026-10-19T06:03:24Z"
+   ],
+   "tm": [
+    "Tecnólogo Médico Imagenología - Rancagua | Rancagua",
+    "Tecnólogo Aseguramiento de Calidad, FT 42Hrs, Tottus Zona Norte | Coquimbo",
+    "Tecnólogo/a Médico ECOCARDIOGRAMA | Santiago",
+    "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA | Curicó",
+    "Postulación Tecnólogo(a) Médico(a) ? Copiapó | Copiapó",
+    "Tecnologo Medico | Santiago",
+    "Tecnólogo médico | Santiago",
+    "Tecnólogo Aseguramiento de Calidad, FT 42Hrs, Tottus Región Metropolitana | Santiago",
+    "TECNOLOGO DE IMAGENOLOGIA PARA ECOGRAFIAS | Santiago",
+    "Tecnologo Médico ORL  (Reemplazo) Sucursal La Serena | La Serena",
+    "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa | Santiago",
+    "TECNOLOGO MEDICO KARUN. PUERTO VARAS | Puerto Montt",
+    "TECNOLOGO MEDICO con mención en Laboratorio Clínico | Talagante",
+    "Tecnólogo/a Médico/a en Oftalmología ? Óptica | Santiago",
+    "TECNOLOGO DE IMAGENOLOGIA PARA ECOGRAFIAS | Cauquenes"
+   ]
+  }
+ },
+ "bne": {
+  "https://www.bne.cl/": {
+   "url": "https://www.bne.cl/",
+   "status": 200,
+   "final": "https://www.bne.cl/home",
+   "tipo": "text/html; charset=UTF-8",
+   "largo": 1077585,
+   "titulo": "Home | BNE",
+   "enlaces_oferta": [
+    "https://www.bne.gob.cl/ofertas/1598268",
+    "https://www.bne.gob.cl/ofertas/1598269",
+    "https://www.bne.gob.cl/ofertas/1598270",
+    "https://www.bne.gob.cl/ofertas/1598271",
+    "https://www.bne.gob.cl/ofertas/1598272"
+   ],
+   "formularios": [],
+   "inputs": []
+  },
+  "https://www.bne.cl/ofertas": {
+   "url": "https://www.bne.cl/ofertas",
+   "status": 404,
+   "final": "https://www.bne.cl/ofertas",
+   "tipo": "text/html; charset=utf-8",
+   "largo": 24475,
+   "titulo": "404: This page could not be found.",
+   "enlaces_oferta": [],
+   "formularios": [],
+   "inputs": []
+  },
+  "https://www.bne.gob.cl/ofertas": {
+   "url": "https://www.bne.gob.cl/ofertas",
+   "status": 404,
+   "final": "https://www.bne.gob.cl/ofertas",
+   "tipo": "text/html; charset=utf-8",
+   "largo": 24475,
+   "titulo": "404: This page could not be found.",
+   "enlaces_oferta": [],
+   "formularios": [],
+   "inputs": []
+  },
+  "https://www.bne.cl/ofertas?textoLibre=tecnologo+medico": {
+   "url": "https://www.bne.cl/ofertas?textoLibre=tecnologo+medico",
+   "status": 404,
+   "final": "https://www.bne.cl/ofertas?textoLibre=tecnologo+medico",
+   "tipo": "text/html; charset=utf-8",
+   "largo": 24475,
+   "titulo": "404: This page could not be found.",
+   "enlaces_oferta": [],
+   "formularios": [],
+   "inputs": []
+  },
+  "https://www.bne.cl/ofertas/buscar?q=tecnologo+medico": {
+   "url": "https://www.bne.cl/ofertas/buscar?q=tecnologo+medico",
+   "status": 200,
+   "final": "https://www.bne.cl/ofertas/buscar?q=tecnologo+medico",
+   "tipo": "text/html; charset=utf-8",
+   "largo": 27444,
+   "titulo": "Bolsa Nacional de Empleo",
+   "enlaces_oferta": [
+    "/ofertas"
+   ],
+   "formularios": [],
+   "inputs": []
+  },
+  "_rutas_js": [
+   "/api/acciones/{idAccion}/observaciones",
+   "/api/auth/login",
+   "/api/auth/logout",
+   "/api/auth/me",
+   "/api/auth/nueva-pass",
+   "/api/auth/perfiles",
+   "/api/auth/permisos",
+   "/api/auth/recuperar-password",
+   "/api/auth/seleccionar-empresa",
+   "/api/auth/seleccionar-institucion",
+   "/api/auth/seleccionar-postulante",
+   "/api/auth/token-refresco",
+   "/api/bneDoc/{idPostulante}/capacitaciones/importarCapacitaciones",
+   "/api/casOfeRespuestas/personas/${l}",
+   "/api/casOfeRespuestas/personas/{idPersona}",
+   "/api/casOfertaDemanda/{idCasacion}/resumen",
+   "/api/casOfertaDemanda/{id}/favorito",
+   "/api/casaciones/borrarEvaluacion/{id}",
+   "/api/casaciones/descargaCvCandidatos",
+   "/api/casaciones/descargarMedioVerificacion/{idEmpresario}/{idIntemediador}/{fecha}",
+   "/api/casaciones/evaluacionesCandidato/{idCasacion}",
+   "/api/casaciones/evaluarCandidato",
+   "/api/casaciones/pasarEtapa/{idCasacion}/{idSitPostulacion}",
+   "/api/casaciones/usuariosCentros/{idUsuario}",
+   "/api/chat/empresario/{idEmpresario}/enviarMensaje",
+   "/api/chat/listChatPorCasacionOServicio",
+   "/api/chat/postulante/{idPostulante}/enviarMensaje",
+   "/api/chat/ultimosChatsPorEmisor/{emisor}",
+   "/api/chilevalora/persona-certificada",
+   "/api/documentos/postulante/{idPostulante}",
+   "/api/documentos/postulante/{idPostulante}/{idDocumento}",
+   "/api/documentos/postulante/{idPostulante}/{idDocumento}/descargar",
+   "/api/documentos/postulante/{idPostulante}/{idDocumento}/eliminar",
+   "/api/documentos/tiposDocumentos",
+   "/api/dt/parametros-rel/duraciones",
+   "/api/dt/parametros-rel/duraciones-colacion",
+   "/api/dt/parametros-rel/duraciones-jornada",
+   "/api/dt/parametros-rel/estadosCiviles",
+   "/api/dt/parametros-rel/horarios-y-turnos",
+   "/api/dt/parametros-rel/nacionalidades",
+   "/api/dt/parametros-rel/periodicidades-haber",
+   "/api/dt/parametros-rel/sexos",
+   "/api/dt/parametros-rel/tipos-anticipo-remuneracion",
+   "/api/dt/parametros-rel/tipos-forma-pago-haberes",
+   "/api/dt/parametros-rel/tipos-gratificacion",
+   "/api/dt/parametros-rel/tipos-haber",
+   "/api/dt/parametros-rel/tipos-periodo-pago-gratificacion",
+   "/api/dt/parametros-rel/tipos-periodo-pago-haberes",
+   "/api/dt/parametros-rel/tipos-sueldo-base",
+   "/api/dt/suscripcion/contratoEstado/{contratoId}",
+   "/api/dt/suscripcion/firmaEmpleador",
+   "/api/dt/suscripcion/firmaTrabajador",
+   "/api/dt/suscripcion/generarPreviewContrato/{idContrato}/{contratoFinal}",
+   "/api/dt/suscripcion/rechazar",
+   "/api/dt/suscripcion/step1",
+   "/api/dt/suscripcion/step2",
+   "/api/dt/suscripcion/step3",
+   "/api/dt/suscripcion/step4",
+   "/api/dt/suscripcion/step5",
+   "/api/dt/tiposContrato",
+   "/api/empresa/empresarios",
+   "/api/empresa/empresarios/${n}/logotipo",
+   "/api/empresa/empresarios/${r}/logotipo",
+   "/api/empresa/empresarios/${r}/logotipo/eliminar",
+   "/api/empresa/empresarios/empresasRegistradas",
+   "/api/empresa/empresarios/{idEmpleador}/historial-acciones-intermediacion",
+   "/api/empresa/empresarios/{idEmpresario}/casa-matriz",
+   "/api/empresa/empresarios/{idEmpresario}/datos-basicos",
+   "/api/empresa/home",
+   "/api/empresa/postular",
+   "/api/empresa/postular/persona",
+   "/api/empresa/sucursales/{idEmpresario}/sucursales",
+   "/api/empresa/{idEmpresa}/certificado/leyInclusion",
+   "/api/exp-lab/{idFk}",
+   "/api/ferias/feria/buscar",
+   "/api/ferias/feria/copiar-feria-plantilla",
+   "/api/ferias/feria/crear",
+   "/api/ferias/feria/estado-ferias",
+   "/api/ferias/feria/exportar",
+   "/api/ferias/feria/ferias-multimedia/{idFeria}"
+  ]
+ },
+ "descripciones": {
+  "computrabajo": [
+   {
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-tecnologoa-medicoa-banco-de-sangre-en-santiago-recoleta-605D7C823159186D61373E686DCF3405",
+    "status": 200,
+    "largo": 7185,
+    "inicio": "Tecnólogo/a Médico/a - Banco de Sangre\nAdecco Chile - Santiago - Recoleta, R.Metropolitana\nOcultaste esta oferta, pulsa Recuperar oferta para verla de nuevo en los listados\nDescripción de la oferta\n¡Importante institución de salud se encuentra en búsqueda de Tecnólogos/as Médicos/as con experiencia en Banco de Sangre para integrarse a su equipo durante la Campaña de Vacaciones 2026–2027!\nPrincipales funciones\n- Ejecutar procedimientos propios del área de Banco de Sangre, garantizando la calidad ",
+    "json_ld": true
+   },
+   {
+    "url": "https://cl.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-tecnico-radiologia-pabellones-y-procedimientos-pabellones-y-procedimientos-en-santiago-centro-FBDE567CA1DFA5C361373E686DCF3405",
+    "status": 200,
+    "largo": 9196,
+    "inicio": "Técnico Radiología, Pabellones Y Procedimientos - Pabellones Y Procedimientos\nRed salud UC CHRISTUS servicios ambulatorios - Santiago Centro, R.Metropolitana\nOcultaste esta oferta, pulsa Recuperar oferta para verla de nuevo en los listados\nDescripción de la oferta\nHoy más que nunca el mundo de la salud necesita a las y los mejores. ¡Te invitamos a ser parte de UC CHRISTUS!, donde no solo ofrecemos atención médica; transformamos vidas y definimos el futuro de la salud en Chile. Fomentamos e impul",
+    "json_ld": true
+   }
+  ],
+  "chiletrabajos": [
+   {
+    "url": "https://www.chiletrabajos.cl/trabajo/tecnologo-a-medico-3783750",
+    "status": 200,
+    "largo": 2270,
+    "inicio": "PUBLICIDAD\nTecnólogo/a Médico\n| ID | 3783750 | |\n| Buscado | LIVSALUD | |\n| Fecha |\n2026-10-28 00:26:33\n|\n|\n| Expira |\n2027-01-11 (en 71 días)\n|\n|\n| Ubicación | Santiago | CL |\n| Categoría | Medicina / Salud | |\n| Duración | Plazo Fijo | |\n| Tipo | Part-time & Full-time |\nInteresados: 285\nPUBLICIDAD\nDescripción oferta de trabajo\nCentro Médico de Providencia, Santiago, necesita sumar a su equipo a un tecnólogo/a médico para la Unidad de Imagenología, que cuenta con Ecógrafo, Mamógrafo, RX y Tomóg",
+    "json_ld": true
+   },
+   {
+    "url": "https://www.chiletrabajos.cl/trabajo/tecnologo-a-medico-a-pabellon-traumatologico-hospital-traumatologico-ccp-3871105",
+    "status": 200,
+    "largo": 3764,
+    "inicio": "PUBLICIDAD\nTecnólogo(a) Médico(a) – Pabellón Traumatológico Hospital Traumatológico CCP\n| ID | 3871105 | |\n| Buscado | Ergonomía MAC Ltda. | |\n| Fecha |\n2026-10-28 21:13:24\n|\n|\n| Expira |\n2027-01-11 (en 71 días)\n|\n|\n| Ubicación | Concepción | CL |\n| Categoría | Otros | |\n| Duración | Por proyecto | |\n| Tipo | Part-time |\nInteresados: 58\nPUBLICIDAD\nTecnólogo(a) Médico(a) – Pabellón Traumatológico Hospital Traumatológico CCP\nErgonomía MAC Ltda., Concepción\n28 de Octubre de 2026\nDescripción oferta ",
+    "json_ld": true
+   }
+  ],
+  "laborum": [
+   {
+    "url": "https://www.laborum.cl/empleos/tecnologo-medico-cineangiografia-reemplazo-vacaciones-confidencial-1118503036.html",
+    "status": 200,
+    "largo": 56,
+    "inicio": "You need to enable JavaScript to run this app.\n.\n.\n.\n.\n.",
+    "json_ld": false
+   },
+   {
+    "url": "https://www.laborum.cl/empleos/tecnologo-medico-examenes-respiratorios-reemplazo-vacaciones-confidencial-1118502947.html",
+    "status": 200,
+    "largo": 56,
+    "inicio": "You need to enable JavaScript to run this app.\n.\n.\n.\n.\n.",
+    "json_ld": false
+   }
+  ],
+  "indeed": [
+   {
+    "url": "https://cl.indeed.com/viewjob?jk=bef4cd7f5843d185",
+    "status": 401
+   }
+  ],
+  "trabajando": [
+   {
+    "url": "https://www.trabajando.cl/trabajo/6125255-tecnologo-medico-pabellon-hemodinamia-angiografia-redsalud-santiago",
+    "status": 200,
+    "largo": 2878,
+    "inicio": "Tecnólogo Médico Pabellón Hemodinamia (Angiografía) - RedSalud Santiago\n- Por Turnos\n- Otro Profesional\n- Región Metropolitana de Santiago\n- Estación Central\nSomos Red Salud CCHC, la red de salud privada con mayor cobertura en el territorio nacional, ofreciendo prestaciones médicas y dentales a través de sus 9 Clínicas y más de 40 Centros Médicos y Clínicas Dentales, a lo largo del país, desde Arica a Punta Arenas con el propósito de brindar una salud de calidad accesible, disponible en diferent",
+    "json_ld": true
+   },
+   {
+    "url": "https://www.trabajando.cl/trabajo/6133161-tecnologo-medico-resonancia-magnetica-vitacura",
+    "status": 200,
+    "largo": 1983,
+    "inicio": "Tecnólogo Médico Resonancia Magnética - VITACURA\n- Jornada Completa\n- Encargado\n- Región Metropolitana de Santiago\n- Santiago\nEsta oferta se enmarca bajo la Ley N.º 21.015 que incentiva la inclusión de personas con discapacidad al mundo laboral.\nClínica Privada ubicada en comuna de Vitacura se encuentra en búsqueda de Tecnólogo Médico para su unidad de Resonancia Magnética, quien tendrá como objetivo obtener imágenes detalladas del interior del cuerpo utilizando campos magnéticos y ondas de radi",
+    "json_ld": true
+   }
+  ],
+  "linkedin": [
+   {
+    "url": "https://cl.linkedin.com/jobs/view/tecnologo-medico-4300000000",
+    "status": "bloqueado por robots.txt"
+   }
+  ]
+ },
+ "robots": {
+  "https://www.chiletrabajos.cl": "#linkedin\r\nUser-agent: *\r\ndisallow: /partners/\r\n#scrapy \r\nUser-agent: Scrapy,proximic\r\ndisallow: /\r\n#sitemap\r\nSitemap: https://www.chiletrabajos.cl/sitemap.xml \r\nUser-agent:* \r\nDisallow:/ofertasmuchomas\r\n\r\n",
+  "https://www.bne.cl": "#\r\n# robots.txt\r\n#\r\n# This file is to prevent the crawling and indexing of certain parts\r\n# of your site by web crawlers and spiders run by sites like Yahoo!\r\n# and Google. By telling these \"robots\" where not to go on your site,\r\n# you save bandwidth and server resources.\r\n#\r\n# This file will be ignored unless it is at the root of your host:\r\n# Used:    http://example.com/robots.txt\r\n# Ignored: http://example.com/site/robots.txt\r\n#\r\n# For more information about the robots.txt standard, see:\r\n# http://www.robotstxt.org/robotstxt.html\r\n\r\nUser-agent: *\r\n# CSS, JS, Images\r\nAllow: /core/*.css$\r\nAllow: /core/*.css?\r\nAllow: /core/*.js$\r\nAllow: /core/*.js?\r\nAllow: /core/*.gif\r\nAllow: /core/*.jpg\r\nAllow: /core/*.jpeg\r\nAllow: /core/*.png\r\nAllow: /core/*.svg\r\nAllow: /profiles/*.css$\r\nAllow: /profiles/*.css?\r\nAllow: /profiles/*.js$\r\nAllow: /profiles/*.js?\r\nAllow: /profiles/*.gif\r\nAllow: /profiles/*.jpg\r\nAllow: /profiles/*.jpeg\r\nAllow: /profiles/*.png\r\nAllow: /profiles/*.svg\r\n# Directories\r\nDisallow: /core/\r\nDisallow: /profiles/\r\n# Files\r\nDisallow: /README.md\r\nDisallow: /composer/Metapackage/README.txt\r\nDisallow: /composer/Plugin/ProjectMessage/README.md\r\nDisallow: /composer/Plugin/Scaffold/README.md\r\nDisallow: /composer/Plugin/VendorHardening/README.txt\r\nDisallow: /composer/Template/README.txt\r\nDisallow: /modules/README.txt\r\nDisallow: /sites/README.txt\r\nDisallow: /themes/README.txt\r\n# Paths (clean URLs)\r\nDisallow: /admin/\r\nDisallow: /comment/reply/\r\nDisallow: /filter/tips\r\nDisallow: /node/add/\r\nDisallow: /search/\r\nDisallow: /user/register\r\nDisallow: /user/password\r\nDisallow: /user/login\r\nDisallow: /user/logout\r\nDisallow: /media/oembed\r\nDisallow: /*/media/oembed\r\n# Paths (no clean URLs)\r\nDisallow: /index.php/admin/\r\nDisallow: /index.php/comment/reply/\r\nDisallow: /index.php/filter/tips\r\nDisallow: /index.php/node/add/\r\nDisallow: /index.php/search/\r\nDisallow: /index.php/user/password\r\nDisallow: /index.php/user/register\r\nDisallow: /index.php/user/login\r\nDisallow: /index.php/user/logout\r\nDisallow: /index.php/media/oembed\r\nDisallow: /index.php/*/media/oembed\r\n",
+  "https://www.bne.gob.cl": "#\r\n# robots.txt\r\n#\r\n# This file is to prevent the crawling and indexing of certain parts\r\n# of your site by web crawlers and spiders run by sites like Yahoo!\r\n# and Google. By telling these \"robots\" where not to go on your site,\r\n# you save bandwidth and server resources.\r\n#\r\n# This file will be ignored unless it is at the root of your host:\r\n# Used:    http://example.com/robots.txt\r\n# Ignored: http://example.com/site/robots.txt\r\n#\r\n# For more information about the robots.txt standard, see:\r\n# http://www.robotstxt.org/robotstxt.html\r\n\r\nUser-agent: *\r\n# CSS, JS, Images\r\nAllow: /core/*.css$\r\nAllow: /core/*.css?\r\nAllow: /core/*.js$\r\nAllow: /core/*.js?\r\nAllow: /core/*.gif\r\nAllow: /core/*.jpg\r\nAllow: /core/*.jpeg\r\nAllow: /core/*.png\r\nAllow: /core/*.svg\r\nAllow: /profiles/*.css$\r\nAllow: /profiles/*.css?\r\nAllow: /profiles/*.js$\r\nAllow: /profiles/*.js?\r\nAllow: /profiles/*.gif\r\nAllow: /profiles/*.jpg\r\nAllow: /profiles/*.jpeg\r\nAllow: /profiles/*.png\r\nAllow: /profiles/*.svg\r\n# Directories\r\nDisallow: /core/\r\nDisallow: /profiles/\r\n# Files\r\nDisallow: /README.md\r\nDisallow: /composer/Metapackage/README.txt\r\nDisallow: /composer/Plugin/ProjectMessage/README.md\r\nDisallow: /composer/Plugin/Scaffold/README.md\r\nDisallow: /composer/Plugin/VendorHardening/README.txt\r\nDisallow: /composer/Template/README.txt\r\nDisallow: /modules/README.txt\r\nDisallow: /sites/README.txt\r\nDisallow: /themes/README.txt\r\n# Paths (clean URLs)\r\nDisallow: /admin/\r\nDisallow: /comment/reply/\r\nDisallow: /filter/tips\r\nDisallow: /node/add/\r\nDisallow: /search/\r\nDisallow: /user/register\r\nDisallow: /user/password\r\nDisallow: /user/login\r\nDisallow: /user/logout\r\nDisallow: /media/oembed\r\nDisallow: /*/media/oembed\r\n# Paths (no clean URLs)\r\nDisallow: /index.php/admin/\r\nDisallow: /index.php/comment/reply/\r\nDisallow: /index.php/filter/tips\r\nDisallow: /index.php/node/add/\r\nDisallow: /index.php/search/\r\nDisallow: /index.php/user/password\r\nDisallow: /index.php/user/register\r\nDisallow: /index.php/user/login\r\nDisallow: /index.php/user/logout\r\nDisallow: /index.php/media/oembed\r\nDisallow: /index.php/*/media/oembed\r\n",
+  "https://cl.computrabajo.com": "User-agent: *\r\nDisallow: /hojas-de-vida/*\r\nDisallow: /curriculums/*\r\nDisallow: /ofertas-de-trabajo/*dis=\r\nDisallow: /ofertas-de-trabajo/*cont=\r\nDisallow: /ofertas-de-trabajo/*pubdate=\r\nDisallow: /ofertas-de-trabajo/*sal=\r\nDisallow: /ofertas-de-trabajo/*by=\r\nDisallow: /ofertas-de-trabajo/*emp=\r\nDisallow: /ofertas-de-trabajo/*emcont=\r\nDisallow: /ofertas-de-trabajo/*emsal=\r\nDisallow: /ofertas-de-trabajo/*empubdate=\r\nDisallow: /ofertas-de-trabajo/*ememsal=\r\nDisallow: /ofertas-de-trabajo/*emdis=\r\nDisallow: /ofertas-de-trabajo/*emq=\r\nDisallow: /ofertas-de-trabajo/*ememq=\r\nDisallow: /ofertas-de-trabajo/*ememcont=\r\nDisallow: /ofertas-de-trabajo/*emempubdate\r\nDisallow: /empresas/*city=\r\nDisallow: /empresas/*cat=\r\nDisallow: /empresas/*prov=\r\nDisallow: /empresas/*t=\r\nDisallow: /ofertas-de-trabajo/Detail/Print.aspx\r\nDisallow: /Ajax/*\r\nDisallow: /_services/*\r\nDisallow: /go/*",
+  "https://www.laborum.cl": "User-agent: *\nDisallow: /*recientes=true\nDisallow: /*relevantes=true\nDisallow: /empleos.html/111\nDisallow: /empleos.html/100\nDisallow: /empleos-area-*/111\nDisallow: /empleos-area-*/100\nDisallow: /en-*/empleos.html/111\nDisallow: /en-*/empleos.html/100\nDisallow: /empleos-busquedaext-\nDisallow: /*?localidades=*\nDisallow: /*&localidades=*\n\nSitemap: https://www.laborum.cl/sitemap_avisos_bum.xml\nSitemap: https://www.laborum.cl/sitemap_core_bum.xml\nSitemap: https://www.laborum.cl/sitemap_empresas_bum.xml\nSitemap: https://www.laborum.cl/sitemap_listados_ubicacion_bum.xml\nSitemap: https://www.laborum.cl/sitemap_tags_bum.xml",
+  "https://cl.indeed.com": "# Default rules for all unspecified bots. Note that these apply to Bingbot too.\nUser-agent: *\nAllow: /\nAllow: /*&start=0&\nAllow: /*&start=10&\nAllow: /*&start=20&\nAllow: /*&start=30&\nAllow: /*&start=40&\nAllow: /*&start=50&\nAllow: /*&start=60&\nAllow: /*&start=70&\nAllow: /*&start=80&\nAllow: /*&start=90&\nDisallow: /*rt=nc\nDisallow: /*&alid=\nDisallow: /*&calert=\nDisallow: /*&iafilter=\nDisallow: /*&mna=\nDisallow: /*?rss\nDisallow: /*&serpstart=\nDisallow: /*/vaclk\nDisallow: /addlLoc/\nDisallow: /ads/\nDisallow: /advanced_search\nDisallow: /alert\nDisallow: /api/fetch/mc-anon\nDisallow: /api/getrecjobs\nDisallow: /applystart\nDisallow: /cmp/_/\nDisallow: /cmp/_c/claim/*\nDisallow: /cmp/_rpc/\nDisallow: /cmp/addlink\nDisallow: /cmp/addvideo\nDisallow: /cmp/Login*\nDisallow: /cmp/*/analytics\nDisallow: /cmp/*/company-questions\nDisallow: /cmp/*/people\nDisallow: /cmp/*/write-review\nDisallow: /community/\nDisallow: /company/*\nDisallow: /conversion/\nDisallow: /cookiemigrator/\nDisallow: /create-resume/lp/\nDisallow: /cdn-cgi/\nDisallow: /%E4%BB%95%E4%BA%8B?\nDisallow: /%E5%B7%A5%E4%BD%9C/\nDisallow: /%E6%B1%82%E4%BA%BA/JP/\nDisallow: /%E6%B1%82%E4%BA%BA/title/\nDisallow: /%E8%81%8C%E4%BD%8D%E6%98%BE%E7%A4%BA?\nDisallow: /%EC%B7%A8%EC%97%85/KR/\nDisallow: /%EC%B7%A8%EC%97%85/title/\nDisallow: /empleo/\nDisallow: /emploi/\nDisallow: /emplois/FR/\nDisallow: /emplois/title/\nDisallow: /emprego/\nDisallow: /empregos/BR/\nDisallow: /empregos/title\nDisallow: /forum/profile\nDisallow: /g/\nDisallow: /generate-question\nDisallow: /graphql\nDisallow: /imgping\nDisallow: /ita?\nDisallow: /ita/v1/publisher\nDisallow: /ja/clk?\nDisallow: /ja/imp.gif\nDisallow: /job/\nDisallow: /Job/\nDisallow: /jobb/\nDisallow: /jobroll\nDisallow: /jobs/AE/\nDisallow: /jobs/AQ/\nDisallow: /Jobs/AT/\nDisallow: /jobs/AU/\nDisallow: /jobs/BE/\nDisallow: /jobs/BH/\nDisallow: /jobs/CA/\nDisallow: /jobs/CZ/\nDisallow: /jobs/DE/\nDisallow: /Jobs/DE/\nDisallow: /jobs/DK/\nDisallow: /jobs/FI/\nDisallow: /jobs/GB/\nDisallow: /jobs/GR/\nDisallow: /jobs/HK/\nDisallow: /jobs/HU/\nDisallow: /jobs/ID/\nDisallow: /jobs/IE/\nDisallow: /jobs/IL/\nDisallow: /jobs/IN/\nDisallow: /jobs/KW/\nDisallow: /jobs/LU/\nDisallow: /jobs/MY/\nDisallow: /jobs/NO/\nDisallow: /jobs/NZ/\nDisallow: /jobs/OM/\nDisallow: /jobs/PE/\nDisallow: /jobs/PH/\nDisallow: /jobs/PK/\nDisallow: /jobs/PT/\nDisallow: /jobs/QA/\nDisallow: /jobs/RO/\nDisallow: /jobs/RU/\nDisallow: /jobs/SA/\nDisallow: /jobs/SG/\nDisallow: /jobs/title\nDisallow: /Jobs/title\nDisallow: /jobs/TR/\nDisallow: /jobs/TW/\nDisallow: /jobs/US/\nDisallow: /jobs/V",
+  "https://www.trabajando.cl": "User-agent: *\nDisallow: /recomendadas/\nDisallow: /ingresa-a-tu-cuenta/\nDisallow: /crea-tu-curriculum/\nDisallow: /*author/\nDisallow: /*~\nDisallow: /*sin-categoria/\n\n# Rastreadores de búsqueda, recuperación en vivo y entrenamiento de IA\nUser-agent: OAI-SearchBot\nUser-agent: ChatGPT-User\nUser-agent: PerplexityBot\nUser-agent: Perplexity-User\nUser-agent: Claude-SearchBot\nUser-agent: Claude-User\nUser-agent: GPTBot\nUser-agent: ClaudeBot\nAllow: /\n\nSitemap: https://www.trabajando.cl/sitemap.xml",
+  "https://cl.linkedin.com": "# Notice: The use of robots or other automated means to access LinkedIn without\n# the express permission of LinkedIn is strictly prohibited.\n# See https://www.linkedin.com/legal/user-agreement.\n# LinkedIn may, in its discretion, permit certain automated access to certain LinkedIn pages,\n# for the limited purpose of including content in approved publicly available search engines.\n# If you would like to apply for permission to crawl LinkedIn, please email whitelist-crawl@linkedin.com.\n# Any and all permitted crawling of LinkedIn is subject to LinkedIn's Crawling Terms and Conditions.\n# See http://www.linkedin.com/legal/crawling-terms.\n\nUser-agent: LinkedInBot\nAllow: /\n\nUser-agent: Googlebot\nDisallow: /addContacts*\nDisallow: /addressBookExport*\nDisallow: /ambry\nDisallow: /analytics/\nDisallow: /answers*\nDisallow: /authwall\nDisallow: /badges/profile/create\nDisallow: /cap/\nDisallow: /chat/\nDisallow: /checkpoint/\nDisallow: /companyDir*\nDisallow: /connections*\nDisallow: /csp/\nDisallow: /e/\nDisallow: /edurec*\nDisallow: /embed/feed/update/\nDisallow: /endorsements\nDisallow: /feed/update/\nDisallow: /find/\nDisallow: /fizzy/admin\nDisallow: /groups/\nDisallow: /groupAnswers*\nDisallow: /groupSharingMsg*\nDisallow: /inviteFromProfile*\nDisallow: /inviteMany*\nDisallow: /jobs?runSearch*\nDisallow: /jobs/view/externalApply/\nDisallow: /jobs-guest/\nDisallow: /api/jobPostings/jobs*\nDisallow: /jsearch*\nDisallow: /job-apply/\nDisallow: /learning*?auth=true\nDisallow: /learning*&auth=true\nDisallow: /learning/articles/\nDisallow: /learning/certificates/\nDisallow: /learning/embed/\nDisallow: /learning/events/\nDisallow: /learning/instructors?\nDisallow: /learning/instructors$\nDisallow: /learning/instructors/\nDisallow: /learning/login*?redirect=\nDisallow: /learning/login*&redirect=\nDisallow: /learning/me?\nDisallow: /learning/me$\nDisallow: /learning/me/\nDisallow: /learning/memberbinding?\nDisallow: /learning/memberbinding$\nDisallow: /learning/memberbinding/\nDisallow: /learning/search?\nDisallow: /learning/search$\nDisallow: /learning/search/\nDisallow: /learning/settings?\nDisallow: /learning/settings$\nDisallow: /learning/settings/\nDisallow: /lite/\nDisallow: /li/track\nDisallow: /mbox*\nDisallow: /me/\nDisallow: /memberInvite*\nDisallow: /messaging/\nDisallow: /mob/tracking\nDisallow: /mwlite/\nDisallow: /msgToConns*\nDisallow: /myprofile*\nDisallow: /network\nDisallow: /newsArticle*\nDisallow: /news?viewArticle*\nDisallow: /nus-trk*\nDisallow: /oauth/v2/*\nDisallow: /oauth2/v2/*\nDisallow: /organization-guest/\nDis"
+ }
+}
