@@ -161,11 +161,51 @@ def bne2(s, inf):
     inf["bne2"] = out
 
 
+def bne3(s, inf):
+    """Cómo se llama a /api/ofertas/busqueda: contexto de uso, URL base y pruebas."""
+    out = {"contexto": [], "base": []}
+    r, st = traer(s, "https://www.bne.cl/ofertas/buscar?q=tecnologo+medico")
+    if r is not None and r.ok:
+        for src in re.findall(r'<script[^>]+src="([^"]+)"', r.text)[:60]:
+            try:
+                js = s.get(urljoin(r.url, src), timeout=25).text
+            except Exception:
+                continue
+            for m in re.finditer(r"busquedaBNE|buscarEmpleo\.", js):
+                out["contexto"].append(js[max(0, m.start() - 900): m.end() + 900])
+            for m in re.finditer(r"baseURL\s*:\s*[^,}]{3,160}|NEXT_PUBLIC_[A-Z_]+\s*[:=]\s*\"[^\"]{3,160}\"", js):
+                out["base"].append(m.group(0))
+    out["contexto"] = out["contexto"][:6]
+    out["base"] = sorted(set(out["base"]))[:20]
+    pruebas = []
+    cab = {"Accept": "application/json", "Content-Type": "application/json", "Origin": "https://www.bne.cl",
+           "Referer": "https://www.bne.cl/ofertas/buscar?q=tecnologo+medico"}
+    for host in ("https://www.bne.cl", "https://api.bne.cl", "https://www.bne.gob.cl"):
+        for metodo, sufijo, cuerpo in (
+            ("GET", "/api/ofertas/busqueda?q=tecnologo%20medico", None),
+            ("GET", "/api/ofertas/busqueda?texto=tecnologo%20medico&pagina=0", None),
+            ("POST", "/api/ofertas/busqueda", {"texto": "tecnologo medico", "pagina": 0}),
+            ("GET", "/api/ofertas/publica/1598268", None),
+        ):
+            u = host + sufijo
+            if not permitido(s, u):
+                pruebas.append({"url": u, "status": "bloqueado por robots.txt"}); continue
+            time.sleep(1.2)
+            try:
+                rr = s.request(metodo, u, json=cuerpo, headers=cab, timeout=25)
+                pruebas.append({"metodo": metodo, "url": u, "status": rr.status_code, "tipo": rr.headers.get("content-type"),
+                                "inicio": rr.text[:700]})
+            except Exception as e:
+                pruebas.append({"metodo": metodo, "url": u, "error": repr(e)[:160]})
+    out["pruebas"] = pruebas
+    inf["bne3"] = out
+
+
 def main() -> None:
     OUT.mkdir(exist_ok=True)
     inf: dict = {}
     s = sesion()
-    for f in (bne2,):
+    for f in (bne3,):
         try:
             f(s, inf)
         except Exception as e:
