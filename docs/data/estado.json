@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-01T22:44:37+00:00",
+ "ultimo_chequeo": "2026-11-01T23:42:17+00:00",
  "nuevos": 0,
  "total": 33,
  "palabras_clave": [
@@ -97,73 +97,73 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 109,
+   "resultados": 218,
    "errores": [],
    "descartados": {
-    "antiguedad": 20,
-    "zona": 13,
-    "exclusion": 16,
-    "perfil": 2
+    "antiguedad": 6,
+    "perfil": 17,
+    "exclusion": 18,
+    "zona": 9
    },
    "muestra": [
-    {
-     "titulo": "Tecnólogo Médico Imagenología - Rancagua",
-     "ubicacion": "Rancagua",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
-     "ubicacion": "Curicó",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Postulación Tecnólogo(a) Médico(a) ? Copiapó",
-     "ubicacion": "Copiapó",
-     "motivo": "zona"
-    },
     {
      "titulo": "Tecnologo Medico",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo médico",
+     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
+     "ubicacion": "Temuco",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS…",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TENS experiencia laboratorio",
+     "ubicacion": "Antofagasta",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Colina",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TECNÓLOGO(A) MÉDICO(A) Unidad de Imageneología Hospital…",
+     "ubicacion": "Puerto aysén",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico/a – Medicina Transfusional –…",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
-     "ubicacion": "La Serena",
+     "titulo": "Tecnólogo/a Médico/a en Imagenología y Física…",
+     "ubicacion": "Puerto aysén",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TECNOLOGO MEDICO KARUN. PUERTO VARAS",
-     "ubicacion": "Puerto Montt",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
+     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio…",
      "ubicacion": "Talagante",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo/a Médico/a en Oftalmología ? Óptica",
-     "ubicacion": "Santiago",
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Linares",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TECNÓLOGO MÉDICO IMAGENOLOGÍA Y FÍSICA MÉDICA",
+     "titulo": "Analista Microbiología - Pudahuel",
      "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico Óptica KARUN",
+     "ubicacion": "Temuco",
      "motivo": "antiguedad"
     }
    ]
