@@ -201,16 +201,63 @@ def bne3(s, inf):
     inf["bne3"] = out
 
 
+def _sin_logos(x):
+    if isinstance(x, dict):
+        return {k: ("<omitido>" if "logo" in k.lower() else _sin_logos(v)) for k, v in x.items()}
+    if isinstance(x, list):
+        return [_sin_logos(v) for v in x]
+    return x[:200] if isinstance(x, str) else x
+
+
+def bne4(s, inf):
+    """Campos de la búsqueda de la BNE y qué parámetro filtra por texto."""
+    u = "https://www.bne.gob.cl/api/ofertas/busqueda"
+    cab = {"Accept": "application/json", "Content-Type": "application/json", "Origin": "https://www.bne.gob.cl",
+           "Referer": "https://www.bne.gob.cl/ofertas/buscar?q=tecnologo+medico"}
+    out = {}
+    for nombre, cuerpo in {
+        "vacio": {},
+        "texto": {"texto": "tecnologo medico", "pagina": 0},
+        "q": {"q": "tecnologo medico", "page": 0},
+        "palabraClave": {"palabraClave": "tecnologo medico"},
+        "busqueda": {"busqueda": "tecnologo medico"},
+        "cargo": {"cargo": "tecnologo medico"},
+        "keyword": {"keyword": "tecnologo medico"},
+    }.items():
+        time.sleep(1.5)
+        try:
+            r = s.post(u, json=cuerpo, headers=cab, timeout=30)
+            j = r.json()
+            c = j.get("content") or []
+            d = {"status": r.status_code, "claves": [k for k in j.keys()],
+                 "escalares": {k: v for k, v in j.items() if not isinstance(v, (list, dict))},
+                 "puestos": [x.get("puesto") or x.get("cargo") for x in c][:12]}
+            if nombre in ("vacio", "texto"):
+                d["primero"] = _sin_logos(c[0]) if c else None
+            out[nombre] = d
+        except Exception as e:
+            out[nombre] = {"error": repr(e)[:200]}
+    for q in ("?q=tecnologo+medico", "?texto=tecnologo+medico&page=0&size=20"):
+        time.sleep(1.5)
+        try:
+            r = s.post(u + q, json={}, headers=cab, timeout=30)
+            j = r.json()
+            out["url" + q] = {"status": r.status_code, "puestos": [x.get("puesto") for x in j.get("content") or []][:12],
+                              "escalares": {k: v for k, v in j.items() if not isinstance(v, (list, dict))}}
+        except Exception as e:
+            out["url" + q] = {"error": repr(e)[:200]}
+    inf["bne4"] = out
+
+
 def main() -> None:
     OUT.mkdir(exist_ok=True)
     inf: dict = {}
     s = sesion()
-    for f in (bne3,):
+    for f in (bne4,):
         try:
             f(s, inf)
         except Exception as e:
             inf[f.__name__] = {"error": repr(e)[:300]}
-    inf["robots"] = _robots_txt
     (OUT / "diagnostico.json").write_text(json.dumps(inf, ensure_ascii=False, indent=1), encoding="utf-8")
     print(json.dumps(inf, ensure_ascii=False)[:3000])
 
