@@ -1,6 +1,6 @@
 {
  "version": "1.18.0",
- "ultimo_chequeo": "2026-10-31T23:43:17+00:00",
+ "ultimo_chequeo": "2026-11-01T01:17:23+00:00",
  "nuevos": 0,
  "total": 33,
  "palabras_clave": [
@@ -18,12 +18,12 @@
  "sitios": {
   "linkedin": {
    "nombre": "LinkedIn",
-   "resultados": 87,
+   "resultados": 84,
    "errores": [],
    "descartados": {
-    "exclusion": 10,
-    "zona": 2,
-    "perfil": 32
+    "exclusion": 9,
+    "zona": 4,
+    "perfil": 31
    },
    "muestra": [
     {
@@ -37,16 +37,6 @@
      "motivo": "zona"
     },
     {
-     "titulo": "Técnico En Enfermería De Nivel Superior",
-     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Endoscopy Sales",
-     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
-     "motivo": "perfil"
-    },
-    {
      "titulo": "Tecnólogo Médico con mención en Oftalmología - Colina",
      "ubicacion": "Colina, Región Metropolitana de Santiago, Chile",
      "motivo": "exclusion"
@@ -55,11 +45,6 @@
      "titulo": "Administrador TENS",
      "ubicacion": "Copiapó, Región de Atacama, Chile",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Técnico Paramédico - Hospitalizados Maternidad (Honorarios)",
-     "ubicacion": "La Florida, Región Metropolitana de Santiago, Chile",
-     "motivo": "perfil"
     },
     {
      "titulo": "Inspector de Muestreo Industrias",
@@ -75,6 +60,21 @@
      "titulo": "Asistente Administrativo - Punta Arenas",
      "ubicacion": "Punta Arenas, Magallanes Y Antartica Chilena, Chile",
      "motivo": "exclusion"
+    },
+    {
+     "titulo": "MSL",
+     "ubicacion": "Gran Santiago, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Specialist Radiographer",
+     "ubicacion": "Hospital, Región Metropolitana de Santiago, Chile",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Agente de Promoción Médica | Área Respiratoria",
+     "ubicacion": "Área metropolitana de Santiago",
+     "motivo": "perfil"
     },
     {
      "titulo": "Coordinador(a) de Mantenimiento Mecánico Hospitalario",
@@ -166,9 +166,9 @@
    "errores": [],
    "descartados": {
     "antiguedad": 6,
-    "perfil": 19,
+    "perfil": 20,
     "exclusion": 18,
-    "zona": 7
+    "zona": 6
    },
    "muestra": [
     {
@@ -307,7 +307,7 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 10,
+   "resultados": 9,
    "errores": [],
    "descartados": {
     "perfil": 1
