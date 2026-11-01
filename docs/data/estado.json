@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-01T19:46:37+00:00",
+ "ultimo_chequeo": "2026-11-01T20:45:27+00:00",
  "nuevos": 0,
  "total": 33,
  "palabras_clave": [
@@ -242,7 +242,7 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 7,
+   "resultados": 5,
    "errores": [],
    "descartados": {
     "perfil": 1
