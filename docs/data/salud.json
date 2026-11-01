@@ -6,22 +6,22 @@
  },
  "computrabajo": {
   "desde": "2026-10-29T19:56:48+00:00",
-  "ultimo_ok": "2026-11-01T01:17:23+00:00",
+  "ultimo_ok": "2026-11-01T10:48:25+00:00",
   "alerta": false
  },
  "chiletrabajos": {
   "desde": "2026-10-29T19:56:48+00:00",
-  "ultimo_ok": "2026-11-01T01:17:23+00:00",
+  "ultimo_ok": "2026-11-01T10:48:25+00:00",
   "alerta": false
  },
  "trabajando": {
   "desde": "2026-10-29T19:56:48+00:00",
-  "ultimo_ok": "2026-11-01T01:17:23+00:00",
+  "ultimo_ok": "2026-11-01T10:48:25+00:00",
   "alerta": false
  },
  "indeed": {
   "desde": "2026-10-29T19:56:48+00:00",
-  "ultimo_ok": "2026-11-01T01:17:23+00:00",
+  "ultimo_ok": "2026-11-01T10:48:25+00:00",
   "alerta": false
  },
  "google": {
@@ -31,7 +31,17 @@
  },
  "laborum": {
   "desde": "2026-10-29T19:56:48+00:00",
-  "ultimo_ok": "2026-11-01T01:17:23+00:00",
+  "ultimo_ok": "2026-11-01T10:48:25+00:00",
+  "alerta": false
+ },
+ "linkedin_correo": {
+  "desde": "2026-11-01T10:48:25+00:00",
+  "ultimo_ok": null,
+  "alerta": false
+ },
+ "bne": {
+  "desde": "2026-11-01T10:48:25+00:00",
+  "ultimo_ok": "2026-11-01T10:48:25+00:00",
   "alerta": false
  }
 }
