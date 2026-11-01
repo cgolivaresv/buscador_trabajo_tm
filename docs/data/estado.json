@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-01T11:45:03+00:00",
+ "ultimo_chequeo": "2026-11-01T12:57:41+00:00",
  "nuevos": 0,
  "total": 33,
  "palabras_clave": [
@@ -378,10 +378,10 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 13,
+  "leidas": 0,
   "sin_permiso": 0,
   "errores": 0,
-  "subieron_a_prioritario": 3
+  "subieron_a_prioritario": 0
  },
  "rss_chiletrabajos": "2026-11-01T10:48:25+00:00"
 }
