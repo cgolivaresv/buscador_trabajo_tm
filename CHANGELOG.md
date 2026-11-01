@@ -6,6 +6,9 @@ La versión aparece al pie de la página: **Página** es la versión de `docs/in
 - Antigüedad máxima de 48 horas al encontrar un aviso (`antiguedad_maxima_horas`). LinkedIn y Trabajando filtran a 48 h al buscar; Indeed y Google, a su opción más cercana; en todas las fuentes se revisa además la fecha de publicación ("Hace 3 días", "13 de octubre", "2026-10-28"…). Los avisos sin fecha reconocible se admiten.
 - Un aviso admitido no desaparece al cumplir 48 horas: sigue visible mientras esté abierto.
 
+## 1.21.0 · 2026-11-01
+- Nueva fuente: LinkedIn a través de tus alertas por correo (no se consulta LinkedIn). Una tarea programada diaria (6:47) lee los correos nuevos de LinkedIn en tu Gmail, extrae cargo, empresa, ubicación y enlace, y los deja en `docs/data/importados.json`; el chequeo los pasa por los mismos filtros. Los correos no se guardan en el repositorio.
+
 ## 1.20.0 · 2026-11-01
 - Nueva fuente: Bolsa Nacional de Empleo (BNE, SENCE), mediante su búsqueda pública. Trae cargo, empresa, comuna y región, rango de renta, jornada, fecha y descripción. Ahí publican hospitales, Servicios de Salud y centros vía OMIL.
 

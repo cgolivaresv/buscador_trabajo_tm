@@ -585,6 +585,7 @@ def bne(s, palabra: str) -> list[Aviso]:
 
 LECTORES = {
     "linkedin": linkedin,
+    "linkedin_correo": __import__("buscador.correo_linkedin", fromlist=["lector"]).lector,
     "computrabajo": computrabajo,
     "chiletrabajos": chiletrabajos,
     "trabajando": trabajando,

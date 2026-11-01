@@ -336,3 +336,47 @@ def test_bne():
     assert av.url == "https://www.bne.gob.cl/ofertas/1582003"
     assert (av.empresa, av.ubicacion) == ("REDSALUD CCHC", "Estación Central, Metropolitana")
     assert (av.renta, av.jornada, av.contrato, av.publicado) == ("$1.660.001 - $1.810.000", "Jornada Parcial/part time", "Indefinido", "2026-09-15")
+
+
+# ------------------------------------------------------ LinkedIn por correo
+CORREO = """Empleos de «Servicios médicos»
+https://www.linkedin.com/comm/jobs/search-results/?keywords=Tecnologo+Medico&x=1
+
+Customer Service Engineer
+United Imaging Healthcare - Latin America
+Región Metropolitana de Santiago
+Solicitar con perfil y CV
+Ver anuncio de empleo: https://www.linkedin.com/comm/jobs/view/4477202000/?trackingId=abc&otpToken=zzz
+
+---------------------------------------------------------
+
+Field Service Engineer I
+Olympus Corporation
+8550189
+Ver anuncio de empleo: https://www.linkedin.com/comm/jobs/view/4453805613/?trackingId=def
+
+---------------------------------------------------------
+
+Ver todos los empleos: https://www.linkedin.com/comm/jobs/search-results/?keywords=x
+"""
+
+
+def test_correo_linkedin_parsear():
+    from buscador import correo_linkedin as c
+
+    av = c.parsear(CORREO, "2026-10-26T16:31:39+00:00")
+    assert [(a["titulo"], a["empresa"], a["ubicacion"]) for a in av] == [
+        ("Customer Service Engineer", "United Imaging Healthcare - Latin America", "Región Metropolitana de Santiago"),
+        ("Field Service Engineer I", "Olympus Corporation", ""),
+    ]
+    assert av[0]["url"] == "https://www.linkedin.com/jobs/view/4477202000/"  # sin seguimiento ni tokens
+
+
+def test_correo_linkedin_agregar(tmp_path, monkeypatch):
+    from buscador import correo_linkedin as c
+
+    monkeypatch.setattr(c, "IMPORTADOS", tmp_path / "imp.json")
+    av = c.parsear(CORREO, "2026-10-26T16:31:39+00:00")
+    assert c.agregar(av, "2026-10-27T00:00:00+00:00") == 2
+    assert c.agregar(av, "2026-10-27T01:00:00+00:00") == 0  # sin duplicados
+    assert c.agregar([], "2026-12-30T00:00:00+00:00") == 0 and c.cargar()["avisos"] == []  # retención 30 días

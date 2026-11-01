@@ -222,6 +222,9 @@ sitios:
   trabajando: true
   indeed: true
   laborum: true
+  # Avisos de las alertas que LinkedIn te envía por correo (no consulta LinkedIn).
+  # Una tarea programada diaria los lee de tu Gmail y los deja en importados.json.
+  linkedin_correo: true
   # Bolsa Nacional de Empleo (SENCE): hospitales, Servicios de Salud y centros que
   # publican vía OMIL. Usa la misma búsqueda pública que su página.
   bne: true

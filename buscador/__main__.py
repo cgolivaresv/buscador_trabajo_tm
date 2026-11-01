@@ -36,6 +36,7 @@ NOMBRES = {
     "indeed": "Indeed",
     "google": "Google Empleos",
     "laborum": "Laborum",
+    "linkedin_correo": "LinkedIn (alertas por correo)",
     "bne": "Bolsa Nacional de Empleo",
 }
 
@@ -282,7 +283,7 @@ def main() -> int:
             continue
         st = {"nombre": NOMBRES[sitio], "resultados": 0, "errores": [], "descartados": {}, "muestra": []}
         vistos_descarte: set[str] = set()
-        for palabra in palabras_para(sitio, cfg):
+        for palabra in (["(correos)"] if getattr(lector, "sin_palabras", False) else palabras_para(sitio, cfg)):
             try:
                 avisos = lector(s, palabra)
             except Exception as e:  # un sitio caído no detiene a los demás
