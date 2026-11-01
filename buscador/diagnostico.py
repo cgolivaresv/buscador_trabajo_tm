@@ -127,11 +127,45 @@ def descripciones(s, inf):
     inf["descripciones"] = out
 
 
+def bne2(s, inf):
+    """Busca la API de búsqueda de ofertas en los scripts de la página de búsqueda y
+    revisa cómo viene una ficha de oferta."""
+    out = {}
+    r, st = traer(s, "https://www.bne.cl/ofertas/buscar?q=tecnologo+medico")
+    hallado, rutas = [], set()
+    if r is not None and r.ok:
+        out["next_data"] = bool(re.search(r"__NEXT_DATA__", r.text))
+        for src in re.findall(r'<script[^>]+src="([^"]+)"', r.text)[:60]:
+            try:
+                js = s.get(urljoin(r.url, src), timeout=25).text
+            except Exception:
+                continue
+            for m in re.findall(r'["\'`]((?:https?://[^"\'`\s]*)?/api/[^"\'`\s]{2,160})["\'`]', js):
+                if re.search(r"ofert|busc|search|public|aviso", m, re.I):
+                    rutas.add(m)
+            for m in re.finditer(r"ofertas?/(?:buscar|busqueda|search|publicas?|listar?)", js, re.I):
+                hallado.append(js[max(0, m.start() - 500): m.end() + 700])
+    out["rutas"] = sorted(rutas)[:60]
+    out["contexto"] = hallado[:5]
+    r, st = traer(s, "https://www.bne.gob.cl/ofertas/1598268")
+    out["ficha_status"] = st
+    if r is not None and r.ok:
+        out["ficha_final"] = r.url
+        out["ficha_next_data"] = bool(re.search(r"__NEXT_DATA__", r.text))
+        out["ficha_json_ld"] = "JobPosting" in r.text
+        m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', r.text, re.S)
+        out["ficha_next_inicio"] = m.group(1)[:2500] if m else r.text[:1500]
+    rr, st2 = traer(s, "https://www.chiletrabajos.cl/rss.xml")
+    if rr is not None:
+        out["rss_bytes"] = len(rr.content)
+    inf["bne2"] = out
+
+
 def main() -> None:
     OUT.mkdir(exist_ok=True)
     inf: dict = {}
     s = sesion()
-    for f in (rss_chiletrabajos, bne, descripciones):
+    for f in (bne2,):
         try:
             f(s, inf)
         except Exception as e:
