@@ -300,6 +300,21 @@ def test_descripcion_respeta_robots(monkeypatch, cfg):
     assert res["sin_permiso"] == 1 and "robots" in h["a"]["descripcion_error"]
 
 
+def test_descripcion_reintenta(monkeypatch, cfg):
+    from buscador import descripcion
+
+    def falla(s, u, **k):
+        raise ConnectionError("caído")
+
+    monkeypatch.setattr(descripcion, "obtener", falla)
+    monkeypatch.setattr(descripcion, "_permitido", lambda s, u: True)
+    h = {"a": {"id": "a", "url": "https://x/1", "titulo": "TM", "afinidad": 2}}
+    for i in range(3):
+        assert descripcion.enriquecer(None, h, [], cfg["_prioritario_desc"], "t")["errores"] == 1
+    assert "no se pudo" in h["a"]["descripcion_error"]
+    assert descripcion.enriquecer(None, h, [], cfg["_prioritario_desc"], "t")["errores"] == 0  # tras 3 fallas, se rinde
+
+
 def test_chiletrabajos_rss(monkeypatch):
     xml = """<?xml version="1.0"?><rss><channel>
     <item><title>Tecnólogo/a Médico/a Resonancia | Talca</title><link>https://www.chiletrabajos.cl/trabajo/tm-rm-1</link>

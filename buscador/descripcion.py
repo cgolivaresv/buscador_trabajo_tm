@@ -18,6 +18,7 @@ from urllib.robotparser import RobotFileParser
 from .comun import USER_AGENT, json_ld_ofertas, limpio, normalizar, obtener, detalle_desde_texto
 
 MAX_POR_CHEQUEO = 20
+MAX_FALLAS = 3
 LARGO_GUARDADO = 1800
 _robots: dict[str, RobotFileParser] = {}
 
@@ -64,13 +65,15 @@ def enriquecer(s, historial: dict[str, dict], prioridad: list[str], patrones_pri
     """Baja la descripción de hasta MAX_POR_CHEQUEO avisos: primero los de "prioridad"
     (los nuevos de este chequeo), después los guardados que aún no la tienen."""
     orden = [k for k in prioridad if k in historial]
-    orden += [k for k, v in historial.items() if k not in orden and "descripcion_intento" not in v]
+    orden += [k for k, v in historial.items() if k not in orden and "descripcion" not in v
+              and "descripcion_error" not in v and v.get("descripcion_fallas", 0) < MAX_FALLAS]
     res = {"leidas": 0, "sin_permiso": 0, "errores": 0, "subieron_a_prioritario": 0}
     for k in orden:
         if res["leidas"] + res["errores"] >= MAX_POR_CHEQUEO:
             break
         a = historial[k]
-        if a.get("descripcion_intento") or a.get("duplicado_de"):
+        if a.get("descripcion") or a.get("descripcion_error") or a.get("duplicado_de") \
+                or a.get("descripcion_fallas", 0) >= MAX_FALLAS:
             continue
         a["descripcion_intento"] = t
         if not _permitido(s, a["url"]):
@@ -80,7 +83,10 @@ def enriquecer(s, historial: dict[str, dict], prioridad: list[str], patrones_pri
         try:
             texto, extra = extraer(obtener(s, a["url"]).text)
         except Exception as e:
-            a["descripcion_error"] = f"{type(e).__name__}"
+            # Error pasajero (red, sitio caído): se reintenta en próximos chequeos.
+            a["descripcion_fallas"] = a.get("descripcion_fallas", 0) + 1
+            if a["descripcion_fallas"] >= MAX_FALLAS:
+                a["descripcion_error"] = f"no se pudo leer la ficha ({type(e).__name__})"
             res["errores"] += 1
             continue
         res["leidas"] += 1
