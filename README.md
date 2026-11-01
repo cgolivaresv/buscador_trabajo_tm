@@ -1,6 +1,6 @@
 # Buscador de Trabajo TM
 
-Revisa cada hora, de 7:00 a 22:00 (hora de Chile), los avisos de **LinkedIn, Computrabajo, Chiletrabajos, Trabajando.cl, Indeed, Laborum y Google Empleos** según tus palabras clave, guarda los nuevos y te los muestra en una página.
+Revisa cada hora, de 7:00 a 22:00 (hora de Chile), los avisos de **LinkedIn, Computrabajo, Chiletrabajos, Trabajando.cl, Indeed, Laborum y la Bolsa Nacional de Empleo (BNE)** según tus palabras clave, guarda los nuevos y te los muestra en una página.
 
 ## Cómo funciona
 

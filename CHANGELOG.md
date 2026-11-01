@@ -6,6 +6,9 @@ La versión aparece al pie de la página: **Página** es la versión de `docs/in
 - Antigüedad máxima de 48 horas al encontrar un aviso (`antiguedad_maxima_horas`). LinkedIn y Trabajando filtran a 48 h al buscar; Indeed y Google, a su opción más cercana; en todas las fuentes se revisa además la fecha de publicación ("Hace 3 días", "13 de octubre", "2026-10-28"…). Los avisos sin fecha reconocible se admiten.
 - Un aviso admitido no desaparece al cumplir 48 horas: sigue visible mientras esté abierto.
 
+## 1.20.0 · 2026-11-01
+- Nueva fuente: Bolsa Nacional de Empleo (BNE, SENCE), mediante su búsqueda pública. Trae cargo, empresa, comuna y región, rango de renta, jornada, fecha y descripción. Ahí publican hospitales, Servicios de Salud y centros vía OMIL.
+
 ## 1.19.0 · 2026-11-01
 - Descripción completa: se lee la ficha de cada aviso nuevo (hasta 20 por chequeo, respetando el robots.txt de cada sitio) con Trafilatura o los datos estructurados del aviso. Si la descripción menciona resonancia, un aviso de título genérico pasa a ⭐ prioritario ("por descripción"). También completa renta, jornada, contrato y fecha de cierre. La tarjeta muestra la descripción.
 - Chiletrabajos: barrido completo cada 4 horas con su RSS público (todos los avisos del sitio, con fecha exacta); en los demás chequeos, la búsqueda normal. El feed pesa ~19 MB, por eso no se descarga cada hora.

@@ -544,6 +544,45 @@ def laborum(s, palabra: str) -> list[Aviso]:
     return out
 
 
+# ------------------------------------------------- Bolsa Nacional de Empleo (SENCE)
+_BNE = "https://www.bne.gob.cl"
+
+
+def _nombre(x) -> str:
+    return limpio(x.get("nombre") if isinstance(x, dict) else (x or ""))
+
+
+def bne(s, palabra: str) -> list[Aviso]:
+    """Búsqueda pública de la BNE (la misma que usa su página). Incluye avisos de
+    hospitales, Servicios de Salud y centros que publican a través de SENCE/OMIL."""
+    time.sleep(1.0)
+    r = s.post(
+        f"{_BNE}/api/ofertas/busqueda?page=0&size=50",
+        json={"texto": palabra, "pagina": 0},
+        headers={"Accept": "application/json", "Content-Type": "application/json", "Origin": _BNE,
+                 "Referer": f"{_BNE}/ofertas/buscar?q={quote_plus(palabra)}"},
+        timeout=30,
+    )
+    r.raise_for_status()
+    out = []
+    for o in r.json().get("content") or []:
+        if not o.get("id") or not o.get("nombrePuesto"):
+            continue
+        emp = o.get("empresario") or {}
+        av = Aviso(
+            sitio="bne",
+            titulo=limpio(o["nombrePuesto"]),
+            url=f"{_BNE}/ofertas/{o['id']}",
+            empresa=limpio(emp.get("nombreComercial") or "") if isinstance(emp, dict) else "",
+            ubicacion=", ".join(x for x in (_nombre(o.get("comuna")), _nombre(o.get("region"))) if x),
+            publicado=str(o.get("fechaPublicacion") or ""),
+            renta=_nombre(o.get("rangoSalarial")),
+            jornada=_nombre(o.get("jornadaLaboral")),
+        )
+        out.append(av.completar_desde_texto(o.get("descripcion") or ""))
+    return out
+
+
 LECTORES = {
     "linkedin": linkedin,
     "computrabajo": computrabajo,
@@ -552,4 +591,5 @@ LECTORES = {
     "indeed": indeed,
     "google": google,
     "laborum": laborum,
+    "bne": bne,
 }

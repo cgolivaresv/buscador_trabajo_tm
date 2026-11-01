@@ -36,6 +36,7 @@ NOMBRES = {
     "indeed": "Indeed",
     "google": "Google Empleos",
     "laborum": "Laborum",
+    "bne": "Bolsa Nacional de Empleo",
 }
 
 

@@ -319,3 +319,20 @@ def test_chiletrabajos_rss(monkeypatch):
     assert (av[0].ubicacion, av[0].publicado, av[0].jornada) == ("Talca", "2026-10-31T12:00:00Z", "Jornada completa")
     assert sitios.chiletrabajos(None, "chofer")[0].titulo == "Chofer"
     assert len(llamadas) == 1  # el feed se descarga una sola vez por chequeo
+
+
+def test_bne():
+    class S:
+        def post(self, url, json=None, **k):
+            assert json["texto"] == "tecnólogo médico" and "size=50" in url
+            return R(js={"content": [{"id": 1582003, "nombrePuesto": "Tecnólogo Médico Pabellón Hemodinamia",
+                                       "empresario": {"nombreComercial": "REDSALUD CCHC", "logotipo": "x"},
+                                       "region": {"nombre": "Metropolitana"}, "comuna": {"nombre": "Estación Central"},
+                                       "rangoSalarial": {"nombre": "$1.660.001 - $1.810.000"},
+                                       "jornadaLaboral": {"nombre": "Jornada Parcial/part time"},
+                                       "fechaPublicacion": "2026-09-15", "descripcion": "Contrato indefinido"}]})
+
+    av = sitios.bne(S(), "tecnólogo médico")[0]
+    assert av.url == "https://www.bne.gob.cl/ofertas/1582003"
+    assert (av.empresa, av.ubicacion) == ("REDSALUD CCHC", "Estación Central, Metropolitana")
+    assert (av.renta, av.jornada, av.contrato, av.publicado) == ("$1.660.001 - $1.810.000", "Jornada Parcial/part time", "Indefinido", "2026-09-15")

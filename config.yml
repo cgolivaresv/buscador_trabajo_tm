@@ -27,6 +27,7 @@ palabras_clave:
 # ("tecnologo medico"), por si su buscador las distingue. En LinkedIn, Indeed y
 # Google no hace falta: ya las ignoran. Cada sitio agregado suma ~6 búsquedas.
 sin_tildes_en:
+  - bne
   - computrabajo
   - chiletrabajos
   - trabajando
@@ -221,6 +222,9 @@ sitios:
   trabajando: true
   indeed: true
   laborum: true
+  # Bolsa Nacional de Empleo (SENCE): hospitales, Servicios de Salud y centros que
+  # publican vía OMIL. Usa la misma búsqueda pública que su página.
+  bne: true
   # Desactivado: desde los servidores de GitHub, Google responde sin el panel de
   # empleos (0 resultados en todos los chequeos del 29 y 30 de octubre).
   google: false
