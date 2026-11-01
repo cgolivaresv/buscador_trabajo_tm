@@ -283,12 +283,12 @@ def test_descripcion_sube_a_prioritario(monkeypatch, cfg):
     monkeypatch.setattr(descripcion, "obtener", lambda s, u, **k: R(html))
     monkeypatch.setattr(descripcion, "_permitido", lambda s, u: True)
     h = {"a": {"id": "a", "url": "https://x/1", "titulo": "Tecnólogo Médico", "afinidad": 2},
-         "b": {"id": "b", "url": "https://x/2", "titulo": "Otro", "afinidad": 2, "descripcion_intento": "ya"}}
+         "b": {"id": "b", "url": "https://x/2", "titulo": "Otro", "afinidad": 2, "descripcion": "ya leída"}}
     res = descripcion.enriquecer(None, h, ["a"], cfg["_prioritario_desc"], "2026-11-01T12:00:00+00:00")
     assert res["subieron_a_prioritario"] == 1 and h["a"]["afinidad"] == 3
     assert "Resonancia" in h["a"]["descripcion"]
     assert (h["a"]["renta"], h["a"]["jornada"], h["a"]["contrato"]) == ("$1.800.000", "Jornada completa", "Indefinido")
-    assert "descripcion" not in h["b"]  # cada aviso se intenta una sola vez
+    assert h["b"]["descripcion"] == "ya leída"  # un aviso ya leído no se vuelve a bajar
 
 
 def test_descripcion_respeta_robots(monkeypatch, cfg):
