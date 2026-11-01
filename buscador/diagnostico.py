@@ -1,6 +1,6 @@
-"""Diagnóstico de orden y paginación: ¿cómo obtener los avisos MÁS RECIENTES de cada sitio?
+"""Diagnóstico: BNE (SENCE), RSS de Chiletrabajos y lectura de descripciones completas.
 
-Uso:  python -m buscador.diagnostico "tecnologo medico"
+Uso:  python -m buscador.diagnostico
 Escribe debug/diagnostico.json. Respeta el robots.txt de cada sitio: una dirección no
 permitida se informa y no se consulta.
 """
@@ -11,16 +11,15 @@ import re
 import sys
 import time
 from pathlib import Path
-from urllib.parse import quote, quote_plus, urljoin, urlsplit
+from urllib.parse import urljoin, urlsplit
 from urllib.robotparser import RobotFileParser
 
-from bs4 import BeautifulSoup
-
-from .comun import USER_AGENT, limpio, sesion
+from .comun import USER_AGENT, sesion
 
 RAIZ = Path(__file__).resolve().parent.parent
 OUT = RAIZ / "debug"
 _robots: dict[str, RobotFileParser] = {}
+_robots_txt: dict[str, str] = {}
 
 
 def permitido(s, url: str) -> bool:
@@ -30,9 +29,12 @@ def permitido(s, url: str) -> bool:
         rp = RobotFileParser()
         try:
             r = s.get(base + "/robots.txt", timeout=20)
-            rp.parse(r.text.splitlines() if r.ok else [])
-        except Exception:
-            rp.parse([])
+            txt = r.text if r.ok else ""
+        except Exception as e:
+            txt = ""
+            _robots_txt[base] = f"error: {e!r}"[:200]
+        _robots_txt.setdefault(base, txt[:2500])
+        rp.parse(txt.splitlines())
         _robots[base] = rp
     return _robots[base].can_fetch(USER_AGENT, url)
 
@@ -48,149 +50,95 @@ def traer(s, url: str, **kw):
         return None, repr(e)[:200]
 
 
-def computrabajo(s, palabra, inf):
-    base = "https://cl.computrabajo.com"
-    slug = re.sub(r"[^a-z0-9]+", "-", palabra.lower()).strip("-")
-    urls = {
-        "busqueda": f"{base}/ofertas-de-trabajo/?q={quote_plus(palabra)}",
-        "busqueda_p2": f"{base}/ofertas-de-trabajo/?q={quote_plus(palabra)}&p=2",
-        "listado": f"{base}/trabajo-de-{slug}",
-        "listado_p2": f"{base}/trabajo-de-{slug}?p=2",
-        "orden_fecha": f"{base}/ofertas-de-trabajo/?q={quote_plus(palabra)}&by=publicationtime",
-    }
+def rss_chiletrabajos(s, inf):
+    import xml.etree.ElementTree as ET
+
     out = {}
-    for k, u in urls.items():
+    for u in ("https://www.chiletrabajos.cl/rss.xml", "https://www.chiletrabajos.cl/rss.xml?2=tecnologo+medico"):
         r, st = traer(s, u)
         d = {"url": u, "status": st}
         if r is not None and r.ok:
-            soup = BeautifulSoup(r.text, "html.parser")
-            arts = soup.select("article.box_offer, article[data-id]")
-            d["n"] = len(arts)
-            d["fechas"] = [limpio((a.select_one("p.fs13, p.fc_aux") or a).get_text(" "))[:30] for a in arts][:20]
-            d["titulos"] = [limpio((a.select_one("h2 a") or a).get_text(" "))[:50] for a in arts][:5]
-            d["enlaces_orden"] = sorted({a["href"] for a in soup.select("a[href]") if re.search(r"by=|orden|sort", a["href"])})[:10]
-            d["total_texto"] = limpio((soup.select_one("h1") or soup).get_text(" "))[:120]
-        out[k] = d
-    inf["computrabajo"] = out
-
-
-def chiletrabajos(s, palabra, inf):
-    base = "https://www.chiletrabajos.cl"
-    r, st = traer(s, f"{base}/encuentra-un-empleo")
-    form = {}
-    if r is not None and r.ok:
-        soup = BeautifulSoup(r.text, "html.parser")
-        for f in soup.select("form"):
-            campos = []
-            for c in f.select("input[name], select[name]"):
-                ops = [(o.get("value"), limpio(o.get_text(" "))) for o in c.select("option")][:12]
-                campos.append({"name": c.get("name"), "tipo": c.name, "valor": c.get("value"), "opciones": ops})
-            if campos:
-                form[f.get("action") or f"form{len(form)}"] = campos
-        form["_enlaces_orden"] = sorted({a["href"] for a in soup.select("a[href]")
-                                         if re.search(r"orden|order|sort|fecha", a["href"], re.I)})[:15]
-    inf["chiletrabajos_formulario"] = form
-    pruebas = {
-        "actual": f"{base}/encuentra-un-empleo?2={quote_plus(palabra)}&action=search",
-        "p2": f"{base}/encuentra-un-empleo/30?2={quote_plus(palabra)}&action=search",
-    }
-    for o in form.get("_enlaces_orden", [])[:3]:
-        pruebas["enlace:" + o[:60]] = urljoin(base, o) + ("&" if "?" in o else "?") + f"2={quote_plus(palabra)}"
-    out = {}
-    for k, u in pruebas.items():
-        r, st = traer(s, u)
-        d = {"url": u, "status": st}
-        if r is not None and r.ok:
-            soup = BeautifulSoup(r.text, "html.parser")
-            items = soup.select(".job-item")
-            d["n"] = len(items)
-            d["fechas"] = [limpio((i.select_one(".date, h4") or i).get_text(" "))[:40] for i in items][:20]
-            d["titulos"] = [limpio((i.select_one("h2 a, .title a") or i).get_text(" "))[:50] for i in items][:5]
-            if items:
-                d["html_item"] = str(items[0])[:1500]
-        out[k] = d
-    inf["chiletrabajos"] = out
-
-
-def trabajando(s, palabra, inf):
-    base = "https://www.trabajando.cl"
-    cab = {"Accept": "application/json"}
-    q = quote(palabra)
-    variantes = {
-        "actual": f"palabraClave={q}",
-        "pagina2": f"palabraClave={q}&pagina=2",
-        "page2": f"palabraClave={q}&page=2",
-        "orden_fecha": f"palabraClave={q}&orden=FECHA_PUBLICACION",
-        "ordenamiento": f"palabraClave={q}&ordenamiento=fecha",
-        "sort": f"palabraClave={q}&sort=fecha",
-        "estado_cargado": f"palabraClave={q}&estado=CARGADO",
-    }
-    out = {}
-    for k, v in variantes.items():
-        r, st = traer(s, f"{base}/api/searchjob?{v}", headers=cab)
-        d = {"params": v, "status": st}
-        if r is not None and r.ok:
+            d["tipo"] = r.headers.get("content-type")
             try:
-                j = r.json()
-                d["claves"] = list(j.keys())[:30] if isinstance(j, dict) else type(j).__name__
-                d["escalares"] = {kk: vv for kk, vv in j.items() if not isinstance(vv, (list, dict))} if isinstance(j, dict) else {}
-                of = j.get("ofertas") or []
-                d["n"] = len(of)
-                d["ids"] = [o.get("idOferta") for o in of][:20]
-                d["fechas"] = [o.get("fechaPublicacion") or o.get("fecha") for o in of][:20]
-                if of:
-                    d["claves_oferta"] = list(of[0].keys())
-            except ValueError:
-                d["inicio"] = r.text[:300]
-        out[k] = d
-    r, st = traer(s, f"{base}/trabajo-empleo/{q}")
-    if r is not None and r.ok:
-        scripts = re.findall(r'<script[^>]+src="([^"]+)"', r.text)[:25]
-        hallado = []
-        for src in scripts:
+                root = ET.fromstring(r.content)
+                items = root.findall(".//item")
+                d["n"] = len(items)
+                d["items"] = [{c.tag: (c.text or "")[:160] for c in it} for it in items[:5]]
+                d["fechas"] = [(it.findtext("pubDate") or "")[:40] for it in items][:30]
+                d["tm"] = [it.findtext("title") for it in items if re.search(r"tecn[oó]logo", it.findtext("title") or "", re.I)][:15]
+            except ET.ParseError as e:
+                d["inicio"] = r.text[:500]
+                d["error_xml"] = str(e)
+        out[u] = d
+    inf["chiletrabajos_rss"] = out
+
+
+def bne(s, inf):
+    out = {}
+    textos = []
+    for u in ("https://www.bne.cl/", "https://www.bne.cl/ofertas", "https://www.bne.gob.cl/ofertas",
+              "https://www.bne.cl/ofertas?textoLibre=tecnologo+medico", "https://www.bne.cl/ofertas/buscar?q=tecnologo+medico"):
+        r, st = traer(s, u, allow_redirects=True)
+        d = {"url": u, "status": st}
+        if r is not None:
+            d["final"] = r.url
+            d["tipo"] = r.headers.get("content-type")
+            d["largo"] = len(r.text)
+            d["titulo"] = (re.search(r"<title>(.*?)</title>", r.text, re.S | re.I) or [None, ""])[1][:120]
+            d["enlaces_oferta"] = sorted(set(re.findall(r'href="([^"]*oferta[^"]*)"', r.text, re.I)))[:15]
+            d["formularios"] = re.findall(r"<form[^>]*>", r.text, re.I)[:5]
+            d["inputs"] = re.findall(r"<(?:input|select)[^>]+name=\"([^\"]+)\"", r.text, re.I)[:30]
+            textos.append((r.url, r.text))
+        out[u] = d
+    rutas = set()
+    for base, html in textos:
+        for src in re.findall(r'<script[^>]+src="([^"]+)"', html)[:25]:
             try:
                 js = s.get(urljoin(base, src), timeout=25).text
             except Exception:
                 continue
-            for m in re.finditer(r"searchjob", js):
-                hallado.append(js[max(0, m.start() - 400): m.end() + 600])
-        out["_contexto_js"] = hallado[:4]
-    inf["trabajando"] = out
+            for m in re.findall(r'["\'`]((?:https?://[^"\'`\s]*)?/(?:api|ws|servicios?|rest)/[^"\'`\s]{2,140})["\'`]', js):
+                rutas.add(m)
+            for m in re.finditer(r"ofertas?", js):
+                pass
+    out["_rutas_js"] = sorted(rutas)[:80]
+    inf["bne"] = out
 
 
-def laborum(s, palabra, inf):
-    base = "https://www.laborum.cl"
-    slug = quote(re.sub(r"\s+", "-", palabra.strip().lower()))
-    traer(s, f"{base}/empleos-busqueda-{slug}.html")
+def descripciones(s, inf):
+    import trafilatura
+
+    avisos = json.loads((RAIZ / "docs/data/avisos.json").read_text(encoding="utf-8")).get("avisos", [])
+    por_sitio: dict[str, list] = {}
+    for a in avisos:
+        por_sitio.setdefault(a["sitio"], []).append(a["url"])
+    por_sitio.setdefault("linkedin", []).append("https://cl.linkedin.com/jobs/view/tecnologo-medico-4300000000")
     out = {}
-    for orden in ("RECIENTES", "RELEVANTES"):
-        try:
-            time.sleep(1.5)
-            r = s.post(f"{base}/api/avisos/searchV2?pageSize=40&page=0&sort={orden}",
-                       json={"filtros": [], "busquedaExtendida": False, "tipoDetalle": "full", "withHome": False, "query": palabra},
-                       headers={"Accept": "application/json", "Content-Type": "application/json", "Origin": base,
-                                "Referer": f"{base}/empleos-busqueda-{slug}.html", "x-site-id": "BMCL"}, timeout=30)
-            j = r.json()
-            out[orden] = {"status": r.status_code, "total": j.get("total"),
-                          "fechas": [a.get("fechaPublicacion") for a in j.get("content") or []][:20]}
-        except Exception as e:
-            out[orden] = {"error": repr(e)[:200]}
-    inf["laborum"] = out
+    for sitio, urls in por_sitio.items():
+        for u in urls[:2]:
+            r, st = traer(s, u)
+            d = {"url": u, "status": st}
+            if r is not None and r.ok:
+                txt = trafilatura.extract(r.text, include_comments=False, include_tables=True, favor_recall=True) or ""
+                d["largo"] = len(txt)
+                d["inicio"] = txt[:500]
+                d["json_ld"] = "JobPosting" in r.text
+            out.setdefault(sitio, []).append(d)
+    inf["descripciones"] = out
 
 
 def main() -> None:
-    palabra = sys.argv[1] if len(sys.argv) > 1 else "tecnologo medico"
     OUT.mkdir(exist_ok=True)
-    inf: dict = {"palabra": palabra}
+    inf: dict = {}
     s = sesion()
-    for f in (computrabajo, chiletrabajos, trabajando, laborum):
+    for f in (rss_chiletrabajos, bne, descripciones):
         try:
-            f(s, palabra, inf)
+            f(s, inf)
         except Exception as e:
             inf[f.__name__] = {"error": repr(e)[:300]}
-    inf["robots"] = {b: "leído" for b in _robots}
+    inf["robots"] = _robots_txt
     (OUT / "diagnostico.json").write_text(json.dumps(inf, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(json.dumps(inf, ensure_ascii=False)[:4000])
+    print(json.dumps(inf, ensure_ascii=False)[:3000])
 
 
 if __name__ == "__main__":
