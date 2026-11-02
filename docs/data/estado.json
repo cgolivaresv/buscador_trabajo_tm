@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-02T19:58:37+00:00",
+ "ultimo_chequeo": "2026-11-02T20:52:50+00:00",
  "nuevos": 0,
  "total": 35,
  "palabras_clave": [
@@ -97,13 +97,13 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 219,
+   "resultados": 221,
    "errores": [],
    "descartados": {
     "antiguedad": 6,
     "perfil": 18,
-    "zona": 10,
-    "exclusion": 18
+    "exclusion": 18,
+    "zona": 10
    },
    "muestra": [
     {
@@ -115,6 +115,11 @@
      "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
      "ubicacion": "Temuco",
      "motivo": "perfil"
+    },
+    {
+     "titulo": "Tens Imagen",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
     },
     {
      "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) – Centro…",
@@ -160,11 +165,6 @@
      "titulo": "Tecnólogo/a Médico/a – Medicina Transfusional –…",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a en Imagenología y Física…",
-     "ubicacion": "Puerto aysén",
-     "motivo": "zona"
     }
    ]
   },
@@ -173,11 +173,21 @@
    "resultados": 103,
    "errores": [],
    "descartados": {
-    "zona": 11,
     "perfil": 24,
+    "zona": 11,
     "exclusion": 10
    },
    "muestra": [
+    {
+     "titulo": "Coordinador de Calidad/Gestión de eventos - Control Calidad/Seguridad Terapéutica",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Intern de Finanzas - Alumnos/as regulares de último(s) año(s) de carrera",
+     "ubicacion": "Las Condes, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Químico Farmacéutico - La Calera",
      "ubicacion": "Calera, Valparaíso",
@@ -227,31 +237,21 @@
      "titulo": "Enfermero(a) Clínico(a) - Urgencias",
      "ubicacion": "La Florida, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Jefe/a de Operaciones",
-     "ubicacion": "Iquique, Tarapacá",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Coordinador/a Unidad de Agendas Médicas",
-     "ubicacion": "Independencia, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 2,
+   "resultados": 3,
    "errores": [],
    "descartados": {
-    "zona": 1
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Jefe de Tienda",
-     "ubicacion": "Iquique, TA, Chile",
-     "motivo": "zona"
+     "titulo": "Consultor Maker Fullstack",
+     "ubicacion": "Las Condes, RM, Chile",
+     "motivo": "perfil"
     }
    ]
   },
