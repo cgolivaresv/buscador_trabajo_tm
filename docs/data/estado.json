@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-02T15:02:24+00:00",
+ "ultimo_chequeo": "2026-11-02T16:09:41+00:00",
  "nuevos": 0,
  "total": 34,
  "palabras_clave": [
@@ -97,74 +97,74 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 109,
+   "resultados": 218,
    "errores": [],
    "descartados": {
-    "antiguedad": 20,
+    "antiguedad": 6,
+    "perfil": 14,
     "zona": 13,
-    "exclusion": 16,
-    "perfil": 2
+    "exclusion": 18
    },
    "muestra": [
-    {
-     "titulo": "Tecnólogo Médico Imagenología - Rancagua",
-     "ubicacion": "Rancagua",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
-     "ubicacion": "Curicó",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Postulación Tecnólogo(a) Médico(a) ? Copiapó",
-     "ubicacion": "Copiapó",
-     "motivo": "zona"
-    },
     {
      "titulo": "Tecnologo Medico",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo médico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
+     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
+     "ubicacion": "Temuco",
+     "motivo": "perfil"
     },
     {
-     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
-     "ubicacion": "La Serena",
+     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) – Centro…",
+     "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Colina",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Linares",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
+     "ubicacion": "Punta arenas",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS…",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TECNOLOGO MEDICO KARUN. PUERTO VARAS",
-     "ubicacion": "Puerto Montt",
+     "titulo": "TENS experiencia laboratorio",
+     "ubicacion": "Antofagasta",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TECNÓLOGO(A) MÉDICO(A) Unidad de Imageneología Hospital…",
+     "ubicacion": "Puerto aysén",
      "motivo": "zona"
     },
     {
-     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
+     "titulo": "Tecnólogo/a Médico/a – Medicina Transfusional –…",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico/a en Imagenología y Física…",
+     "ubicacion": "Puerto aysén",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio…",
      "ubicacion": "Talagante",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a en Oftalmología ? Óptica",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TECNÓLOGO MÉDICO IMAGENOLOGÍA Y FÍSICA MÉDICA",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
     }
    ]
   },
@@ -173,11 +173,21 @@
    "resultados": 103,
    "errores": [],
    "descartados": {
-    "zona": 12,
-    "perfil": 21,
-    "exclusion": 13
+    "perfil": 22,
+    "zona": 13,
+    "exclusion": 11
    },
    "muestra": [
+    {
+     "titulo": "Técnico de Instalación y Mantenimiento GPS",
+     "ubicacion": "Santiago, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Enfermero(a) Clínico(a) - Urgencias",
+     "ubicacion": "La Florida, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Jefe/a de Operaciones",
      "ubicacion": "Iquique, Tarapacá",
@@ -227,31 +237,21 @@
      "titulo": "Analista de Remuneraciones",
      "ubicacion": "Las Condes, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Técnico Soporte Microinformática",
-     "ubicacion": "Santiago, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Reemplazo Jefe Turno Planta Potasa - El Salar",
-     "ubicacion": "Antofagasta, Antofagasta",
-     "motivo": "zona"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 1,
+   "resultados": 2,
    "errores": [],
    "descartados": {
-    "perfil": 1
+    "zona": 1
    },
    "muestra": [
     {
-     "titulo": "Desarrollador iOS Nativo Full time",
-     "ubicacion": "Santiago de Chile, RM, Chile",
-     "motivo": "perfil"
+     "titulo": "Jefe de Tienda",
+     "ubicacion": "Iquique, TA, Chile",
+     "motivo": "zona"
     }
    ]
   },
