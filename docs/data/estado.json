@@ -1,7 +1,7 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-02T19:04:04+00:00",
- "nuevos": 1,
+ "ultimo_chequeo": "2026-11-02T19:58:37+00:00",
+ "nuevos": 0,
  "total": 35,
  "palabras_clave": [
   "tecnólogo médico",
@@ -25,7 +25,7 @@
   },
   "computrabajo": {
    "nombre": "Computrabajo",
-   "resultados": 188,
+   "resultados": 208,
    "errores": [],
    "descartados": {
     "zona": 27,
@@ -97,74 +97,74 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 109,
+   "resultados": 219,
    "errores": [],
    "descartados": {
-    "antiguedad": 20,
-    "zona": 13,
-    "exclusion": 16,
-    "perfil": 2
+    "antiguedad": 6,
+    "perfil": 18,
+    "zona": 10,
+    "exclusion": 18
    },
    "muestra": [
-    {
-     "titulo": "Tecnólogo Médico Imagenología - Rancagua",
-     "ubicacion": "Rancagua",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
-     "ubicacion": "Curicó",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Postulación Tecnólogo(a) Médico(a) ? Copiapó",
-     "ubicacion": "Copiapó",
-     "motivo": "zona"
-    },
     {
      "titulo": "Tecnologo Medico",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo médico",
+     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
+     "ubicacion": "Temuco",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) – Centro…",
+     "ubicacion": "Valparaíso",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Enfermera Calidad",
+     "ubicacion": "Valparaíso",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Colina",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Linares",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
+     "ubicacion": "Punta arenas",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS…",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TENS experiencia laboratorio",
+     "ubicacion": "Antofagasta",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TECNÓLOGO(A) MÉDICO(A) Unidad de Imageneología Hospital…",
+     "ubicacion": "Puerto aysén",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico/a – Medicina Transfusional –…",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
-     "ubicacion": "La Serena",
+     "titulo": "Tecnólogo/a Médico/a en Imagenología y Física…",
+     "ubicacion": "Puerto aysén",
      "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TECNOLOGO MEDICO KARUN. PUERTO VARAS",
-     "ubicacion": "Puerto Montt",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
-     "ubicacion": "Talagante",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a en Oftalmología ? Óptica",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TECNÓLOGO MÉDICO IMAGENOLOGÍA Y FÍSICA MÉDICA",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
     }
    ]
   },
@@ -173,11 +173,41 @@
    "resultados": 103,
    "errores": [],
    "descartados": {
+    "zona": 11,
     "perfil": 24,
-    "zona": 10,
-    "exclusion": 11
+    "exclusion": 10
    },
    "muestra": [
+    {
+     "titulo": "Químico Farmacéutico - La Calera",
+     "ubicacion": "Calera, Valparaíso",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Enfermera (O) Médico Quirúrgico (diurna)",
+     "ubicacion": "La Florida, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Coordinador/a de Laboratorio Clínico Hematología, Bioquímica y Urgencias (Tecnólogo Médico)",
+     "ubicacion": "Santiago, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Coordinador(a) de Laboratorio Clínico Microbiología y Biología Molecular (Tecnólogo Médico)",
+     "ubicacion": "Santiago, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tens Diálisis",
+     "ubicacion": "Recoleta, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Trabajador/a Social Reemplazo Pre y Postnatal",
+     "ubicacion": "Santiago, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Analista de Subsidios",
      "ubicacion": "Las Condes, Metropolitana de Santiago",
@@ -207,45 +237,23 @@
      "titulo": "Coordinador/a Unidad de Agendas Médicas",
      "ubicacion": "Independencia, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "KAM Simulación",
-     "ubicacion": "Quilicura, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Analista Control de Gestión -RedSalud CChC",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Enfermera(o) UTI - RedSalud Santiago",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo Licencia Médica) - Punta Arenas",
-     "ubicacion": "Punta Arenas, Magallanes y Antártica Chilena",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
-     "ubicacion": "Linares, Maule",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología - Colina",
-     "ubicacion": "Colina, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 0,
+   "resultados": 2,
    "errores": [],
-   "descartados": {},
-   "muestra": []
+   "descartados": {
+    "zona": 1
+   },
+   "muestra": [
+    {
+     "titulo": "Jefe de Tienda",
+     "ubicacion": "Iquique, TA, Chile",
+     "motivo": "zona"
+    }
+   ]
   },
   "laborum": {
    "nombre": "Laborum",
@@ -369,7 +377,7 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 1,
+  "leidas": 0,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
