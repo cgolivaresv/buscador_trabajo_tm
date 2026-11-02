@@ -1,7 +1,7 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-02T13:18:20+00:00",
- "nuevos": 1,
+ "ultimo_chequeo": "2026-11-02T15:02:24+00:00",
+ "nuevos": 0,
  "total": 34,
  "palabras_clave": [
   "tecnólogo médico",
@@ -97,74 +97,74 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 218,
+   "resultados": 109,
    "errores": [],
    "descartados": {
-    "antiguedad": 6,
-    "perfil": 17,
-    "exclusion": 18,
-    "zona": 9
+    "antiguedad": 20,
+    "zona": 13,
+    "exclusion": 16,
+    "perfil": 2
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogo Médico Imagenología - Rancagua",
+     "ubicacion": "Rancagua",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Postulación Tecnólogo(a) Médico(a) ? Copiapó",
+     "ubicacion": "Copiapó",
+     "motivo": "zona"
+    },
     {
      "titulo": "Tecnologo Medico",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
     },
     {
-     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
-     "ubicacion": "Temuco",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Colina",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
-     "ubicacion": "Punta arenas",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS…",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TENS experiencia laboratorio",
-     "ubicacion": "Antofagasta",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TECNÓLOGO(A) MÉDICO(A) Unidad de Imageneología Hospital…",
-     "ubicacion": "Puerto aysén",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a – Medicina Transfusional –…",
+     "titulo": "Tecnólogo médico",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo/a Médico/a en Imagenología y Física…",
-     "ubicacion": "Puerto aysén",
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
      "motivo": "zona"
     },
     {
-     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio…",
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO KARUN. PUERTO VARAS",
+     "ubicacion": "Puerto Montt",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
      "ubicacion": "Talagante",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Analista Microbiología - Pudahuel",
+     "titulo": "Tecnólogo/a Médico/a en Oftalmología ? Óptica",
      "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TECNÓLOGO MÉDICO IMAGENOLOGÍA Y FÍSICA MÉDICA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
     }
    ]
   },
@@ -173,11 +173,21 @@
    "resultados": 103,
    "errores": [],
    "descartados": {
-    "perfil": 23,
-    "exclusion": 13,
-    "zona": 10
+    "zona": 12,
+    "perfil": 21,
+    "exclusion": 13
    },
    "muestra": [
+    {
+     "titulo": "Jefe/a de Operaciones",
+     "ubicacion": "Iquique, Tarapacá",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Coordinador/a Unidad de Agendas Médicas",
+     "ubicacion": "Independencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "KAM Simulación",
      "ubicacion": "Quilicura, Metropolitana de Santiago",
@@ -227,16 +237,6 @@
      "titulo": "Reemplazo Jefe Turno Planta Potasa - El Salar",
      "ubicacion": "Antofagasta, Antofagasta",
      "motivo": "zona"
-    },
-    {
-     "titulo": "TONS - Centro Médicos y Dentales RedSalud RM",
-     "ubicacion": "Santiago, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Técnico en enfermería - Urgencias",
-     "ubicacion": "La Florida, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
@@ -257,10 +257,10 @@
   },
   "laborum": {
    "nombre": "Laborum",
-   "resultados": 66,
+   "resultados": 64,
    "errores": [],
    "descartados": {
-    "exclusion": 7,
+    "exclusion": 6,
     "antiguedad": 9,
     "zona": 4
    },
@@ -291,11 +291,6 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico- Banco de Sangre",
-     "ubicacion": "Providencia, Región Metropolitana",
-     "motivo": "exclusion"
-    },
-    {
      "titulo": "Tecnólogo Médico - Anatomía Patológica",
      "ubicacion": "Santiago de Chile, Región Metropolitana",
      "motivo": "antiguedad"
@@ -323,6 +318,11 @@
     {
      "titulo": "tecnologo medico",
      "ubicacion": "Santiago de Chile, Región Metropolitana",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Ejecutivo Comercial Junior (Tecnólogo Médico o Bioquímico)",
+     "ubicacion": "Ñuñoa, Región Metropolitana",
      "motivo": "antiguedad"
     }
    ]
@@ -377,10 +377,10 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 1,
+  "leidas": 0,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-02T11:08:14+00:00"
+ "rss_chiletrabajos": "2026-11-02T15:02:24+00:00"
 }
