@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-02T21:50:49+00:00",
+ "ultimo_chequeo": "2026-11-02T22:50:54+00:00",
  "nuevos": 0,
  "total": 35,
  "palabras_clave": [
@@ -28,9 +28,9 @@
    "resultados": 208,
    "errores": [],
    "descartados": {
-    "zona": 27,
+    "zona": 26,
     "exclusion": 13,
-    "perfil": 20
+    "perfil": 21
    },
    "muestra": [
     {
@@ -242,15 +242,15 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 3,
+   "resultados": 6,
    "errores": [],
    "descartados": {
     "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Consultor Maker Fullstack",
-     "ubicacion": "Las Condes, RM, Chile",
+     "titulo": "Ejecutivo/a de Presupuesto VSC Reemplazo Vacaciones - Hospital del Trabajador Achs Salud",
+     "ubicacion": "Providencia, RM, Chile",
      "motivo": "perfil"
     }
    ]
