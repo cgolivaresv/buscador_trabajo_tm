@@ -1,8 +1,8 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-02T12:00:22+00:00",
- "nuevos": 0,
- "total": 33,
+ "ultimo_chequeo": "2026-11-02T13:18:20+00:00",
+ "nuevos": 1,
+ "total": 34,
  "palabras_clave": [
   "tecnólogo médico",
   "tecnólogo médico resonancia",
@@ -28,18 +28,23 @@
    "resultados": 210,
    "errores": [],
    "descartados": {
-    "zona": 28,
+    "zona": 27,
     "exclusion": 13,
-    "perfil": 20
+    "perfil": 21
    },
    "muestra": [
+    {
+     "titulo": "Tecnologo/a medico/a con experiencia en Resonancia",
+     "ubicacion": "Quillota, Valparaíso",
+     "motivo": "zona"
+    },
     {
      "titulo": "Tecnologo/a medico/a con experiencia en resonancia",
      "ubicacion": "Iquique, Tarapacá",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnologo/a medico/a con experiencia en Resonancia",
+     "titulo": "Tecnologo/a medico/a RX / MX",
      "ubicacion": "Quillota, Valparaíso",
      "motivo": "zona"
     },
@@ -87,11 +92,6 @@
      "titulo": "Técnico de Nivel Superior en Odontología",
      "ubicacion": "Santiago - Vitacura, R.Metropolitana",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnólogo Médico (a), Proyecto Antofagasta 7x7",
-     "ubicacion": "Antofagasta, Antofagasta",
-     "motivo": "zona"
     }
    ]
   },
@@ -101,9 +101,9 @@
    "errores": [],
    "descartados": {
     "antiguedad": 6,
-    "perfil": 18,
+    "perfil": 17,
     "exclusion": 18,
-    "zona": 8
+    "zona": 9
    },
    "muestra": [
     {
@@ -257,7 +257,7 @@
   },
   "laborum": {
    "nombre": "Laborum",
-   "resultados": 60,
+   "resultados": 66,
    "errores": [],
    "descartados": {
     "exclusion": 7,
@@ -377,7 +377,7 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 0,
+  "leidas": 1,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
