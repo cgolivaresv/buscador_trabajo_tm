@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-02T11:08:14+00:00",
+ "ultimo_chequeo": "2026-11-02T12:00:22+00:00",
  "nuevos": 0,
  "total": 33,
  "palabras_clave": [
@@ -25,14 +25,24 @@
   },
   "computrabajo": {
    "nombre": "Computrabajo",
-   "resultados": 186,
+   "resultados": 210,
    "errores": [],
    "descartados": {
-    "exclusion": 15,
-    "zona": 27,
+    "zona": 28,
+    "exclusion": 13,
     "perfil": 20
    },
    "muestra": [
+    {
+     "titulo": "Tecnologo/a medico/a con experiencia en resonancia",
+     "ubicacion": "Iquique, Tarapacá",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnologo/a medico/a con experiencia en Resonancia",
+     "ubicacion": "Quillota, Valparaíso",
+     "motivo": "zona"
+    },
     {
      "titulo": "Técnico en Enfermería Nivel Superior Unidad Toma de Muestras Viña del Mar",
      "ubicacion": "Viña del Mar, Valparaíso",
@@ -82,89 +92,79 @@
      "titulo": "Tecnólogo Médico (a), Proyecto Antofagasta 7x7",
      "ubicacion": "Antofagasta, Antofagasta",
      "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogos(as) Médicos Volantes",
-     "ubicacion": "Santiago Centro, R.Metropolitana",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnólogo Médico Radiología",
-     "ubicacion": "Antofagasta, Antofagasta",
-     "motivo": "zona"
     }
    ]
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 109,
+   "resultados": 218,
    "errores": [],
    "descartados": {
-    "antiguedad": 20,
-    "zona": 13,
-    "exclusion": 16,
-    "perfil": 2
+    "antiguedad": 6,
+    "perfil": 18,
+    "exclusion": 18,
+    "zona": 8
    },
    "muestra": [
-    {
-     "titulo": "Tecnólogo Médico Imagenología - Rancagua",
-     "ubicacion": "Rancagua",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
-     "ubicacion": "Curicó",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Postulación Tecnólogo(a) Médico(a) ? Copiapó",
-     "ubicacion": "Copiapó",
-     "motivo": "zona"
-    },
     {
      "titulo": "Tecnologo Medico",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo médico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
+     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
+     "ubicacion": "Temuco",
+     "motivo": "perfil"
     },
     {
-     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
-     "ubicacion": "La Serena",
-     "motivo": "zona"
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Colina",
+     "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Linares",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
+     "ubicacion": "Punta arenas",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS…",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TECNOLOGO MEDICO KARUN. PUERTO VARAS",
-     "ubicacion": "Puerto Montt",
+     "titulo": "TENS experiencia laboratorio",
+     "ubicacion": "Antofagasta",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TECNÓLOGO(A) MÉDICO(A) Unidad de Imageneología Hospital…",
+     "ubicacion": "Puerto aysén",
      "motivo": "zona"
     },
     {
-     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
+     "titulo": "Tecnólogo/a Médico/a – Medicina Transfusional –…",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico/a en Imagenología y Física…",
+     "ubicacion": "Puerto aysén",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio…",
      "ubicacion": "Talagante",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo/a Médico/a en Oftalmología ? Óptica",
+     "titulo": "Analista Microbiología - Pudahuel",
      "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TECNÓLOGO MÉDICO IMAGENOLOGÍA Y FÍSICA MÉDICA",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
+     "motivo": "perfil"
     }
    ]
   },
