@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-02T20:52:50+00:00",
+ "ultimo_chequeo": "2026-11-02T21:50:49+00:00",
  "nuevos": 0,
  "total": 35,
  "palabras_clave": [
@@ -101,9 +101,9 @@
    "errores": [],
    "descartados": {
     "antiguedad": 6,
-    "perfil": 18,
-    "exclusion": 18,
-    "zona": 10
+    "perfil": 16,
+    "exclusion": 19,
+    "zona": 11
    },
    "muestra": [
     {
@@ -257,14 +257,19 @@
   },
   "laborum": {
    "nombre": "Laborum",
-   "resultados": 64,
+   "resultados": 66,
    "errores": [],
    "descartados": {
-    "exclusion": 6,
+    "exclusion": 7,
     "antiguedad": 9,
     "zona": 4
    },
    "muestra": [
+    {
+     "titulo": "TECNÓLOGO/A MÉDICO/A DE LABORATORIO CLÍNICO Part-time y reemplazos",
+     "ubicacion": "Puerto Varas, Región X",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Tecnólogo Médico en Oftalmología Part Time 18 hrs. OPV Mall Alto Las Condes",
      "ubicacion": "Las Condes, Región Metropolitana",
@@ -318,11 +323,6 @@
     {
      "titulo": "tecnologo medico",
      "ubicacion": "Santiago de Chile, Región Metropolitana",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Ejecutivo Comercial Junior (Tecnólogo Médico o Bioquímico)",
-     "ubicacion": "Ñuñoa, Región Metropolitana",
      "motivo": "antiguedad"
     }
    ]
