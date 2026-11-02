@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-02T22:50:54+00:00",
+ "ultimo_chequeo": "2026-11-02T23:45:32+00:00",
  "nuevos": 0,
  "total": 35,
  "palabras_clave": [
@@ -97,72 +97,72 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 221,
+   "resultados": 109,
    "errores": [],
    "descartados": {
-    "antiguedad": 6,
-    "perfil": 16,
-    "exclusion": 19,
-    "zona": 11
+    "antiguedad": 20,
+    "zona": 13,
+    "exclusion": 16,
+    "perfil": 2
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogo Médico Imagenología - Rancagua",
+     "ubicacion": "Rancagua",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Postulación Tecnólogo(a) Médico(a) ? Copiapó",
+     "ubicacion": "Copiapó",
+     "motivo": "zona"
+    },
     {
      "titulo": "Tecnologo Medico",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
     },
     {
-     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
-     "ubicacion": "Temuco",
-     "motivo": "perfil"
+     "titulo": "Tecnólogo médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "Tens Imagen",
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) – Centro…",
-     "ubicacion": "Valparaíso",
+     "titulo": "TECNOLOGO MEDICO KARUN. PUERTO VARAS",
+     "ubicacion": "Puerto Montt",
      "motivo": "zona"
     },
     {
-     "titulo": "Enfermera Calidad",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Colina",
+     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
+     "ubicacion": "Talagante",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
-     "ubicacion": "Punta arenas",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS…",
+     "titulo": "Tecnólogo/a Médico/a en Oftalmología ? Óptica",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TENS experiencia laboratorio",
-     "ubicacion": "Antofagasta",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TECNÓLOGO(A) MÉDICO(A) Unidad de Imageneología Hospital…",
-     "ubicacion": "Puerto aysén",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a – Medicina Transfusional –…",
+     "titulo": "TECNÓLOGO MÉDICO IMAGENOLOGÍA Y FÍSICA MÉDICA",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
     }
@@ -242,16 +242,16 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 6,
+   "resultados": 8,
    "errores": [],
    "descartados": {
-    "perfil": 1
+    "exclusion": 1
    },
    "muestra": [
     {
-     "titulo": "Ejecutivo/a de Presupuesto VSC Reemplazo Vacaciones - Hospital del Trabajador Achs Salud",
-     "ubicacion": "Providencia, RM, Chile",
-     "motivo": "perfil"
+     "titulo": "Coordinador/a de Laboratorio Clínico Hematología, Bioquímica y Urgencias (Tecnólogo Médico)",
+     "ubicacion": "Santiago de Chile, RM, Chile",
+     "motivo": "exclusion"
     }
    ]
   },
@@ -382,5 +382,5 @@
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-02T19:04:04+00:00"
+ "rss_chiletrabajos": "2026-11-02T23:45:32+00:00"
 }
