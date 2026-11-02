@@ -1,8 +1,8 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-02T18:03:20+00:00",
- "nuevos": 0,
- "total": 34,
+ "ultimo_chequeo": "2026-11-02T19:04:04+00:00",
+ "nuevos": 1,
+ "total": 35,
  "palabras_clave": [
   "tecnólogo médico",
   "tecnólogo médico resonancia",
@@ -25,12 +25,12 @@
   },
   "computrabajo": {
    "nombre": "Computrabajo",
-   "resultados": 210,
+   "resultados": 188,
    "errores": [],
    "descartados": {
     "zona": 27,
     "exclusion": 13,
-    "perfil": 21
+    "perfil": 20
    },
    "muestra": [
     {
@@ -97,74 +97,74 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 218,
+   "resultados": 109,
    "errores": [],
    "descartados": {
-    "antiguedad": 6,
-    "perfil": 17,
-    "zona": 9,
-    "exclusion": 19
+    "antiguedad": 20,
+    "zona": 13,
+    "exclusion": 16,
+    "perfil": 2
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogo Médico Imagenología - Rancagua",
+     "ubicacion": "Rancagua",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Postulación Tecnólogo(a) Médico(a) ? Copiapó",
+     "ubicacion": "Copiapó",
+     "motivo": "zona"
+    },
     {
      "titulo": "Tecnologo Medico",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
     },
     {
-     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
-     "ubicacion": "Temuco",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) – Centro…",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Colina",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
-     "ubicacion": "Punta arenas",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS…",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TENS experiencia laboratorio",
-     "ubicacion": "Antofagasta",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TECNÓLOGO(A) MÉDICO(A) Unidad de Imageneología Hospital…",
-     "ubicacion": "Puerto aysén",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a – Medicina Transfusional –…",
+     "titulo": "Tecnólogo médico",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo/a Médico/a en Imagenología y Física…",
-     "ubicacion": "Puerto aysén",
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
      "motivo": "zona"
     },
     {
-     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio…",
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO KARUN. PUERTO VARAS",
+     "ubicacion": "Puerto Montt",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
      "ubicacion": "Talagante",
      "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico/a en Oftalmología ? Óptica",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TECNÓLOGO MÉDICO IMAGENOLOGÍA Y FÍSICA MÉDICA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
     }
    ]
   },
@@ -173,7 +173,7 @@
    "resultados": 103,
    "errores": [],
    "descartados": {
-    "perfil": 25,
+    "perfil": 24,
     "zona": 10,
     "exclusion": 11
    },
@@ -242,18 +242,10 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 1,
+   "resultados": 0,
    "errores": [],
-   "descartados": {
-    "zona": 1
-   },
-   "muestra": [
-    {
-     "titulo": "Jefe de Tienda",
-     "ubicacion": "Iquique, TA, Chile",
-     "motivo": "zona"
-    }
-   ]
+   "descartados": {},
+   "muestra": []
   },
   "laborum": {
    "nombre": "Laborum",
@@ -377,10 +369,10 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 0,
+  "leidas": 1,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-02T15:02:24+00:00"
+ "rss_chiletrabajos": "2026-11-02T19:04:04+00:00"
 }
