@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-02T16:09:41+00:00",
+ "ultimo_chequeo": "2026-11-02T17:12:03+00:00",
  "nuevos": 0,
  "total": 34,
  "palabras_clave": [
@@ -25,7 +25,7 @@
   },
   "computrabajo": {
    "nombre": "Computrabajo",
-   "resultados": 210,
+   "resultados": 197,
    "errores": [],
    "descartados": {
     "zona": 27,
@@ -42,6 +42,11 @@
      "titulo": "Tecnologo/a medico/a con experiencia en resonancia",
      "ubicacion": "Iquique, Tarapacá",
      "motivo": "zona"
+    },
+    {
+     "titulo": "Técnico en Enfermería Nivel Superior Médico Quirúrgico",
+     "ubicacion": "Santiago Centro, R.Metropolitana",
+     "motivo": "exclusion"
     },
     {
      "titulo": "Tecnologo/a medico/a RX / MX",
@@ -87,11 +92,6 @@
      "titulo": "Tecnólogo Médico(a) Turno 7x7 Calama",
      "ubicacion": "Calama, Antofagasta",
      "motivo": "zona"
-    },
-    {
-     "titulo": "Técnico de Nivel Superior en Odontología",
-     "ubicacion": "Santiago - Vitacura, R.Metropolitana",
-     "motivo": "perfil"
     }
    ]
   },
@@ -179,6 +179,11 @@
    },
    "muestra": [
     {
+     "titulo": "Alumno en Práctica Control de gestión (finanzas)",
+     "ubicacion": "Recoleta, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
      "titulo": "Técnico de Instalación y Mantenimiento GPS",
      "ubicacion": "Santiago, Metropolitana de Santiago",
      "motivo": "perfil"
@@ -232,11 +237,6 @@
      "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
      "ubicacion": "Lo Barnechea, Metropolitana de Santiago",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Analista de Remuneraciones",
-     "ubicacion": "Las Condes, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
