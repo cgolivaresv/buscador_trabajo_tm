@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-01T23:42:17+00:00",
+ "ultimo_chequeo": "2026-11-02T01:16:03+00:00",
  "nuevos": 0,
  "total": 33,
  "palabras_clave": [
@@ -29,8 +29,8 @@
    "errores": [],
    "descartados": {
     "exclusion": 15,
-    "zona": 25,
-    "perfil": 22
+    "zona": 26,
+    "perfil": 21
    },
    "muestra": [
     {
@@ -45,11 +45,6 @@
     },
     {
      "titulo": "Tecnólogo/a Médico/a en Imagenología – Calama",
-     "ubicacion": "Calama, Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico(a) Turno 7x7 Calama",
      "ubicacion": "Calama, Antofagasta",
      "motivo": "zona"
     },
@@ -72,6 +67,11 @@
      "titulo": "Vendedor/a de Tecnología Full Time 5x2",
      "ubicacion": "Santiago - Providencia, R.Metropolitana",
      "motivo": "perfil"
+    },
+    {
+     "titulo": "Tecnólogo Médico(a) Turno 7x7 Calama",
+     "ubicacion": "Calama, Antofagasta",
+     "motivo": "zona"
     },
     {
      "titulo": "Técnico de Nivel Superior en Odontología",
@@ -117,6 +117,21 @@
      "motivo": "perfil"
     },
     {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Colina",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Linares",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
+     "ubicacion": "Punta arenas",
+     "motivo": "exclusion"
+    },
+    {
      "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS…",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
@@ -124,11 +139,6 @@
     {
      "titulo": "TENS experiencia laboratorio",
      "ubicacion": "Antofagasta",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Colina",
      "motivo": "exclusion"
     },
     {
@@ -152,19 +162,9 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
-     "motivo": "exclusion"
-    },
-    {
      "titulo": "Analista Microbiología - Pudahuel",
      "ubicacion": "Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico Óptica KARUN",
-     "ubicacion": "Temuco",
-     "motivo": "antiguedad"
     }
    ]
   },
@@ -173,11 +173,31 @@
    "resultados": 103,
    "errores": [],
    "descartados": {
-    "exclusion": 11,
-    "perfil": 23,
+    "perfil": 21,
+    "exclusion": 13,
     "zona": 12
    },
    "muestra": [
+    {
+     "titulo": "Enfermera(o) UTI - RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "TMO con mención en Oftalmología (Reemplazo Licencia Médica) - Punta Arenas",
+     "ubicacion": "Punta Arenas, Magallanes y Antártica Chilena",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
+     "ubicacion": "Linares, Maule",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología - Colina",
+     "ubicacion": "Colina, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
      "ubicacion": "Lo Barnechea, Metropolitana de Santiago",
@@ -217,26 +237,6 @@
      "titulo": "Especialista Senior en Sostenibilidad y Economía Circular, Modalidad Híbrida - Las Condes",
      "ubicacion": "Las Condes, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Diseñador/a",
-     "ubicacion": "Huechuraba, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Químico farmacéutico | Clínica RedSalud Valparaíso",
-     "ubicacion": "Valparaíso, Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Jefe/a de Personal Reemplazo Pre y Postnatal | Puerto Natales",
-     "ubicacion": "Natales, Magallanes y Antártica Chilena",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Técnico en Informática",
-     "ubicacion": "Huechuraba, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
@@ -257,13 +257,12 @@
   },
   "laborum": {
    "nombre": "Laborum",
-   "resultados": 62,
+   "resultados": 60,
    "errores": [],
    "descartados": {
     "exclusion": 7,
     "antiguedad": 9,
-    "zona": 4,
-    "perfil": 1
+    "zona": 4
    },
    "muestra": [
     {
