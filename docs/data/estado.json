@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-02T17:12:03+00:00",
+ "ultimo_chequeo": "2026-11-02T18:03:20+00:00",
  "nuevos": 0,
  "total": 34,
  "palabras_clave": [
@@ -25,7 +25,7 @@
   },
   "computrabajo": {
    "nombre": "Computrabajo",
-   "resultados": 197,
+   "resultados": 210,
    "errores": [],
    "descartados": {
     "zona": 27,
@@ -101,9 +101,9 @@
    "errores": [],
    "descartados": {
     "antiguedad": 6,
-    "perfil": 14,
-    "zona": 13,
-    "exclusion": 18
+    "perfil": 17,
+    "zona": 9,
+    "exclusion": 19
    },
    "muestra": [
     {
@@ -173,11 +173,16 @@
    "resultados": 103,
    "errores": [],
    "descartados": {
-    "perfil": 22,
-    "zona": 13,
+    "perfil": 25,
+    "zona": 10,
     "exclusion": 11
    },
    "muestra": [
+    {
+     "titulo": "Analista de Subsidios",
+     "ubicacion": "Las Condes, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Alumno en Práctica Control de gestión (finanzas)",
      "ubicacion": "Recoleta, Metropolitana de Santiago",
@@ -232,17 +237,12 @@
      "titulo": "Tecnólogo Médico con mención en Oftalmología - Colina",
      "ubicacion": "Colina, Metropolitana de Santiago",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
-     "ubicacion": "Lo Barnechea, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 2,
+   "resultados": 1,
    "errores": [],
    "descartados": {
     "zona": 1
