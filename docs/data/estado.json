@@ -1,7 +1,7 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-03T17:04:48+00:00",
- "nuevos": 1,
+ "ultimo_chequeo": "2026-11-03T17:57:16+00:00",
+ "nuevos": 0,
  "total": 38,
  "palabras_clave": [
   "tecnólogo médico",
@@ -29,8 +29,8 @@
    "errores": [],
    "descartados": {
     "exclusion": 15,
-    "zona": 27,
-    "perfil": 20
+    "zona": 26,
+    "perfil": 21
    },
    "muestra": [
     {
@@ -377,7 +377,7 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 1,
+  "leidas": 0,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
