@@ -1,8 +1,8 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-03T01:13:32+00:00",
- "nuevos": 0,
- "total": 35,
+ "ultimo_chequeo": "2026-11-03T11:01:52+00:00",
+ "nuevos": 1,
+ "total": 36,
  "palabras_clave": [
   "tecnólogo médico",
   "tecnólogo médico resonancia",
@@ -28,11 +28,16 @@
    "resultados": 208,
    "errores": [],
    "descartados": {
+    "exclusion": 14,
     "zona": 26,
-    "exclusion": 13,
     "perfil": 21
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogo(a) Médico en Oftalmología",
+     "ubicacion": "Antofagasta, Antofagasta",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Tecnologo/a medico/a con experiencia en Resonancia",
      "ubicacion": "Quillota, Valparaíso",
@@ -87,82 +92,77 @@
      "titulo": "Vendedor/a de Tecnología Full Time 5x2",
      "ubicacion": "Santiago - Providencia, R.Metropolitana",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnólogo Médico(a) Turno 7x7 Calama",
-     "ubicacion": "Calama, Antofagasta",
-     "motivo": "zona"
     }
    ]
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 221,
+   "resultados": 109,
    "errores": [],
    "descartados": {
-    "antiguedad": 6,
-    "perfil": 17,
-    "exclusion": 19,
-    "zona": 10
+    "antiguedad": 20,
+    "zona": 13,
+    "exclusion": 16,
+    "perfil": 2
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogo Médico Imagenología - Rancagua",
+     "ubicacion": "Rancagua",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Postulación Tecnólogo(a) Médico(a) ? Copiapó",
+     "ubicacion": "Copiapó",
+     "motivo": "zona"
+    },
     {
      "titulo": "Tecnologo Medico",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
     },
     {
-     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
-     "ubicacion": "Temuco",
-     "motivo": "perfil"
+     "titulo": "Tecnólogo médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "Tens Imagen",
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) – Centro…",
-     "ubicacion": "Valparaíso",
+     "titulo": "TECNOLOGO MEDICO KARUN. PUERTO VARAS",
+     "ubicacion": "Puerto Montt",
      "motivo": "zona"
     },
     {
-     "titulo": "Enfermera Calidad",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Colina",
+     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
+     "ubicacion": "Talagante",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
-     "ubicacion": "Punta arenas",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS…",
+     "titulo": "Tecnólogo/a Médico/a en Oftalmología ? Óptica",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TENS experiencia laboratorio",
-     "ubicacion": "Antofagasta",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TECNÓLOGO(A) MÉDICO(A) Unidad de Imageneología Hospital…",
-     "ubicacion": "Puerto aysén",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a – Medicina Transfusional –…",
+     "titulo": "TECNÓLOGO MÉDICO IMAGENOLOGÍA Y FÍSICA MÉDICA",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
     }
@@ -173,8 +173,8 @@
    "resultados": 103,
    "errores": [],
    "descartados": {
-    "perfil": 24,
-    "zona": 11,
+    "perfil": 25,
+    "zona": 10,
     "exclusion": 10
    },
    "muestra": [
@@ -329,7 +329,7 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 18,
+   "resultados": 20,
    "errores": [],
    "descartados": {
     "antiguedad": 1,
@@ -377,10 +377,10 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 0,
+  "leidas": 1,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-02T23:45:32+00:00"
+ "rss_chiletrabajos": "2026-11-03T11:01:52+00:00"
 }
