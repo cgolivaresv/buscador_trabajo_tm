@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-03T11:55:47+00:00",
+ "ultimo_chequeo": "2026-11-03T13:13:37+00:00",
  "nuevos": 0,
  "total": 36,
  "palabras_clave": [
@@ -29,8 +29,8 @@
    "errores": [],
    "descartados": {
     "exclusion": 14,
-    "zona": 27,
-    "perfil": 20
+    "zona": 28,
+    "perfil": 19
    },
    "muestra": [
     {
@@ -173,11 +173,16 @@
    "resultados": 103,
    "errores": [],
    "descartados": {
-    "perfil": 25,
-    "zona": 10,
-    "exclusion": 10
+    "exclusion": 12,
+    "perfil": 24,
+    "zona": 9
    },
    "muestra": [
+    {
+     "titulo": "Tens Endoscopia",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Coordinador de Calidad/Gestión de eventos - Control Calidad/Seguridad Terapéutica",
      "ubicacion": "Providencia, Metropolitana de Santiago",
@@ -187,6 +192,11 @@
      "titulo": "Intern de Finanzas - Alumnos/as regulares de último(s) año(s) de carrera",
      "ubicacion": "Las Condes, Metropolitana de Santiago",
      "motivo": "perfil"
+    },
+    {
+     "titulo": "Representante Médico - Oftalmología",
+     "ubicacion": "Santiago, Metropolitana de Santiago",
+     "motivo": "exclusion"
     },
     {
      "titulo": "Químico Farmacéutico - La Calera",
@@ -227,31 +237,21 @@
      "titulo": "Alumno en Práctica Control de gestión (finanzas)",
      "ubicacion": "Recoleta, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Técnico de Instalación y Mantenimiento GPS",
-     "ubicacion": "Santiago, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Enfermero(a) Clínico(a) - Urgencias",
-     "ubicacion": "La Florida, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 8,
+   "resultados": 9,
    "errores": [],
    "descartados": {
-    "exclusion": 1
+    "zona": 1
    },
    "muestra": [
     {
-     "titulo": "Coordinador/a de Laboratorio Clínico Hematología, Bioquímica y Urgencias (Tecnólogo Médico)",
-     "ubicacion": "Santiago de Chile, RM, Chile",
-     "motivo": "exclusion"
+     "titulo": "Técnico periféricos Antofagasta (PCD)",
+     "ubicacion": "Antofagasta, AN, Chile",
+     "motivo": "zona"
     }
    ]
   },
