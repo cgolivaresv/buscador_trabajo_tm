@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-03T20:56:04+00:00",
+ "ultimo_chequeo": "2026-11-03T21:54:14+00:00",
  "nuevos": 0,
  "total": 38,
  "palabras_clave": [
@@ -100,10 +100,10 @@
    "resultados": 223,
    "errores": [],
    "descartados": {
-    "perfil": 20,
+    "perfil": 18,
     "antiguedad": 6,
-    "exclusion": 18,
-    "zona": 8
+    "exclusion": 19,
+    "zona": 9
    },
    "muestra": [
     {
@@ -173,11 +173,16 @@
    "resultados": 107,
    "errores": [],
    "descartados": {
-    "perfil": 27,
-    "zona": 9,
-    "exclusion": 10
+    "perfil": 29,
+    "zona": 8,
+    "exclusion": 9
    },
    "muestra": [
+    {
+     "titulo": "Analista de Tesorería Senior - Casa Matriz RedSalud CChC",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Analista Control de Gestión DAM- Casa Matriz RedSalud CChC",
      "ubicacion": "Providencia, Metropolitana de Santiago",
@@ -232,11 +237,6 @@
      "titulo": "Analista de Cuentas Médicas - Instituto del Cáncer RedSalud",
      "ubicacion": "Vitacura, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Tens Endoscopia",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
