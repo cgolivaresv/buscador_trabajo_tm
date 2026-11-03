@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-03T17:57:16+00:00",
+ "ultimo_chequeo": "2026-11-03T19:02:14+00:00",
  "nuevos": 0,
  "total": 38,
  "palabras_clave": [
@@ -100,21 +100,21 @@
    "resultados": 223,
    "errores": [],
    "descartados": {
+    "perfil": 20,
     "antiguedad": 6,
-    "perfil": 19,
-    "exclusion": 19,
+    "exclusion": 18,
     "zona": 8
    },
    "muestra": [
     {
-     "titulo": "Tecnologo Medico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
      "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
      "ubicacion": "Temuco",
      "motivo": "perfil"
+    },
+    {
+     "titulo": "Tecnologo Medico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
     },
     {
      "titulo": "Tens Imagen",
@@ -133,12 +133,12 @@
     },
     {
      "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
+     "ubicacion": "Colina",
      "motivo": "exclusion"
     },
     {
      "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Colina",
+     "ubicacion": "Linares",
      "motivo": "exclusion"
     },
     {
@@ -173,11 +173,16 @@
    "resultados": 107,
    "errores": [],
    "descartados": {
-    "zona": 12,
-    "perfil": 24,
+    "perfil": 25,
+    "zona": 11,
     "exclusion": 10
    },
    "muestra": [
+    {
+     "titulo": "Analista Control de Gestión DAM- Casa Matriz RedSalud CChC",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Asistente Dental/ TONS - Volante - RedSalud Iquique, Calama y Antofagasta",
      "ubicacion": "Antofagasta, Antofagasta",
@@ -232,11 +237,6 @@
      "titulo": "Tens Endoscopia",
      "ubicacion": "Estación Central, Metropolitana de Santiago",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Coordinador de Calidad/Gestión de eventos - Control Calidad/Seguridad Terapéutica",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
