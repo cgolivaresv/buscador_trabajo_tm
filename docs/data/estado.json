@@ -1,8 +1,8 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-03T15:59:50+00:00",
+ "ultimo_chequeo": "2026-11-03T17:04:48+00:00",
  "nuevos": 1,
- "total": 37,
+ "total": 38,
  "palabras_clave": [
   "tecnólogo médico",
   "tecnólogo médico resonancia",
@@ -28,11 +28,16 @@
    "resultados": 210,
    "errores": [],
    "descartados": {
-    "exclusion": 14,
-    "zona": 26,
-    "perfil": 21
+    "exclusion": 15,
+    "zona": 27,
+    "perfil": 20
    },
    "muestra": [
+    {
+     "titulo": "Técnologo Médico en Laboratorio y Oftamología",
+     "ubicacion": "Tomé, Bíobío",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Tecnólogo(a) Médico en Oftalmología",
      "ubicacion": "Antofagasta, Antofagasta",
@@ -87,82 +92,77 @@
      "titulo": "Técnico en Enfermería Nivel Superior",
      "ubicacion": "Santiago - Las condes, R.Metropolitana",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Vendedor/a de Tecnología Full Time 5x2",
-     "ubicacion": "Santiago - Providencia, R.Metropolitana",
-     "motivo": "perfil"
     }
    ]
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 109,
+   "resultados": 223,
    "errores": [],
    "descartados": {
-    "antiguedad": 20,
-    "zona": 13,
-    "exclusion": 16,
-    "perfil": 2
+    "antiguedad": 6,
+    "perfil": 19,
+    "exclusion": 19,
+    "zona": 8
    },
    "muestra": [
-    {
-     "titulo": "Tecnólogo Médico Imagenología - Rancagua",
-     "ubicacion": "Rancagua",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
-     "ubicacion": "Curicó",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Postulación Tecnólogo(a) Médico(a) ? Copiapó",
-     "ubicacion": "Copiapó",
-     "motivo": "zona"
-    },
     {
      "titulo": "Tecnologo Medico",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo médico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
+     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
+     "ubicacion": "Temuco",
+     "motivo": "perfil"
     },
     {
-     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
-     "ubicacion": "La Serena",
+     "titulo": "Tens Imagen",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) – Centro…",
+     "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TECNOLOGO MEDICO KARUN. PUERTO VARAS",
-     "ubicacion": "Puerto Montt",
+     "titulo": "Enfermera Calidad",
+     "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
-     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
-     "ubicacion": "Talagante",
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Linares",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo/a Médico/a en Oftalmología ? Óptica",
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Colina",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
+     "ubicacion": "Punta arenas",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS…",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TECNÓLOGO MÉDICO IMAGENOLOGÍA Y FÍSICA MÉDICA",
+     "titulo": "TENS experiencia laboratorio",
+     "ubicacion": "Antofagasta",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TECNÓLOGO(A) MÉDICO(A) Unidad de Imageneología Hospital…",
+     "ubicacion": "Puerto aysén",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico/a – Medicina Transfusional –…",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
     }
@@ -173,9 +173,9 @@
    "resultados": 107,
    "errores": [],
    "descartados": {
-    "zona": 11,
+    "zona": 12,
     "perfil": 24,
-    "exclusion": 11
+    "exclusion": 10
    },
    "muestra": [
     {
@@ -242,7 +242,7 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 11,
+   "resultados": 13,
    "errores": [],
    "descartados": {
     "exclusion": 1
