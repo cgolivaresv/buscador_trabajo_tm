@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-03T13:13:37+00:00",
+ "ultimo_chequeo": "2026-11-03T14:24:54+00:00",
  "nuevos": 0,
  "total": 36,
  "palabras_clave": [
@@ -29,8 +29,8 @@
    "errores": [],
    "descartados": {
     "exclusion": 14,
-    "zona": 28,
-    "perfil": 19
+    "zona": 27,
+    "perfil": 20
    },
    "muestra": [
     {
@@ -173,11 +173,26 @@
    "resultados": 103,
    "errores": [],
    "descartados": {
-    "exclusion": 12,
     "perfil": 24,
+    "exclusion": 12,
     "zona": 9
    },
    "muestra": [
+    {
+     "titulo": "Analista de Gestión del Cambio Proyecto HIS RedSalud CChC",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "PRACTICANTE ÁREA BODEGA Y ABASTECIMIENTO",
+     "ubicacion": "Temuco, La Araucanía",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Analista de Cuentas Médicas - Instituto del Cáncer RedSalud",
+     "ubicacion": "Vitacura, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Tens Endoscopia",
      "ubicacion": "Estación Central, Metropolitana de Santiago",
@@ -222,27 +237,12 @@
      "titulo": "Tens Diálisis",
      "ubicacion": "Recoleta, Metropolitana de Santiago",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Trabajador/a Social Reemplazo Pre y Postnatal",
-     "ubicacion": "Santiago, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Analista de Subsidios",
-     "ubicacion": "Las Condes, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Alumno en Práctica Control de gestión (finanzas)",
-     "ubicacion": "Recoleta, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 9,
+   "resultados": 10,
    "errores": [],
    "descartados": {
     "zona": 1
