@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-03T19:59:19+00:00",
+ "ultimo_chequeo": "2026-11-03T20:56:04+00:00",
  "nuevos": 0,
  "total": 38,
  "palabras_clave": [
@@ -97,34 +97,19 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 109,
+   "resultados": 223,
    "errores": [],
    "descartados": {
-    "antiguedad": 20,
-    "zona": 13,
-    "exclusion": 16,
-    "perfil": 2
+    "perfil": 20,
+    "antiguedad": 6,
+    "exclusion": 18,
+    "zona": 8
    },
    "muestra": [
     {
-     "titulo": "Tecnólogo Médico Imagenología - Rancagua",
-     "ubicacion": "Rancagua",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
-     "ubicacion": "Curicó",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Postulación Tecnólogo(a) Médico(a) ? Copiapó",
-     "ubicacion": "Copiapó",
-     "motivo": "zona"
+     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
+     "ubicacion": "Temuco",
+     "motivo": "perfil"
     },
     {
      "titulo": "Tecnologo Medico",
@@ -132,37 +117,52 @@
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo médico",
+     "titulo": "Tens Imagen",
      "ubicacion": "Santiago",
-     "motivo": "antiguedad"
+     "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
-     "ubicacion": "La Serena",
+     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) – Centro…",
+     "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TECNOLOGO MEDICO KARUN. PUERTO VARAS",
-     "ubicacion": "Puerto Montt",
+     "titulo": "Enfermera Calidad",
+     "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
-     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
-     "ubicacion": "Talagante",
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Colina",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo/a Médico/a en Oftalmología ? Óptica",
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Linares",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
+     "ubicacion": "Punta arenas",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS…",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TECNÓLOGO MÉDICO IMAGENOLOGÍA Y FÍSICA MÉDICA",
+     "titulo": "TENS experiencia laboratorio",
+     "ubicacion": "Antofagasta",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TECNÓLOGO(A) MÉDICO(A) Unidad de Imageneología Hospital…",
+     "ubicacion": "Puerto aysén",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico/a – Medicina Transfusional –…",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
     }
@@ -173,8 +173,8 @@
    "resultados": 107,
    "errores": [],
    "descartados": {
-    "perfil": 25,
-    "zona": 11,
+    "perfil": 27,
+    "zona": 9,
     "exclusion": 10
    },
    "muestra": [
@@ -242,7 +242,7 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 12,
+   "resultados": 13,
    "errores": [],
    "descartados": {
     "exclusion": 1
