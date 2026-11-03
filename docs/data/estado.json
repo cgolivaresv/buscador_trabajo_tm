@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-03T21:54:14+00:00",
+ "ultimo_chequeo": "2026-11-03T22:53:45+00:00",
  "nuevos": 0,
  "total": 38,
  "palabras_clave": [
@@ -64,6 +64,11 @@
      "motivo": "zona"
     },
     {
+     "titulo": "Tecnólogo/a Médico/a en Imagenología – Calama",
+     "ubicacion": "Calama, Antofagasta",
+     "motivo": "zona"
+    },
+    {
      "titulo": "Técnico en Enfermería Nivel Superior Unidad Toma de Muestras Viña del Mar",
      "ubicacion": "Viña del Mar, Valparaíso",
      "motivo": "exclusion"
@@ -72,11 +77,6 @@
      "titulo": "Tecnolog@ Medico para Director/a Técnico de laboratorio clínico",
      "ubicacion": "Arica, Arica y Parinacota",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a en Imagenología – Calama",
-     "ubicacion": "Calama, Antofagasta",
-     "motivo": "zona"
     },
     {
      "titulo": "Tecnologo médico en Imagenología para Taltal",
@@ -173,8 +173,8 @@
    "resultados": 107,
    "errores": [],
    "descartados": {
-    "perfil": 29,
-    "zona": 8,
+    "perfil": 28,
+    "zona": 9,
     "exclusion": 9
    },
    "muestra": [
@@ -242,7 +242,7 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 13,
+   "resultados": 15,
    "errores": [],
    "descartados": {
     "exclusion": 1
