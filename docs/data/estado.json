@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-04T20:59:32+00:00",
+ "ultimo_chequeo": "2026-11-04T21:55:49+00:00",
  "nuevos": 0,
  "total": 38,
  "palabras_clave": [
@@ -25,10 +25,10 @@
   },
   "computrabajo": {
    "nombre": "Computrabajo",
-   "resultados": 210,
+   "resultados": 214,
    "errores": [],
    "descartados": {
-    "perfil": 22,
+    "perfil": 23,
     "exclusion": 15,
     "zona": 25
    },
@@ -100,9 +100,9 @@
    "resultados": 220,
    "errores": [],
    "descartados": {
-    "perfil": 21,
+    "perfil": 16,
     "antiguedad": 6,
-    "exclusion": 18,
+    "exclusion": 17,
     "zona": 12
    },
    "muestra": [
@@ -173,11 +173,16 @@
    "resultados": 107,
    "errores": [],
    "descartados": {
-    "zona": 8,
     "perfil": 30,
+    "zona": 8,
     "exclusion": 9
    },
    "muestra": [
+    {
+     "titulo": "Ejecutivo Integral de Ciclo de Ingresos (Regiones)",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Enfermera/o Asistencial PART TIME - RedSalud Eleuterio Ramirez Iquique",
      "ubicacion": "Iquique, Tarapacá",
@@ -232,17 +237,12 @@
      "titulo": "Vendedor(a) Especialista Área Comercial",
      "ubicacion": "Las Condes, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Administrativo Gestión Personas",
-     "ubicacion": "Punta Arenas, Magallanes y Antártica Chilena",
-     "motivo": "exclusion"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 17,
+   "resultados": 12,
    "errores": [],
    "descartados": {
     "perfil": 1
