@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-04T13:14:58+00:00",
+ "ultimo_chequeo": "2026-11-04T14:27:55+00:00",
  "nuevos": 0,
  "total": 38,
  "palabras_clave": [
@@ -97,13 +97,13 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 223,
+   "resultados": 222,
    "errores": [],
    "descartados": {
-    "perfil": 17,
+    "perfil": 14,
     "antiguedad": 6,
     "exclusion": 19,
-    "zona": 10
+    "zona": 12
    },
    "muestra": [
     {
@@ -115,6 +115,11 @@
      "titulo": "Tecnologo Medico",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Coordinador/a de Compras (tabla quirúrgica y…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
     },
     {
      "titulo": "Tens Imagen",
@@ -160,11 +165,6 @@
      "titulo": "TECNÓLOGO(A) MÉDICO(A) Unidad de Imageneología Hospital…",
      "ubicacion": "Puerto aysén",
      "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a – Medicina Transfusional –…",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
     }
    ]
   },
@@ -173,11 +173,16 @@
    "resultados": 107,
    "errores": [],
    "descartados": {
+    "exclusion": 10,
     "perfil": 28,
-    "exclusion": 9,
-    "zona": 9
+    "zona": 8
    },
    "muestra": [
+    {
+     "titulo": "Administrativo Gestión Personas",
+     "ubicacion": "Punta Arenas, Magallanes y Antártica Chilena",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Psicólogo/a Educacional Reemplazo por licencia médica Colegio en Pudahuel",
      "ubicacion": "Pudahuel, Metropolitana de Santiago",
@@ -232,11 +237,6 @@
      "titulo": "Analista de Remuneraciones",
      "ubicacion": "Santiago, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time para Antofagasta!",
-     "ubicacion": "Antofagasta, Antofagasta",
-     "motivo": "zona"
     }
    ]
   },
