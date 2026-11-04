@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-04T17:03:25+00:00",
+ "ultimo_chequeo": "2026-11-04T17:58:39+00:00",
  "nuevos": 0,
  "total": 38,
  "palabras_clave": [
@@ -173,11 +173,21 @@
    "resultados": 107,
    "errores": [],
    "descartados": {
-    "perfil": 29,
+    "perfil": 30,
     "exclusion": 10,
-    "zona": 8
+    "zona": 7
    },
    "muestra": [
+    {
+     "titulo": "Alumno(a) en Práctica Técnico en Logística - RedSalud CChC",
+     "ubicacion": "Lo Espejo, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Senior Business Intelligence & MIS Analyst - Banco Scotiabank",
+     "ubicacion": "Santiago, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Encargado de Equipamiento Médico y Mobiliario Clínico (6153)",
      "ubicacion": "Rancagua, Lib. Gral. Bdo. O'Higgins",
@@ -227,16 +237,6 @@
      "titulo": "Asistente Dental/ TONS - Volante - RedSalud Iquique, Calama y Antofagasta",
      "ubicacion": "Antofagasta, Antofagasta",
      "motivo": "zona"
-    },
-    {
-     "titulo": "Asistente Dental/ TONS - Volante - Región Metropolitana",
-     "ubicacion": "Puente Alto, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Técnico Soporte de Sistemas / Clínica MEDS La Dehesa",
-     "ubicacion": "Lo Barnechea, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
@@ -249,8 +249,8 @@
    },
    "muestra": [
     {
-     "titulo": "SDR Team Lead - B2B",
-     "ubicacion": "Santiago de Chile, RM, Chile",
+     "titulo": "Médico 32 hrs - Centro La Calera Achs Salud",
+     "ubicacion": "Calera, VS, Chile",
      "motivo": "perfil"
     }
    ]
