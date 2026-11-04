@@ -1,7 +1,7 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-04T22:55:52+00:00",
- "nuevos": 1,
+ "ultimo_chequeo": "2026-11-04T23:50:22+00:00",
+ "nuevos": 0,
  "total": 39,
  "palabras_clave": [
   "tecnólogo médico",
@@ -245,13 +245,13 @@
    "resultados": 14,
    "errores": [],
    "descartados": {
-    "exclusion": 1
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Técnico en Enfermería - Centro Antofagasta Achs Salud",
-     "ubicacion": "Antofagasta, AN, Chile",
-     "motivo": "exclusion"
+     "titulo": "Químico Farmacéutico - Centro Médico Hospital del Trabajador Achs Salud",
+     "ubicacion": "Providencia, RM, Chile",
+     "motivo": "perfil"
     }
    ]
   },
@@ -377,7 +377,7 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 1,
+  "leidas": 0,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
