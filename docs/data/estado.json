@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-04T11:24:02+00:00",
+ "ultimo_chequeo": "2026-11-04T13:14:58+00:00",
  "nuevos": 0,
  "total": 38,
  "palabras_clave": [
@@ -84,47 +84,32 @@
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnologo médico en Laboratorio para Tocopilla",
-     "ubicacion": "Tocopilla, Antofagasta",
+     "titulo": "Técnico en Enfermería Nivel Superior",
+     "ubicacion": "Santiago - Las condes, R.Metropolitana",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Técnico en Enfermería Nivel Superior",
-     "ubicacion": "Santiago - Las condes, R.Metropolitana",
+     "titulo": "Tecnologo médico en Laboratorio para Tocopilla",
+     "ubicacion": "Tocopilla, Antofagasta",
      "motivo": "exclusion"
     }
    ]
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 109,
+   "resultados": 223,
    "errores": [],
    "descartados": {
-    "antiguedad": 20,
-    "zona": 13,
-    "exclusion": 16,
-    "perfil": 2
+    "perfil": 17,
+    "antiguedad": 6,
+    "exclusion": 19,
+    "zona": 10
    },
    "muestra": [
     {
-     "titulo": "Tecnólogo Médico Imagenología - Rancagua",
-     "ubicacion": "Rancagua",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
-     "ubicacion": "Curicó",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Postulación Tecnólogo(a) Médico(a) ? Copiapó",
-     "ubicacion": "Copiapó",
-     "motivo": "zona"
+     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
+     "ubicacion": "Temuco",
+     "motivo": "perfil"
     },
     {
      "titulo": "Tecnologo Medico",
@@ -132,37 +117,52 @@
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo médico",
+     "titulo": "Tens Imagen",
      "ubicacion": "Santiago",
-     "motivo": "antiguedad"
+     "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
-     "ubicacion": "La Serena",
+     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) – Centro…",
+     "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TECNOLOGO MEDICO KARUN. PUERTO VARAS",
-     "ubicacion": "Puerto Montt",
+     "titulo": "Enfermera Calidad",
+     "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
-     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
-     "ubicacion": "Talagante",
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Colina",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo/a Médico/a en Oftalmología ? Óptica",
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Linares",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
+     "ubicacion": "Punta arenas",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS…",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TECNÓLOGO MÉDICO IMAGENOLOGÍA Y FÍSICA MÉDICA",
+     "titulo": "TENS experiencia laboratorio",
+     "ubicacion": "Antofagasta",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TECNÓLOGO(A) MÉDICO(A) Unidad de Imageneología Hospital…",
+     "ubicacion": "Puerto aysén",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico/a – Medicina Transfusional –…",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
     }
@@ -173,11 +173,26 @@
    "resultados": 107,
    "errores": [],
    "descartados": {
-    "exclusion": 10,
-    "perfil": 27,
+    "perfil": 28,
+    "exclusion": 9,
     "zona": 9
    },
    "muestra": [
+    {
+     "titulo": "Psicólogo/a Educacional Reemplazo por licencia médica Colegio en Pudahuel",
+     "ubicacion": "Pudahuel, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Trabajador/a Social Reemplazo por licencia médica Colegio en Pudahuel",
+     "ubicacion": "Pudahuel, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Coordinador/a Unidad de Agendas Médicas",
+     "ubicacion": "Independencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Tens Urgencia (Part Time)",
      "ubicacion": "Estación Central, Metropolitana de Santiago",
@@ -222,21 +237,6 @@
      "titulo": "TMO Part Time para Antofagasta!",
      "ubicacion": "Antofagasta, Antofagasta",
      "motivo": "zona"
-    },
-    {
-     "titulo": "Técnico en Imagenología PART TIME 28HRS - Centro medico y dental RedSalud Muelle Barón",
-     "ubicacion": "Valparaíso, Valparaíso",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Analista de Gestión del Cambio Proyecto HIS RedSalud CChC",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "PRACTICANTE ÁREA BODEGA Y ABASTECIMIENTO",
-     "ubicacion": "Temuco, La Araucanía",
-     "motivo": "perfil"
     }
    ]
   },
