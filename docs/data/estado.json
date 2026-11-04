@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-04T17:58:39+00:00",
+ "ultimo_chequeo": "2026-11-04T19:06:17+00:00",
  "nuevos": 0,
  "total": 38,
  "palabras_clave": [
@@ -84,14 +84,14 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnologo médico en Imagenología para Taltal",
-     "ubicacion": "Taltal, Antofagasta",
-     "motivo": "zona"
-    },
-    {
      "titulo": "Técnico en Enfermería Nivel Superior",
      "ubicacion": "Santiago - Las condes, R.Metropolitana",
      "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnologo médico en Imagenología para Taltal",
+     "ubicacion": "Taltal, Antofagasta",
+     "motivo": "zona"
     }
    ]
   },
@@ -102,8 +102,8 @@
    "descartados": {
     "perfil": 18,
     "antiguedad": 6,
-    "exclusion": 20,
-    "zona": 7
+    "exclusion": 18,
+    "zona": 9
    },
    "muestra": [
     {
@@ -173,11 +173,26 @@
    "resultados": 107,
    "errores": [],
    "descartados": {
-    "perfil": 30,
     "exclusion": 10,
-    "zona": 7
+    "zona": 8,
+    "perfil": 29
    },
    "muestra": [
+    {
+     "titulo": "TENS UPC",
+     "ubicacion": "Viña del Mar, Valparaíso",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TRABAJADOR SOCIAL PRM COPIAPO (REEMPLAZO PRE Y POST NATAL)",
+     "ubicacion": "Copiapó, Atacama",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Técnico de Soporte Audiovisual / Clínica Meds La Dehesa",
+     "ubicacion": "Lo Barnechea, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Alumno(a) en Práctica Técnico en Logística - RedSalud CChC",
      "ubicacion": "Lo Espejo, Metropolitana de Santiago",
@@ -222,21 +237,6 @@
      "titulo": "Tens Urgencia (Part Time)",
      "ubicacion": "Estación Central, Metropolitana de Santiago",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Analista de Tesorería Senior - Casa Matriz RedSalud CChC",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Analista Control de Gestión DAM- Casa Matriz RedSalud CChC",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Asistente Dental/ TONS - Volante - RedSalud Iquique, Calama y Antofagasta",
-     "ubicacion": "Antofagasta, Antofagasta",
-     "motivo": "zona"
     }
    ]
   },
@@ -249,8 +249,8 @@
    },
    "muestra": [
     {
-     "titulo": "Médico 32 hrs - Centro La Calera Achs Salud",
-     "ubicacion": "Calera, VS, Chile",
+     "titulo": "SDR Team Lead - B2B",
+     "ubicacion": "Santiago de Chile, RM, Chile",
      "motivo": "perfil"
     }
    ]
