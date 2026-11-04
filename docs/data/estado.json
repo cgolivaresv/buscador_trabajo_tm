@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-04T20:04:40+00:00",
+ "ultimo_chequeo": "2026-11-04T20:59:32+00:00",
  "nuevos": 0,
  "total": 38,
  "palabras_clave": [
@@ -28,9 +28,9 @@
    "resultados": 210,
    "errores": [],
    "descartados": {
-    "perfil": 21,
+    "perfil": 22,
     "exclusion": 15,
-    "zona": 26
+    "zona": 25
    },
    "muestra": [
     {
@@ -97,34 +97,19 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 109,
+   "resultados": 220,
    "errores": [],
    "descartados": {
-    "antiguedad": 20,
-    "zona": 13,
-    "exclusion": 16,
-    "perfil": 2
+    "perfil": 21,
+    "antiguedad": 6,
+    "exclusion": 18,
+    "zona": 12
    },
    "muestra": [
     {
-     "titulo": "Tecnólogo Médico Imagenología - Rancagua",
-     "ubicacion": "Rancagua",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
-     "ubicacion": "Curicó",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Postulación Tecnólogo(a) Médico(a) ? Copiapó",
-     "ubicacion": "Copiapó",
-     "motivo": "zona"
+     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
+     "ubicacion": "Temuco",
+     "motivo": "perfil"
     },
     {
      "titulo": "Tecnologo Medico",
@@ -132,39 +117,54 @@
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo médico",
+     "titulo": "Coordinador/a de Compras (tabla quirúrgica y…",
      "ubicacion": "Santiago",
-     "motivo": "antiguedad"
+     "motivo": "perfil"
     },
     {
-     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
-     "ubicacion": "La Serena",
+     "titulo": "Encargado de Equipamiento Médico y Mobiliario…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tens Imagen",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) – Centro…",
+     "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TECNOLOGO MEDICO KARUN. PUERTO VARAS",
-     "ubicacion": "Puerto Montt",
+     "titulo": "Enfermera Calidad",
+     "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
-     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
-     "ubicacion": "Talagante",
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Colina",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo/a Médico/a en Oftalmología ? Óptica",
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Linares",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
+     "ubicacion": "Punta arenas",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS…",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TECNÓLOGO MÉDICO IMAGENOLOGÍA Y FÍSICA MÉDICA",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
+     "titulo": "TENS experiencia laboratorio",
+     "ubicacion": "Antofagasta",
+     "motivo": "exclusion"
     }
    ]
   },
@@ -173,11 +173,26 @@
    "resultados": 107,
    "errores": [],
    "descartados": {
+    "zona": 8,
     "perfil": 30,
-    "exclusion": 10,
-    "zona": 7
+    "exclusion": 9
    },
    "muestra": [
+    {
+     "titulo": "Enfermera/o Asistencial PART TIME - RedSalud Eleuterio Ramirez Iquique",
+     "ubicacion": "Iquique, Tarapacá",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Asistente de Archivos / Clínica MEDS La Dehesa",
+     "ubicacion": "Lo Barnechea, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Psicólogo Proyecto vacaciones",
+     "ubicacion": "Recoleta, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Práctica en Proceso de Remuneraciones - Las Condes",
      "ubicacion": "Las Condes, Metropolitana de Santiago",
@@ -222,21 +237,6 @@
      "titulo": "Administrativo Gestión Personas",
      "ubicacion": "Punta Arenas, Magallanes y Antártica Chilena",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Psicólogo/a Educacional Reemplazo por licencia médica Colegio en Pudahuel",
-     "ubicacion": "Pudahuel, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Trabajador/a Social Reemplazo por licencia médica Colegio en Pudahuel",
-     "ubicacion": "Pudahuel, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Coordinador/a Unidad de Agendas Médicas",
-     "ubicacion": "Independencia, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
@@ -245,13 +245,13 @@
    "resultados": 17,
    "errores": [],
    "descartados": {
-    "exclusion": 1
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Técnico en Enfermería - Centro Antofagasta Achs Salud",
-     "ubicacion": "Antofagasta, AN, Chile",
-     "motivo": "exclusion"
+     "titulo": "SDR Team Lead - B2B",
+     "ubicacion": "Santiago de Chile, RM, Chile",
+     "motivo": "perfil"
     }
    ]
   },
