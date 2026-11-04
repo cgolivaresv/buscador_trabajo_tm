@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-04T01:15:08+00:00",
+ "ultimo_chequeo": "2026-11-04T11:24:02+00:00",
  "nuevos": 0,
  "total": 38,
  "palabras_clave": [
@@ -29,18 +29,13 @@
    "errores": [],
    "descartados": {
     "exclusion": 15,
-    "zona": 27,
-    "perfil": 20
+    "zona": 26,
+    "perfil": 21
    },
    "muestra": [
     {
      "titulo": "Técnologo Médico en Laboratorio y Oftamología",
      "ubicacion": "Tomé, Bíobío",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo(a) Médico en Oftalmología",
-     "ubicacion": "Antofagasta, Antofagasta",
      "motivo": "exclusion"
     },
     {
@@ -52,6 +47,11 @@
      "titulo": "Tecnologo/a medico/a con experiencia en resonancia",
      "ubicacion": "Iquique, Tarapacá",
      "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico en Oftalmología",
+     "ubicacion": "Antofagasta, Antofagasta",
+     "motivo": "exclusion"
     },
     {
      "titulo": "Técnico en Enfermería Nivel Superior Médico Quirúrgico",
@@ -173,11 +173,16 @@
    "resultados": 107,
    "errores": [],
    "descartados": {
-    "perfil": 28,
-    "zona": 9,
-    "exclusion": 9
+    "exclusion": 10,
+    "perfil": 27,
+    "zona": 9
    },
    "muestra": [
+    {
+     "titulo": "Tens Urgencia (Part Time)",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Analista de Tesorería Senior - Casa Matriz RedSalud CChC",
      "ubicacion": "Providencia, Metropolitana de Santiago",
@@ -231,11 +236,6 @@
     {
      "titulo": "PRACTICANTE ÁREA BODEGA Y ABASTECIMIENTO",
      "ubicacion": "Temuco, La Araucanía",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Analista de Cuentas Médicas - Instituto del Cáncer RedSalud",
-     "ubicacion": "Vitacura, Metropolitana de Santiago",
      "motivo": "perfil"
     }
    ]
@@ -382,5 +382,5 @@
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-04T01:15:08+00:00"
+ "rss_chiletrabajos": "2026-11-04T11:24:02+00:00"
 }
