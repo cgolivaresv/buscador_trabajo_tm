@@ -1,8 +1,8 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-04T21:55:49+00:00",
- "nuevos": 0,
- "total": 38,
+ "ultimo_chequeo": "2026-11-04T22:55:52+00:00",
+ "nuevos": 1,
+ "total": 39,
  "palabras_clave": [
   "tecnólogo médico",
   "tecnólogo médico resonancia",
@@ -30,7 +30,7 @@
    "descartados": {
     "perfil": 23,
     "exclusion": 15,
-    "zona": 25
+    "zona": 24
    },
    "muestra": [
     {
@@ -100,7 +100,7 @@
    "resultados": 220,
    "errores": [],
    "descartados": {
-    "perfil": 16,
+    "perfil": 15,
     "antiguedad": 6,
     "exclusion": 17,
     "zona": 12
@@ -242,16 +242,16 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 12,
+   "resultados": 14,
    "errores": [],
    "descartados": {
-    "perfil": 1
+    "exclusion": 1
    },
    "muestra": [
     {
-     "titulo": "SDR Team Lead - B2B",
-     "ubicacion": "Santiago de Chile, RM, Chile",
-     "motivo": "perfil"
+     "titulo": "Técnico en Enfermería - Centro Antofagasta Achs Salud",
+     "ubicacion": "Antofagasta, AN, Chile",
+     "motivo": "exclusion"
     }
    ]
   },
@@ -377,7 +377,7 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 0,
+  "leidas": 1,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
