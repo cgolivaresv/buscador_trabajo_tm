@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-04T14:27:55+00:00",
+ "ultimo_chequeo": "2026-11-04T16:00:44+00:00",
  "nuevos": 0,
  "total": 38,
  "palabras_clave": [
@@ -28,11 +28,16 @@
    "resultados": 210,
    "errores": [],
    "descartados": {
+    "perfil": 21,
     "exclusion": 15,
-    "zona": 26,
-    "perfil": 21
+    "zona": 26
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogos(as) Médicos Volantes",
+     "ubicacion": "Santiago Centro, R.Metropolitana",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Técnologo Médico en Laboratorio y Oftamología",
      "ubicacion": "Tomé, Bíobío",
@@ -87,29 +92,39 @@
      "titulo": "Técnico en Enfermería Nivel Superior",
      "ubicacion": "Santiago - Las condes, R.Metropolitana",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnologo médico en Laboratorio para Tocopilla",
-     "ubicacion": "Tocopilla, Antofagasta",
-     "motivo": "exclusion"
     }
    ]
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 222,
+   "resultados": 109,
    "errores": [],
    "descartados": {
-    "perfil": 14,
-    "antiguedad": 6,
-    "exclusion": 19,
-    "zona": 12
+    "antiguedad": 20,
+    "zona": 13,
+    "exclusion": 16,
+    "perfil": 2
    },
    "muestra": [
     {
-     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
-     "ubicacion": "Temuco",
-     "motivo": "perfil"
+     "titulo": "Tecnólogo Médico Imagenología - Rancagua",
+     "ubicacion": "Rancagua",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Postulación Tecnólogo(a) Médico(a) ? Copiapó",
+     "ubicacion": "Copiapó",
+     "motivo": "zona"
     },
     {
      "titulo": "Tecnologo Medico",
@@ -117,54 +132,39 @@
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Coordinador/a de Compras (tabla quirúrgica y…",
+     "titulo": "Tecnólogo médico",
      "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "Tens Imagen",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) – Centro…",
-     "ubicacion": "Valparaíso",
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
      "motivo": "zona"
     },
     {
-     "titulo": "Enfermera Calidad",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Colina",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
-     "ubicacion": "Punta arenas",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS…",
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TENS experiencia laboratorio",
-     "ubicacion": "Antofagasta",
+     "titulo": "TECNOLOGO MEDICO KARUN. PUERTO VARAS",
+     "ubicacion": "Puerto Montt",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
+     "ubicacion": "Talagante",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TECNÓLOGO(A) MÉDICO(A) Unidad de Imageneología Hospital…",
-     "ubicacion": "Puerto aysén",
-     "motivo": "zona"
+     "titulo": "Tecnólogo/a Médico/a en Oftalmología ? Óptica",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TECNÓLOGO MÉDICO IMAGENOLOGÍA Y FÍSICA MÉDICA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
     }
    ]
   },
@@ -173,11 +173,21 @@
    "resultados": 107,
    "errores": [],
    "descartados": {
+    "perfil": 29,
     "exclusion": 10,
-    "perfil": 28,
     "zona": 8
    },
    "muestra": [
+    {
+     "titulo": "Encargado de Equipamiento Médico y Mobiliario Clínico (6153)",
+     "ubicacion": "Rancagua, Lib. Gral. Bdo. O'Higgins",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Vendedor(a) Especialista Área Comercial",
+     "ubicacion": "Las Condes, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Administrativo Gestión Personas",
      "ubicacion": "Punta Arenas, Magallanes y Antártica Chilena",
@@ -227,31 +237,21 @@
      "titulo": "Técnico Soporte de Sistemas / Clínica MEDS La Dehesa",
      "ubicacion": "Lo Barnechea, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "TENS Part Time Centro Médico - Conchalí",
-     "ubicacion": "Conchalí, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Analista de Remuneraciones",
-     "ubicacion": "Santiago, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 16,
+   "resultados": 17,
    "errores": [],
    "descartados": {
-    "zona": 1
+    "exclusion": 1
    },
    "muestra": [
     {
-     "titulo": "Asistente Dental/ TONS - Volante - RedSalud Iquique, Calama y Antofagasta",
+     "titulo": "Técnico en Enfermería - Centro Antofagasta Achs Salud",
      "ubicacion": "Antofagasta, AN, Chile",
-     "motivo": "zona"
+     "motivo": "exclusion"
     }
    ]
   },
@@ -382,5 +382,5 @@
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-04T11:24:02+00:00"
+ "rss_chiletrabajos": "2026-11-04T16:00:44+00:00"
 }
