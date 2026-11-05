@@ -1,8 +1,8 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-05T20:58:05+00:00",
- "nuevos": 0,
- "total": 40,
+ "ultimo_chequeo": "2026-11-05T21:55:08+00:00",
+ "nuevos": 1,
+ "total": 41,
  "palabras_clave": [
   "tecnólogo médico",
   "tecnólogo médico resonancia",
@@ -100,10 +100,10 @@
    "resultados": 222,
    "errores": [],
    "descartados": {
-    "perfil": 20,
+    "perfil": 22,
     "antiguedad": 5,
-    "exclusion": 17,
-    "zona": 8
+    "exclusion": 16,
+    "zona": 6
    },
    "muestra": [
     {
@@ -125,6 +125,11 @@
      "titulo": "TMO con mención en Oftalmología (Reemplazo…",
      "ubicacion": "Punta arenas",
      "motivo": "exclusion"
+    },
+    {
+     "titulo": "Importante empresa busca recurso comercial y…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
     },
     {
      "titulo": "Tecnólogo Médico con mención en Oftalmología…",
@@ -160,11 +165,6 @@
      "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS…",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "TENS experiencia laboratorio",
-     "ubicacion": "Antofagasta",
-     "motivo": "exclusion"
     }
    ]
   },
@@ -173,8 +173,8 @@
    "resultados": 111,
    "errores": [],
    "descartados": {
-    "perfil": 24,
-    "zona": 11,
+    "perfil": 23,
+    "zona": 12,
     "exclusion": 11
    },
    "muestra": [
@@ -242,7 +242,7 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 11,
+   "resultados": 9,
    "errores": [],
    "descartados": {
     "exclusion": 1
@@ -382,7 +382,7 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 0,
+  "leidas": 1,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
