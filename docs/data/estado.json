@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-05T01:15:46+00:00",
+ "ultimo_chequeo": "2026-11-05T11:14:02+00:00",
  "nuevos": 0,
  "total": 39,
  "palabras_clave": [
@@ -28,11 +28,16 @@
    "resultados": 214,
    "errores": [],
    "descartados": {
-    "perfil": 23,
     "exclusion": 15,
-    "zona": 24
+    "perfil": 25,
+    "zona": 22
    },
    "muestra": [
+    {
+     "titulo": "Técnico en Enfermería Nivel Superior",
+     "ubicacion": "Santiago - Las condes, R.Metropolitana",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Coordinador/a de Servicio Técnico, Santiago Centro.",
      "ubicacion": "Santiago Centro, R.Metropolitana",
@@ -86,11 +91,6 @@
     {
      "titulo": "Tecnolog@ Medico para Director/a Técnico de laboratorio clínico",
      "ubicacion": "Arica, Arica y Parinacota",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Técnico en Enfermería Nivel Superior",
-     "ubicacion": "Santiago - Las condes, R.Metropolitana",
      "motivo": "exclusion"
     }
    ]
@@ -329,12 +329,12 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 20,
+   "resultados": 22,
    "errores": [],
    "descartados": {
     "antiguedad": 1,
     "zona": 1,
-    "exclusion": 5
+    "exclusion": 6
    },
    "muestra": [
     {
@@ -371,6 +371,11 @@
      "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RADIOLOGÍA (REEMPLAZO)",
      "ubicacion": "Providencia, Metropolitana",
      "motivo": "exclusion"
+    },
+    {
+     "titulo": "TENS Imagen",
+     "ubicacion": "Las Condes, Metropolitana",
+     "motivo": "exclusion"
     }
    ]
   }
@@ -382,5 +387,5 @@
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-05T01:15:46+00:00"
+ "rss_chiletrabajos": "2026-11-05T11:14:02+00:00"
 }
