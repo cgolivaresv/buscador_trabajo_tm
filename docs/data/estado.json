@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-05T20:00:24+00:00",
+ "ultimo_chequeo": "2026-11-05T20:58:05+00:00",
  "nuevos": 0,
  "total": 40,
  "palabras_clave": [
@@ -170,7 +170,7 @@
   },
   "trabajando": {
    "nombre": "Trabajando.cl",
-   "resultados": 109,
+   "resultados": 111,
    "errores": [],
    "descartados": {
     "perfil": 24,
@@ -178,6 +178,11 @@
     "exclusion": 11
    },
    "muestra": [
+    {
+     "titulo": "ENFERMERA (O) AREA DE URGENCIAS GENERAL",
+     "ubicacion": "Vitacura, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Práctica Profesional - Atracción de Talento RedSalud CChC",
      "ubicacion": "Providencia, Metropolitana de Santiago",
@@ -232,11 +237,6 @@
      "titulo": "Analista Personas Senior - RedSalud CChC",
      "ubicacion": "Providencia, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "ITO Prevención de Riesgos Proyecto Industrial - Antofagasta",
-     "ubicacion": "Antofagasta, Antofagasta",
-     "motivo": "zona"
     }
    ]
   },
