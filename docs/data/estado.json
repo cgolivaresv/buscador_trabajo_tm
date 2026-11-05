@@ -1,7 +1,7 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-05T21:55:08+00:00",
- "nuevos": 1,
+ "ultimo_chequeo": "2026-11-05T22:55:58+00:00",
+ "nuevos": 0,
  "total": 41,
  "palabras_clave": [
   "tecnólogo médico",
@@ -28,11 +28,16 @@
    "resultados": 214,
    "errores": [],
    "descartados": {
+    "zona": 22,
     "perfil": 26,
-    "exclusion": 15,
-    "zona": 22
+    "exclusion": 15
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogo Médico (a), Proyecto Antofagasta 7x7",
+     "ubicacion": "Antofagasta, Antofagasta",
+     "motivo": "zona"
+    },
     {
      "titulo": "Técnico Mecánico Rubro Automotriz",
      "ubicacion": "Santiago - Vitacura, R.Metropolitana",
@@ -87,29 +92,39 @@
      "titulo": "Tecnólogo/a Médico/a en Imagenología – Calama",
      "ubicacion": "Calama, Antofagasta",
      "motivo": "zona"
-    },
-    {
-     "titulo": "Técnico en Enfermería Nivel Superior Unidad Toma de Muestras Viña del Mar",
-     "ubicacion": "Viña del Mar, Valparaíso",
-     "motivo": "exclusion"
     }
    ]
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 222,
+   "resultados": 109,
    "errores": [],
    "descartados": {
-    "perfil": 22,
-    "antiguedad": 5,
+    "antiguedad": 20,
+    "zona": 13,
     "exclusion": 16,
-    "zona": 6
+    "perfil": 2
    },
    "muestra": [
     {
-     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
-     "ubicacion": "Temuco",
-     "motivo": "perfil"
+     "titulo": "Tecnólogo Médico Imagenología - Rancagua",
+     "ubicacion": "Rancagua",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Postulación Tecnólogo(a) Médico(a) ? Copiapó",
+     "ubicacion": "Copiapó",
+     "motivo": "zona"
     },
     {
      "titulo": "Tecnologo Medico",
@@ -117,54 +132,39 @@
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
-     "ubicacion": "Punta arenas",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Importante empresa busca recurso comercial y…",
+     "titulo": "Tecnólogo médico",
      "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Colina",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Coordinador/a de Compras (tabla quirúrgica y…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Encargado de Equipamiento Médico y Mobiliario…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tens Imagen",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) – Centro…",
-     "ubicacion": "Valparaíso",
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
      "motivo": "zona"
     },
     {
-     "titulo": "Enfermera Calidad",
-     "ubicacion": "Valparaíso",
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO KARUN. PUERTO VARAS",
+     "ubicacion": "Puerto Montt",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS…",
+     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
+     "ubicacion": "Talagante",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico/a en Oftalmología ? Óptica",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
+    },
+    {
+     "titulo": "TECNÓLOGO MÉDICO IMAGENOLOGÍA Y FÍSICA MÉDICA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
     }
    ]
   },
@@ -242,7 +242,7 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 9,
+   "resultados": 8,
    "errores": [],
    "descartados": {
     "exclusion": 1
@@ -382,10 +382,10 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 1,
+  "leidas": 0,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-05T19:04:32+00:00"
+ "rss_chiletrabajos": "2026-11-05T22:55:58+00:00"
 }
