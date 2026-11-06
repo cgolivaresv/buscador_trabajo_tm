@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-06T13:15:11+00:00",
+ "ultimo_chequeo": "2026-11-06T14:26:41+00:00",
  "nuevos": 0,
  "total": 41,
  "palabras_clave": [
@@ -100,10 +100,10 @@
    "resultados": 222,
    "errores": [],
    "descartados": {
-    "perfil": 19,
+    "perfil": 20,
     "antiguedad": 5,
     "exclusion": 16,
-    "zona": 9
+    "zona": 8
    },
    "muestra": [
     {
@@ -173,11 +173,21 @@
    "resultados": 111,
    "errores": [],
    "descartados": {
-    "exclusion": 13,
     "perfil": 22,
+    "exclusion": 14,
     "zona": 11
    },
    "muestra": [
+    {
+     "titulo": "EU Navegadora - Flujo Prequirúrgico",
+     "ubicacion": "La Florida, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Coordinador(a) Administrativo BANCH",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Convocatoria Tens",
      "ubicacion": "Estación Central, Metropolitana de Santiago",
@@ -227,22 +237,12 @@
      "titulo": "KAM Biosimilares - Experiencia Salud Público y/o Privada",
      "ubicacion": "Concepción, Biobío",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Enfermera(o) UTI - RedSalud Santiago",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Analista Junior de Remuneraciones",
-     "ubicacion": "Las Condes, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 9,
+   "resultados": 8,
    "errores": [],
    "descartados": {
     "perfil": 1
