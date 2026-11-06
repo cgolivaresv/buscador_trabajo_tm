@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-06T22:51:05+00:00",
+ "ultimo_chequeo": "2026-11-06T23:46:27+00:00",
  "nuevos": 0,
  "total": 41,
  "palabras_clave": [
@@ -242,15 +242,15 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 9,
+   "resultados": 8,
    "errores": [],
    "descartados": {
     "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Prevencionista de Riesgos",
-     "ubicacion": "Huechuraba, RM, Chile",
+     "titulo": "Kinesiólogo - Centro Colina Achs Salud",
+     "ubicacion": "Colina, RM, Chile",
      "motivo": "perfil"
     }
    ]
