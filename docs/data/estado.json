@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-06T15:57:26+00:00",
+ "ultimo_chequeo": "2026-11-06T16:59:54+00:00",
  "nuevos": 0,
  "total": 41,
  "palabras_clave": [
@@ -34,13 +34,18 @@
    },
    "muestra": [
     {
+     "titulo": "Coordinador/a de Servicio Técnico, Santiago Centro.",
+     "ubicacion": "Santiago Centro, R.Metropolitana",
+     "motivo": "perfil"
+    },
+    {
      "titulo": "Técnico de Nivel Superior en Odontología",
      "ubicacion": "Santiago - Vitacura, R.Metropolitana",
      "motivo": "perfil"
     },
     {
-     "titulo": "Coordinador/a de Servicio Técnico, Santiago Centro.",
-     "ubicacion": "Santiago Centro, R.Metropolitana",
+     "titulo": "Técnico Mecánico Rubro Automotriz",
+     "ubicacion": "Santiago - Vitacura, R.Metropolitana",
      "motivo": "perfil"
     },
     {
@@ -54,19 +59,14 @@
      "motivo": "zona"
     },
     {
-     "titulo": "Técnico Mecánico Rubro Automotriz",
-     "ubicacion": "Santiago - Vitacura, R.Metropolitana",
-     "motivo": "perfil"
+     "titulo": "Técnico en Enfermería Nivel Superior",
+     "ubicacion": "Santiago - Las condes, R.Metropolitana",
+     "motivo": "exclusion"
     },
     {
      "titulo": "Coordinador/a de Servicio Técnico, Santiago Centro.",
      "ubicacion": "Santiago Centro, R.Metropolitana",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Técnico en Enfermería Nivel Superior",
-     "ubicacion": "Santiago - Las condes, R.Metropolitana",
-     "motivo": "exclusion"
     },
     {
      "titulo": "Tecnólogos(as) Médicos Volantes",
@@ -97,34 +97,19 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 102,
+   "resultados": 222,
    "errores": [],
    "descartados": {
-    "exclusion": 17,
-    "antiguedad": 20,
-    "zona": 10,
-    "perfil": 1
+    "perfil": 20,
+    "antiguedad": 5,
+    "exclusion": 16,
+    "zona": 8
    },
    "muestra": [
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
-     "ubicacion": "Curicó",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
-     "ubicacion": "Concepción",
-     "motivo": "antiguedad"
+     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
+     "ubicacion": "Temuco",
+     "motivo": "perfil"
     },
     {
      "titulo": "Tecnologo Medico",
@@ -132,38 +117,53 @@
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo médico",
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Linares",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
+     "ubicacion": "Punta arenas",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Importante empresa busca recurso comercial y…",
      "ubicacion": "Santiago",
-     "motivo": "antiguedad"
+     "motivo": "perfil"
     },
     {
-     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
-     "ubicacion": "La Serena",
-     "motivo": "zona"
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Colina",
+     "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "titulo": "Coordinador/a de Compras (tabla quirúrgica y…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Encargado de Equipamiento Médico y Mobiliario…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tens Imagen",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Servicio de Tecnólogo Medico 4to turno Laboratorio - Tomé",
-     "ubicacion": "Concepción",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) ? Centro Médico, Viña del Mar",
+     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) – Centro…",
      "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
-     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
-     "ubicacion": "Talagante",
+     "titulo": "Enfermera Calidad",
+     "ubicacion": "Valparaíso",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS…",
+     "ubicacion": "Santiago",
      "motivo": "exclusion"
     }
    ]
@@ -173,11 +173,16 @@
    "resultados": 111,
    "errores": [],
    "descartados": {
-    "perfil": 25,
+    "perfil": 29,
     "exclusion": 13,
-    "zona": 9
+    "zona": 5
    },
    "muestra": [
+    {
+     "titulo": "Encargado/a de Operaciones - San Fernando",
+     "ubicacion": "San Fernando, Lib. Gral. Bdo. O'Higgins",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Asistente de Personas y Beneficios - Las Condes",
      "ubicacion": "Las Condes, Metropolitana de Santiago",
@@ -232,17 +237,12 @@
      "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
      "ubicacion": "Linares, Maule",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología - Colina",
-     "ubicacion": "Colina, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 8,
+   "resultados": 7,
    "errores": [],
    "descartados": {
     "perfil": 1
