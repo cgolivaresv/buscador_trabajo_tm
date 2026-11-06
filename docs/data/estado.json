@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-05T23:51:51+00:00",
+ "ultimo_chequeo": "2026-11-06T01:19:26+00:00",
  "nuevos": 0,
  "total": 41,
  "palabras_clave": [
@@ -29,8 +29,8 @@
    "errores": [],
    "descartados": {
     "zona": 22,
-    "perfil": 26,
-    "exclusion": 15
+    "perfil": 25,
+    "exclusion": 16
    },
    "muestra": [
     {
@@ -100,10 +100,10 @@
    "resultados": 222,
    "errores": [],
    "descartados": {
-    "perfil": 22,
+    "perfil": 20,
     "antiguedad": 5,
     "exclusion": 16,
-    "zona": 6
+    "zona": 8
    },
    "muestra": [
     {
@@ -242,16 +242,16 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 10,
+   "resultados": 8,
    "errores": [],
    "descartados": {
-    "perfil": 1
+    "exclusion": 1
    },
    "muestra": [
     {
-     "titulo": "Implementador de Sistemas de Salud",
-     "ubicacion": "Santiago de Chile, RM, Chile",
-     "motivo": "perfil"
+     "titulo": "Técnico En Enfermería MQ Reemplazo Vacaciones - Hospital del Trabajador Achs Salud",
+     "ubicacion": "Providencia, RM, Chile",
+     "motivo": "exclusion"
     }
    ]
   },
