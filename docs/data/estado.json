@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-07T15:47:03+00:00",
+ "ultimo_chequeo": "2026-11-07T16:48:59+00:00",
  "nuevos": 0,
  "total": 41,
  "palabras_clave": [
@@ -28,26 +28,11 @@
    "resultados": 214,
    "errores": [],
    "descartados": {
-    "zona": 23,
     "exclusion": 17,
-    "perfil": 25
+    "perfil": 26,
+    "zona": 22
    },
    "muestra": [
-    {
-     "titulo": "Tecnologo médico en Imagenología para Taltal",
-     "ubicacion": "Taltal, Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Técnico en Enfermería Nivel Superior Unidad Toma de Muestras Viña del Mar",
-     "ubicacion": "Viña del Mar, Valparaíso",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnologo médico en Laboratorio para Tocopilla",
-     "ubicacion": "Tocopilla, Antofagasta",
-     "motivo": "exclusion"
-    },
     {
      "titulo": "Tecnólogo/a Médico – 4° turno, Laboratorio Clínico – Tomé, Región del Biobío",
      "ubicacion": "Tomé, Bíobío",
@@ -62,6 +47,21 @@
      "titulo": "Coordinador/a de Servicio Técnico, Santiago Centro.",
      "ubicacion": "Santiago Centro, R.Metropolitana",
      "motivo": "perfil"
+    },
+    {
+     "titulo": "Tecnologo médico en Imagenología para Taltal",
+     "ubicacion": "Taltal, Antofagasta",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Técnico en Enfermería Nivel Superior Unidad Toma de Muestras Viña del Mar",
+     "ubicacion": "Viña del Mar, Valparaíso",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnologo médico en Laboratorio para Tocopilla",
+     "ubicacion": "Tocopilla, Antofagasta",
+     "motivo": "exclusion"
     },
     {
      "titulo": "Técnico de Nivel Superior en Odontología",
@@ -242,7 +242,7 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 4,
+   "resultados": 5,
    "errores": [],
    "descartados": {
     "perfil": 1
