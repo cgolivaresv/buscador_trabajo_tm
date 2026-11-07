@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-07T19:49:44+00:00",
+ "ultimo_chequeo": "2026-11-07T20:47:24+00:00",
  "nuevos": 0,
  "total": 41,
  "palabras_clave": [
@@ -33,6 +33,11 @@
     "zona": 21
    },
    "muestra": [
+    {
+     "titulo": "Tecnolog@ Medico para Director/a Técnico de laboratorio clínico",
+     "ubicacion": "Arica, Arica y Parinacota",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Tecnólogo/a Médico – 4° turno, Laboratorio Clínico – Tomé, Región del Biobío",
      "ubicacion": "Tomé, Bíobío",
@@ -87,11 +92,6 @@
      "titulo": "Técnico en Enfermería Nivel Superior",
      "ubicacion": "Santiago - Las condes, R.Metropolitana",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Coordinador/a de Servicio Técnico, Santiago Centro.",
-     "ubicacion": "Santiago Centro, R.Metropolitana",
-     "motivo": "perfil"
     }
    ]
   },
@@ -330,15 +330,7 @@
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
    "resultados": 20,
-   "errores": [
-    "«tecnólogo médico radiología»: HTTPError: 404 Client Error: Not Found for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«tecnologo medico radiologia»: HTTPError: 404 Client Error: Not Found for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«especialista de aplicaciones»: HTTPError: 404 Client Error: Not Found for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«coordinador imagenología»: HTTPError: 404 Client Error: Not Found for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«coordinador imagenologia»: HTTPError: 404 Client Error: Not Found for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«jefe imagenología»: HTTPError: 404 Client Error: Not Found for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«jefe imagenologia»: HTTPError: 404 Client Error: Not Found for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50"
-   ],
+   "errores": [],
    "descartados": {
     "exclusion": 6,
     "zona": 1,
