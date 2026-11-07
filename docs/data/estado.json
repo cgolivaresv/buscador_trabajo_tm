@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-07T01:08:59+00:00",
+ "ultimo_chequeo": "2026-11-07T10:51:28+00:00",
  "nuevos": 0,
  "total": 41,
  "palabras_clave": [
@@ -28,11 +28,26 @@
    "resultados": 214,
    "errores": [],
    "descartados": {
+    "zona": 23,
     "exclusion": 17,
-    "perfil": 25,
-    "zona": 23
+    "perfil": 25
    },
    "muestra": [
+    {
+     "titulo": "Tecnologo médico en Imagenología para Taltal",
+     "ubicacion": "Taltal, Antofagasta",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Técnico en Enfermería Nivel Superior Unidad Toma de Muestras Viña del Mar",
+     "ubicacion": "Viña del Mar, Valparaíso",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnologo médico en Laboratorio para Tocopilla",
+     "ubicacion": "Tocopilla, Antofagasta",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Tecnólogo/a Médico – 4° turno, Laboratorio Clínico – Tomé, Región del Biobío",
      "ubicacion": "Tomé, Bíobío",
@@ -77,21 +92,6 @@
      "titulo": "Coordinador/a de Servicio Técnico, Santiago Centro.",
      "ubicacion": "Santiago Centro, R.Metropolitana",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnólogos(as) Médicos Volantes",
-     "ubicacion": "Santiago Centro, R.Metropolitana",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnologo/a medico/a con experiencia en Resonancia",
-     "ubicacion": "Quillota, Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnologo/a medico/a con experiencia en resonancia",
-     "ubicacion": "Iquique, Tarapacá",
-     "motivo": "zona"
     }
    ]
   },
@@ -170,11 +170,11 @@
   },
   "trabajando": {
    "nombre": "Trabajando.cl",
-   "resultados": 111,
+   "resultados": 107,
    "errores": [],
    "descartados": {
     "exclusion": 14,
-    "perfil": 28,
+    "perfil": 26,
     "zona": 5
    },
    "muestra": [
@@ -242,7 +242,7 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 8,
+   "resultados": 7,
    "errores": [],
    "descartados": {
     "perfil": 1
@@ -329,7 +329,7 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 22,
+   "resultados": 20,
    "errores": [],
    "descartados": {
     "exclusion": 6,
@@ -387,5 +387,5 @@
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-07T01:08:59+00:00"
+ "rss_chiletrabajos": "2026-11-07T10:51:28+00:00"
 }
