@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-07T10:51:28+00:00",
+ "ultimo_chequeo": "2026-11-07T11:48:31+00:00",
  "nuevos": 0,
  "total": 41,
  "palabras_clave": [
@@ -97,34 +97,19 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 102,
+   "resultados": 221,
    "errores": [],
    "descartados": {
-    "exclusion": 17,
-    "antiguedad": 20,
-    "zona": 10,
-    "perfil": 1
+    "perfil": 20,
+    "antiguedad": 5,
+    "exclusion": 16,
+    "zona": 7
    },
    "muestra": [
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
-     "ubicacion": "Curicó",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
-     "ubicacion": "Concepción",
-     "motivo": "antiguedad"
+     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
+     "ubicacion": "Temuco",
+     "motivo": "perfil"
     },
     {
      "titulo": "Tecnologo Medico",
@@ -132,38 +117,53 @@
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo médico",
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Linares",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
+     "ubicacion": "Punta arenas",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Importante empresa busca recurso comercial y…",
      "ubicacion": "Santiago",
-     "motivo": "antiguedad"
+     "motivo": "perfil"
     },
     {
-     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
-     "ubicacion": "La Serena",
-     "motivo": "zona"
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Colina",
+     "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "titulo": "Coordinador/a de Compras (tabla quirúrgica y…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Encargado de Equipamiento Médico y Mobiliario…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tens Imagen",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Servicio de Tecnólogo Medico 4to turno Laboratorio - Tomé",
-     "ubicacion": "Concepción",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) ? Centro Médico, Viña del Mar",
+     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) – Centro…",
      "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
-     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
-     "ubicacion": "Talagante",
+     "titulo": "Enfermera Calidad",
+     "ubicacion": "Valparaíso",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS…",
+     "ubicacion": "Santiago",
      "motivo": "exclusion"
     }
    ]
@@ -329,55 +329,28 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 20,
-   "errores": [],
-   "descartados": {
-    "exclusion": 6,
-    "zona": 1,
-    "antiguedad": 1
-   },
-   "muestra": [
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología - Colina",
-     "ubicacion": "Colina, Metropolitana",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
-     "ubicacion": "Linares, Maule",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo Licencia Médica) - Punta Arenas",
-     "ubicacion": "Punta Arenas, Magallanes y Antártica Chilena",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Medico imagenología",
-     "ubicacion": "Osorno, Los Lagos",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico Pabellón Hemodinamia (Angiografía) - RedSalud Santiago",
-     "ubicacion": "Estación Central, Metropolitana",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "TENS Imagen",
-     "ubicacion": "Las Condes, Metropolitana",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RADIOLOGÍA (REEMPLAZO)",
-     "ubicacion": "Providencia, Metropolitana",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RESONANCIA MAGNETICA (REEMPLAZO)",
-     "ubicacion": "Providencia, Metropolitana",
-     "motivo": "exclusion"
-    }
-   ]
+   "resultados": 0,
+   "errores": [
+    "«tecnólogo médico»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnologo medico»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnólogo médico resonancia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnologo medico resonancia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«resonancia magnética»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«resonancia magnetica»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnólogo médico imagenología»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnologo medico imagenologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnólogo médico scanner»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnologo medico scanner»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnólogo médico radiología»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnologo medico radiologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«especialista de aplicaciones»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«coordinador imagenología»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«coordinador imagenologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«jefe imagenología»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«jefe imagenologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50"
+   ],
+   "descartados": {},
+   "muestra": []
   }
  },
  "paginas_vigiladas": [],
