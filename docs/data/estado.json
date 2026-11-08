@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-08T19:52:02+00:00",
+ "ultimo_chequeo": "2026-11-08T20:47:30+00:00",
  "nuevos": 0,
  "total": 41,
  "palabras_clave": [
@@ -173,11 +173,21 @@
    "resultados": 107,
    "errores": [],
    "descartados": {
-    "exclusion": 14,
-    "perfil": 26,
+    "perfil": 27,
+    "exclusion": 13,
     "zona": 5
    },
    "muestra": [
+    {
+     "titulo": "Auditor Compliance - RedSalud Casa Matriz",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Enfermera(o) UTI - RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "TENS -Esterilización",
      "ubicacion": "Providencia, Metropolitana de Santiago",
@@ -227,30 +237,20 @@
      "titulo": "Práctica Profesional - Atracción de Talento RedSalud CChC",
      "ubicacion": "Providencia, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Ejecutivo(a) de Atención al Paciente - Imagenología",
-     "ubicacion": "Viña del Mar, Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Encargado/a de Operaciones - Arauco",
-     "ubicacion": "Arauco, Biobío",
-     "motivo": "perfil"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 2,
+   "resultados": 3,
    "errores": [],
    "descartados": {
     "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Kinesiólogo - Centro Colina Achs Salud",
-     "ubicacion": "Colina, RM, Chile",
+     "titulo": "Analista de tesorería junior",
+     "ubicacion": "Las Condes, RM, Chile",
      "motivo": "perfil"
     }
    ]
