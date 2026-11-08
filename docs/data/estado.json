@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-07T23:43:40+00:00",
+ "ultimo_chequeo": "2026-11-08T01:15:32+00:00",
  "nuevos": 0,
  "total": 41,
  "palabras_clave": [
@@ -28,9 +28,9 @@
    "resultados": 210,
    "errores": [],
    "descartados": {
-    "exclusion": 16,
+    "exclusion": 15,
     "perfil": 26,
-    "zona": 21
+    "zona": 22
    },
    "muestra": [
     {
@@ -329,13 +329,8 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 14,
-   "errores": [
-    "«resonancia magnetica»: HTTPError: 404 Client Error: Not Found for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«tecnólogo médico imagenología»: HTTPError: 404 Client Error: Not Found for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«tecnologo medico imagenologia»: HTTPError: 404 Client Error: Not Found for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«tecnólogo médico scanner»: HTTPError: 404 Client Error: Not Found for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50"
-   ],
+   "resultados": 20,
+   "errores": [],
    "descartados": {
     "exclusion": 6,
     "zona": 1,
