@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-08T01:15:32+00:00",
+ "ultimo_chequeo": "2026-11-08T10:52:21+00:00",
  "nuevos": 0,
  "total": 41,
  "palabras_clave": [
@@ -28,11 +28,16 @@
    "resultados": 210,
    "errores": [],
    "descartados": {
-    "exclusion": 15,
-    "perfil": 26,
-    "zona": 22
+    "zona": 22,
+    "exclusion": 14,
+    "perfil": 26
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogo/a Médico/a en Imagenología – Calama",
+     "ubicacion": "Calama, Antofagasta",
+     "motivo": "zona"
+    },
     {
      "titulo": "Tecnolog@ Medico para Director/a Técnico de laboratorio clínico",
      "ubicacion": "Arica, Arica y Parinacota",
@@ -87,29 +92,39 @@
      "titulo": "Tecnólogo Médico (a), Proyecto Antofagasta 7x7",
      "ubicacion": "Antofagasta, Antofagasta",
      "motivo": "zona"
-    },
-    {
-     "titulo": "Técnico en Enfermería Nivel Superior",
-     "ubicacion": "Santiago - Las condes, R.Metropolitana",
-     "motivo": "exclusion"
     }
    ]
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 221,
+   "resultados": 102,
    "errores": [],
    "descartados": {
-    "perfil": 18,
-    "antiguedad": 5,
-    "exclusion": 16,
-    "zona": 9
+    "exclusion": 17,
+    "antiguedad": 20,
+    "zona": 10,
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
-     "ubicacion": "Temuco",
-     "motivo": "perfil"
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "ubicacion": "Concepción",
+     "motivo": "antiguedad"
     },
     {
      "titulo": "Tecnologo Medico",
@@ -117,53 +132,38 @@
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
-     "ubicacion": "Punta arenas",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Importante empresa busca recurso comercial y…",
+     "titulo": "Tecnólogo médico",
      "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Colina",
-     "motivo": "exclusion"
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
+     "motivo": "zona"
     },
     {
-     "titulo": "Coordinador/a de Compras (tabla quirúrgica y…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Encargado de Equipamiento Médico y Mobiliario…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tens Imagen",
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) – Centro…",
+     "titulo": "Servicio de Tecnólogo Medico 4to turno Laboratorio - Tomé",
+     "ubicacion": "Concepción",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) ? Centro Médico, Viña del Mar",
      "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
-     "titulo": "Enfermera Calidad",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS…",
-     "ubicacion": "Santiago",
+     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
+     "ubicacion": "Talagante",
      "motivo": "exclusion"
     }
    ]
@@ -242,7 +242,7 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 4,
+   "resultados": 5,
    "errores": [],
    "descartados": {
     "perfil": 1
@@ -330,7 +330,17 @@
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
    "resultados": 20,
-   "errores": [],
+   "errores": [
+    "«tecnólogo médico scanner»: HTTPError: 404 Client Error: Not Found for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnologo medico scanner»: HTTPError: 404 Client Error: Not Found for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnólogo médico radiología»: HTTPError: 404 Client Error: Not Found for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnologo medico radiologia»: HTTPError: 404 Client Error: Not Found for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«especialista de aplicaciones»: HTTPError: 404 Client Error: Not Found for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«coordinador imagenología»: HTTPError: 404 Client Error: Not Found for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«coordinador imagenologia»: HTTPError: 404 Client Error: Not Found for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«jefe imagenología»: HTTPError: 404 Client Error: Not Found for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«jefe imagenologia»: HTTPError: 404 Client Error: Not Found for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50"
+   ],
    "descartados": {
     "exclusion": 6,
     "zona": 1,
@@ -387,5 +397,5 @@
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-07T22:45:42+00:00"
+ "rss_chiletrabajos": "2026-11-08T10:52:21+00:00"
 }
