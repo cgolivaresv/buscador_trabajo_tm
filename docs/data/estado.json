@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-09T13:23:41+00:00",
+ "ultimo_chequeo": "2026-11-09T15:04:21+00:00",
  "nuevos": 0,
  "total": 41,
  "palabras_clave": [
@@ -25,12 +25,12 @@
   },
   "computrabajo": {
    "nombre": "Computrabajo",
-   "resultados": 214,
+   "resultados": 206,
    "errores": [],
    "descartados": {
-    "perfil": 15,
-    "zona": 32,
-    "exclusion": 15
+    "perfil": 16,
+    "zona": 30,
+    "exclusion": 13
    },
    "muestra": [
     {
@@ -89,27 +89,42 @@
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo Médico (a), Proyecto Antofagasta 7x7",
-     "ubicacion": "Antofagasta, Antofagasta",
-     "motivo": "zona"
+     "titulo": "Técnico en Enfermería Nivel Superior",
+     "ubicacion": "Santiago - Las condes, R.Metropolitana",
+     "motivo": "exclusion"
     }
    ]
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 221,
+   "resultados": 102,
    "errores": [],
    "descartados": {
-    "perfil": 19,
-    "antiguedad": 5,
-    "exclusion": 16,
-    "zona": 8
+    "exclusion": 17,
+    "antiguedad": 20,
+    "zona": 10,
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
-     "ubicacion": "Temuco",
-     "motivo": "perfil"
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "ubicacion": "Concepción",
+     "motivo": "antiguedad"
     },
     {
      "titulo": "Tecnologo Medico",
@@ -117,53 +132,38 @@
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
-     "ubicacion": "Punta arenas",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Importante empresa busca recurso comercial y…",
+     "titulo": "Tecnólogo médico",
      "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Colina",
-     "motivo": "exclusion"
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
+     "motivo": "zona"
     },
     {
-     "titulo": "Coordinador/a de Compras (tabla quirúrgica y…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Encargado de Equipamiento Médico y Mobiliario…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tens Imagen",
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) – Centro…",
+     "titulo": "Servicio de Tecnólogo Medico 4to turno Laboratorio - Tomé",
+     "ubicacion": "Concepción",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) ? Centro Médico, Viña del Mar",
      "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
-     "titulo": "Enfermera Calidad",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS…",
-     "ubicacion": "Santiago",
+     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
+     "ubicacion": "Talagante",
      "motivo": "exclusion"
     }
    ]
@@ -173,11 +173,16 @@
    "resultados": 107,
    "errores": [],
    "descartados": {
-    "exclusion": 14,
+    "exclusion": 15,
     "perfil": 26,
     "zona": 6
    },
    "muestra": [
+    {
+     "titulo": "Tens UPC Adulto",
+     "ubicacion": "La Florida, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Tens Medico Quirúrgico",
      "ubicacion": "La Florida, Metropolitana de Santiago",
@@ -232,25 +237,20 @@
      "titulo": "EU Navegadora - Flujo Prequirúrgico",
      "ubicacion": "La Florida, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Coordinador(a) Administrativo BANCH",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 4,
+   "resultados": 6,
    "errores": [],
    "descartados": {
     "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Ejecutivo Atención Público Sucursal Temuco",
-     "ubicacion": "Temuco, AR, Chile",
+     "titulo": "INGENIERO GEOTÉCNICO EMTS",
+     "ubicacion": "Sierra Gorda, AN, Chile",
      "motivo": "perfil"
     }
    ]
@@ -329,39 +329,25 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 18,
-   "errores": [],
+   "resultados": 7,
+   "errores": [
+    "«tecnólogo médico»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnologo medico»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnólogo médico imagenología»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnólogo médico scanner»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnologo medico scanner»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnólogo médico radiología»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnologo medico radiologia»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«especialista de aplicaciones»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«coordinador imagenología»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«coordinador imagenologia»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«jefe imagenología»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50"
+   ],
    "descartados": {
-    "exclusion": 5,
-    "zona": 1,
-    "antiguedad": 1
+    "exclusion": 2,
+    "zona": 1
    },
    "muestra": [
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología - Colina",
-     "ubicacion": "Colina, Metropolitana",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
-     "ubicacion": "Linares, Maule",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo Licencia Médica) - Punta Arenas",
-     "ubicacion": "Punta Arenas, Magallanes y Antártica Chilena",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Medico imagenología",
-     "ubicacion": "Osorno, Los Lagos",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico Pabellón Hemodinamia (Angiografía) - RedSalud Santiago",
-     "ubicacion": "Estación Central, Metropolitana",
-     "motivo": "antiguedad"
-    },
     {
      "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RADIOLOGÍA (REEMPLAZO)",
      "ubicacion": "Providencia, Metropolitana",
@@ -371,6 +357,11 @@
      "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RESONANCIA MAGNETICA (REEMPLAZO)",
      "ubicacion": "Providencia, Metropolitana",
      "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Medico imagenología",
+     "ubicacion": "Osorno, Los Lagos",
+     "motivo": "zona"
     }
    ]
   }
@@ -382,5 +373,5 @@
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-09T11:06:12+00:00"
+ "rss_chiletrabajos": "2026-11-09T15:04:21+00:00"
 }
