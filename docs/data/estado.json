@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-09T20:59:38+00:00",
+ "ultimo_chequeo": "2026-11-09T21:55:42+00:00",
  "nuevos": 0,
  "total": 42,
  "palabras_clave": [
@@ -97,13 +97,13 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 40,
+   "resultados": 227,
    "errores": [],
    "descartados": {
-    "perfil": 10,
-    "antiguedad": 5,
-    "zona": 9,
-    "exclusion": 9
+    "perfil": 22,
+    "antiguedad": 1,
+    "zona": 14,
+    "exclusion": 13
    },
    "muestra": [
     {
@@ -132,39 +132,39 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "STAFF DE PROFESIONALES DE LA SALUD…",
-     "ubicacion": "Concepción",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Colina",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Importante empresa busca recurso comercial y…",
+     "titulo": "TMO Part Time 20 hrs (mención…",
      "ubicacion": "Santiago",
      "motivo": "perfil"
     },
     {
-     "titulo": "Encargado de Equipamiento Médico y Mobiliario…",
+     "titulo": "TMO Part Time 20 hrs (mención…",
      "ubicacion": "Santiago",
      "motivo": "perfil"
     },
     {
-     "titulo": "Tens Imagen",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) – Centro…",
-     "ubicacion": "Valparaíso",
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Calama",
      "motivo": "zona"
     },
     {
-     "titulo": "Enfermera Calidad",
-     "ubicacion": "Valparaíso",
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Coquimbo",
      "motivo": "zona"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
     }
    ]
   },
@@ -173,11 +173,36 @@
    "resultados": 115,
    "errores": [],
    "descartados": {
+    "perfil": 20,
     "exclusion": 19,
-    "perfil": 22,
-    "zona": 7
+    "zona": 9
    },
    "muestra": [
+    {
+     "titulo": "Enfermera/o Asistencial - Volante - Centros Médicos",
+     "ubicacion": "Santiago, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - San Miguel",
+     "ubicacion": "San Miguel, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Viña del Mar",
+     "ubicacion": "Viña del Mar, Valparaíso",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Temuco",
+     "ubicacion": "Temuco, La Araucanía",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Lo Barnechea",
+     "ubicacion": "Lo Barnechea, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Ñuñoa",
      "ubicacion": "Ñuñoa, Metropolitana de Santiago",
@@ -212,31 +237,6 @@
      "titulo": "Auxiliar de Recetario Magistral para Macul / Por Proyecto",
      "ubicacion": "Macul, Metropolitana de Santiago",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tens Pool - RedSalud Providencia",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Supervisor(a) de REAS - RedSalud Providencia",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Enfermero(a) UPC - RedSalud Providencia",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Ayudante Técnico de laboratorio (Reemplazo maternal)",
-     "ubicacion": "Independencia, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
-     "ubicacion": "Linares, Maule",
-     "motivo": "exclusion"
     }
    ]
   },
@@ -257,12 +257,12 @@
   },
   "laborum": {
    "nombre": "Laborum",
-   "resultados": 66,
+   "resultados": 64,
    "errores": [],
    "descartados": {
     "zona": 5,
     "exclusion": 7,
-    "antiguedad": 6
+    "antiguedad": 5
    },
    "muestra": [
     {
@@ -279,11 +279,6 @@
      "titulo": "Tecnólogo Médico en Oftalmología Part Time 18 hrs. OPV Mall Alto Las Condes",
      "ubicacion": "Las Condes, Región Metropolitana",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico de Biología Molecular - Reemplazo",
-     "ubicacion": "Vitacura, Región Metropolitana",
-     "motivo": "antiguedad"
     },
     {
      "titulo": "Tecnólogo(a) Médico en Oftalmología",
@@ -324,6 +319,11 @@
      "titulo": "TECNÓLOGO MÉDICO SERVICIO BANCO DE SANGRE",
      "ubicacion": "La Reina, Región Metropolitana",
      "motivo": "exclusion"
+    },
+    {
+     "titulo": "tecnologo medico",
+     "ubicacion": "Santiago de Chile, Región Metropolitana",
+     "motivo": "antiguedad"
     }
    ]
   },
