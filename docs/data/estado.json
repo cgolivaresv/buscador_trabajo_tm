@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-09T17:18:47+00:00",
+ "ultimo_chequeo": "2026-11-09T19:03:41+00:00",
  "nuevos": 0,
  "total": 41,
  "palabras_clave": [
@@ -28,8 +28,8 @@
    "resultados": 206,
    "errores": [],
    "descartados": {
-    "perfil": 13,
-    "zona": 33,
+    "perfil": 15,
+    "zona": 31,
     "exclusion": 13
    },
    "muestra": [
@@ -97,19 +97,34 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 221,
+   "resultados": 102,
    "errores": [],
    "descartados": {
-    "perfil": 20,
-    "antiguedad": 5,
-    "exclusion": 16,
-    "zona": 7
+    "exclusion": 17,
+    "antiguedad": 20,
+    "zona": 10,
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
-     "ubicacion": "Temuco",
-     "motivo": "perfil"
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "ubicacion": "Concepción",
+     "motivo": "antiguedad"
     },
     {
      "titulo": "Tecnologo Medico",
@@ -117,81 +132,86 @@
      "motivo": "antiguedad"
     },
     {
-     "titulo": "STAFF DE PROFESIONALES DE LA SALUD…",
+     "titulo": "Tecnólogo médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Servicio de Tecnólogo Medico 4to turno Laboratorio - Tomé",
      "ubicacion": "Concepción",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
-     "ubicacion": "Punta arenas",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Importante empresa busca recurso comercial y…",
+     "titulo": "Tecnólogo/a Médico",
      "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Colina",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Encargado de Equipamiento Médico y Mobiliario…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tens Imagen",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) – Centro…",
+     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) ? Centro Médico, Viña del Mar",
      "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
-     "titulo": "Enfermera Calidad",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS…",
-     "ubicacion": "Santiago",
+     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
+     "ubicacion": "Talagante",
      "motivo": "exclusion"
     }
    ]
   },
   "trabajando": {
    "nombre": "Trabajando.cl",
-   "resultados": 109,
+   "resultados": 115,
    "errores": [],
    "descartados": {
-    "perfil": 30,
-    "exclusion": 12,
-    "zona": 3
+    "perfil": 28,
+    "zona": 6,
+    "exclusion": 11
    },
    "muestra": [
+    {
+     "titulo": "Técnico de Instalación y Mantenimiento GPS",
+     "ubicacion": "Santiago, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico/a de Resonancia Magnética - Iquique",
+     "ubicacion": "Iquique, Tarapacá",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Jefe/a de Operaciones",
+     "ubicacion": "Iquique, Tarapacá",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Asistente de Archivos / Clínica MEDS La Dehesa",
+     "ubicacion": "Lo Barnechea, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Enfermera Especialista de Productos",
      "ubicacion": "Pudahuel, Metropolitana de Santiago",
      "motivo": "perfil"
     },
     {
-     "titulo": "Enfermera Área Comercial - Preventivos (Proyecto Concepción)",
-     "ubicacion": "Concepción, Biobío",
-     "motivo": "perfil"
-    },
-    {
      "titulo": "TENS Centro Médico Vitacura (Reemplazo extendido)",
      "ubicacion": "Vitacura, Metropolitana de Santiago",
      "motivo": "exclusion"
+    },
+    {
+     "titulo": "Enfermera Área Comercial - Preventivos (Proyecto Concepción)",
+     "ubicacion": "Concepción, Biobío",
+     "motivo": "perfil"
     },
     {
      "titulo": "Enfermera Área Comercial - Preventivos (Proyecto)",
@@ -217,32 +237,12 @@
      "titulo": "TENS Cardiología - Centro Médico La Dehesa",
      "ubicacion": "Santiago, Metropolitana de Santiago",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Ingeniero en Prevención de Riesgos",
-     "ubicacion": "Las Condes, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Enfermera(o) UTI - RedSalud Santiago",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Auditor Compliance - RedSalud Casa Matriz",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TENS -Esterilización",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 8,
+   "resultados": 9,
    "errores": [],
    "descartados": {
     "perfil": 1
@@ -257,14 +257,19 @@
   },
   "laborum": {
    "nombre": "Laborum",
-   "resultados": 60,
+   "resultados": 66,
    "errores": [],
    "descartados": {
+    "zona": 5,
     "exclusion": 7,
-    "antiguedad": 6,
-    "zona": 4
+    "antiguedad": 6
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogo/a Médico/a de Resonancia Magnética - Iquique",
+     "ubicacion": "Iquique, Región I",
+     "motivo": "zona"
+    },
     {
      "titulo": "TECNÓLOGO/A MÉDICO/A DE LABORATORIO CLÍNICO Part-time y reemplazos",
      "ubicacion": "Puerto Varas, Región X",
@@ -319,11 +324,6 @@
      "titulo": "TECNÓLOGO MÉDICO SERVICIO BANCO DE SANGRE",
      "ubicacion": "La Reina, Región Metropolitana",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "tecnologo medico",
-     "ubicacion": "Santiago de Chile, Región Metropolitana",
-     "motivo": "antiguedad"
     }
    ]
   },
@@ -382,5 +382,5 @@
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-09T15:04:21+00:00"
+ "rss_chiletrabajos": "2026-11-09T19:03:41+00:00"
 }
