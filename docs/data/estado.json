@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-09T21:55:42+00:00",
+ "ultimo_chequeo": "2026-11-09T22:54:53+00:00",
  "nuevos": 0,
  "total": 42,
  "palabras_clave": [
@@ -97,19 +97,34 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 227,
+   "resultados": 102,
    "errores": [],
    "descartados": {
-    "perfil": 22,
-    "antiguedad": 1,
-    "zona": 14,
-    "exclusion": 13
+    "exclusion": 17,
+    "antiguedad": 20,
+    "zona": 10,
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
-     "ubicacion": "Temuco",
-     "motivo": "perfil"
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "ubicacion": "Concepción",
+     "motivo": "antiguedad"
     },
     {
      "titulo": "Tecnologo Medico",
@@ -117,54 +132,39 @@
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo/a Médico/a de Resonancia Magnética -…",
-     "ubicacion": "Iquique",
+     "titulo": "Tecnólogo médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
-     "ubicacion": "Punta arenas",
+     "titulo": "Servicio de Tecnólogo Medico 4to turno Laboratorio - Tomé",
+     "ubicacion": "Concepción",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
+     "titulo": "Tecnólogo/a Médico",
      "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Calama",
+     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) ? Centro Médico, Viña del Mar",
+     "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Coquimbo",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
+     "ubicacion": "Talagante",
+     "motivo": "exclusion"
     }
    ]
   },
@@ -173,9 +173,9 @@
    "resultados": 115,
    "errores": [],
    "descartados": {
-    "perfil": 20,
+    "perfil": 18,
     "exclusion": 19,
-    "zona": 9
+    "zona": 11
    },
    "muestra": [
     {
@@ -242,7 +242,7 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 10,
+   "resultados": 12,
    "errores": [],
    "descartados": {
     "perfil": 1
@@ -382,5 +382,5 @@
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-09T19:03:41+00:00"
+ "rss_chiletrabajos": "2026-11-09T22:54:53+00:00"
 }
