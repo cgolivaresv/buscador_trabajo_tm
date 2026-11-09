@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-09T12:04:48+00:00",
+ "ultimo_chequeo": "2026-11-09T13:23:41+00:00",
  "nuevos": 0,
  "total": 41,
  "palabras_clave": [
@@ -25,14 +25,19 @@
   },
   "computrabajo": {
    "nombre": "Computrabajo",
-   "resultados": 210,
+   "resultados": 214,
    "errores": [],
    "descartados": {
-    "zona": 34,
-    "exclusion": 14,
-    "perfil": 13
+    "perfil": 15,
+    "zona": 32,
+    "exclusion": 15
    },
    "muestra": [
+    {
+     "titulo": "Técnico Mecánico Rubro Automotriz",
+     "ubicacion": "Santiago - Vitacura, R.Metropolitana",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Tecnólogo/a Médico/a en Imagenología – Calama",
      "ubicacion": "Calama, Antofagasta",
@@ -74,11 +79,6 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Técnico Mecánico Rubro Automotriz",
-     "ubicacion": "Santiago - Vitacura, R.Metropolitana",
-     "motivo": "perfil"
-    },
-    {
      "titulo": "Técnico de Nivel Superior en Odontología",
      "ubicacion": "Santiago - Vitacura, R.Metropolitana",
      "motivo": "perfil"
@@ -100,10 +100,10 @@
    "resultados": 221,
    "errores": [],
    "descartados": {
-    "perfil": 16,
+    "perfil": 19,
     "antiguedad": 5,
     "exclusion": 16,
-    "zona": 11
+    "zona": 8
    },
    "muestra": [
     {
@@ -173,11 +173,21 @@
    "resultados": 107,
    "errores": [],
    "descartados": {
-    "exclusion": 13,
+    "exclusion": 14,
     "perfil": 26,
     "zona": 6
    },
    "muestra": [
+    {
+     "titulo": "Tens Medico Quirúrgico",
+     "ubicacion": "La Florida, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Coordinador de Calidad e IAAS de Operación (Linares)",
+     "ubicacion": "Linares, Maule",
+     "motivo": "perfil"
+    },
     {
      "titulo": "TENS Cardiología - Centro Médico La Dehesa",
      "ubicacion": "Santiago, Metropolitana de Santiago",
@@ -226,16 +236,6 @@
     {
      "titulo": "Coordinador(a) Administrativo BANCH",
      "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Convocatoria Tens",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tens MQ (Part Time)",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
      "motivo": "exclusion"
     }
    ]
