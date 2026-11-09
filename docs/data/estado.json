@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-08T23:44:45+00:00",
+ "ultimo_chequeo": "2026-11-09T01:18:27+00:00",
  "nuevos": 0,
  "total": 41,
  "palabras_clave": [
@@ -100,10 +100,10 @@
    "resultados": 221,
    "errores": [],
    "descartados": {
-    "perfil": 20,
+    "perfil": 19,
     "antiguedad": 5,
     "exclusion": 16,
-    "zona": 7
+    "zona": 8
    },
    "muestra": [
     {
@@ -173,11 +173,16 @@
    "resultados": 107,
    "errores": [],
    "descartados": {
-    "perfil": 27,
-    "exclusion": 13,
+    "perfil": 28,
+    "exclusion": 12,
     "zona": 5
    },
    "muestra": [
+    {
+     "titulo": "Ingeniero en Prevención de Riesgos",
+     "ubicacion": "Las Condes, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Auditor Compliance - RedSalud Casa Matriz",
      "ubicacion": "Providencia, Metropolitana de Santiago",
@@ -232,11 +237,6 @@
      "titulo": "ENFERMERA (O) AREA DE URGENCIAS GENERAL",
      "ubicacion": "Vitacura, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Práctica Profesional - Atracción de Talento RedSalud CChC",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
@@ -257,11 +257,11 @@
   },
   "laborum": {
    "nombre": "Laborum",
-   "resultados": 62,
+   "resultados": 60,
    "errores": [],
    "descartados": {
     "exclusion": 7,
-    "antiguedad": 7,
+    "antiguedad": 6,
     "zona": 4
    },
    "muestra": [
