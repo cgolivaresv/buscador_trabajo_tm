@@ -1,8 +1,8 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-09T19:03:41+00:00",
- "nuevos": 0,
- "total": 41,
+ "ultimo_chequeo": "2026-11-09T20:02:02+00:00",
+ "nuevos": 1,
+ "total": 42,
  "palabras_clave": [
   "tecnólogo médico",
   "tecnólogo médico resonancia",
@@ -97,34 +97,19 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 102,
+   "resultados": 227,
    "errores": [],
    "descartados": {
-    "exclusion": 17,
-    "antiguedad": 20,
-    "zona": 10,
-    "perfil": 1
+    "perfil": 16,
+    "antiguedad": 5,
+    "zona": 11,
+    "exclusion": 15
    },
    "muestra": [
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
-     "ubicacion": "Curicó",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
-     "ubicacion": "Concepción",
-     "motivo": "antiguedad"
+     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
+     "ubicacion": "Temuco",
+     "motivo": "perfil"
     },
     {
      "titulo": "Tecnologo Medico",
@@ -132,39 +117,54 @@
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo médico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
-     "ubicacion": "La Serena",
+     "titulo": "Tecnólogo/a Médico/a de Resonancia Magnética -…",
+     "ubicacion": "Iquique",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
-     "ubicacion": "Santiago",
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Linares",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Servicio de Tecnólogo Medico 4to turno Laboratorio - Tomé",
+     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
+     "ubicacion": "Punta arenas",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "STAFF DE PROFESIONALES DE LA SALUD…",
      "ubicacion": "Concepción",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Colina",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo/a Médico",
+     "titulo": "Importante empresa busca recurso comercial y…",
      "ubicacion": "Santiago",
-     "motivo": "antiguedad"
+     "motivo": "perfil"
     },
     {
-     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) ? Centro Médico, Viña del Mar",
+     "titulo": "Encargado de Equipamiento Médico y Mobiliario…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tens Imagen",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) – Centro…",
      "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
-     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
-     "ubicacion": "Talagante",
-     "motivo": "exclusion"
+     "titulo": "Enfermera Calidad",
+     "ubicacion": "Valparaíso",
+     "motivo": "zona"
     }
    ]
   },
@@ -173,20 +173,35 @@
    "resultados": 115,
    "errores": [],
    "descartados": {
-    "perfil": 28,
+    "exclusion": 14,
     "zona": 6,
-    "exclusion": 11
+    "perfil": 25
    },
    "muestra": [
     {
-     "titulo": "Técnico de Instalación y Mantenimiento GPS",
-     "ubicacion": "Santiago, Metropolitana de Santiago",
-     "motivo": "perfil"
+     "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
+     "ubicacion": "Linares, Maule",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO con mención en Oftalmología (Reemplazo Licencia Médica) - Punta Arenas",
+     "ubicacion": "Punta Arenas, Magallanes y Antártica Chilena",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología - Colina",
+     "ubicacion": "Colina, Metropolitana de Santiago",
+     "motivo": "exclusion"
     },
     {
      "titulo": "Tecnólogo/a Médico/a de Resonancia Magnética - Iquique",
      "ubicacion": "Iquique, Tarapacá",
      "motivo": "zona"
+    },
+    {
+     "titulo": "Técnico de Instalación y Mantenimiento GPS",
+     "ubicacion": "Santiago, Metropolitana de Santiago",
+     "motivo": "perfil"
     },
     {
      "titulo": "Jefe/a de Operaciones",
@@ -222,27 +237,12 @@
      "titulo": "Tens UPC Adulto",
      "ubicacion": "La Florida, Metropolitana de Santiago",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tens Medico Quirúrgico",
-     "ubicacion": "La Florida, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Coordinador de Calidad e IAAS de Operación (Linares)",
-     "ubicacion": "Linares, Maule",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TENS Cardiología - Centro Médico La Dehesa",
-     "ubicacion": "Santiago, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 9,
+   "resultados": 10,
    "errores": [],
    "descartados": {
     "perfil": 1
@@ -377,7 +377,7 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 0,
+  "leidas": 1,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
