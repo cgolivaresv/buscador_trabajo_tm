@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-09T01:18:27+00:00",
+ "ultimo_chequeo": "2026-11-09T11:06:12+00:00",
  "nuevos": 0,
  "total": 41,
  "palabras_clave": [
@@ -28,9 +28,9 @@
    "resultados": 210,
    "errores": [],
    "descartados": {
-    "zona": 21,
+    "zona": 30,
     "exclusion": 14,
-    "perfil": 26
+    "perfil": 17
    },
    "muestra": [
     {
@@ -97,19 +97,34 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 221,
+   "resultados": 102,
    "errores": [],
    "descartados": {
-    "perfil": 19,
-    "antiguedad": 5,
-    "exclusion": 16,
-    "zona": 8
+    "exclusion": 17,
+    "antiguedad": 20,
+    "zona": 10,
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
-     "ubicacion": "Temuco",
-     "motivo": "perfil"
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "ubicacion": "Concepción",
+     "motivo": "antiguedad"
     },
     {
      "titulo": "Tecnologo Medico",
@@ -117,53 +132,38 @@
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
-     "ubicacion": "Punta arenas",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Importante empresa busca recurso comercial y…",
+     "titulo": "Tecnólogo médico",
      "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Colina",
-     "motivo": "exclusion"
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
+     "motivo": "zona"
     },
     {
-     "titulo": "Coordinador/a de Compras (tabla quirúrgica y…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Encargado de Equipamiento Médico y Mobiliario…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tens Imagen",
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) – Centro…",
+     "titulo": "Servicio de Tecnólogo Medico 4to turno Laboratorio - Tomé",
+     "ubicacion": "Concepción",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) ? Centro Médico, Viña del Mar",
      "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
-     "titulo": "Enfermera Calidad",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS…",
-     "ubicacion": "Santiago",
+     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
+     "ubicacion": "Talagante",
      "motivo": "exclusion"
     }
    ]
@@ -173,9 +173,9 @@
    "resultados": 107,
    "errores": [],
    "descartados": {
-    "perfil": 28,
+    "perfil": 27,
     "exclusion": 12,
-    "zona": 5
+    "zona": 6
    },
    "muestra": [
     {
@@ -184,13 +184,13 @@
      "motivo": "perfil"
     },
     {
-     "titulo": "Auditor Compliance - RedSalud Casa Matriz",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "titulo": "Enfermera(o) UTI - RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
      "motivo": "perfil"
     },
     {
-     "titulo": "Enfermera(o) UTI - RedSalud Santiago",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "titulo": "Auditor Compliance - RedSalud Casa Matriz",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
      "motivo": "perfil"
     },
     {
@@ -249,8 +249,8 @@
    },
    "muestra": [
     {
-     "titulo": "Analista de tesorería junior",
-     "ubicacion": "Las Condes, RM, Chile",
+     "titulo": "Ejecutivo Atención Público Sucursal Temuco",
+     "ubicacion": "Temuco, AR, Chile",
      "motivo": "perfil"
     }
    ]
@@ -329,10 +329,10 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 20,
+   "resultados": 18,
    "errores": [],
    "descartados": {
-    "exclusion": 6,
+    "exclusion": 5,
     "zona": 1,
     "antiguedad": 1
    },
@@ -363,11 +363,6 @@
      "motivo": "antiguedad"
     },
     {
-     "titulo": "TENS Imagen",
-     "ubicacion": "Las Condes, Metropolitana",
-     "motivo": "exclusion"
-    },
-    {
      "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RADIOLOGÍA (REEMPLAZO)",
      "ubicacion": "Providencia, Metropolitana",
      "motivo": "exclusion"
@@ -387,5 +382,5 @@
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-08T22:46:16+00:00"
+ "rss_chiletrabajos": "2026-11-09T11:06:12+00:00"
 }
