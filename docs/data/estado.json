@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-09T16:12:00+00:00",
+ "ultimo_chequeo": "2026-11-09T17:18:47+00:00",
  "nuevos": 0,
  "total": 41,
  "palabras_clave": [
@@ -28,8 +28,8 @@
    "resultados": 206,
    "errores": [],
    "descartados": {
-    "perfil": 16,
-    "zona": 30,
+    "perfil": 13,
+    "zona": 33,
     "exclusion": 13
    },
    "muestra": [
@@ -242,7 +242,7 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 7,
+   "resultados": 8,
    "errores": [],
    "descartados": {
     "perfil": 1
@@ -329,18 +329,39 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 6,
-   "errores": [
-    "«tecnólogo médico»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«tecnologo medico»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«tecnólogo médico imagenología»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«tecnologo medico imagenologia»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50"
-   ],
+   "resultados": 18,
+   "errores": [],
    "descartados": {
-    "exclusion": 2,
-    "zona": 1
+    "exclusion": 5,
+    "zona": 1,
+    "antiguedad": 1
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología - Colina",
+     "ubicacion": "Colina, Metropolitana",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
+     "ubicacion": "Linares, Maule",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO con mención en Oftalmología (Reemplazo Licencia Médica) - Punta Arenas",
+     "ubicacion": "Punta Arenas, Magallanes y Antártica Chilena",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Medico imagenología",
+     "ubicacion": "Osorno, Los Lagos",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Pabellón Hemodinamia (Angiografía) - RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana",
+     "motivo": "antiguedad"
+    },
     {
      "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RADIOLOGÍA (REEMPLAZO)",
      "ubicacion": "Providencia, Metropolitana",
@@ -350,11 +371,6 @@
      "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RESONANCIA MAGNETICA (REEMPLAZO)",
      "ubicacion": "Providencia, Metropolitana",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Medico imagenología",
-     "ubicacion": "Osorno, Los Lagos",
-     "motivo": "zona"
     }
    ]
   }
