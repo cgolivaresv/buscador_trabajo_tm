@@ -1,7 +1,7 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-09T20:02:02+00:00",
- "nuevos": 1,
+ "ultimo_chequeo": "2026-11-09T20:59:38+00:00",
+ "nuevos": 0,
  "total": 42,
  "palabras_clave": [
   "tecnólogo médico",
@@ -28,11 +28,16 @@
    "resultados": 206,
    "errores": [],
    "descartados": {
-    "perfil": 15,
     "zona": 31,
+    "perfil": 15,
     "exclusion": 13
    },
    "muestra": [
+    {
+     "titulo": "Tecnologo/a medico/a con experiencia en Resonancia",
+     "ubicacion": "Quillota, Valparaíso",
+     "motivo": "zona"
+    },
     {
      "titulo": "Técnico Mecánico Rubro Automotriz",
      "ubicacion": "Santiago - Vitacura, R.Metropolitana",
@@ -87,23 +92,18 @@
      "titulo": "Tecnólogo Médico(a) Turno 7x7 Calama",
      "ubicacion": "Calama, Antofagasta",
      "motivo": "zona"
-    },
-    {
-     "titulo": "Técnico en Enfermería Nivel Superior",
-     "ubicacion": "Santiago - Las condes, R.Metropolitana",
-     "motivo": "exclusion"
     }
    ]
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 227,
+   "resultados": 40,
    "errores": [],
    "descartados": {
-    "perfil": 16,
+    "perfil": 10,
     "antiguedad": 5,
-    "zona": 11,
-    "exclusion": 15
+    "zona": 9,
+    "exclusion": 9
    },
    "muestra": [
     {
@@ -173,69 +173,69 @@
    "resultados": 115,
    "errores": [],
    "descartados": {
-    "exclusion": 14,
-    "zona": 6,
-    "perfil": 25
+    "exclusion": 19,
+    "perfil": 22,
+    "zona": 7
    },
    "muestra": [
     {
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Ñuñoa",
+     "ubicacion": "Ñuñoa, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Calama",
+     "ubicacion": "Calama, Antofagasta",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Coquimbo",
+     "ubicacion": "Coquimbo, Coquimbo",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Huechuraba",
+     "ubicacion": "Huechuraba, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - La Florida",
+     "ubicacion": "La Florida, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Las Condes",
+     "ubicacion": "Las Condes, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Auxiliar de Recetario Magistral para Macul / Por Proyecto",
+     "ubicacion": "Macul, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tens Pool - RedSalud Providencia",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Supervisor(a) de REAS - RedSalud Providencia",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Enfermero(a) UPC - RedSalud Providencia",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Ayudante Técnico de laboratorio (Reemplazo maternal)",
+     "ubicacion": "Independencia, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
      "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
      "ubicacion": "Linares, Maule",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo Licencia Médica) - Punta Arenas",
-     "ubicacion": "Punta Arenas, Magallanes y Antártica Chilena",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología - Colina",
-     "ubicacion": "Colina, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a de Resonancia Magnética - Iquique",
-     "ubicacion": "Iquique, Tarapacá",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Técnico de Instalación y Mantenimiento GPS",
-     "ubicacion": "Santiago, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Jefe/a de Operaciones",
-     "ubicacion": "Iquique, Tarapacá",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Asistente de Archivos / Clínica MEDS La Dehesa",
-     "ubicacion": "Lo Barnechea, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Enfermera Especialista de Productos",
-     "ubicacion": "Pudahuel, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TENS Centro Médico Vitacura (Reemplazo extendido)",
-     "ubicacion": "Vitacura, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Enfermera Área Comercial - Preventivos (Proyecto Concepción)",
-     "ubicacion": "Concepción, Biobío",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Enfermera Área Comercial - Preventivos (Proyecto)",
-     "ubicacion": "Puente Alto, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tens UPC Adulto",
-     "ubicacion": "La Florida, Metropolitana de Santiago",
      "motivo": "exclusion"
     }
    ]
@@ -377,7 +377,7 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 1,
+  "leidas": 0,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
