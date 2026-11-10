@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-10T14:22:55+00:00",
+ "ultimo_chequeo": "2026-11-10T15:57:46+00:00",
  "nuevos": 0,
  "total": 44,
  "palabras_clave": [
@@ -33,6 +33,11 @@
     "perfil": 12
    },
    "muestra": [
+    {
+     "titulo": "Técnico en Enfermería Médico Quirúrgico, reemplazo vacaciones",
+     "ubicacion": "Santiago Centro, R.Metropolitana",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Técnico/a en Enfermería (TENS) para Centro Médico",
      "ubicacion": "Santiago Centro, R.Metropolitana",
@@ -87,34 +92,39 @@
      "titulo": "Técnico en Enfermería Nivel Superior Unidad Toma de Muestras Viña del Mar",
      "ubicacion": "Viña del Mar, Valparaíso",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnologo médico en Laboratorio para Tocopilla",
-     "ubicacion": "Tocopilla, Antofagasta",
-     "motivo": "exclusion"
     }
    ]
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 227,
+   "resultados": 102,
    "errores": [],
    "descartados": {
-    "zona": 13,
-    "perfil": 25,
-    "antiguedad": 1,
-    "exclusion": 12
+    "exclusion": 17,
+    "antiguedad": 20,
+    "zona": 10,
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
     },
     {
-     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
-     "ubicacion": "Temuco",
-     "motivo": "perfil"
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "ubicacion": "Concepción",
+     "motivo": "antiguedad"
     },
     {
      "titulo": "Tecnologo Medico",
@@ -122,48 +132,38 @@
      "motivo": "antiguedad"
     },
     {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
+     "titulo": "Tecnólogo médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo/a Médico/a de Resonancia Magnética -…",
-     "ubicacion": "Iquique",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "titulo": "Servicio de Tecnólogo Medico 4to turno Laboratorio - Tomé",
+     "ubicacion": "Concepción",
+     "motivo": "exclusion"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
+     "titulo": "Tecnólogo/a Médico",
      "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Coquimbo",
+     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) ? Centro Médico, Viña del Mar",
+     "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Calama",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
-     "ubicacion": "Punta arenas",
+     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
+     "ubicacion": "Talagante",
      "motivo": "exclusion"
     }
    ]
@@ -173,11 +173,26 @@
    "resultados": 117,
    "errores": [],
    "descartados": {
-    "perfil": 25,
-    "exclusion": 13,
-    "zona": 11
+    "perfil": 27,
+    "exclusion": 12,
+    "zona": 10
    },
    "muestra": [
+    {
+     "titulo": "Cargo de Académico(a) Tres cuartos Jornada Docente para línea disciplinar de Microbiología Clínica.",
+     "ubicacion": "Santiago, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Analista Negocio Ambulatorio - RedSalud CChC",
+     "ubicacion": "Santiago, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Práctica Profesional Pucón - Administración// Cajera/o bancario",
+     "ubicacion": "Pucón, La Araucanía",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Enfermero(a) Hospitalización MQ Adulto (Vacaciones)- RedSalud Vitacura",
      "ubicacion": "Vitacura, Metropolitana de Santiago",
@@ -220,21 +235,6 @@
     },
     {
      "titulo": "Tens Hospitalización MQ (Vacaciones) - RedSalud Santiago",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tens Pabellón Ginecobstetricia (Periodo Vacaciones) - RedSalud Santiago",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tens Esterilización Vacaciones - RedSalud Santiago",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tens MQ (Part Time)",
      "ubicacion": "Estación Central, Metropolitana de Santiago",
      "motivo": "exclusion"
     }
@@ -329,8 +329,10 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 16,
-   "errores": [],
+   "resultados": 12,
+   "errores": [
+    "«tecnólogo médico»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50"
+   ],
    "descartados": {
     "exclusion": 5,
     "zona": 1
@@ -376,5 +378,5 @@
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-10T10:59:15+00:00"
+ "rss_chiletrabajos": "2026-11-10T15:57:46+00:00"
 }
