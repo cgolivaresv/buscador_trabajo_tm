@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-09T23:48:49+00:00",
+ "ultimo_chequeo": "2026-11-10T01:12:47+00:00",
  "nuevos": 0,
  "total": 42,
  "palabras_clave": [
@@ -28,8 +28,8 @@
    "resultados": 206,
    "errores": [],
    "descartados": {
-    "zona": 31,
-    "perfil": 15,
+    "zona": 27,
+    "perfil": 19,
     "exclusion": 13
    },
    "muestra": [
@@ -49,11 +49,6 @@
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnolog@ Medico para Director/a Técnico de laboratorio clínico",
-     "ubicacion": "Arica, Arica y Parinacota",
-     "motivo": "exclusion"
-    },
-    {
      "titulo": "Tecnólogo/a Médico – 4° turno, Laboratorio Clínico – Tomé, Región del Biobío",
      "ubicacion": "Tomé, Bíobío",
      "motivo": "exclusion"
@@ -61,6 +56,11 @@
     {
      "titulo": "Tecnólogo/a Médico – Diurno, Oftalmología y Laboratorio – Tomé, Región del Biobío",
      "ubicacion": "Tomé, Bíobío",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnolog@ Medico para Director/a Técnico de laboratorio clínico",
+     "ubicacion": "Arica, Arica y Parinacota",
      "motivo": "exclusion"
     },
     {
@@ -179,6 +179,11 @@
    },
    "muestra": [
     {
+     "titulo": "Enfermero MQ",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
      "titulo": "Enfermera/o Asistencial - Volante - Centros Médicos",
      "ubicacion": "Santiago, Metropolitana de Santiago",
      "motivo": "perfil"
@@ -232,25 +237,20 @@
      "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Las Condes",
      "ubicacion": "Las Condes, Metropolitana de Santiago",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Auxiliar de Recetario Magistral para Macul / Por Proyecto",
-     "ubicacion": "Macul, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 12,
+   "resultados": 14,
    "errores": [],
    "descartados": {
     "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "INGENIERO GEOTÉCNICO EMTS",
-     "ubicacion": "Sierra Gorda, AN, Chile",
+     "titulo": "Test Engineer & Sales Support",
+     "ubicacion": "Santiago de Chile, RM, Chile",
      "motivo": "perfil"
     }
    ]
