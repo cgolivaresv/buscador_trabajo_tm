@@ -1,7 +1,7 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-10T21:49:48+00:00",
- "nuevos": 1,
+ "ultimo_chequeo": "2026-11-10T22:52:25+00:00",
+ "nuevos": 0,
  "total": 46,
  "palabras_clave": [
   "tecnólogo médico",
@@ -242,7 +242,7 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 16,
+   "resultados": 17,
    "errores": [],
    "descartados": {
     "zona": 1
@@ -329,30 +329,49 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 2,
-   "errores": [
-    "«tecnólogo médico»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«tecnologo medico»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«tecnólogo médico resonancia»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«tecnologo medico resonancia»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«resonancia magnética»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«resonancia magnetica»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50"
-   ],
+   "resultados": 16,
+   "errores": [],
    "descartados": {
+    "exclusion": 5,
     "zona": 1
    },
    "muestra": [
     {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología - Colina",
+     "ubicacion": "Colina, Metropolitana",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
+     "ubicacion": "Linares, Maule",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO con mención en Oftalmología (Reemplazo Licencia Médica) - Punta Arenas",
+     "ubicacion": "Punta Arenas, Magallanes y Antártica Chilena",
+     "motivo": "exclusion"
+    },
+    {
      "titulo": "Tecnólogo Medico imagenología",
      "ubicacion": "Osorno, Los Lagos",
      "motivo": "zona"
+    },
+    {
+     "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RADIOLOGÍA (REEMPLAZO)",
+     "ubicacion": "Providencia, Metropolitana",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RESONANCIA MAGNETICA (REEMPLAZO)",
+     "ubicacion": "Providencia, Metropolitana",
+     "motivo": "exclusion"
     }
    ]
   }
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 1,
+  "leidas": 0,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
