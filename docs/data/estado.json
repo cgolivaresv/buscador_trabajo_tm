@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-10T17:54:41+00:00",
+ "ultimo_chequeo": "2026-11-10T19:04:15+00:00",
  "nuevos": 0,
  "total": 44,
  "palabras_clave": [
@@ -25,14 +25,19 @@
   },
   "computrabajo": {
    "nombre": "Computrabajo",
-   "resultados": 206,
+   "resultados": 208,
    "errores": [],
    "descartados": {
-    "exclusion": 15,
-    "zona": 24,
-    "perfil": 21
+    "exclusion": 18,
+    "zona": 23,
+    "perfil": 22
    },
    "muestra": [
+    {
+     "titulo": "Técnico en Enfermería Nivel Superior Médico Quirúrgico",
+     "ubicacion": "Santiago Centro, R.Metropolitana",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Técnico en enfermeria, Consulta Medica, Vitacura",
      "ubicacion": "Santiago - Vitacura, R.Metropolitana",
@@ -87,11 +92,6 @@
      "titulo": "Técnico en Enfermería Nivel Superior Unidad Toma de Muestras Viña del Mar",
      "ubicacion": "Viña del Mar, Valparaíso",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnologo médico en Laboratorio para Tocopilla",
-     "ubicacion": "Tocopilla, Antofagasta",
-     "motivo": "exclusion"
     }
    ]
   },
@@ -100,10 +100,10 @@
    "resultados": 227,
    "errores": [],
    "descartados": {
-    "zona": 14,
-    "perfil": 21,
+    "zona": 12,
+    "perfil": 23,
     "antiguedad": 1,
-    "exclusion": 15
+    "exclusion": 16
    },
    "muestra": [
     {
@@ -120,6 +120,11 @@
      "titulo": "Tecnologo Medico",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Servicio de Tecnólogo Medico Oftalmología -…",
+     "ubicacion": "Concepción",
+     "motivo": "exclusion"
     },
     {
      "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
@@ -160,11 +165,6 @@
      "titulo": "TMO Part Time 20 hrs (mención…",
      "ubicacion": "Calama",
      "motivo": "zona"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
-     "ubicacion": "Punta arenas",
-     "motivo": "exclusion"
     }
    ]
   },
@@ -173,9 +173,9 @@
    "resultados": 117,
    "errores": [],
    "descartados": {
-    "perfil": 30,
+    "perfil": 29,
     "exclusion": 11,
-    "zona": 8
+    "zona": 9
    },
    "muestra": [
     {
