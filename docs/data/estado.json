@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-10T13:13:21+00:00",
+ "ultimo_chequeo": "2026-11-10T14:22:55+00:00",
  "nuevos": 0,
  "total": 44,
  "palabras_clave": [
@@ -28,11 +28,16 @@
    "resultados": 206,
    "errores": [],
    "descartados": {
-    "exclusion": 15,
+    "exclusion": 16,
     "zona": 33,
-    "perfil": 13
+    "perfil": 12
    },
    "muestra": [
+    {
+     "titulo": "Técnico/a en Enfermería (TENS) para Centro Médico",
+     "ubicacion": "Santiago Centro, R.Metropolitana",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Técnico en enfermeria, Consulta Medica, Vitacura",
      "ubicacion": "Santiago - Vitacura, R.Metropolitana",
@@ -87,11 +92,6 @@
      "titulo": "Tecnologo médico en Laboratorio para Tocopilla",
      "ubicacion": "Tocopilla, Antofagasta",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Técnico de Nivel Superior en Odontología",
-     "ubicacion": "Santiago - Vitacura, R.Metropolitana",
-     "motivo": "perfil"
     }
    ]
   },
@@ -100,12 +100,17 @@
    "resultados": 227,
    "errores": [],
    "descartados": {
-    "perfil": 23,
+    "zona": 13,
+    "perfil": 25,
     "antiguedad": 1,
-    "zona": 14,
     "exclusion": 12
    },
    "muestra": [
+    {
+     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
+     "ubicacion": "Antofagasta",
+     "motivo": "zona"
+    },
     {
      "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
      "ubicacion": "Temuco",
@@ -115,6 +120,11 @@
      "titulo": "Tecnologo Medico",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
+    },
+    {
+     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
+     "ubicacion": "Antofagasta",
+     "motivo": "zona"
     },
     {
      "titulo": "Tecnólogo/a Médico/a de Resonancia Magnética -…",
@@ -155,16 +165,6 @@
      "titulo": "TMO con mención en Oftalmología (Reemplazo…",
      "ubicacion": "Punta arenas",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
     }
    ]
   },
@@ -173,11 +173,41 @@
    "resultados": 117,
    "errores": [],
    "descartados": {
-    "perfil": 17,
-    "exclusion": 18,
-    "zona": 14
+    "perfil": 25,
+    "exclusion": 13,
+    "zona": 11
    },
    "muestra": [
+    {
+     "titulo": "Enfermero(a) Hospitalización MQ Adulto (Vacaciones)- RedSalud Vitacura",
+     "ubicacion": "Vitacura, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Intern NW Light (Prevención de Riesgos) para Santiago - Alumnos/as Regulares en último año de carrera",
+     "ubicacion": "Las Condes, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Enfermero/a POOL (Vacaciones) - RedSalud Vitacura",
+     "ubicacion": "Vitacura, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tens POOL (Vacaciones) - Clínica RedSalud Vitacura",
+     "ubicacion": "Vitacura, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Analista de Productos- Casa Matriz RedSalud CChC",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Analista de Estrategia y Desarrollo de Toma de Muestra Senior - RedSalud CChC",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Técnico en Farmacia - RedSalud Providencia (VACACIONES)",
      "ubicacion": "Providencia, Metropolitana de Santiago",
@@ -207,36 +237,6 @@
      "titulo": "Tens MQ (Part Time)",
      "ubicacion": "Estación Central, Metropolitana de Santiago",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Enfermero MQ",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Enfermera/o Asistencial - Volante - Centros Médicos",
-     "ubicacion": "Santiago, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - San Miguel",
-     "ubicacion": "San Miguel, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Viña del Mar",
-     "ubicacion": "Viña del Mar, Valparaíso",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Temuco",
-     "ubicacion": "Temuco, La Araucanía",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Lo Barnechea",
-     "ubicacion": "Lo Barnechea, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
@@ -257,11 +257,11 @@
   },
   "laborum": {
    "nombre": "Laborum",
-   "resultados": 64,
+   "resultados": 62,
    "errores": [],
    "descartados": {
     "zona": 5,
-    "exclusion": 7,
+    "exclusion": 6,
     "antiguedad": 5
    },
    "muestra": [
@@ -316,13 +316,13 @@
      "motivo": "zona"
     },
     {
-     "titulo": "TECNÓLOGO MÉDICO SERVICIO BANCO DE SANGRE",
-     "ubicacion": "La Reina, Región Metropolitana",
-     "motivo": "exclusion"
-    },
-    {
      "titulo": "tecnologo medico",
      "ubicacion": "Santiago de Chile, Región Metropolitana",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Ejecutivo Comercial Junior (Tecnólogo Médico o Bioquímico)",
+     "ubicacion": "Ñuñoa, Región Metropolitana",
      "motivo": "antiguedad"
     }
    ]
@@ -330,9 +330,7 @@
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
    "resultados": 16,
-   "errores": [
-    "«jefe imagenologia»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50"
-   ],
+   "errores": [],
    "descartados": {
     "exclusion": 5,
     "zona": 1
