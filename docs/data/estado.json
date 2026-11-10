@@ -1,7 +1,7 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-10T11:57:32+00:00",
- "nuevos": 1,
+ "ultimo_chequeo": "2026-11-10T13:13:21+00:00",
+ "nuevos": 0,
  "total": 44,
  "palabras_clave": [
   "tecnólogo médico",
@@ -28,11 +28,16 @@
    "resultados": 206,
    "errores": [],
    "descartados": {
+    "exclusion": 15,
     "zona": 33,
-    "perfil": 13,
-    "exclusion": 13
+    "perfil": 13
    },
    "muestra": [
+    {
+     "titulo": "Técnico en enfermeria, Consulta Medica, Vitacura",
+     "ubicacion": "Santiago - Vitacura, R.Metropolitana",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Tecnologo/a medico/a con experiencia en Resonancia",
      "ubicacion": "Quillota, Valparaíso",
@@ -87,11 +92,6 @@
      "titulo": "Técnico de Nivel Superior en Odontología",
      "ubicacion": "Santiago - Vitacura, R.Metropolitana",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnólogo Médico(a) Turno 7x7 Calama",
-     "ubicacion": "Calama, Antofagasta",
-     "motivo": "zona"
     }
    ]
   },
@@ -100,10 +100,10 @@
    "resultados": 227,
    "errores": [],
    "descartados": {
-    "perfil": 22,
+    "perfil": 23,
     "antiguedad": 1,
-    "zona": 13,
-    "exclusion": 14
+    "zona": 14,
+    "exclusion": 12
    },
    "muestra": [
     {
@@ -173,11 +173,36 @@
    "resultados": 117,
    "errores": [],
    "descartados": {
-    "exclusion": 20,
-    "perfil": 15,
+    "perfil": 17,
+    "exclusion": 18,
     "zona": 14
    },
    "muestra": [
+    {
+     "titulo": "Técnico en Farmacia - RedSalud Providencia (VACACIONES)",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Enfermera(o) Hospitalización MQ (Vacaciones) - RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tens Hospitalización MQ (Vacaciones) - RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tens Pabellón Ginecobstetricia (Periodo Vacaciones) - RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tens Esterilización Vacaciones - RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Tens MQ (Part Time)",
      "ubicacion": "Estación Central, Metropolitana de Santiago",
@@ -212,37 +237,12 @@
      "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Lo Barnechea",
      "ubicacion": "Lo Barnechea, Metropolitana de Santiago",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Ñuñoa",
-     "ubicacion": "Ñuñoa, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Calama",
-     "ubicacion": "Calama, Antofagasta",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Coquimbo",
-     "ubicacion": "Coquimbo, Coquimbo",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Huechuraba",
-     "ubicacion": "Huechuraba, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - La Florida",
-     "ubicacion": "La Florida, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 15,
+   "resultados": 17,
    "errores": [],
    "descartados": {
     "perfil": 1
@@ -330,7 +330,9 @@
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
    "resultados": 16,
-   "errores": [],
+   "errores": [
+    "«jefe imagenologia»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50"
+   ],
    "descartados": {
     "exclusion": 5,
     "zona": 1
@@ -371,7 +373,7 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 1,
+  "leidas": 0,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
