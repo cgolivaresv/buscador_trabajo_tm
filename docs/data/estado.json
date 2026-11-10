@@ -1,8 +1,8 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-10T01:12:47+00:00",
- "nuevos": 0,
- "total": 42,
+ "ultimo_chequeo": "2026-11-10T10:59:15+00:00",
+ "nuevos": 1,
+ "total": 43,
  "palabras_clave": [
   "tecnólogo médico",
   "tecnólogo médico resonancia",
@@ -28,8 +28,8 @@
    "resultados": 206,
    "errores": [],
    "descartados": {
-    "zona": 27,
-    "perfil": 19,
+    "zona": 33,
+    "perfil": 13,
     "exclusion": 13
    },
    "muestra": [
@@ -97,19 +97,34 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 227,
+   "resultados": 102,
    "errores": [],
    "descartados": {
-    "perfil": 25,
-    "antiguedad": 1,
-    "zona": 11,
-    "exclusion": 13
+    "exclusion": 17,
+    "antiguedad": 20,
+    "zona": 10,
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
-     "ubicacion": "Temuco",
-     "motivo": "perfil"
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "ubicacion": "Concepción",
+     "motivo": "antiguedad"
     },
     {
      "titulo": "Tecnologo Medico",
@@ -117,67 +132,57 @@
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo/a Médico/a de Resonancia Magnética -…",
-     "ubicacion": "Iquique",
+     "titulo": "Tecnólogo médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
+     "titulo": "Servicio de Tecnólogo Medico 4to turno Laboratorio - Tomé",
+     "ubicacion": "Concepción",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico",
      "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Calama",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Coquimbo",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
+     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) ? Centro Médico, Viña del Mar",
      "ubicacion": "Valparaíso",
      "motivo": "zona"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
+     "ubicacion": "Talagante",
+     "motivo": "exclusion"
     }
    ]
   },
   "trabajando": {
    "nombre": "Trabajando.cl",
-   "resultados": 115,
+   "resultados": 117,
    "errores": [],
    "descartados": {
+    "exclusion": 20,
     "perfil": 18,
-    "exclusion": 19,
     "zona": 11
    },
    "muestra": [
+    {
+     "titulo": "Tens MQ (Part Time)",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Enfermero MQ",
      "ubicacion": "Estación Central, Metropolitana de Santiago",
@@ -231,11 +236,6 @@
     {
      "titulo": "TMO Part Time 20 hrs (mención oftalmología) - La Florida",
      "ubicacion": "La Florida, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Las Condes",
-     "ubicacion": "Las Condes, Metropolitana de Santiago",
      "motivo": "exclusion"
     }
    ]
@@ -329,12 +329,11 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 18,
+   "resultados": 16,
    "errores": [],
    "descartados": {
     "exclusion": 5,
-    "zona": 1,
-    "antiguedad": 1
+    "zona": 1
    },
    "muestra": [
     {
@@ -358,11 +357,6 @@
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo Médico Pabellón Hemodinamia (Angiografía) - RedSalud Santiago",
-     "ubicacion": "Estación Central, Metropolitana",
-     "motivo": "antiguedad"
-    },
-    {
      "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RADIOLOGÍA (REEMPLAZO)",
      "ubicacion": "Providencia, Metropolitana",
      "motivo": "exclusion"
@@ -377,10 +371,10 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 0,
+  "leidas": 1,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-09T22:54:53+00:00"
+ "rss_chiletrabajos": "2026-11-10T10:59:15+00:00"
 }
