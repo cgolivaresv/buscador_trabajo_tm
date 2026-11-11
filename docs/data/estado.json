@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-11T13:20:46+00:00",
+ "ultimo_chequeo": "2026-11-11T14:59:40+00:00",
  "nuevos": 0,
  "total": 47,
  "palabras_clave": [
@@ -29,8 +29,8 @@
    "errores": [],
    "descartados": {
     "exclusion": 19,
-    "zona": 27,
-    "perfil": 17
+    "zona": 26,
+    "perfil": 18
    },
    "muestra": [
     {
@@ -97,73 +97,74 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 227,
+   "resultados": 102,
    "errores": [],
    "descartados": {
-    "zona": 12,
-    "exclusion": 13,
-    "perfil": 26
+    "exclusion": 17,
+    "antiguedad": 20,
+    "zona": 10,
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "ubicacion": "Concepción",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnologo Medico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
      "motivo": "zona"
     },
     {
-     "titulo": "Servicio de Tecnólogo Medico Oftalmología -…",
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Servicio de Tecnólogo Medico 4to turno Laboratorio - Tomé",
      "ubicacion": "Concepción",
      "motivo": "exclusion"
     },
     {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
+     "titulo": "Tecnólogo/a Médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) ? Centro Médico, Viña del Mar",
+     "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo/a Médico/a de Resonancia Magnética -…",
-     "ubicacion": "Iquique",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
+     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
+     "ubicacion": "Talagante",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Coquimbo",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Calama",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
-     "ubicacion": "Punta arenas",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
     }
    ]
   },
@@ -173,10 +174,30 @@
    "errores": [],
    "descartados": {
     "perfil": 28,
-    "zona": 10,
-    "exclusion": 9
+    "exclusion": 9,
+    "zona": 10
    },
    "muestra": [
+    {
+     "titulo": "Analista de Talento y Cultura - RedSalud Providencia",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Enfermera Toma de Muestras",
+     "ubicacion": "Talca, Maule",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Asistente administrativo - Puerto Natales",
+     "ubicacion": "Natales, Magallanes y Antártica Chilena",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Analista Contable",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Asistente Contabilidad",
      "ubicacion": "Providencia, Metropolitana de Santiago",
@@ -216,32 +237,12 @@
      "titulo": "Analista Negocio Ambulatorio - RedSalud CChC",
      "ubicacion": "Santiago, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Práctica Profesional Pucón - Administración// Cajera/o bancario",
-     "ubicacion": "Pucón, La Araucanía",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Enfermero(a) Hospitalización MQ Adulto (Vacaciones)- RedSalud Vitacura",
-     "ubicacion": "Vitacura, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Intern NW Light (Prevención de Riesgos) para Santiago - Alumnos/as Regulares en último año de carrera",
-     "ubicacion": "Las Condes, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Enfermero/a POOL (Vacaciones) - RedSalud Vitacura",
-     "ubicacion": "Vitacura, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 17,
+   "resultados": 16,
    "errores": [],
    "descartados": {
     "zona": 1
@@ -329,9 +330,7 @@
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
    "resultados": 18,
-   "errores": [
-    "«especialista de aplicaciones»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50"
-   ],
+   "errores": [],
    "descartados": {
     "exclusion": 5,
     "zona": 1
@@ -377,5 +376,5 @@
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-11T11:08:40+00:00"
+ "rss_chiletrabajos": "2026-11-11T14:59:40+00:00"
 }
