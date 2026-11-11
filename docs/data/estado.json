@@ -1,8 +1,8 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-10T23:44:53+00:00",
- "nuevos": 0,
- "total": 46,
+ "ultimo_chequeo": "2026-11-11T01:15:18+00:00",
+ "nuevos": 1,
+ "total": 47,
  "palabras_clave": [
   "tecnólogo médico",
   "tecnólogo médico resonancia",
@@ -97,24 +97,34 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 227,
+   "resultados": 102,
    "errores": [],
    "descartados": {
-    "zona": 12,
-    "perfil": 25,
-    "antiguedad": 1,
-    "exclusion": 14
+    "exclusion": 17,
+    "antiguedad": 20,
+    "zona": 10,
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
     },
     {
-     "titulo": "VENDEDOR TECNOLOGO KARUN TEMUCO",
-     "ubicacion": "Temuco",
-     "motivo": "perfil"
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "ubicacion": "Concepción",
+     "motivo": "antiguedad"
     },
     {
      "titulo": "Tecnologo Medico",
@@ -122,49 +132,39 @@
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Servicio de Tecnólogo Medico Oftalmología -…",
+     "titulo": "Tecnólogo médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Servicio de Tecnólogo Medico 4to turno Laboratorio - Tomé",
      "ubicacion": "Concepción",
      "motivo": "exclusion"
     },
     {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
+     "titulo": "Tecnólogo/a Médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) ? Centro Médico, Viña del Mar",
+     "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo/a Médico/a de Resonancia Magnética -…",
-     "ubicacion": "Iquique",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
+     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
+     "ubicacion": "Talagante",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Coquimbo",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Calama",
-     "motivo": "zona"
     }
    ]
   },
@@ -178,6 +178,11 @@
     "exclusion": 9
    },
    "muestra": [
+    {
+     "titulo": "BI Developer Senior MIS Financiero - Banco Scotiabank",
+     "ubicacion": "Santiago, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "TRABAJADOR/A SOCIAL FA CERRO NAVIA (REEMPLAZO POST NATAL)",
      "ubicacion": "Cerro Navia, Metropolitana de Santiago",
@@ -232,11 +237,6 @@
      "titulo": "Tens POOL (Vacaciones) - Clínica RedSalud Vitacura",
      "ubicacion": "Vitacura, Metropolitana de Santiago",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Analista de Productos- Casa Matriz RedSalud CChC",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
@@ -329,7 +329,7 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 16,
+   "resultados": 18,
    "errores": [],
    "descartados": {
     "exclusion": 5,
@@ -371,10 +371,10 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 0,
+  "leidas": 1,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-10T19:59:48+00:00"
+ "rss_chiletrabajos": "2026-11-11T01:15:18+00:00"
 }
