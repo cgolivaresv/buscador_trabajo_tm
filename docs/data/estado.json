@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-11T20:08:36+00:00",
+ "ultimo_chequeo": "2026-11-11T21:43:55+00:00",
  "nuevos": 0,
  "total": 47,
  "palabras_clave": [
@@ -101,7 +101,7 @@
    "errores": [],
    "descartados": {
     "zona": 13,
-    "exclusion": 13,
+    "exclusion": 12,
     "perfil": 25
    },
    "muestra": [
@@ -109,11 +109,6 @@
      "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
      "ubicacion": "Antofagasta",
      "motivo": "zona"
-    },
-    {
-     "titulo": "Servicio de Tecnólogo Medico Oftalmología -…",
-     "ubicacion": "Concepción",
-     "motivo": "exclusion"
     },
     {
      "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
@@ -164,6 +159,11 @@
      "titulo": "TMO Part Time 20 hrs (mención…",
      "ubicacion": "Santiago",
      "motivo": "perfil"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
     }
    ]
   },
@@ -172,11 +172,21 @@
    "resultados": 119,
    "errores": [],
    "descartados": {
-    "perfil": 29,
+    "perfil": 30,
     "exclusion": 9,
-    "zona": 9
+    "zona": 10
    },
    "muestra": [
+    {
+     "titulo": "Auditor Compliance - RedSalud Casa Matriz",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Coordinador de acompañamiento y difusión",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Asistente Prevención de Riesgos",
      "ubicacion": "Vitacura, Metropolitana de Santiago",
@@ -226,30 +236,20 @@
      "titulo": "Asistente administrativo - Puerto Natales",
      "ubicacion": "Natales, Magallanes y Antártica Chilena",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Analista Contable",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Asistente Contabilidad",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 12,
+   "resultados": 11,
    "errores": [],
    "descartados": {
     "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Médico Central - Teletrabajo 39 hrs",
-     "ubicacion": "Providencia, RM, Chile",
+     "titulo": "Facilitador LIS",
+     "ubicacion": "Santiago de Chile, RM, Chile",
      "motivo": "perfil"
     }
    ]
