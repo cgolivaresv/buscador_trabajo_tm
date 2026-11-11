@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-11T15:59:04+00:00",
+ "ultimo_chequeo": "2026-11-11T17:04:30+00:00",
  "nuevos": 0,
  "total": 47,
  "palabras_clave": [
@@ -29,10 +29,15 @@
    "errores": [],
    "descartados": {
     "exclusion": 19,
-    "zona": 26,
-    "perfil": 17
+    "zona": 29,
+    "perfil": 14
    },
    "muestra": [
+    {
+     "titulo": "Técnologo Médico en Laboratorio y Oftamología",
+     "ubicacion": "Tomé, Bíobío",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Tecnólogo(a) Médico en Oftalmología",
      "ubicacion": "Antofagasta, Antofagasta",
@@ -87,11 +92,6 @@
      "titulo": "Tecnolog@ Medico para Director/a Técnico de laboratorio clínico",
      "ubicacion": "Arica, Arica y Parinacota",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnologo médico en Imagenología para Taltal",
-     "ubicacion": "Taltal, Antofagasta",
-     "motivo": "zona"
     }
    ]
   },
@@ -241,7 +241,7 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 16,
+   "resultados": 15,
    "errores": [],
    "descartados": {
     "perfil": 1
