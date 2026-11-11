@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-11T17:04:30+00:00",
+ "ultimo_chequeo": "2026-11-11T18:00:38+00:00",
  "nuevos": 0,
  "total": 47,
  "palabras_clave": [
@@ -100,9 +100,9 @@
    "resultados": 227,
    "errores": [],
    "descartados": {
-    "zona": 12,
+    "zona": 13,
     "exclusion": 13,
-    "perfil": 26
+    "perfil": 25
    },
    "muestra": [
     {
@@ -173,10 +173,15 @@
    "errores": [],
    "descartados": {
     "perfil": 27,
-    "exclusion": 10,
-    "zona": 10
+    "exclusion": 9,
+    "zona": 11
    },
    "muestra": [
+    {
+     "titulo": "Analista Tesorería",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Jefe de Sede Área de Salud",
      "ubicacion": "Las Condes, Metropolitana de Santiago",
@@ -231,11 +236,6 @@
      "titulo": "TRABAJADOR SOCIAL PRM COPIAPO (REEMPLAZO PRE Y POST NATAL)",
      "ubicacion": "Copiapó, Atacama",
      "motivo": "zona"
-    },
-    {
-     "titulo": "Técnico en Informática",
-     "ubicacion": "Las Condes, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
