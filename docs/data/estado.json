@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-11T12:02:47+00:00",
+ "ultimo_chequeo": "2026-11-11T13:20:46+00:00",
  "nuevos": 0,
  "total": 47,
  "palabras_clave": [
@@ -29,8 +29,8 @@
    "errores": [],
    "descartados": {
     "exclusion": 19,
-    "zona": 26,
-    "perfil": 18
+    "zona": 27,
+    "perfil": 17
    },
    "muestra": [
     {
@@ -172,11 +172,16 @@
    "resultados": 119,
    "errores": [],
    "descartados": {
-    "perfil": 29,
-    "zona": 9,
+    "perfil": 28,
+    "zona": 10,
     "exclusion": 9
    },
    "muestra": [
+    {
+     "titulo": "Asistente Contabilidad",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "BI Developer Senior MIS Financiero - Banco Scotiabank",
      "ubicacion": "Santiago, Metropolitana de Santiago",
@@ -231,11 +236,6 @@
      "titulo": "Enfermero/a POOL (Vacaciones) - RedSalud Vitacura",
      "ubicacion": "Vitacura, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Tens POOL (Vacaciones) - Clínica RedSalud Vitacura",
-     "ubicacion": "Vitacura, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
@@ -244,13 +244,13 @@
    "resultados": 17,
    "errores": [],
    "descartados": {
-    "perfil": 1
+    "zona": 1
    },
    "muestra": [
     {
-     "titulo": "Asesor Agencia part time",
-     "ubicacion": "Puerto Varas, LL, Chile",
-     "motivo": "perfil"
+     "titulo": "Supervisor Comercial Antofagasta",
+     "ubicacion": "Antofagasta, AN, Chile",
+     "motivo": "zona"
     }
    ]
   },
@@ -329,7 +329,9 @@
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
    "resultados": 18,
-   "errores": [],
+   "errores": [
+    "«especialista de aplicaciones»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50"
+   ],
    "descartados": {
     "exclusion": 5,
     "zona": 1
