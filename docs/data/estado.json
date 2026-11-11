@@ -1,7 +1,7 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-11T01:15:18+00:00",
- "nuevos": 1,
+ "ultimo_chequeo": "2026-11-11T11:08:40+00:00",
+ "nuevos": 0,
  "total": 47,
  "palabras_clave": [
   "tecnólogo médico",
@@ -28,11 +28,16 @@
    "resultados": 208,
    "errores": [],
    "descartados": {
-    "exclusion": 18,
-    "zona": 23,
-    "perfil": 22
+    "exclusion": 19,
+    "zona": 26,
+    "perfil": 18
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogo(a) Médico en Oftalmología",
+     "ubicacion": "Antofagasta, Antofagasta",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Técnico en enfermeria, Consulta Medica, Vitacura",
      "ubicacion": "Santiago - Vitacura, R.Metropolitana",
@@ -59,11 +64,6 @@
      "motivo": "perfil"
     },
     {
-     "titulo": "Tecnólogo/a Médico/a en Imagenología – Calama",
-     "ubicacion": "Calama, Antofagasta",
-     "motivo": "zona"
-    },
-    {
      "titulo": "Tecnólogo/a Médico – 4° turno, Laboratorio Clínico – Tomé, Región del Biobío",
      "ubicacion": "Tomé, Bíobío",
      "motivo": "exclusion"
@@ -74,9 +74,9 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnolog@ Medico para Director/a Técnico de laboratorio clínico",
-     "ubicacion": "Arica, Arica y Parinacota",
-     "motivo": "exclusion"
+     "titulo": "Tecnólogo/a Médico/a en Imagenología – Calama",
+     "ubicacion": "Calama, Antofagasta",
+     "motivo": "zona"
     },
     {
      "titulo": "Coordinador/a de Servicio Técnico, Santiago Centro.",
@@ -84,14 +84,14 @@
      "motivo": "perfil"
     },
     {
+     "titulo": "Tecnolog@ Medico para Director/a Técnico de laboratorio clínico",
+     "ubicacion": "Arica, Arica y Parinacota",
+     "motivo": "exclusion"
+    },
+    {
      "titulo": "Tecnologo médico en Imagenología para Taltal",
      "ubicacion": "Taltal, Antofagasta",
      "motivo": "zona"
-    },
-    {
-     "titulo": "Técnico en Enfermería Nivel Superior Unidad Toma de Muestras Viña del Mar",
-     "ubicacion": "Viña del Mar, Valparaíso",
-     "motivo": "exclusion"
     }
    ]
   },
@@ -245,13 +245,13 @@
    "resultados": 17,
    "errores": [],
    "descartados": {
-    "zona": 1
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Asesor sucursal Copiapó",
-     "ubicacion": "Copiapó, AT, Chile",
-     "motivo": "zona"
+     "titulo": "Asesor Agencia part time",
+     "ubicacion": "Puerto Varas, LL, Chile",
+     "motivo": "perfil"
     }
    ]
   },
@@ -371,10 +371,10 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 1,
+  "leidas": 0,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-11T01:15:18+00:00"
+ "rss_chiletrabajos": "2026-11-11T11:08:40+00:00"
 }
