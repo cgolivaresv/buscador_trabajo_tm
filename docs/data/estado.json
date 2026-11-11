@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-11T21:43:55+00:00",
+ "ultimo_chequeo": "2026-11-11T22:59:22+00:00",
  "nuevos": 0,
  "total": 47,
  "palabras_clave": [
@@ -97,73 +97,74 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 227,
+   "resultados": 102,
    "errores": [],
    "descartados": {
-    "zona": 13,
-    "exclusion": 12,
-    "perfil": 25
+    "exclusion": 17,
+    "antiguedad": 20,
+    "zona": 10,
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a de Resonancia Magnética -…",
-     "ubicacion": "Iquique",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
      "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "ubicacion": "Concepción",
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Coquimbo",
+     "titulo": "Tecnologo Medico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
      "motivo": "zona"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Calama",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
-     "ubicacion": "Punta arenas",
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "titulo": "Servicio de Tecnólogo Medico 4to turno Laboratorio - Tomé",
+     "ubicacion": "Concepción",
+     "motivo": "exclusion"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
+     "titulo": "Tecnólogo/a Médico",
      "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) ? Centro Médico, Viña del Mar",
+     "ubicacion": "Valparaíso",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
+     "ubicacion": "Talagante",
+     "motivo": "exclusion"
     }
    ]
   },
@@ -248,8 +249,8 @@
    },
    "muestra": [
     {
-     "titulo": "Facilitador LIS",
-     "ubicacion": "Santiago de Chile, RM, Chile",
+     "titulo": "Médico Central - Teletrabajo 39 hrs",
+     "ubicacion": "Providencia, RM, Chile",
      "motivo": "perfil"
     }
    ]
@@ -375,5 +376,5 @@
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-11T19:07:47+00:00"
+ "rss_chiletrabajos": "2026-11-11T22:59:22+00:00"
 }
