@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-12T12:09:15+00:00",
+ "ultimo_chequeo": "2026-11-12T13:24:23+00:00",
  "nuevos": 0,
  "total": 47,
  "palabras_clave": [
@@ -28,11 +28,16 @@
    "resultados": 208,
    "errores": [],
    "descartados": {
-    "perfil": 28,
+    "perfil": 29,
     "exclusion": 20,
     "zona": 16
    },
    "muestra": [
+    {
+     "titulo": "Líder técnico",
+     "ubicacion": "Santiago - Providencia, R.Metropolitana",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Coordinador/a de Servicio Técnico, Santiago Centro.",
      "ubicacion": "Santiago Centro, R.Metropolitana",
@@ -87,11 +92,6 @@
      "titulo": "Coordinador/a de Servicio Técnico, Santiago Centro.",
      "ubicacion": "Santiago Centro, R.Metropolitana",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a en Imagenología – Calama",
-     "ubicacion": "Calama, Antofagasta",
-     "motivo": "zona"
     }
    ]
   },
@@ -100,8 +100,8 @@
    "resultados": 227,
    "errores": [],
    "descartados": {
-    "zona": 12,
-    "exclusion": 13,
+    "zona": 11,
+    "exclusion": 15,
     "perfil": 26
    },
    "muestra": [
@@ -172,11 +172,26 @@
    "resultados": 117,
    "errores": [],
    "descartados": {
-    "perfil": 31,
-    "exclusion": 9,
-    "zona": 9
+    "exclusion": 10,
+    "perfil": 27,
+    "zona": 12
    },
    "muestra": [
+    {
+     "titulo": "Tens Bodega (Vacaciones) - RedSalud Providencia",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tens Medico Quirúrgico",
+     "ubicacion": "La Florida, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Psicólogo Clínico Teletrabajo 29.5 hrs",
+     "ubicacion": "Santiago, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Enfermero/a Pabellón-Pre-Operatorio (Vacaciones) - RedSalud Providencia",
      "ubicacion": "Providencia, Metropolitana de Santiago",
@@ -221,27 +236,12 @@
      "titulo": "Jefe de Operaciones Clínicas - área salud",
      "ubicacion": "Las Condes, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Tens Diálisis",
-     "ubicacion": "Recoleta, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Analista de Talento y Cultura - RedSalud Providencia",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Enfermera Toma de Muestras",
-     "ubicacion": "Talca, Maule",
-     "motivo": "perfil"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 10,
+   "resultados": 9,
    "errores": [],
    "descartados": {
     "perfil": 1
