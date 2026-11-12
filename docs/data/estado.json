@@ -1,7 +1,7 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-12T20:02:07+00:00",
- "nuevos": 2,
+ "ultimo_chequeo": "2026-11-12T20:58:32+00:00",
+ "nuevos": 0,
  "total": 49,
  "palabras_clave": [
   "tecnólogo médico",
@@ -25,11 +25,11 @@
   },
   "computrabajo": {
    "nombre": "Computrabajo",
-   "resultados": 210,
+   "resultados": 214,
    "errores": [],
    "descartados": {
     "exclusion": 21,
-    "perfil": 28,
+    "perfil": 29,
     "zona": 16
    },
    "muestra": [
@@ -41,6 +41,11 @@
     {
      "titulo": "Líder técnico",
      "ubicacion": "Santiago - Providencia, R.Metropolitana",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Técnico Mecánico Rubro Automotriz",
+     "ubicacion": "Santiago - Vitacura, R.Metropolitana",
      "motivo": "perfil"
     },
     {
@@ -82,11 +87,6 @@
      "titulo": "Tecnologo/a medico/a con experiencia en Resonancia",
      "ubicacion": "Quillota, Valparaíso",
      "motivo": "zona"
-    },
-    {
-     "titulo": "Técnico Mecánico Rubro Automotriz",
-     "ubicacion": "Santiago - Vitacura, R.Metropolitana",
-     "motivo": "perfil"
     },
     {
      "titulo": "Tecnólogo/a Médico – 4° turno, Laboratorio Clínico – Tomé, Región del Biobío",
@@ -178,6 +178,11 @@
    },
    "muestra": [
     {
+     "titulo": "Analista de Subsidios de Licencias Medicas",
+     "ubicacion": "Las Condes, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
      "titulo": "Enfermero/a de Endoscopia (Vacaciones)- RedSalud Santiago",
      "ubicacion": "Santiago, Metropolitana de Santiago",
      "motivo": "perfil"
@@ -231,25 +236,20 @@
      "titulo": "Químico Farmacéutico (Vacaciones) - RedSalud Vitacura",
      "ubicacion": "Vitacura, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Práctica Profesional - Atracción de Talento RedSalud CChC",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 10,
+   "resultados": 9,
    "errores": [],
    "descartados": {
     "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Ingeniero de Software Senior // Back-end Full time",
-     "ubicacion": "Santiago de Chile, RM, Chile",
+     "titulo": "Liquidador/a de Licencias Médicas",
+     "ubicacion": "Las Condes, RM, Chile",
      "motivo": "perfil"
     }
    ]
@@ -370,10 +370,10 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 2,
+  "leidas": 0,
   "sin_permiso": 0,
   "errores": 0,
-  "subieron_a_prioritario": 1
+  "subieron_a_prioritario": 0
  },
  "rss_chiletrabajos": "2026-11-12T19:05:42+00:00"
 }
