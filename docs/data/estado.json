@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-12T16:11:57+00:00",
+ "ultimo_chequeo": "2026-11-12T17:12:46+00:00",
  "nuevos": 0,
  "total": 47,
  "palabras_clave": [
@@ -28,7 +28,7 @@
    "resultados": 210,
    "errores": [],
    "descartados": {
-    "perfil": 29,
+    "perfil": 28,
     "exclusion": 21,
     "zona": 16
    },
@@ -36,6 +36,11 @@
     {
      "titulo": "Líder técnico",
      "ubicacion": "Santiago - Providencia, R.Metropolitana",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tecnólogos(as) Médicos Volantes",
+     "ubicacion": "Santiago Centro, R.Metropolitana",
      "motivo": "perfil"
     },
     {
@@ -87,11 +92,6 @@
      "titulo": "Tecnólogo/a Médico – Diurno, Oftalmología y Laboratorio – Tomé, Región del Biobío",
      "ubicacion": "Tomé, Bíobío",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Coordinador/a de Servicio Técnico, Santiago Centro.",
-     "ubicacion": "Santiago Centro, R.Metropolitana",
-     "motivo": "perfil"
     }
    ]
   },
@@ -118,6 +118,11 @@
     {
      "titulo": "Tecnólogo Medico mención Oftalmología - Tomé",
      "ubicacion": "Concepción",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Fonoaudiólogo/a y/o Tecnólogo Médico Otorrinolaringología -…",
+     "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
@@ -159,11 +164,6 @@
      "titulo": "TMO Part Time 20 hrs (mención…",
      "ubicacion": "Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
     }
    ]
   },
@@ -172,11 +172,16 @@
    "resultados": 117,
    "errores": [],
    "descartados": {
+    "perfil": 23,
     "exclusion": 11,
-    "zona": 15,
-    "perfil": 23
+    "zona": 15
    },
    "muestra": [
+    {
+     "titulo": "Práctica en Remuneraciones",
+     "ubicacion": "Las Condes, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "TENS Anestesia / Clínica MEDS La Dehesa",
      "ubicacion": "Lo Barnechea, Metropolitana de Santiago",
@@ -231,25 +236,20 @@
      "titulo": "Psicólogo Clínico Teletrabajo 29.5 hrs",
      "ubicacion": "Santiago, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Enfermero/a Pabellón-Pre-Operatorio (Vacaciones) - RedSalud Providencia",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 9,
+   "resultados": 10,
    "errores": [],
    "descartados": {
     "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Enfermero(a) Diálisis - RedSalud Vitacura",
-     "ubicacion": "Vitacura, RM, Chile",
+     "titulo": "Liquidador/a de Licencias Médicas",
+     "ubicacion": "Las Condes, RM, Chile",
      "motivo": "perfil"
     }
    ]
