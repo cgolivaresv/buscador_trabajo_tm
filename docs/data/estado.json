@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-12T15:04:21+00:00",
+ "ultimo_chequeo": "2026-11-12T16:11:57+00:00",
  "nuevos": 0,
  "total": 47,
  "palabras_clave": [
@@ -97,74 +97,73 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 98,
+   "resultados": 227,
    "errores": [],
    "descartados": {
-    "exclusion": 15,
-    "antiguedad": 20,
-    "zona": 8,
-    "perfil": 1
+    "zona": 12,
+    "exclusion": 14,
+    "perfil": 26
    },
    "muestra": [
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
-     "ubicacion": "Curicó",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
-     "ubicacion": "Concepción",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnologo Medico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo médico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
-     "ubicacion": "La Serena",
+     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
+     "ubicacion": "Antofagasta",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
-     "ubicacion": "Santiago",
+     "titulo": "Tecnólogo Médico Laboratorio Osorno",
+     "ubicacion": "Osorno",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo/a Médico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo Médico RX Sucursal Concepción",
+     "titulo": "Tecnólogo Medico mención Oftalmología - Tomé",
      "ubicacion": "Concepción",
-     "motivo": "antiguedad"
+     "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo/a Médico/a de Resonancia Magnética - Iquique",
-     "ubicacion": "Iquique",
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Calama",
      "motivo": "zona"
     },
     {
-     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
-     "ubicacion": "Talagante",
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Colina",
      "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Linares",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
+     "ubicacion": "Punta arenas",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Coquimbo",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
     }
    ]
   },
@@ -174,8 +173,8 @@
    "errores": [],
    "descartados": {
     "exclusion": 11,
-    "zona": 14,
-    "perfil": 24
+    "zona": 15,
+    "perfil": 23
    },
    "muestra": [
     {
