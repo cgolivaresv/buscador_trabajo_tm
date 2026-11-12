@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-12T20:58:32+00:00",
+ "ultimo_chequeo": "2026-11-12T21:55:27+00:00",
  "nuevos": 0,
  "total": 49,
  "palabras_clave": [
@@ -97,14 +97,19 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 229,
+   "resultados": 231,
    "errores": [],
    "descartados": {
     "zona": 17,
-    "exclusion": 13,
+    "exclusion": 12,
     "perfil": 21
    },
    "muestra": [
+    {
+     "titulo": "TECNÓLOGO MEDICO EN RADIOLOGÍA-ACREDITADO OIT",
+     "ubicacion": "Quillota",
+     "motivo": "zona"
+    },
     {
      "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
      "ubicacion": "Antofagasta",
@@ -159,11 +164,6 @@
      "titulo": "TMO Part Time 20 hrs (mención…",
      "ubicacion": "Coquimbo",
      "motivo": "zona"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
-     "ubicacion": "Punta arenas",
-     "motivo": "exclusion"
     }
    ]
   },
@@ -241,16 +241,16 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 9,
+   "resultados": 11,
    "errores": [],
    "descartados": {
-    "perfil": 1
+    "exclusion": 1
    },
    "muestra": [
     {
-     "titulo": "Liquidador/a de Licencias Médicas",
-     "ubicacion": "Las Condes, RM, Chile",
-     "motivo": "perfil"
+     "titulo": "Tens Imágenes (Vacaciones)- RedSalud Providencia",
+     "ubicacion": "Providencia, RM, Chile",
+     "motivo": "exclusion"
     }
    ]
   },
