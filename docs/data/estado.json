@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-12T17:12:46+00:00",
+ "ultimo_chequeo": "2026-11-12T18:00:17+00:00",
  "nuevos": 0,
  "total": 47,
  "palabras_clave": [
@@ -100,9 +100,9 @@
    "resultados": 227,
    "errores": [],
    "descartados": {
-    "zona": 12,
+    "zona": 20,
     "exclusion": 14,
-    "perfil": 26
+    "perfil": 23
    },
    "muestra": [
     {
@@ -141,9 +141,9 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
-     "ubicacion": "Punta arenas",
-     "motivo": "exclusion"
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
     },
     {
      "titulo": "TMO Part Time 20 hrs (mención…",
@@ -161,9 +161,9 @@
      "motivo": "zona"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
+     "ubicacion": "Punta arenas",
+     "motivo": "exclusion"
     }
    ]
   },
@@ -248,8 +248,8 @@
    },
    "muestra": [
     {
-     "titulo": "Liquidador/a de Licencias Médicas",
-     "ubicacion": "Las Condes, RM, Chile",
+     "titulo": "Ingeniero de Software Senior // Back-end Full time",
+     "ubicacion": "Santiago de Chile, RM, Chile",
      "motivo": "perfil"
     }
    ]
@@ -328,33 +328,19 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 18,
-   "errores": [],
+   "resultados": 8,
+   "errores": [
+    "«tecnólogo médico»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnologo medico»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnologo medico resonancia»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnólogo médico radiología»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«coordinador imagenologia»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50"
+   ],
    "descartados": {
-    "exclusion": 5,
+    "exclusion": 2,
     "zona": 1
    },
    "muestra": [
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología - Colina",
-     "ubicacion": "Colina, Metropolitana",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
-     "ubicacion": "Linares, Maule",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo Licencia Médica) - Punta Arenas",
-     "ubicacion": "Punta Arenas, Magallanes y Antártica Chilena",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Medico imagenología",
-     "ubicacion": "Osorno, Los Lagos",
-     "motivo": "zona"
-    },
     {
      "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RADIOLOGÍA (REEMPLAZO)",
      "ubicacion": "Providencia, Metropolitana",
@@ -364,6 +350,11 @@
      "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RESONANCIA MAGNETICA (REEMPLAZO)",
      "ubicacion": "Providencia, Metropolitana",
      "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Medico imagenología",
+     "ubicacion": "Osorno, Los Lagos",
+     "motivo": "zona"
     }
    ]
   }
