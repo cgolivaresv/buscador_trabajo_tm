@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-12T13:24:23+00:00",
+ "ultimo_chequeo": "2026-11-12T15:04:21+00:00",
  "nuevos": 0,
  "total": 47,
  "palabras_clave": [
@@ -25,11 +25,11 @@
   },
   "computrabajo": {
    "nombre": "Computrabajo",
-   "resultados": 208,
+   "resultados": 210,
    "errores": [],
    "descartados": {
     "perfil": 29,
-    "exclusion": 20,
+    "exclusion": 21,
     "zona": 16
    },
    "muestra": [
@@ -97,73 +97,74 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 227,
+   "resultados": 98,
    "errores": [],
    "descartados": {
-    "zona": 11,
     "exclusion": 15,
-    "perfil": 26
+    "antiguedad": 20,
+    "zona": 8,
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Medico mención Oftalmología - Tomé",
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
      "ubicacion": "Concepción",
-     "motivo": "exclusion"
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Calama",
+     "titulo": "Tecnologo Medico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Colina",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
-     "ubicacion": "Punta arenas",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
      "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "motivo": "exclusion"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
+     "titulo": "Tecnólogo/a Médico",
      "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Coquimbo",
+     "titulo": "Tecnólogo Médico RX Sucursal Concepción",
+     "ubicacion": "Concepción",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico/a de Resonancia Magnética - Iquique",
+     "ubicacion": "Iquique",
      "motivo": "zona"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
+     "ubicacion": "Talagante",
+     "motivo": "exclusion"
     }
    ]
   },
@@ -172,18 +173,58 @@
    "resultados": 117,
    "errores": [],
    "descartados": {
-    "exclusion": 10,
-    "perfil": 27,
-    "zona": 12
+    "exclusion": 11,
+    "zona": 14,
+    "perfil": 24
    },
    "muestra": [
+    {
+     "titulo": "TENS Anestesia / Clínica MEDS La Dehesa",
+     "ubicacion": "Lo Barnechea, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Jefe/a de Personal Reemplazo Pre y Postnatal | Puerto Natales",
+     "ubicacion": "Natales, Magallanes y Antártica Chilena",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Químico Farmacéutico (Vacaciones) - RedSalud Vitacura",
+     "ubicacion": "Vitacura, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Práctica Profesional - Atracción de Talento RedSalud CChC",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Técnico Enfermería Oncología Médica Quimioterapia - Reemplazo (Honorarios)",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Enfermera (O) Médico Quirúrgico (Diurna)",
+     "ubicacion": "La Florida, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tens Urgencia (Part Time)",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Químico Farmacéutico (Vacaciones) - RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Tens Bodega (Vacaciones) - RedSalud Providencia",
      "ubicacion": "Providencia, Metropolitana de Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tens Medico Quirúrgico",
+     "titulo": "Tens Medico Quirúrgico (Diurno)",
      "ubicacion": "La Florida, Metropolitana de Santiago",
      "motivo": "exclusion"
     },
@@ -195,46 +236,6 @@
     {
      "titulo": "Enfermero/a Pabellón-Pre-Operatorio (Vacaciones) - RedSalud Providencia",
      "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Auditor Compliance - RedSalud Casa Matriz",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Coordinador de acompañamiento y difusión",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Asistente Prevención de Riesgos",
-     "ubicacion": "Vitacura, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Enfermero(a) Diálisis - RedSalud Vitacura",
-     "ubicacion": "Vitacura, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Coordinador/a de Mantención - RedSalud CChC",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Analista Tesorería",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Jefe de Sede Área de Salud",
-     "ubicacion": "Las Condes, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Jefe de Operaciones Clínicas - área salud",
-     "ubicacion": "Las Condes, Metropolitana de Santiago",
      "motivo": "perfil"
     }
    ]
@@ -256,11 +257,11 @@
   },
   "laborum": {
    "nombre": "Laborum",
-   "resultados": 60,
+   "resultados": 58,
    "errores": [],
    "descartados": {
     "zona": 4,
-    "exclusion": 6,
+    "exclusion": 5,
     "antiguedad": 5
    },
    "muestra": [
@@ -272,11 +273,6 @@
     {
      "titulo": "TECNÓLOGO/A MÉDICO/A DE LABORATORIO CLÍNICO Part-time y reemplazos",
      "ubicacion": "Puerto Varas, Región X",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico en Oftalmología Part Time 18 hrs. OPV Mall Alto Las Condes",
-     "ubicacion": "Las Condes, Región Metropolitana",
      "motivo": "exclusion"
     },
     {
@@ -323,6 +319,11 @@
      "titulo": "Ejecutivo Comercial Junior (Tecnólogo Médico o Bioquímico)",
      "ubicacion": "Ñuñoa, Región Metropolitana",
      "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico(a) en Oftalmología Part Time 18 hrs. OPV Mall Alto Las Condes",
+     "ubicacion": "Las Condes, Región Metropolitana",
+     "motivo": "exclusion"
     }
    ]
   },
@@ -375,5 +376,5 @@
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-12T11:14:21+00:00"
+ "rss_chiletrabajos": "2026-11-12T15:04:21+00:00"
 }
