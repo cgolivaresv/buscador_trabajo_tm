@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-12T01:24:02+00:00",
+ "ultimo_chequeo": "2026-11-12T11:14:21+00:00",
  "nuevos": 0,
  "total": 47,
  "palabras_clave": [
@@ -28,24 +28,29 @@
    "resultados": 208,
    "errores": [],
    "descartados": {
+    "perfil": 28,
     "exclusion": 20,
-    "zona": 29,
-    "perfil": 14
+    "zona": 16
    },
    "muestra": [
+    {
+     "titulo": "Coordinador/a de Servicio Técnico, Santiago Centro.",
+     "ubicacion": "Santiago Centro, R.Metropolitana",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Técnologo Médico en Laboratorio y Oftamología",
      "ubicacion": "Tomé, Bíobío",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo(a) Médico en Oftalmología",
-     "ubicacion": "Antofagasta, Antofagasta",
+     "titulo": "Técnico en enfermeria, Consulta Medica, Vitacura",
+     "ubicacion": "Santiago - Vitacura, R.Metropolitana",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Técnico en enfermeria, Consulta Medica, Vitacura",
-     "ubicacion": "Santiago - Vitacura, R.Metropolitana",
+     "titulo": "Tecnólogo(a) Médico en Oftalmología",
+     "ubicacion": "Antofagasta, Antofagasta",
      "motivo": "exclusion"
     },
     {
@@ -79,91 +84,87 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo/a Médico/a en Imagenología – Calama",
-     "ubicacion": "Calama, Antofagasta",
-     "motivo": "zona"
-    },
-    {
      "titulo": "Coordinador/a de Servicio Técnico, Santiago Centro.",
      "ubicacion": "Santiago Centro, R.Metropolitana",
      "motivo": "perfil"
     },
     {
-     "titulo": "Tecnolog@ Medico para Director/a Técnico de laboratorio clínico",
-     "ubicacion": "Arica, Arica y Parinacota",
-     "motivo": "exclusion"
+     "titulo": "Tecnólogo/a Médico/a en Imagenología – Calama",
+     "ubicacion": "Calama, Antofagasta",
+     "motivo": "zona"
     }
    ]
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 227,
+   "resultados": 102,
    "errores": [],
    "descartados": {
-    "zona": 13,
-    "exclusion": 12,
-    "perfil": 25
+    "exclusion": 17,
+    "antiguedad": 20,
+    "zona": 10,
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a de Resonancia Magnética -…",
-     "ubicacion": "Iquique",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
      "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "ubicacion": "Concepción",
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Coquimbo",
+     "titulo": "Tecnologo Medico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
      "motivo": "zona"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Calama",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
-     "ubicacion": "Punta arenas",
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "titulo": "Servicio de Tecnólogo Medico 4to turno Laboratorio - Tomé",
+     "ubicacion": "Concepción",
+     "motivo": "exclusion"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
+     "titulo": "Tecnólogo/a Médico",
      "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Enfermero(a) o Tecnólogo(a) Médico(a) ? Centro Médico, Viña del Mar",
+     "ubicacion": "Valparaíso",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
+     "ubicacion": "Talagante",
+     "motivo": "exclusion"
     }
    ]
   },
@@ -177,6 +178,11 @@
     "zona": 10
    },
    "muestra": [
+    {
+     "titulo": "Enfermero/a Pabellón-Pre-Operatorio (Vacaciones) - RedSalud Providencia",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Auditor Compliance - RedSalud Casa Matriz",
      "ubicacion": "Providencia, Metropolitana de Santiago",
@@ -231,25 +237,20 @@
      "titulo": "Enfermera Toma de Muestras",
      "ubicacion": "Talca, Maule",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Asistente administrativo - Puerto Natales",
-     "ubicacion": "Natales, Magallanes y Antártica Chilena",
-     "motivo": "exclusion"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 9,
+   "resultados": 11,
    "errores": [],
    "descartados": {
     "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Médico Central - Teletrabajo 39 hrs",
-     "ubicacion": "Providencia, RM, Chile",
+     "titulo": "Enfermero(a) Diálisis - RedSalud Vitacura",
+     "ubicacion": "Vitacura, RM, Chile",
      "motivo": "perfil"
     }
    ]
@@ -328,8 +329,10 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 18,
-   "errores": [],
+   "resultados": 15,
+   "errores": [
+    "«resonancia magnetica»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50"
+   ],
    "descartados": {
     "exclusion": 5,
     "zona": 1
@@ -375,5 +378,5 @@
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-11T22:59:22+00:00"
+ "rss_chiletrabajos": "2026-11-12T11:14:21+00:00"
 }
