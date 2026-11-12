@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-11T23:55:42+00:00",
+ "ultimo_chequeo": "2026-11-12T01:24:02+00:00",
  "nuevos": 0,
  "total": 47,
  "palabras_clave": [
@@ -29,8 +29,8 @@
    "errores": [],
    "descartados": {
     "exclusion": 20,
-    "zona": 30,
-    "perfil": 13
+    "zona": 29,
+    "perfil": 14
    },
    "muestra": [
     {
@@ -169,7 +169,7 @@
   },
   "trabajando": {
    "nombre": "Trabajando.cl",
-   "resultados": 119,
+   "resultados": 117,
    "errores": [],
    "descartados": {
     "perfil": 30,
@@ -241,25 +241,25 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 10,
+   "resultados": 9,
    "errores": [],
    "descartados": {
     "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "DevOps Engineer Full time",
-     "ubicacion": "Santiago de Chile, RM, Chile",
+     "titulo": "Médico Central - Teletrabajo 39 hrs",
+     "ubicacion": "Providencia, RM, Chile",
      "motivo": "perfil"
     }
    ]
   },
   "laborum": {
    "nombre": "Laborum",
-   "resultados": 62,
+   "resultados": 60,
    "errores": [],
    "descartados": {
-    "zona": 5,
+    "zona": 4,
     "exclusion": 6,
     "antiguedad": 5
    },
