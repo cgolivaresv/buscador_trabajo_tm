@@ -1,8 +1,8 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-12T19:05:42+00:00",
- "nuevos": 0,
- "total": 47,
+ "ultimo_chequeo": "2026-11-12T20:02:07+00:00",
+ "nuevos": 2,
+ "total": 49,
  "palabras_clave": [
   "tecnólogo médico",
   "tecnólogo médico resonancia",
@@ -28,11 +28,16 @@
    "resultados": 210,
    "errores": [],
    "descartados": {
-    "perfil": 28,
     "exclusion": 21,
+    "perfil": 28,
     "zona": 16
    },
    "muestra": [
+    {
+     "titulo": "Técnico en Enfermería Nivel Superior Unidad Toma de Muestras Independencia",
+     "ubicacion": "Santiago - Independencia, R.Metropolitana",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Líder técnico",
      "ubicacion": "Santiago - Providencia, R.Metropolitana",
@@ -87,97 +92,121 @@
      "titulo": "Tecnólogo/a Médico – 4° turno, Laboratorio Clínico – Tomé, Región del Biobío",
      "ubicacion": "Tomé, Bíobío",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico – Diurno, Oftalmología y Laboratorio – Tomé, Región del Biobío",
-     "ubicacion": "Tomé, Bíobío",
-     "motivo": "exclusion"
     }
    ]
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 98,
+   "resultados": 229,
    "errores": [],
    "descartados": {
-    "exclusion": 15,
-    "antiguedad": 20,
-    "zona": 8,
-    "perfil": 1
+    "zona": 17,
+    "exclusion": 13,
+    "perfil": 21
    },
    "muestra": [
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
+     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
+     "ubicacion": "Antofagasta",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio Osorno",
+     "ubicacion": "Osorno",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Medico mención Oftalmología - Tomé",
+     "ubicacion": "Concepción",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Fonoaudiólogo/a y/o Tecnólogo Médico Otorrinolaringología -…",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
-     "ubicacion": "Curicó",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
-     "ubicacion": "Concepción",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnologo Medico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo médico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
-     "ubicacion": "La Serena",
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Calama",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
-     "ubicacion": "Santiago",
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Colina",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo/a Médico",
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Linares",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención…",
      "ubicacion": "Santiago",
-     "motivo": "antiguedad"
+     "motivo": "perfil"
     },
     {
-     "titulo": "Tecnólogo Médico RX Sucursal Concepción",
-     "ubicacion": "Concepción",
-     "motivo": "antiguedad"
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
     },
     {
-     "titulo": "Tecnólogo/a Médico/a de Resonancia Magnética - Iquique",
-     "ubicacion": "Iquique",
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Coquimbo",
      "motivo": "zona"
     },
     {
-     "titulo": "TECNOLOGO MEDICO con mención en Laboratorio Clínico",
-     "ubicacion": "Talagante",
+     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
+     "ubicacion": "Punta arenas",
      "motivo": "exclusion"
     }
    ]
   },
   "trabajando": {
    "nombre": "Trabajando.cl",
-   "resultados": 117,
+   "resultados": 123,
    "errores": [],
    "descartados": {
-    "exclusion": 13,
-    "perfil": 21,
-    "zona": 15
+    "perfil": 18,
+    "exclusion": 14,
+    "zona": 16
    },
    "muestra": [
+    {
+     "titulo": "Enfermero/a de Endoscopia (Vacaciones)- RedSalud Santiago",
+     "ubicacion": "Santiago, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tens Imágenes (Vacaciones)- RedSalud Providencia",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tens Hospitalización Ginecobstetra (Vacaciones)- RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TENS Neonatología (Vacaciones) - RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TENS CPA (Vacaciones) - RedSalud Providencia",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Enfermera(o) UPC Pediátrica (Vacaciones) - RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "TENS ANESTESIA",
      "ubicacion": "Temuco, La Araucanía",
@@ -207,36 +236,6 @@
      "titulo": "Práctica Profesional - Atracción de Talento RedSalud CChC",
      "ubicacion": "Providencia, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Técnico Enfermería Oncología Médica Quimioterapia - Reemplazo (Honorarios)",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Enfermera (O) Médico Quirúrgico (Diurna)",
-     "ubicacion": "La Florida, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tens Urgencia (Part Time)",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Químico Farmacéutico (Vacaciones) - RedSalud Santiago",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tens Bodega (Vacaciones) - RedSalud Providencia",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tens Medico Quirúrgico (Diurno)",
-     "ubicacion": "La Florida, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
@@ -329,10 +328,8 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 15,
-   "errores": [
-    "«resonancia magnética»: HTTPError: 504 Server Error: Gateway Time-out for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50"
-   ],
+   "resultados": 18,
+   "errores": [],
    "descartados": {
     "exclusion": 5,
     "zona": 1
@@ -373,10 +370,10 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 0,
+  "leidas": 2,
   "sin_permiso": 0,
   "errores": 0,
-  "subieron_a_prioritario": 0
+  "subieron_a_prioritario": 1
  },
  "rss_chiletrabajos": "2026-11-12T19:05:42+00:00"
 }
