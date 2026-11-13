@@ -1,8 +1,8 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-13T01:19:43+00:00",
- "nuevos": 0,
- "total": 49,
+ "ultimo_chequeo": "2026-11-13T11:09:25+00:00",
+ "nuevos": 2,
+ "total": 51,
  "palabras_clave": [
   "tecnólogo médico",
   "tecnólogo médico resonancia",
@@ -28,11 +28,16 @@
    "resultados": 214,
    "errores": [],
    "descartados": {
-    "zona": 17,
     "exclusion": 21,
+    "zona": 17,
     "perfil": 29
    },
    "muestra": [
+    {
+     "titulo": "Técnico en Enfermería Nivel Superior",
+     "ubicacion": "Santiago - Las condes, R.Metropolitana",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Tecnologo/a medico/a RX / MX",
      "ubicacion": "Iquique, Tarapacá",
@@ -87,37 +92,23 @@
      "titulo": "Técnico en Enfermería Nivel Superior Médico Quirúrgico",
      "ubicacion": "Santiago Centro, R.Metropolitana",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Técnico en Enfermería Médico Quirúrgico, reemplazo vacaciones",
-     "ubicacion": "Santiago Centro, R.Metropolitana",
-     "motivo": "exclusion"
     }
    ]
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 231,
+   "resultados": 108,
    "errores": [],
    "descartados": {
-    "zona": 15,
-    "exclusion": 12,
-    "perfil": 23
+    "exclusion": 17,
+    "antiguedad": 20,
+    "zona": 9,
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "TECNÓLOGO MEDICO EN RADIOLOGÍA-ACREDITADO OIT",
-     "ubicacion": "Quillota",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio Osorno",
-     "ubicacion": "Osorno",
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
@@ -126,44 +117,54 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Fonoaudiólogo/a y/o Tecnólogo Médico Otorrinolaringología -…",
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
      "ubicacion": "Santiago",
-     "motivo": "exclusion"
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Calama",
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "ubicacion": "Concepción",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNÓLOGO MEDICO EN RADIOLOGÍA-ACREDITADO OIT",
+     "ubicacion": "Quillota",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Colina",
+     "titulo": "Tecnologo Medico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio Osorno",
+     "ubicacion": "Osorno",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
+     "titulo": "Tecnólogo médico",
      "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Coquimbo",
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
      "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
     }
    ]
   },
@@ -248,15 +249,15 @@
    },
    "muestra": [
     {
-     "titulo": "Liquidador/a de Licencias Médicas",
-     "ubicacion": "Las Condes, RM, Chile",
+     "titulo": "Ingeniero de Software Senior // Back-end Full time",
+     "ubicacion": "Santiago de Chile, RM, Chile",
      "motivo": "perfil"
     }
    ]
   },
   "laborum": {
    "nombre": "Laborum",
-   "resultados": 58,
+   "resultados": 60,
    "errores": [],
    "descartados": {
     "zona": 4,
@@ -328,7 +329,7 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 18,
+   "resultados": 16,
    "errores": [],
    "descartados": {
     "exclusion": 5,
@@ -370,10 +371,10 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 0,
+  "leidas": 2,
   "sin_permiso": 0,
   "errores": 0,
-  "subieron_a_prioritario": 0
+  "subieron_a_prioritario": 1
  },
- "rss_chiletrabajos": "2026-11-12T23:53:00+00:00"
+ "rss_chiletrabajos": "2026-11-13T11:09:25+00:00"
 }
