@@ -1,7 +1,7 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-13T17:02:34+00:00",
- "nuevos": 2,
+ "ultimo_chequeo": "2026-11-13T17:57:59+00:00",
+ "nuevos": 0,
  "total": 56,
  "palabras_clave": [
   "tecnólogo médico",
@@ -172,11 +172,41 @@
    "resultados": 129,
    "errores": [],
    "descartados": {
-    "zona": 17,
-    "perfil": 14,
-    "exclusion": 17
+    "perfil": 17,
+    "exclusion": 14,
+    "zona": 17
    },
    "muestra": [
+    {
+     "titulo": "Enfermero/a Pool Volante (Vacaciones) - RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tens Pool Volante (Vacaciones) - Clínica RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Enfermero/a POOL (Vacaciones) - RedSalud Vitacura",
+     "ubicacion": "Vitacura, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tens POOL (Vacaciones) - Clínica RedSalud Vitacura",
+     "ubicacion": "Vitacura, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Jefe de Remuneraciones",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tens Pool Volante (Vacaciones) - RedSalud Providencia",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Analista de remuneraciones",
      "ubicacion": "Punta Arenas, Magallanes y Antártica Chilena",
@@ -206,125 +236,48 @@
      "titulo": "Enfermero/a Supervisor/a Bloque Hospitalizados",
      "ubicacion": "Antofagasta, Antofagasta",
      "motivo": "zona"
-    },
-    {
-     "titulo": "Técnico en Enfermería / TENS / Ayudante Tecnico (Reemplazo de verano)",
-     "ubicacion": "Independencia, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - San Miguel",
-     "ubicacion": "San Miguel, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Lo Barnechea",
-     "ubicacion": "Lo Barnechea, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Temuco",
-     "ubicacion": "Temuco, La Araucanía",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Viña del Mar",
-     "ubicacion": "Viña del Mar, Valparaíso",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Calama",
-     "ubicacion": "Calama, Antofagasta",
-     "motivo": "exclusion"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 12,
+   "resultados": 11,
    "errores": [],
    "descartados": {
     "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Implementador de Sistemas clínicos - Experiencia en LIS",
-     "ubicacion": "Santiago de Chile, RM, Chile",
+     "titulo": "Liquidador/a de Licencias Médicas",
+     "ubicacion": "Las Condes, RM, Chile",
      "motivo": "perfil"
     }
    ]
   },
   "laborum": {
    "nombre": "Laborum",
-   "resultados": 60,
-   "errores": [],
-   "descartados": {
-    "zona": 4,
-    "exclusion": 5,
-    "antiguedad": 5
-   },
-   "muestra": [
-    {
-     "titulo": "Tecnólogo/a Médico/a de Resonancia Magnética - Iquique",
-     "ubicacion": "Iquique, Región I",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "TECNÓLOGO/A MÉDICO/A DE LABORATORIO CLÍNICO Part-time y reemplazos",
-     "ubicacion": "Puerto Varas, Región X",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo(a) Médico en Oftalmología",
-     "ubicacion": "Provincia de Antofagasta, Región II",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "REEMPLAZO BIOQUIMICO O TECNOLOGO MEDICO",
-     "ubicacion": "Santiago de Chile, Región Metropolitana",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo Médico Banco de Sangre - Rancagua",
-     "ubicacion": "Rancagua, Región VI",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico - Anatomía Patológica",
-     "ubicacion": "Santiago de Chile, Región Metropolitana",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo Médico- Medicina Transfusional",
-     "ubicacion": "Vitacura, Región Metropolitana",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Fonoaudiólogo/a y/o Tecnólogo Médico Otorrinolaringología - Concepción",
-     "ubicacion": "Concepción, Región VIII",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico Imagenología - Clínica",
-     "ubicacion": "San Antonio, Región V",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "tecnologo medico",
-     "ubicacion": "Santiago de Chile, Región Metropolitana",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Ejecutivo Comercial Junior (Tecnólogo Médico o Bioquímico)",
-     "ubicacion": "Ñuñoa, Región Metropolitana",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo(a) Médico(a) en Oftalmología Part Time 18 hrs. OPV Mall Alto Las Condes",
-     "ubicacion": "Las Condes, Región Metropolitana",
-     "motivo": "exclusion"
-    }
-   ]
+   "resultados": 0,
+   "errores": [
+    "«tecnólogo médico»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/empleos-busqueda-tecn%C3%B3logo-m%C3%A9dico.html",
+    "«tecnologo medico»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnólogo médico resonancia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnologo medico resonancia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«resonancia magnética»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«resonancia magnetica»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnólogo médico imagenología»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnologo medico imagenologia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnólogo médico scanner»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnologo medico scanner»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnólogo médico radiología»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnologo medico radiologia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«especialista de aplicaciones»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«coordinador imagenología»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«coordinador imagenologia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«jefe imagenología»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«jefe imagenologia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES"
+   ],
+   "descartados": {},
+   "muestra": []
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
@@ -370,7 +323,7 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 2,
+  "leidas": 0,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
