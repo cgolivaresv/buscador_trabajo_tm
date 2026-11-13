@@ -1,7 +1,7 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-13T14:58:31+00:00",
- "nuevos": 2,
+ "ultimo_chequeo": "2026-11-13T15:57:43+00:00",
+ "nuevos": 0,
  "total": 54,
  "palabras_clave": [
   "tecnólogo médico",
@@ -97,37 +97,18 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 229,
+   "resultados": 108,
    "errores": [],
    "descartados": {
-    "zona": 13,
-    "exclusion": 15,
-    "perfil": 21
+    "exclusion": 17,
+    "antiguedad": 20,
+    "zona": 9,
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "TECNÓLOGO MEDICO EN RADIOLOGÍA-ACREDITADO OIT",
-     "ubicacion": "Quillota",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "TENS - ANESTESIA - R. Metropilitana",
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
      "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "KAM Junior",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio Osorno",
-     "ubicacion": "Osorno",
      "motivo": "exclusion"
     },
     {
@@ -136,34 +117,54 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Fonoaudiólogo/a y/o Tecnólogo Médico Otorrinolaringología -…",
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
      "ubicacion": "Santiago",
-     "motivo": "exclusion"
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Calama",
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "ubicacion": "Concepción",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNÓLOGO MEDICO EN RADIOLOGÍA-ACREDITADO OIT",
+     "ubicacion": "Quillota",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Colina",
+     "titulo": "Tecnologo Medico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio Osorno",
+     "ubicacion": "Osorno",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
+     "titulo": "Tecnólogo médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
+     "titulo": "Tecnólogo/a Médico",
      "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "motivo": "antiguedad"
     }
    ]
   },
@@ -172,11 +173,21 @@
    "resultados": 125,
    "errores": [],
    "descartados": {
-    "zona": 17,
-    "perfil": 12,
-    "exclusion": 20
+    "perfil": 13,
+    "exclusion": 19,
+    "zona": 17
    },
    "muestra": [
+    {
+     "titulo": "Ejecutivo Proceso Pago Honorarios Medicos RedSalud",
+     "ubicacion": "Santiago, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Asistente administrativo - Concepcion",
+     "ubicacion": "Concepción, Biobío",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Kinesiólogo(a) Ergónomo(a) Reemplazo / Proyecto Minero Antofagasta",
      "ubicacion": "Antofagasta, Antofagasta",
@@ -226,22 +237,12 @@
      "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Ñuñoa",
      "ubicacion": "Ñuñoa, Metropolitana de Santiago",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Coquimbo",
-     "ubicacion": "Coquimbo, Coquimbo",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Huechuraba",
-     "ubicacion": "Huechuraba, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 13,
+   "resultados": 12,
    "errores": [],
    "descartados": {
     "perfil": 1
@@ -370,10 +371,10 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 2,
+  "leidas": 0,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-13T11:09:25+00:00"
+ "rss_chiletrabajos": "2026-11-13T15:57:43+00:00"
 }
