@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-13T20:59:41+00:00",
+ "ultimo_chequeo": "2026-11-13T21:54:52+00:00",
  "nuevos": 0,
  "total": 56,
  "palabras_clave": [
@@ -173,8 +173,8 @@
    "errores": [],
    "descartados": {
     "exclusion": 14,
-    "zona": 12,
-    "perfil": 22
+    "zona": 11,
+    "perfil": 23
    },
    "muestra": [
     {
@@ -241,16 +241,16 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 11,
+   "resultados": 10,
    "errores": [],
    "descartados": {
-    "perfil": 1
+    "exclusion": 1
    },
    "muestra": [
     {
-     "titulo": "Liquidador/a de Licencias Médicas",
-     "ubicacion": "Las Condes, RM, Chile",
-     "motivo": "perfil"
+     "titulo": "Tens Imágenes (Vacaciones)- RedSalud Providencia",
+     "ubicacion": "Providencia, RM, Chile",
+     "motivo": "exclusion"
     }
    ]
   },
