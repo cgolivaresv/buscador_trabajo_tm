@@ -1,8 +1,8 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-13T13:19:32+00:00",
- "nuevos": 0,
- "total": 52,
+ "ultimo_chequeo": "2026-11-13T14:58:31+00:00",
+ "nuevos": 2,
+ "total": 54,
  "palabras_clave": [
   "tecnólogo médico",
   "tecnólogo médico resonancia",
@@ -97,11 +97,11 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 231,
+   "resultados": 229,
    "errores": [],
    "descartados": {
     "zona": 13,
-    "exclusion": 16,
+    "exclusion": 15,
     "perfil": 21
    },
    "muestra": [
@@ -119,6 +119,11 @@
      "titulo": "TENS - ANESTESIA - R. Metropilitana",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
+    },
+    {
+     "titulo": "KAM Junior",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
     },
     {
      "titulo": "Tecnólogo Médico Laboratorio Osorno",
@@ -159,24 +164,24 @@
      "titulo": "TMO Part Time 20 hrs (mención…",
      "ubicacion": "Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
     }
    ]
   },
   "trabajando": {
    "nombre": "Trabajando.cl",
-   "resultados": 123,
+   "resultados": 125,
    "errores": [],
    "descartados": {
+    "zona": 17,
     "perfil": 12,
-    "zona": 16,
-    "exclusion": 22
+    "exclusion": 20
    },
    "muestra": [
+    {
+     "titulo": "Kinesiólogo(a) Ergónomo(a) Reemplazo / Proyecto Minero Antofagasta",
+     "ubicacion": "Antofagasta, Antofagasta",
+     "motivo": "zona"
+    },
     {
      "titulo": "Analista Senior de Negocio Quirúrgico - RedSalud",
      "ubicacion": "Providencia, Metropolitana de Santiago",
@@ -231,11 +236,6 @@
      "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Huechuraba",
      "ubicacion": "Huechuraba, Metropolitana de Santiago",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Las Condes",
-     "ubicacion": "Las Condes, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
@@ -244,13 +244,13 @@
    "resultados": 13,
    "errores": [],
    "descartados": {
-    "exclusion": 1
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Tens Imágenes (Vacaciones)- RedSalud Providencia",
-     "ubicacion": "Providencia, RM, Chile",
-     "motivo": "exclusion"
+     "titulo": "Implementador de Sistemas clínicos - Experiencia en LIS",
+     "ubicacion": "Santiago de Chile, RM, Chile",
+     "motivo": "perfil"
     }
    ]
   },
@@ -370,7 +370,7 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 0,
+  "leidas": 2,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
