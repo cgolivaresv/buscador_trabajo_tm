@@ -1,7 +1,7 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-13T12:03:31+00:00",
- "nuevos": 1,
+ "ultimo_chequeo": "2026-11-13T13:19:32+00:00",
+ "nuevos": 0,
  "total": 52,
  "palabras_clave": [
   "tecnólogo médico",
@@ -100,9 +100,9 @@
    "resultados": 231,
    "errores": [],
    "descartados": {
-    "zona": 12,
-    "exclusion": 15,
-    "perfil": 23
+    "zona": 13,
+    "exclusion": 16,
+    "perfil": 21
    },
    "muestra": [
     {
@@ -114,6 +114,11 @@
      "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
      "ubicacion": "Antofagasta",
      "motivo": "zona"
+    },
+    {
+     "titulo": "TENS - ANESTESIA - R. Metropilitana",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
     },
     {
      "titulo": "Tecnólogo Médico Laboratorio Osorno",
@@ -159,11 +164,6 @@
      "titulo": "TMO Part Time 20 hrs (mención…",
      "ubicacion": "Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Coquimbo",
-     "motivo": "zona"
     }
    ]
   },
@@ -172,70 +172,70 @@
    "resultados": 123,
    "errores": [],
    "descartados": {
-    "perfil": 18,
-    "exclusion": 14,
-    "zona": 16
+    "perfil": 12,
+    "zona": 16,
+    "exclusion": 22
    },
    "muestra": [
     {
-     "titulo": "Analista de Subsidios de Licencias Medicas",
-     "ubicacion": "Las Condes, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Enfermero/a de Endoscopia (Vacaciones)- RedSalud Santiago",
-     "ubicacion": "Santiago, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tens Imágenes (Vacaciones)- RedSalud Providencia",
+     "titulo": "Analista Senior de Negocio Quirúrgico - RedSalud",
      "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tens Hospitalización Ginecobstetra (Vacaciones)- RedSalud Santiago",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TENS Neonatología (Vacaciones) - RedSalud Santiago",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TENS CPA (Vacaciones) - RedSalud Providencia",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Enfermera(o) UPC Pediátrica (Vacaciones) - RedSalud Santiago",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
      "motivo": "perfil"
     },
     {
-     "titulo": "TENS ANESTESIA",
-     "ubicacion": "Temuco, La Araucanía",
+     "titulo": "Enfermero/a Supervisor/a Bloque Hospitalizados",
+     "ubicacion": "Antofagasta, Antofagasta",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Técnico en Enfermería / TENS / Ayudante Tecnico (Reemplazo de verano)",
+     "ubicacion": "Independencia, Metropolitana de Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Práctica en Remuneraciones",
-     "ubicacion": "Las Condes, Metropolitana de Santiago",
-     "motivo": "perfil"
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - San Miguel",
+     "ubicacion": "San Miguel, Metropolitana de Santiago",
+     "motivo": "exclusion"
     },
     {
-     "titulo": "TENS Anestesia / Clínica MEDS La Dehesa",
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Lo Barnechea",
      "ubicacion": "Lo Barnechea, Metropolitana de Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Jefe/a de Personal Reemplazo Pre y Postnatal | Puerto Natales",
-     "ubicacion": "Natales, Magallanes y Antártica Chilena",
-     "motivo": "zona"
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Temuco",
+     "ubicacion": "Temuco, La Araucanía",
+     "motivo": "exclusion"
     },
     {
-     "titulo": "Químico Farmacéutico (Vacaciones) - RedSalud Vitacura",
-     "ubicacion": "Vitacura, Metropolitana de Santiago",
-     "motivo": "perfil"
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Viña del Mar",
+     "ubicacion": "Viña del Mar, Valparaíso",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Calama",
+     "ubicacion": "Calama, Antofagasta",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Ñuñoa",
+     "ubicacion": "Ñuñoa, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Coquimbo",
+     "ubicacion": "Coquimbo, Coquimbo",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Huechuraba",
+     "ubicacion": "Huechuraba, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Las Condes",
+     "ubicacion": "Las Condes, Metropolitana de Santiago",
+     "motivo": "exclusion"
     }
    ]
   },
@@ -244,13 +244,13 @@
    "resultados": 13,
    "errores": [],
    "descartados": {
-    "perfil": 1
+    "exclusion": 1
    },
    "muestra": [
     {
-     "titulo": "Implementador de Sistemas clínicos - Experiencia en LIS",
-     "ubicacion": "Santiago de Chile, RM, Chile",
-     "motivo": "perfil"
+     "titulo": "Tens Imágenes (Vacaciones)- RedSalud Providencia",
+     "ubicacion": "Providencia, RM, Chile",
+     "motivo": "exclusion"
     }
    ]
   },
@@ -370,7 +370,7 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 1,
+  "leidas": 0,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
