@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-14T11:48:52+00:00",
+ "ultimo_chequeo": "2026-11-14T13:00:22+00:00",
  "nuevos": 0,
  "total": 56,
  "palabras_clave": [
@@ -28,11 +28,16 @@
    "resultados": 214,
    "errores": [],
    "descartados": {
-    "exclusion": 21,
     "zona": 20,
+    "exclusion": 20,
     "perfil": 27
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogo Médico(a) Turno 7x7 Calama",
+     "ubicacion": "Calama, Antofagasta",
+     "motivo": "zona"
+    },
     {
      "titulo": "Tecnólogo/a Médico – Diurno, Oftalmología y Laboratorio – Tomé, Región del Biobío",
      "ubicacion": "Tomé, Bíobío",
@@ -69,12 +74,12 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnologo/a medico/a RX / MX",
+     "titulo": "Tecnologo/a medico/a con experiencia en resonancia",
      "ubicacion": "Iquique, Tarapacá",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnologo/a medico/a con experiencia en resonancia",
+     "titulo": "Tecnologo/a medico/a RX / MX",
      "ubicacion": "Iquique, Tarapacá",
      "motivo": "zona"
     },
@@ -87,21 +92,16 @@
      "titulo": "Tecnólogos(as) Médicos Volantes",
      "ubicacion": "Santiago Centro, R.Metropolitana",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Coordinador/a de Servicio Técnico, Santiago Centro.",
-     "ubicacion": "Santiago Centro, R.Metropolitana",
-     "motivo": "perfil"
     }
    ]
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 235,
+   "resultados": 233,
    "errores": [],
    "descartados": {
     "zona": 13,
-    "exclusion": 14,
+    "exclusion": 13,
     "perfil": 22
    },
    "muestra": [
