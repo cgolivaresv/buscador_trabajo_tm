@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-14T01:12:22+00:00",
+ "ultimo_chequeo": "2026-11-14T10:52:29+00:00",
  "nuevos": 0,
  "total": 56,
  "palabras_clave": [
@@ -28,11 +28,26 @@
    "resultados": 214,
    "errores": [],
    "descartados": {
-    "perfil": 28,
     "exclusion": 21,
-    "zona": 19
+    "zona": 20,
+    "perfil": 27
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogo/a Médico – Diurno, Oftalmología y Laboratorio – Tomé, Región del Biobío",
+     "ubicacion": "Tomé, Bíobío",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico – 4° turno, Laboratorio Clínico – Tomé, Región del Biobío",
+     "ubicacion": "Tomé, Bíobío",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogos(as) Médicos",
+     "ubicacion": "Mejillones, Antofagasta",
+     "motivo": "zona"
+    },
     {
      "titulo": "Profesional de Apoyo Técnico",
      "ubicacion": "Santiago - Estación Central, R.Metropolitana",
@@ -44,14 +59,14 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Técnico en Enfermería Nivel Superior",
-     "ubicacion": "Santiago - Las condes, R.Metropolitana",
-     "motivo": "exclusion"
-    },
-    {
      "titulo": "Líder técnico",
      "ubicacion": "Santiago - Providencia, R.Metropolitana",
      "motivo": "perfil"
+    },
+    {
+     "titulo": "Técnico en Enfermería Nivel Superior",
+     "ubicacion": "Santiago - Las condes, R.Metropolitana",
+     "motivo": "exclusion"
     },
     {
      "titulo": "Tecnologo/a medico/a RX / MX",
@@ -77,21 +92,6 @@
      "titulo": "Coordinador/a de Servicio Técnico, Santiago Centro.",
      "ubicacion": "Santiago Centro, R.Metropolitana",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Técnologo Médico en Laboratorio y Oftamología",
-     "ubicacion": "Tomé, Bíobío",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Técnico en enfermeria, Consulta Medica, Vitacura",
-     "ubicacion": "Santiago - Vitacura, R.Metropolitana",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo(a) Médico en Oftalmología",
-     "ubicacion": "Antofagasta, Antofagasta",
-     "motivo": "exclusion"
     }
    ]
   },
@@ -170,10 +170,10 @@
   },
   "trabajando": {
    "nombre": "Trabajando.cl",
-   "resultados": 129,
+   "resultados": 127,
    "errores": [],
    "descartados": {
-    "exclusion": 14,
+    "exclusion": 13,
     "zona": 11,
     "perfil": 23
    },
@@ -242,16 +242,16 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 13,
+   "resultados": 14,
    "errores": [],
    "descartados": {
-    "perfil": 1
+    "zona": 1
    },
    "muestra": [
     {
-     "titulo": "Encargado de Operaciones",
-     "ubicacion": "Puerto Varas, LL, Chile",
-     "motivo": "perfil"
+     "titulo": "OM3 Codelco Ventanas",
+     "ubicacion": "Valparaíso, VS, Chile",
+     "motivo": "zona"
     }
    ]
   },
@@ -376,5 +376,5 @@
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-14T01:12:22+00:00"
+ "rss_chiletrabajos": "2026-11-14T10:52:29+00:00"
 }
