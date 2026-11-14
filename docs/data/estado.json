@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-13T23:48:40+00:00",
+ "ultimo_chequeo": "2026-11-14T01:12:22+00:00",
  "nuevos": 0,
  "total": 56,
  "palabras_clave": [
@@ -28,9 +28,9 @@
    "resultados": 214,
    "errores": [],
    "descartados": {
-    "perfil": 29,
+    "perfil": 28,
     "exclusion": 21,
-    "zona": 18
+    "zona": 19
    },
    "muestra": [
     {
@@ -97,42 +97,18 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 235,
+   "resultados": 108,
    "errores": [],
    "descartados": {
-    "zona": 12,
-    "exclusion": 14,
-    "perfil": 23
+    "exclusion": 17,
+    "antiguedad": 20,
+    "zona": 9,
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "TECNÓLOGO MEDICO EN RADIOLOGÍA-ACREDITADO OIT",
-     "ubicacion": "Quillota",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "TENS - ANESTESIA - R. Metropilitana",
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
      "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TENS",
-     "ubicacion": "La serena",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "KAM Junior",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio Osorno",
-     "ubicacion": "Osorno",
      "motivo": "exclusion"
     },
     {
@@ -141,29 +117,54 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Fonoaudiólogo/a y/o Tecnólogo Médico Otorrinolaringología -…",
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
      "ubicacion": "Santiago",
-     "motivo": "exclusion"
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Calama",
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "ubicacion": "Concepción",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNÓLOGO MEDICO EN RADIOLOGÍA-ACREDITADO OIT",
+     "ubicacion": "Quillota",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Colina",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
+     "titulo": "Tecnologo Medico",
      "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio Osorno",
+     "ubicacion": "Osorno",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
     }
    ]
   },
@@ -241,15 +242,15 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 12,
+   "resultados": 13,
    "errores": [],
    "descartados": {
     "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Médico Atención Telemedicina Salud Mental - Centro Providencia Achs Salud (Modalidad Híbrida)",
-     "ubicacion": "Providencia, RM, Chile",
+     "titulo": "Encargado de Operaciones",
+     "ubicacion": "Puerto Varas, LL, Chile",
      "motivo": "perfil"
     }
    ]
@@ -375,5 +376,5 @@
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-13T20:01:54+00:00"
+ "rss_chiletrabajos": "2026-11-14T01:12:22+00:00"
 }
