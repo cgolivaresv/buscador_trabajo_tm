@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-14T19:50:19+00:00",
+ "ultimo_chequeo": "2026-11-14T20:48:17+00:00",
  "nuevos": 0,
  "total": 58,
  "palabras_clave": [
@@ -79,12 +79,12 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnologo/a medico/a con experiencia en resonancia",
+     "titulo": "Tecnologo/a medico/a RX / MX",
      "ubicacion": "Iquique, Tarapacá",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnologo/a medico/a RX / MX",
+     "titulo": "Tecnologo/a medico/a con experiencia en resonancia",
      "ubicacion": "Iquique, Tarapacá",
      "motivo": "zona"
     },
@@ -172,9 +172,9 @@
    "resultados": 127,
    "errores": [],
    "descartados": {
-    "exclusion": 13,
-    "zona": 10,
-    "perfil": 24
+    "exclusion": 12,
+    "zona": 8,
+    "perfil": 27
    },
    "muestra": [
     {
