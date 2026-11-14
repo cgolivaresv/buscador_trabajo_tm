@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-14T20:48:17+00:00",
+ "ultimo_chequeo": "2026-11-14T21:46:47+00:00",
  "nuevos": 0,
  "total": 58,
  "palabras_clave": [
@@ -241,7 +241,7 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 11,
+   "resultados": 5,
    "errores": [],
    "descartados": {
     "zona": 1
@@ -256,75 +256,28 @@
   },
   "laborum": {
    "nombre": "Laborum",
-   "resultados": 60,
-   "errores": [],
-   "descartados": {
-    "zona": 4,
-    "exclusion": 5,
-    "antiguedad": 5
-   },
-   "muestra": [
-    {
-     "titulo": "Tecnólogo/a Médico/a de Resonancia Magnética - Iquique",
-     "ubicacion": "Iquique, Región I",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "TECNÓLOGO/A MÉDICO/A DE LABORATORIO CLÍNICO Part-time y reemplazos",
-     "ubicacion": "Puerto Varas, Región X",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo(a) Médico en Oftalmología",
-     "ubicacion": "Provincia de Antofagasta, Región II",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "REEMPLAZO BIOQUIMICO O TECNOLOGO MEDICO",
-     "ubicacion": "Santiago de Chile, Región Metropolitana",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo Médico Banco de Sangre - Rancagua",
-     "ubicacion": "Rancagua, Región VI",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico - Anatomía Patológica",
-     "ubicacion": "Santiago de Chile, Región Metropolitana",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo Médico- Medicina Transfusional",
-     "ubicacion": "Vitacura, Región Metropolitana",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Fonoaudiólogo/a y/o Tecnólogo Médico Otorrinolaringología - Concepción",
-     "ubicacion": "Concepción, Región VIII",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico Imagenología - Clínica",
-     "ubicacion": "San Antonio, Región V",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "tecnologo medico",
-     "ubicacion": "Santiago de Chile, Región Metropolitana",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Ejecutivo Comercial Junior (Tecnólogo Médico o Bioquímico)",
-     "ubicacion": "Ñuñoa, Región Metropolitana",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo(a) Médico(a) en Oftalmología Part Time 18 hrs. OPV Mall Alto Las Condes",
-     "ubicacion": "Las Condes, Región Metropolitana",
-     "motivo": "exclusion"
-    }
-   ]
+   "resultados": 0,
+   "errores": [
+    "«tecnólogo médico»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/empleos-busqueda-tecn%C3%B3logo-m%C3%A9dico.html",
+    "«tecnologo medico»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnólogo médico resonancia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnologo medico resonancia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«resonancia magnética»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«resonancia magnetica»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnólogo médico imagenología»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnologo medico imagenologia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnólogo médico scanner»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnologo medico scanner»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnólogo médico radiología»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnologo medico radiologia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«especialista de aplicaciones»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«coordinador imagenología»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«coordinador imagenologia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«jefe imagenología»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«jefe imagenologia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES"
+   ],
+   "descartados": {},
+   "muestra": []
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
