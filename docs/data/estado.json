@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-15T15:49:33+00:00",
+ "ultimo_chequeo": "2026-11-15T16:51:16+00:00",
  "nuevos": 0,
  "total": 58,
  "palabras_clave": [
@@ -100,9 +100,9 @@
    "resultados": 233,
    "errores": [],
    "descartados": {
-    "zona": 14,
+    "zona": 13,
     "exclusion": 12,
-    "perfil": 22
+    "perfil": 23
    },
    "muestra": [
     {
