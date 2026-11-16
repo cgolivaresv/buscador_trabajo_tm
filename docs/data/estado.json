@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-16T18:10:39+00:00",
+ "ultimo_chequeo": "2026-11-16T19:05:45+00:00",
  "nuevos": 0,
  "total": 58,
  "palabras_clave": [
@@ -28,9 +28,9 @@
    "resultados": 220,
    "errores": [],
    "descartados": {
-    "zona": 23,
+    "zona": 22,
     "exclusion": 21,
-    "perfil": 25
+    "perfil": 26
    },
    "muestra": [
     {
@@ -100,7 +100,7 @@
    "resultados": 234,
    "errores": [],
    "descartados": {
-    "exclusion": 13,
+    "exclusion": 14,
     "zona": 13,
     "perfil": 23
    },
@@ -119,6 +119,11 @@
      "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
      "ubicacion": "Antofagasta",
      "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio Clínico y Banco…",
+     "ubicacion": "Concepción",
+     "motivo": "exclusion"
     },
     {
      "titulo": "TENS - ANESTESIA - R. Metropilitana",
@@ -159,11 +164,6 @@
      "titulo": "Tecnólogo Médico con mención en Oftalmología…",
      "ubicacion": "Colina",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
-     "motivo": "exclusion"
     }
    ]
   },
@@ -172,11 +172,16 @@
    "resultados": 121,
    "errores": [],
    "descartados": {
-    "exclusion": 10,
     "perfil": 29,
+    "exclusion": 10,
     "zona": 8
    },
    "muestra": [
+    {
+     "titulo": "Ejecutivo de Venta Automotriz Nuevos - La Florida",
+     "ubicacion": "La Florida, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Técnico en enfermería - Centro médico",
      "ubicacion": "La Florida, Metropolitana de Santiago",
@@ -208,14 +213,14 @@
      "motivo": "zona"
     },
     {
-     "titulo": "Técnico en imagenología",
-     "ubicacion": "La Florida, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
      "titulo": "Enfermero(a) Clínico(a) - Urgencias",
      "ubicacion": "La Florida, Metropolitana de Santiago",
      "motivo": "perfil"
+    },
+    {
+     "titulo": "Técnico en imagenología",
+     "ubicacion": "La Florida, Metropolitana de Santiago",
+     "motivo": "exclusion"
     },
     {
      "titulo": "Tens Centro Médico - Cardiología",
@@ -231,58 +236,102 @@
      "titulo": "Enfermero(a) Hospitalización MQ Adulto (Vacaciones)- RedSalud Providencia",
      "ubicacion": "Providencia, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Auditor Compliance - RedSalud Casa Matriz",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 2,
+   "resultados": 10,
    "errores": [],
    "descartados": {
     "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Enfermera/o de Continuidad UTI - RedSalud Santiago",
-     "ubicacion": "Estación Central, RM, Chile",
+     "titulo": "Ingeniero/a de Inteligencia Pacientes - Gerencia Experiencia y Servicios Digitales al Paciente RedSalud CChC",
+     "ubicacion": "Providencia, RM, Chile",
      "motivo": "perfil"
     }
    ]
   },
   "laborum": {
    "nombre": "Laborum",
-   "resultados": 0,
-   "errores": [
-    "«tecnólogo médico»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/empleos-busqueda-tecn%C3%B3logo-m%C3%A9dico.html",
-    "«tecnologo medico»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«tecnólogo médico resonancia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«tecnologo medico resonancia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«resonancia magnética»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«resonancia magnetica»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«tecnólogo médico imagenología»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«tecnologo medico imagenologia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«tecnólogo médico scanner»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«tecnologo medico scanner»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«tecnólogo médico radiología»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«tecnologo medico radiologia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«especialista de aplicaciones»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«coordinador imagenología»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«coordinador imagenologia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«jefe imagenología»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«jefe imagenologia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES"
-   ],
-   "descartados": {},
-   "muestra": []
+   "resultados": 58,
+   "errores": [],
+   "descartados": {
+    "zona": 4,
+    "exclusion": 4,
+    "antiguedad": 5
+   },
+   "muestra": [
+    {
+     "titulo": "Tecnólogo/a Médico/a de Resonancia Magnética - Iquique",
+     "ubicacion": "Iquique, Región I",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "TECNÓLOGO/A MÉDICO/A DE LABORATORIO CLÍNICO Part-time y reemplazos",
+     "ubicacion": "Puerto Varas, Región X",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico en Oftalmología",
+     "ubicacion": "Provincia de Antofagasta, Región II",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "REEMPLAZO BIOQUIMICO O TECNOLOGO MEDICO",
+     "ubicacion": "Santiago de Chile, Región Metropolitana",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo Médico - Anatomía Patológica",
+     "ubicacion": "Santiago de Chile, Región Metropolitana",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo Médico- Medicina Transfusional",
+     "ubicacion": "Vitacura, Región Metropolitana",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Fonoaudiólogo/a y/o Tecnólogo Médico Otorrinolaringología - Concepción",
+     "ubicacion": "Concepción, Región VIII",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico Imagenología - Clínica",
+     "ubicacion": "San Antonio, Región V",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "tecnologo medico",
+     "ubicacion": "Santiago de Chile, Región Metropolitana",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Ejecutivo Comercial Junior (Tecnólogo Médico o Bioquímico)",
+     "ubicacion": "Ñuñoa, Región Metropolitana",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico(a) en Oftalmología Part Time 18 hrs. OPV Mall Alto Las Condes",
+     "ubicacion": "Las Condes, Región Metropolitana",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico con Mención en Morfofisiopatología y Citodiagnóstico – Antofagasta",
+     "ubicacion": "Provincia de Antofagasta, Región II",
+     "motivo": "zona"
+    }
+   ]
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 20,
-   "errores": [],
+   "resultados": 14,
+   "errores": [
+    "«tecnologo medico»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)"
+   ],
    "descartados": {
     "exclusion": 5,
     "zona": 1
