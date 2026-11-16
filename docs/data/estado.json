@@ -1,7 +1,7 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-16T21:57:00+00:00",
- "nuevos": 1,
+ "ultimo_chequeo": "2026-11-16T22:56:27+00:00",
+ "nuevos": 0,
  "total": 59,
  "palabras_clave": [
   "tecnólogo médico",
@@ -178,6 +178,11 @@
    },
    "muestra": [
     {
+     "titulo": "Analista de Talento y Cultura - RedSalud Providencia",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
      "titulo": "Práctica Ciclo de Caja - Clinica RedSalud Providencia",
      "ubicacion": "Providencia, Metropolitana de Santiago",
      "motivo": "perfil"
@@ -198,13 +203,13 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Enfermero/a Pool Volante (Vacaciones) - RedSalud Santiago",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "titulo": "Enfermero/a POOL (Vacaciones) - RedSalud Vitacura",
+     "ubicacion": "Vitacura, Metropolitana de Santiago",
      "motivo": "perfil"
     },
     {
-     "titulo": "Enfermero/a POOL (Vacaciones) - RedSalud Vitacura",
-     "ubicacion": "Vitacura, Metropolitana de Santiago",
+     "titulo": "Enfermero/a Pool Volante (Vacaciones) - RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
      "motivo": "perfil"
     },
     {
@@ -231,25 +236,20 @@
      "titulo": "Técnico en enfermería - Centro médico",
      "ubicacion": "La Florida, Metropolitana de Santiago",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Ingeniero/a de Inteligencia Pacientes - Gerencia Experiencia y Servicios Digitales al Paciente RedSalud CChC",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 13,
+   "resultados": 5,
    "errores": [],
    "descartados": {
     "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Asesor Sucursales Part Time La Florida",
-     "ubicacion": "Santiago de Chile, RM, Chile",
+     "titulo": "Enfermera/o de Continuidad UTI - RedSalud Santiago",
+     "ubicacion": "Estación Central, RM, Chile",
      "motivo": "perfil"
     }
    ]
@@ -370,7 +370,7 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 1,
+  "leidas": 0,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
