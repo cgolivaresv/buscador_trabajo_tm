@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-15T23:53:26+00:00",
+ "ultimo_chequeo": "2026-11-16T01:33:13+00:00",
  "nuevos": 0,
  "total": 58,
  "palabras_clave": [
@@ -28,11 +28,16 @@
    "resultados": 214,
    "errores": [],
    "descartados": {
-    "exclusion": 21,
-    "zona": 20,
-    "perfil": 28
+    "zona": 23,
+    "exclusion": 20,
+    "perfil": 25
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogo/a Médico/a en Imagenología – Calama",
+     "ubicacion": "Calama, Antofagasta",
+     "motivo": "zona"
+    },
     {
      "titulo": "Tecnolog@ Medico para Director/a Técnico de laboratorio clínico",
      "ubicacion": "Arica, Arica y Parinacota",
@@ -87,11 +92,6 @@
      "titulo": "Técnico en Enfermería Nivel Superior Unidad Toma de Muestras Independencia",
      "ubicacion": "Santiago - Independencia, R.Metropolitana",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Líder técnico",
-     "ubicacion": "Santiago - Providencia, R.Metropolitana",
-     "motivo": "perfil"
     }
    ]
   },
@@ -208,14 +208,14 @@
      "motivo": "perfil"
     },
     {
-     "titulo": "Tens POOL (Vacaciones) - Clínica RedSalud Vitacura",
-     "ubicacion": "Vitacura, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
      "titulo": "Jefe de Remuneraciones",
      "ubicacion": "Providencia, Metropolitana de Santiago",
      "motivo": "perfil"
+    },
+    {
+     "titulo": "Tens POOL (Vacaciones) - Clínica RedSalud Vitacura",
+     "ubicacion": "Vitacura, Metropolitana de Santiago",
+     "motivo": "exclusion"
     },
     {
      "titulo": "Tens Pool Volante (Vacaciones) - RedSalud Providencia",
@@ -241,18 +241,10 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 1,
+   "resultados": 0,
    "errores": [],
-   "descartados": {
-    "zona": 1
-   },
-   "muestra": [
-    {
-     "titulo": "OM3 Codelco Ventanas",
-     "ubicacion": "Valparaíso, VS, Chile",
-     "motivo": "zona"
-    }
-   ]
+   "descartados": {},
+   "muestra": []
   },
   "laborum": {
    "nombre": "Laborum",

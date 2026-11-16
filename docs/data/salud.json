@@ -6,17 +6,17 @@
  },
  "computrabajo": {
   "desde": "2026-10-29T19:56:48+00:00",
-  "ultimo_ok": "2026-11-15T23:53:26+00:00",
+  "ultimo_ok": "2026-11-16T01:33:13+00:00",
   "alerta": false
  },
  "chiletrabajos": {
   "desde": "2026-10-29T19:56:48+00:00",
-  "ultimo_ok": "2026-11-15T23:53:26+00:00",
+  "ultimo_ok": "2026-11-16T01:33:13+00:00",
   "alerta": false
  },
  "trabajando": {
   "desde": "2026-10-29T19:56:48+00:00",
-  "ultimo_ok": "2026-11-15T23:53:26+00:00",
+  "ultimo_ok": "2026-11-16T01:33:13+00:00",
   "alerta": false
  },
  "indeed": {
@@ -31,7 +31,7 @@
  },
  "laborum": {
   "desde": "2026-10-29T19:56:48+00:00",
-  "ultimo_ok": "2026-11-15T23:53:26+00:00",
+  "ultimo_ok": "2026-11-16T01:33:13+00:00",
   "alerta": false
  },
  "linkedin_correo": {
