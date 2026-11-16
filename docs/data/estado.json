@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-16T22:56:27+00:00",
+ "ultimo_chequeo": "2026-11-16T23:51:22+00:00",
  "nuevos": 0,
  "total": 59,
  "palabras_clave": [
@@ -101,8 +101,8 @@
    "errores": [],
    "descartados": {
     "exclusion": 14,
-    "zona": 13,
-    "perfil": 23
+    "zona": 14,
+    "perfil": 22
    },
    "muestra": [
     {
@@ -241,15 +241,15 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 5,
+   "resultados": 12,
    "errores": [],
    "descartados": {
     "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Enfermera/o de Continuidad UTI - RedSalud Santiago",
-     "ubicacion": "Estación Central, RM, Chile",
+     "titulo": "Ingeniero/a de Inteligencia Pacientes - Gerencia Experiencia y Servicios Digitales al Paciente RedSalud CChC",
+     "ubicacion": "Providencia, RM, Chile",
      "motivo": "perfil"
     }
    ]
