@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-16T20:04:21+00:00",
+ "ultimo_chequeo": "2026-11-16T20:58:04+00:00",
  "nuevos": 0,
  "total": 58,
  "palabras_clave": [
@@ -25,18 +25,23 @@
   },
   "computrabajo": {
    "nombre": "Computrabajo",
-   "resultados": 220,
+   "resultados": 182,
    "errores": [],
    "descartados": {
-    "exclusion": 21,
     "zona": 22,
-    "perfil": 26
+    "exclusion": 13,
+    "perfil": 24
    },
    "muestra": [
     {
-     "titulo": "Tecnólogo Médico Laboratorio Clínico y Banco de Sangre o Bioquímico",
-     "ubicacion": "Concepción, Bíobío",
-     "motivo": "exclusion"
+     "titulo": "Tecnologo/a medico/a con experiencia en resonancia",
+     "ubicacion": "Iquique, Tarapacá",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnologo/a medico/a con experiencia en Resonancia",
+     "ubicacion": "Quillota, Valparaíso",
+     "motivo": "zona"
     },
     {
      "titulo": "Tecnólogo Medico Mejillones",
@@ -44,105 +49,66 @@
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogos(as) Médicos",
-     "ubicacion": "Mejillones, Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a en Imagenología – Calama",
-     "ubicacion": "Calama, Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnolog@ Medico para Director/a Técnico de laboratorio clínico",
-     "ubicacion": "Arica, Arica y Parinacota",
+     "titulo": "TENS Imagenología",
+     "ubicacion": "La Serena, Coquimbo",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnologo médico en Imagenología para Taltal",
-     "ubicacion": "Taltal, Antofagasta",
+     "titulo": "TENS Imagenología",
+     "ubicacion": "La Serena, Coquimbo",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico Imagenología",
+     "ubicacion": "Osorno, Los Lagos",
      "motivo": "zona"
     },
     {
-     "titulo": "Técnico en Enfermería Nivel Superior Unidad Toma de Muestras Viña del Mar",
-     "ubicacion": "Viña del Mar, Valparaíso",
+     "titulo": "Tecnólogo Médico Imagenología",
+     "ubicacion": "Osorno, Los Lagos",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Técnico en Imagenología",
+     "ubicacion": "La Serena, Coquimbo",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnologo médico en Laboratorio para Tocopilla",
-     "ubicacion": "Tocopilla, Antofagasta",
+     "titulo": "Tecnólogo Médico Imagenología",
+     "ubicacion": "Osorno, Los Lagos",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Imagenología",
+     "ubicacion": "Osorno, Los Lagos",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "TENS Imagenología",
+     "ubicacion": "La Serena, Coquimbo",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Profesional de Apoyo Técnico",
-     "ubicacion": "Santiago - Estación Central, R.Metropolitana",
+     "titulo": "Médico(a) Neurologia",
+     "ubicacion": "Santiago - Providencia, R.Metropolitana",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Coordinador/a de Servicio Técnico, Santiago Centro.",
-     "ubicacion": "Santiago Centro, R.Metropolitana",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnólogo Médico(a) Turno 7x7 Calama",
-     "ubicacion": "Calama, Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico – Diurno, Oftalmología y Laboratorio – Tomé, Región del Biobío",
-     "ubicacion": "Tomé, Bíobío",
-     "motivo": "exclusion"
     }
    ]
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 234,
+   "resultados": 108,
    "errores": [],
    "descartados": {
-    "exclusion": 14,
-    "zona": 13,
-    "perfil": 23
+    "exclusion": 17,
+    "antiguedad": 20,
+    "zona": 9,
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Administrativo Mercado publico",
-     "ubicacion": "Concepción",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TECNÓLOGO MEDICO EN RADIOLOGÍA-ACREDITADO OIT",
-     "ubicacion": "Quillota",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio Clínico y Banco…",
-     "ubicacion": "Concepción",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TENS - ANESTESIA - R. Metropilitana",
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
      "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TENS",
-     "ubicacion": "La serena",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "KAM Junior",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio Osorno",
-     "ubicacion": "Osorno",
      "motivo": "exclusion"
     },
     {
@@ -151,19 +117,54 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Fonoaudiólogo/a y/o Tecnólogo Médico Otorrinolaringología -…",
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "ubicacion": "Concepción",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNÓLOGO MEDICO EN RADIOLOGÍA-ACREDITADO OIT",
+     "ubicacion": "Quillota",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnologo Medico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio Osorno",
+     "ubicacion": "Osorno",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Calama",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Colina",
-     "motivo": "exclusion"
+     "titulo": "Tecnólogo/a Médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
     }
    ]
   },
@@ -172,11 +173,41 @@
    "resultados": 125,
    "errores": [],
    "descartados": {
-    "perfil": 30,
+    "perfil": 29,
     "exclusion": 10,
-    "zona": 7
+    "zona": 8
    },
    "muestra": [
+    {
+     "titulo": "Enfermero/a Pool Volante (Vacaciones) - RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tens Pool Volante (Vacaciones) - Clínica RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tens POOL (Vacaciones) - Clínica RedSalud Vitacura",
+     "ubicacion": "Vitacura, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Enfermero/a POOL (Vacaciones) - RedSalud Vitacura",
+     "ubicacion": "Vitacura, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tens Pool Volante (Vacaciones) - RedSalud Providencia",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Coordinador de Infraestructura, Mantención y Cumplimiento Normativo",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Docentes Dirección Área Salud",
      "ubicacion": "Santiago, Metropolitana de Santiago",
@@ -206,42 +237,12 @@
      "titulo": "Analista de soporte y mejora continua - Sector Salud",
      "ubicacion": "La Florida, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Analista SAP (Junior)",
-     "ubicacion": "Santiago, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Coordinador de Presupuestos",
-     "ubicacion": "La Serena, Coquimbo",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Técnico en imagenología",
-     "ubicacion": "La Florida, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Enfermero(a) Clínico(a) - Urgencias",
-     "ubicacion": "La Florida, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tens Centro Médico - Cardiología",
-     "ubicacion": "La Florida, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Técnico en enfermería - Urgencias",
-     "ubicacion": "La Florida, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 12,
+   "resultados": 11,
    "errores": [],
    "descartados": {
     "perfil": 1
@@ -375,5 +376,5 @@
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-16T16:50:32+00:00"
+ "rss_chiletrabajos": "2026-11-16T20:58:04+00:00"
 }
