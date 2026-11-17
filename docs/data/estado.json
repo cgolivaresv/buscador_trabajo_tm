@@ -1,8 +1,8 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-17T20:14:40+00:00",
- "nuevos": 0,
- "total": 62,
+ "ultimo_chequeo": "2026-11-17T21:04:28+00:00",
+ "nuevos": 8,
+ "total": 70,
  "palabras_clave": [
   "tecnólogo médico",
   "tecnólogo médico resonancia",
@@ -102,7 +102,7 @@
    "descartados": {
     "exclusion": 14,
     "zona": 11,
-    "perfil": 25
+    "perfil": 18
    },
    "muestra": [
     {
@@ -116,37 +116,17 @@
      "motivo": "zona"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
      "titulo": "TENS",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
+     "titulo": "Tecnólogo Médico Part Time 20 hrs…",
      "ubicacion": "Coquimbo",
      "motivo": "zona"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
+     "titulo": "Tecnólogo Médico Part Time 20 hrs…",
      "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
@@ -164,6 +144,26 @@
      "titulo": "Tecnólogo Médico con mención en Oftalmología…",
      "ubicacion": "Colina",
      "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Linares",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
+     "ubicacion": "Punta arenas",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico Part Time 20 hrs…",
+     "ubicacion": "Calama",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "TENS - ANESTESIA - R. Metropilitana",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
     }
    ]
   },
@@ -172,16 +172,11 @@
    "resultados": 125,
    "errores": [],
    "descartados": {
-    "zona": 17,
-    "exclusion": 14,
-    "perfil": 18
+    "exclusion": 15,
+    "perfil": 19,
+    "zona": 15
    },
    "muestra": [
-    {
-     "titulo": "Encargado(a) de Recursos Humanos - Rio Negro - Región de Los Lagos",
-     "ubicacion": "Río Negro, Los Lagos",
-     "motivo": "zona"
-    },
     {
      "titulo": "Ayudante Técnico de laboratorio (Reemplazo maternal)",
      "ubicacion": "Independencia, Metropolitana de Santiago",
@@ -236,12 +231,17 @@
      "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
      "ubicacion": "Linares, Maule",
      "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico Part Time 20 hrs (mención oftalmología) - San Miguel",
+     "ubicacion": "San Miguel, Metropolitana de Santiago",
+     "motivo": "exclusion"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 8,
+   "resultados": 11,
    "errores": [],
    "descartados": {
     "exclusion": 1
@@ -329,9 +329,7 @@
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
    "resultados": 20,
-   "errores": [
-    "«coordinador imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)"
-   ],
+   "errores": [],
    "descartados": {
     "exclusion": 5,
     "zona": 1
@@ -372,7 +370,7 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 0,
+  "leidas": 8,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
