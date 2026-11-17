@@ -1,7 +1,7 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-17T21:04:28+00:00",
- "nuevos": 8,
+ "ultimo_chequeo": "2026-11-17T22:00:48+00:00",
+ "nuevos": 0,
  "total": 70,
  "palabras_clave": [
   "tecnólogo médico",
@@ -241,7 +241,7 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 11,
+   "resultados": 10,
    "errores": [],
    "descartados": {
     "exclusion": 1
@@ -370,7 +370,7 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 8,
+  "leidas": 0,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
