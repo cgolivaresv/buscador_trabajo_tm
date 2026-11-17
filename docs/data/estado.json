@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-17T17:14:34+00:00",
+ "ultimo_chequeo": "2026-11-17T18:11:01+00:00",
  "nuevos": 0,
  "total": 62,
  "palabras_clave": [
@@ -100,8 +100,8 @@
    "resultados": 240,
    "errores": [],
    "descartados": {
-    "exclusion": 15,
-    "zona": 10,
+    "exclusion": 14,
+    "zona": 11,
     "perfil": 25
    },
    "muestra": [
@@ -122,6 +122,21 @@
     },
     {
      "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "TENS",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención…",
      "ubicacion": "Coquimbo",
      "motivo": "zona"
     },
@@ -132,23 +147,8 @@
     },
     {
      "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
      "ubicacion": "Valparaíso",
      "motivo": "zona"
-    },
-    {
-     "titulo": "TENS",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
     },
     {
      "titulo": "Docente carrera Tecnología médica - Chillán",
@@ -162,7 +162,7 @@
     },
     {
      "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
+     "ubicacion": "Colina",
      "motivo": "exclusion"
     }
    ]
@@ -248,8 +248,8 @@
    },
    "muestra": [
     {
-     "titulo": "Asesor Sucursales Part Time La Florida",
-     "ubicacion": "Santiago de Chile, RM, Chile",
+     "titulo": "Ingeniero/a de Inteligencia Pacientes - Gerencia Experiencia y Servicios Digitales al Paciente RedSalud CChC",
+     "ubicacion": "Providencia, RM, Chile",
      "motivo": "perfil"
     }
    ]
