@@ -1,7 +1,7 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-17T16:05:01+00:00",
- "nuevos": 2,
+ "ultimo_chequeo": "2026-11-17T17:14:34+00:00",
+ "nuevos": 0,
  "total": 62,
  "palabras_clave": [
   "tecnólogo médico",
@@ -34,7 +34,7 @@
    },
    "muestra": [
     {
-     "titulo": "Ingeniero soporte técnico",
+     "titulo": "Ingeniero/ técnico en Equipos médicos",
      "ubicacion": "Santiago - La Reina, R.Metropolitana",
      "motivo": "perfil"
     },
@@ -97,12 +97,12 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 238,
+   "resultados": 240,
    "errores": [],
    "descartados": {
     "exclusion": 15,
-    "zona": 11,
-    "perfil": 24
+    "zona": 10,
+    "perfil": 25
    },
    "muestra": [
     {
@@ -151,6 +151,11 @@
      "motivo": "exclusion"
     },
     {
+     "titulo": "Docente carrera Tecnología médica - Chillán",
+     "ubicacion": "Chillán",
+     "motivo": "perfil"
+    },
+    {
      "titulo": "Tecnólogo Médico Laboratorio Clínico y Banco…",
      "ubicacion": "Concepción",
      "motivo": "exclusion"
@@ -158,11 +163,6 @@
     {
      "titulo": "Tecnólogo Médico con mención en Oftalmología…",
      "ubicacion": "Linares",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Colina",
      "motivo": "exclusion"
     }
    ]
@@ -172,11 +172,21 @@
    "resultados": 125,
    "errores": [],
    "descartados": {
-    "exclusion": 17,
-    "zona": 19,
-    "perfil": 13
+    "perfil": 14,
+    "exclusion": 16,
+    "zona": 19
    },
    "muestra": [
+    {
+     "titulo": "Práctica Profesional Compensaciones",
+     "ubicacion": "Las Condes, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Intern área Institucional (Administrativo/a Auditorías) - Alumnos/as Regulares en Últimos Años de Carrera",
+     "ubicacion": "Las Condes, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Tens Urgencia (Part Time)",
      "ubicacion": "Recoleta, Metropolitana de Santiago",
@@ -226,30 +236,20 @@
      "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Coquimbo",
      "ubicacion": "Coquimbo, Coquimbo",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - San Miguel",
-     "ubicacion": "San Miguel, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Las Condes",
-     "ubicacion": "Las Condes, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 1,
+   "resultados": 9,
    "errores": [],
    "descartados": {
     "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Enfermera/o de Continuidad UTI - RedSalud Santiago",
-     "ubicacion": "Estación Central, RM, Chile",
+     "titulo": "Asesor Sucursales Part Time La Florida",
+     "ubicacion": "Santiago de Chile, RM, Chile",
      "motivo": "perfil"
     }
    ]
@@ -328,16 +328,33 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 8,
-   "errores": [
-    "«tecnólogo médico»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnologo medico»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)"
-   ],
+   "resultados": 20,
+   "errores": [],
    "descartados": {
-    "exclusion": 2,
+    "exclusion": 5,
     "zona": 1
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología - Colina",
+     "ubicacion": "Colina, Metropolitana",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
+     "ubicacion": "Linares, Maule",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO con mención en Oftalmología (Reemplazo Licencia Médica) - Punta Arenas",
+     "ubicacion": "Punta Arenas, Magallanes y Antártica Chilena",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Medico imagenología",
+     "ubicacion": "Osorno, Los Lagos",
+     "motivo": "zona"
+    },
     {
      "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RADIOLOGÍA (REEMPLAZO)",
      "ubicacion": "Providencia, Metropolitana",
@@ -347,18 +364,13 @@
      "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RESONANCIA MAGNETICA (REEMPLAZO)",
      "ubicacion": "Providencia, Metropolitana",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Medico imagenología",
-     "ubicacion": "Osorno, Los Lagos",
-     "motivo": "zona"
     }
    ]
   }
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 2,
+  "leidas": 0,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
