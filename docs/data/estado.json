@@ -1,7 +1,7 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-17T13:20:35+00:00",
- "nuevos": 1,
+ "ultimo_chequeo": "2026-11-17T15:01:47+00:00",
+ "nuevos": 0,
  "total": 60,
  "palabras_clave": [
   "tecnólogo médico",
@@ -28,11 +28,16 @@
    "resultados": 224,
    "errores": [],
    "descartados": {
+    "perfil": 29,
     "exclusion": 21,
-    "zona": 21,
-    "perfil": 28
+    "zona": 20
    },
    "muestra": [
+    {
+     "titulo": "Ingeniero soporte técnico",
+     "ubicacion": "Santiago - La Reina, R.Metropolitana",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Tecnólogo Médico Laboratorio Clínico y Banco de Sangre o Bioquímico",
      "ubicacion": "Concepción, Bíobío",
@@ -87,83 +92,79 @@
      "titulo": "Tecnólogo Médico(a) Turno 7x7 Calama",
      "ubicacion": "Calama, Antofagasta",
      "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico – Diurno, Oftalmología y Laboratorio – Tomé, Región del Biobío",
-     "ubicacion": "Tomé, Bíobío",
-     "motivo": "exclusion"
     }
    ]
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 234,
+   "resultados": 108,
    "errores": [],
    "descartados": {
-    "exclusion": 16,
-    "zona": 11,
-    "perfil": 22
+    "exclusion": 17,
+    "antiguedad": 20,
+    "zona": 9,
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Administrativo Mercado publico",
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Medico mención Oftalmología - Tomé",
      "ubicacion": "Concepción",
      "motivo": "exclusion"
     },
     {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
      "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Coquimbo",
-     "motivo": "zona"
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio Clínico y Banco…",
+     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
      "ubicacion": "Concepción",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNÓLOGO MEDICO EN RADIOLOGÍA-ACREDITADO OIT",
+     "ubicacion": "Quillota",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnologo Medico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio Osorno",
+     "ubicacion": "Osorno",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
+     "titulo": "Tecnólogo médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Colina",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
-     "ubicacion": "Punta arenas",
-     "motivo": "exclusion"
+     "titulo": "Tecnólogo/a Médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
     }
    ]
   },
@@ -172,20 +173,25 @@
    "resultados": 125,
    "errores": [],
    "descartados": {
-    "perfil": 18,
-    "exclusion": 19,
-    "zona": 12
+    "zona": 18,
+    "perfil": 13,
+    "exclusion": 18
    },
    "muestra": [
+    {
+     "titulo": "Gestor de Recursos Humanos Faena Minera",
+     "ubicacion": "Calama, Antofagasta",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Ingeniero de Gestión Senior",
+     "ubicacion": "Huechuraba, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Pasante Prevención de Riesgos - Santiago (División Aguas Light) - Alumnos/as Regulares en último año de carrera",
      "ubicacion": "Las Condes, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
-     "ubicacion": "Linares, Maule",
-     "motivo": "exclusion"
     },
     {
      "titulo": "TMO con mención en Oftalmología (Reemplazo Licencia Médica) - Punta Arenas",
@@ -193,13 +199,13 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Viña del Mar",
-     "ubicacion": "Viña del Mar, Valparaíso",
+     "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
+     "ubicacion": "Linares, Maule",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Temuco",
-     "ubicacion": "Temuco, La Araucanía",
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Viña del Mar",
+     "ubicacion": "Viña del Mar, Valparaíso",
      "motivo": "exclusion"
     },
     {
@@ -231,25 +237,20 @@
      "titulo": "TMO Part Time 20 hrs (mención oftalmología) - La Florida",
      "ubicacion": "La Florida, Metropolitana de Santiago",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Ñuñoa",
-     "ubicacion": "Ñuñoa, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 15,
+   "resultados": 14,
    "errores": [],
    "descartados": {
     "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Práctica Psicología Desarrollo Organizacional",
-     "ubicacion": "Las Condes, RM, Chile",
+     "titulo": "Ingeniero/a de Inteligencia Pacientes - Gerencia Experiencia y Servicios Digitales al Paciente RedSalud CChC",
+     "ubicacion": "Providencia, RM, Chile",
      "motivo": "perfil"
     }
    ]
@@ -328,8 +329,10 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 20,
-   "errores": [],
+   "resultados": 19,
+   "errores": [
+    "«tecnólogo médico imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)"
+   ],
    "descartados": {
     "exclusion": 5,
     "zona": 1
@@ -370,10 +373,10 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 1,
+  "leidas": 0,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-17T11:11:46+00:00"
+ "rss_chiletrabajos": "2026-11-17T15:01:47+00:00"
 }
