@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-17T22:00:48+00:00",
+ "ultimo_chequeo": "2026-11-17T23:01:56+00:00",
  "nuevos": 0,
  "total": 70,
  "palabras_clave": [
@@ -101,8 +101,8 @@
    "errores": [],
    "descartados": {
     "exclusion": 14,
-    "zona": 11,
-    "perfil": 18
+    "zona": 12,
+    "perfil": 17
    },
    "muestra": [
     {
@@ -131,6 +131,11 @@
      "motivo": "zona"
     },
     {
+     "titulo": "Tecnico en Imagenologia - Reemplazo",
+     "ubicacion": "Valparaíso",
+     "motivo": "exclusion"
+    },
+    {
      "titulo": "Docente carrera Tecnología médica - Chillán",
      "ubicacion": "Chillán",
      "motivo": "perfil"
@@ -151,18 +156,13 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
-     "ubicacion": "Punta arenas",
-     "motivo": "exclusion"
-    },
-    {
      "titulo": "Tecnólogo Médico Part Time 20 hrs…",
      "ubicacion": "Calama",
      "motivo": "zona"
     },
     {
-     "titulo": "TENS - ANESTESIA - R. Metropilitana",
-     "ubicacion": "Santiago",
+     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
+     "ubicacion": "Punta arenas",
      "motivo": "exclusion"
     }
    ]
@@ -241,7 +241,7 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 10,
+   "resultados": 13,
    "errores": [],
    "descartados": {
     "exclusion": 1
