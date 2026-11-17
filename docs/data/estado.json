@@ -1,8 +1,8 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-17T11:58:13+00:00",
- "nuevos": 0,
- "total": 59,
+ "ultimo_chequeo": "2026-11-17T13:20:35+00:00",
+ "nuevos": 1,
+ "total": 60,
  "palabras_clave": [
   "tecnólogo médico",
   "tecnólogo médico resonancia",
@@ -25,7 +25,7 @@
   },
   "computrabajo": {
    "nombre": "Computrabajo",
-   "resultados": 222,
+   "resultados": 224,
    "errores": [],
    "descartados": {
     "exclusion": 21,
@@ -100,9 +100,9 @@
    "resultados": 234,
    "errores": [],
    "descartados": {
-    "exclusion": 14,
+    "exclusion": 16,
     "zona": 11,
-    "perfil": 25
+    "perfil": 22
    },
    "muestra": [
     {
@@ -111,13 +111,38 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "TECNÓLOGO MEDICO EN RADIOLOGÍA-ACREDITADO OIT",
-     "ubicacion": "Quillota",
+     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
+     "ubicacion": "Antofagasta",
      "motivo": "zona"
     },
     {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Coquimbo",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
@@ -126,43 +151,18 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "TENS - ANESTESIA - R. Metropilitana",
-     "ubicacion": "Santiago",
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Linares",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "TENS",
-     "ubicacion": "La serena",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "KAM Junior",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio Osorno",
-     "ubicacion": "Osorno",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Medico mención Oftalmología - Tomé",
-     "ubicacion": "Concepción",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Fonoaudiólogo/a y/o Tecnólogo Médico Otorrinolaringología -…",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención…",
-     "ubicacion": "Calama",
-     "motivo": "zona"
     },
     {
      "titulo": "Tecnólogo Médico con mención en Oftalmología…",
      "ubicacion": "Colina",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
+     "ubicacion": "Punta arenas",
      "motivo": "exclusion"
     }
    ]
@@ -172,84 +172,84 @@
    "resultados": 125,
    "errores": [],
    "descartados": {
-    "zona": 10,
-    "perfil": 26,
-    "exclusion": 11
+    "perfil": 18,
+    "exclusion": 19,
+    "zona": 12
    },
    "muestra": [
     {
-     "titulo": "Jefe/a de Cobranza y Facturación",
-     "ubicacion": "Antofagasta, Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Analista de Talento y Cultura - RedSalud Providencia",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "titulo": "Pasante Prevención de Riesgos - Santiago (División Aguas Light) - Alumnos/as Regulares en último año de carrera",
+     "ubicacion": "Las Condes, Metropolitana de Santiago",
      "motivo": "perfil"
     },
     {
-     "titulo": "Práctica Ciclo de Caja - Clinica RedSalud Providencia",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tens Centro Médico (Vacaciones)- RedSalud Santiago",
-     "ubicacion": "Santiago, Metropolitana de Santiago",
+     "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
+     "ubicacion": "Linares, Maule",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Enfermero/a Pool Volante (Vacaciones) - RedSalud Santiago",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tens Pool Volante (Vacaciones) - Clínica RedSalud Santiago",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "titulo": "TMO con mención en Oftalmología (Reemplazo Licencia Médica) - Punta Arenas",
+     "ubicacion": "Punta Arenas, Magallanes y Antártica Chilena",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Enfermero/a POOL (Vacaciones) - RedSalud Vitacura",
-     "ubicacion": "Vitacura, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tens POOL (Vacaciones) - Clínica RedSalud Vitacura",
-     "ubicacion": "Vitacura, Metropolitana de Santiago",
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Viña del Mar",
+     "ubicacion": "Viña del Mar, Valparaíso",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tens Pool Volante (Vacaciones) - RedSalud Providencia",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Temuco",
+     "ubicacion": "Temuco, La Araucanía",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Coordinador de Infraestructura, Mantención y Cumplimiento Normativo",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Calama",
+     "ubicacion": "Calama, Antofagasta",
+     "motivo": "exclusion"
     },
     {
-     "titulo": "Docentes Dirección Área Salud",
-     "ubicacion": "Santiago, Metropolitana de Santiago",
-     "motivo": "perfil"
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Coquimbo",
+     "ubicacion": "Coquimbo, Coquimbo",
+     "motivo": "exclusion"
     },
     {
-     "titulo": "Ejecutivo de Venta Automotriz Nuevos - La Florida",
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - San Miguel",
+     "ubicacion": "San Miguel, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Las Condes",
+     "ubicacion": "Las Condes, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Lo Barnechea",
+     "ubicacion": "Lo Barnechea, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - La Florida",
      "ubicacion": "La Florida, Metropolitana de Santiago",
-     "motivo": "perfil"
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Ñuñoa",
+     "ubicacion": "Ñuñoa, Metropolitana de Santiago",
+     "motivo": "exclusion"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 14,
+   "resultados": 15,
    "errores": [],
    "descartados": {
     "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Asesor Sucursales Part Time La Florida",
-     "ubicacion": "Santiago de Chile, RM, Chile",
+     "titulo": "Práctica Psicología Desarrollo Organizacional",
+     "ubicacion": "Las Condes, RM, Chile",
      "motivo": "perfil"
     }
    ]
@@ -328,10 +328,8 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 19,
-   "errores": [
-    "«tecnólogo médico imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)"
-   ],
+   "resultados": 20,
+   "errores": [],
    "descartados": {
     "exclusion": 5,
     "zona": 1
@@ -372,7 +370,7 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 0,
+  "leidas": 1,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
