@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-17T19:12:03+00:00",
+ "ultimo_chequeo": "2026-11-17T20:14:40+00:00",
  "nuevos": 0,
  "total": 62,
  "palabras_clave": [
@@ -97,74 +97,73 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 108,
+   "resultados": 240,
    "errores": [],
    "descartados": {
-    "exclusion": 17,
-    "antiguedad": 20,
-    "zona": 9,
-    "perfil": 1
+    "exclusion": 14,
+    "zona": 11,
+    "perfil": 25
    },
    "muestra": [
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Medico mención Oftalmología - Tomé",
+     "titulo": "Administrativo Mercado publico",
      "ubicacion": "Concepción",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
+     "ubicacion": "Antofagasta",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención…",
      "ubicacion": "Santiago",
-     "motivo": "antiguedad"
+     "motivo": "perfil"
     },
     {
-     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
-     "ubicacion": "Curicó",
-     "motivo": "antiguedad"
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
     },
     {
-     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "titulo": "TENS",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Coquimbo",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "TMO Part Time 20 hrs (mención…",
+     "ubicacion": "Valparaíso",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Docente carrera Tecnología médica - Chillán",
+     "ubicacion": "Chillán",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio Clínico y Banco…",
      "ubicacion": "Concepción",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "TECNÓLOGO MEDICO EN RADIOLOGÍA-ACREDITADO OIT",
-     "ubicacion": "Quillota",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnologo Medico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio Osorno",
-     "ubicacion": "Osorno",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo médico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
-     "ubicacion": "La Serena",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
-     "ubicacion": "Santiago",
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Colina",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
     }
    ]
   },
@@ -173,11 +172,26 @@
    "resultados": 125,
    "errores": [],
    "descartados": {
-    "perfil": 16,
-    "exclusion": 16,
-    "zona": 17
+    "zona": 17,
+    "exclusion": 14,
+    "perfil": 18
    },
    "muestra": [
+    {
+     "titulo": "Encargado(a) de Recursos Humanos - Rio Negro - Región de Los Lagos",
+     "ubicacion": "Río Negro, Los Lagos",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Ayudante Técnico de laboratorio (Reemplazo maternal)",
+     "ubicacion": "Independencia, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Enfermera(o) - Esterilización",
+     "ubicacion": "Recoleta, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Práctica Profesional Compensaciones",
      "ubicacion": "Las Condes, Metropolitana de Santiago",
@@ -222,27 +236,12 @@
      "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
      "ubicacion": "Linares, Maule",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Calama",
-     "ubicacion": "Calama, Antofagasta",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - Coquimbo",
-     "ubicacion": "Coquimbo, Coquimbo",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO Part Time 20 hrs (mención oftalmología) - San Miguel",
-     "ubicacion": "San Miguel, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 11,
+   "resultados": 8,
    "errores": [],
    "descartados": {
     "exclusion": 1
@@ -329,9 +328,9 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 19,
+   "resultados": 20,
    "errores": [
-    "«tecnólogo médico imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)"
+    "«coordinador imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)"
    ],
    "descartados": {
     "exclusion": 5,
