@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-17T01:22:44+00:00",
+ "ultimo_chequeo": "2026-11-17T11:11:46+00:00",
  "nuevos": 0,
  "total": 59,
  "palabras_clave": [
@@ -29,8 +29,8 @@
    "errores": [],
    "descartados": {
     "exclusion": 21,
-    "zona": 22,
-    "perfil": 27
+    "zona": 21,
+    "perfil": 28
    },
    "muestra": [
     {
@@ -173,9 +173,9 @@
    "resultados": 125,
    "errores": [],
    "descartados": {
-    "perfil": 28,
+    "perfil": 27,
     "exclusion": 11,
-    "zona": 8
+    "zona": 9
    },
    "muestra": [
     {
@@ -194,13 +194,13 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tens Pool Volante (Vacaciones) - Clínica RedSalud Santiago",
+     "titulo": "Enfermero/a Pool Volante (Vacaciones) - RedSalud Santiago",
      "ubicacion": "Estación Central, Metropolitana de Santiago",
-     "motivo": "exclusion"
+     "motivo": "perfil"
     },
     {
-     "titulo": "Tens POOL (Vacaciones) - Clínica RedSalud Vitacura",
-     "ubicacion": "Vitacura, Metropolitana de Santiago",
+     "titulo": "Tens Pool Volante (Vacaciones) - Clínica RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
      "motivo": "exclusion"
     },
     {
@@ -209,9 +209,9 @@
      "motivo": "perfil"
     },
     {
-     "titulo": "Enfermero/a Pool Volante (Vacaciones) - RedSalud Santiago",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
-     "motivo": "perfil"
+     "titulo": "Tens POOL (Vacaciones) - Clínica RedSalud Vitacura",
+     "ubicacion": "Vitacura, Metropolitana de Santiago",
+     "motivo": "exclusion"
     },
     {
      "titulo": "Tens Pool Volante (Vacaciones) - RedSalud Providencia",
@@ -242,15 +242,15 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 7,
+   "resultados": 11,
    "errores": [],
    "descartados": {
     "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Asesor Sucursales Part Time La Florida",
-     "ubicacion": "Santiago de Chile, RM, Chile",
+     "titulo": "Ingeniero/a de Inteligencia Pacientes - Gerencia Experiencia y Servicios Digitales al Paciente RedSalud CChC",
+     "ubicacion": "Providencia, RM, Chile",
      "motivo": "perfil"
     }
    ]
@@ -376,5 +376,5 @@
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-17T01:22:44+00:00"
+ "rss_chiletrabajos": "2026-11-17T11:11:46+00:00"
 }
