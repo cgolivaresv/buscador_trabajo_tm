@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-18T13:25:33+00:00",
+ "ultimo_chequeo": "2026-11-18T15:07:13+00:00",
  "nuevos": 0,
  "total": 70,
  "palabras_clave": [
@@ -29,8 +29,8 @@
    "errores": [],
    "descartados": {
     "exclusion": 22,
-    "perfil": 27,
-    "zona": 22
+    "perfil": 28,
+    "zona": 21
    },
    "muestra": [
     {
@@ -97,73 +97,74 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 240,
+   "resultados": 108,
    "errores": [],
    "descartados": {
-    "exclusion": 14,
-    "zona": 13,
-    "perfil": 17
+    "exclusion": 17,
+    "antiguedad": 20,
+    "zona": 9,
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Administrativo Mercado publico",
-     "ubicacion": "Concepción",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Relatores/as para capacitaciones: área salud, liderazgo…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TENS",
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico Part Time 20 hrs…",
-     "ubicacion": "Coquimbo",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico Part Time 20 hrs…",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnico en Imagenologia - Reemplazo",
-     "ubicacion": "Valparaíso",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Docente carrera Tecnología médica - Chillán",
-     "ubicacion": "Chillán",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio Clínico y Banco…",
+     "titulo": "Tecnólogo Medico mención Oftalmología - Tomé",
      "ubicacion": "Concepción",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Colina",
-     "motivo": "exclusion"
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
-     "motivo": "exclusion"
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo Médico Part Time 20 hrs…",
-     "ubicacion": "Calama",
+     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "ubicacion": "Concepción",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNÓLOGO MEDICO EN RADIOLOGÍA-ACREDITADO OIT",
+     "ubicacion": "Quillota",
      "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnologo Medico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio Osorno",
+     "ubicacion": "Osorno",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
     }
    ]
   },
@@ -172,11 +173,21 @@
    "resultados": 125,
    "errores": [],
    "descartados": {
-    "exclusion": 15,
-    "perfil": 19,
+    "perfil": 21,
+    "exclusion": 13,
     "zona": 15
    },
    "muestra": [
+    {
+     "titulo": "Analista Comercial - RedSalud Providencia",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Analista Negocio Ambulatorio - RedSalud CChC",
+     "ubicacion": "Santiago, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Ayudante Técnico de laboratorio (Reemplazo maternal)",
      "ubicacion": "Independencia, Metropolitana de Santiago",
@@ -226,31 +237,21 @@
      "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
      "ubicacion": "Linares, Maule",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo Licencia Médica) - Punta Arenas",
-     "ubicacion": "Punta Arenas, Magallanes y Antártica Chilena",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico Part Time 20 hrs (mención oftalmología) - San Miguel",
-     "ubicacion": "San Miguel, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 37,
+   "resultados": 36,
    "errores": [],
    "descartados": {
-    "perfil": 1
+    "zona": 1
    },
    "muestra": [
     {
-     "titulo": "Marketing & Communications Coordinator",
-     "ubicacion": "Las Condes, RM, Chile",
-     "motivo": "perfil"
+     "titulo": "Asesor Sucursales Antofagasta",
+     "ubicacion": "Antofagasta, AN, Chile",
+     "motivo": "zona"
     }
    ]
   },
@@ -330,23 +331,23 @@
    "nombre": "Bolsa Nacional de Empleo",
    "resultados": 0,
    "errores": [
-    "«tecnólogo médico»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«tecnologo medico»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnólogo médico»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«tecnologo medico»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«tecnólogo médico resonancia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«tecnologo medico resonancia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«resonancia magnética»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«resonancia magnetica»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«tecnólogo médico imagenología»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«tecnologo medico imagenologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«resonancia magnetica»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«tecnólogo médico imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«tecnologo medico imagenologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«tecnólogo médico scanner»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«tecnologo medico scanner»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«tecnólogo médico radiología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnologo medico radiologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«especialista de aplicaciones»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnologo medico radiologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«especialista de aplicaciones»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«coordinador imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«coordinador imagenologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«jefe imagenología»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«jefe imagenologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50"
+    "«jefe imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«jefe imagenologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)"
    ],
    "descartados": {},
    "muestra": []
@@ -359,5 +360,5 @@
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-18T11:13:57+00:00"
+ "rss_chiletrabajos": "2026-11-18T15:07:13+00:00"
 }
