@@ -1,8 +1,8 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-18T20:08:34+00:00",
- "nuevos": 0,
- "total": 70,
+ "ultimo_chequeo": "2026-11-18T21:03:22+00:00",
+ "nuevos": 1,
+ "total": 71,
  "palabras_clave": [
   "tecnólogo médico",
   "tecnólogo médico resonancia",
@@ -97,11 +97,11 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 240,
+   "resultados": 242,
    "errores": [],
    "descartados": {
     "exclusion": 14,
-    "zona": 14,
+    "zona": 15,
     "perfil": 16
    },
    "muestra": [
@@ -113,6 +113,11 @@
     {
      "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
      "ubicacion": "Antofagasta",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico/a Imágenes - La serena",
+     "ubicacion": "La serena",
      "motivo": "zona"
     },
     {
@@ -159,24 +164,34 @@
      "titulo": "Tecnólogo Médico con mención en Oftalmología…",
      "ubicacion": "Colina",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Linares",
-     "motivo": "exclusion"
     }
    ]
   },
   "trabajando": {
    "nombre": "Trabajando.cl",
-   "resultados": 127,
+   "resultados": 131,
    "errores": [],
    "descartados": {
-    "perfil": 28,
-    "exclusion": 10,
-    "zona": 10
+    "zona": 10,
+    "perfil": 29,
+    "exclusion": 9
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogo/a Médico/a Imágenes - La Serena",
+     "ubicacion": "La Serena, Coquimbo",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Enfermera/o Clínico UPC Pediátrica",
+     "ubicacion": "La Florida, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "TENS ECOGRAFIA OBSTÉTRICA - LICENCIA MATERNAL",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Enfermera(o) - UTM LA REINA",
      "ubicacion": "Providencia, Metropolitana de Santiago",
@@ -221,34 +236,19 @@
      "titulo": "Analista Negocio Ambulatorio - RedSalud CChC",
      "ubicacion": "Santiago, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Ayudante Técnico de laboratorio (Reemplazo maternal)",
-     "ubicacion": "Independencia, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Enfermera(o) - Esterilización",
-     "ubicacion": "Recoleta, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Práctica Profesional Compensaciones",
-     "ubicacion": "Las Condes, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 52,
+   "resultados": 51,
    "errores": [],
    "descartados": {
     "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Especialista Telco",
+     "titulo": "Marketing & Communications Coordinator",
      "ubicacion": "Las Condes, RM, Chile",
      "motivo": "perfil"
     }
@@ -256,14 +256,19 @@
   },
   "laborum": {
    "nombre": "Laborum",
-   "resultados": 62,
+   "resultados": 64,
    "errores": [],
    "descartados": {
-    "zona": 4,
+    "zona": 5,
     "exclusion": 4,
     "antiguedad": 5
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogo/a Médico/a Imágenes - La serena",
+     "ubicacion": "La Serena, Región IV",
+     "motivo": "zona"
+    },
     {
      "titulo": "Tecnólogo/a Médico/a de Resonancia Magnética - Iquique",
      "ubicacion": "Iquique, Región I",
@@ -318,43 +323,55 @@
      "titulo": "Tecnólogo(a) Médico(a) en Oftalmología Part Time 18 hrs. OPV Mall Alto Las Condes",
      "ubicacion": "Las Condes, Región Metropolitana",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico con Mención en Morfofisiopatología y Citodiagnóstico – Antofagasta",
-     "ubicacion": "Provincia de Antofagasta, Región II",
-     "motivo": "zona"
     }
    ]
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 0,
+   "resultados": 13,
    "errores": [
-    "«tecnólogo médico»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«tecnologo medico»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«tecnólogo médico resonancia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
     "«tecnologo medico resonancia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
     "«resonancia magnética»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«resonancia magnetica»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«resonancia magnetica»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«tecnólogo médico imagenología»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«tecnologo medico imagenologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
     "«tecnólogo médico scanner»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
     "«tecnologo medico scanner»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
     "«tecnólogo médico radiología»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
     "«tecnologo medico radiologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«especialista de aplicaciones»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«coordinador imagenología»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«coordinador imagenologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«jefe imagenología»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«jefe imagenologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50"
+    "«coordinador imagenologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«jefe imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)"
    ],
-   "descartados": {},
-   "muestra": []
+   "descartados": {
+    "exclusion": 3,
+    "zona": 1
+   },
+   "muestra": [
+    {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología - Colina",
+     "ubicacion": "Colina, Metropolitana",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
+     "ubicacion": "Linares, Maule",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TMO con mención en Oftalmología (Reemplazo Licencia Médica) - Punta Arenas",
+     "ubicacion": "Punta Arenas, Magallanes y Antártica Chilena",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Medico imagenología",
+     "ubicacion": "Osorno, Los Lagos",
+     "motivo": "zona"
+    }
+   ]
   }
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 0,
+  "leidas": 1,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
