@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-18T19:06:25+00:00",
+ "ultimo_chequeo": "2026-11-18T20:08:34+00:00",
  "nuevos": 0,
  "total": 70,
  "palabras_clave": [
@@ -97,74 +97,73 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 108,
+   "resultados": 240,
    "errores": [],
    "descartados": {
-    "exclusion": 17,
-    "antiguedad": 20,
-    "zona": 9,
-    "perfil": 1
+    "exclusion": 14,
+    "zona": 14,
+    "perfil": 16
    },
    "muestra": [
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Medico mención Oftalmología - Tomé",
+     "titulo": "Administrativo Mercado publico",
      "ubicacion": "Concepción",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
+     "ubicacion": "Antofagasta",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Coordinador(a) de Centro Médico",
+     "ubicacion": "Valparaíso",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Relatores/as para capacitaciones: área salud, liderazgo…",
      "ubicacion": "Santiago",
-     "motivo": "antiguedad"
+     "motivo": "perfil"
     },
     {
-     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
-     "ubicacion": "Curicó",
-     "motivo": "antiguedad"
+     "titulo": "TENS",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "titulo": "Tecnólogo Médico Part Time 20 hrs…",
+     "ubicacion": "Coquimbo",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Part Time 20 hrs…",
+     "ubicacion": "Valparaíso",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnico en Imagenologia - Reemplazo",
+     "ubicacion": "Valparaíso",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Docente carrera Tecnología médica - Chillán",
+     "ubicacion": "Chillán",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio Clínico y Banco…",
      "ubicacion": "Concepción",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "TECNÓLOGO MEDICO EN RADIOLOGÍA-ACREDITADO OIT",
-     "ubicacion": "Quillota",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnologo Medico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio Osorno",
-     "ubicacion": "Osorno",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo médico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
-     "ubicacion": "La Serena",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
-     "ubicacion": "Santiago",
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Colina",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo/a Médico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Linares",
+     "motivo": "exclusion"
     }
    ]
   },
@@ -173,11 +172,16 @@
    "resultados": 127,
    "errores": [],
    "descartados": {
-    "perfil": 26,
+    "perfil": 28,
     "exclusion": 10,
-    "zona": 12
+    "zona": 10
    },
    "muestra": [
+    {
+     "titulo": "Enfermera(o) - UTM LA REINA",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Académico -Facultad de Ingeniería",
      "ubicacion": "Santiago, Metropolitana de Santiago",
@@ -232,26 +236,21 @@
      "titulo": "Práctica Profesional Compensaciones",
      "ubicacion": "Las Condes, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Intern área Institucional (Administrativo/a Auditorías) - Alumnos/as Regulares en Últimos Años de Carrera",
-     "ubicacion": "Las Condes, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 51,
+   "resultados": 52,
    "errores": [],
    "descartados": {
-    "zona": 1
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Asesor Sucursales Antofagasta",
-     "ubicacion": "Antofagasta, AN, Chile",
-     "motivo": "zona"
+     "titulo": "Especialista Telco",
+     "ubicacion": "Las Condes, RM, Chile",
+     "motivo": "perfil"
     }
    ]
   },
@@ -342,11 +341,11 @@
     "«tecnólogo médico scanner»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
     "«tecnologo medico scanner»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
     "«tecnólogo médico radiología»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«tecnologo medico radiologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«tecnologo medico radiologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
     "«especialista de aplicaciones»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
     "«coordinador imagenología»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
     "«coordinador imagenologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«jefe imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«jefe imagenología»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
     "«jefe imagenologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50"
    ],
    "descartados": {},
