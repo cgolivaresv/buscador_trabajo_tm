@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-18T12:10:34+00:00",
+ "ultimo_chequeo": "2026-11-18T13:25:33+00:00",
  "nuevos": 0,
  "total": 70,
  "palabras_clave": [
@@ -29,8 +29,8 @@
    "errores": [],
    "descartados": {
     "exclusion": 22,
-    "perfil": 28,
-    "zona": 21
+    "perfil": 27,
+    "zona": 22
    },
    "muestra": [
     {
@@ -100,9 +100,9 @@
    "resultados": 240,
    "errores": [],
    "descartados": {
-    "exclusion": 15,
+    "exclusion": 14,
     "zona": 13,
-    "perfil": 16
+    "perfil": 17
    },
    "muestra": [
     {
@@ -114,6 +114,11 @@
      "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
      "ubicacion": "Antofagasta",
      "motivo": "zona"
+    },
+    {
+     "titulo": "Relatores/as para capacitaciones: área salud, liderazgo…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
     },
     {
      "titulo": "TENS",
@@ -159,11 +164,6 @@
      "titulo": "Tecnólogo Médico Part Time 20 hrs…",
      "ubicacion": "Calama",
      "motivo": "zona"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
-     "ubicacion": "Punta arenas",
-     "motivo": "exclusion"
     }
    ]
   },
@@ -330,23 +330,23 @@
    "nombre": "Bolsa Nacional de Empleo",
    "resultados": 0,
    "errores": [
-    "«tecnólogo médico»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnologo medico»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«tecnólogo médico»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnologo medico»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
     "«tecnólogo médico resonancia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«tecnologo medico resonancia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«resonancia magnética»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«resonancia magnetica»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnólogo médico imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnologo medico imagenologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«resonancia magnetica»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnólogo médico imagenología»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnologo medico imagenologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
     "«tecnólogo médico scanner»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«tecnologo medico scanner»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«tecnólogo médico radiología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnologo medico radiologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«especialista de aplicaciones»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«tecnologo medico radiologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«especialista de aplicaciones»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
     "«coordinador imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«coordinador imagenologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«jefe imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«jefe imagenologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)"
+    "«jefe imagenología»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«jefe imagenologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50"
    ],
    "descartados": {},
    "muestra": []
