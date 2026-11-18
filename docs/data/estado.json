@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-18T16:11:13+00:00",
+ "ultimo_chequeo": "2026-11-18T17:17:01+00:00",
  "nuevos": 0,
  "total": 70,
  "palabras_clave": [
@@ -28,11 +28,16 @@
    "resultados": 224,
    "errores": [],
    "descartados": {
+    "zona": 21,
     "exclusion": 22,
-    "perfil": 28,
-    "zona": 21
+    "perfil": 28
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogo Medico Mejillones",
+     "ubicacion": "Mejillones, Antofagasta",
+     "motivo": "zona"
+    },
     {
      "titulo": "Técnico en Enfermería Médico Quirúrgico, reemplazo vacaciones",
      "ubicacion": "Santiago Centro, R.Metropolitana",
@@ -47,11 +52,6 @@
      "titulo": "Tecnólogo Médico Laboratorio Clínico y Banco de Sangre o Bioquímico",
      "ubicacion": "Concepción, Bíobío",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Medico Mejillones",
-     "ubicacion": "Mejillones, Antofagasta",
-     "motivo": "zona"
     },
     {
      "titulo": "Tecnólogos(as) Médicos",
@@ -169,14 +169,24 @@
   },
   "trabajando": {
    "nombre": "Trabajando.cl",
-   "resultados": 123,
+   "resultados": 127,
    "errores": [],
    "descartados": {
-    "perfil": 22,
-    "zona": 16,
-    "exclusion": 10
+    "exclusion": 10,
+    "perfil": 23,
+    "zona": 15
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogo Médico Otorrino (Vacaciones) - RedSalud Santiago",
+     "ubicacion": "Santiago, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tens Imágenes (Vacaciones) - RedSalud Vitacura",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Enfermera(o) (Vcaciones) - RedSalud Santiago",
      "ubicacion": "Santiago, Metropolitana de Santiago",
@@ -226,16 +236,6 @@
      "titulo": "Jefe/a de Operaciones",
      "ubicacion": "Iquique, Tarapacá",
      "motivo": "zona"
-    },
-    {
-     "titulo": "Gestor de Recursos Humanos Faena Minera",
-     "ubicacion": "Calama, Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Ingeniero de Gestión Senior",
-     "ubicacion": "Huechuraba, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
@@ -244,13 +244,13 @@
    "resultados": 35,
    "errores": [],
    "descartados": {
-    "perfil": 1
+    "zona": 1
    },
    "muestra": [
     {
-     "titulo": "Marketing & Communications Coordinator",
-     "ubicacion": "Las Condes, RM, Chile",
-     "motivo": "perfil"
+     "titulo": "Asesor Sucursales Antofagasta",
+     "ubicacion": "Antofagasta, AN, Chile",
+     "motivo": "zona"
     }
    ]
   },
@@ -330,23 +330,22 @@
    "nombre": "Bolsa Nacional de Empleo",
    "resultados": 0,
    "errores": [
-    "«tecnólogo médico»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnologo medico»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«tecnólogo médico»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnologo medico»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
     "«tecnólogo médico resonancia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«tecnologo medico resonancia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«resonancia magnética»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«resonancia magnetica»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«tecnólogo médico imagenología»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«tecnologo medico imagenologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«resonancia magnética»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«resonancia magnetica»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«tecnólogo médico imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«tecnologo medico imagenologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«tecnólogo médico scanner»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«tecnologo medico scanner»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«tecnólogo médico radiología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«tecnologo medico scanner»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«tecnólogo médico radiología»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
     "«tecnologo medico radiologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«especialista de aplicaciones»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«especialista de aplicaciones»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
     "«coordinador imagenología»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
     "«coordinador imagenologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«jefe imagenología»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«jefe imagenologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)"
+    "«jefe imagenologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50"
    ],
    "descartados": {},
    "muestra": []
