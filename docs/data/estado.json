@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-17T23:57:12+00:00",
+ "ultimo_chequeo": "2026-11-18T01:27:11+00:00",
  "nuevos": 0,
  "total": 70,
  "palabras_clave": [
@@ -97,74 +97,73 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 108,
+   "resultados": 240,
    "errores": [],
    "descartados": {
-    "exclusion": 17,
-    "antiguedad": 20,
-    "zona": 9,
-    "perfil": 1
+    "exclusion": 14,
+    "zona": 12,
+    "perfil": 17
    },
    "muestra": [
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Medico mención Oftalmología - Tomé",
+     "titulo": "Administrativo Mercado publico",
      "ubicacion": "Concepción",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
+     "ubicacion": "Antofagasta",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "TENS",
      "ubicacion": "Santiago",
-     "motivo": "antiguedad"
+     "motivo": "exclusion"
     },
     {
-     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
-     "ubicacion": "Curicó",
-     "motivo": "antiguedad"
+     "titulo": "Tecnólogo Médico Part Time 20 hrs…",
+     "ubicacion": "Coquimbo",
+     "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "titulo": "Tecnólogo Médico Part Time 20 hrs…",
+     "ubicacion": "Valparaíso",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnico en Imagenologia - Reemplazo",
+     "ubicacion": "Valparaíso",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Docente carrera Tecnología médica - Chillán",
+     "ubicacion": "Chillán",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio Clínico y Banco…",
      "ubicacion": "Concepción",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "TECNÓLOGO MEDICO EN RADIOLOGÍA-ACREDITADO OIT",
-     "ubicacion": "Quillota",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnologo Medico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio Osorno",
-     "ubicacion": "Osorno",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo médico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
-     "ubicacion": "La Serena",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
-     "ubicacion": "Santiago",
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Colina",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo/a Médico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
+     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
+     "ubicacion": "Linares",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico Part Time 20 hrs…",
+     "ubicacion": "Calama",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "TMO con mención en Oftalmología (Reemplazo…",
+     "ubicacion": "Punta arenas",
+     "motivo": "exclusion"
     }
    ]
   },
@@ -242,16 +241,16 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 37,
+   "resultados": 52,
    "errores": [],
    "descartados": {
-    "exclusion": 1
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "TENS - Región Metropolitana - Centros Médicos RedSalud CChC",
-     "ubicacion": "Santiago de Chile, RM, Chile",
-     "motivo": "exclusion"
+     "titulo": "Práctica Analista de Negocio TI, Ing Informática o Afín",
+     "ubicacion": "Las Condes, RM, Chile",
+     "motivo": "perfil"
     }
    ]
   },
