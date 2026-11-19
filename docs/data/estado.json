@@ -1,7 +1,7 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-19T20:14:28+00:00",
- "nuevos": 2,
+ "ultimo_chequeo": "2026-11-19T21:03:58+00:00",
+ "nuevos": 0,
  "total": 79,
  "palabras_clave": [
   "tecnólogo médico",
@@ -172,11 +172,21 @@
    "resultados": 147,
    "errores": [],
    "descartados": {
+    "perfil": 23,
     "exclusion": 9,
-    "perfil": 21,
     "zona": 15
    },
    "muestra": [
+    {
+     "titulo": "Inspector de Patio",
+     "ubicacion": "Pudahuel, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Enfermera/o Clínico - Médico Quirúrgico",
+     "ubicacion": "La Florida, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "TENS Pabellón Anestesista| Valparaíso",
      "ubicacion": "Valparaíso, Valparaíso",
@@ -226,22 +236,12 @@
      "titulo": "Tens MQ ( Reemplazo Vacaciones / Contrato empresa externa)",
      "ubicacion": "Recoleta, Metropolitana de Santiago",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Analista de Asuntos Regulatorios",
-     "ubicacion": "Las Condes, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnologo Jefe de servicio - Rancagua",
-     "ubicacion": "Rancagua, Lib. Gral. Bdo. O'Higgins",
-     "motivo": "perfil"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 49,
+   "resultados": 48,
    "errores": [],
    "descartados": {
     "perfil": 1
@@ -359,10 +359,10 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 2,
+  "leidas": 0,
   "sin_permiso": 0,
   "errores": 0,
-  "subieron_a_prioritario": 1
+  "subieron_a_prioritario": 0
  },
  "rss_chiletrabajos": "2026-11-19T19:10:24+00:00"
 }
