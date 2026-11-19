@@ -1,8 +1,8 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-18T23:57:53+00:00",
- "nuevos": 0,
- "total": 72,
+ "ultimo_chequeo": "2026-11-19T01:24:39+00:00",
+ "nuevos": 1,
+ "total": 73,
  "palabras_clave": [
   "tecnólogo médico",
   "tecnólogo médico resonancia",
@@ -28,11 +28,21 @@
    "resultados": 224,
    "errores": [],
    "descartados": {
-    "exclusion": 23,
     "zona": 21,
+    "exclusion": 23,
     "perfil": 28
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogos(as) Médicos",
+     "ubicacion": "Mejillones, Antofagasta",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Técnico en enfermeria, Consulta Medica, Vitacura",
+     "ubicacion": "Santiago - Vitacura, R.Metropolitana",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Técnico en Enfermería Nivel Superior Médico Quirúrgico",
      "ubicacion": "Santiago Centro, R.Metropolitana",
@@ -59,11 +69,6 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogos(as) Médicos",
-     "ubicacion": "Mejillones, Antofagasta",
-     "motivo": "zona"
-    },
-    {
      "titulo": "Tecnólogo/a Médico/a en Imagenología – Calama",
      "ubicacion": "Calama, Antofagasta",
      "motivo": "zona"
@@ -87,11 +92,6 @@
      "titulo": "Tecnologo médico en Laboratorio para Tocopilla",
      "ubicacion": "Tocopilla, Antofagasta",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Profesional de Apoyo Técnico",
-     "ubicacion": "Santiago - Estación Central, R.Metropolitana",
-     "motivo": "perfil"
     }
    ]
   },
@@ -172,11 +172,26 @@
    "resultados": 131,
    "errores": [],
    "descartados": {
-    "perfil": 30,
-    "zona": 9,
-    "exclusion": 9
+    "exclusion": 10,
+    "perfil": 29,
+    "zona": 9
    },
    "muestra": [
+    {
+     "titulo": "Tens UCI ( Reemplazo Vacaciones / Contrato empresa externa)",
+     "ubicacion": "Recoleta, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tens MQ ( Reemplazo Vacaciones / Contrato empresa externa)",
+     "ubicacion": "Recoleta, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Técnico de Equipos Médicos Senior reemplazo licencia prolongada",
+     "ubicacion": "Recoleta, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Analista de Asuntos Regulatorios",
      "ubicacion": "Las Condes, Metropolitana de Santiago",
@@ -221,27 +236,12 @@
      "titulo": "Tens Imágenes (Vacaciones) - RedSalud Vitacura",
      "ubicacion": "Providencia, Metropolitana de Santiago",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Enfermera(o) (Vcaciones) - RedSalud Santiago",
-     "ubicacion": "Santiago, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Práctica Profesional Administración de Empresas - Viña del Mar",
-     "ubicacion": "Valparaíso, Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Analista Comercial - RedSalud Providencia",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 44,
+   "resultados": 52,
    "errores": [],
    "descartados": {
     "perfil": 1
@@ -328,53 +328,29 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 6,
+   "resultados": 0,
    "errores": [
+    "«tecnólogo médico»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«tecnologo medico»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«tecnólogo médico resonancia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«tecnologo medico resonancia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«resonancia magnética»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«resonancia magnetica»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«tecnólogo médico imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«tecnologo medico imagenologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnólogo médico scanner»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«tecnologo medico scanner»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnólogo médico radiología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnologo medico radiologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«especialista de aplicaciones»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«coordinador imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«coordinador imagenologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«jefe imagenologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)"
    ],
-   "descartados": {
-    "exclusion": 3,
-    "zona": 1
-   },
-   "muestra": [
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología - Colina",
-     "ubicacion": "Colina, Metropolitana",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
-     "ubicacion": "Linares, Maule",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TMO con mención en Oftalmología (Reemplazo Licencia Médica) - Punta Arenas",
-     "ubicacion": "Punta Arenas, Magallanes y Antártica Chilena",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Medico imagenología",
-     "ubicacion": "Osorno, Los Lagos",
-     "motivo": "zona"
-    }
-   ]
+   "descartados": {},
+   "muestra": []
   }
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 0,
+  "leidas": 1,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
