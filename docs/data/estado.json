@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-19T16:12:12+00:00",
+ "ultimo_chequeo": "2026-11-19T17:16:13+00:00",
  "nuevos": 0,
  "total": 77,
  "palabras_clave": [
@@ -172,11 +172,16 @@
    "resultados": 131,
    "errores": [],
    "descartados": {
-    "perfil": 24,
-    "zona": 14,
-    "exclusion": 9
+    "exclusion": 10,
+    "perfil": 23,
+    "zona": 14
    },
    "muestra": [
+    {
+     "titulo": "TENS Pabellón Anestesista| Valparaíso",
+     "ubicacion": "Valparaíso, Valparaíso",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "SECRETARIA/O CONTABLE FAE PEDRO AGUIRRE CERDA",
      "ubicacion": "Pedro Aguirre Cerda, Metropolitana de Santiago",
@@ -231,11 +236,6 @@
      "titulo": "Enfermera/o Clínico UPC Pediátrica",
      "ubicacion": "La Florida, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "TENS ECOGRAFIA OBSTÉTRICA - LICENCIA MATERNAL",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
@@ -244,13 +244,13 @@
    "resultados": 49,
    "errores": [],
    "descartados": {
-    "exclusion": 1
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Técnico En Enfermería Urgencia Remplazo Pre y Post Natal - Hospital del Trabajador Achs Salud",
-     "ubicacion": "Providencia, RM, Chile",
-     "motivo": "exclusion"
+     "titulo": "Analista Senior de Control de Gestión y Compensaciones",
+     "ubicacion": "Las Condes, RM, Chile",
+     "motivo": "perfil"
     }
    ]
   },
@@ -328,13 +328,8 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 8,
-   "errores": [
-    "«tecnologo medico»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnólogo médico resonancia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnologo medico resonancia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«coordinador imagenologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)"
-   ],
+   "resultados": 12,
+   "errores": [],
    "descartados": {
     "exclusion": 4
    },
