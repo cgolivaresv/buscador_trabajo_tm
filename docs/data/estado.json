@@ -1,8 +1,8 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-19T13:28:07+00:00",
+ "ultimo_chequeo": "2026-11-19T15:06:47+00:00",
  "nuevos": 2,
- "total": 75,
+ "total": 77,
  "palabras_clave": [
   "tecnólogo médico",
   "tecnólogo médico resonancia",
@@ -33,6 +33,11 @@
     "perfil": 29
    },
    "muestra": [
+    {
+     "titulo": "Técnologo Médico en Laboratorio y Oftamología",
+     "ubicacion": "Tomé, Bíobío",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Tecnólogo(a) Médico en Oftalmología",
      "ubicacion": "Antofagasta, Antofagasta",
@@ -87,83 +92,79 @@
      "titulo": "Tecnologo médico en Imagenología para Taltal",
      "ubicacion": "Taltal, Antofagasta",
      "motivo": "zona"
-    },
-    {
-     "titulo": "Técnico en Enfermería Nivel Superior Unidad Toma de Muestras Viña del Mar",
-     "ubicacion": "Viña del Mar, Valparaíso",
-     "motivo": "exclusion"
     }
    ]
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 248,
+   "resultados": 108,
    "errores": [],
    "descartados": {
-    "exclusion": 13,
-    "zona": 16,
-    "perfil": 15
+    "exclusion": 17,
+    "antiguedad": 20,
+    "zona": 9,
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Administrativo Mercado publico",
-     "ubicacion": "Concepción",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a Imágenes - La serena",
-     "ubicacion": "La serena",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Coordinador(a) de Centro Médico",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Relatores/as para capacitaciones: área salud, liderazgo…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TENS",
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico Part Time 20 hrs…",
-     "ubicacion": "Coquimbo",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico Part Time 20 hrs…",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnico en Imagenologia - Reemplazo",
-     "ubicacion": "Valparaíso",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Docente carrera Tecnología médica - Chillán",
-     "ubicacion": "Chillán",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio Clínico y Banco…",
+     "titulo": "Tecnólogo Medico mención Oftalmología - Tomé",
      "ubicacion": "Concepción",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología…",
-     "ubicacion": "Colina",
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "ubicacion": "Concepción",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNÓLOGO MEDICO EN RADIOLOGÍA-ACREDITADO OIT",
+     "ubicacion": "Quillota",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnologo Medico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio Osorno",
+     "ubicacion": "Osorno",
      "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
     }
    ]
   },
@@ -172,12 +173,21 @@
    "resultados": 131,
    "errores": [],
    "descartados": {
-    "exclusion": 10,
-    "perfil": 29,
-    "zona": 8,
-    "antiguedad": 1
+    "perfil": 24,
+    "zona": 14,
+    "exclusion": 9
    },
    "muestra": [
+    {
+     "titulo": "SECRETARIA/O CONTABLE FAE PEDRO AGUIRRE CERDA",
+     "ubicacion": "Pedro Aguirre Cerda, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Enfermero/a de Endoscopia",
+     "ubicacion": "Iquique, Tarapacá",
+     "motivo": "zona"
+    },
     {
      "titulo": "Tens Endoscopia - Centro Médico Viña del Mar",
      "ubicacion": "Viña del Mar, Valparaíso",
@@ -227,16 +237,6 @@
      "titulo": "TENS ECOGRAFIA OBSTÉTRICA - LICENCIA MATERNAL",
      "ubicacion": "Providencia, Metropolitana de Santiago",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Enfermera(o) - UTM LA REINA",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Académico -Facultad de Ingeniería",
-     "ubicacion": "Santiago, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
@@ -257,7 +257,7 @@
   },
   "laborum": {
    "nombre": "Laborum",
-   "resultados": 62,
+   "resultados": 68,
    "errores": [],
    "descartados": {
     "zona": 5,
@@ -329,39 +329,28 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 4,
+   "resultados": 0,
    "errores": [
-    "«tecnologo medico»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnólogo médico resonancia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«resonancia magnética»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«resonancia magnetica»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnólogo médico imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnologo medico imagenologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«tecnólogo médico»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnologo medico»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnólogo médico resonancia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnologo medico resonancia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«resonancia magnética»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«resonancia magnetica»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnólogo médico imagenología»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnologo medico imagenologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
     "«tecnólogo médico scanner»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«tecnologo medico scanner»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnólogo médico radiología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnologo medico radiologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«tecnólogo médico radiología»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnologo medico radiologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
     "«especialista de aplicaciones»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«coordinador imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«coordinador imagenología»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
     "«coordinador imagenologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
     "«jefe imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«jefe imagenologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)"
+    "«jefe imagenologia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50"
    ],
-   "descartados": {
-    "exclusion": 2
-   },
-   "muestra": [
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología - Colina",
-     "ubicacion": "Colina, Metropolitana",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
-     "ubicacion": "Linares, Maule",
-     "motivo": "exclusion"
-    }
-   ]
+   "descartados": {},
+   "muestra": []
   }
  },
  "paginas_vigiladas": [],
@@ -369,7 +358,7 @@
   "leidas": 2,
   "sin_permiso": 0,
   "errores": 0,
-  "subieron_a_prioritario": 2
+  "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-19T11:09:56+00:00"
+ "rss_chiletrabajos": "2026-11-19T15:06:47+00:00"
 }
