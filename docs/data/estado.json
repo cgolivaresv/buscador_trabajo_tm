@@ -1,8 +1,8 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-19T19:10:24+00:00",
- "nuevos": 0,
- "total": 77,
+ "ultimo_chequeo": "2026-11-19T20:14:28+00:00",
+ "nuevos": 2,
+ "total": 79,
  "palabras_clave": [
   "tecnólogo médico",
   "tecnólogo médico resonancia",
@@ -97,85 +97,84 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 108,
+   "resultados": 254,
    "errores": [],
    "descartados": {
-    "exclusion": 17,
-    "antiguedad": 20,
-    "zona": 9,
-    "perfil": 1
+    "exclusion": 13,
+    "zona": 16,
+    "perfil": 17
    },
    "muestra": [
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
+     "titulo": "Técnico de Laboratorio de Recepción, Macroscopía…",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Medico mención Oftalmología - Tomé",
+     "titulo": "Administrativo Mercado publico",
      "ubicacion": "Concepción",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
-     "ubicacion": "Curicó",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
-     "ubicacion": "Concepción",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "TECNÓLOGO MEDICO EN RADIOLOGÍA-ACREDITADO OIT",
-     "ubicacion": "Quillota",
+     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
+     "ubicacion": "Antofagasta",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnologo Medico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio Osorno",
-     "ubicacion": "Osorno",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo médico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
-     "ubicacion": "La Serena",
+     "titulo": "Tecnólogo médico (REEMPLAZO)",
+     "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "titulo": "Ejecutivo/a de Imágenes - Viña del…",
+     "ubicacion": "Valparaíso",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico/a Imágenes - La serena",
+     "ubicacion": "La serena",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnologo Jefe de servicio - Rancagua",
+     "ubicacion": "Rancagua",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Coordinador(a) de Centro Médico",
+     "ubicacion": "Valparaíso",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Relatores/as para capacitaciones: área salud, liderazgo…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "TENS",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo/a Médico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
+     "titulo": "Tecnólogo Médico Part Time 20 hrs…",
+     "ubicacion": "Coquimbo",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Part Time 20 hrs…",
+     "ubicacion": "Valparaíso",
+     "motivo": "zona"
     }
    ]
   },
   "trabajando": {
    "nombre": "Trabajando.cl",
-   "resultados": 133,
+   "resultados": 147,
    "errores": [],
    "descartados": {
-    "exclusion": 10,
-    "perfil": 24,
-    "zona": 14
+    "exclusion": 9,
+    "perfil": 21,
+    "zona": 15
    },
    "muestra": [
     {
@@ -191,6 +190,11 @@
     {
      "titulo": "Enfermero/a de Endoscopia",
      "ubicacion": "Iquique, Tarapacá",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Ejecutivo/a de Imágenes - viña del mar",
+     "ubicacion": "Viña del Mar, Valparaíso",
      "motivo": "zona"
     },
     {
@@ -229,13 +233,8 @@
      "motivo": "perfil"
     },
     {
-     "titulo": "Tecnólogo/a Médico/a Imágenes - La Serena",
-     "ubicacion": "La Serena, Coquimbo",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Enfermera/o Clínico UPC Pediátrica",
-     "ubicacion": "La Florida, Metropolitana de Santiago",
+     "titulo": "Tecnologo Jefe de servicio - Rancagua",
+     "ubicacion": "Rancagua, Lib. Gral. Bdo. O'Higgins",
      "motivo": "perfil"
     }
    ]
@@ -329,13 +328,8 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 10,
-   "errores": [
-    "«tecnólogo médico resonancia»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«resonancia magnetica»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«tecnólogo médico imagenología»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
-    "«tecnólogo médico scanner»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50"
-   ],
+   "resultados": 12,
+   "errores": [],
    "descartados": {
     "exclusion": 4
    },
@@ -365,10 +359,10 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 0,
+  "leidas": 2,
   "sin_permiso": 0,
   "errores": 0,
-  "subieron_a_prioritario": 0
+  "subieron_a_prioritario": 1
  },
  "rss_chiletrabajos": "2026-11-19T19:10:24+00:00"
 }
