@@ -1,8 +1,8 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-19T12:08:23+00:00",
- "nuevos": 0,
- "total": 73,
+ "ultimo_chequeo": "2026-11-19T13:28:07+00:00",
+ "nuevos": 2,
+ "total": 75,
  "palabras_clave": [
   "tecnólogo médico",
   "tecnólogo médico resonancia",
@@ -97,12 +97,12 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 244,
+   "resultados": 248,
    "errores": [],
    "descartados": {
     "exclusion": 13,
     "zona": 16,
-    "perfil": 16
+    "perfil": 15
    },
    "muestra": [
     {
@@ -169,14 +169,30 @@
   },
   "trabajando": {
    "nombre": "Trabajando.cl",
-   "resultados": 127,
+   "resultados": 131,
    "errores": [],
    "descartados": {
-    "exclusion": 9,
+    "exclusion": 10,
     "perfil": 29,
-    "zona": 9
+    "zona": 8,
+    "antiguedad": 1
    },
    "muestra": [
+    {
+     "titulo": "Tens Endoscopia - Centro Médico Viña del Mar",
+     "ubicacion": "Viña del Mar, Valparaíso",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "NUTRICIONISTA - GERENCIA INSTITUTO ONCOLOGICO, INSTITUTO ONCOLOGICO, NUTRICION CLINICA",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Auditor Compliance - RedSalud Casa Matriz",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Tens UCI ( Reemplazo Vacaciones / Contrato empresa externa)",
      "ubicacion": "Recoleta, Metropolitana de Santiago",
@@ -221,21 +237,6 @@
      "titulo": "Académico -Facultad de Ingeniería",
      "ubicacion": "Santiago, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Enfermero(a) Urgencia General - Clinica RedSalud Vitacura",
-     "ubicacion": "Vitacura, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnólogo Médico Otorrino (Vacaciones) - RedSalud Santiago",
-     "ubicacion": "Santiago, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tens Imágenes (Vacaciones) - RedSalud Vitacura",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
@@ -244,23 +245,23 @@
    "resultados": 49,
    "errores": [],
    "descartados": {
-    "exclusion": 1
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Tecnólogo Médico Otorrino (Vacaciones) - RedSalud Santiago",
-     "ubicacion": "Santiago de Chile, RM, Chile",
-     "motivo": "exclusion"
+     "titulo": "Analista Senior de Control de Gestión y Compensaciones",
+     "ubicacion": "Las Condes, RM, Chile",
+     "motivo": "perfil"
     }
    ]
   },
   "laborum": {
    "nombre": "Laborum",
-   "resultados": 64,
+   "resultados": 62,
    "errores": [],
    "descartados": {
     "zona": 5,
-    "exclusion": 4,
+    "exclusion": 3,
     "antiguedad": 5
    },
    "muestra": [
@@ -320,18 +321,34 @@
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnólogo(a) Médico(a) en Oftalmología Part Time 18 hrs. OPV Mall Alto Las Condes",
-     "ubicacion": "Las Condes, Región Metropolitana",
-     "motivo": "exclusion"
+     "titulo": "Tecnólogo Médico con Mención en Morfofisiopatología y Citodiagnóstico – Antofagasta",
+     "ubicacion": "Provincia de Antofagasta, Región II",
+     "motivo": "zona"
     }
    ]
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 12,
-   "errores": [],
+   "resultados": 4,
+   "errores": [
+    "«tecnologo medico»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«tecnólogo médico resonancia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«resonancia magnética»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«resonancia magnetica»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«tecnólogo médico imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«tecnologo medico imagenologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«tecnólogo médico scanner»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«tecnologo medico scanner»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«tecnólogo médico radiología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«tecnologo medico radiologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«especialista de aplicaciones»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«coordinador imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«coordinador imagenologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«jefe imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
+    "«jefe imagenologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)"
+   ],
    "descartados": {
-    "exclusion": 4
+    "exclusion": 2
    },
    "muestra": [
     {
@@ -343,26 +360,16 @@
      "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
      "ubicacion": "Linares, Maule",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RADIOLOGÍA (REEMPLAZO)",
-     "ubicacion": "Providencia, Metropolitana",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RESONANCIA MAGNETICA (REEMPLAZO)",
-     "ubicacion": "Providencia, Metropolitana",
-     "motivo": "exclusion"
     }
    ]
   }
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 0,
+  "leidas": 2,
   "sin_permiso": 0,
   "errores": 0,
-  "subieron_a_prioritario": 0
+  "subieron_a_prioritario": 2
  },
  "rss_chiletrabajos": "2026-11-19T11:09:56+00:00"
 }
