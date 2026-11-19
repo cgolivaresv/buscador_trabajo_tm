@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-19T22:57:47+00:00",
+ "ultimo_chequeo": "2026-11-19T23:53:56+00:00",
  "nuevos": 0,
  "total": 79,
  "palabras_clave": [
@@ -97,73 +97,74 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 254,
+   "resultados": 108,
    "errores": [],
    "descartados": {
-    "exclusion": 13,
-    "zona": 16,
-    "perfil": 17
+    "exclusion": 17,
+    "antiguedad": 20,
+    "zona": 9,
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Técnico de Laboratorio de Recepción, Macroscopía…",
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Administrativo Mercado publico",
+     "titulo": "Tecnólogo Medico mención Oftalmología - Tomé",
      "ubicacion": "Concepción",
      "motivo": "exclusion"
     },
     {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo médico (REEMPLAZO)",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Ejecutivo/a de Imágenes - Viña del…",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a Imágenes - La serena",
-     "ubicacion": "La serena",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnologo Jefe de servicio - Rancagua",
-     "ubicacion": "Rancagua",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Coordinador(a) de Centro Médico",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Relatores/as para capacitaciones: área salud, liderazgo…",
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
      "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "motivo": "antiguedad"
     },
     {
-     "titulo": "TENS",
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "ubicacion": "Concepción",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNÓLOGO MEDICO EN RADIOLOGÍA-ACREDITADO OIT",
+     "ubicacion": "Quillota",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnologo Medico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio Osorno",
+     "ubicacion": "Osorno",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico Part Time 20 hrs…",
-     "ubicacion": "Coquimbo",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico Part Time 20 hrs…",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
+     "titulo": "Tecnólogo/a Médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
     }
    ]
   },
@@ -172,11 +173,36 @@
    "resultados": 147,
    "errores": [],
    "descartados": {
+    "exclusion": 10,
     "perfil": 23,
-    "exclusion": 9,
     "zona": 15
    },
    "muestra": [
+    {
+     "titulo": "Tens Pool Volante (Vacaciones) - Clínica RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Enfermero/a POOL (Vacaciones) - RedSalud Vitacura",
+     "ubicacion": "Vitacura, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Enfermero/a Pool Volante (Vacaciones) - RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tens POOL (Vacaciones) - Clínica RedSalud Vitacura",
+     "ubicacion": "Vitacura, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tens Pool Volante (Vacaciones) - RedSalud Providencia",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Inspector de Patio",
      "ubicacion": "Pudahuel, Metropolitana de Santiago",
@@ -211,37 +237,12 @@
      "titulo": "Tens Endoscopia - Centro Médico Viña del Mar",
      "ubicacion": "Viña del Mar, Valparaíso",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "NUTRICIONISTA - GERENCIA INSTITUTO ONCOLOGICO, INSTITUTO ONCOLOGICO, NUTRICION CLINICA",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Auditor Compliance - RedSalud Casa Matriz",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tens UCI ( Reemplazo Vacaciones / Contrato empresa externa)",
-     "ubicacion": "Recoleta, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Técnico de Equipos Médicos Senior reemplazo licencia prolongada",
-     "ubicacion": "Recoleta, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tens MQ ( Reemplazo Vacaciones / Contrato empresa externa)",
-     "ubicacion": "Recoleta, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 48,
+   "resultados": 15,
    "errores": [],
    "descartados": {
     "perfil": 1
@@ -364,5 +365,5 @@
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-19T19:10:24+00:00"
+ "rss_chiletrabajos": "2026-11-19T23:53:56+00:00"
 }
