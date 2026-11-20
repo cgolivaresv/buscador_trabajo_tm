@@ -1,7 +1,7 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-20T18:06:43+00:00",
- "nuevos": 1,
+ "ultimo_chequeo": "2026-11-20T19:12:06+00:00",
+ "nuevos": 0,
  "total": 81,
  "palabras_clave": [
   "tecnólogo médico",
@@ -28,11 +28,21 @@
    "resultados": 220,
    "errores": [],
    "descartados": {
-    "exclusion": 23,
-    "zona": 21,
-    "perfil": 27
+    "perfil": 28,
+    "exclusion": 22,
+    "zona": 21
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogos(as) Médicos Volantes",
+     "ubicacion": "Santiago Centro, R.Metropolitana",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Coordinador/a de Servicio Técnico, Santiago Centro.",
+     "ubicacion": "Santiago Centro, R.Metropolitana",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Técnico en Enfermería Nivel Superior Unidad Toma de Muestras Independencia",
      "ubicacion": "Santiago - Independencia, R.Metropolitana",
@@ -82,88 +92,79 @@
      "titulo": "Tecnólogo/a Médico/a en Imagenología – Calama",
      "ubicacion": "Calama, Antofagasta",
      "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnolog@ Medico para Director/a Técnico de laboratorio clínico",
-     "ubicacion": "Arica, Arica y Parinacota",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Profesional de Apoyo Técnico",
-     "ubicacion": "Santiago - Estación Central, R.Metropolitana",
-     "motivo": "perfil"
     }
    ]
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 260,
+   "resultados": 108,
    "errores": [],
    "descartados": {
-    "perfil": 19,
-    "exclusion": 13,
-    "zona": 16
+    "exclusion": 17,
+    "antiguedad": 20,
+    "zona": 9,
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "REPRESENTANTE DE VENTAS TERRENO - AREA…",
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Medico mención Oftalmología - Tomé",
      "ubicacion": "Concepción",
-     "motivo": "perfil"
+     "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico en Oftalmología – Jornada…",
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "ubicacion": "Concepción",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNÓLOGO MEDICO EN RADIOLOGÍA-ACREDITADO OIT",
+     "ubicacion": "Quillota",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnologo Medico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio Osorno",
+     "ubicacion": "Osorno",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Técnico de Laboratorio de Recepción, Macroscopía…",
+     "titulo": "Tecnólogo/a Médico",
      "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a en Imagenología",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo médico (REEMPLAZO)",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Ejecutivo/a de Imágenes - Viña del…",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a Imágenes - La serena",
-     "ubicacion": "La serena",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnologo Jefe de servicio - Rancagua",
-     "ubicacion": "Rancagua",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Coordinador(a) de Centro Médico",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Relatores/as para capacitaciones: área salud, liderazgo…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TENS",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
+     "motivo": "antiguedad"
     }
    ]
   },
@@ -172,12 +173,22 @@
    "resultados": 149,
    "errores": [],
    "descartados": {
-    "exclusion": 13,
-    "perfil": 26,
+    "perfil": 28,
+    "exclusion": 11,
     "zona": 11,
     "antiguedad": 1
    },
    "muestra": [
+    {
+     "titulo": "Jefe(a) de Logística - Salud",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Diseñador/a",
+     "ubicacion": "Huechuraba, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Tecnólogo Médico Part Time 20 hrs (mención oftalmología) - Calama",
      "ubicacion": "Calama, Antofagasta",
@@ -227,16 +238,6 @@
      "titulo": "Práctica Ciclo de Caja - Clinica RedSalud Providencia",
      "ubicacion": "Providencia, Metropolitana de Santiago",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Tens MQ (Part Time)",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tens Pool Volante (Vacaciones) - Clínica RedSalud Santiago",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
-     "motivo": "exclusion"
     }
    ]
   },
@@ -245,13 +246,13 @@
    "resultados": 14,
    "errores": [],
    "descartados": {
-    "zona": 1
+    "exclusion": 1
    },
    "muestra": [
     {
-     "titulo": "Ejecutivo Atención de Público Viña del Mar",
-     "ubicacion": "Viña del Mar, VS, Chile",
-     "motivo": "zona"
+     "titulo": "Asistente Administrativo de Bodega -Puerto Varas",
+     "ubicacion": "Puerto Varas, LL, Chile",
+     "motivo": "exclusion"
     }
    ]
   },
@@ -313,10 +314,10 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 1,
+  "leidas": 0,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-20T15:05:33+00:00"
+ "rss_chiletrabajos": "2026-11-20T19:12:06+00:00"
 }
