@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-20T11:12:31+00:00",
+ "ultimo_chequeo": "2026-11-20T12:06:29+00:00",
  "nuevos": 0,
  "total": 79,
  "palabras_clave": [
@@ -97,87 +97,92 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 108,
+   "resultados": 254,
    "errores": [],
    "descartados": {
-    "exclusion": 17,
-    "antiguedad": 20,
-    "zona": 9,
-    "perfil": 1
+    "exclusion": 13,
+    "zona": 16,
+    "perfil": 18
    },
    "muestra": [
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
+     "titulo": "Técnico de Laboratorio de Recepción, Macroscopía…",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Medico mención Oftalmología - Tomé",
+     "titulo": "Administrativo Mercado publico",
      "ubicacion": "Concepción",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
-     "ubicacion": "Curicó",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
-     "ubicacion": "Concepción",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "TECNÓLOGO MEDICO EN RADIOLOGÍA-ACREDITADO OIT",
-     "ubicacion": "Quillota",
+     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
+     "ubicacion": "Antofagasta",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnologo Medico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio Osorno",
-     "ubicacion": "Osorno",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo médico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
-     "ubicacion": "La Serena",
+     "titulo": "Tecnólogo médico (REEMPLAZO)",
+     "ubicacion": "Valparaíso",
      "motivo": "zona"
     },
     {
-     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "titulo": "Ejecutivo/a de Imágenes - Viña del…",
+     "ubicacion": "Valparaíso",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico/a Imágenes - La serena",
+     "ubicacion": "La serena",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnologo Jefe de servicio - Rancagua",
+     "ubicacion": "Rancagua",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Coordinador(a) de Centro Médico",
+     "ubicacion": "Valparaíso",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Relatores/as para capacitaciones: área salud, liderazgo…",
+     "ubicacion": "Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "TENS",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo/a Médico",
-     "ubicacion": "Santiago",
-     "motivo": "antiguedad"
+     "titulo": "Tecnólogo Médico Part Time 20 hrs…",
+     "ubicacion": "Coquimbo",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Part Time 20 hrs…",
+     "ubicacion": "Valparaíso",
+     "motivo": "zona"
     }
    ]
   },
   "trabajando": {
    "nombre": "Trabajando.cl",
-   "resultados": 145,
+   "resultados": 149,
    "errores": [],
    "descartados": {
-    "perfil": 22,
-    "exclusion": 10,
-    "zona": 15
+    "exclusion": 11,
+    "perfil": 21,
+    "zona": 15,
+    "antiguedad": 1
    },
    "muestra": [
+    {
+     "titulo": "Tens MQ (Part Time)",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Enfermero/a Pool Volante (Vacaciones) - RedSalud Santiago",
      "ubicacion": "Estación Central, Metropolitana de Santiago",
@@ -232,11 +237,6 @@
      "titulo": "Ejecutivo/a de Imágenes - viña del mar",
      "ubicacion": "Viña del Mar, Valparaíso",
      "motivo": "zona"
-    },
-    {
-     "titulo": "Tens Endoscopia - Centro Médico Viña del Mar",
-     "ubicacion": "Viña del Mar, Valparaíso",
-     "motivo": "exclusion"
     }
    ]
   },
@@ -245,92 +245,48 @@
    "resultados": 14,
    "errores": [],
    "descartados": {
-    "perfil": 1
+    "exclusion": 1
    },
    "muestra": [
     {
-     "titulo": "Ejecutivo(a) de Atención Telefónica (Reemplazo)",
-     "ubicacion": "Santiago de Chile, RM, Chile",
-     "motivo": "perfil"
+     "titulo": "Técnico En Enfermería Urgencia Remplazo Pre y Post Natal - Hospital del Trabajador Achs Salud",
+     "ubicacion": "Providencia, RM, Chile",
+     "motivo": "exclusion"
     }
    ]
   },
   "laborum": {
    "nombre": "Laborum",
-   "resultados": 68,
-   "errores": [],
-   "descartados": {
-    "zona": 5,
-    "exclusion": 3,
-    "antiguedad": 5
-   },
-   "muestra": [
-    {
-     "titulo": "Tecnólogo/a Médico/a Imágenes - La serena",
-     "ubicacion": "La Serena, Región IV",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a de Resonancia Magnética - Iquique",
-     "ubicacion": "Iquique, Región I",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "TECNÓLOGO/A MÉDICO/A DE LABORATORIO CLÍNICO Part-time y reemplazos",
-     "ubicacion": "Puerto Varas, Región X",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo(a) Médico en Oftalmología",
-     "ubicacion": "Provincia de Antofagasta, Región II",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "REEMPLAZO BIOQUIMICO O TECNOLOGO MEDICO",
-     "ubicacion": "Santiago de Chile, Región Metropolitana",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo Médico - Anatomía Patológica",
-     "ubicacion": "Santiago de Chile, Región Metropolitana",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo Médico- Medicina Transfusional",
-     "ubicacion": "Vitacura, Región Metropolitana",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Fonoaudiólogo/a y/o Tecnólogo Médico Otorrinolaringología - Concepción",
-     "ubicacion": "Concepción, Región VIII",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico Imagenología - Clínica",
-     "ubicacion": "San Antonio, Región V",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "tecnologo medico",
-     "ubicacion": "Santiago de Chile, Región Metropolitana",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Ejecutivo Comercial Junior (Tecnólogo Médico o Bioquímico)",
-     "ubicacion": "Ñuñoa, Región Metropolitana",
-     "motivo": "antiguedad"
-    },
-    {
-     "titulo": "Tecnólogo Médico con Mención en Morfofisiopatología y Citodiagnóstico – Antofagasta",
-     "ubicacion": "Provincia de Antofagasta, Región II",
-     "motivo": "zona"
-    }
-   ]
+   "resultados": 0,
+   "errores": [
+    "«tecnólogo médico»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/empleos-busqueda-tecn%C3%B3logo-m%C3%A9dico.html",
+    "«tecnologo medico»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnólogo médico resonancia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnologo medico resonancia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«resonancia magnética»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«resonancia magnetica»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnólogo médico imagenología»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnologo medico imagenologia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnólogo médico scanner»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnologo medico scanner»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnólogo médico radiología»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«tecnologo medico radiologia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«especialista de aplicaciones»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«coordinador imagenología»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«coordinador imagenologia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«jefe imagenología»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
+    "«jefe imagenologia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES"
+   ],
+   "descartados": {},
+   "muestra": []
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 8,
-   "errores": [],
+   "resultados": 6,
+   "errores": [
+    "«tecnologo medico»: HTTPError: 500 Server Error: Internal Server Error for url: https://www.bne.gob.cl/api/ofertas/busqueda?page=0&size=50",
+    "«tecnólogo médico resonancia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)"
+   ],
    "descartados": {
     "exclusion": 4
    },
