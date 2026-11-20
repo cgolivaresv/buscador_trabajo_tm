@@ -1,7 +1,7 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-20T16:06:25+00:00",
- "nuevos": 1,
+ "ultimo_chequeo": "2026-11-20T17:07:51+00:00",
+ "nuevos": 0,
  "total": 80,
  "palabras_clave": [
   "tecnólogo médico",
@@ -172,12 +172,17 @@
    "resultados": 149,
    "errores": [],
    "descartados": {
-    "perfil": 25,
-    "exclusion": 13,
     "zona": 12,
+    "perfil": 26,
+    "exclusion": 12,
     "antiguedad": 1
    },
    "muestra": [
+    {
+     "titulo": "Analista de Salud, Seguridad y Medio Ambiente / Antofagasta",
+     "ubicacion": "Antofagasta, Antofagasta",
+     "motivo": "zona"
+    },
     {
      "titulo": "Analista Senior de Negocio Quirúrgico - RedSalud",
      "ubicacion": "Providencia, Metropolitana de Santiago",
@@ -219,23 +224,18 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Enfermero/a POOL (Vacaciones) - RedSalud Vitacura",
-     "ubicacion": "Vitacura, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
      "titulo": "Enfermero/a Pool Volante (Vacaciones) - RedSalud Santiago",
      "ubicacion": "Estación Central, Metropolitana de Santiago",
      "motivo": "perfil"
     },
     {
-     "titulo": "Tens POOL (Vacaciones) - Clínica RedSalud Vitacura",
+     "titulo": "Enfermero/a POOL (Vacaciones) - RedSalud Vitacura",
      "ubicacion": "Vitacura, Metropolitana de Santiago",
-     "motivo": "exclusion"
+     "motivo": "perfil"
     },
     {
-     "titulo": "Tens Pool Volante (Vacaciones) - RedSalud Providencia",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "titulo": "Tens POOL (Vacaciones) - Clínica RedSalud Vitacura",
+     "ubicacion": "Vitacura, Metropolitana de Santiago",
      "motivo": "exclusion"
     }
    ]
@@ -329,21 +329,24 @@
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 4,
+   "resultados": 8,
    "errores": [
-    "«tecnólogo médico»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnologo medico»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnólogo médico resonancia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnologo medico resonancia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnólogo médico imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnologo medico imagenologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«especialista de aplicaciones»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«coordinador imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)"
+    "«tecnólogo médico resonancia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)"
    ],
    "descartados": {
-    "exclusion": 2
+    "exclusion": 4
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología - Colina",
+     "ubicacion": "Colina, Metropolitana",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
+     "ubicacion": "Linares, Maule",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RADIOLOGÍA (REEMPLAZO)",
      "ubicacion": "Providencia, Metropolitana",
@@ -359,7 +362,7 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 1,
+  "leidas": 0,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
