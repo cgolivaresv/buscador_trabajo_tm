@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-20T20:59:29+00:00",
+ "ultimo_chequeo": "2026-11-20T21:58:26+00:00",
  "nuevos": 0,
  "total": 81,
  "palabras_clave": [
@@ -245,13 +245,13 @@
    "resultados": 14,
    "errores": [],
    "descartados": {
-    "zona": 1
+    "exclusion": 1
    },
    "muestra": [
     {
-     "titulo": "Ejecutivo Atención de Público Viña del Mar",
-     "ubicacion": "Viña del Mar, VS, Chile",
-     "motivo": "zona"
+     "titulo": "Asistente Administrativo de Bodega -Puerto Varas",
+     "ubicacion": "Puerto Varas, LL, Chile",
+     "motivo": "exclusion"
     }
    ]
   },
