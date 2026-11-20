@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-20T20:10:17+00:00",
+ "ultimo_chequeo": "2026-11-20T20:59:29+00:00",
  "nuevos": 0,
  "total": 81,
  "palabras_clave": [
@@ -28,18 +28,18 @@
    "resultados": 220,
    "errores": [],
    "descartados": {
-    "perfil": 28,
+    "perfil": 27,
     "exclusion": 22,
     "zona": 21
    },
    "muestra": [
     {
-     "titulo": "Tecnólogos(as) Médicos Volantes",
+     "titulo": "Coordinador/a de Servicio Técnico, Santiago Centro.",
      "ubicacion": "Santiago Centro, R.Metropolitana",
      "motivo": "perfil"
     },
     {
-     "titulo": "Coordinador/a de Servicio Técnico, Santiago Centro.",
+     "titulo": "Tecnólogos(as) Médicos Volantes",
      "ubicacion": "Santiago Centro, R.Metropolitana",
      "motivo": "perfil"
     },
