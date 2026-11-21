@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-21T21:51:04+00:00",
+ "ultimo_chequeo": "2026-11-21T22:51:36+00:00",
  "nuevos": 0,
  "total": 81,
  "palabras_clave": [
@@ -97,82 +97,35 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 260,
-   "errores": [],
-   "descartados": {
-    "perfil": 20,
-    "exclusion": 13,
-    "zona": 15
-   },
-   "muestra": [
-    {
-     "titulo": "REPRESENTANTE DE VENTAS TERRENO - AREA…",
-     "ubicacion": "Concepción",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnólogo Médico Mención Oftalmología",
-     "ubicacion": "La serena",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico en Oftalmología – Jornada…",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Técnico de Laboratorio de Recepción, Macroscopía…",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a en Imagenología",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo médico (REEMPLAZO)",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Ejecutivo/a de Imágenes - Viña del…",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a Imágenes - La serena",
-     "ubicacion": "La serena",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnologo Jefe de servicio - Rancagua",
-     "ubicacion": "Rancagua",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Coordinador(a) de Centro Médico",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Relatores/as para capacitaciones: área salud, liderazgo…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
-    }
-   ]
+   "resultados": 0,
+   "errores": [
+    "«tecnólogo médico»: SSLError: HTTPSConnectionPool(host='www.chiletrabajos.cl', port=443): Max retries exceeded with url: /encuentra-un-empleo?2=tecn%C3%B3logo+m%C3%A9dico&action=search (Caus",
+    "«tecnologo medico»: SSLError: HTTPSConnectionPool(host='www.chiletrabajos.cl', port=443): Max retries exceeded with url: /encuentra-un-empleo?2=tecnologo+medico&action=search (Caused by SSLE",
+    "«tecnólogo médico resonancia»: SSLError: HTTPSConnectionPool(host='www.chiletrabajos.cl', port=443): Max retries exceeded with url: /encuentra-un-empleo?2=tecn%C3%B3logo+m%C3%A9dico+resonancia&action=s",
+    "«tecnologo medico resonancia»: SSLError: HTTPSConnectionPool(host='www.chiletrabajos.cl', port=443): Max retries exceeded with url: /encuentra-un-empleo?2=tecnologo+medico+resonancia&action=search (Cau",
+    "«resonancia magnética»: SSLError: HTTPSConnectionPool(host='www.chiletrabajos.cl', port=443): Max retries exceeded with url: /encuentra-un-empleo?2=resonancia+magn%C3%A9tica&action=search (Cause",
+    "«resonancia magnetica»: SSLError: HTTPSConnectionPool(host='www.chiletrabajos.cl', port=443): Max retries exceeded with url: /encuentra-un-empleo?2=resonancia+magnetica&action=search (Caused by ",
+    "«tecnólogo médico imagenología»: SSLError: HTTPSConnectionPool(host='www.chiletrabajos.cl', port=443): Max retries exceeded with url: /encuentra-un-empleo?2=tecn%C3%B3logo+m%C3%A9dico+imagenolog%C3%ADa&a",
+    "«tecnologo medico imagenologia»: SSLError: HTTPSConnectionPool(host='www.chiletrabajos.cl', port=443): Max retries exceeded with url: /encuentra-un-empleo?2=tecnologo+medico+imagenologia&action=search (C",
+    "«tecnólogo médico scanner»: SSLError: HTTPSConnectionPool(host='www.chiletrabajos.cl', port=443): Max retries exceeded with url: /encuentra-un-empleo?2=tecn%C3%B3logo+m%C3%A9dico+scanner&action=sear",
+    "«tecnologo medico scanner»: SSLError: HTTPSConnectionPool(host='www.chiletrabajos.cl', port=443): Max retries exceeded with url: /encuentra-un-empleo?2=tecnologo+medico+scanner&action=search (Caused",
+    "«tecnólogo médico radiología»: SSLError: HTTPSConnectionPool(host='www.chiletrabajos.cl', port=443): Max retries exceeded with url: /encuentra-un-empleo?2=tecn%C3%B3logo+m%C3%A9dico+radiolog%C3%ADa&act",
+    "«tecnologo medico radiologia»: SSLError: HTTPSConnectionPool(host='www.chiletrabajos.cl', port=443): Max retries exceeded with url: /encuentra-un-empleo?2=tecnologo+medico+radiologia&action=search (Cau",
+    "«especialista de aplicaciones»: SSLError: HTTPSConnectionPool(host='www.chiletrabajos.cl', port=443): Max retries exceeded with url: /encuentra-un-empleo?2=especialista+de+aplicaciones&action=search (Ca",
+    "«coordinador imagenología»: SSLError: HTTPSConnectionPool(host='www.chiletrabajos.cl', port=443): Max retries exceeded with url: /encuentra-un-empleo?2=coordinador+imagenolog%C3%ADa&action=search (C",
+    "«coordinador imagenologia»: SSLError: HTTPSConnectionPool(host='www.chiletrabajos.cl', port=443): Max retries exceeded with url: /encuentra-un-empleo?2=coordinador+imagenologia&action=search (Caused",
+    "«jefe imagenología»: SSLError: HTTPSConnectionPool(host='www.chiletrabajos.cl', port=443): Max retries exceeded with url: /encuentra-un-empleo?2=jefe+imagenolog%C3%ADa&action=search (Caused b",
+    "«jefe imagenologia»: SSLError: HTTPSConnectionPool(host='www.chiletrabajos.cl', port=443): Max retries exceeded with url: /encuentra-un-empleo?2=jefe+imagenologia&action=search (Caused by SSL"
+   ],
+   "descartados": {},
+   "muestra": []
   },
   "trabajando": {
    "nombre": "Trabajando.cl",
    "resultados": 149,
    "errores": [],
    "descartados": {
-    "perfil": 27,
+    "perfil": 28,
     "exclusion": 12,
     "zona": 11,
     "antiguedad": 1
@@ -242,7 +195,7 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 13,
+   "resultados": 12,
    "errores": [],
    "descartados": {
     "perfil": 1
