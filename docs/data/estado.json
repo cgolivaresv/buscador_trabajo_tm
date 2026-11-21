@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-21T01:23:15+00:00",
+ "ultimo_chequeo": "2026-11-21T10:56:04+00:00",
  "nuevos": 0,
  "total": 81,
  "palabras_clave": [
@@ -28,11 +28,16 @@
    "resultados": 220,
    "errores": [],
    "descartados": {
-    "perfil": 27,
-    "exclusion": 22,
-    "zona": 21
+    "exclusion": 23,
+    "perfil": 26,
+    "zona": 22
    },
    "muestra": [
+    {
+     "titulo": "Técnico en Enfermería Nivel Superior",
+     "ubicacion": "Santiago - Las condes, R.Metropolitana",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Coordinador/a de Servicio Técnico, Santiago Centro.",
      "ubicacion": "Santiago Centro, R.Metropolitana",
@@ -87,83 +92,79 @@
      "titulo": "Técnico en Enfermería Médico Quirúrgico, reemplazo vacaciones",
      "ubicacion": "Santiago Centro, R.Metropolitana",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a en Imagenología – Calama",
-     "ubicacion": "Calama, Antofagasta",
-     "motivo": "zona"
     }
    ]
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 260,
+   "resultados": 108,
    "errores": [],
    "descartados": {
-    "perfil": 20,
-    "exclusion": 13,
-    "zona": 15
+    "exclusion": 17,
+    "antiguedad": 20,
+    "zona": 9,
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "REPRESENTANTE DE VENTAS TERRENO - AREA…",
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Medico mención Oftalmología - Tomé",
      "ubicacion": "Concepción",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnólogo Médico Mención Oftalmología",
-     "ubicacion": "La serena",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico en Oftalmología – Jornada…",
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "ubicacion": "Concepción",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNÓLOGO MEDICO EN RADIOLOGÍA-ACREDITADO OIT",
+     "ubicacion": "Quillota",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnologo Medico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio Osorno",
+     "ubicacion": "Osorno",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Técnico de Laboratorio de Recepción, Macroscopía…",
+     "titulo": "Tecnólogo/a Médico",
      "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a en Imagenología",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo médico (REEMPLAZO)",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Ejecutivo/a de Imágenes - Viña del…",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a Imágenes - La serena",
-     "ubicacion": "La serena",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnologo Jefe de servicio - Rancagua",
-     "ubicacion": "Rancagua",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Coordinador(a) de Centro Médico",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Relatores/as para capacitaciones: área salud, liderazgo…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
+     "motivo": "antiguedad"
     }
    ]
   },
@@ -189,13 +190,13 @@
      "motivo": "perfil"
     },
     {
-     "titulo": "Tecnólogo Médico Part Time 20 hrs (mención oftalmología) - Calama",
-     "ubicacion": "Calama, Antofagasta",
+     "titulo": "Tecnólogo Médico Part Time 20 hrs (mención oftalmología) - Coquimbo",
+     "ubicacion": "Coquimbo, Coquimbo",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico Part Time 20 hrs (mención oftalmología) - Coquimbo",
-     "ubicacion": "Coquimbo, Coquimbo",
+     "titulo": "Tecnólogo Médico Part Time 20 hrs (mención oftalmología) - Calama",
+     "ubicacion": "Calama, Antofagasta",
      "motivo": "exclusion"
     },
     {
@@ -242,7 +243,7 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 16,
+   "resultados": 15,
    "errores": [],
    "descartados": {
     "perfil": 1
@@ -365,5 +366,5 @@
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-20T23:56:13+00:00"
+ "rss_chiletrabajos": "2026-11-21T10:56:04+00:00"
 }
