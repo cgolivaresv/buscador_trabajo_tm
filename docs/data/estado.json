@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-22T16:56:25+00:00",
+ "ultimo_chequeo": "2026-11-22T17:50:59+00:00",
  "nuevos": 0,
  "total": 81,
  "palabras_clave": [
@@ -179,6 +179,11 @@
    },
    "muestra": [
     {
+     "titulo": "Auditor Compliance - RedSalud Casa Matriz",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
      "titulo": "Jefe(a) de Logística - Salud",
      "ubicacion": "Providencia, Metropolitana de Santiago",
      "motivo": "perfil"
@@ -232,17 +237,12 @@
      "titulo": "Tens Pabellón Maternidad Part Time",
      "ubicacion": "Estación Central, Metropolitana de Santiago",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Práctica Ciclo de Caja - Clinica RedSalud Providencia",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 6,
+   "resultados": 5,
    "errores": [],
    "descartados": {
     "perfil": 1
