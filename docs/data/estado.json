@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-22T11:52:47+00:00",
+ "ultimo_chequeo": "2026-11-22T13:05:32+00:00",
  "nuevos": 0,
  "total": 81,
  "palabras_clave": [
@@ -28,11 +28,16 @@
    "resultados": 216,
    "errores": [],
    "descartados": {
-    "exclusion": 23,
-    "perfil": 24,
-    "zona": 24
+    "zona": 24,
+    "exclusion": 22,
+    "perfil": 24
    },
    "muestra": [
+    {
+     "titulo": "Tecnólogo Médico(a) Turno 7x7 Calama",
+     "ubicacion": "Calama, Antofagasta",
+     "motivo": "zona"
+    },
     {
      "titulo": "Tecnólogo/a Médico – Diurno, Oftalmología y Laboratorio – Tomé, Región del Biobío",
      "ubicacion": "Tomé, Bíobío",
@@ -87,11 +92,6 @@
      "titulo": "Ingeniero/ técnico en Equipos médicos",
      "ubicacion": "Santiago - La Reina, R.Metropolitana",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Técnico en Enfermería Nivel Superior Médico Quirúrgico",
-     "ubicacion": "Santiago Centro, R.Metropolitana",
-     "motivo": "exclusion"
     }
    ]
   },
@@ -242,7 +242,7 @@
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 7,
+   "resultados": 6,
    "errores": [],
    "descartados": {
     "perfil": 1
