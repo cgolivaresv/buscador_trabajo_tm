@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-22T23:51:52+00:00",
+ "ultimo_chequeo": "2026-11-23T01:25:42+00:00",
  "nuevos": 0,
  "total": 81,
  "palabras_clave": [
@@ -89,9 +89,9 @@
      "motivo": "zona"
     },
     {
-     "titulo": "Técnico en enfermeria, Consulta Medica, Vitacura",
-     "ubicacion": "Santiago - Vitacura, R.Metropolitana",
-     "motivo": "exclusion"
+     "titulo": "Ingeniero/ técnico en Equipos médicos",
+     "ubicacion": "Santiago - La Reina, R.Metropolitana",
+     "motivo": "perfil"
     }
    ]
   },
@@ -100,20 +100,20 @@
    "resultados": 260,
    "errores": [],
    "descartados": {
+    "exclusion": 14,
     "perfil": 18,
-    "exclusion": 13,
     "zona": 17
    },
    "muestra": [
     {
-     "titulo": "REPRESENTANTE DE VENTAS TERRENO - AREA…",
-     "ubicacion": "Concepción",
-     "motivo": "perfil"
-    },
-    {
      "titulo": "Tecnólogo Médico Mención Oftalmología",
      "ubicacion": "La serena",
      "motivo": "exclusion"
+    },
+    {
+     "titulo": "REPRESENTANTE DE VENTAS TERRENO - AREA…",
+     "ubicacion": "Concepción",
+     "motivo": "perfil"
     },
     {
      "titulo": "Tecnólogo Médico en Oftalmología – Jornada…",
@@ -129,6 +129,11 @@
      "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
      "ubicacion": "Antofagasta",
      "motivo": "zona"
+    },
+    {
+     "titulo": "TÉCNICO EN ENFERMERIA.",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
     },
     {
      "titulo": "Tecnólogo/a Médico/a en Imagenología",
@@ -159,11 +164,6 @@
      "titulo": "Coordinador(a) de Centro Médico",
      "ubicacion": "Valparaíso",
      "motivo": "zona"
-    },
-    {
-     "titulo": "Relatores/as para capacitaciones: área salud, liderazgo…",
-     "ubicacion": "Santiago",
-     "motivo": "perfil"
     }
    ]
   },
