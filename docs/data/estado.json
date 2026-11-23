@@ -1,6 +1,6 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-23T01:25:42+00:00",
+ "ultimo_chequeo": "2026-11-23T11:16:19+00:00",
  "nuevos": 0,
  "total": 81,
  "palabras_clave": [
@@ -28,11 +28,26 @@
    "resultados": 216,
    "errores": [],
    "descartados": {
-    "perfil": 27,
     "zona": 22,
-    "exclusion": 21
+    "exclusion": 22,
+    "perfil": 26
    },
    "muestra": [
+    {
+     "titulo": "Tecnologo médico en Imagenología para Taltal",
+     "ubicacion": "Taltal, Antofagasta",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Técnico en Enfermería Nivel Superior Unidad Toma de Muestras Viña del Mar",
+     "ubicacion": "Viña del Mar, Valparaíso",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnologo médico en Laboratorio para Tocopilla",
+     "ubicacion": "Tocopilla, Antofagasta",
+     "motivo": "exclusion"
+    },
     {
      "titulo": "Coordinador/a de Servicio Técnico, Santiago Centro.",
      "ubicacion": "Santiago Centro, R.Metropolitana",
@@ -77,103 +92,89 @@
      "titulo": "Técnologo Médico en Laboratorio y Oftamología",
      "ubicacion": "Tomé, Bíobío",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo(a) Médico en Oftalmología",
-     "ubicacion": "Antofagasta, Antofagasta",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogos(as) Médicos",
-     "ubicacion": "Mejillones, Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Ingeniero/ técnico en Equipos médicos",
-     "ubicacion": "Santiago - La Reina, R.Metropolitana",
-     "motivo": "perfil"
     }
    ]
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 260,
+   "resultados": 108,
    "errores": [],
    "descartados": {
-    "exclusion": 14,
-    "perfil": 18,
-    "zona": 17
+    "exclusion": 17,
+    "antiguedad": 20,
+    "zona": 9,
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Tecnólogo Médico Mención Oftalmología",
-     "ubicacion": "La serena",
+     "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
+     "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "REPRESENTANTE DE VENTAS TERRENO - AREA…",
+     "titulo": "Tecnólogo Medico mención Oftalmología - Tomé",
      "ubicacion": "Concepción",
-     "motivo": "perfil"
+     "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico en Oftalmología – Jornada…",
+     "titulo": "Tecnólogo/a Médico ECOCARDIOGRAMA",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNOLOGO MEDICO CON RESPONSABILIDAD DE DIRECCION TECNICA",
+     "ubicacion": "Curicó",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico(a) ? Pabellón Traumatológico Hospital Traumatológico CCP",
+     "ubicacion": "Concepción",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "TECNÓLOGO MEDICO EN RADIOLOGÍA-ACREDITADO OIT",
+     "ubicacion": "Quillota",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnologo Medico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio Osorno",
+     "ubicacion": "Osorno",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo médico",
+     "ubicacion": "Santiago",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Técnico de Laboratorio de Recepción, Macroscopía…",
+     "titulo": "Tecnólogo/a Médico",
      "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "CONVOCATORIA DE PERSONAL MÉDICO Y NO…",
-     "ubicacion": "Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "TÉCNICO EN ENFERMERIA.",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a en Imagenología",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo médico (REEMPLAZO)",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Ejecutivo/a de Imágenes - Viña del…",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico/a Imágenes - La serena",
-     "ubicacion": "La serena",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnologo Jefe de servicio - Rancagua",
-     "ubicacion": "Rancagua",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Coordinador(a) de Centro Médico",
-     "ubicacion": "Valparaíso",
-     "motivo": "zona"
+     "motivo": "antiguedad"
     }
    ]
   },
   "trabajando": {
    "nombre": "Trabajando.cl",
-   "resultados": 147,
+   "resultados": 143,
    "errores": [],
    "descartados": {
-    "perfil": 26,
-    "exclusion": 12,
+    "perfil": 27,
+    "exclusion": 10,
     "zona": 11,
     "antiguedad": 1
    },
@@ -357,5 +358,5 @@
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-22T22:53:47+00:00"
+ "rss_chiletrabajos": "2026-11-23T11:16:19+00:00"
 }
