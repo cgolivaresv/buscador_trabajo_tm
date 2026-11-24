@@ -1,8 +1,8 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-23T22:43:18+00:00",
- "nuevos": 4,
- "total": 85,
+ "ultimo_chequeo": "2026-11-24T20:39:29+00:00",
+ "nuevos": 2,
+ "total": 87,
  "palabras_clave": [
   "tecnólogo médico",
   "tecnólogo médico resonancia",
@@ -25,23 +25,18 @@
   },
   "computrabajo": {
    "nombre": "Computrabajo",
-   "resultados": 200,
+   "resultados": 196,
    "errores": [],
    "descartados": {
-    "exclusion": 21,
-    "perfil": 29,
-    "zona": 18
+    "exclusion": 20,
+    "perfil": 26,
+    "zona": 21
    },
    "muestra": [
     {
-     "titulo": "Tecnolog@ Medico para Director/a Técnico de laboratorio clínico",
-     "ubicacion": "Arica, Arica y Parinacota",
+     "titulo": "Buscamos Técnico en enfermería Médico Quirúrgico",
+     "ubicacion": "Santiago - Estación Central, R.Metropolitana",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Vendedor/a de Tecnología Full Time 5x2",
-     "ubicacion": "Santiago - Providencia, R.Metropolitana",
-     "motivo": "perfil"
     },
     {
      "titulo": "Técnico enfermería Médico Quirúrgico",
@@ -51,6 +46,16 @@
     {
      "titulo": "Técnico con experiencia en reparación y mantención de equipos médicos",
      "ubicacion": "Santiago - Las condes, R.Metropolitana",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tecnolog@ Medico para Director/a Técnico de laboratorio clínico",
+     "ubicacion": "Arica, Arica y Parinacota",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Vendedor/a de Tecnología Full Time 5x2",
+     "ubicacion": "Santiago - Providencia, R.Metropolitana",
      "motivo": "perfil"
     },
     {
@@ -87,11 +92,6 @@
      "titulo": "Tecnólogo Médico(a) Turno 7x7 Calama",
      "ubicacion": "Calama, Antofagasta",
      "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo/a Médico – Diurno, Oftalmología y Laboratorio – Tomé, Región del Biobío",
-     "ubicacion": "Tomé, Bíobío",
-     "motivo": "exclusion"
     }
    ]
   },
@@ -170,48 +170,28 @@
   },
   "trabajando": {
    "nombre": "Trabajando.cl",
-   "resultados": 159,
+   "resultados": 153,
    "errores": [],
    "descartados": {
-    "perfil": 22,
-    "zona": 11,
-    "exclusion": 13,
+    "perfil": 24,
+    "exclusion": 11,
+    "zona": 12,
     "antiguedad": 1
    },
    "muestra": [
     {
-     "titulo": "Práctica Profesional - Atracción de Talento RedSalud CChC",
+     "titulo": "Supervisor(a) de REAS - RedSalud Providencia",
      "ubicacion": "Providencia, Metropolitana de Santiago",
      "motivo": "perfil"
     },
     {
-     "titulo": "Arquitecto - Casa Matriz Centros Médicos",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnólogo Médico / Proyecto Minero Antofagasta",
-     "ubicacion": "Antofagasta, Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico con mención en Oftalmología - Colina",
-     "ubicacion": "Colina, Metropolitana de Santiago",
+     "titulo": "TENS Neonatología (Vacaciones) - RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico Part Time 20 hrs (mención oftalmología) - Las Condes",
-     "ubicacion": "Las Condes, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico Part Time 20 hrs (mención oftalmología) - Viña del Mar",
-     "ubicacion": "Viña del Mar, Valparaíso",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico Part Time 20 hrs (mención oftalmología) - Calama",
-     "ubicacion": "Calama, Antofagasta",
+     "titulo": "Tens Diálisis",
+     "ubicacion": "Recoleta, Metropolitana de Santiago",
      "motivo": "exclusion"
     },
     {
@@ -220,90 +200,125 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico Part Time 20 hrs (mención oftalmología) - San Miguel",
-     "ubicacion": "San Miguel, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
      "titulo": "Tecnólogo Médico Part Time 20 hrs (mención oftalmología) - Temuco",
      "ubicacion": "Temuco, La Araucanía",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico Part Time 20 hrs (mención oftalmología) - Coquimbo",
-     "ubicacion": "Coquimbo, Coquimbo",
+     "titulo": "Técnico en Laboratorio Unidad Toma de Muestra- La Dehesa - Chicureo",
+     "ubicacion": "Vitacura, Metropolitana de Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico Part Time 20 hrs (mención oftalmología) - Ñuñoa",
-     "ubicacion": "Ñuñoa, Metropolitana de Santiago",
+     "titulo": "Representante de Ventas",
+     "ubicacion": "Las Condes, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Químico Farmacéutico Rancagua (Part time)",
+     "ubicacion": "Rancagua, Lib. Gral. Bdo. O'Higgins",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Técnico En Enfermería Pabellón y Rayos Reemplazo Vacaciones - Hospital del Trabajador Achs Salud",
+     "ubicacion": "Santiago, Metropolitana de Santiago",
      "motivo": "exclusion"
+    },
+    {
+     "titulo": "Práctica Profesional Ingeniería para Área Gerencia de Operaciones - Clínica RedSalud Santiago",
+     "ubicacion": "Santiago, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Químico Farmacéutico San Fernardo (Part time)",
+     "ubicacion": "San Fernando, Lib. Gral. Bdo. O'Higgins",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Analista de Cuentas Médicas - Instituto del Cáncer RedSalud",
+     "ubicacion": "Vitacura, Metropolitana de Santiago",
+     "motivo": "perfil"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 11,
+   "resultados": 24,
    "errores": [],
    "descartados": {
     "exclusion": 1
    },
    "muestra": [
     {
-     "titulo": "Tecnólogo médico en oftalmologia",
-     "ubicacion": "Antofagasta, AN, Chile",
+     "titulo": "Técnico en imágenes - Imagenología",
+     "ubicacion": "La Florida, RM, Chile",
      "motivo": "exclusion"
     }
    ]
   },
   "laborum": {
    "nombre": "Laborum",
-   "resultados": 0,
-   "errores": [
-    "«tecnólogo médico»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/empleos-busqueda-tecn%C3%B3logo-m%C3%A9dico.html",
-    "«tecnologo medico»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«tecnólogo médico resonancia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«tecnologo medico resonancia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«resonancia magnética»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«resonancia magnetica»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«tecnólogo médico imagenología»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«tecnologo medico imagenologia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«tecnólogo médico scanner»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«tecnologo medico scanner»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«tecnólogo médico radiología»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«tecnologo medico radiologia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«especialista de aplicaciones»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«coordinador imagenología»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«coordinador imagenologia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«jefe imagenología»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES",
-    "«jefe imagenologia»: HTTPError: 403 Client Error: Forbidden for url: https://www.laborum.cl/api/avisos/searchV2?pageSize=40&page=0&sort=RECIENTES"
-   ],
-   "descartados": {},
-   "muestra": []
+   "resultados": 60,
+   "errores": [],
+   "descartados": {
+    "zona": 5,
+    "exclusion": 2,
+    "antiguedad": 2
+   },
+   "muestra": [
+    {
+     "titulo": "Tecnólogo/a Médico/a Imágenes - La serena",
+     "ubicacion": "La Serena, Región IV",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo/a Médico/a de Resonancia Magnética - Iquique",
+     "ubicacion": "Iquique, Región I",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico en Oftalmología",
+     "ubicacion": "Provincia de Antofagasta, Región II",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "REEMPLAZO BIOQUIMICO O TECNOLOGO MEDICO",
+     "ubicacion": "Santiago de Chile, Región Metropolitana",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Fonoaudiólogo/a y/o Tecnólogo Médico Otorrinolaringología - Concepción",
+     "ubicacion": "Concepción, Región VIII",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico Imagenología - Clínica",
+     "ubicacion": "San Antonio, Región V",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "tecnologo medico",
+     "ubicacion": "Santiago de Chile, Región Metropolitana",
+     "motivo": "antiguedad"
+    },
+    {
+     "titulo": "Tecnólogo Médico con Mención en Morfofisiopatología y Citodiagnóstico – Antofagasta",
+     "ubicacion": "Provincia de Antofagasta, Región II",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tecnólogo Médico Centro diagnóstico especializado La Serna",
+     "ubicacion": "Coquimbo, Región IV",
+     "motivo": "zona"
+    }
+   ]
   },
   "bne": {
    "nombre": "Bolsa Nacional de Empleo",
-   "resultados": 2,
-   "errores": [
-    "«tecnólogo médico»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnólogo médico resonancia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnologo medico resonancia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«resonancia magnética»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«resonancia magnetica»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnólogo médico imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnologo medico imagenologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnólogo médico scanner»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnologo medico scanner»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnólogo médico radiología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«tecnologo medico radiologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«especialista de aplicaciones»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«coordinador imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«coordinador imagenologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«jefe imagenología»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)",
-    "«jefe imagenologia»: ReadTimeout: HTTPSConnectionPool(host='www.bne.gob.cl', port=443): Read timed out. (read timeout=30)"
-   ],
+   "resultados": 8,
+   "errores": [],
    "descartados": {
-    "exclusion": 2
+    "exclusion": 4
    },
    "muestra": [
     {
@@ -315,16 +330,26 @@
      "titulo": "Tecnólogo Médico con mención en Oftalmología - Linares",
      "ubicacion": "Linares, Maule",
      "motivo": "exclusion"
+    },
+    {
+     "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RADIOLOGÍA (REEMPLAZO)",
+     "ubicacion": "Providencia, Metropolitana",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TÉCNICO EN ENFERMERÍA (TENS) - RESONANCIA MAGNETICA (REEMPLAZO)",
+     "ubicacion": "Providencia, Metropolitana",
+     "motivo": "exclusion"
     }
    ]
   }
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 4,
+  "leidas": 2,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-23T22:43:18+00:00"
+ "rss_chiletrabajos": "2026-11-24T20:39:29+00:00"
 }
