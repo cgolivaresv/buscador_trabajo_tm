@@ -1,8 +1,8 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-24T20:39:29+00:00",
- "nuevos": 2,
- "total": 87,
+ "ultimo_chequeo": "2026-11-25T19:56:36+00:00",
+ "nuevos": 4,
+ "total": 91,
  "palabras_clave": [
   "tecnólogo médico",
   "tecnólogo médico resonancia",
@@ -25,14 +25,24 @@
   },
   "computrabajo": {
    "nombre": "Computrabajo",
-   "resultados": 196,
+   "resultados": 198,
    "errores": [],
    "descartados": {
-    "exclusion": 20,
     "perfil": 26,
-    "zona": 21
+    "exclusion": 19,
+    "zona": 20
    },
    "muestra": [
+    {
+     "titulo": "Vendedor/a de Tecnología Full Time 5x2",
+     "ubicacion": "Santiago - Providencia, R.Metropolitana",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Técnico Biomédico, Electrónico o similar (experiencia en reparación y mantención de equipos médicos)",
+     "ubicacion": "Santiago - Las condes, R.Metropolitana",
+     "motivo": "perfil"
+    },
     {
      "titulo": "Buscamos Técnico en enfermería Médico Quirúrgico",
      "ubicacion": "Santiago - Estación Central, R.Metropolitana",
@@ -44,19 +54,9 @@
      "motivo": "perfil"
     },
     {
-     "titulo": "Técnico con experiencia en reparación y mantención de equipos médicos",
-     "ubicacion": "Santiago - Las condes, R.Metropolitana",
-     "motivo": "perfil"
-    },
-    {
      "titulo": "Tecnolog@ Medico para Director/a Técnico de laboratorio clínico",
      "ubicacion": "Arica, Arica y Parinacota",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Vendedor/a de Tecnología Full Time 5x2",
-     "ubicacion": "Santiago - Providencia, R.Metropolitana",
-     "motivo": "perfil"
     },
     {
      "titulo": "Tecnólogo Medico Mejillones",
@@ -97,23 +97,18 @@
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 108,
+   "resultados": 141,
    "errores": [],
    "descartados": {
-    "exclusion": 17,
+    "exclusion": 25,
     "antiguedad": 20,
     "zona": 9,
-    "perfil": 1
+    "perfil": 2
    },
    "muestra": [
     {
      "titulo": "Tecnólogo Médico Laboratorio - Clínica MEDS La Dehesa",
      "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Medico mención Oftalmología - Tomé",
-     "ubicacion": "Concepción",
      "motivo": "exclusion"
     },
     {
@@ -147,112 +142,117 @@
      "motivo": "exclusion"
     },
     {
+     "titulo": "Tecnólogo Médico Part Time 20 hrs (mención oftalmología) - Las Condes",
+     "ubicacion": "Santiago",
+     "motivo": "exclusion"
+    },
+    {
      "titulo": "Tecnólogo médico",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
     },
     {
-     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
-     "ubicacion": "La Serena",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnólogo Médico Laboratorio - Part Time / Clínica MEDS La Dehesa",
+     "titulo": "Tecnólogo Médico en Oftalmología ? Jornada Part Time 30 horas",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo/a Médico",
+     "titulo": "Tecnólogo Médico Part Time 20 hrs (mención oftalmología) - La Florida",
      "ubicacion": "Santiago",
-     "motivo": "antiguedad"
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
+     "ubicacion": "La Serena",
+     "motivo": "zona"
     }
    ]
   },
   "trabajando": {
    "nombre": "Trabajando.cl",
-   "resultados": 153,
+   "resultados": 155,
    "errores": [],
    "descartados": {
-    "perfil": 24,
-    "exclusion": 11,
+    "perfil": 22,
+    "exclusion": 13,
     "zona": 12,
     "antiguedad": 1
    },
    "muestra": [
     {
-     "titulo": "Supervisor(a) de REAS - RedSalud Providencia",
+     "titulo": "Ejecutivo de Venta Automotriz - Temuco",
+     "ubicacion": "Temuco, La Araucanía",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "TENS - Centro Médico Viña del Mar",
+     "ubicacion": "Viña del Mar, Valparaíso",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TENS - Centro Médico V REGION",
+     "ubicacion": "Viña del Mar, Valparaíso",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Enfermero/a Gestión del Riesgo Clínico - RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Enfermera/o - Oncología",
+     "ubicacion": "La Florida, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Técnico de Instalación y Mantenimiento GPS",
+     "ubicacion": "Santiago, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Gestor de Adopción Digital Clínica Junior",
      "ubicacion": "Providencia, Metropolitana de Santiago",
      "motivo": "perfil"
     },
     {
-     "titulo": "TENS Neonatología (Vacaciones) - RedSalud Santiago",
+     "titulo": "Tecnólogo Médico Part Time 20 hrs (mención oftalmología) - Huechuraba",
+     "ubicacion": "Huechuraba, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogo Médico Part Time 20 hrs (mención oftalmología) - La Florida",
+     "ubicacion": "La Florida, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tens MQ (Part Time)",
      "ubicacion": "Estación Central, Metropolitana de Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tens Diálisis",
-     "ubicacion": "Recoleta, Metropolitana de Santiago",
+     "titulo": "Convocatoria Tens",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "Tecnólogo Médico Part Time 20 hrs (mención oftalmología) - Lo Barnechea",
-     "ubicacion": "Lo Barnechea, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico Part Time 20 hrs (mención oftalmología) - Temuco",
-     "ubicacion": "Temuco, La Araucanía",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Técnico en Laboratorio Unidad Toma de Muestra- La Dehesa - Chicureo",
-     "ubicacion": "Vitacura, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Representante de Ventas",
-     "ubicacion": "Las Condes, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Químico Farmacéutico Rancagua (Part time)",
-     "ubicacion": "Rancagua, Lib. Gral. Bdo. O'Higgins",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Técnico En Enfermería Pabellón y Rayos Reemplazo Vacaciones - Hospital del Trabajador Achs Salud",
-     "ubicacion": "Santiago, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Práctica Profesional Ingeniería para Área Gerencia de Operaciones - Clínica RedSalud Santiago",
-     "ubicacion": "Santiago, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Químico Farmacéutico San Fernardo (Part time)",
-     "ubicacion": "San Fernando, Lib. Gral. Bdo. O'Higgins",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Analista de Cuentas Médicas - Instituto del Cáncer RedSalud",
-     "ubicacion": "Vitacura, Metropolitana de Santiago",
+     "titulo": "Supervisor(a) de REAS - RedSalud Providencia",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
      "motivo": "perfil"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 24,
+   "resultados": 29,
    "errores": [],
    "descartados": {
-    "exclusion": 1
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Técnico en imágenes - Imagenología",
-     "ubicacion": "La Florida, RM, Chile",
-     "motivo": "exclusion"
+     "titulo": "Mgr-Loss Prevention",
+     "ubicacion": "Santiago de Chile, RM, Chile",
+     "motivo": "perfil"
     }
    ]
   },
@@ -346,10 +346,10 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 2,
+  "leidas": 4,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-24T20:39:29+00:00"
+ "rss_chiletrabajos": "2026-11-25T19:56:36+00:00"
 }
