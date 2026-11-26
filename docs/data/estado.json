@@ -1,8 +1,8 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-25T19:56:36+00:00",
- "nuevos": 4,
- "total": 91,
+ "ultimo_chequeo": "2026-11-26T19:37:07+00:00",
+ "nuevos": 1,
+ "total": 92,
  "palabras_clave": [
   "tecnólogo médico",
   "tecnólogo médico resonancia",
@@ -28,19 +28,34 @@
    "resultados": 198,
    "errores": [],
    "descartados": {
-    "perfil": 26,
+    "perfil": 30,
     "exclusion": 19,
-    "zona": 20
+    "zona": 16
    },
    "muestra": [
     {
-     "titulo": "Vendedor/a de Tecnología Full Time 5x2",
-     "ubicacion": "Santiago - Providencia, R.Metropolitana",
+     "titulo": "Técnico enfermería Médico Quirúrgico",
+     "ubicacion": "Santiago - Estación Central, R.Metropolitana",
      "motivo": "perfil"
+    },
+    {
+     "titulo": "Técnico en Enfermería Médico Quirúrgico, reemplazo vacaciones",
+     "ubicacion": "Santiago Centro, R.Metropolitana",
+     "motivo": "exclusion"
     },
     {
      "titulo": "Técnico Biomédico, Electrónico o similar (experiencia en reparación y mantención de equipos médicos)",
      "ubicacion": "Santiago - Las condes, R.Metropolitana",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tecnólogo Medico Mejillones",
+     "ubicacion": "Mejillones, Antofagasta",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Vendedor/a de Tecnología Full Time 5x2",
+     "ubicacion": "Santiago - Providencia, R.Metropolitana",
      "motivo": "perfil"
     },
     {
@@ -49,19 +64,9 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Técnico enfermería Médico Quirúrgico",
-     "ubicacion": "Santiago - Estación Central, R.Metropolitana",
-     "motivo": "perfil"
-    },
-    {
      "titulo": "Tecnolog@ Medico para Director/a Técnico de laboratorio clínico",
      "ubicacion": "Arica, Arica y Parinacota",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Medico Mejillones",
-     "ubicacion": "Mejillones, Antofagasta",
-     "motivo": "zona"
     },
     {
      "titulo": "Ingeniero/ técnico en Equipos médicos",
@@ -87,22 +92,17 @@
      "titulo": "Coordinador/a de Servicio Técnico, Santiago Centro.",
      "ubicacion": "Santiago Centro, R.Metropolitana",
      "motivo": "perfil"
-    },
-    {
-     "titulo": "Tecnólogo Médico(a) Turno 7x7 Calama",
-     "ubicacion": "Calama, Antofagasta",
-     "motivo": "zona"
     }
    ]
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 141,
+   "resultados": 136,
    "errores": [],
    "descartados": {
     "exclusion": 25,
-    "antiguedad": 20,
-    "zona": 9,
+    "antiguedad": 18,
+    "zona": 8,
     "perfil": 2
    },
    "muestra": [
@@ -173,92 +173,92 @@
    "resultados": 155,
    "errores": [],
    "descartados": {
-    "perfil": 22,
-    "exclusion": 13,
+    "exclusion": 14,
+    "perfil": 23,
     "zona": 12,
     "antiguedad": 1
    },
    "muestra": [
     {
-     "titulo": "Ejecutivo de Venta Automotriz - Temuco",
-     "ubicacion": "Temuco, La Araucanía",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TENS - Centro Médico Viña del Mar",
-     "ubicacion": "Viña del Mar, Valparaíso",
+     "titulo": "Tens Urgencia (Part Time)",
+     "ubicacion": "Recoleta, Metropolitana de Santiago",
      "motivo": "exclusion"
     },
     {
-     "titulo": "TENS - Centro Médico V REGION",
-     "ubicacion": "Viña del Mar, Valparaíso",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Enfermero/a Gestión del Riesgo Clínico - RedSalud Santiago",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "titulo": "Analista de Subsidios",
+     "ubicacion": "Las Condes, Metropolitana de Santiago",
      "motivo": "perfil"
     },
     {
-     "titulo": "Enfermera/o - Oncología",
-     "ubicacion": "La Florida, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Técnico de Instalación y Mantenimiento GPS",
-     "ubicacion": "Santiago, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Gestor de Adopción Digital Clínica Junior",
+     "titulo": "Jefe (a) de Compensaciones",
      "ubicacion": "Providencia, Metropolitana de Santiago",
      "motivo": "perfil"
     },
     {
-     "titulo": "Tecnólogo Médico Part Time 20 hrs (mención oftalmología) - Huechuraba",
-     "ubicacion": "Huechuraba, Metropolitana de Santiago",
-     "motivo": "exclusion"
+     "titulo": "Analista de Programas Sostenibilidad (Reemplazo Licencia)",
+     "ubicacion": "Las Condes, Metropolitana de Santiago",
+     "motivo": "perfil"
     },
     {
-     "titulo": "Tecnólogo Médico Part Time 20 hrs (mención oftalmología) - La Florida",
-     "ubicacion": "La Florida, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tens MQ (Part Time)",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Convocatoria Tens",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Supervisor(a) de REAS - RedSalud Providencia",
+     "titulo": "Analista Senior de Negocio Quirúrgico - RedSalud",
      "ubicacion": "Providencia, Metropolitana de Santiago",
      "motivo": "perfil"
+    },
+    {
+     "titulo": "SECRETARIA/O CONTABLE FAE RENCA 2 (REEMPLAZO)",
+     "ubicacion": "Renca, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "TRABAJADOR/A SOCIAL PRM EL CARMEN 30 HORAS",
+     "ubicacion": "El Carmen, Ñuble",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tens Pabellón Ginecobstetricia (Periodo Vacaciones) - RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "TENS Salacuna y UPC Neonatal Part Time - RedSalud Santiago",
+     "ubicacion": "Estación Central, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "KINESIOLOGO HOSPITALIZADO - GERENCIA INSTITUTO ONCOLOGICO, INSTITUTO ONCOLOGICO, KINESIOLOGIA",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Jefe(a) de Proyectos - Edificio Medico (Valparaíso)",
+     "ubicacion": "Viña del Mar, Valparaíso",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tens Medico Quirúrgico",
+     "ubicacion": "La Florida, Metropolitana de Santiago",
+     "motivo": "exclusion"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 29,
+   "resultados": 17,
    "errores": [],
    "descartados": {
-    "perfil": 1
+    "zona": 1
    },
    "muestra": [
     {
-     "titulo": "Mgr-Loss Prevention",
-     "ubicacion": "Santiago de Chile, RM, Chile",
-     "motivo": "perfil"
+     "titulo": "Supervisor de ventas Antofagasta",
+     "ubicacion": "Antofagasta, AN, Chile",
+     "motivo": "zona"
     }
    ]
   },
   "laborum": {
    "nombre": "Laborum",
-   "resultados": 60,
+   "resultados": 62,
    "errores": [],
    "descartados": {
     "zona": 5,
@@ -346,10 +346,10 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 4,
+  "leidas": 1,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-25T19:56:36+00:00"
+ "rss_chiletrabajos": "2026-11-26T19:37:07+00:00"
 }
