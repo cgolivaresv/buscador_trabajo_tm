@@ -1,8 +1,8 @@
 {
  "version": "1.21.1",
- "ultimo_chequeo": "2026-11-26T19:37:07+00:00",
- "nuevos": 1,
- "total": 92,
+ "ultimo_chequeo": "2026-11-27T19:28:12+00:00",
+ "nuevos": 2,
+ "total": 94,
  "palabras_clave": [
   "tecnólogo médico",
   "tecnólogo médico resonancia",
@@ -25,14 +25,39 @@
   },
   "computrabajo": {
    "nombre": "Computrabajo",
-   "resultados": 198,
+   "resultados": 192,
    "errores": [],
    "descartados": {
-    "perfil": 30,
-    "exclusion": 19,
+    "perfil": 28,
+    "exclusion": 20,
     "zona": 16
    },
    "muestra": [
+    {
+     "titulo": "Vendedor/a de Tecnología Full Time 5x2",
+     "ubicacion": "Santiago - Providencia, R.Metropolitana",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Técnologo Médico en Laboratorio y Oftamología",
+     "ubicacion": "Tomé, Bíobío",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Técnico Biomédico, Electrónico o similar (experiencia en reparación y mantención de equipos médicos)",
+     "ubicacion": "Santiago - Las condes, R.Metropolitana",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Tecnólogo(a) Médico en Oftalmología",
+     "ubicacion": "Antofagasta, Antofagasta",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Tecnólogos(as) Médicos",
+     "ubicacion": "Mejillones, Antofagasta",
+     "motivo": "zona"
+    },
     {
      "titulo": "Técnico enfermería Médico Quirúrgico",
      "ubicacion": "Santiago - Estación Central, R.Metropolitana",
@@ -44,19 +69,9 @@
      "motivo": "exclusion"
     },
     {
-     "titulo": "Técnico Biomédico, Electrónico o similar (experiencia en reparación y mantención de equipos médicos)",
-     "ubicacion": "Santiago - Las condes, R.Metropolitana",
-     "motivo": "perfil"
-    },
-    {
      "titulo": "Tecnólogo Medico Mejillones",
      "ubicacion": "Mejillones, Antofagasta",
      "motivo": "zona"
-    },
-    {
-     "titulo": "Vendedor/a de Tecnología Full Time 5x2",
-     "ubicacion": "Santiago - Providencia, R.Metropolitana",
-     "motivo": "perfil"
     },
     {
      "titulo": "Buscamos Técnico en enfermería Médico Quirúrgico",
@@ -77,32 +92,17 @@
      "titulo": "Técnico en Enfermería Nivel Superior Unidad Toma de Muestras Viña del Mar",
      "ubicacion": "Viña del Mar, Valparaíso",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnologo médico en Imagenología para Taltal",
-     "ubicacion": "Taltal, Antofagasta",
-     "motivo": "zona"
-    },
-    {
-     "titulo": "Tecnologo médico en Laboratorio para Tocopilla",
-     "ubicacion": "Tocopilla, Antofagasta",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Coordinador/a de Servicio Técnico, Santiago Centro.",
-     "ubicacion": "Santiago Centro, R.Metropolitana",
-     "motivo": "perfil"
     }
    ]
   },
   "chiletrabajos": {
    "nombre": "Chiletrabajos",
-   "resultados": 136,
+   "resultados": 142,
    "errores": [],
    "descartados": {
-    "exclusion": 25,
+    "exclusion": 26,
     "antiguedad": 18,
-    "zona": 8,
+    "zona": 10,
     "perfil": 2
    },
    "muestra": [
@@ -147,123 +147,124 @@
      "motivo": "exclusion"
     },
     {
+     "titulo": "Tecnólogo médico (REEMPLAZO)",
+     "ubicacion": "Valparaíso",
+     "motivo": "zona"
+    },
+    {
      "titulo": "Tecnólogo médico",
      "ubicacion": "Santiago",
      "motivo": "antiguedad"
     },
     {
+     "titulo": "Tecnólogo Médico mención Oftalmología ? Reemplazo ? Punta Arenas",
+     "ubicacion": "Punta Arenas",
+     "motivo": "exclusion"
+    },
+    {
      "titulo": "Tecnólogo Médico en Oftalmología ? Jornada Part Time 30 horas",
      "ubicacion": "Santiago",
      "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnólogo Médico Part Time 20 hrs (mención oftalmología) - La Florida",
-     "ubicacion": "Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Tecnologo Médico ORL (Reemplazo) Sucursal La Serena",
-     "ubicacion": "La Serena",
-     "motivo": "zona"
     }
    ]
   },
   "trabajando": {
    "nombre": "Trabajando.cl",
-   "resultados": 155,
+   "resultados": 157,
    "errores": [],
    "descartados": {
-    "exclusion": 14,
-    "perfil": 23,
+    "perfil": 22,
     "zona": 12,
+    "exclusion": 13,
     "antiguedad": 1
    },
    "muestra": [
     {
-     "titulo": "Tens Urgencia (Part Time)",
-     "ubicacion": "Recoleta, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "Analista de Subsidios",
-     "ubicacion": "Las Condes, Metropolitana de Santiago",
+     "titulo": "Analista Control de Gestión",
+     "ubicacion": "Huechuraba, Metropolitana de Santiago",
      "motivo": "perfil"
     },
     {
-     "titulo": "Jefe (a) de Compensaciones",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "titulo": "Enfermera/o Jefe - Temuco",
+     "ubicacion": "Temuco, La Araucanía",
      "motivo": "perfil"
     },
     {
-     "titulo": "Analista de Programas Sostenibilidad (Reemplazo Licencia)",
-     "ubicacion": "Las Condes, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Analista Senior de Negocio Quirúrgico - RedSalud",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "SECRETARIA/O CONTABLE FAE RENCA 2 (REEMPLAZO)",
-     "ubicacion": "Renca, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "TRABAJADOR/A SOCIAL PRM EL CARMEN 30 HORAS",
-     "ubicacion": "El Carmen, Ñuble",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Tens Pabellón Ginecobstetricia (Periodo Vacaciones) - RedSalud Santiago",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "TENS Salacuna y UPC Neonatal Part Time - RedSalud Santiago",
-     "ubicacion": "Estación Central, Metropolitana de Santiago",
-     "motivo": "exclusion"
-    },
-    {
-     "titulo": "KINESIOLOGO HOSPITALIZADO - GERENCIA INSTITUTO ONCOLOGICO, INSTITUTO ONCOLOGICO, KINESIOLOGIA",
-     "ubicacion": "Providencia, Metropolitana de Santiago",
-     "motivo": "perfil"
-    },
-    {
-     "titulo": "Jefe(a) de Proyectos - Edificio Medico (Valparaíso)",
-     "ubicacion": "Viña del Mar, Valparaíso",
+     "titulo": "Enfermera/o Jefe - Puerto Montt",
+     "ubicacion": "Puerto Montt, Los Lagos",
      "motivo": "zona"
     },
     {
-     "titulo": "Tens Medico Quirúrgico",
+     "titulo": "Enfermera/o Jefe - Osorno",
+     "ubicacion": "Osorno, Los Lagos",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Enfermera/o Jefe - Chillán",
+     "ubicacion": "Chillán, Ñuble",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Técnico en enfermería - Centro médico",
      "ubicacion": "La Florida, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Técnico en imagenología",
+     "ubicacion": "La Florida, Metropolitana de Santiago",
+     "motivo": "exclusion"
+    },
+    {
+     "titulo": "Supervisor de Equipamiento Médico y Mobiliario Clínico Concesionado (Santiago)",
+     "ubicacion": "Cerro Navia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Jefe(a) de Centro",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Analista Comercial - RedSalud Providencia",
+     "ubicacion": "Providencia, Metropolitana de Santiago",
+     "motivo": "perfil"
+    },
+    {
+     "titulo": "Técnico en Prevención de Riesgos (Proyecto Industrial - Antofagasta)",
+     "ubicacion": "Antofagasta, Antofagasta",
+     "motivo": "zona"
+    },
+    {
+     "titulo": "Tens POOL (Vacaciones) - Clínica RedSalud Vitacura",
+     "ubicacion": "Vitacura, Metropolitana de Santiago",
      "motivo": "exclusion"
     }
    ]
   },
   "indeed": {
    "nombre": "Indeed",
-   "resultados": 17,
+   "resultados": 14,
    "errores": [],
    "descartados": {
-    "zona": 1
+    "perfil": 1
    },
    "muestra": [
     {
-     "titulo": "Supervisor de ventas Antofagasta",
-     "ubicacion": "Antofagasta, AN, Chile",
-     "motivo": "zona"
+     "titulo": "Product Development Engineer Full time",
+     "ubicacion": "Santiago de Chile, RM, Chile",
+     "motivo": "perfil"
     }
    ]
   },
   "laborum": {
    "nombre": "Laborum",
-   "resultados": 62,
+   "resultados": 65,
    "errores": [],
    "descartados": {
     "zona": 5,
     "exclusion": 2,
-    "antiguedad": 2
+    "antiguedad": 2,
+    "perfil": 1
    },
    "muestra": [
     {
@@ -310,6 +311,11 @@
      "titulo": "Tecnólogo Médico Centro diagnóstico especializado La Serna",
      "ubicacion": "Coquimbo, Región IV",
      "motivo": "zona"
+    },
+    {
+     "titulo": "Especialista de Desarrollo de Aplicaciones - PwC Chile",
+     "ubicacion": "Las Condes, Región Metropolitana",
+     "motivo": "perfil"
     }
    ]
   },
@@ -346,10 +352,10 @@
  },
  "paginas_vigiladas": [],
  "descripciones": {
-  "leidas": 1,
+  "leidas": 2,
   "sin_permiso": 0,
   "errores": 0,
   "subieron_a_prioritario": 0
  },
- "rss_chiletrabajos": "2026-11-26T19:37:07+00:00"
+ "rss_chiletrabajos": "2026-11-27T19:28:12+00:00"
 }
